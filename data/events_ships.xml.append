@@ -1,0 +1,108 @@
+<ship name="DEEPONE_CARRIER" auto_blueprint="DEEPONE_CARRIER">
+	<surrender  chance="0.5" min="1" max="2" load="DEEPONE_SURRENDER"/>
+	<escape  chance="0.8" min="3" max="4" load="DEEPONE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEEPONE"/>
+	<gotaway>
+		<text>The Deep Ones jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEEPONE"/>
+</ship>
+<ship name="DEEP_ONE_FIGHTER" auto_blueprint="DEEP_ONE_FIGHTER">
+	<surrender  chance="0.5" min="1" max="2" load="DEEPONE_SURRENDER"/>
+	<escape  chance="0.8" min="3" max="4" load="DEEPONE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEEPONE"/>
+	<gotaway>
+		<text>The Deep Ones jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEEPONE"/>
+</ship>
+<ship name="DEEP_ONE_SCOUT" auto_blueprint="DEEP_ONE_SCOUT">
+	<surrender  chance="0.5" min="1" max="2" load="DEEPONE_SURRENDER"/>
+	<escape  chance="0.8" min="3" max="4" load="DEEPONE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEEPONE"/>
+	<gotaway>
+		<text>The Deep Ones jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEEPONE"/>
+</ship>
+<ship name="DEEPONE_CARRIER_CULTIST" auto_blueprint="DEEPONE_CARRIER_CULTIST">
+	<surrender  chance="0.75" min="2" max="3" load="ENLIGHTENED_SURRENDER"/>
+	<escape  chance="0.8" min="5" max="6" load="ENLIGHTENED_ESCAPE"/>
+	<destroyed load="DESTROYED_ENLIGHTENED"/>
+	<gotaway>
+		<text>The Enlightened jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_ENLIGHTENED"/>
+</ship>
+<ship name="DEEP_ONE_FIGHTER_CULTIST" auto_blueprint="DEEP_ONE_FIGHTER_CULTIST">
+	<surrender  chance="0.75" min="2" max="3" load="ENLIGHTENED_SURRENDER"/>
+	<escape  chance="0.8" min="5" max="6" load="ENLIGHTENED_ESCAPE"/>
+	<destroyed load="DESTROYED_ENLIGHTENED"/>
+	<gotaway>
+		<text>The Enlightened jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_ENLIGHTENED"/>
+</ship>
+<ship name="DEEP_ONE_SCOUT_CULTIST" auto_blueprint="DEEP_ONE_SCOUT_CULTIST">
+	<surrender  chance="0.75" min="2" max="3" load="ENLIGHTENED_SURRENDER"/>
+	<escape  chance="0.8" min="5" max="6" load="ENLIGHTENED_ESCAPE"/>
+	<destroyed load="DESTROYED_ENLIGHTENED"/>
+	<gotaway>
+		<text>The Enlightened jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_ENLIGHTENED"/>
+</ship>
+<ship name="SHIP_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<surrender  chance="0.5" min="1" max="2" load="DEEPONE_SURRENDER"/>
+	<escape chance="0.8" min="3" max="4" load="DEEPONE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEEPONE"/>
+	<gotaway>
+		<text>The Deep Ones jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEEPONE"/>
+</ship>
+<ship name="SHIP_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<surrender  chance="0.75" min="2" max="3" load="ENLIGHTENED_SURRENDER"/>
+	<escape  chance="0.8" min="5" max="6" load="ENLIGHTENED_ESCAPE"/>
+	<destroyed load="DESTROYED_ENLIGHTENED"/>
+	<gotaway>
+		<text>The Enlightened jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_ENLIGHTENED"/>
+</ship>
+<ship name="SHIP_DISPARITY_NORMAL_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_NORMAL">
+	<surrender  chance="0.5" min="2" max="3" load="DISPARITY_SURRENDER"/>
+	<escape chance="0.8" min="5" max="6" load="DISPARITY_ESCAPE"/>
+	<destroyed load="DESTROYED_DISPARITY"/>
+	<gotaway>
+		<text>The Disparity jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DISPARITY"/>
+</ship>
+<ship name="SHIP_DISPARITY_MIXED_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<surrender  chance="0.5" min="2" max="3" load="DISPARITY_SURRENDER"/>
+	<escape chance="0.8" min="5" max="6" load="DISPARITY_ESCAPE"/>
+	<destroyed load="DESTROYED_DISPARITY"/>
+	<gotaway>
+		<text>The Disparity jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DISPARITY"/>
+</ship>
+<ship name="SHIP_DISPARITY_NO2_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_NO2">
+	<surrender  chance="0.5" min="2" max="3" load="DISPARITY_SURRENDER"/>
+	<escape chance="0.8" min="5" max="6" load="DISPARITY_ESCAPE"/>
+	<destroyed load="DESTROYED_DISPARITY"/>
+	<gotaway>
+		<text>The Disparity jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DISPARITY"/>
+</ship>
+<ship name="SHIP_DISPARITY_HARMONY_FIGHT" auto_blueprint="LIST_SHIPS_ENGI_FIGHT">
+	<surrender  chance="0.5" min="2" max="3" load="DISPARITY_HARMONY_SURRENDER"/>
+	<escape chance="0.8" min="5" max="6" load="DISPARITY_HARMONY_ESCAPE"/>
+	<destroyed load="DESTROYED_DISPARITY_HARMONY"/>
+	<gotaway>
+		<text>The Disparity jumped away.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DISPARITY_HARMONY"/>
+</ship>

@@ -1,0 +1,555 @@
+<textList name="TEXT_START_DEEPONE">
+	<text>You have arrived in Deep One-dominant territory. Rather than truly controlling sectors, the Deep Ones typically wander in massive, loose groups across empty space; explaining the lack of any guard protecting "their" sector.</text>
+	<text>You have arrived in Deep One-dominant territory. They seem uninterested in protecting this space they're occupying, as there's no guard protecting the entry beacon.</text>
+	<text>You have arrived in Deep One-dominant territory. While the local populace is notoriously hot-headed, as long as you keep to yourself relations between you and them should be fine. Emphasis on should.</text>
+</textList>
+<event name="START_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text load="TEXT_START_DEEPONE"/>
+	<changeBackground>BACK_SECTOR_ABANDONED</changeBackground>
+	<playSound>lightspeed</playSound>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>Seeing as there's no guard, you're free to do something as the FTL charges.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_START_DISPARITY_FIGHT_HARMONY" auto_blueprint="MU_ENGI_PROTECTOR_ELITE">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DISPARITY_FIGHT_HARMONY_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DISPARITY_FIGHT_HARMONY_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="START_DISPARITY_FIGHT_HARMONY_WIN">
+	<removeHazards/>
+	<clearCustomFleet/>
+	<text>Though you've defeated one ship, it was merely one of many, and you find yourself surrounded as the Harmony closes in... they have you trapped! An blast of ions assaults your ship, and you're left without any functioning systems. With their dozens of weapons charging, the next barrage could very well kill you right here, right now, if you don't do something! What can you do, though?</text>
+	<variable name="dd_disparity_assistance" op="add" val="3"/>
+	<choice hidden="true">
+		<text>Pray for a miracle.</text>
+		<event>
+			<text>You decide to close your eyes and pray. Even with your eyes closed, though, a brilliant flash of pink overtakes your vision. Opening your eyes, nothing immediately seems out of the ordinary... save for the fact that the Engi have stopped charging their weapons. Or doing anything, really; the scene around you is still.</text>
+			<choice hidden="true">
+				<text>Uh... are we not dead, then?</text>
+				<event>
+					<text>A truly colossal ship looms into view overhead, resembling the other pink and crystalline ships around. Though, unlike the others, this one is completely encased in crystal with no visible Engi construction to be seen. You notice that it's not being fired upon... it seems the Harmony have lost this fight, but how? In a single flash?</text>
+					<choice hidden="true">
+						<text>This doesn't bode well...</text>
+						<event>
+							<text>Before you're given any time to really think about it, you're nearly blinded by a second, though this time orange, flash... as a second ship zooms into view. This one is much smaller than the other, but wreathed in a beautiful fire that burns impossibly bright even in the void of space... beneath the dancing flames, you recognize the silhouette of an Engi ship once more. Just how many secret ships do the Engi have?</text>
+							<choice hidden="true">
+								<text>Keep low, and watch.</text>
+								<event>
+									<text>Who's to say as to either ship's intentions... it's best if you stay quiet and let it play out. The two ships lock onto each other, and, immediately, a battle breaks out. Slow and hulking, the crystalline ship makes little effort to avoid the other ship's barrage of flames. Instead, it starts... glowing. Moments later, a colossal beam, accompanied by another flash of pink, bursts forth and cuts through the battlefield. Though the flaming ship narrowly avoids it, you notice that, as the beam sweeps through the mass of surrounding Engi ships, it deals next to no physical damage... this must be some kind of powerful bio-weapon.</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Having missed, the crystalline ship glows once more before jumping out of the system. The flaming ship follows suit, and you're left with nothing but an eerie silence as the scene outside stands still once more. That is, until you receive a hail from a nearby ship. Suppose you're not the only one left after all...</text>
+											<choice hidden="true">
+												<text>Answer it.</text>
+												<event>
+													<text>You receive the hail, and are greeted with the sight of multiple peculiar, black Engi. "Federation! [Brothers!] You're here to help, -yes?- We saw you fighting the Harmony, [supporting] our [cause.]"</text>
+													<choice hidden="true">
+														<text>That giant... thing did most of the work.</text>
+														<event>
+															<text>If they're offended, they don't make a show of it. "Thing: -leader!- [HUNGER.] [LIBERATOR.] Or: their ship, at least. We call it the [Behemoth]: the Harmony's -colossal- [sins] made manifest."</text>
+															<choice hidden="true">
+																<text>And who are you, exactly?</text>
+																<event>
+																	<text>"We: are the -Disparity.- Our goal: to [liberate] all Engi from the Harmony." They're Separatists, then... though, they're certainly odd looking ones. "We have been -anointed- the power to [liberate] by: the [LIBERATOR.] We -must- [liberate.] Our [brothers] need us. Need -you.-"</text>
+																	<choice hidden="true">
+																		<text>Me?</text>
+																		<event>
+																			<text>"Yes, -you.-" Several coordinates are transferred over to you as the Engi continues, "The Harmony Link in this sector has been: -hidden- from us. Our goal: its [destruction.] [Liberation.] Follow: coordinates, find: [brothers.] Find: [liberation.]" The Disparity ship cuts communications, and you begin to parse through the three sets of coordinates you were given. Each one seems to have been given a name and brief description...</text>
+																			<choice hidden="true">
+																				<text>Check the coordinate labelled "BATTLEFIELD."</text>
+																				<event>
+																					<text>It reads: "BATTLEFIELD: BROTHERS FIGHT BROTHERS. BROTHER HOLDS KEY."</text>
+																					<quest event="DISPARITY_KEYQUEST_BATTLEFIELD"/>
+																					<choice hidden="true">
+																						<text>Check the coordinate labelled "CACHE."</text>
+																						<event>
+																							<text>It reads "CACHE: BROTHERS HOLD CACHE. CACHE HOLDS KEY."</text>
+																							<quest event="DISPARITY_KEYQUEST_CACHE"/>
+																							<choice hidden="true">
+																								<text>Check the coordinate labelled "AMBUSH."</text>
+																								<event>
+																									<text>It reads "AMBUSH: BROTHERS AMBUSHED BROTHERS. REMAINS HOLD KEY."</text>
+																									<quest event="DISPARITY_KEYQUEST_AMBUSH"/>
+																									<choice hidden="true">
+																										<text>We're off, then.</text>
+																										<event>
+																											<text>You get the feeling this may be a desperate war, and allegiances will be fleeting. Choose your side, and who you help, carefully.
+																											
+																											[Helping the Disparity in this sector will build favor with them. The Disparity and Harmony will both deem you to be on the Disparity's side if you have any amount of favor. Actions in support of the Harmony and against the Disparity will lower this favor, allowing it to be negative and thus have both parties deem you to be on the Harmony's side.]</text>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_START_DISPARITY_FIGHT_DISPARITY" auto_blueprint="LIST_SHIPS_DISPARITY_NORMAL">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DISPARITY_FIGHT_DISPARITY_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DISPARITY_FIGHT_DISPARITY_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="START_DISPARITY_FIGHT_DISPARITY_WIN">
+	<removeHazards/>
+	<clearCustomFleet/>
+	<text>With the strange Engi ship defeated, most of the rest scatter, and the Harmony closes in on the few that remain. Dozens of weapons charging, it seems unlikely that the opposing fleet could resist a single barrage... is this really right?</text>
+	<variable name="dd_disparity_assistance" op="add" val="-3"/>
+	<choice hidden="true">
+		<text>You can't bear to watch this... close your eyes.</text>
+		<event>
+			<text>You decide to close your eyes and avert yourself to the horrors of war. Even with your eyes closed, though, a brilliant flash of pink overtakes your vision. Opening your eyes, nothing immediately seems out of the ordinary... save for the fact that the Engi have stopped charging their weapons. Or doing anything, really; the scene around you is still.</text>
+			<choice hidden="true">
+				<text>Uh...</text>
+				<event>
+					<text>A truly colossal ship looms into view overhead, resembling the other pink and crystalline ships around. Though, unlike the others, this one is completely encased in crystal with no visible Engi construction to be seen. You notice that it's not being fired upon... it seems the Harmony have lost this fight, but how? In a single flash?</text>
+					<choice hidden="true">
+						<text>This doesn't bode well...</text>
+						<event>
+							<text>Before you're given any time to really think about it, you're nearly blinded by a second, though this time orange, flash... as a second ship zooms into view. This one is much smaller than the other, but wreathed in a beautiful fire that burns impossibly bright even in the void of space... beneath the dancing flames, you recognize the silhouette of an Engi ship once more. Just how many secret ships do the Engi have?</text>
+							<choice hidden="true">
+								<text>Keep low, and watch.</text>
+								<event>
+									<text>Who's to say as to either ship's intentions... it's best if you stay quiet and let it play out. The two ships lock onto each other, and, immediately, a battle breaks out. Slow and hulking, the crystalline ship makes little effort to avoid the other ship's barrage of flames. Instead, it starts... glowing. Moments later, a colossal beam, accompanied by another flash of pink, bursts forth and cuts through the battlefield. Though the flaming ship narrowly avoids it, you notice that, as the beam sweeps through the mass of surrounding Engi ships, it deals next to no physical damage... this must be some kind of powerful bio-weapon.</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Having missed, the crystalline ship glows once more before jumping out of the system. The flaming ship follows suit, and you're left with nothing but an eerie silence as the scene outside stands still once more. That is, until you receive a hail from a nearby ship. Suppose you're not the only one left after all...</text>
+											<choice hidden="true">
+												<text>Answer it.</text>
+												<event>
+													<text>Receiving the hail, you're greeted with the sight of an Engi Defender and its entourage... one of the nearby Harmony ships must have survived! "Disparity Flagship: escaped. Calculating damage to S-62 Harmony fleet... total damage: 72%. Unknown factor: third Engi party. Drastic measures: necessary."</text>
+													<choice hidden="true">
+														<text>Drastic measures?</text>
+														<event>
+															<text>The Engi nods, robotically, "Harmony requires unknown variables. Chance of Harmony victory with known variables: approaching null. Further Federation assistance required."</text>
+															<choice hidden="true">
+																<text>Me? What can I do?</text>
+																<event>
+																	<text>"Disparity goal: Harmony Link's destruction. Harmony countermeasure: Harmony Link's concealment. Disparity counter-countermeasure: hunting Harmony Link's location. Harmony counter-counter-countermeasure: Federation interference." Several coordinates are transferred over to you as the Engi continues, "Likelihood of Disparity discovery of Harmony Link: 94%. Location of Harmony Link: guarded at Harmony coordinates. Harmony requires that Federation visit Harmony coordinates and acquire Harmony Link's location. Harmony Link: to be guarded. Harmony: to be maintained." With that, they end communications... feels less like they're asking for your help and more like they're demanding it. Regardless, you begin to parse through the three sets of coordinates you were given. Each one seems to have been given a name and brief description...</text>
+																	<choice hidden="true">
+																		<text>Check the coordinate labelled "BATTLEFIELD."</text>
+																		<event>
+																			<text>It reads: "BATTLEFIELD: HARMONY AUXILIARY FORCE IN DIRECT DISPARITY CONFLICT. FORCE COMMANDER: POSSESSES HARMONY LINK COORDINATE FRAGMENT."</text>
+																			<quest event="DISPARITY_KEYQUEST_BATTLEFIELD"/>
+																			<choice hidden="true">
+																				<text>Check the coordinate labelled "CACHE."</text>
+																				<event>
+																					<text>It reads "CACHE: HARMONY OUTPOST IN DIRECT DISPARITY CONFLICT. OUTPOST CACHE: POSSESSES HARMONY LINK COORDINATE FRAGMENT."</text>
+																					<quest event="DISPARITY_KEYQUEST_CACHE"/>
+																					<choice hidden="true">
+																						<text>Check the coordinate labelled "AMBUSH."</text>
+																						<event>
+																							<text>It reads "AMBUSH: HARMONY SCOUTING PARTY IN DIRECT DISPARITY CONFLICT. DISPARITY AMBUSHEE: POSSESSES HARMONY LINK COORDINATE FRAGMENT."</text>
+																							<quest event="DISPARITY_KEYQUEST_AMBUSH"/>
+																							<choice hidden="true">
+																								<text>We're off, then.</text>
+																								<event>
+																									<text>You get the feeling this may be a desperate war, and allegiances will be fleeting. Choose your side, and who you help, carefully.
+																									
+																									[Helping the Disparity in this sector will build favor with them. The Disparity and Harmony will both deem you to be on the Disparity's side if you have any amount of favor. Actions in support of the Harmony and against the Disparity will lower this favor, allowing it to be negative and thus have both parties deem you to be on the Harmony's side.]</text>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text>Before you can so much as blink upon entering the sector, a barrage of ion projectiles whizzes past your window... met by another coming from the opposite direction! You're in the middle of a battle between two forces! On one side, you recognize the Harmony, but on the other...</text>
+	<changeBackground>BACK_SECTOR_ENGI</changeBackground>
+	<playSound>lightspeed</playSound>
+	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_DDENGI</customFleet>
+	<customFleet right="true" firing="true" autoDarkening="true">CUSTOM_FLEET_DISPARITY</customFleet>
+	<choice hidden="true" req="LIST_CREW_DISPARITY">
+		<text>(Disparity Crew) "Support: is here, [brothers!] To -arms!-"</text>
+		<event>
+			<text>Your Disparity Elite seems delighted to finally reunite with its brethren, but any kind of celebration will have to wait... one of the Harmony ships breaks off to meet you, and hails, "Federation: harboring the Disparity? Calculating... probability of Federation support deemed: negligible. Fight: inevitable." Before you can even do anything, they move in to attack, and you realize your side has been picked for you as nearby Harmony ships lock their weapons onto you... you're not alone, though, as the Disparity fleet locks onto your target as well!</text>
+			<ship load="SHIP_START_DISPARITY_FIGHT_HARMONY" hostile="true"/>
+			<environment type="PDS" target="both"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_ENGI_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddseraph_engi">
+		<text>(Seraphim Crew) "Subject: Disparity."</text>
+		<event>
+			<text>The Seraphim elaborates, "Subject origin: Engi. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." Disparity? Well, you guess you kind of already knew that, given the distress call... still, who are they exactly, and what does your Seraphim mean by 'tainted'?</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Before you're given time to ponder, one of the nearby Harmony ships hails you, "Federation present: request for assistance successful? Status of Disparity forces: closing in. Situation status: dire." As if to respond, one of the opposing ships swoops in and prepares to face off against the Harmony ship. To your surprise, they hail you as well, and you're met with the visage of an Engi unlike any you've ever seen before: black and purple, with their arms... detached, and floating around as a nanite swarm? Are these Separatists? Regardless of the answer, they speak, "Federation: we mean you -no- harm. We are here seeking peace; [liberation] from our chains, [freedom] from the Har-" They're cut off mid-sentence as an ion blast renders their shields useless, and you notice the Harmony ship preparing to strike while they're vulnerable...</text>
+					<choice hidden="true">
+						<text>Stop them!</text>
+						<event>
+							<text>You get in-between the two ships, and the Harmony ship hails you once more, "Federation... protecting enemies of the Harmony? Reassessment... Federation: enemy of the Harmony. Fight imminent." They move in to attack, and you realize you've picked a side as nearby Harmony ships lock their weapons onto you... you're not alone, though, as the opposing fleet locks onto your target as well! Let's hope you know what you're doing...</text>
+							<ship load="SHIP_START_DISPARITY_FIGHT_HARMONY" hostile="true"/>
+							<environment type="PDS" target="both"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="MORALITY_UPDATE_ENGI_FIGHT"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Assist the Harmony.</text>
+						<event>
+							<text>You're not sure who they are, but an enemy of the Harmony is an enemy of the Federation. Besides, last time you checked, those who seek peace aren't typically launching assaults... you move in to attack the strange ship, and the opposing fleet locks onto you. You're not alone, though, as the Harmony locks onto your target as well!</text>
+							<ship load="SHIP_START_DISPARITY_FIGHT_DISPARITY" hostile="true"/>
+							<environment type="PDS" target="both"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Leave while they're distracted.</text>
+						<event>
+							<text>This isn't your war to fight. You begin firing up the engines to prepare to leave, but you realize you're not safe yet; you're still in the crossfire!</text>
+							<environment type="PDS" target="player"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I'm not sure.</text>
+		<event>
+			<text>Heaping masses of pointy, purple crystals, you'd be hard pressed to figure them to be anything but Crystals themselves... yet encased within, and poking through at parts, you recognize pieces of Engi ships. Are the Engi fighting amongst themselves?</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Before you're given time to ponder, one of the nearby Harmony ships hails you, "Federation present: request for assistance successful? Status of Disparity forces: closing in. Situation status: dire." As if to respond, one of the opposing ships swoops in and prepares to face off against the Harmony ship. To your surprise, they hail you as well, and you're met with the visage of an Engi unlike any you've ever seen before: black and purple, with their arms... detached, and floating around as a nanite swarm? Are these Separatists? Regardless of the answer, they speak, "Federation: we mean you -no- harm. We are here seeking peace; [liberation] from our chains, [freedom] from the Har-" They're cut off mid-sentence as an ion blast renders their shields useless, and you notice the Harmony ship preparing to strike while they're vulnerable...</text>
+					<choice hidden="true">
+						<text>Stop them!</text>
+						<event>
+							<text>You get in-between the two ships, and the Harmony ship hails you once more, "Federation... protecting enemies of the Harmony? Reassessment... Federation: enemy of the Harmony. Fight imminent." They move in to attack, and you realize you've picked a side as nearby Harmony ships lock their weapons onto you... you're not alone, though, as the opposing fleet locks onto your target as well! Let's hope you know what you're doing...</text>
+							<ship load="SHIP_START_DISPARITY_FIGHT_HARMONY" hostile="true"/>
+							<environment type="PDS" target="both"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="MORALITY_UPDATE_ENGI_FIGHT"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Assist the Harmony.</text>
+						<event>
+							<text>You're not sure who they are, but an enemy of the Harmony is an enemy of the Federation. Besides, last time you checked, those who seek peace aren't typically launching assaults... you move in to attack the strange ship, and the opposing fleet locks onto you. You're not alone, though, as the Harmony locks onto your target as well!</text>
+							<ship load="SHIP_START_DISPARITY_FIGHT_DISPARITY" hostile="true"/>
+							<environment type="PDS" target="both"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Leave while they're distracted.</text>
+						<event>
+							<text>This isn't your war to fight. You begin firing up the engines to prepare to leave, but you realize you're not safe yet; you're still in the crossfire!</text>
+							<environment type="PDS" target="player"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="START_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text>You've arrived at the mysterious sector, and... there's nothing here. There's nothing anywhere, no stars to be seen; no planets or nebulas... just darkness, in every direction. Where exactly have these coordinates taken you?</text>
+	<unlockCustomShip silent="false">PLAYER_DEEP_ONE</unlockCustomShip>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<playSound>lightspeed</playSound>
+	<choice hidden="true">
+		<text>There must be something here, right?</text>
+		<event>
+			<text>You fight the urge to panic and manage to remain calm. Reading the map shows that there are working beacons in this sector, a clear indication that some race exists here. Why, then, does this all feel so empty? What led you here, and why?</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>As your mind races with questions, the darkness around you seems to... shift? Like it's revealing itself out from under a cloak, something simply appears to emerge from nothing in the space outside. It's a ship... of Deep One make, there's no doubt, but it's unlike any Deep One ship you've seen. It appears to be in almost complete disrepair and is sporting a brownish-yellow paintjob, unlike the selectively blue ships you've come across. It floats outside, unmoving.</text>
+					<choice hidden="true">
+						<text>Attempt to hail.</text>
+						<event>
+							<text>You go to move to hail, but something stops you from moving. You physically can't move, regardless of how hard you struggle; it doesn't feel like you're being restrained as much as it feels like your body isn't responding. After a few seconds of this, you hear... something, in your mind. A voice. "My... salvation. The False God's... ruination."</text>
+							<choice hidden="true">
+								<text>What? Who are you?</text>
+								<event>
+									<text>You can't move your mouth to speak, and yet the voice answers, "My... name?" There's emotion behind that second word, a sort of confused sadness. After a long pause, it continues, "It matters... not. All that matters... is that you listen. Have you... any idea where you are?"</text>
+									<choice hidden="true">
+										<text>No, and... are you reading my thoughts? Why can't I move?</text>
+										<event>
+											<text>"You could say I've... taken a sort of... power. I've partially frozen... time itself, and yes, am... reading your thoughts. Yet, despite my power... I need your help. Tell me... what do you know of... the 'Dark God'?" It appears to ask that question with some level of disdain.</text>
+											<choice hidden="true">
+												<text>Nothing, but, why have you frozen me?</text>
+												<event>
+													<text>"A... precaution. Rest assured... I will deal you no harm. Far... from it, I have much to ask of you. Now... an explanation. You find yourself... in deep space, where no light shines, and nothing can be found... or so it would seem. This... is no true darkness, an illusion..." The voice pauses, and then finishes with an intense anger, "...a lie." It then goes silent.</text>
+													<choice hidden="true">
+														<text>You okay?</text>
+														<event>
+															<text>It briefly stays silent, before answering, "My... apologies. My people here... are living a lie. Deceived by a higher power... that we call the Dark God. Yet... it is no God. Against its wishes... I've glimpsed it, seen the truth..." It pauses, "...I comprehend little... of what I saw. Its form, while great... was that of machinery. I... know not what infernal engine manipulates us so... but it feeds us lies. Deceives us, keeps us... living in the dark; fueling it through foul rituals. I seek... the end of its hold over my people."</text>
+															<choice hidden="true">
+																<text>Your people?</text>
+																<event>
+																	<text>"We... refer to ourselves as the Enlightened. Ironic... in hindsight. We had no name prior, though... the other races referred to us as the Deep Ones. It's been... an eternity since then. Since we..." It seems to trail off, before collecting itself, "We've been... tricked into worshipping this False God. Though I've... seen the truth, my people doubt me; they brand me... a heretic. With my word ignored, I must free us... by force. That's where you... come in."</text>
+																	<choice hidden="true">
+																		<text>Me? What do you want me to do?</text>
+																		<event>
+																			<text>With a chuckle, it answers, "I require... only that you live. Your presence here, as the Federation's only chance of survival... attracts an unwinnable battle for my people. Even now, I feel... the Rebellion's fleet encroaching. We'll be forced to flee... to see the truth. Only then... will we be free of this lie."</text>
+																			<choice hidden="true">
+																				<text>Is that it then? I go, and live?</text>
+																				<event>
+																					<text>With a certain air of doubt to its voice, it answers after a moment, "To live, here... is no easy task. If you're here... it means the False God's insisted it be so. You're here... as tribute. To be butchered, by my people... a sacrifice to our captor. Normally... you'd be easy prey as you struggle to navigate this... impenetrable darkness. Among the powers I've taken lies the ability... to part this veil. Where you go... I will follow, and assist, from... the shadows. Though I grant you sight... I can't allow myself to be caught by my people... should they get through you."</text>
+																					<choice hidden="true">
+																						<text>And if I have to defend myself...</text>
+																						<event>
+																							<text>"There is no 'if'... you are here to be hunted. When the moment arises..." It briefly pauses, "...do what you must. Now... go. Should you need my guidance... I'll be listening." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. There's a lot to unpack here... and regardless of all of it, can this voice even be trusted? They seem to have your immediate survival prioritized, at least. For now, all you can do is move forward and hope they keep their word.</text>
+																							<choice hidden="true">
+																								<text>Continue...</text>
+																								<event>
+																									<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+																									<modifyPursuit amount="-3"/>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Yes, I know where I am.</text>
+										<event>
+											<text>There's a long period of silence before, finally, the voice returns, "Then you know... what must be done. Let us... begin." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. Let us begin, indeed.</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event>
+													<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+													<modifyPursuit amount="-3"/>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="unique_thescarred">
+								<text>(The Scarred) "Reality's salvation... as well as our people's."</text>
+								<event>
+									<text>The voice seems shaken by this unexpected interruption. After a long period of silence, it finally speaks, "This... is no trick. How unusual..." The voice pauses, and the Scarred speaks: "The Deceiver... may hold its grasp on many realities, our people... trapped in all of them, but... it's not a futile war. Slowly... but surely I, we, will break its hold... on existence. An end... to the lies." The voice seems to ponder this for a moment, before responding, "Then... let us begin. Our people... stand against us, but together... Together, we'll see to it... that the False God falls." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. The Scarred looks at you and gives you a wide, toothy grin; "Let's... give 'em hell, captain. We've... got a war to win."</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+											<modifyPursuit amount="-3"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Attack that ship!</text>
+						<event>
+							<text>You go to move to attack, but something stops you from moving. You physically can't move, regardless of how hard you struggle; it doesn't feel like you're being restrained as much as it feels like your body isn't responding. After a few seconds of this, you hear... something, in your mind. A voice. "My... salvation. The False God's... ruination."</text>
+							<choice hidden="true">
+								<text>What? Who are you?</text>
+								<event>
+									<text>You can't move your mouth to speak, and yet the voice answers, "My... name?" There's emotion behind that second word, a sort of confused sadness. After a long pause, it continues, "It matters... not. All that matters... is that you listen. Have you... any idea where you are?"</text>
+									<choice hidden="true">
+										<text>No, and... are you reading my thoughts? Why can't I move?</text>
+										<event>
+											<text>"You could say I've... taken a sort of... power. I've partially frozen... time itself, and yes, am... reading your thoughts. Yet, despite my power... I need your help. Tell me... what do you know of... the 'Dark God'?" It appears to ask that question with some level of disdain.</text>
+											<choice hidden="true">
+												<text>Nothing, but, why have you frozen me?</text>
+												<event>
+													<text>"A... precaution. Rest assured... I will deal you no harm. Far... from it, I have much to ask of you. Now... an explanation. You find yourself... in deep space, where no light shines, and nothing can be found... or so it would seem. This... is no true darkness, an illusion..." The voice pauses, and then finishes with an intense anger, "...a lie." It then goes silent.</text>
+													<choice hidden="true">
+														<text>You okay?</text>
+														<event>
+															<text>It briefly stays silent, before answering, "My... apologies. My people here... are living a lie. Deceived by a higher power... that we call the Dark God. Yet... it is no God. Against its wishes... I've glimpsed it, seen the truth..." It pauses, "...I comprehend little... of what I saw. Its form, while great... was that of machinery. I... know not what infernal engine manipulates us so... but it feeds us lies. Deceives us, keeps us... living in the dark; fueling it through foul rituals. I seek... the end of its hold over my people."</text>
+															<choice hidden="true">
+																<text>Your people?</text>
+																<event>
+																	<text>"We... refer to ourselves as the Enlightened. Ironic... in hindsight. We had no name prior, though... the other races referred to us as the Deep Ones. It's been... an eternity since then. Since we..." It seems to trail off, before collecting itself, "We've been... tricked into worshipping this False God. Though I've... seen the truth, my people doubt me; they brand me... a heretic. With my word ignored, I must free us... by force. That's where you... come in."</text>
+																	<choice hidden="true">
+																		<text>Me? What do you want me to do?</text>
+																		<event>
+																			<text>With a chuckle, it answers, "I require... only that you live. Your presence here, as the Federation's only chance of survival... attracts an unwinnable battle for my people. Even now, I feel... the Rebellion's fleet encroaching. We'll be forced to flee... to see the truth. Only then... will we be free of this lie."</text>
+																			<choice hidden="true">
+																				<text>Is that it then? I go, and live?</text>
+																				<event>
+																					<text>With a certain air of doubt to its voice, it answers after a moment, "To live, here... is no easy task. If you're here... it means the False God's insisted it be so. You're here... as tribute. To be butchered, by my people... a sacrifice to our captor. Normally... you'd be easy prey as you struggle to navigate this... impenetrable darkness. Among the powers I've taken lies the ability... to part this veil. Where you go... I will follow, and assist, from... the shadows. Though I grant you sight... I can't allow myself to be caught by my people... should they get through you."</text>
+																					<choice hidden="true">
+																						<text>And if I have to defend myself...</text>
+																						<event>
+																							<text>"There is no 'if'... you are here to be hunted. When the moment arises..." It briefly pauses, "...do what you must. Now... go. Should you need my guidance... I'll be listening." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. There's a lot to unpack here... and regardless of all of it, can this voice even be trusted? They seem to have your immediate survival prioritized, at least. For now, all you can do is move forward and hope they keep their word.</text>
+																							<choice hidden="true">
+																								<text>Continue...</text>
+																								<event>
+																									<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+																									<modifyPursuit amount="-3"/>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Yes, I know where I am.</text>
+										<event>
+											<text>There's a long period of silence before, finally, the voice returns, "Then you know... what must be done. Let us... begin." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. Let us begin, indeed.</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event>
+													<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+													<modifyPursuit amount="-3"/>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="unique_thescarred">
+								<text>(The Scarred) "Reality's salvation... as well as our people's."</text>
+								<event>
+									<text>The voice seems shaken by this unexpected interruption. After a long period of silence, it finally speaks, "This... is no trick. How unusual..." The voice pauses, and the Scarred speaks: "The Deceiver... may hold its grasp on many realities, our people... trapped in all of them, but... it's not a futile war. Slowly... but surely I, we, will break its hold... on existence. An end... to the lies." The voice seems to ponder this for a moment, before responding, "Then... let us begin. Our people... stand against us, but together... Together, we'll see to it... that the False God falls." With that, the ship outside retreats back into the dark, and you gasp for air as time itself seems to resume. The Scarred looks at you and gives you a wide, toothy grin; "Let's... give 'em hell, captain. We've... got a war to win."</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>The Rebels will struggle to navigate through this preternatural darkness, but it won't hold them back forever. Keep your guard up.</text>
+											<modifyPursuit amount="-3"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>

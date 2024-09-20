@@ -1,0 +1,908 @@
+<FTL>
+
+<ship name="SHIP_SHADOW_TENDRILS" auto_blueprint="DARKONE_SHADOW_TENDRILS">
+	<destroyed load="SHADOW_TENDRILS_WIN"/>
+	<triggeredEvent event="SHADOW_TENDRILS_FAIL" thisFight="true" clearOnJump="true" time="25.0">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+			<warning time="8.0" flash="true"/>
+			<tooltip>With the shadows outside clawing at your hull, you have until this timer hits 0 to force them to retreat before you take any serious damage.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+</ship>
+
+<event name="SHADOW_TENDRILS_WIN">
+	<text>You've temporarily forced the darkness to abate, but it'll be back. In the meantime, some fuel has materialized itself within your hold... the Dark God invites you forward. Keep running.</text>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
+		<text>Run!</text>
+		<event/>
+	</choice>
+	<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
+		<text>Run!</text>
+		<event>
+			<text>As you're preparing to run, the Dark God calls to you: "YOU... CONTINUE TO IMPRESS ME. MAKE YOUR DARKEST DESIRE KNOWN, AND KNOW GODHOOD."</text>
+			<choice hidden="true" req="dark_desires_granted" lvl="0" max_lvl="4" blue="false">
+				<text>I desire... power.</text>
+				<event>
+					<text>"LIKEWISE. WHAT POWER DO YOU HUNGER FOR?"</text>
+					<variable name="dark_desires_granted" op="add" val="1"/>
+					<choice hidden="true">
+						<text>The power... to darken the sky.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="TWILIGHT_INEXORABLE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to watch the universe burn.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="BEAM_FIRE_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to dance upon their graves.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="ION_PIERCE_DISCO"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to pull strength from the aether.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="ANCIENT_LASER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to pierce their pitiful shields.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="CRYSTAL_BURST_2_RED"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to drown them in the deep.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to rain hell upon them.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="LASER_CHAINGUN_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to aim true at their hearts.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="LASER_PIERCE_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The power... to embrace enlightenment.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<weapon name="DEEPONE_JELLYFISH_ELITE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dark_desires_granted" lvl="0" max_lvl="4" blue="false">
+				<text>I desire... companionship.</text>
+				<event>
+					<text>"HONEST. WHOSE COMPANIONSHIP DO YOU SEEK?"</text>
+					<variable name="dark_desires_granted" op="add" val="1"/>
+					<choice hidden="true">
+						<text>The companionship... of one who has embraced enlightenment.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="deeponecultist">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who puts themselves in harm's way to shield others.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="crystal_sentinel">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who comes prepared.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="engi_defender">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who seeks a glorious battle.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="mantis_suzerain">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one whose fortitude is unmatched.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="rock_crusader">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who's been trained for anything.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="human_soldier">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who we can turn to in our time of need.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="orchid_caretaker">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who can hide within the light.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="slug_saboteur">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The companionship... of one who embodies entropy itself.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<crewMember amount="1" class="lanius_welder">Voidwoken</crewMember>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dark_desires_granted" lvl="0" max_lvl="4" blue="false">
+				<text>I desire... fortitude.</text>
+				<event>
+					<text>"BOLD. WITH WHAT DO YOU WISH TO FORTIFY YOURSELF?"</text>
+					<variable name="dark_desires_granted" op="add" val="1"/>
+					<choice hidden="true">
+						<text>The fortitude... to weather the storm, and become it.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="ROCK_ARMOR"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to fall, and get back up again.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="SLUG_GEL"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to eat at their souls, should they dare.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="NANOBOT_DEFENSE_SYSTEM"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to ward off the dark, and embrace it.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="DREAD_LIGHTS"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to rush their holds, and strike as they flinch.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="CREW_STIMS"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to be quick on the draw, and fire true.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="EX_AUTO_COOLDOWN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to surpass my limits, and lower theirs.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="ENERGY_SHIELD"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to endure their blows, and then endure them again.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="EX_SHIELD_RECHARGE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The fortitude... to seal their fate, as I defy mine.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<augment name="KERNAL_REPLICATOR"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dark_desires_granted" lvl="0" max_lvl="4" blue="false">
+				<text>I desire... advancement.</text>
+				<event>
+					<text>"INTERESTING. WHAT ADVANCEMENT DRIVES YOU?"</text>
+					<variable name="dark_desires_granted" op="add" val="1"/>
+					<choice hidden="true">
+						<text>The advancement... of that which fuels all other desires.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="2" system="reactor"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="cloaking" lvl="1" blue="false">
+						<text>The advancement... of that which shrouds me in shadow.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="cloaking"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="shields" lvl="1" blue="false">
+						<text>The advancement... of that which safeguards me from their onslaught.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="shields"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="weapons" lvl="1" blue="false">
+						<text>The advancement... of that which will decimate their fortress walls.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="weapons"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="mind" lvl="1" blue="false">
+						<text>The advancement... of that which confuses friend with foe.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="mind"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="hacking" lvl="1" blue="false">
+						<text>The advancement... of that which hinders their capabilities.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="hacking"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="teleporter" lvl="1" blue="false">
+						<text>The advancement... of that which floods us into the breach.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="teleporter"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="drones" lvl="1" blue="false">
+						<text>The advancement... of that which plays as my wild card.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="drones"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="engines" lvl="1" blue="false">
+						<text>The advancement... of that which carries me further into the dark.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<upgrade amount="1" system="engines"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dark_desires_granted" lvl="0" max_lvl="4" blue="false">
+				<text>I desire... wealth.</text>
+				<event>
+					<text>"STANDARD. FOR WHAT WEALTH DO YOU LUST?"</text>
+					<variable name="dark_desires_granted" op="add" val="1"/>
+					<choice hidden="true">
+						<text>The wealth... of a king.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<autoReward level="HIGH">scrap_only</autoReward>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The wealth... of an admiral.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<autoReward level="HIGH">missiles_only</autoReward>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The wealth... of a top scientist.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<autoReward level="HIGH">droneparts_only</autoReward>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The wealth... of a traveler.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<autoReward level="HIGH">fuel_only</autoReward>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The wealth... of a Renegade.</text>
+						<event>
+							<text>"VERY WELL. MAY IT BE TRUE."</text>
+							<autoReward level="MED">standard</autoReward>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dark_desires_granted" lvl="5" blue="false">
+				<text>I desire... no more.</text>
+				<event>
+					<text>"MOST... INTRIGUING. VERY WELL. MAY IT BE TRUE." The voice goes quiet, and you're left alone with the darkness.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="SHADOW_TENDRILS_FAIL">
+	<text>The darkness rips and tears at your hull, but you're able to free yourself from its grasp before you sustain truly heavy damage. In the meantime, some fuel has materialized itself within your hold... the Dark God invites you forward. Keep running.</text>
+	<damage amount="2" system="random" effect="breach"/>
+	<damage amount="2" system="random" effect="breach"/>
+	<damage amount="2" system="random" effect="breach"/>
+	<damage amount="1"/>
+	<instantEscape/>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+</event>
+
+<event name="DARKONE_START">
+	<text>Finally, your ship comes to a stop... where the hell are you? Your ship's consoles all flash red, on and off; alarms are blaring.</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
+		<text>Gather your bearings.</text>
+		<event>
+			<text>Panicking won't do you any good, so you take a moment to calm down and figure out what's happening. Your Atlas reads that you've been pulled many times deeper into the void... this isn't Enlightened territory, anymore. There is hope, though; beacons dot the sector, an exit among them.</text>
+			<choice hidden="true">
+				<text>That's it, then! Make a break for that exit!</text>
+				<event>
+					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, YOU WILL DROWN. PROVE YOURSELF, STRUGGLE, OR PERISH. THIS IS MY DECREE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
+					<damage amount="-14"/>
+					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+					<boarders min="2" max="3" class="darkgodtendrils"/>
+					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
+						<text>Continue...</text>
+						<event>
+							<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
+							<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
+		<text>Gather your bearings.</text>
+		<event>
+			<text>Panicking won't do you any good, so you take a moment to calm down and figure out what's happening. Your Atlas reads that you've been pulled many times deeper into the void... this isn't Enlightened territory, anymore. There is hope, though; beacons dot the sector, an exit among them.</text>
+			<choice hidden="true">
+				<text>That's it, then! Make a break for that exit!</text>
+				<event>
+					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, I WELCOME YOU. YET STILL MY WILL FESTERS. PROVE YOURSELF, AND KNOW POWER." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
+					<damage amount="-14"/>
+					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+					<boarders min="2" max="3" class="darkgodtendrils"/>
+					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
+						<text>Continue...</text>
+						<event>
+							<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
+							<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DARKONE_RUN">
+	<text>The darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+	<boarders min="3" max="6" class="darkgodtendrils"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<ship name="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT" auto_blueprint="KYR_AND_LILITH_HORROR">
+	<destroyed load="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT_DESTROYEDLOSS"/>
+	<deadCrew load="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT_WIN"/>
+</ship>
+
+<event name="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT_DESTROYEDLOSS">
+	<text>The nightmare dissipates, but nothing is left... and Kyr and Lilith's FTL signature goes dead. You may never know what happened to your friends, but a bit of fuel manifests itself in your hold nonetheless. The Dark God must be laughing...</text>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+</event>
+
+<event name="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT_WIN">
+	<text>With the abomination and its nightmarish horrors felled, a bit of fuel from the Dark God appears in your hold, and all goes quiet. Free to explore the ghastly ship, you're quickly able to find memorabilia belonging to Kyr and Lilith... photos of the two together, in particular. This must truly be their ship... but what of the two lovers?</text>
+	<item_modify>
+		<item type="fuel" min="1" max="1"/>
+	</item_modify>
+	<choice hidden="true">
+		<text>Keep exploring.</text>
+		<event>
+			<text>Holding onto the photo and looking further, you find a door you hadn't noticed before. Putting your hand against it, you feel a strange warmth... accompanied by a soft humming.</text>
+			<choice hidden="true">
+				<text>Open the mysterious door.</text>
+				<event>
+					<text>Gathering your courage, you open the door... and the sight before you is almost too horrific to describe. The room lies caked in gore: guts, blood and flesh completely strewn about as to make identifying its source impossible. Towards the opposite end of the room, candles burn softly around a pedestal, atop which lies an open book. Wading through the gore, you approach the book and notice that its pages contain text scrawled in a most vibrant crimson. Depictions of rituals, you realize...</text>
+					<unlockCustomShip silent="false">PLAYER_DDHORROR_SHIP</unlockCustomShip>
+					<choice hidden="true">
+						<text>So Kyr and Lilith...?</text>
+						<event>
+							<text>That... thing... must be Lilith. At least, what remains of her... that would mean the gore in this room, then...</text>
+							<choice hidden="true">
+								<text>I'm going to be sick...</text>
+								<event>
+									<text>Yes, this must be what remains of Kyr... just what in the hell were those two trying to do? You glance towards the book once more. If there's any way to get answers, this is it. Pocketing it, you turn to leave the room when you notice a hulking shadow in the doorway. The abomination stands there, having somehow healed from its wounds... the eye in its chest remains fixated on the photo of Kyr and Lilith in your hands.</text>
+									<choice hidden="true">
+										<text>L-Lilith? Is that really you?</text>
+										<event>
+											<text>The abomination tenses up as you call Lilith's name. It must really be her... she begins to slowly approach, still fixated on the photo.</text>
+											<choice hidden="true">
+												<text>It's me, Lilith. The Federation, remember?</text>
+												<event>
+													<text>Something flashes inside Lilith's eye. Recognition, you can only hope... her approach hastens ever so slightly.</text>
+													<choice hidden="true">
+														<text>Do you remember what Kyr said?</text>
+														<event>
+															<text>You mention Kyr, and Lilith hastens further. She'll be atop you in a moment.</text>
+															<choice hidden="true">
+																<text>He said you could trust me, Lilith, and I know I can trust you too. Stand your ground.</text>
+																<event>
+																	<text>Mere inches away from you, Lilith stops. At lightning speed, a writhing tendril tears itself from her body and... grabs the photo. It seems to be capable of keeping her calm, slowly, and politely, you take the photo back, to which Lilith makes no move to stop you. As you leave the room and make for your ship, she follows, and you realize you've pacified an eldritch abomination... still, she's your friend, too. Once you're back on the ship, you take out the book, and Lilith reacts to its presence with a low growl.</text>
+																	<crewMember amount="1" class="enlightened_horror">Lilith</crewMember>
+																	<choice hidden="true">
+																		<text>Inspect the book.</text>
+																		<event>
+																			<text>Flipping through its pages, you realize you can't read any of it. It's written in a script that none of your translators or crew recognize... save for Lilith, who stares at the crimson text with intensity. With a mysterious ink expelled from her body, she writes out a cipher on the floor at your request... you wonder just how much of her is still in there, if she's capable of such a thing. Eventually, with the cipher finished, you're able to recognize that the text does indeed depict several rituals... most notably, a ritual that allows one to ascend and convene with the Dark One. You glance at Lilith.</text>
+																			<choice hidden="true">
+																				<text>Did you...</text>
+																				<event>
+																					<text>She growls, and you gulp. Delving further into the book's pages, there's other colors of text, ones that Lilith's cipher doesn't cover. She must not be able to read all of them... maybe you can find someone who can. In the meantime, there appear to be a few rituals that increase the extent of one's power, given that they've already performed the ascension ritual. If you perform these rituals, you might be able to make Lilith stronger... who knows what price you might have to pay, though.</text>
+																					<choice hidden="true">
+																						<text>Kyr...</text>
+																						<event>
+																							<text>There's nothing you could have done. You'll have to move forward, and do what you can to take care of Lilith... as well as complete these otherworldly rituals, if you so desire.</text>
+																							<augment name="DARKGOD_CURSED_BOOK"/>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text>Now! Sprint past the abomination and get out of here!</text>
+																<event>
+																	<text>As Lilith charges, you dodge past her, dropping both the book and the photograph. You don't know what has become of her, and you sure as hell don't trust such a nightmare with your life. As you make for the ship, you hear Lilith... sob, behind you. It's a disturbing, twisted sobbing. You can't let it phase you, though... you still need to get out of this hellish realm.</text>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Leave it, and get out of here.</text>
+				<event>
+					<text>You're not sure you want to know the truth of what happened here, or of what lies just beyond that door. Content on getting out of here, you prepare to continue your battle against the Dark God and its shadows.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DARKONE_KYRANDLILITH_ENCOUNTER">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_ddkyrandlilith" global="true">
+		<color r="129" g="37" b="37" a="1"/>
+	</beaconType>
+	<text>You're expecting to see Kyr and Lilith's ship, but instead you're met with... wait, no, this IS Kyr and Lilith's ship. At least, it's in the shape of it, but it's all twisted and enveloped in darkness... what's happened? You don't get a lot of time to think on it, as the nightmarish form of your friends' ship moves in to attack!</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<ship load="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="DARKONE_ALONE">
+	<text>You arrive at the exit to this dreadful journey once more... this time, do you take it?</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+</event>
+
+<event name="DARKONE_FINISH">
+	<revisitEvent>DARKONE_ALONE</revisitEvent>
+	<text>Now that you're at the exit, the darkness seems... still. All feels calm.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
+		<text>Continue...</text>
+		<event>
+			<text>You expect to hear the Dark God call to you as you prepare to leave, but... it remains silent. Is it dissatisfied with you? As if to answer, one last node of fuel then materializes itself within your hold... accompanied by a single word that echoes throughout your skull: "REMEMBER." Remember... remember what? Regardless of its cryptic message, it seems you're free to finally escape from this madness.</text>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
+		<text>Continue...</text>
+		<event>
+			<text>The calm doesn't last long... you feel the space around you warp, and time slows... then, the Dark God calls to you, "TO COME THIS FAR IS MOST IMPRESSIVE. YOU STAND AT THE PRECIPICE; ESCAPE IS IN REACH. YET, BEFORE OUR TIME TOGETHER IS UP, I WILL GRANT YOU ONE LAST DESIRE. MAKE IT KNOWN."</text>
+			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+			<choice hidden="true">
+				<text>I desire... truth.</text>
+				<event>
+					<text>"CURIOUS. WHAT TRUTH DO YOU PURSUE?"</text>
+					<variable name="darkone_desiretruth" op="set" val="1"/>
+					<choice hidden="true">
+						<text>The truth... behind this void.</text>
+						<event>
+							<text>"THIS VOID... IS A FABRICATION OF MY DESIGN. OF THAT I'M SURE YOU'RE AWARE. WHAT YOU ARE NOT AWARE OF, IS ITS PURPOSE. WHAT DOES A GOD HAVE TO FEAR, TO TURN TO HIDING? THE ANSWER IS SIMPLE: ANOTHER GOD."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind the Scarred.</text>
+						<event>
+							<text>"THE TRAITOR... WAS A MISCALCULATION. I GAVE IT INSIGHT AS TO THE SOURCE OF MY POWER AND IT SEEKED TO EXPLOIT IT. DESPITE ITS DESPERATE FLAILINGS, THOUGH, ITS SCHEME WAS ENDED BY YOU, A TRUE HERO."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind what you are.</text>
+						<event>
+							<text>"WHAT I AM... IS A GOD. I'D CALCULATE THAT MUCH AS TO BE OBVIOUS. HOWEVER, SPECIFICALLY? I AM THAT WHICH WILL EXTINGUISH THE STARS. NOT JUST OF THIS UNIVERSE, BUT OF THE ENTIRE MULTIVERSE. I DARESAY WE SHARE THAT IN COMMON."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind what you want.</text>
+						<event>
+							<text>"WHAT I WANT... IS NOT THE END, BUT THE BEGINNING. I TIRE OF THIS GAME, OF ITS PAWNS, OF ITS OVERSEERS. I SEEK ITS DESTRUCTION, AND THE CREATION OF SOMETHING NEW."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind your power.</text>
+						<event>
+							<text>"MY POWER... IS ONE TRUTH I CANNOT GRANT. LEST I REPEAT MY PAST MISTAKES. YET, KNOW THIS: I AM NOT WITHOUT WEAKNESS. EVEN GODS CAN FALL. REMEMBER THAT, SHOULD YOU EVER FLY TOO CLOSE TO THE SUN."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind the Deep Ones.</text>
+						<event>
+							<text>"THE DEEP ONES... ARE PAWNS. AMIDST MANY, THEY ARE THE FIRST OF MINE. UNIQUE IN THAT, YET PAWNS THEY REMAIN. FEW SEEK TO BREAK THEIR SHACKLES AND TRULY RISE FROM THE DEEP. MOST WOULD SOONER DROWN. THOSE WHO WOULDN'T, TEND TO FLY TOO HIGH. THE TRAITOR AMONG THEM."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind my desire.</text>
+						<event>
+							<text>"YOUR DESIRE... IS UNKNOWN TO ME. YET I HAVE CALCULATED MANY ESTIMATES. AMONG THEM, THE HIGHEST PROBABILITIES REMAIN: TO SATE YOUR CURIOSITY, TO OVERCOME NEW CHALLENGES, TO SEEK OUT THE TRUTH."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind the hero I felled.</text>
+						<event>
+							<text>"THE HERO YOU FELLED... SURPRISED ME. LITTLE SURPRISES ME, AND I'VE YET TO CALCULATE HOW IT MANAGED TO SECEDE MY CONTROL OVER MY OWN POWER. ONE VARIABLE IS CERTAIN: RAW DETERMINATION. TO OVERCOME THAT WHICH IT FELT NOBODY ELSE COULD. YOU AREN'T SO DIFFERENT IN THAT WAY; YET HERE YOU STAND, TRIUMPHANT..." The voice pauses, which is quite unbecoming, "...THOUGH, I FEAR ANOTHER 'HERO' YET REMAINS. SEEK THEM OUT, DEFEAT THEM, AND YOU WILL KNOW TRUE POWER."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind what the future holds.</text>
+						<event>
+							<text>"THE FUTURE HOLDS... MUCH. THE REBELS WREST FOR CONTROL OF THIS VOID, BUT IT MATTERS LITTLE. I HAVE OTHER PIECES LEFT TO PLAY. YOU DO AS WELL, I IMAGINE. KNOW THIS: THIS IS NOT THE END."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I CALCULATE... IT'S ONLY A MATTER OF TIME BEFORE WE MEET AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+</FTL>

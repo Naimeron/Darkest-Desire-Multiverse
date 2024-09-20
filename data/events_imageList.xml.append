@@ -1,0 +1,11 @@
+<imageList name="BACKGROUND_ENLIGHTENEDVOID">
+	<img w="1280" h="720">stars_sectors/bg_enlightenedvoid.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_ENLIGHTENEDDARKGOD">
+	<img w="1280" h="720">stars_sectors/bg_enlighteneddarkgod.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDCRYSTALTALEVOID">
+	<img w="1280" h="720">stars_sectors/bg_ddcrystaltalevoid.png</img>
+</imageList>

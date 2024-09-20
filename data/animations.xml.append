@@ -1,0 +1,4972 @@
+<animSheet name="deepone_jellyfish" w="108" h="95" fw="36" fh="95">weapon_beams/deepone_jellyfish.png</animSheet>
+<weaponAnim name="deepone_jellyfish">
+	<sheet>deepone_jellyfish</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="20" y="38"/>
+	<mountPoint x="6" y="94"/>
+</weaponAnim>
+
+<animSheet name="deepone_jellyfish_elite" w="108" h="95" fw="36" fh="95">weapon_beams/deepone_jellyfish_elite.png</animSheet>
+<weaponAnim name="deepone_jellyfish_elite">
+	<sheet>deepone_jellyfish_elite</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="20" y="38"/>
+	<mountPoint x="6" y="94"/>
+</weaponAnim>
+
+<animSheet name="twilight_inexorable" w="108" h="95" fw="36" fh="95">weapon_beams/twilight_inexorable.png</animSheet>
+<weaponAnim name="twilight_inexorable">
+	<sheet>twilight_inexorable</sheet>
+	<desc length="3" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="20" y="39"/>
+	<mountPoint x="6" y="94"/>
+</weaponAnim>
+
+<animSheet name="shotgun_darkgod" w="583" h="64" fw="53" fh="64">weapon_flak/shotgun_darkgod.png</animSheet>
+<weaponAnim name="shotgun_darkgod">
+	<sheet>shotgun_darkgod</sheet>
+	<desc length="11" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="21" y="10"/>
+	<mountPoint x="8" y="38"/>
+</weaponAnim>
+
+<animSheet name="bomblauncher_darkgod" w="525" h="44" fw="35" fh="44">weapon_bombs/bomblauncher_darkgod.png</animSheet>
+<weaponAnim name="bomblauncher_darkgod">
+	<sheet>bomblauncher_darkgod</sheet>
+	<desc length="15" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint x="20" y="22" />
+	<mountPoint x="2" y="23" />
+</weaponAnim>
+
+<animSheet name="bomb_darkgod" w="525" h="35" fw="35" fh="35">weapon_bombs/bomb_darkgod.png</animSheet>
+<anim name="bomb_darkgod">
+	<sheet>bomb_darkgod</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="bomb_darkgod_detinate" w="1600" h="100" fw="100" fh="100">effects/bomb_darkgod_detinate.png</animSheet>
+<anim name="bomb_darkgod_detinate">
+	<sheet>bomb_darkgod_detinate</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="explosion_darkgod" w="576" h="64" fw="64" fh="64">effects/explosion_darkgod.png</animSheet>
+<anim name="explosion_darkgod">
+	<sheet>explosion_darkgod</sheet>
+	<desc length="9" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="dd_seraph_engi_beam" w="525" h="35" fw="35" fh="35">weapon_bombs/dd_seraph_engi_beam.png</animSheet>
+<anim name="dd_seraph_engi_beam">
+	<sheet>dd_seraph_engi_beam</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="dd_seraph_engi_beam_dissipate" w="1600" h="100" fw="100" fh="100">effects/dd_seraph_engi_beam_dissipate.png</animSheet>
+<anim name="dd_seraph_engi_beam_dissipate">
+	<sheet>dd_seraph_engi_beam_dissipate</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddnightmarish_bolt" w="525" h="35" fw="35" fh="35">weapon_bombs/ddnightmarish_bolt.png</animSheet>
+<anim name="ddnightmarish_bolt">
+	<sheet>ddnightmarish_bolt</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddnightmarish_bolt_dissipate" w="1600" h="100" fw="100" fh="100">effects/ddnightmarish_bolt_dissipate.png</animSheet>
+<anim name="ddnightmarish_bolt_dissipate">
+	<sheet>ddnightmarish_bolt_dissipate</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="laser_darkgod" w="290" h="79" fw="29" fh="79">weapon_laser/laser_darkgod.png</animSheet>
+<weaponAnim name="laser_darkgod">
+	<sheet>laser_darkgod</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="21" y="21"/>
+	<mountPoint x="8" y="49"/>
+</weaponAnim>
+
+<animSheet name="laser_disparity_loot" w="290" h="79" fw="29" fh="79">weapon_laser/laser_disparity_loot.png</animSheet>
+<weaponAnim name="laser_disparity_loot">
+	<sheet>laser_disparity_loot</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="21" y="21"/>
+	<mountPoint x="8" y="49"/>
+</weaponAnim>
+
+<animSheet name="dddivine_duality" w="512" h="67" fw="32" fh="67">weapon_flak/dddivine_duality.png</animSheet>
+<weaponAnim name="dddivine_duality">
+	<sheet>dddivine_duality</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="18" y="21"/>
+	<mountPoint x="4" y="49"/>
+</weaponAnim>
+
+<animSheet name="laser_burst_darkgod" w="60" h="20" fw="60" fh="20">projectiles/laser_burst_darkgod.png</animSheet>
+<anim name="laser_burst_darkgod">
+	<sheet>laser_burst_darkgod</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<animSheet name="laser_burst_dddivine_duality" w="60" h="20" fw="60" fh="20">projectiles/laser_burst_dddivine_duality.png</animSheet>
+<anim name="laser_burst_dddivine_duality">
+	<sheet>laser_burst_dddivine_duality</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<animSheet name="ddradiant_flames_burst" w="80" h="32" fw="80" fh="32">projectiles/ddradiant_flames_burst.png</animSheet>
+<anim name="ddradiant_flames_burst">
+	<sheet>ddradiant_flames_burst</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="debris_large_darkgod" w="96" h="32" fw="32" fh="32">projectiles/debris_large_darkgod.png</animSheet>
+<animSheet name="debris_med_darkgod" w="120" h="24" fw="24" fh="24">projectiles/debris_med_darkgod.png</animSheet>
+<animSheet name="debris_small_darkgod" w="96" h="16" fw="16" fh="16">projectiles/debris_small_darkgod.png</animSheet>
+<anim name="debris_large_darkgod">
+	<sheet>debris_large_darkgod</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="debris_med_darkgod">
+	<sheet>debris_med_darkgod</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="debris_small_darkgod">
+	<sheet>debris_small_darkgod</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="deeponeproj" w="27" h="24" fw="27" fh="24">crewprojectiles/deeponeproj.png</animSheet>
+<anim name="deeponeproj">
+	<sheet>deeponeproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="thescarredproj" w="27" h="24" fw="27" fh="24">crewprojectiles/thescarredproj.png</animSheet>
+<anim name="thescarredproj">
+	<sheet>thescarredproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="infinite_hyperdeath_the_scarred" w="15360" h="720" fw="1280" fh="720">customizeUI/infinite_hyperdeath_the_scarred.png</animSheet>
+<anim name="infinite_hyperdeath_the_scarred">
+	<sheet>infinite_hyperdeath_the_scarred</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>3</time>
+</anim>
+
+<animSheet name="artillery_disparity_lifetaker" w="1760" h="269" fw="88" fh="269">artillery_player/artillery_disparity_lifetaker.png</animSheet>
+<weaponAnim name="artillery_disparity_lifetaker">
+	<sheet>artillery_disparity_lifetaker</sheet>
+	<desc length="20" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="43" y="5"/>
+	<mountPoint x="0" y="0"/>
+</weaponAnim>
+
+<animSheet name="artillery_disparity_lifetaker_determination" w="1760" h="269" fw="88" fh="269">artillery_player/artillery_disparity_lifetaker_determination.png</animSheet>
+<weaponAnim name="artillery_disparity_lifetaker_determination">
+	<sheet>artillery_disparity_lifetaker_determination</sheet>
+	<desc length="20" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="43" y="5"/>
+	<mountPoint x="0" y="0"/>
+</weaponAnim>
+
+<animSheet name="ddradiant_flames_burning" w="352" h="32" fw="32" fh="32">people/ddradiant_flames_burning.png</animSheet>
+<anim name="ddradiant_flames_burning">
+	<sheet>ddradiant_flames_burning</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddradiant_flames_healing" w="352" h="32" fw="32" fh="32">people/ddradiant_flames_healing.png</animSheet>
+<anim name="ddradiant_flames_healing">
+	<sheet>ddradiant_flames_healing</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhorror_floor_3x4" w="105" h="140" fw="105" fh="140">effects/ddhorror_floor_3x4.png</animSheet>
+<anim name="ddhorror_floor_3x4">
+	<sheet>ddhorror_floor_3x4</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddhorror_floor_1x2" w="35" h="70" fw="35" fh="70">effects/ddhorror_floor_1x2.png</animSheet>
+<anim name="ddhorror_floor_1x2">
+	<sheet>ddhorror_floor_1x2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddhorror_floor_2x2" w="70" h="70" fw="70" fh="70">effects/ddhorror_floor_2x2.png</animSheet>
+<anim name="ddhorror_floor_2x2">
+	<sheet>ddhorror_floor_2x2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddhorror_floor_2x1" w="70" h="35" fw="70" fh="35">effects/ddhorror_floor_2x1.png</animSheet>
+<anim name="ddhorror_floor_2x1">
+	<sheet>ddhorror_floor_2x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddnightmare_erosion" w="175" h="35" fw="35" fh="35">effects/ddnightmare_erosion.png</animSheet>
+<anim name="ddnightmare_erosion">
+	<sheet>ddnightmare_erosion</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.2</time>
+</anim>
+
+<animSheet name="deepone" w="315" h="455" fw="35" fh="35">people/deepone_base.png</animSheet>
+<anim name="deepone_clone">
+	<sheet>deepone</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_death_right">
+	<sheet>deepone</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_death_left">
+	<sheet>deepone</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_walk_down">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_walk_right">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_walk_up">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_walk_left">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_shoot_down">
+	<sheet>deepone</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_shoot_right">
+	<sheet>deepone</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_shoot_up">
+	<sheet>deepone</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_shoot_left">
+	<sheet>deepone</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_fire_down">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_fire_right">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_fire_up">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_fire_left">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_repair">
+	<sheet>deepone</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_punch_up">
+	<sheet>deepone</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_punch_down">
+	<sheet>deepone</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="deepone_teleport">
+	<sheet>deepone</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="deepone_type_right">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_type_left">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_type_up">
+	<sheet>deepone</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="deepone_type_down">
+	<sheet>deepone</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>deepone</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="deepone_portrait">
+	<sheet>deepone</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="deeponecultist" w="315" h="455" fw="35" fh="35">people/deeponecultist_base.png</animSheet>
+<anim name="deeponecultist_clone">
+	<sheet>deeponecultist</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_death_right">
+	<sheet>deeponecultist</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_death_left">
+	<sheet>deeponecultist</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_walk_down">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_walk_right">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_walk_up">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_walk_left">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_shoot_down">
+	<sheet>deeponecultist</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_shoot_right">
+	<sheet>deeponecultist</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_shoot_up">
+	<sheet>deeponecultist</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_shoot_left">
+	<sheet>deeponecultist</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_fire_down">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_fire_right">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_fire_up">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_fire_left">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_repair">
+	<sheet>deeponecultist</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_punch_up">
+	<sheet>deeponecultist</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_punch_down">
+	<sheet>deeponecultist</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="deeponecultist_teleport">
+	<sheet>deeponecultist</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="deeponecultist_type_right">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_type_left">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_type_up">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_type_down">
+	<sheet>deeponecultist</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="deeponecultist_portrait">
+	<sheet>deeponecultist</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="spacetear" w="315" h="455" fw="35" fh="35">people/spacetear_base.png</animSheet>
+<anim name="spacetear_clone">
+	<sheet>spacetear</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_death_right">
+	<sheet>spacetear</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_death_left">
+	<sheet>spacetear</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_walk_down">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_walk_right">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_walk_up">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_walk_left">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_shoot_down">
+	<sheet>spacetear</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_shoot_right">
+	<sheet>spacetear</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_shoot_up">
+	<sheet>spacetear</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_shoot_left">
+	<sheet>spacetear</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_fire_down">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_fire_right">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_fire_up">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_fire_left">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_repair">
+	<sheet>spacetear</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_punch_up">
+	<sheet>spacetear</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_punch_down">
+	<sheet>spacetear</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="spacetear_teleport">
+	<sheet>spacetear</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="spacetear_type_right">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_type_left">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_type_up">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_type_down">
+	<sheet>spacetear</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="spacetear_portrait">
+	<sheet>spacetear</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="unique_thescarred" w="315" h="455" fw="35" fh="35">people/unique_thescarred_base.png</animSheet>
+<anim name="unique_thescarred_clone">
+	<sheet>unique_thescarred</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_death_right">
+	<sheet>unique_thescarred</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_death_left">
+	<sheet>unique_thescarred</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_walk_down">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_walk_right">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_walk_up">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_walk_left">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_shoot_down">
+	<sheet>unique_thescarred</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_shoot_right">
+	<sheet>unique_thescarred</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_shoot_up">
+	<sheet>unique_thescarred</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_shoot_left">
+	<sheet>unique_thescarred</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_fire_down">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_fire_right">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_fire_up">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_fire_left">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_repair">
+	<sheet>unique_thescarred</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_punch_up">
+	<sheet>unique_thescarred</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_punch_down">
+	<sheet>unique_thescarred</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarred_teleport">
+	<sheet>unique_thescarred</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="unique_thescarred_type_right">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_type_left">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_type_up">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_type_down">
+	<sheet>unique_thescarred</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarred_portrait">
+	<sheet>unique_thescarred</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="unique_thescarredascended" w="315" h="455" fw="35" fh="35">people/unique_thescarredascended_base.png</animSheet>
+<anim name="unique_thescarredascended_clone">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_death_right">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_death_left">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_walk_down">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_walk_right">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_walk_up">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_walk_left">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_shoot_down">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_shoot_right">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_shoot_up">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_shoot_left">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_fire_down">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_fire_right">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_fire_up">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_fire_left">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_repair">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_punch_up">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_punch_down">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thescarredascended_teleport">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="unique_thescarredascended_type_right">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_type_left">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_type_up">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_type_down">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thescarredascended_portrait">
+	<sheet>unique_thescarredascended</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="blobdeepone" w="315" h="455" fw="35" fh="35">people/blobdeepone_base.png</animSheet>
+<anim name="blobdeepone_clone">
+	<sheet>blobdeepone</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_death_right">
+	<sheet>blobdeepone</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_death_left">
+	<sheet>blobdeepone</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_walk_down">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_walk_right">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_walk_up">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_walk_left">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_shoot_down">
+	<sheet>blobdeepone</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_shoot_right">
+	<sheet>blobdeepone</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_shoot_up">
+	<sheet>blobdeepone</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_shoot_left">
+	<sheet>blobdeepone</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_fire_down">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_fire_right">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_fire_up">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_fire_left">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_repair">
+	<sheet>blobdeepone</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_punch_up">
+	<sheet>blobdeepone</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_punch_down">
+	<sheet>blobdeepone</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="blobdeepone_teleport">
+	<sheet>blobdeepone</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="blobdeepone_type_right">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_type_left">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_type_up">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="blobdeepone_type_down">
+	<sheet>blobdeepone</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>blobdeepone</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="blobdeepone_portrait">
+	<sheet>blobdeepone</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="happyholidays" w="315" h="455" fw="35" fh="35">people/happyholidays_base.png</animSheet>
+<anim name="happyholidays_clone">
+	<sheet>happyholidays</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_death_right">
+	<sheet>happyholidays</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_death_left">
+	<sheet>happyholidays</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_walk_down">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_walk_right">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_walk_up">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_walk_left">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_shoot_down">
+	<sheet>happyholidays</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_shoot_right">
+	<sheet>happyholidays</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_shoot_up">
+	<sheet>happyholidays</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_shoot_left">
+	<sheet>happyholidays</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_fire_down">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_fire_right">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_fire_up">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_fire_left">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_repair">
+	<sheet>happyholidays</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_punch_up">
+	<sheet>happyholidays</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_punch_down">
+	<sheet>happyholidays</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_teleport">
+	<sheet>happyholidays</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="happyholidays_type_right">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_type_left">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_type_up">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_type_down">
+	<sheet>happyholidays</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>happyholidays</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="happyholidays_portrait">
+	<sheet>happyholidays</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="happyholidays_healing" w="315" h="455" fw="35" fh="35">people/happyholidays_healing_base.png</animSheet>
+<anim name="happyholidays_healing_clone">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_death_right">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_death_left">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_walk_down">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_walk_right">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_walk_up">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_walk_left">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_shoot_down">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_shoot_right">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_shoot_up">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_shoot_left">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_fire_down">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_fire_right">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_fire_up">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_fire_left">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_repair">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_punch_up">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_punch_down">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="happyholidays_healing_teleport">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="happyholidays_healing_type_right">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_type_left">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_type_up">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="happyholidays_healing_type_down">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="happyholidays_healing_portrait">
+	<sheet>happyholidays_healing</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="darkgodtendrils" w="315" h="455" fw="35" fh="35">people/darkgodtendrils_base.png</animSheet>
+<anim name="darkgodtendrils_clone">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="7" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_death_right">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_death_left">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_walk_down">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_walk_right">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_walk_up">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_walk_left">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_shoot_down">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_shoot_right">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_shoot_up">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_shoot_left">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_fire_down">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_fire_right">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_fire_up">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_fire_left">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_repair">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_punch_up">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_punch_down">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="darkgodtendrils_teleport">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="darkgodtendrils_type_right">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_type_left">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_type_up">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="darkgodtendrils_type_down">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="darkgodtendrils_portrait">
+	<sheet>darkgodtendrils</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="disparity_engidefault" w="420" h="455" fw="35" fh="35">people/disparity_engidefault_base.png</animSheet>
+<anim name="disparity_engidefault_clone">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_death_right">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_death_left">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_walk_down">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_walk_right">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_walk_up">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_walk_left">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_shoot_down">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_shoot_right">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_shoot_up">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="3" x="9" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_shoot_left">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="3" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_fire_down">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_fire_right">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_fire_up">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_fire_left">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_repair">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="12" x="0" y="7" />
+	<time>1.5</time>
+</anim>
+<anim name="disparity_engidefault_punch_up">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="9" x="2" y="0" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engidefault_punch_down">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engidefault_teleport">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefault_type_right">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_type_left">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_type_up">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_type_down">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefault_portrait">
+	<sheet>disparity_engidefault</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="disparity_engiattack" w="420" h="455" fw="35" fh="35">people/disparity_engiattack_base.png</animSheet>
+<anim name="disparity_engiattack_clone">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_death_right">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_death_left">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_walk_down">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_walk_right">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_walk_up">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_walk_left">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_shoot_down">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_shoot_right">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_shoot_up">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="3" x="9" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_shoot_left">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="3" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_fire_down">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_fire_right">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_fire_up">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_fire_left">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_repair">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="12" x="0" y="7" />
+	<time>1.5</time>
+</anim>
+<anim name="disparity_engiattack_punch_up">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="9" x="2" y="0" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engiattack_punch_down">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engiattack_teleport">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engiattack_type_right">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_type_left">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_type_up">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_type_down">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engiattack_portrait">
+	<sheet>disparity_engiattack</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="disparity_engidefense" w="420" h="455" fw="35" fh="35">people/disparity_engidefense_base.png</animSheet>
+<anim name="disparity_engidefense_clone">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_death_right">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_death_left">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_walk_down">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_walk_right">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_walk_up">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_walk_left">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_shoot_down">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_shoot_right">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_shoot_up">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="3" x="9" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_shoot_left">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="3" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_fire_down">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_fire_right">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_fire_up">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_fire_left">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_repair">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="12" x="0" y="7" />
+	<time>1.5</time>
+</anim>
+<anim name="disparity_engidefense_punch_up">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="9" x="2" y="0" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engidefense_punch_down">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engidefense_teleport">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefense_type_right">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_type_left">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_type_up">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_type_down">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefense_portrait">
+	<sheet>disparity_engidefense</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="disparity_engihazard" w="420" h="455" fw="35" fh="35">people/disparity_engihazard_base.png</animSheet>
+<anim name="disparity_engihazard_clone">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_death_right">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_death_left">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_walk_down">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_walk_right">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_walk_up">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_walk_left">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_shoot_down">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_shoot_right">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_shoot_up">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="3" x="9" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_shoot_left">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="3" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_fire_down">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_fire_right">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_fire_up">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_fire_left">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_repair">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="12" x="0" y="7" />
+	<time>1.5</time>
+</anim>
+<anim name="disparity_engihazard_punch_up">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="9" x="2" y="0" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engihazard_punch_down">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engihazard_teleport">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engihazard_type_right">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_type_left">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_type_up">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_type_down">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engihazard_portrait">
+	<sheet>disparity_engihazard</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="disparity_engispeed" w="420" h="455" fw="35" fh="35">people/disparity_engispeed_base.png</animSheet>
+<anim name="disparity_engispeed_clone">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_death_right">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_death_left">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="9" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_walk_down">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_walk_right">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_walk_up">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_walk_left">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_shoot_down">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_shoot_right">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_shoot_up">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="3" x="9" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_shoot_left">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="3" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_fire_down">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_fire_right">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_fire_up">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_fire_left">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_repair">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="12" x="0" y="7" />
+	<time>1.5</time>
+</anim>
+<anim name="disparity_engispeed_punch_up">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="9" x="2" y="0" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engispeed_punch_down">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="9" x="0" y="6" />
+	<time>1.25</time>
+</anim>
+<anim name="disparity_engispeed_teleport">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engispeed_type_right">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_type_left">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_type_up">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_type_down">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engispeed_portrait">
+	<sheet>disparity_engispeed</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="unique_thehunger" w="840" h="455" fw="35" fh="35">people/unique_thehunger_base.png</animSheet>
+<anim name="unique_thehunger_clone">
+	<sheet>unique_thehunger</sheet>
+	<desc length="6" x="0" y="1" />
+	<time>0.75</time>
+</anim>
+<anim name="unique_thehunger_death_right">
+	<sheet>unique_thehunger</sheet>
+	<desc length="5" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_death_left">
+	<sheet>unique_thehunger</sheet>
+	<desc length="5" x="0" y="2" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_walk_down">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_walk_right">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_walk_up">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_walk_left">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_shoot_down">
+	<sheet>unique_thehunger</sheet>
+	<desc length="8" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_shoot_right">
+	<sheet>unique_thehunger</sheet>
+	<desc length="8" x="8" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_shoot_up">
+	<sheet>unique_thehunger</sheet>
+	<desc length="8" x="6" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_shoot_left">
+	<sheet>unique_thehunger</sheet>
+	<desc length="8" x="16" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_fire_down">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_fire_right">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_fire_up">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_fire_left">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_repair">
+	<sheet>unique_thehunger</sheet>
+	<desc length="6" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="unique_thehunger_punch_up">
+	<sheet>unique_thehunger</sheet>
+	<desc length="12" x="2" y="0" />
+	<time>1.5</time>
+</anim>
+<anim name="unique_thehunger_punch_down">
+	<sheet>unique_thehunger</sheet>
+	<desc length="12" x="0" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="unique_thehunger_teleport">
+	<sheet>unique_thehunger</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="unique_thehunger_type_right">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="unique_thehunger_type_left">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="unique_thehunger_type_up">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="unique_thehunger_type_down">
+	<sheet>unique_thehunger</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>unique_thehunger</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="unique_thehunger_portrait">
+	<sheet>unique_thehunger</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engidefault_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engidefault_overclock.png</animSheet>
+<anim name="disparity_engidefault_overclock">
+	<sheet>disparity_engidefault_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_engispeed_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engispeed_overclock.png</animSheet>
+<anim name="disparity_engispeed_overclock">
+	<sheet>disparity_engispeed_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_engiattack_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engiattack_overclock.png</animSheet>
+<anim name="disparity_engiattack_overclock">
+	<sheet>disparity_engiattack_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_engidefense_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engidefense_overclock.png</animSheet>
+<anim name="disparity_engidefense_overclock">
+	<sheet>disparity_engidefense_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_engihazard_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engihazard_overclock.png</animSheet>
+<anim name="disparity_engihazard_overclock">
+	<sheet>disparity_engihazard_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_engirainbow_overclock" w="352" h="32" fw="32" fh="32">people/disparity_engirainbow_overclock.png</animSheet>
+<anim name="disparity_engirainbow_overclock">
+	<sheet>disparity_engirainbow_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_thehunger_overclock" w="352" h="32" fw="32" fh="32">people/disparity_thehunger_overclock.png</animSheet>
+<anim name="disparity_thehunger_overclock">
+	<sheet>disparity_thehunger_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddnightmare_horrified" w="352" h="32" fw="32" fh="32">people/ddnightmare_horrified.png</animSheet>
+<anim name="ddnightmare_horrified">
+	<sheet>ddnightmare_horrified</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddnightmare_regeneration" w="352" h="32" fw="32" fh="32">people/ddnightmare_regeneration.png</animSheet>
+<anim name="ddnightmare_regeneration">
+	<sheet>ddnightmare_regeneration</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="disparity_broodmother" w="280" h="210" fw="35" fh="35">people/disparity_broodmother_base.png</animSheet>
+<animSheet name="disparity_broodmother_death" w="576" h="64" fw="64" fh="64">effects/explosion_darkgod.png</animSheet>
+<anim name="disparity_broodmother_death_right">
+	<sheet>disparity_broodmother_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_death_left">
+	<sheet>disparity_broodmother_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_walk_down">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_walk_right">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_walk_up">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_walk_left">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_shoot_down">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_shoot_right">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_shoot_up">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_shoot_left">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_power_down">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_power_up">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_broodmother_fly">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="disparity_broodmother_portrait">
+	<sheet>disparity_broodmother</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="disparity_liberator" w="280" h="210" fw="35" fh="35">people/disparity_liberator_base.png</animSheet>
+<animSheet name="disparity_liberator_death" w="576" h="64" fw="64" fh="64">effects/explosion_darkgod.png</animSheet>
+<anim name="disparity_liberator_death_right">
+	<sheet>disparity_liberator_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_death_left">
+	<sheet>disparity_liberator_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_walk_down">
+	<sheet>disparity_liberator</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_walk_right">
+	<sheet>disparity_liberator</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_walk_up">
+	<sheet>disparity_liberator</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_walk_left">
+	<sheet>disparity_liberator</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_shoot_down">
+	<sheet>disparity_liberator</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_shoot_right">
+	<sheet>disparity_liberator</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_shoot_up">
+	<sheet>disparity_liberator</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_shoot_left">
+	<sheet>disparity_liberator</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_power_down">
+	<sheet>disparity_liberator</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_power_up">
+	<sheet>disparity_liberator</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_liberator_fly">
+	<sheet>disparity_liberator</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="disparity_liberator_portrait">
+	<sheet>disparity_liberator</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddseraph_arbiter" w="350" h="210" fw="35" fh="35">people/ddseraph_arbiter_base.png</animSheet>
+<animSheet name="ddseraph_arbiter_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="ddseraph_arbiter_death_right">
+	<sheet>ddseraph_arbiter_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_death_left">
+	<sheet>ddseraph_arbiter_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_walk_down">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_walk_right">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_walk_up">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="3" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_walk_left">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="3" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_shoot_down">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_shoot_right">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="6" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_shoot_up">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_shoot_left">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="3" x="6" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_power_down">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_power_up">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_arbiter_fly">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="1" x="5" y="2"/>
+	<time>1</time>
+</anim>
+<anim name="ddseraph_arbiter_portrait">
+	<sheet>ddseraph_arbiter</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddseraph_engi" w="385" h="455" fw="35" fh="35">people/ddseraph_engi_base.png</animSheet>
+<anim name="ddseraph_engi_clone">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_death_right">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="11" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_death_left">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="11" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_walk_down">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_walk_right">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_walk_up">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_walk_left">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_shoot_down">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_shoot_right">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_shoot_up">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_shoot_left">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="3" x="6" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_fire_down">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_fire_right">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_fire_up">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_fire_left">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_repair">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="8" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_punch_up">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_punch_down">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddseraph_engi_teleport">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddseraph_engi_type_right">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="ddseraph_engi_type_left">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="ddseraph_engi_type_up">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="ddseraph_engi_type_down">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="ddseraph_engi_portrait">
+	<sheet>ddseraph_engi</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engidefault_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engidefault_beacon_base.png</animSheet>
+<anim name="disparity_engidefault_beacon_clone">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_death_right">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_death_left">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_walk_down">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_walk_right">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_walk_up">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_walk_left">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_shoot_down">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_shoot_right">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_shoot_up">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_shoot_left">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_fire_down">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_fire_right">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_fire_up">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_fire_left">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_repair">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_punch_up">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_punch_down">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefault_beacon_teleport">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefault_beacon_type_right">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_type_left">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_type_up">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_type_down">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefault_beacon_portrait">
+	<sheet>disparity_engidefault_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engiattack_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engiattack_beacon_base.png</animSheet>
+<anim name="disparity_engiattack_beacon_clone">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_death_right">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_death_left">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_walk_down">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_walk_right">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_walk_up">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_walk_left">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_shoot_down">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_shoot_right">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_shoot_up">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_shoot_left">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_fire_down">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_fire_right">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_fire_up">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_fire_left">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_repair">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_punch_up">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_punch_down">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engiattack_beacon_teleport">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engiattack_beacon_type_right">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_type_left">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_type_up">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_type_down">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engiattack_beacon_portrait">
+	<sheet>disparity_engiattack_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engidefense_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engidefense_beacon_base.png</animSheet>
+<anim name="disparity_engidefense_beacon_clone">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_death_right">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_death_left">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_walk_down">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_walk_right">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_walk_up">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_walk_left">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_shoot_down">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_shoot_right">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_shoot_up">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_shoot_left">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_fire_down">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_fire_right">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_fire_up">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_fire_left">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_repair">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_punch_up">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_punch_down">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engidefense_beacon_teleport">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engidefense_beacon_type_right">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_type_left">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_type_up">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_type_down">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engidefense_beacon_portrait">
+	<sheet>disparity_engidefense_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engihazard_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engihazard_beacon_base.png</animSheet>
+<anim name="disparity_engihazard_beacon_clone">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_death_right">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_death_left">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_walk_down">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_walk_right">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_walk_up">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_walk_left">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_shoot_down">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_shoot_right">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_shoot_up">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_shoot_left">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_fire_down">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_fire_right">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_fire_up">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_fire_left">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_repair">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_punch_up">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_punch_down">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engihazard_beacon_teleport">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engihazard_beacon_type_right">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_type_left">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_type_up">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_type_down">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engihazard_beacon_portrait">
+	<sheet>disparity_engihazard_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engispeed_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engispeed_beacon_base.png</animSheet>
+<anim name="disparity_engispeed_beacon_clone">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_death_right">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_death_left">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_walk_down">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_walk_right">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_walk_up">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_walk_left">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_shoot_down">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_shoot_right">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_shoot_up">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_shoot_left">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_fire_down">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_fire_right">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_fire_up">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_fire_left">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_repair">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_punch_up">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_punch_down">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engispeed_beacon_teleport">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engispeed_beacon_type_right">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_type_left">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_type_up">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_type_down">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engispeed_beacon_portrait">
+	<sheet>disparity_engispeed_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_engirainbow_beacon" w="315" h="455" fw="35" fh="35">people/disparity_engirainbow_beacon_base.png</animSheet>
+<anim name="disparity_engirainbow_beacon_clone">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_death_right">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_death_left">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_walk_down">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_walk_right">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_walk_up">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_walk_left">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_shoot_down">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_shoot_right">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_shoot_up">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_shoot_left">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_fire_down">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_fire_right">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_fire_up">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_fire_left">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_repair">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_punch_up">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_punch_down">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_teleport">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_type_right">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_type_left">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_type_up">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_type_down">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_engirainbow_beacon_portrait">
+	<sheet>disparity_engirainbow_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="disparity_thehunger_beacon" w="315" h="455" fw="35" fh="35">people/disparity_thehunger_beacon_base.png</animSheet>
+<anim name="disparity_thehunger_beacon_clone">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_death_right">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_death_left">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_walk_down">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_walk_right">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_walk_up">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_walk_left">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_shoot_down">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_shoot_right">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_shoot_up">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_shoot_left">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_fire_down">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_fire_right">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_fire_up">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_fire_left">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_repair">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_punch_up">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_punch_down">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="disparity_thehunger_beacon_teleport">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="disparity_thehunger_beacon_type_right">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_type_left">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_type_up">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_type_down">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="disparity_thehunger_beacon_portrait">
+	<sheet>disparity_thehunger_beacon</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="enlightened_horror" w="455" h="455" fw="35" fh="35">people/enlightened_horror_base.png</animSheet>
+<anim name="enlightened_horror_clone">
+	<sheet>enlightened_horror</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_death_right">
+	<sheet>enlightened_horror</sheet>
+	<desc length="10" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_death_left">
+	<sheet>enlightened_horror</sheet>
+	<desc length="10" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_walk_down">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_walk_right">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_walk_up">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_walk_left">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_shoot_down">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_shoot_right">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_shoot_up">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="8" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_shoot_left">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_fire_down">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_fire_right">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_fire_up">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_fire_left">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_repair">
+	<sheet>enlightened_horror</sheet>
+	<desc length="8" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_punch_up">
+	<sheet>enlightened_horror</sheet>
+	<desc length="8" x="4" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_punch_down">
+	<sheet>enlightened_horror</sheet>
+	<desc length="8" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="enlightened_horror_teleport">
+	<sheet>enlightened_horror</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="enlightened_horror_type_right">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_type_left">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_type_up">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_type_down">
+	<sheet>enlightened_horror</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="enlightened_horror_portrait">
+	<sheet>enlightened_horror</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_crawler" w="315" h="455" fw="35" fh="35">people/nightmarish_crawler_base.png</animSheet>
+<anim name="nightmarish_crawler_clone">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_death_right">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_death_left">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="6"  x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_walk_down">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_walk_right">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_walk_up">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_walk_left">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_shoot_down">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_shoot_right">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_shoot_up">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_shoot_left">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_fire_down">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_fire_right">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_fire_up">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_fire_left">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_repair">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_punch_up">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_punch_down">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_crawler_teleport">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_crawler_type_right">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_type_left">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_type_up">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_type_down">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_crawler_portrait">
+	<sheet>nightmarish_crawler</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_terror" w="385" h="455" fw="35" fh="35">people/nightmarish_terror_base.png</animSheet>
+<anim name="nightmarish_terror_clone">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_death_right">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_death_left">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_walk_down">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_walk_right">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_walk_up">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_walk_left">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_shoot_down">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_shoot_right">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_shoot_up">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_shoot_left">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_fire_down">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_fire_right">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_fire_up">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_fire_left">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_repair">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_punch_up">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="8" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_punch_down">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="8" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_terror_teleport">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_terror_type_right">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_type_left">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_type_up">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_type_down">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_terror_portrait">
+	<sheet>nightmarish_terror</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_priest" w="315" h="455" fw="35" fh="35">people/nightmarish_priest_base.png</animSheet>
+<anim name="nightmarish_priest_clone">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_death_right">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_death_left">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_walk_down">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_walk_right">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_walk_up">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_walk_left">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_shoot_down">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_shoot_right">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_shoot_up">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_shoot_left">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_fire_down">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_fire_right">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_fire_up">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_fire_left">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_repair">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_punch_up">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_punch_down">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_priest_teleport">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_priest_type_right">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_type_left">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_type_up">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_type_down">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_priest_portrait">
+	<sheet>nightmarish_priest</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_greaterpriest" w="315" h="455" fw="35" fh="35">people/nightmarish_greaterpriest_base.png</animSheet>
+<anim name="nightmarish_greaterpriest_clone">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_death_right">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_death_left">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_walk_down">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_walk_right">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_walk_up">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_walk_left">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_shoot_down">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_shoot_right">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_shoot_up">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_shoot_left">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_fire_down">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_fire_right">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_fire_up">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_fire_left">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_repair">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_punch_up">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_punch_down">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greaterpriest_teleport">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_greaterpriest_type_right">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_type_left">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_type_up">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_type_down">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greaterpriest_portrait">
+	<sheet>nightmarish_greaterpriest</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_stalker" w="315" h="455" fw="35" fh="35">people/nightmarish_stalker_base.png</animSheet>
+<anim name="nightmarish_stalker_clone">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_death_right">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_death_left">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_walk_down">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_walk_right">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_walk_up">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_walk_left">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_shoot_down">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_shoot_right">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_shoot_up">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_shoot_left">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_fire_down">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_fire_right">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_fire_up">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_fire_left">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_repair">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_punch_up">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_punch_down">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_stalker_teleport">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_stalker_type_right">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_type_left">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_type_up">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_type_down">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_stalker_portrait">
+	<sheet>nightmarish_stalker</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_engi" w="315" h="455" fw="35" fh="35">people/nightmarish_engi_base.png</animSheet>
+<anim name="nightmarish_engi_clone">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_death_right">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_death_left">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_walk_down">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_walk_right">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_walk_up">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_walk_left">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_shoot_down">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_shoot_right">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_shoot_up">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_shoot_left">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_fire_down">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_fire_right">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_fire_up">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_fire_left">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_repair">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_punch_up">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_punch_down">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_engi_teleport">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_engi_type_right">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_type_left">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_type_up">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_type_down">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_engi_portrait">
+	<sheet>nightmarish_engi</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_greatercrawler" w="315" h="455" fw="35" fh="35">people/nightmarish_greatercrawler_base.png</animSheet>
+<anim name="nightmarish_greatercrawler_clone">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_death_right">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_death_left">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_walk_down">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_walk_right">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_walk_up">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_walk_left">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_shoot_down">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_shoot_right">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_shoot_up">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_shoot_left">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_fire_down">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_fire_right">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_fire_up">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_fire_left">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_repair">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_punch_up">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_punch_down">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatercrawler_teleport">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_greatercrawler_type_right">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_type_left">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_type_up">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_type_down">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatercrawler_portrait">
+	<sheet>nightmarish_greatercrawler</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_mass" w="315" h="455" fw="35" fh="35">people/nightmarish_mass_base.png</animSheet>
+<anim name="nightmarish_mass_clone">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_death_right">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_death_left">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_walk_down">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_walk_right">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_walk_up">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_walk_left">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_shoot_down">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_shoot_right">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_shoot_up">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_shoot_left">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_fire_down">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_fire_right">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_fire_up">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_fire_left">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_repair">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_punch_up">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_punch_down">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_mass_teleport">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_mass_type_right">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_type_left">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_type_up">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_type_down">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_mass_portrait">
+	<sheet>nightmarish_mass</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_greatermass" w="315" h="455" fw="35" fh="35">people/nightmarish_greatermass_base.png</animSheet>
+<anim name="nightmarish_greatermass_clone">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_death_right">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_death_left">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_walk_down">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_walk_right">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_walk_up">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_walk_left">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_shoot_down">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_shoot_right">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_shoot_up">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_shoot_left">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_fire_down">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_fire_right">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_fire_up">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_fire_left">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_repair">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_punch_up">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_punch_down">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermass_teleport">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_greatermass_type_right">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_type_left">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_type_up">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_type_down">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermass_portrait">
+	<sheet>nightmarish_greatermass</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_martyr" w="315" h="455" fw="35" fh="35">people/nightmarish_martyr_base.png</animSheet>
+<anim name="nightmarish_martyr_clone">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_death_right">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_death_left">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_walk_down">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_walk_right">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_walk_up">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_walk_left">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_shoot_down">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_shoot_right">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_shoot_up">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_shoot_left">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_fire_down">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_fire_right">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_fire_up">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_fire_left">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_repair">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_punch_up">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_punch_down">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_martyr_teleport">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_martyr_type_right">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_type_left">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_type_up">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_type_down">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_martyr_portrait">
+	<sheet>nightmarish_martyr</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="nightmarish_greatermartyr" w="315" h="455" fw="35" fh="35">people/nightmarish_greatermartyr_base.png</animSheet>
+<anim name="nightmarish_greatermartyr_clone">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_death_right">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_death_left">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_walk_down">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_walk_right">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_walk_up">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_walk_left">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_shoot_down">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_shoot_right">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_shoot_up">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_shoot_left">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_fire_down">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_fire_right">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_fire_up">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_fire_left">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_repair">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_punch_up">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_punch_down">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="nightmarish_greatermartyr_teleport">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="nightmarish_greatermartyr_type_right">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_type_left">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_type_up">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_type_down">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="nightmarish_greatermartyr_portrait">
+	<sheet>nightmarish_greatermartyr</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddnightmare_rift" w="315" h="455" fw="35" fh="35">people/ddnightmare_rift_base.png</animSheet>
+<anim name="ddnightmare_rift_clone">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_death_right">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_death_left">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_walk_down">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_walk_right">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_walk_up">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_walk_left">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_shoot_down">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_shoot_right">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_shoot_up">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_shoot_left">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_fire_down">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_fire_right">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_fire_up">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_fire_left">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_repair">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_punch_up">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_punch_down">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddnightmare_rift_teleport">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddnightmare_rift_type_right">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_type_left">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_type_up">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_type_down">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddnightmare_rift_portrait">
+	<sheet>ddnightmare_rift</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>

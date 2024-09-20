@@ -1,0 +1,1538 @@
+<mod:findName type="blueprintList" name="LIST_CREW_UNIQUE">
+	<mod-append:name>unique_thescarred</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CHECKCREW_MORPH_TRANSFORM">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CHECKCREW_MORPH">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
+	<mod-append:name>CLONE_CANNON_DEEPONE</mod-append:name>
+	<mod-append:name>CLONE_CANNON_THESCARRED</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>SHOTGUN_DARKGOD</mod-append:name>
+	<mod-append:name>LASER_DARKGOD</mod-append:name>
+	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_DRONES_ALL">
+	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DRONE_MINISHROUD</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
+	<mod-append:name>CLONE_CANNON_DEEPONE</mod-append:name>
+	<mod-append:name>CLONE_CANNON_THESCARRED</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>SHOTGUN_DARKGOD</mod-append:name>
+	<mod-append:name>LASER_DARKGOD</mod-append:name>
+	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_DRONES_ALL_CRAPBUCKET">
+	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DRONE_MINISHROUD</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
+	<mod-append:name>deepone</mod-append:name>
+	<mod-append:name>deeponecultist</mod-append:name>
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_UNIQUE_CRAPBUCKET">
+	<mod-append:name>unique_thescarred</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_BOMBS">
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_BOMBS_CREWDAMAGE">
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_ION">
+	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_BEAMS_ALL">
+	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
+	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NODAMAGE">
+	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_CRYSTAL">
+	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING">
+	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING_DAMAGE">
+	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ENGI">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_engi_enemy</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>unique_thehunger_enemy</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_HARMONY">
+	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_engi_enemy</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_VARIANT_SEPARATIST">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>unique_thehunger_enemy</mod-append:name>
+</mod:findName>
+
+<blueprintList name="LIST_CREW_DISPARITY">
+	<name>disparity_engidefault</name>
+	<name>disparity_engispeed</name>
+	<name>disparity_engiattack</name>
+	<name>disparity_engidefense</name>
+	<name>disparity_engihazard</name>
+	<name>disparity_engihazard_enemynotransform</name>
+	<name>unique_thehunger</name>
+	<name>unique_thehunger_enemy</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_CREW_DISPARITY_ELITE">
+	<name>disparity_engidefault</name>
+	<name>disparity_engispeed</name>
+	<name>disparity_engiattack</name>
+	<name>disparity_engidefense</name>
+	<name>disparity_engihazard</name>
+	<name>disparity_engihazard_enemynotransform</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_MORPH_DEEPONE">
+	<name>deepone</name>
+	<name>deeponecultist</name>
+	<name>unique_thescarred</name>
+</blueprintList>
+
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH_ENGI">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>unique_thehunger_enemy</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_JUMPSPACE_EQUIPMENT">
+	<mod-append:name>DARKGOD_CURSED_BOOK</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
+	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+</mod:findName>
+
+<blueprintList name="GIFTLIST_DARKGOD_WEAPONS">
+	<name>SHOTGUN_DARKGOD</name>
+	<name>LASER_DARKGOD</name>
+	<name>BOMB_DARKGOD</name>
+</blueprintList>
+
+<blueprintList name="GIFTLIST_DARKGOD_DRONES">
+	<name>DRONE_MINISHROUD</name>
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDDARKEST_GAZE">
+	<name>DARKEST_GAZE_TIER1</name>
+	<name>DARKEST_GAZE_TIER2</name>
+	<name>DARKEST_GAZE_TIER3</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DEEPONES">
+	<name>deepone</name>
+	<name>deeponecultist</name>
+	<name>deeponecultist_enemy</name>
+	<name>unique_thescarred</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_HAPPYHOLIDAYS">
+	<name>happyholidays</name>
+	<name>happyholidays_healing</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DEEPONES">
+	<name>DEEPONE_CARRIER</name>
+	<name>DEEP_ONE_FIGHTER</name>
+	<name>DEEP_ONE_SCOUT</name>
+	<name>DEEP_ONE_DESTROYER</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_ENLIGHTENED">
+	<name>DEEPONE_CARRIER_CULTIST</name>
+	<name>DEEP_ONE_FIGHTER_CULTIST</name>
+	<name>DEEP_ONE_SCOUT_CULTIST</name>
+	<name>DEEP_ONE_DESTROYER_CULTIST</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DISPARITY_NORMAL">
+	<name>DISPARITY_ENGI_ASSAULT</name>
+	<name>DISPARITY_ENGI_OUTRIDER</name>
+	<name>DISPARITY_ENGI_RIGGER</name>
+	<name>DISPARITY_ENGI_SCOUT</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DISPARITY_NO2">
+	<name>DISPARITY_ENGI_ASSAULT_NO2</name>
+	<name>DISPARITY_ENGI_OUTRIDER_NO2</name>
+	<name>DISPARITY_ENGI_RIGGER_NO2</name>
+	<name>DISPARITY_ENGI_SCOUT_NO2</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DISPARITY_MIXED">
+	<name>DISPARITY_ENGI_ASSAULT</name>
+	<name>DISPARITY_ENGI_OUTRIDER</name>
+	<name>DISPARITY_ENGI_RIGGER</name>
+	<name>DISPARITY_ENGI_SCOUT</name>
+	<name>DISPARITY_ENGI_ASSAULT_NO2</name>
+	<name>DISPARITY_ENGI_OUTRIDER_NO2</name>
+	<name>DISPARITY_ENGI_RIGGER_NO2</name>
+	<name>DISPARITY_ENGI_SCOUT_NO2</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_DEEPONES">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>DEEPONE_JELLYFISH</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_DEEPONES_CULTIST">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>DEEPONE_JELLYFISH</name>
+	<name>SHOTGUN_DARKGOD</name>
+	<name>LASER_DARKGOD</name>
+	<name>BOMB_DARKGOD</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+<blueprintList name="SHOP_DEEPONE_ITEM_WEAPONS">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>DEEPONE_JELLYFISH</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+<blueprintList name="SHOP_DISPARITY_ITEM_DRONES"> 
+	<name>BATTLETOG_DEFEND</name>
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DRONE_MINISHROUD</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DISPARITY"> 
+	<name>REPAIR</name>
+	<name>BATTLETOG_DEFEND</name>
+	<name>BATTLETOG_BOARDER</name>
+	<name>BATTLETOG2_DEFEND</name>
+	<name>BATTLETOG2_BOARDER</name>
+	<name>BOARDER_ION</name>
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
+	<name>DRONE_MINISHROUD</name>
+</blueprintList>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ELITE_RHYME">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_UNIQUE">
+	<mod-append:name>unique_thescarred</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ELITE">
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+</mod:findName>
+
+<blueprintList name="JUDGELIST_ROCK_DEEPONE_GEAR">
+	<name>DEEPONE_JELLYFISH</name>
+	<name>DEEPONE_JELLYFISH_ELITE</name>
+	<name>TWILIGHT_INEXORABLE</name>
+	<name>SHOTGUN_DARKGOD</name>
+	<name>LASER_DARKGOD</name>
+	<name>BOMB_DARKGOD</name>
+	<name>DEEPONE_LIGHTS</name>
+	<name>DEEPONE_LIGHTS_LOCKED</name>
+	<name>DREAD_LIGHTS</name>
+	<name>DREAD_LIGHTS_LOCKED</name>
+</blueprintList>
+
+<blueprintList name="JUDGELIST_ROCK_DISPARITY_GEAR">
+	<name>DISPARITY_LIBERATORTOG_DEFEND</name>
+	<name>DISPARITY_LIBERATORTOG_BOARDER</name>
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
+	<name>DRONE_MINISHROUD</name>
+	<name>ARTILLERY_DISPARITY_LIFETAKER</name>
+	<name>LASER_DISPARITY_LOOT</name>
+	<name>DISPARITY_CRYSTAL_ARMOR</name>
+	<name>DISPARITY_CRYSTAL_ARMOR_LOCKED</name>
+</blueprintList>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_RAREELITE">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_SELITE">
+	<mod-append:name>ddseraph_engi</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ROCK_TRANSPORT_LOOT">
+	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ELITE">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ELITE_FIRE">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_PARAGON_UNIQUE">
+	<mod-append:name>unique_thescarred</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
+	<mod-append:name>unique_thescarred</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>deeponecultist</mod-append:name>
+	<mod-append:name>deepone</mod-append:name>
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
+	<mod-append:name>happyholidays</mod-append:name>
+	<mod-append:name>happyholidays_healing</mod-append:name>
+</mod:findName>
+
+<blueprintList name="LIST_DDNIGHTMARES">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+	<name>nightmarish_greaterpriest</name>
+	<name>nightmarish_stalker</name>
+	<name>nightmarish_engi</name>
+	<name>nightmarish_greatercrawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_greatermartyr</name>
+</blueprintList>
+
+<blueprintList name="LIST_ENLIGHTENED_HORRORS">
+	<name>enlightened_horror</name>
+	<name>enlightened_horror_enemy</name>
+	<name>enlightened_horror_a</name>
+	<name>enlightened_horror_b</name>
+	<name>enlightened_horror_c</name>
+	<name>enlightened_horror_ad</name>
+	<name>enlightened_horror_ae</name>
+	<name>enlightened_horror_af</name>
+	<name>enlightened_horror_ag</name>
+	<name>enlightened_horror_bd</name>
+	<name>enlightened_horror_be</name>
+	<name>enlightened_horror_bf</name>
+	<name>enlightened_horror_bg</name>
+	<name>enlightened_horror_cd</name>
+	<name>enlightened_horror_ce</name>
+	<name>enlightened_horror_cf</name>
+	<name>enlightened_horror_cg</name>
+	<name>enlightened_horror_adj</name>
+	<name>enlightened_horror_aej</name>
+	<name>enlightened_horror_afj</name>
+	<name>enlightened_horror_agj</name>
+	<name>enlightened_horror_bdj</name>
+	<name>enlightened_horror_bej</name>
+	<name>enlightened_horror_bfj</name>
+	<name>enlightened_horror_bgj</name>
+	<name>enlightened_horror_cdj</name>
+	<name>enlightened_horror_cej</name>
+	<name>enlightened_horror_cfj</name>
+	<name>enlightened_horror_cgj</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDRIFTS">
+	<name>ddnightmare_rift</name>
+	<name>ddnightmare_rift_enemy</name>
+	<name>ddnightmare_rift_a</name>
+	<name>ddnightmare_rift_b</name>
+	<name>ddnightmare_rift_c</name>
+	<name>ddnightmare_rift_ad</name>
+	<name>ddnightmare_rift_ae</name>
+	<name>ddnightmare_rift_af</name>
+	<name>ddnightmare_rift_ag</name>
+	<name>ddnightmare_rift_bd</name>
+	<name>ddnightmare_rift_be</name>
+	<name>ddnightmare_rift_bf</name>
+	<name>ddnightmare_rift_bg</name>
+	<name>ddnightmare_rift_cd</name>
+	<name>ddnightmare_rift_ce</name>
+	<name>ddnightmare_rift_cf</name>
+	<name>ddnightmare_rift_cg</name>
+	<name>ddnightmare_rift_adj</name>
+	<name>ddnightmare_rift_aej</name>
+	<name>ddnightmare_rift_afj</name>
+	<name>ddnightmare_rift_agj</name>
+	<name>ddnightmare_rift_bdj</name>
+	<name>ddnightmare_rift_bej</name>
+	<name>ddnightmare_rift_bfj</name>
+	<name>ddnightmare_rift_bgj</name>
+	<name>ddnightmare_rift_cdj</name>
+	<name>ddnightmare_rift_cej</name>
+	<name>ddnightmare_rift_cfj</name>
+	<name>ddnightmare_rift_cgj</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDNOFEAR">
+	<name>cognitive_automated</name>
+	<name>cognitive_advanced_automated</name>
+	<name>human_technician_drone</name>
+	<name>zoltan_osmian_hologram</name>
+	<name>hologram</name>
+	<name>snowman</name>
+	<name>enlightened_horror</name>
+	<name>enlightened_horror_a</name>
+	<name>enlightened_horror_b</name>
+	<name>enlightened_horror_c</name>
+	<name>enlightened_horror_ad</name>
+	<name>enlightened_horror_ae</name>
+	<name>enlightened_horror_af</name>
+	<name>enlightened_horror_ag</name>
+	<name>enlightened_horror_bd</name>
+	<name>enlightened_horror_be</name>
+	<name>enlightened_horror_bf</name>
+	<name>enlightened_horror_bg</name>
+	<name>enlightened_horror_cd</name>
+	<name>enlightened_horror_ce</name>
+	<name>enlightened_horror_cf</name>
+	<name>enlightened_horror_cg</name>
+	<name>enlightened_horror_adj</name>
+	<name>enlightened_horror_aej</name>
+	<name>enlightened_horror_afj</name>
+	<name>enlightened_horror_agj</name>
+	<name>enlightened_horror_bdj</name>
+	<name>enlightened_horror_bej</name>
+	<name>enlightened_horror_bfj</name>
+	<name>enlightened_horror_bgj</name>
+	<name>enlightened_horror_cdj</name>
+	<name>enlightened_horror_cej</name>
+	<name>enlightened_horror_cfj</name>
+	<name>enlightened_horror_cgj</name>
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+	<name>nightmarish_greaterpriest</name>
+	<name>nightmarish_stalker</name>
+	<name>nightmarish_engi</name>
+	<name>nightmarish_greatercrawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>ddnightmare_rift</name>
+	<name>ddnightmare_rift_a</name>
+	<name>ddnightmare_rift_b</name>
+	<name>ddnightmare_rift_c</name>
+	<name>ddnightmare_rift_ad</name>
+	<name>ddnightmare_rift_ae</name>
+	<name>ddnightmare_rift_af</name>
+	<name>ddnightmare_rift_ag</name>
+	<name>ddnightmare_rift_bd</name>
+	<name>ddnightmare_rift_be</name>
+	<name>ddnightmare_rift_bf</name>
+	<name>ddnightmare_rift_bg</name>
+	<name>ddnightmare_rift_cd</name>
+	<name>ddnightmare_rift_ce</name>
+	<name>ddnightmare_rift_cf</name>
+	<name>ddnightmare_rift_cg</name>
+	<name>ddnightmare_rift_adj</name>
+	<name>ddnightmare_rift_aej</name>
+	<name>ddnightmare_rift_afj</name>
+	<name>ddnightmare_rift_agj</name>
+	<name>ddnightmare_rift_bdj</name>
+	<name>ddnightmare_rift_bej</name>
+	<name>ddnightmare_rift_bfj</name>
+	<name>ddnightmare_rift_bgj</name>
+	<name>ddnightmare_rift_cdj</name>
+	<name>ddnightmare_rift_cej</name>
+	<name>ddnightmare_rift_cfj</name>
+	<name>ddnightmare_rift_cgj</name>
+	<name>spacetear</name>
+	<name>darkgodtendrils</name>
+	<name>unique_thescarredascended</name>
+	<name>disparity_engidefault_beacon</name>
+	<name>disparity_engispeed_beacon</name>
+	<name>disparity_engiattack_beacon</name>
+	<name>disparity_engidefense_beacon</name>
+	<name>disparity_engihazard_beacon</name>
+	<name>disparity_engirainbow_beacon</name>
+	<name>disparity_thehunger_beacon</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_A">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_C">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_E">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_F">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_AE">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_AF">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CE">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CF">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_ADJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_AEJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_AFJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_AGJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_priest</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_BDJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_BEJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_BFJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_BGJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CDJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CEJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_greatermass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CFJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_greatermartyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_NIGHTMARES_DDBOLT_CGJ">
+	<name>nightmarish_crawler</name>
+	<name>nightmarish_mass</name>
+	<name>nightmarish_martyr</name>
+	<name>nightmarish_terror</name>
+	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<shipBlueprint name="DEEPONE_CARRIER" layout="deep_one_carrier" img="deep_one_carrier">
+	<class>Deep One Carrier</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="8" start="false" />
+		<doors power="1" max="2" room="3" start="true" />
+		<engines power="1" max="1" room="6" start="true" />
+		<medbay power="1" max="3" room="5" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="1" max="3" room="9" start="true" />
+		<weapons power="2" max="7" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="3" max="8" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_FIGHTER" layout="deep_one_fighter" img="deep_one_fighter">
+	<class>Deep One Fighter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="10" start="false" />
+		<doors power="1" max="2" room="5" start="true" />
+		<engines power="1" max="2" room="3" start="true" />
+		<hacking power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="2" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="3" count="0" />
+	<health amount="8" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="7" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_SCOUT" layout="deep_one_scout" img="deep_one_scout">
+	<class>Deep One Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="1" max="3" room="3" start="true" />
+		<medbay power="1" max="2" room="4" start="false" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="3" room="5" start="true" />
+		<weapons power="2" max="7" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="6" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_DESTROYER" layout="deep_one_destroyer" img="deep_one_destroyer">
+	<class>Deep One Destroyer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="false" />
+		<drones power="2" max="4" room="9" start="true" />
+		<engines power="1" max="2" room="1" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="10" room="11" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="4" count="2" load="LIST_DRONES_ENEMY_COMBAT" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="6" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_FIGHTER_CULTIST" layout="deep_one_fighter_cultist" img="deep_one_fighter_cultist">
+	<class>Enlightened Fighter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="0" start="true" />
+		<drones power="1" max="2" room="7" start="true" />
+		<engines power="1" max="2" room="2" start="true" />
+		<medbay power="1" max="3" room="5" start="true" />
+		<mind power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="1" max="3" room="8" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="2" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="3" count="2">
+		<drone name="BATTLETOG_DEFEND" />
+		<drone name="BATTLETOG_DEFEND" />
+	</droneList>
+	<health amount="10" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="6" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_SCOUT_CULTIST" layout="deep_one_scout_cultist" img="deep_one_scout_cultist">
+	<class>Enlightened Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="7" start="false" />
+		<doors power="2" max="2" room="3" start="true" />
+		<engines power="1" max="3" room="2" start="true" />
+		<medbay power="1" max="3" room="4" start="true" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<weapons power="2" max="8" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="3" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="5" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DEEPONE_CARRIER_CULTIST" layout="deep_one_carrier_cultist" img="deep_one_carrier_cultist">
+	<class>Enlightened Carrier</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="4" start="true" />
+		<drones power="2" max="6" room="7" start="true" />
+		<engines power="1" max="1" room="10" start="true" />
+		<hacking power="1" max="3" room="5" start="false" />
+		<medbay power="1" max="3" room="1" start="true" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="9" start="true" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="4" count="2">
+		<drone name="BATTLETOG_DEFEND" />
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="11" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="6" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_DESTROYER_CULTIST" layout="deep_one_destroyer_cultist" img="deep_one_destroyer_cultist">
+	<class>Enlightened Destroyer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="7" start="true" />
+		<engines power="1" max="2" room="0" start="true" />
+		<medbay power="1" max="3" room="1" start="true" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="3" room="2" start="true" />
+		<weapons power="2" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="7" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_TRANSPORT_CULTIST" layout="deep_one_transport_cultist" img="deep_one_transport_cultist">
+	<class>Enlightened Transport</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="11" start="false" />
+		<doors power="2" max="3" room="10" start="true" />
+		<drones power="1" max="4" room="8" start="false" />
+		<engines power="1" max="2" room="3" start="true" />
+		<medbay power="1" max="3" room="9" start="true" />
+		<mind power="1" max="2" room="12" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="2" count="2">
+		<drone name="DEFENSE_1_ENEMY" />
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="12" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DEEP_ONE_FIGHTER_MORPH" layout="deep_one_fighter_morph" img="deep_one_fighter_morph">
+	<class>Enlightened? Fighter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="8" start="true" />
+		<engines power="1" max="2" room="3" start="true" />
+		<mind power="1" max="2" room="2" start="false" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="1" start="true" />
+		<weapons power="2" max="9" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_MORPH" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="7" class="blobdeepone" />
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DREADNOUGHT_OF_DARKNESS" layout="dreadnought_of_darkness" img="dreadnought_of_darkness">
+	<class>Dreadnought of Darkness</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="3" room="3" start="false" />
+		<doors power="2" max="3" room="10" start="true" />
+		<drones power="7" max="10" room="1" start="true" />
+		<engines power="2" max="2" room="2" start="true" />
+		<hacking power="1" max="3" room="5" start="false" />
+		<medbay power="2" max="3" room="9" start="true" />
+		<mind power="1" max="3" room="6" start="false" />
+		<oxygen power="2" max="3" room="8" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="7" start="true" />
+		<weapons power="7" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="9" count="2">
+		<weapon name="TWILIGHT_INEXORABLE" />
+		<weapon name="BOMB_DARKGOD" />
+	</weaponList>
+	<droneList drones="7" count="4">
+		<drone name="REPAIR" />
+		<drone name="BATTLETOG2_DEFEND" />
+		<drone name="BATTLETOG2_DEFEND" />
+		<drone name="BATTLETOG2_DEFEND" />
+	</droneList>
+	<health amount="16" />
+	<maxPower amount="35" />
+	<crewCount amount="7" max="12" class="deeponecultist_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+<shipBlueprint name="DREADNOUGHT_OF_HOPESANDDREAMS" layout="dreadnought_of_hopesanddreams" img="dreadnought_of_hopesanddreams">
+	<class>Determination, Given Form</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="3" room="8" start="true" />
+		<drones power="8" max="8" room="13" start="true" />
+		<engines power="4" max="4" room="11" start="true" />
+		<hacking power="2" max="3" room="9" start="true" />
+		<medbay power="2" max="3" room="12" start="true" />
+		<mind power="1" max="3" room="10" start="true" />
+		<oxygen power="2" max="3" room="7" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<teleporter power="2" max="3" room="6" start="true" />
+		<weapons power="10" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="TWILIGHT_INEXORABLE" />
+		<weapon name="TWILIGHT_INEXORABLE" />
+	</weaponList>
+	<droneList drones="11" count="4">
+		<drone name="ENERGY_1_AMP2_ENEMY" />
+		<drone name="ENERGY_1_AMP2_ENEMY" />
+		<drone name="REPAIR" />
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="23" />
+	<maxPower amount="45" />
+	<crewCount amount="1" max="1" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+<shipBlueprint name="DARKONE_SHADOW_TENDRILS" layout="darkone_shadow_tendrils" img="darkone_shadow_tendrils">
+	<class>The Darkness</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList />
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="0" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_ASSAULT" layout="disparity_engi_assault" img="disparity_engi_assault">
+	<class>Disparity Assault</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="11" start="false" />
+		<drones power="3" max="6" room="9" start="true" />
+		<engines power="1" max="2" room="6" start="true" />
+		<hacking power="1" max="1" room="0" start="false" />
+		<medbay power="1" max="2" room="3" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="2" room="4" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="1" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="5" count="3" load="LIST_DRONES_DISPARITY" />
+	<health amount="11" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="6" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_ASSAULT_NO2" layout="disparity_engi_assault" img="disparity_engi_assault">
+	<class>Disparity Assault</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="11" start="false" />
+		<drones power="3" max="6" room="9" start="true" />
+		<engines power="1" max="2" room="6" start="true" />
+		<hacking power="1" max="1" room="0" start="false" />
+		<clonebay power="1" max="2" room="3" start="true" />
+		<pilot power="1" max="2" room="4" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<mind power="1" max="2" room="1" start="false" />
+		<weapons power="1" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="5" count="3" load="LIST_DRONES_DISPARITY" />
+	<health amount="11" />
+	<maxPower amount="8" />
+	<crewCount amount="1" max="6" class="engi_separatist_nano" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_OUTRIDER" layout="disparity_engi_outrider" img="disparity_engi_outrider">
+	<class>Disparity Outrider</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="5" start="false" />
+		<doors power="1" max="2" room="7" start="false" />
+		<drones power="2" max="5" room="9" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<medbay power="1" max="2" room="8" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="1" max="5" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_OUTRIDER_NO2" layout="disparity_engi_outrider" img="disparity_engi_outrider">
+	<class>Disparity Outrider</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="5" start="false" />
+		<doors power="1" max="2" room="7" start="false" />
+		<drones power="2" max="5" room="9" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<clonebay power="1" max="2" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
+	<health amount="10" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="5" class="engi_separatist_nano" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_RIGGER" layout="disparity_engi_rigger" img="disparity_engi_rigger">
+	<class>Disparity Rigger</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="8" start="false" />
+		<drones power="4" max="9" room="1" start="true" />
+		<engines power="1" max="2" room="10" start="true" />
+		<hacking power="1" max="2" room="2" start="false" />
+		<medbay power="1" max="2" room="9" start="true" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="1" max="4" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="8" count="4" load="LIST_DRONES_DISPARITY" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="2" max="4" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_RIGGER_NO2" layout="disparity_engi_rigger" img="disparity_engi_rigger">
+	<class>Disparity Rigger</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="8" start="false" />
+		<drones power="4" max="9" room="1" start="true" />
+		<engines power="1" max="2" room="10" start="true" />
+		<hacking power="1" max="2" room="2" start="false" />
+		<clonebay power="1" max="2" room="9" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="1" max="4" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="8" count="4" load="LIST_DRONES_DISPARITY" />
+	<health amount="10" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="4" class="engi_separatist_nano" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_SCOUT" layout="disparity_engi_scout" img="disparity_engi_scout">
+	<class>Disparity Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="3" room="8" start="true" />
+		<drones power="1" max="4" room="4" start="false" />
+		<engines power="2" max="3" room="0" start="true" />
+		<medbay power="1" max="2" room="1" start="false" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="3" room="7" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="2" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="3" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="3" count="2" load="LIST_DRONES_DISPARITY" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="3" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_CLOAK_FIRE" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_SCOUT_NO2" layout="disparity_engi_scout" img="disparity_engi_scout">
+	<class>Disparity Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="3" room="8" start="true" />
+		<drones power="1" max="4" room="4" start="false" />
+		<engines power="2" max="3" room="0" start="true" />
+		<clonebay power="1" max="2" room="1" start="false" />
+		<pilot power="1" max="3" room="7" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="2" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="3" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="3" count="2" load="LIST_DRONES_DISPARITY" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="1" max="3" class="engi_separatist_nano" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_CLOAK_FIRE" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_TRANSPORT" layout="disparity_engi_transport" img="disparity_engi_transport">
+	<class>Disparity Transport</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="11" start="false" />
+		<drones power="2" max="8" room="10" start="true" />
+		<engines power="1" max="2" room="5" start="true" />
+		<hacking power="1" max="2" room="3" start="false" />
+		<medbay power="1" max="3" room="2" start="true" />
+		<oxygen power="1" max="2" room="9" start="true" />
+		<pilot power="1" max="3" room="8" start="true" />
+		<shields power="2" max="10" room="0" start="true" />
+		<weapons power="1" max="6" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="4" count="3">
+		<drone name="DEFENSE_1_ENEMY" />
+		<drone name="DISPARITY_BROODMOTHERTOG_DEFEND" />
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="12" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="5" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_BEHEMOTH" layout="disparity_engi_behemoth" img="disparity_engi_behemoth">
+	<class>Disparity Behemoth</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="3" max="3" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER" />
+		<clonebay power="1" max="2" room="1" start="true" />
+		<doors power="2" max="3" room="14" start="true" />
+		<drones power="8" max="10" room="9" start="true" />
+		<engines power="2" max="2" room="8" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="1" room="2" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="1" room="15" start="true" />
+		<weapons power="7" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="11" count="4">
+		<weapon name="ION_BIO" />
+		<weapon name="ION_BIO" />
+		<weapon name="BOMB_BIO" />
+		<weapon name="ENERGY_2" />
+	</weaponList>
+	<droneList drones="6" count="2">
+		<drone name="DISPARITY_LIBERATORTOG_BOARDER" />
+		<drone name="DRONE_MINISHROUD" />
+	</droneList>
+	<health amount="16" />
+	<maxPower amount="35" />
+	<crewCount amount="2" max="6" class="engi_separatist" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+</shipBlueprint>
+<shipBlueprint name="DISPARITY_ENGI_BEHEMOTHDETERMINATION" layout="disparity_engi_behemothdetermination" img="disparity_engi_behemothdetermination">
+	<class>Determination, Made Manifest</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="3" max="4" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER_DETERMINATION" />
+		<doors power="2" max="3" room="10" start="true" />
+		<drones power="10" max="10" room="8" start="true" />
+		<engines power="3" max="3" room="4" start="true" />
+		<medbay power="2" max="3" room="9" start="true" />
+		<oxygen power="2" max="3" room="5" start="true" />
+		<pilot power="2" max="3" room="1" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="3" room="15" start="true" />
+		<weapons power="6" max="6" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="11" count="4">
+		<weapon name="BOMB_FIRE_ENEMY" />
+		<weapon name="BOMB_FIRE_ENEMY" />
+		<weapon name="CRYSTAL_BURST_1_RED_ENEMY" />
+		<weapon name="CRYSTAL_BURST_1_RED_ENEMY" />
+	</weaponList>
+	<droneList drones="15" count="2">
+		<drone name="DISPARITY_LIBERATORTOG_BOARDER" />
+		<drone name="DDSERAPH_ARBITERTOG_BOARDER" />
+	</droneList>
+	<health amount="23" />
+	<maxPower amount="45" />
+	<crewCount amount="1" max="1" class="disparity_engidefault" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPH_RADIANT_FLAMES" />
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSERAPH_ENGI_JUDICATOR" layout="ddseraph_engi_judicator" img="ddseraph_engi_judicator">
+	<class>Seraphim Judicator</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="3" max="3" room="9" start="true" />
+		<drones power="10" max="10" room="2" start="true" />
+		<engines power="2" max="4" room="1" start="true" />
+		<medbay power="1" max="2" room="11" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="4" max="6" room="3" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="ION_FIRE" />
+		<weapon name="ION_FIRE" />
+	</weaponList>
+	<droneList drones="4" count="3">
+		<drone name="DDSERAPH_ARBITERTOG_BOARDER" />
+		<drone name="COMBAT_1_LASER" />
+		<drone name="BATTLETOG2_DEFEND" />
+	</droneList>
+	<health amount="11" />
+	<maxPower amount="35" />
+	<crewCount amount="1" max="1" class="ddseraph_engi_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPH_RADIANT_FLAMES" />
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="KYR_AND_LILITH_SHIP" layout="kyr_and_lilith_ship" img="kyr_and_lilith_ship">
+	<class>Civilian Ship</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="2" max="2" room="3" start="true" />
+		<medbay power="2" max="2" room="2" start="true" />
+		<oxygen power="2" max="2" room="5" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="2" max="2" room="4" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="6" />
+	<maxPower amount="10" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="KYR_AND_LILITH_HORROR" layout="kyr_and_lilith_horror" img="kyr_and_lilith_horror">
+	<class>???</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="2" max="2" room="1" start="true" />
+		<medbay power="2" max="2" room="2" start="true" />
+		<oxygen power="2" max="2" room="4" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="1" max="1" room="3" start="true" />
+		<teleporter power="2" max="2" room="5" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="55" />
+	<maxPower amount="10" />
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>

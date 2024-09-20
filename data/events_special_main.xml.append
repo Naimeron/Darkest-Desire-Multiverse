@@ -1,0 +1,7 @@
+<mod:findName type="event" name="BOON_SELECT">
+    <mod:findLike type="loadEventList">
+        <mod-append:event name="BOON_SELECT_DEEPONE" req="prof_z_boon_deepone"/>
+        <mod-append:event name="BOON_SELECT_DEEPONE_EQUIPMENT" req="prof_r_boon_deepone_gear"/>
+		<mod-append:event name="BOON_SELECT_DISPARITY_EQUIPMENT" req="prof_r_boon_disparity_gear"/>
+    </mod:findLike>
+</mod:findName>

@@ -1,0 +1,108 @@
+<ship name="SHIP_ENLIGHTENED_TRANSPORT_LOOT" auto_blueprint="DEEP_ONE_TRANSPORT_CULTIST">
+	<escape timer="30" min="999" max="999" >
+		<text>They look like they don't want to fight. They are trying to escape.</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="TRANSPORT_DESTROYED"/>
+	<deadCrew load="TRANSPORT_CAPTURE_ENLIGHTENED"/>
+</ship>
+
+<event name="TRANSPORT_ENLIGHTENED_LOOT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_transport" global="true" req="LOOT_COMPASS">
+		<color r="255" g="186" b="0" a="1"/>
+		<unvisitedTooltip>An unvisited location.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
+	</beaconType>
+	<text>The voice speaks, "There's... a transport ship at this beacon. Strange ships, these... They're the only ones we've constructed since..." It trails off, before continuing, "...Regardless, I can part the veil... should you desire its loot. Just... don't destroy it."</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Let me see them. Their loot is as good as mine!</text>
+		<event>
+			<text>The darkness recedes, and the ship appears. You prepare to secure their cargo by force.</text>
+			<variable name="the_scarred_judgment" op="add" val="-1"/>
+			<ship load="SHIP_ENLIGHTENED_TRANSPORT_LOOT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+        <text>Don't part it, I'm not here for them.</text>
+        <event>
+            <text>"Merciful? How... unexpected." The voice goes quiet, and you're left alone with the darkness.</text>
+			<variable name="the_scarred_judgment" op="add" val="1"/>
+			<choice hidden="true">
+				<text>Check the storage.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice hidden="true">
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+        </event>
+    </choice>
+</event>
+
+<event name="TRANSPORT_CAPTURE_ENLIGHTENED" unique="true">
+	<text>The crew is dead, leaving you with the ship. Its cargo is yours for the taking. Aboard is the special tech you expected, which you bring back to your ship.</text>
+	<autoReward level="MED">standard</autoReward>
+	<achievement>ACH_TRANS_ENLIGHTENED</achievement>
+	<weapon name="DEEPONE_JELLYFISH_ELITE"/>
+	<variable name="ach_trans_enlightened" op="set" val="1"/>
+</event>
+
+<ship name="SHIP_DISPARITY_TRANSPORT_LOOT" auto_blueprint="DISPARITY_ENGI_TRANSPORT">
+	<escape timer="30" min="999" max="999" >
+		<text>They look like they don't want to fight. They are trying to escape.</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="TRANSPORT_DESTROYED"/>
+	<deadCrew load="TRANSPORT_CAPTURE_DISPARITY"/>
+</ship>
+
+<event name="TRANSPORT_DISPARITY_LOOT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_transport" global="true" req="LOOT_COMPASS">
+		<color r="255" g="186" b="0" a="1"/>
+		<unvisitedTooltip>An unvisited location.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
+	</beaconType>
+	<text>This beacon hosts a Disparity transport. It's safe to bet the ship is most likely carrying some special tech. If you can kill its crew, their cargo will be yours.</text>
+	<ship load="SHIP_DISPARITY_TRANSPORT_LOOT" hostile="false"/>
+	<choice>
+		<text>Demand the surrender of their goods.</text>
+		<event>
+			<text>You prepare to secure their cargo by force.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+        <text>Avoid the ship.</text>
+        <event>
+            <text>They stay outside your weapons range, and eventually jump away.</text>
+			<choice hidden="true">
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice hidden="true">
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+        </event>
+    </choice>
+</event>
+<event name="TRANSPORT_CAPTURE_DISPARITY" unique="true">
+	<text>The crew is dead, leaving you with the ship. Its cargo is yours for the taking. Aboard is the special tech you expected, which you bring back to your ship.</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<achievement>ACH_TRANS_DISPARITY</achievement>
+	<weapon name="LASER_DISPARITY_LOOT"/>
+	<variable name="ach_trans_disparity" op="set" val="1"/>
+</event>

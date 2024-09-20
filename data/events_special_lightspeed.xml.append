@@ -1,0 +1,925 @@
+<mod:findName type="event" name="ATLAS_MENU">
+	<mod-append:choice hidden="true" req="SEC SECTOR_DEEPONE" blue="false">
+		<text>Proceed to the Deep One sector.</text>
+		<event load="DEEPONE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
+		<text>Proceed to the Harmony(?) sector.</text>
+		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+	<mod-append:choice hidden="true" req="SEC SECTOR_DEEPONE" blue="false">
+		<text>Proceed to the Deep One sector.</text>
+		<event load="DEEPONE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
+		<text>Proceed to the Harmony(?) sector.</text>
+		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="ENTER_DEEPONE">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_DISPARITY_UNIQUE">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="DEEPONE_WARP">
+	<text>Name: Deep One Territory
+	Type: Neutral
+	Unique: False
+	Dominant Faction: The Deep Ones
+	Rebel Threat Level: Medium-Low
+	
+	Not much is known about the secretive Deep Ones, they simply one day arose from Old Earth's oceans within a fleet of spaceships and took to the stars; their existence prior allegedly unknown to the humans who dwelled on the surface. They're a hot-headed race that often suffers when it comes to communicating to outsiders, but there's no bad blood between them and the Federation. The same can't be said about the Theocracy, however, who finds the Deep One's religious beliefs to be heinously blasphemous.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DEEPONE"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
+
+<event name="DISPARITY_WARP">
+	<text>Name: S-62 [DISPARITY ASSAULT IN PROGRESS, REQUEST: ASSISTANCE.]
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Harmony(?)
+	Rebel Threat Level: Low
+	
+	While this sector belongs to the Harmony, you can't help but notice the request for assistance within the Atlas entry. You don't recognize the name of their assailants, but any enemy of the Harmony is likely an enemy of the Federation. Best be on your guard.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DISPARITY"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
+
+<mod:findName type="event" name="REROUTE_MENU">
+	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
+		<text>Proceed to the unknown sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
+	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
+		<text>Proceed to the unknown sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED_BOSS"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="ATLAS_EQUIPMENT">
+	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK">
+		<text>Perform a ritual using the Otherworldly Tome.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL">
+	<text>You ready yourself at the Otherworldly Tome as an infinite amount of stars fly past you just outside.</text>
+	<choice hidden="true">
+		<text>Prepare a sacrifice.</text>
+		<event>
+			<text>Do you desire to sacrifice a human life, or your scrap?</text>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>Sacrifice a human life.</text>
+				<event>
+					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_HUMANSACRIFICE"/>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been stripped from their body.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Prepare a ritual.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false">
+				<text>Sacrifice a heap of scrap.</text>
+				<event>
+					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SCRAPSACRIFICE"/>
+					<item_modify>
+						<item type="scrap" min="-100" max="-100"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Prepare a ritual.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Nevermind, cancel the ritual.</text>
+				<event>
+					<text>You're having second thoughts. Surely this isn't worth it... you leave the room, and the Otherworldly Tome.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Perform the Ritual of the Hunt.</text>
+		<event>
+			<text>Candles lit, you kneel in front of the altar upon which the Otherworldly Tome lies. Reciting a prayer, you offer your devotion to the Dark God and make your desire known...</text>
+			<choice hidden="true">
+				<text>I desire... tribute.</text>
+				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_THEHUNTPERFORMED"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind, there will be no ritual.</text>
+		<event>
+			<text>You're having second thoughts. Surely this isn't worth it... you leave the room, and the Otherworldly Tome.</text>
+			<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="LOAD_ATLAS"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+	
+<textList name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_HUMANSACRIFICE">
+	<text>The human claws and kicks as they're dragged into the room, but their struggling proves to be for naught as a chilling wind blows through the room, extinguishing the candles and thrusting the room into darkness. Wind, in a ship... a scream breaks out, but is silenced just as quickly. The candles reignite themselves, and the human is dead. The sacrifice has been made.</text>
+	<text>Accepting of their demise, the human joins you in prayer in front of the Otherworldy Tome. Perhaps they're praying for forgiveness, or mercy... or, merely their own demise. Regardless, it's the last of the options that comes to pass as their eyes roll over and the breath leaves their body; the human is dead. The sacrifice has been made.</text>
+	<text>"Wait! Please, don't do this! I can be valuable, I swear! PLEASE!" Their pleas fall on deaf ears as a dagger is thrust into their chest, and they slump over; the human is dead. The sacrifice has been made.</text>
+	<text>Eyes darting around the room, the human speaks to you, "Are you people insane? Does the Federation know about this... this... cult?!" No, you reckon they don't... and it will stay that way as long as you can help it. Everything you do here, you do for this reality. At least, that's what you tell yourself as you plunge a dagger into the human's heart... they're dead. The sacrifice has been made.</text>
+	<text>This one doesn't put up much of a fight, but they don't necessarily make it easy, either... they're just sort of limp as you drag them into the room. Maybe they're already dead... oh well. If they weren't, they definitely are after being stabbed in the chest. The sacrifice has been made.</text>
+	<text>Forcing the human into the room, the walls appear to rumble. Understanding the cue, you leave the sacrifice in the room alone, and lock the door. The screaming doesn't last long. Entering, gore cakes the floor, the walls, everything really... the human is dead. The sacrifice has been made.</text>
+</textList>
+
+<textList name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SCRAPSACRIFICE">
+	<text>You place an immense amount of garbage in front of the altar atop which the Otherworldly Tome sits. The room shakes, and, understanding the cue, you leave the room. Grinding and screeching can be heard for a moment, yet it is the silence that follows that you find to be truly piercing. Reentering the room, the scrap is gone. The sacrifice has been made.</text>
+	<text>Though you're not entirely sure why the Dark God dabbles in scrap, you do as the Otherworldy Tome instructs and prepare a large pile of it. The room goes cold, and the candles flicker, but then it... twists. You feel warm... embraced. You open your eyes and find that the scrap is gone. The sacrifice has been made.</text>
+	<text>Part of you wonders what the Dark God even does with this junk... the other part of you just wants this to be over, though. With the scrap vaguely piled, you perform a few prayers and feel as the energy in the room shifts. You blink, and the scrap vanishes. The sacrifice has been made.</text>
+</textList>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY">
+	<text>With the sacrifice made, you're ready to perform a ritual... though you know there is little time to hesitate as your destination approaches.</text>
+	<choice hidden="true">
+		<text>Perform a basic ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an inky black. In it, the procedures for several basic rituals are described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Dark Weaponry.</text>
+				<event>
+					<text>You make a cut in the palm of your hand, and, holding it out towards the Otherworldly Tome, recite a prayer. Your blood heats up as it pools in your hand and, eventually, comes to a boil... the pain is agonizing. Mercifully, it stops, and your hand has somehow healed where it should be cut and burnt. You must now simply recite your desire...</text>
+					<choice hidden="true">
+						<text>I desire... weaponry.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DARKWEAPONRYPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Shadow Drones.</text>
+				<event>
+					<text>With chalk, you trace a strange arrangement of lines and hemispheres, as described by the Otherworldly Tome, upon the floor. The chalk feels warm to the touch as you finish... now, you must make your desire heard.</text>
+					<choice hidden="true">
+						<text>I desire... drones.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SHADOWDRONESPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Occult Recruitment.</text>
+				<event>
+					<text>The Otherworldly Tome reads that you must meditate and conjure a picture in your head... thus, you sit down in the middle of the room, legs crossed, and raise your hands to your chest in prayer. Ready to meditate, you think on potential recruits... several faces come to you, but the specifics don't matter. You must focus on your desire...</text>
+					<choice hidden="true">
+						<text>I desire... recruits.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_OCCULTRECRUITMENTPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of True Devotion.</text>
+				<event>
+					<text>Per the ritual's demands, you brandish a knife upward... and plunge it into your chest. The pain is searing, unbearable, but it quickly fades into a sort of... soothing warmth. You feel as the knife melts in your hand, and watch as it is absorbed into your very being. The wound closes, and you know that you must realize your desire...</text>
+					<choice hidden="true">
+						<text>I desire... devotion.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_TRUEDEVOTIONPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DD_ASCENSIONRITUALSCOMPLETEDCHECKANDBEGINNING">
+		<text>(Lilith) Perform an ascension ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text described in a crimson red. In it, the procedures for Enlightened rituals and incantations of ascension are described. It's explained that only one incantation in each group can be performed, and they must be performed in the order of the Horde, Greater Summoning and then Power.</text>
+			<choice hidden="true" req="dd_incantationsofthehordecompleted" lvl="0" max_lvl="0" blue="false">
+				<text>Perform one of the Incantations of the Horde.</text>
+				<event>
+					<text>There are a few incantations described. Which one do you desire?</text>
+					<choice hidden="true">
+						<text>The Incantation of Lesser Nightmare Priests.</text>
+						<event>
+							<text>You have Lilith follow you into the room, and prepare the incantation. She shrinks slightly, likely recalling the result of the last ritual she partook in...</text>
+							<choice hidden="true">
+								<text>It's alright, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofthehordecompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_a</transformRace>
+									<hiddenAug>INCANTATION_OF_LESSERNIGHTMAREPRIESTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Nightmare Engi.</text>
+						<event>
+							<text>You have Lilith follow you into the room, and prepare the incantation. She shrinks slightly, likely recalling the result of the last ritual she partook in...</text>
+							<choice hidden="true">
+								<text>It's alright, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofthehordecompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_b</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Nightmare Stalkers.</text>
+						<event>
+							<text>You have Lilith follow you into the room, and prepare the incantation. She shrinks slightly, likely recalling the result of the last ritual she partook in...</text>
+							<choice hidden="true">
+								<text>It's alright, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofthehordecompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_c</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DD_INCANTATIONSOFTHEHORDE_PERFORMEDCHECK" blue="false">
+				<text>Perform one of the Incantations of Greater Summoning.</text>
+				<event>
+					<text>There are a few incantations described. Which one do you desire?</text>
+					<choice hidden="true">
+						<text>The Incantation of Greater Nightmare Crawlers.</text>
+						<event>
+							<text>Once more, Lilith follows you and sits beside the Otherworldly Tome. She seems like she's grown more content with the situation.</text>
+							<choice hidden="true" req="enlightened_horror_a" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_ad</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_b" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bd</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_c" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cd</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Greater Nightmare Masses.</text>
+						<event>
+							<text>Once more, Lilith follows you and sits beside the Otherworldly Tome. She seems like she's grown more content with the situation.</text>
+							<choice hidden="true" req="enlightened_horror_a" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_ae</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMASSES_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_b" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_be</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMASSES_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_c" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_ce</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMASSES_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Greater Nightmare Martyrs.</text>
+						<event>
+							<text>Once more, Lilith follows you and sits beside the Otherworldly Tome. She seems like she's grown more content with the situation.</text>
+							<choice hidden="true" req="enlightened_horror_a" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_af</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMARTYRS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_b" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bf</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMARTYRS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_c" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cf</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERNIGHTMAREMARTYRS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Greater Nightmare Priests.</text>
+						<event>
+							<text>Once more, Lilith follows you and sits beside the Otherworldly Tome. She seems like she's grown more content with the situation.</text>
+							<choice hidden="true" req="enlightened_horror_a" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_ag</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_b" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bg</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_c" blue="false">
+								<text>You're doing great, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cg</transformRace>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DD_INCANTATIONSOFGREATERSUMMONING_PERFORMEDCHECK" blue="false">
+				<text>Perform one of the Incantations of Power.</text>
+				<event>
+					<text>There are a few incantations described. Which one do you desire?</text>
+					<choice hidden="true">
+						<text>The Incantation of Rampaging Horror.</text>
+						<event>
+							<text>For the final time, you and Lilith prepare to perform a ritual beside the Otherworldly Tome. She's been much more confident lately, which would unnerve you if not for your unwavering faith in her.</text>
+							<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<hiddenAug>INCANTATION_OF_RAMPAGINGHORROR</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Horrific Rifts.</text>
+						<event>
+							<text>For the final time, you and Lilith prepare to perform a ritual beside the Otherworldly Tome. She's been much more confident lately, which would unnerve you if not for your unwavering faith in her.</text>
+							<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<hiddenAug>INCANTATION_OF_HORRIFICRIFTS</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The Incantation of Greater Bolts.</text>
+						<event>
+							<text>For the final time, you and Lilith prepare to perform a ritual beside the Otherworldly Tome. She's been much more confident lately, which would unnerve you if not for your unwavering faith in her.</text>
+							<choice hidden="true" req="enlightened_horror_ad" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_adj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_ae" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_aej</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_af" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_afj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_ag" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_agj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_bd" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bdj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_be" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bej</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_bf" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bfj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_bg" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_bgj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_cd" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cdj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_ce" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cej</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_cf" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cfj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="enlightened_horror_cg" blue="false">
+								<text>This is it, Lilith. Finish the incantation.</text>
+								<event>
+									<text>You make your desire known to the Dark God, who bestills additional power unto Lilith. Her form glows a bright red, reminiscent of the crimson text within the Otherworldly Tome, and a deafening sound breaks out as you're pushed onto your knees... looking up, Lilith's glow has faded, and it appears the ritual has been completed.</text>
+									<variable name="dd_incantationsofpowercompleted" op="set" val="1"/>
+									<transformRace class="LIST_ENLIGHTENED_HORRORS">enlightened_horror_cgj</transformRace>
+									<hiddenAug>INCANTATION_OF_GREATERBOLTS_DEBUFF</hiddenAug>
+									<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="LOAD_ATLAS"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DD_CRYSTALHUNTSCOMPLETEDCHECKANDBEGINNING">
+		<text>(Disparity Crew) Perform a crystal-locating ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a vibrant purple. In it, the procedures for locating the fabled Disparity Crystals are described.</text>
+			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_POTENCY" lvl="0" max_lvl="0" blue="false">
+				<text>Perform a ritual to locate the Crystal of Potency.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFPOTENCYPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_HANDINESS" lvl="0" max_lvl="0" blue="false">
+				<text>Perform a ritual to locate the Crystal of Handiness.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFHANDINESSPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_RAINBOWS" lvl="0" max_lvl="0" blue="false">
+				<text>Perform a ritual to locate the Crystal of Rainbows.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFRAINBOWSPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_MARTYRDOM" lvl="0" max_lvl="0" blue="false">
+				<text>Perform a ritual to locate the Crystal of Martyrdom.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFMARTYRDOMPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_AURAS" lvl="0" max_lvl="0" blue="false">
+				<text>Perform a ritual to locate the Crystal of Auras.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFAURASPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_crystalhuntcompleted" lvl="5" blue="false">
+				<text>Perform a ritual to locate the Legendary Crystal.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the purple text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_LEGENDARYCRYSTALPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DARKEST_GAZE_TIER1">
+		<text>(Shadowy Glimpse) Perform a ritual to increase your Devotion Level.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a deep maroon. In it, the procedures for proving your devotion to the Dark God are described.</text>
+			<choice hidden="true">
+				<text>Dark One, witness me...</text>
+				<event>
+					<text>Indeed, you begin the ritual and don't feel like you're merely glimpsed at anymore...</text>
+					<remove name="DARKEST_GAZE_TIER1"/>
+					<choice hidden="true">
+						<text>...please, o' Dark One...</text>
+						<event>
+							<text>...no, now the Dark God regards you as something greater.</text>
+							<augment name="DARKEST_GAZE_TIER2"/>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DARKEST_GAZE_TIER2">
+		<text>(Dark Regard) Perform a ritual to increase your Devotion Level.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a deep maroon. In it, the procedures for proving your devotion to the Dark God are described.</text>
+			<choice hidden="true">
+				<text>Dark One, witness me...</text>
+				<event>
+					<text>Indeed, you begin the ritual and don't feel like you're merely regarded anymore...</text>
+					<remove name="DARKEST_GAZE_TIER2"/>
+					<choice hidden="true">
+						<text>...please, o' Dark One...</text>
+						<event>
+							<text>...no, now the Dark God gazes upon you, in all your nightmarish glory.</text>
+							<achievement>ACH_EVENT_DDDARKESTGAZE</achievement>
+							<variable name="ach_event_dddarkestgaze" op="set" val="1"/>
+							<augment name="DARKEST_GAZE_TIER3"/>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Unknown Sector
+	Type: Unknown
+	Dominant Faction: Unknown
+	Rebel Threat Level: Unknown
+	Locations of Interest: Unknown
+	
+	A mysterious sector with no entry in your Atlas, given to you by an unknown entity.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_enlightened" op="set" val="0"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_ENLIGHTENED"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED_BOSS">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Unknown Sector
+	Type: Unknown
+	Dominant Faction: Unknown
+	Rebel Threat Level: Unknown
+	Locations of Interest: Unknown
+	
+	A mysterious sector with no entry in your Atlas, given to you by an unknown entity.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_enlightened" op="set" val="0"/>
+			<variable name="loc_laststand" op="add" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_ENLIGHTENED"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_ENLIGHTENED">
+	<secretSector>SECRET_ENLIGHTENED</secretSector>
+</event>
+
+<mod:findName type="event" name="REROUTE_MENU_HAT">
+	<mod-append:choice hidden="true">
+		<text>Go to the Disparity Assault.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_DISPARITY"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="LIGHTSPEED_SECTOR_WARP_DISPARITY">
+	<text>Name: S-62 [DISPARITY ASSAULT IN PROGRESS, REQUEST: ASSISTANCE.]
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Harmony(?)
+	Rebel Threat Level: Low
+	
+	While this sector belongs to the Harmony, you can't help but notice the request for assistance within the Atlas entry. You don't recognize the name of their assailants, but any enemy of the Harmony is likely an enemy of the Federation. Best be on your guard.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DISPARITY_UNIQUE">SECTOR_ABANDONED</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DISPARITY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>

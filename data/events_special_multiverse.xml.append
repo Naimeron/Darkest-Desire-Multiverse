@@ -1,0 +1,53 @@
+<mod:findName type="event" name="THE_JUDGES_ZOLTAN">
+	<mod-append:choice req="LIST_CREW_DEEPONES" blue="false">
+		<text>Present your Deep One crew.</text>
+		<event>
+			<text>"Odd creatures... of dubious origins. Something about them... disturbs me. Disturbed, impressed... and intrigued. Well done, traveler. Expect... rewards before your next journey."</text>
+			<achievement>ACH_BOON_DEEPONE</achievement>
+			<metaVariable name="prof_z_boon_deepone" op="set" val="1"/>
+			<variable name="ach_boon_deepone" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="THE_JUDGES_ROCKMAN_REAL">
+	<mod-append:choice req="JUDGELIST_ROCK_DEEPONE_GEAR" blue="false">
+		<text>Present Deep One tech.</text>
+		<event>
+			<text>"Oh my... DEEP ONE Tech? Sure. This is tribute, I suppose. These fish-men are a STRANGE people, with even STRANGER technology! I'd LOATHE to face all those GLARING lights in battle, but I DIGRESS. I shall BLESS you with the BLESSING OF DREAD. But have PATIENCE. It is not for now, but for LATER!"</text>
+			<achievement>ACH_BOON_DEEPONE_EQUIPMENT</achievement>
+			<metaVariable name="prof_r_boon_deepone_gear" op="set" val="1"/>
+			<variable name="ach_boon_deepone_equipment" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ROCK_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="THE_JUDGES_ROCKMAN_REAL">
+	<mod-append:choice req="JUDGELIST_ROCK_DISPARITY_GEAR" blue="false">
+		<text>Present Disparity tech.</text>
+		<event>
+			<text>"Oh my... DISPARITY Tech? Sure. This is tribute, I suppose. You can practically SMELL the bloodshed that's been wrought with this tech, and YET... there's a DARKER presence there, too... but I DIGRESS. I shall BLESS you with the BLESSING OF RAVENOUS DARKNESS. But have PATIENCE. It is not for now, but for LATER!"</text>
+			<achievement>ACH_BOON_DISPARITY_EQUIPMENT</achievement>
+			<metaVariable name="prof_r_boon_disparity_gear" op="set" val="1"/>
+			<variable name="ach_boon_disparity_equipment" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ROCK_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="THE_JUDGES_VARIABLE_CLEAR">
+    <mod-append:metaVariable name="prof_z_boon_deepone" op="set" val="0"/>
+    <mod-append:metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
+</mod:findName>

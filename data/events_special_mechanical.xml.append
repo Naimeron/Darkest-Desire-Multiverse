@@ -1,0 +1,243 @@
+<FTL>
+
+<event name="DDSERAPH_ENGI_SUMMON_BEAM">
+	<superBarrage player="true" name="DDSERAPH_ENGI_RADIANT_FLAME_BEAM_STRIKE"/>
+</event>
+
+<event name="DDSERAPH_ENGI_SUMMON_BEAM_ENEMY">
+	<superBarrage name="DDSERAPH_ENGI_RADIANT_FLAME_BEAM_STRIKE"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_ENEMY">
+	<superBarrage name="ENLIGHTENED_HORROR_RIFT_STRIKE_ENEMY"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_A">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_A"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_B">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_B"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_C">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_C"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AD">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AD"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AE">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AE"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AF">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AF"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AG">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AG"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BD">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BD"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BE">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BE"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BF">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BF"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BG">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BG"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CD">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CD"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CE">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CE"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CF">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CF"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CG">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CG"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_ADJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_ADJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AEJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AEJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AFJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AFJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_AGJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_AGJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BDJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BDJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BEJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BEJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BFJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BFJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_BGJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_BGJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CDJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CDJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CEJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CEJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CFJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CFJ"/>
+</event>
+
+<event name="ENLIGHTENED_HORROR_SUMMON_RIFT_CGJ">
+	<superBarrage player="true" name="ENLIGHTENED_HORROR_RIFT_STRIKE_CGJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_ENEMY">
+	<superBarrage name="DDRIFT_SUMMON_BOLT_STRIKE"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_A">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_A"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_B">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_B"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_C">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_C"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AD">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AD"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AE">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AE"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AF">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AF"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AG">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AG"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BD">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BD"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BE">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BE"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BF">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BF"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BG">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BG"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CD">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CD"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CE">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CE"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CF">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CF"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CG">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CG"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_ADJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_ADJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AEJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AEJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AFJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AFJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_AGJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_AGJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BDJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BDJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BEJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BEJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BFJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BFJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_BGJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_BGJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CDJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CDJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CEJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CEJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CFJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CFJ"/>
+</event>
+
+<event name="DDRIFT_SUMMON_BOLT_CGJ">
+	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CGJ"/>
+</event>
+
+</FTL>

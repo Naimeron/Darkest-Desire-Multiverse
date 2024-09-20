@@ -1,0 +1,1921 @@
+<FTL>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_THEHUNTPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_THEHUNT"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DARKWEAPONRYPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_DARKWEAPONRY"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SHADOWDRONESPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_SHADOWDRONES"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_OCCULTRECRUITMENTPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_TRUEDEVOTIONPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_TRUEDEVOTION"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFPOTENCYPERFORMED">
+	<text>...and it morphs into a map, leading to the Disparity Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFHANDINESSPERFORMED">
+	<text>...and it morphs into a map, leading to the Disparity Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFRAINBOWSPERFORMED">
+	<text>...and it morphs into a map, leading to the Disparity Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFMARTYRDOMPERFORMED">
+	<text>...and it morphs into a map, leading to the Disparity Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALOFAURASPERFORMED">
+	<text>...and it morphs into a map, leading to the Disparity Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_LEGENDARYCRYSTALPERFORMED">
+	<text>...and it morphs into a map, leading to the mythical Legendary Crystal. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LEGENDARYCRYSTAL"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
+<eventList name="DDRITUALS_QUESTS_LIST_THEHUNT">
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_SEVENHUMANSOULS"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY">
+	<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_SHADOWDRONES">
+	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT">
+	<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION">
+	<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY">
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY_MUSEUMOFSECRETS"/>
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY_GARDENOFREDEMPTION"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS">
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS_JUNGLEOFSAVAGERY"/>
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS_LAKESOFRAGE"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS">
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS_NIGHTMAREOFNONSENSE"/>
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS_SEAOFSOLITUDE"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM">
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM_PLAINSOFPERPETUITY"/>
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM_GRAVEYARDOFDRAGONS"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS">
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS_REALMOFKNIGHTHOOD"/>
+	<event load="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS_TRENCHESOFSHADOW"/>
+</eventList>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>A Deep One ship appears in your view, and they don't hesitate to get close and dock next to your ship. One of them hails, "The Dark One... has dictated that we deliver you this... gift, of tribute." A band of Deep Ones boards, a human in hand, and throws them to the ground at your feet. Just as quickly, they leave both your ship and the system. The Dark God works in mysterious ways...</text>
+			<crewMember amount="1" class="human"/>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT" auto_blueprint="LIST_SHIPS_UNION_ALL">
+	<triggeredEvent event="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT_MERCY" enemyHull="3" thisFight="true" clearOnJump="true"/>
+	<escape timer="45" min="999" max="999"/>
+	<gotaway>
+		<text>The civilian ship jumps away, and your tribute is lost.</text>
+	</gotaway>
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT_DESTROYEDLOSS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT_DESTROYEDLOSS"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT_MERCY">
+	<text>Ship aflame, they desperately hail, "Okay! Okay, fine, we get it! We're... your property... we'll come aboard, just, please... don't kill us..."</text>
+	<choice hidden="true">
+		<text>That's what I thought. Welcome aboard, tribute.</text>
+		<event>
+			<text>They're sickened by you. Nevertheless, they keep their word and board your ship. First, the pilot...</text>
+			<ship hostile="false"/>
+			<crewMember amount="1" class="human"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and then, their companion.</text>
+					<crewMember amount="1" class="human"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Tribute doesn't get second chances. Kill them.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT_DESTROYEDLOSS">
+	<text>None of the civilians remain alive to take as tribute... a pity.</text>
+</event>
+
+<eventList name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN">
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN_RUNAWAY"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN_SUBMIT"/>
+</eventList>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN_RUNAWAY">
+	<text>The humans scowl, "Your... property? You're a sick freak, aren't you?! We're getting the hell out of here!" They cut communications, and their engines come online... they're trying to escape!</text>
+	<ship hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN_SUBMIT">
+	<text>The humans' faces go pale. Seeing how little chance they have of getting out of here by themselves, they submit and agree to board your ship. First, the pilot...</text>
+	<crewMember amount="1" class="human"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then, their companion.</text>
+			<crewMember amount="1" class="human"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>You notice the approach of a civilian vessel, and they look lost... this must be your tribute. They hail as they notice your ship, "H-hey, do you know where the hell we are? One second, we were just cruising about, surrounded by stars, and the next we were... here..."</text>
+			<ship load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_FIGHT" hostile="false"/>
+			<choice hidden="true">
+				<text>You're my property now.</text>
+				<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS_THREATEN"/>
+			</choice>
+			<choice hidden="true">
+				<text>This is a, uh, restricted area belonging to the Federation.</text>
+				<event>
+					<text>You explain to the civilians that this is an experimental weapons-testing grounds, courtesy of the Federation, and that you'll have to escort them out of here... by way of your ship. The pilot refuses, "Are you kidding me? Do you have any idea how much this ship cost me? I'm not leaving it here just to have to wait three years for the Federation to finally process it and have it returned to me. I'll find my own way out of here." The other civilian accepts, though, and comes aboard... you've got your tribute.</text>
+					<crewMember amount="1" class="human"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT" auto_blueprint="LIST_SHIPS_PIRATE_ALL">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT_DESTROYEDLOSS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT_CAPTUREDWIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT_DESTROYEDLOSS">
+	<text>The pirates are dead, but so is your tribute... a pity.</text>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT_CAPTUREDWIN">
+	<text>With the pirates dead, their slaves are yours to take. Informing them of their new management, you force them to follow you aboard your ship; one...</text>
+	<crewMember amount="1" class="human"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...two...</text>
+			<crewMember amount="1" class="human"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and three. All of your tribute is accounted for, and you're ready to get moving.</text>
+					<crewMember amount="1" class="human"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>Strangely, it's a pirate vessel that comes into view. They're not trying to hide it, either, as they hail, "Hey-hey! You here looking for shit for your Dark Lord, or whatever, too? 'Cause if you want shit, we GOT shit." The pirate pans the camera to face three humans, tied up and gagged. So, this is a slave trader... and they're offering their "wares" to you for almost unbelievably low prices.</text>
+			<ship load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS_FIGHT" hostile="false"/>
+			<choice>
+				<text>Buy a human slave.</text>
+				<event>
+					<text>You give the pirates their pittance of scrap, and they send over a human slave in return. Really? No funny business?</text>
+					<crewMember amount="1" class="human"/>
+					<item_modify>
+						<item type="scrap" min="-12" max="-7"/>
+					</item_modify>
+					<choice>
+						<text>Buy another human slave.</text>
+						<event>
+							<text>Giving the pirates another drop of scrap, they send over another human slave in return. You were really expecting something fishy with these prices...</text>
+							<crewMember amount="1" class="human"/>
+							<item_modify>
+								<item type="scrap" min="-12" max="-7"/>
+							</item_modify>
+							<choice>
+								<text>Buy the last human slave.</text>
+								<event>
+									<text>You offer up one last crumb of scrap to the pirates, and, indeed, they send over one final human slave in return. You overhear them talking, "These zealot guys are insane for business, we've never had such demand! We could probably LOWER our prices and still break even!" So, the Dark God sends a lot of its followers this way... interesting.</text>
+									<crewMember amount="1" class="human"/>
+									<item_modify>
+										<item type="scrap" min="-12" max="-7"/>
+									</item_modify>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>I have enough.</text>
+								<event>
+									<text>You pass on any more slaves. Content with your tribute, you leave the pirates be and prepare to leave the beacon.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I have enough.</text>
+						<event>
+							<text>You pass on any more slaves. Content with your tribute, you leave the pirates be and prepare to leave the beacon.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>You're not here to pay for tribute. Take it by force!</text>
+				<event>
+					<text>The pirates are upset by this more than you'd expect, "Are you kidding me? With THESE prices? Just how greedy can you zealot bastards be?" They cut communications, and their weapons come online! If you intend to take the slaves by force, you'll need to make sure not to destroy the ship.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_SEVENHUMANSOULS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>You find that there's nothing TO investigate... rather, the Dark God is investigating you.</text>
+			<choice hidden="true">
+				<text>Me?</text>
+				<event>
+					<text>Yes, it investigates your PATIENCE...</text>
+					<crewMember amount="1" class="human">Patience</crewMember>
+					<choice hidden="true">
+						<text>What? How'd you...?</text>
+						<event>
+							<text>...your BRAVERY...</text>
+							<crewMember amount="1" class="human">Bravery</crewMember>
+							<choice hidden="true">
+								<text>Well, I'll just...</text>
+								<event>
+									<text>...your INTEGRITY...</text>
+									<crewMember amount="1" class="human">Integrity</crewMember>
+									<choice hidden="true">
+										<text>Wh... where are my choices!?</text>
+										<event>
+											<text>...your PERSEVERANCE...</text>
+											<crewMember amount="1" class="human">Perseverance</crewMember>
+											<choice hidden="true">
+												<text>The humans...? What are they doing?</text>
+												<event>
+													<text>...your KINDNESS...</text>
+													<crewMember amount="1" class="human">Kindness</crewMember>
+													<choice hidden="true">
+														<text>NO!! NO!!!!! YOU CAN'T DO THAT!!!</text>
+														<event>
+															<text>...your JUSTICE...</text>
+															<crewMember amount="1" class="human">Justice</crewMember>
+															<choice hidden="true">
+																<text>YOU'RE SUPPOSED TO OBEY ME!! STOP!!! STOP IT!!!!!</text>
+																<event>
+																	<text>...and, lastly, your DETERMINATION.</text>
+																	<crewMember amount="1" class="human">Determination</crewMember>
+																	<choice hidden="true">
+																		<text>STOOOOPPPP!!!!!</text>
+																		<event>
+																			<text>You wake up on the floor... what just happened? Why are there so many people here all of a sudden? You ask somebody, anybody, for answers, but... nobody came. Still, there are much worse problems than waking up to the unexplained appearance of seven human souls. Content with the tribute you've collected, as mysterious as it is, you prepare to leave the beacon.</text>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<textList name="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT">
+	<text>A blue blur rushes past, and you recognize it to be a Deep One ship... they turn back to face you, weapons ready! It seems the Dark God means to test you... you won't disappoint.</text>
+	<text>You receive a hail from the shadows, "You... are meant to be our test? I thought... this would be harder. We... will make this quick." Seconds later, a Deep One ship appears from the darkness, ready to strike!</text>
+	<text>Everything appears to be quiet... that is, until you notice a blue luminescence from within the darkness... Deep Ones. Having been spotted, they hail, "O' Dark One... witness me! Allow me... to prove myself!" They move to attack!</text>
+</textList>
+
+<ship name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<textList name="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT">
+	<text>The Enlightened are always keen to the intrusion of outsiders within the Dark God's realms of shadow... one of their ships moves in now, intending to make you its prey!</text>
+	<text>Investigating the void, you come across an Enlightened wreck... or, you thought it was a wreck, but then its lights spring to life and it moves in to strike! Prepare for battle!</text>
+	<text>Amidst your investigation, you receive a hail from the void, "Tribute! I hunt... these outsiders for you, Dark One, praise... be to your name!" The Enlightened ship moves in to attack, confident in their ambush, but you're prepared to show them who's hunting who.</text>
+</textList>
+
+<ship name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<textList name="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT">
+	<text>A shimmer in the dark catches your eye... there's a Disparity ship here! Upon your approach, they hail, "The [LIBERATOR] -demands- we: fight." The Disparity Elite turns to its fellow Engi, "With me: [brothers!] For: the [LIBERATOR!]" They cut communications and begin their advance... get ready!</text>
+	<text>From the darkness, a Disparity ship emerges... with its weapons charging! The Dark God must have promised them their own reward should they defeat you here... a brutal God, indeed. Show it you intend to persevere.</text>
+	<text>Bursting from the shadows, a glistening, pink mass makes its appearance... it's the Disparity. They hail, panicked, "To: which -hell- has the [LIBERATOR] taken us? For: what reason do we -spill- our [brothers'] blood? Is: this -truly- what's [righteous?]" The Dark God doesn't answer, but it doesn't matter. You both know what must be done.</text>
+</textList>
+
+<ship name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_DARKWEAPONRY_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<drone name="GIFTLIST_DARKGOD_DRONES"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<drone name="GIFTLIST_DARKGOD_DRONES"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<drone name="GIFTLIST_DARKGOD_DRONES"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE_FIGHT_WIN">
+	<text>With the ship defeated, a red light envelops one of the Deep One corpses... it vanishes, and reappears beside you on your ship. A thunderous crack is heard, and the Deep One's body springs to life! They speak, "O' Dark One... you grant unto me a most... merciful blessing. I will not waste... this second chance." Believing it to be their Dark One's will, the resurrected Deep One insists that they join your crew.</text>
+	<crewMember amount="1" class="deepone"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED_FIGHT_WIN">
+	<text>With the ship defeated, a red light envelops one of the Deep One corpses... it vanishes, and reappears beside you on your ship. A thunderous crack is heard, and the Deep One's body springs to life! They speak, "O' Dark One... you grant unto me a most... merciful blessing. I will not waste... this second chance." Believing it to be their Dark One's will, the resurrected Deep One insists that they join your crew.</text>
+	<crewMember amount="1" class="deepone"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY_FIGHT_WIN">
+	<text>With the ship defeated, a red light envelops one of the Separatist corpses... it vanishes, and reappears beside you on your ship. A thunderous crack is heard, and the Engi's body whirs to life! They speak, "T-t-the: [LIBERATOR] h-has -chosen- me... I w-will not -f-f-fail- you: again." Believing it to be their Liberator's will, the resurrected Engi insists that they join your crew.</text>
+	<crewMember amount="1" class="engi_separatist"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_OCCULTRECRUITMENT_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE_FIGHT_WIN">
+	<text>With the ship defeated, a mote of darkness appears in your hand... it resonates with untold power. To whom shall the gift of devotion to the Dark God be granted?</text>
+	<choice hidden="true" req="deepone">
+		<text>(Deep One) Devote your Deep One to the Dark God.</text>
+		<event>
+			<text>Your Deep One is enveloped in a red light, and... transformed. Where their eyes once sat, only flesh remains, that which is now yellow. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="deepone">deeponecultist</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist">
+		<text>(Engi Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist_nano">
+		<text>(Nano Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist_nano">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nobody is worthy.</text>
+		<event>
+			<text>Indeed, perhaps not. The mote fizzles out into nothing, and you're left desiring more.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED_FIGHT_WIN">
+	<text>With the ship defeated, a mote of darkness appears in your hand... it resonates with untold power. To whom shall the gift of devotion to the Dark God be granted?</text>
+	<choice hidden="true" req="deepone">
+		<text>(Deep One) Devote your Deep One to the Dark God.</text>
+		<event>
+			<text>Your Deep One is enveloped in a red light, and... transformed. Where their eyes once sat, only flesh remains, that which is now yellow. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="deepone">deeponecultist</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist">
+		<text>(Engi Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist_nano">
+		<text>(Nano Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist_nano">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nobody is worthy.</text>
+		<event>
+			<text>Indeed, perhaps not. The mote fizzles out into nothing, and you're left desiring more.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY_FIGHT_WIN">
+	<text>With the ship defeated, a mote of darkness appears in your hand... it resonates with untold power. To whom shall the gift of devotion to the Dark God be granted?</text>
+	<choice hidden="true" req="deepone">
+		<text>(Deep One) Devote your Deep One to the Dark God.</text>
+		<event>
+			<text>Your Deep One is enveloped in a red light, and... transformed. Where their eyes once sat, only flesh remains, that which is now yellow. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="deepone">deeponecultist</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist">
+		<text>(Engi Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true" req="engi_separatist_nano">
+		<text>(Nano Separatist) Devote your Separatist to the Dark God.</text>
+		<event>
+			<text>Your Separatist is enveloped in a red light, and... transformed. From where their arms once sat, nanites now flow, which, now unshackled, freely float around them. Beyond their physicality, newfound power resonates within them...</text>
+			<transformRace class="engi_separatist_nano">disparity_engidefault</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nobody is worthy.</text>
+		<event>
+			<text>Indeed, perhaps not. The mote fizzles out into nothing, and you're left desiring more.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_TRUEDEVOTION_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY_MUSEUMOFSECRETS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Potency is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Axolokl, and you are a Dinosaurkin tasked with the reclamation of a crystal sacred to your people. The crystal is said to lie within the mythical Museum of Secrets, a building constructed and kept by the horrific Bird Demons to the south of your lands. After a long and arduous journey, you have finally arrived at the Museum's entrance.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Enter, with the upmost caution.</text>
+								<event>
+									<text>Should the Bird Demons catch you sneaking around, they will surely give chase; it is crucial that you are not caught. Now inside the Museum, you find yourself surrounded by countless exhibits; odd trinkets, taxidermied corpses of monsters and people alike, detailed catalogues of battles and ages long since past... one such exhibit catches your eye, labeled "DINOSAURKIN."</text>
+									<choice hidden="true">
+										<text>Enter the exhibit.</text>
+										<event>
+											<text>Though you're a seasoned warrior, seeing your brethren taxidermied like this takes its toll on you. Still, you must persevere if you are to return home triumphant. The crystal must be around here somewhere...</text>
+											<choice hidden="true">
+												<text>Keep searching.</text>
+												<event>
+													<text>The exhibit sprawls, impossibly... straight corridors that lead you back to where you started, staircases up that take you down, doors that turn you around... though this place is madness, you know you must stay strong for your people. It is as you think of your loved ones and homeland that you see it... the crystal, atop a golden pedestal!</text>
+													<choice hidden="true">
+														<text>Grab the crystal!</text>
+														<event>
+															<text>As you lift the crystal from its pedestal, an alarm is sounded... the Bird Demons are coming! With haste, you make your way back out of this maze of insanity and approach the Museum's exit. Unfortunately, the Bird Demons lie in wait... they're between you and the only way out.</text>
+															<choice hidden="true">
+																<text>Charge the Bird Demons! For my kin!</text>
+																<event>
+																	<text>With a primal courage, you charge at the feathered fiends. You think of your country awaiting your return, of the loved ones who will cheer for you as you return your peoples' sacred crystal... you're about to collide with the Bird Demons when, out of nowhere...</text>
+																	<choice hidden="true">
+																		<text>When, out of nowhere...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Lanius?! Are these supposed to be the "Bird Demons" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Potency! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_POTENCY</hiddenAug>
+																			<boarders min="3" max="6" class="lanius"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFPOTENCY_GARDENOFREDEMPTION">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Potency is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>You have no name, but you know yourself to be a Defender of Earth, tasked with the reclamation of a rare crystal vital to keeping the planet safe. It's fallen into the hands of one of your mortal enemies, the Hexdroids, and you've infiltrated one of their bases, where it's rumored to be located... the Garden of Redemption. Now is the time to strike.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Begin searching for the crystal.</text>
+								<event>
+									<text>Located on a planet hostile to life, the Garden of Redemption isn't home to just any Hexdroids... but, more specifically, a sect of Hexdroids cast off by their brethren for their obsession with the occult. If the crystal is here, they'll be keeping it somewhere sacred where they can offer prayers in worship... among the Garden's endless foliage, though, you've thus far spotted zero locations of interest.</text>
+									<choice hidden="true">
+										<text>Keep searching.</text>
+										<event>
+											<text>Vines, grass... vines, grass... vines, grass, a grand tree... ah, a grand tree. Perhaps that's something worth checking out?</text>
+											<choice hidden="true">
+												<text>Investigate the grand tree.</text>
+												<event>
+													<text>Scattered around the tree's base lie all sorts of trinkets and baubles. A Hexdroid hand, rusting and withered... a large rifle of sorts, mighty but ruined... then, something particularly glistening catches your eye. That's it! It's the crystal!</text>
+													<choice hidden="true">
+														<text>Grab the crystal!</text>
+														<event>
+															<text>As you lift the crystal from the ground, the earth beneath your feet quakes... the Hexdroids are aware of your intrusion on their sacred grounds. You'll need to make for your ship, quickly!</text>
+															<choice hidden="true">
+																<text>Run for the ship!</text>
+																<event>
+																	<text>You run past the vines and the grass, past it some more, and then past it further... until, finally, your ship is in view! You're about to reach it when a Hexdroid Reinforcement Pod lands mere feet in front of you, knocking you to the ground... the pod opens, and several Hexdroids tower over you as you lie defenseless. Weapons aimed, the Hexdroids each pull the trigger, and...</text>
+																	<choice hidden="true">
+																		<text>They pull the trigger, and...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Separatists?! Are these supposed to be the "Hexdroids" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Potency! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_POTENCY</hiddenAug>
+																			<boarders min="4" max="8" class="engi_separatist"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS_JUNGLEOFSAVAGERY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Handiness is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Charus, and you are a Bird Demon tasked by your God to steal a relic sacred to the primitive lizard people known as the Dinosaurkin. Your God has revealed to you the crystal's location: atop a temple deep in the Dinosaurkin's Jungles of Savagery. You lie at the Jungles' outskirts, ready to do what you must.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Enter the Jungles of Savagery.</text>
+								<event>
+									<text>Amidst traversing thick groves of trees and wading through grass twice your height, you think on the tales you've heard of this place. A mighty serpent is said to rise from the very earth and devour any who dare intrude, but... you don't feel partiuclarly devoured. Save, by the mosquitos.</text>
+									<choice hidden="true">
+										<text>Keep traversing.</text>
+										<event>
+											<text>You're cutting through a thicket of vines when a piercing roar breaks out, from deeper into the jungle... though you know it to be distant, whatever creature made it must be truly colossal. You're thinking on this as you make it through the thicket, and... you see it! The temple!</text>
+											<choice hidden="true">
+												<text>Approach the temple.</text>
+												<event>
+													<text>Savage though they may be, the Dinosaurkin don't skimp when it comes to their monuments. The temple, a grand pyramid adorned with a sacred chamber at its apex, reaches into the sky... as if to make a proclamation to the very stars. According to your God, the crystal lies within the chamber at the top of the temple.</text>
+													<choice hidden="true">
+														<text>Begin climbing up.</text>
+														<event>
+															<text>It's arduous, and you wish your race's name wasn't so ironic... if only you could just fly to the top. It's after what feels like hours of climbing that you finally reach it: the temple's sacred chamber. Making your way inside, you find it unguarded... and, indeed, atop a golden pedestal lies the crystal! Your God may reward you yet...</text>
+															<choice hidden="true">
+																<text>Grab the crystal!</text>
+																<event>
+																	<text>Removing the crystal from its pedestal, the temple quakes... and, once more, you hear a bloodcurdling roar. This time, much closer... you need to get out of here! With haste, you leave the chamber's confines, but... you're too late. It seems the tales were true. Before you lies a grander sight than any in the world you've seen... a true behemoth of a snake. Its head raises higher than even the temple's apex, and its body coils off many hundreds of feet into the Jungles' depths. It is here to punish you, interloper, and you're left with no choice but to accept your fate. Cocking its head back, the grand snake poises to strike...</text>
+																	<choice hidden="true">
+																		<text>It poises to strike, and...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Leeches?! Are these supposed to be the "grand snake" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Handiness! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_HANDINESS</hiddenAug>
+																			<boarders min="3" max="7" class="leech"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFHANDINESS_LAKESOFRAGE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Handiness is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Seegurd, and you are a human worker for an intergalactic mega-corporation. At the bottom of the corporate ladder, it's your job to go to previously abandoned planets and collect what you can... your higher-ups have informed you of a valuable crystal, located on a volcanic planet simply referred to as the Lakes of Rage. As dangerous as it sounds, you have little choice but to do as you're told... you arrive on the planet now, stepping out onto a field of obsidian.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Track the crystal's whereabouts.</text>
+								<event>
+									<text>According to your scanner, you didn't land far from it... but, your scanner also picks up signs of life in the area. THAT wasn't in the briefing, this was supposed to be an uninhabitated planet now...</text>
+									<choice hidden="true">
+										<text>Carry on.</text>
+										<event>
+											<text>You can only hope that this life is primitive, and not hostile... you can't afford to return to the corporation empty-handed. Following your scanner, you trek through the obsidian plains and into a field of lava geysers. Tremendous, and powerful, these geysers shoot molten rock hundreds of feet into the air... you'll have to be extremely careful as you make your way through. One miscalculation and you could be simultaneously buried alive and burnt to a crisp.</text>
+											<choice hidden="true">
+												<text>Move through the field of lava geysers, carefully.</text>
+												<event>
+													<text>They weren't kidding when they called it the Lakes of Rage; you've never seen something inanimate appear to be so angry. Making your way through the field, you swear the geysers that go off almost feel targeted... like the very earth beneath your feet hates your presence here. Once you're out of harm's way, relatively, your scanner reads that the crystal is just up ahead, over this hill of igneous rock...</text>
+													<choice hidden="true">
+														<text>Climb over the hill.</text>
+														<event>
+															<text>Atop the hill, you see it... the crystal! Though it's embedded in the hill slightly, you're certain you can break it free. All you have to do is do so...</text>
+															<choice hidden="true">
+																<text>Break the crystal free from the earth.</text>
+																<event>
+																	<text>With all your might, you heave, and the crystal comes loose! Though, your celebration is cut short as the ground beneath your feet trembles... lava erupts, through the rock, and from these plumes rise roiling masses of molten rock that appear... sentient. Indeed, these lava golems approach you, albeit slowly, and you realize you're surrounded on all sides! None of this was in the briefing! You're going to die here, killed by the very planet itself, and it's all because of some stupid corporation that can't perform proper safety procedures! The lava golems tower over you now, and you prepare for your fate as one of them brings its mighty molten arm down and...</text>
+																	<choice hidden="true">
+																		<text>Brings its arm down, and...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Gouls?! Are these supposed to be the "lava golems" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Handiness! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_HANDINESS</hiddenAug>
+																			<boarders min="2" max="5" class="phantom_goul"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS_NIGHTMAREOFNONSENSE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Rainbows is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Pete, a name so sweet! You seek the crystal, with but a pistol! This is our Nightmare of Nonsense!</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>I seek the crystal, with but a pistol!</text>
+								<event>
+									<text>In a land so fair, you wonder where... there! It's Crystal Steve, with a haul to heave! This is our Nightmare of Nonsense!</text>
+									<choice hidden="true">
+										<text>It's Crystal Steve, with a haul to heave!</text>
+										<event>
+											<text>With words you weave, you implore this Steve, oh! How you desire a crystal so! This is our Nightmare of Nonsense!</text>
+											<choice hidden="true">
+												<text>Oh, how I desire a crystal so!</text>
+												<event>
+													<text>With a smirk on his face, and but the upmost grace, it is within your hands that a crystal is placed! This is our Nightmare of Nonsense!</text>
+													<choice hidden="true">
+														<text>It is within my hands that a crystal is placed!</text>
+														<event>
+															<text>Though you think him kind, he has something in mind... oh no! 'Twas all a show! This is our Nightmare of Nonsense!</text>
+															<choice hidden="true">
+																<text>Oh no! 'Twas all a show!</text>
+																<event>
+																	<text>Crystal Steve calls the guards, who run from yards, and claims you're naught but a thief! The guards close in, your time runs thin, and you think on naught but your grief! This is our...</text>
+																	<choice hidden="true">
+																		<text>This is our...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Rebel soldiers?! Are these supposed to be the "guards" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Rainbows! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_RAINBOWS</hiddenAug>
+																			<boarders min="2" max="5" class="human_soldier"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFRAINBOWS_SEAOFSOLITUDE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Rainbows is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Psyrus, and you are a scholar. You've been sentenced to life in prison in the Sea of Solitude, a non-literal sea of ice and snow surrounded by a very literal sea of ice and water. The crime for which you were sentenced, the murder of your wife, was not one you had committed. You know the true culprit... to bring them to justice, you need to get out of this prison, and you know just the way to do it.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Think over the plan.</text>
+								<event>
+									<text>Underneath the prison lies a system of tunnels and passageways. Within the tunnels is said to be a crystal of unimaginable power, originally sealed off by an ancient tribal people in an era long since past... you just need to find it. With it, no guard or warden will be able to stop you as you escape.</text>
+									<choice hidden="true">
+										<text>Now to just get into the tunnels...</text>
+										<event>
+											<text>The entrance is, often enough, left unguarded... most people would freeze to death. You're not most people, though, as a scholar of magicks of all varieties. Magical flame in hand, you prepare to venture into the tunnel system...</text>
+											<choice hidden="true">
+												<text>Enter the tunnels.</text>
+												<event>
+													<text>You're not unhindered as you traverse the tunnels, but you're more than capable of handling a few ice elementals. You should be approaching the crystal, soon... you must keep moving.</text>
+													<choice hidden="true">
+														<text>Go deeper.</text>
+														<event>
+															<text>Delving deeper into the depths of the tunnel system, you eventually come across a sigil on the wall... a remnant of the crystal's ancient sealing. This must be the place! Rushing forward, indeed, you see it; the crystal lies right there, ready for you to take it and forge your destiny!</text>
+															<choice hidden="true">
+																<text>Grab the crystal!</text>
+																<event>
+																	<text>As you grab the crystal, the wind around you howls... cave air doesn't typically howl, especially not this deep. Turning around, you find that the sigils on the wall have begun to glow, and ancient crystalline constructs, whom you deemed mere decorum, rise from their slumber! The constructs move on you now, ready to defend the crystal... you'll have to fend them off with your magical prowess! You call upon all the might within your being to channel a destructive spell, which...</text>
+																	<choice hidden="true">
+																		<text>I channel a destructive spell, which...</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Crystals?! Are these supposed to be the "constructs" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Rainbows! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_RAINBOWS</hiddenAug>
+																			<boarders min="3" max="6" class="crystal"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM_PLAINSOFPERPETUITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Martyrdom is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>You are Lilac, and you are the hero of this world, as dictated by fate. It is by your hands that the fabled crystal will be taken, and allow time to be restored. No longer will you have to live in the Plains of Perpetuity, but something greater...</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Am I really...?</text>
+								<event>
+									<text>At least, that's what your mentor tells you. You awoke one day, having lost your memory. Everybody around you seems to corroborate, though... you've no choice but to believe yourself to be this legendary chosen one.</text>
+									<choice hidden="true">
+										<text>Prepare to embark in search of the crystal.</text>
+										<event>
+											<text>You gather a party, yourself and four others, and embark on your journey. Having left the sanctity of the Bastion, the last city remaining in the entire world, there's no telling what horrific monsters you'll come across...</text>
+											<choice hidden="true">
+												<text>Timeskip.</text>
+												<event>
+													<text>Your party of five is now four. A great beast descended on the party, and took your mentor... but you have to trudge on. It's what they would've wanted, and it's not like you can still turn back. You have to find the crystal.</text>
+													<choice hidden="true">
+														<text>Timeskip, again.</text>
+														<event>
+															<text>You are alone. You stand over the corpses of your fallen companions, who had sacrificed everything to win this battle. To save the world. Stepping forward, past the freshly fallen body of the Ill-Remembered King, you see it... the crystal for which you've sacrificed everything you've known.</text>
+															<choice hidden="true">
+																<text>Take the crystal.</text>
+																<event>
+																	<text>The crystal in your hands, you feel as time... rewinds. No, it's not supposed to rewind, it's supposed to--- You are Lilac, and you are the hero of this world, as dictated by fate. It is by your hands that the fabled crystal will be taken, and allow time to be...</text>
+																	<choice hidden="true">
+																		<text>Allow time to be...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Ghosts?! Are these supposed to be the "companions" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Martyrdom! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_MARTYRDOM</hiddenAug>
+																			<boarders min="3" max="6" class="phantom"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFMARTYRDOM_GRAVEYARDOFDRAGONS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Martyrdom is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Lucas, and you are a man of not occupation; but conviction. You carry with you, in a coffin, a piece of the corpse of a long-dead god, whose existence almost spelled the death of the entire Multiverse. With it, you seek to fell another god in this Graveyard of Dragons.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Wander through the Graveyard.</text>
+								<event>
+									<text>While not being the resting place of literal dragons, the Graveyard of Dragons' name is still very apt: this is where gods go to die. It is where you will force the God of Everlasting Life to manifest, and subsequently die. People will be cursed to live forever no longer.</text>
+									<choice hidden="true">
+										<text>Keep wandering.</text>
+										<event>
+											<text>You simply need to find a suitable location... such as the field up ahead. In anticipation, the coffin shakes in its chains... even dead gods have fight left in them.</text>
+											<choice hidden="true">
+												<text>Approach the ashen field.</text>
+												<event>
+													<text>You can feel an energy in the air here, like the very earth itself is also shaking in anticipation. Where your feet step, flowers bloom amongst the ash... how beautiful life is whilst it's fleeting.</text>
+													<choice hidden="true">
+														<text>Lay in the ash, beside the coffin.</text>
+														<event>
+															<text>As you lay down, grass springs forth to cushion you... and then flowers, bushes and vines... life itself hastens in anticipation. It's time.</text>
+															<choice hidden="true">
+																<text>Open the coffin.</text>
+																<event>
+																	<text>A forest blooms forth from within the coffin, tree limbs outstretched to the sky, and a cacophony of noise breaks loose. This is it... life begets death. As reality tears itself apart, and you witness the death of life, you reach for your necklace for the last time. It's a simple piece; a string, tied around a crystal... but it means more to you than anything. As the color fades from the trees, the grass, the flowers, the vines, the sky... you grasp this crystal, and...</text>
+																	<choice hidden="true">
+																		<text>I grasp this crystal, and...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Orchids?! Are these supposed to be the "flowers" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Martyrdom! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_MARTYRDOM</hiddenAug>
+																			<boarders min="3" max="7" class="orchid"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS_REALMOFKNIGHTHOOD">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Auras is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Entropy, and you are a god. You're on a path in the woods, in the Realm of Knighthood, and at the end of that path is a cabin... in the basement of that cabin is a crystal. You're here to grab it. If you don't, it will be the end of the world.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Continue down the path.</text>
+								<event>
+									<text>Emerging from the woods, you spot it: the cabin. The cabin, where you shall save the world.</text>
+									<choice hidden="true">
+										<text>Enter the cabin.</text>
+										<event>
+											<text>Inside the cabin is the door to the basement. Beside the door, lies a smoothie on a table. You are going to need it if you're going to do this right.</text>
+											<choice hidden="true">
+												<text>Grab the smoothie, and head into the basement.</text>
+												<event>
+													<text>Smoothie in hand, you creep your way down the basement steps... you here the crystal call to you, "Oh. So that's how it is. Just going to cut the pretense and go straight to drinking smoothies, are we?" It sounds... annoyed.</text>
+													<choice hidden="true">
+														<text>Yeah, like I couldn't tell.</text>
+														<event>
+															<text>Hey, it's sort of my job to comment on these things! Ugh, you proceed down the basement stairs and there lies the crystal. You clench the smoothie in your hand.</text>
+															<choice hidden="true">
+																<text>Grab the crystal.</text>
+																<event>
+																	<text>Yes, thank you! You walk up to the crystal, drink the smoothie, and grab it. The crystal lies there, grabbed. You weren't expecting this to be so easy. Then, giant insects attack you from behind and- wait, what? That doesn't make any...</text>
+																	<choice hidden="true">
+																		<text>That doesn't make any...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Mantis?! Are these supposed to be the "giant insects" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Auras! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_AURAS</hiddenAug>
+																			<boarders min="2" max="5" class="mantis"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_CRYSTALOFAURAS_TRENCHESOFSHADOW">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... this is where the Crystal of Auras is said to be, but you don't see anything outside. Though you can't explain it, you feel pulled to the Otherworldly Tome...</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Check on the Otherworldly Tome.</text>
+		<event>
+			<text>As you approach the Otherworldly Tome's chamber, you notice light leaking out from under the door, and, upon entering, you find the book itself to be radiating an intense, purple glow most divine... you feel as if it's pulling you in.</text>
+			<choice hidden="true">
+				<text>Try to resist.</text>
+				<event>
+					<text>You try to resist, but... you fail. The Otherworldly Tome pulls you in, consumes you, and...</text>
+					<choice hidden="true">
+						<text>And?</text>
+						<event>
+							<text>Your name is Theodore von Fireheart Senior, and you are the captain of the mightiest ship to sail the Sea of Rascals. It is within this Sea of Rascals, though, that the Trenches of Shadow lie... and it has been foretold to you by an oracle that they shall be your grave. You're sailing over them now, in transit to sell your most recent haul of treasure.</text>
+							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+							<playMusic>hoedown</playMusic>
+							<choice hidden="true">
+								<text>Keep sailing.</text>
+								<event>
+									<text>The steering wheel may as well be your first mate, the way you spend so much time with it... though, the actual first mate is dropping down from the crow's nest now. Has he something to report?</text>
+									<choice hidden="true">
+										<text>Get ready to listen.</text>
+										<event>
+											<text>He's about to speak when a cannonball tears through him, sending gore in every direction. That can't be good.</text>
+											<choice hidden="true">
+												<text>Check your port side.</text>
+												<event>
+													<text>No, nothing there.</text>
+													<choice hidden="true">
+														<text>Check your starboard side.</text>
+														<event>
+															<text>Yeah, there it is... to the right of your ship is another ship, firing its cannons at yours. You recognize their insignia: the blasted fish people of the Trenches of Shadow... rather troublesome, as you're meant to die here.</text>
+															<choice hidden="true">
+																<text>Accept your fate.</text>
+																<event>
+																	<text>You leave the steering wheel, and the loose bloody pile of gore that was your first mate, and retreat to the captain's quarters... your final resting place. You dig into a chest full of treasure, taking out a brilliant crystal... you may as well die doing what you loved: hoarding treasure. You lay down upon your bed, crystal in hand, as the fish people's cannons unleash hell upon you, and you listen as your glorious ship is torn apart. Yes, this is how it was meant to be... and yet, you wish...</text>
+																	<choice hidden="true">
+																		<text>I wish...?</text>
+																		<event>
+																			<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... what the hell just happened? Were you inside the Otherworldly Tome...? Before you can really come to your senses, other entities are also ejected from the book... Deep Ones?! Are these supposed to be the "fish people" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Crystal of Auras! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the finale... get ready to defend yourself!</text>
+																			<variable name="dd_crystalhuntcompleted" op="add" val="1"/>
+																			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																			<playMusic/>
+																			<hiddenAug>DISPARITY_CRYSTAL_OF_AURAS</hiddenAug>
+																			<boarders min="2" max="5" class="deepone"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LEGENDARYCRYSTAL">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... you know the deal by now. Sitting by the Otherworldly Tome, you've prepared the five Disparity Crystals.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Wait for the Otherworldly Tome to open.</text>
+		<event>
+			<text>Not having to wait long, the Otherworldly Tome glows with an ethereal light, and, for the final time, you're sucked into its pages... and...</text>
+			<choice hidden="true">
+				<text>And...?</text>
+				<event>
+					<text>You are none. You are but part of many.</text>
+					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+					<playMusic>unexplored</playMusic>
+					<choice hidden="true">
+						<text>I am none.</text>
+						<event>
+							<text>You are one. You are part of many no longer, free to do as you please.</text>
+							<remove name="HIDDEN DISPARITY_CRYSTAL_OF_POTENCY"/>
+							<choice hidden="true">
+								<text>I am one.</text>
+								<event>
+									<text>You are two. Another is like you, free from being many. You like them. They like you.</text>
+									<remove name="HIDDEN DISPARITY_CRYSTAL_OF_HANDINESS"/>
+									<choice hidden="true">
+										<text>I am two.</text>
+										<event>
+											<text>You are one. This time, metaphorically. You are not used to that word yet.</text>
+											<remove name="HIDDEN DISPARITY_CRYSTAL_OF_RAINBOWS"/>
+											<choice hidden="true">
+												<text>We are one.</text>
+												<event>
+													<text>You are half. Metaphorically, and... tragically. You do not want to feel this ever again.</text>
+													<remove name="HIDDEN DISPARITY_CRYSTAL_OF_MARTYRDOM"/>
+													<choice hidden="true">
+														<text>I am half.</text>
+														<event>
+															<text>You are many. A different many, a new many. A many of like-minded ones who will fight for everyone, so everyone may be one.</text>
+															<remove name="HIDDEN DISPARITY_CRYSTAL_OF_AURAS"/>
+															<choice hidden="true">
+																<text>We are many.</text>
+																<event>
+																	<text>You are divided. It's a difficult task you ask of them. Many stand with you, but many do not. Those who do will march with you, into the unknown.</text>
+																	<choice hidden="true">
+																		<text>We are divided.</text>
+																		<event>
+																			<text>You are united. In purpose, but... not in spirit. More than anything, you desire to liberate everyone. Others are not so selfless.</text>
+																			<choice hidden="true">
+																				<text>We are united.</text>
+																				<event>
+																					<text>You are everyone. The deal has been struck. United in purpose, spirit and body... you will all do what nobody else can. You will all liberate everyone.</text>
+																					<choice hidden="true">
+																						<text>We are everyone.</text>
+																						<event>
+																							<text>You: are the [LIBERATOR.]</text>
+																							<choice hidden="true">
+																								<text>We: are the [HUNGER.]</text>
+																								<event>
+																									<text>You're ejected from the Otherworldly Tome with an aggressive force, and you land face-down on the ground with a thud... that story felt different from the others. More... real. Before you can really come to your senses, other entities are also ejected from the book... Seraphim?! Are these supposed to be part of the "many" from the story...? As you begin to run to sound the alarm, you realize there's something in your hand... it's the Legendary Crystal! Though you're completely bewildered by its methods, you can't help but acknowledge that the Dark God knows how to put on a show. Now, for the true finale... get ready to defend yourself!</text>
+																									<achievement>ACH_EVENT_DDLEGENDARYCRYSTAL</achievement>
+																									<variable name="ach_event_ddlegendarycrystal" op="set" val="1"/>
+																									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																									<playMusic/>
+																									<hiddenAug>DISPARITY_LEGENDARY_CRYSTAL</hiddenAug>
+																									<boarders min="4" max="4" class="ddseraph_engi_enemy"/>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+</FTL>

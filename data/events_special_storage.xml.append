@@ -1,0 +1,883 @@
+<mod:findName type="event" name="STORAGE_CHECK_LAB">
+	<mod-append:choice req="LIST_CREW_DEEPONES" blue="false" hidden="true">
+		<text>Deep One.</text>
+		<event load="STORAGE_CHECK_LAB_DEEPONES"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_CLONE_CANNON">
+    <mod:findLike type="choice">
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" req="deepone" blue="false">
+				<text>Upload your Deep One.</text>
+				<event>
+					<text>Are you sure? You will not be able to retrieve them without a Clone Bay, and all skills will be lost.</text>
+					<choice hidden="true">
+						<text>Yes.</text>
+						<event>
+							<text>You start the process.</text>
+							<remove name="CLONE_CANNON"/>
+							<removeCrew class="deepone">
+								<clone>false</clone>
+								<text>Your crew cannot be cloned on your ship as they are inside the cannon.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>You finish the process.</text>
+									<weapon name="CLONE_CANNON_DEEPONE"/>
+									<choice>
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+            </mod-append:choice>
+			<mod-append:choice hidden="true" req="unique_thescarred" blue="false">
+			<text>Upload the Scarred.</text>
+				<event>
+					<text>Are you sure? You will not be able to retrieve them without a Clone Bay, and all skills will be lost.</text>
+					<choice hidden="true">
+						<text>Yes.</text>
+						<event>
+							<text>You start the process.</text>
+							<remove name="CLONE_CANNON"/>
+							<removeCrew class="unique_thescarred">
+								<clone>false</clone>
+								<text>Your crew cannot be cloned on your ship as they are inside the cannon.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>You finish the process.</text>
+									<weapon name="CLONE_CANNON_THESCARRED"/>
+									<choice>
+										<text>Continue...</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+            </mod-append:choice>
+		</mod:findLike>
+    </mod:findLike>
+	<mod-append:choice hidden="true" req="CLONE_CANNON_DEEPONE" blue="false">
+		<text>Reset the cannon.</text>
+		<event>
+			<text>You reset the weapon.</text>
+			<remove name="CLONE_CANNON_DEEPONE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish resetting the weapon.</text>
+					<weapon name="CLONE_CANNON"/>
+					<choice hidden="true" req="clonebay">
+						<text>(Clone Bay) Revive your crew.</text>
+						<event>
+							<text>Though your crew's memories have been almost completely erased, they remember enough to at least remain loyal to the Federation.</text>
+							<crewMember amount="1" class="deepone">Projectile</crewMember>
+							<choice>
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="CLONE_CANNON_THESCARRED" blue="false">
+		<text>Reset the cannon.</text>
+		<event>
+			<text>You reset the weapon.</text>
+			<remove name="CLONE_CANNON_THESCARRED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish resetting the weapon.</text>
+					<weapon name="CLONE_CANNON"/>
+					<choice hidden="true" req="clonebay">
+						<text>(Clone Bay) Revive your crew.</text>
+						<event>
+							<text>The Scarred seems shaken for a moment, before closing his eye and... doing some sort of... breathing exercise? Meditation? You're not sure. Whatever he's doing, it's working, because he immediately goes back to being his older self.</text>
+							<crewMember amount="1" class="unique_thescarred">The Scarred</crewMember>
+							<choice>
+								<text>Continue...</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_MORPH_TRANSFORM">
+    <mod:findLike type="choice">
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" req="blobdeepone" blue="false">
+				<text>Reset your Deep One. [-1{]</text>
+				<event>
+					<item_modify><item type="fuel" min="-1" max="-1"/></item_modify>
+					<text>Your Morph transforms back to its original shape.</text>
+					<transformRace class="blobdeepone">blob</transformRace>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+            </mod-append:choice>
+		</mod:findLike>
+    </mod:findLike>
+	<mod:findLike type="choice">
+	</mod:findLike>
+	<mod:findLike type="choice"><mod:selector req="blob"/>
+		<mod:findLike type="event">
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DEEPONE">
+				<text>(Deep One) Take the form of a Deep One.</text>
+				<event>
+					<text>Your Morph transforms into a new shape.</text>
+					<transformRace class="blob">blobdeepone</transformRace>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
+	<mod-append:choice req="DISPARITY_LIBERATORTOG_DEFEND" blue="false">
+		<text>(Liberator Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_LIBERATOR_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DISPARITY_LIBERATORTOG_BOARDER" blue="false">
+		<text>(Liberator Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_LIBERATOR_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDSERAPH_ARBITERTOG_DEFEND" blue="false">
+		<text>(Arbiter Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDSERAPH_ARBITER_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDSERAPH_ARBITERTOG_BOARDER" blue="false">
+		<text>(Arbiter Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDSERAPH_ARBITER_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DISPARITY_BROODMOTHERTOG_DEFEND" blue="false">
+		<text>(Broodmother Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_BROODMOTHER_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DISPARITY_BROODMOTHERTOG_BOARDER" blue="false">
+		<text>(Broodmother Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_BROODMOTHER_BOARDER"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="COMBAT_CHECK_LIBERATOR_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DISPARITY_LIBERATORTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DISPARITY_LIBERATORTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_LIBERATOR_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DISPARITY_LIBERATORTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DISPARITY_LIBERATORTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDSERAPH_ARBITER_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDSERAPH_ARBITERTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDSERAPH_ARBITERTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDSERAPH_ARBITER_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDSERAPH_ARBITERTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDSERAPH_ARBITERTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_BROODMOTHER_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DISPARITY_BROODMOTHERTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DISPARITY_BROODMOTHERTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_BROODMOTHER_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DISPARITY_BROODMOTHERTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DISPARITY_BROODMOTHERTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
+		<text>(Otherworldly Tome) Investigate the available rituals.</text>
+		<event load="STORAGE_CHECK_DARKGOD_CURSED_BOOK"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_DARKGOD_CURSED_BOOK">
+	<text>Opening the book, its contents are separated into different colors. Rituals can only be performed while you're traveling at lightspeed, as they require a certain attunement to the Multiverse's dark energies. Here, though, you may investigate the rituals and figure out what they do.</text>
+	<choice hidden="true">
+		<text>Investigate the crimson red text, the Ascension Rituals.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase nightmarish entities and otherworldly energies. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS">
+				<text>(Lilith) Have Lilith transcribe the text.</text>
+				<event>
+					<text>Lilith exudes a mysterious ink and draws a cipher on the floor. Using it, you're able to understand the rituals and their incantations. It's explained that only one incantation in each group can be performed, and they must be performed in the order of the Horde, Greater Summoning and then Power.</text>
+					<choice hidden="true">
+						<text>Investigate the Incantations of the Horde.</text>
+						<event>
+							<text>There are three Incantations of the Horde: the Incantation of Lesser Nightmare Priests, the Incantation of Nightmare Engi and the Incantation of Nightmare Stalkers.</text>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Lesser Nightmare Priests.</text>
+								<event>
+									<text>INCANTATION OF LESSER NIGHTMARE PRIESTS:
+									The Rift is now capable of summoning Lesser Nightmarish Priests, who heal the Rift regardless of location and other Nightmares in the same room. Your Nightmarish Terrors lose half their sabotage speed.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Nightmare Engi.</text>
+								<event>
+									<text>INCANTATION OF NIGHTMARE ENGI:
+									The Rift will now summon 2 Nightmarish Engi upon creation, who stay on your ship and can only repair. The Enlightened Horror moves 33% slower.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Nightmare Stalkers.</text>
+								<event>
+									<text>INCANTATION OF NIGHTMARE STALKERS:
+									The Rift is now capable of summoning Nightmarish Stalkers, who periodically cloak and decloak to sabotage systems invisibly. The Rift loses 55 Max HP.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Nevermind. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Incantations of Greater Summoning.</text>
+						<event>
+							<text>There are four Incantations of Greater Summoning: the Incantation of Greater Nightmare Crawlers, the Incantation of Greater Nightmare Masses, the Incantation of Greater Nightmare Martyrs and the Incantation of Greater Nightmare Priests.</text>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Greater Nightmare Crawlers.</text>
+								<event>
+									<text>INCANTATION OF GREATER NIGHTMARE CRAWLERS:
+									The Rift will now summon 2 Greater Nightmarish Crawlers upon creation, who, while having greater stats, stay on your ship and can only ward off boarders. The Enlightened Horror loses half its sabotage speed.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Greater Nightmare Masses.</text>
+								<event>
+									<text>INCANTATION OF GREATER NIGHTMARE MASSES:
+									Rather than summoning Lesser Nightmarish Masses, the Rift will now summon Greater Nightmarish Masses, who have greater stats and split into Lesser Nightmarish Masses upon death. Nightmarish Crawlers lose 0.3 base damage.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Greater Nightmare Martyrs.</text>
+								<event>
+									<text>INCANTATION OF GREATER NIGHTMARE MARTYRS:
+									Rather than summoning Lesser Nightmarish Martyrs, the Rift will now summon Greater Nightmarish Martyrs, who have way more intense death effects. Your Nightmares all lose 5 base HP.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Greater Nightmare Priests.</text>
+								<event>
+									<text>INCANTATION OF GREATER NIGHTMARE PRIESTS:
+									The Rift will now summon 1 Greater Nightmarish Priest upon creation in the same room as it, who grants itself, the Rift and other Nightmares on the same ship damage resistance, as well as more potent healing. Rift Bolt cooldown is increased by 2 seconds.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Nevermind. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Incantations of Power.</text>
+						<event>
+							<text>There are three Incantations of Power: the Incantation of Rampaging Horror, the Incantation of Horrific Rifts and the Incantation of Greater Bolts.</text>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Rampaging Horror.</text>
+								<event>
+									<text>INCANTATION OF RAMPAGING HORROR:
+									Your Enlightened Horror gains 1.5x health, 1.5x damage, 1.5x speed, has its sabotage speed set to 2.25 base and its damage to doors set to 4x, but your Rift loses half its max health.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Horrific Rifts.</text>
+								<event>
+									<text>INCANTATION OF HORRIFIC RIFTS:
+									Your Rifts now apply the Horrified debuff and deal damage equal to 12hp/s to enemies in the same room as it, but your Rift's natural decay speed is now doubled to -12hp/s.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Investigate the Incantation of Greater Bolts.</text>
+								<event>
+									<text>INCANTATION OF GREATER BOLTS:
+									Your Rift Bolts now erode enemy systems and have a 50% chance to cause breaches, but your Enlightened Horror loses 25% of its max health and damage.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Nevermind. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the vibrant purple text, the Crystalline Tales.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase beautiful, vibrant crystals and depictions of strange machinery. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_CREW_DISPARITY">
+				<text>(Disparity Crew) Have your Disparity crew member transcribe the text.</text>
+				<event>
+					<text>Your Disparity crew member writes you a cipher. Using it, you're able to understand these sets of texts to be stories detailing the myths and legends of Disparity Crystals, fabled pieces of power said to be capable of increasing the capabilities of the Disparity's beacons. Indeed, there are even rituals described that claim to allow one to locate said Crystals... and, if you collect all five, something amazing is said to happen.</text>
+					<choice hidden="true">
+						<text>Investigate the Crystal of Potency.</text>
+						<event>
+							<text>CRYSTAL OF POTENCY:
+							This strange crystal empowers your Disparity beacons, granting them +10 base HP and increasing the strength of their effects by 20%. The extra nanites going towards beacon strength and uptime leaves your Disparity Elites with -33% max HP.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Crystal of Handiness.</text>
+						<event>
+							<text>CRYSTAL OF HANDINESS:
+							This strange crystal empowers your Disparity beacons, granting them the ability to repair and +0.8 base speed. Your Disparity Elites lose their own memory of how to repair in return, and repair 0.67x slower.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Crystal of Rainbows.</text>
+						<event>
+							<text>CRYSTAL OF RAINBOWS:
+							This strange crystal empowers your Disparity beacons, granting them the ability to give every beacon effect simultaneously. This amount of output proves to be extremely unstable, meaning they have -12 base HP.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Crystal of Martyrdom.</text>
+						<event>
+							<text>CRYSTAL OF MARTYRDOM:
+							This strange crystal empowers your Disparity beacons, granting them the ability to fight enemies and explode upon death. This explosion has friendly fire, so be wary!</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Crystal of Auras.</text>
+						<event>
+							<text>CRYSTAL OF AURAS:
+							This strange crystal empowers your Disparity beacons, allowing them to heal allies and deal damage to enemies on the same ship for 1hp/s. This healing aura proves to be destructive to other beacons, increasing the strain they put on each other by 33% (0.5hp/s).</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Legendary Crystal.</text>
+						<event>
+							<text>LEGENDARY CRYSTAL:
+							It's said that if you collect all five Disparity Crystals, the path to the Legendary Crystal will be made available through a ritual...</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the inky black text, the Beginner's Guide to the Occult.</text>
+		<event>
+			<text>You realize you actually CAN read this section... it appears to outline several basic rituals, and goes into detail about the requirements and rules for rituals in general.</text>
+			<choice hidden="true">
+				<text>Investigate the Ritual Requirements and Rules.</text>
+				<event>
+					<text>The rules are outlined thusly:
+					RULE 1: RITUALS MUST BE PERFORMED WHILST AT LIGHTSPEED.
+					RULE 2: RITUALS, SAVE FOR THE RITUAL OF THE HUNT, REQUIRE A HUMAN SACRIFICE.
+					RULE 3: A SUBSTITUTE OF IMMENSE AMOUNTS OF GARBAGE (100 SCRAP) MAY BE SACRIFICED SHOULD A HUMAN SACRIFICE NOT BE AVAILABLE.
+					RULE 4: CERTAIN RITUALS REQUIRE CERTAIN FOLLOWERS AND UNDERSTANDINGS OF THE DARK ONE'S WAYS.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>RULE 5: THERE ARE NO PENALTIES FOR FAILING TO COMPLETE A RITUAL, BUT YOUR SACRIFICE WILL NOT BE RETURNED.
+							RULE 6: CERTAIN RITUALS MAY ONLY BE MADE AVAILABLE WHEN THEIR PREREQUISITE RITUALS HAVE BEEN PERFORMED.
+							RULE 7: IF YOU PERFORM A RITUAL AND THEN REROUTE, ANY RESULTING QUEST WILL BE LOST.
+							RULE 8: SHOULD YOU DESIRE TO BOTH PERFORM A RITUAL AND SPEAK WITH A CERTAIN CURATOR, YOU MUST DECIDE TO VIEW THEIR TASKS AND USE A JUMPSPEED AUGMENT.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Dark Weaponry.</text>
+				<event>
+					<text>RITUAL OF DARK WEAPONRY:
+					This ritual gives you the location of one of the Dark One's gifts, a weapon empowered by raw darkness. The weapon, and its location, are random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Shadow Drones.</text>
+				<event>
+					<text>RITUAL OF SHADOW DRONES:
+					This ritual gives you the location of one of the Dark One's gifts, a drone empowered by raw darkness. The drone, and its location, are random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Occult Recruitment.</text>
+				<event>
+					<text>RITUAL OF OCCULT RECRUITMENT:
+					This ritual gives you the location of one of the Dark One's followers (Deep Ones or Engi Separatists), though they'll still need to undergo the Ritual of True Devotion to gain otherworldly powers. The follower, and their location, are random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of True Devotion.</text>
+				<event>
+					<text>RITUAL OF TRUE DEVOTION:
+					This ritual gives you the location of a site where one of your followers of the Dark One may devote themselves and gain otherworldly powers (Deep Ones may become Enlightened Cultists and Engi Separatists may become Disparity Elites). The location of the site is random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of the Hunt.</text>
+				<event>
+					<text>RITUAL OF THE HUNT:
+					This ritual gives you the location of human sacrifices so you may perform other rituals. The amount, and their location, are random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_DDDARKEST_GAZE">
+		<text>Investigate the deep maroon text, the Prayers of Devotion.</text>
+		<event>
+			<text>Though capable of reading this section without a guide, you recognize that this text has recently been inscribed here by some supernatural influence. You can only see it because someone, or something, has written it here for you to see. This section describes the benefits of devotion to the Dark God.</text>
+			<choice hidden="true">
+				<text>Investigate the Benefits of Devotion.</text>
+				<event>
+					<text>Devotion is split into three levels. Each level allows you to gain greater benefits through powering your Temporal System. Each level of power active in your Temporal System scales the benefits multiplicatively (1x -> 2x -> 3x), but the cap of said benefits is dictated by your devotion level. For every benefit, save for the Super Shield, the Temporal System must be powered. Your devotion level may be increased as a ritual, requiring a sacrifice.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>ALL LEVELS: Gain a Super Shield with 4 hit points. Allies on the enemy ship constantly heal (0.4HP/s), constantly heal at twice the rate on your ship (0.8HP/s), and any allies within the room of the Temporal System constantly heal at a greatly increased pace (4HP/s). All allies get slight multipliers (1.1x) to most of their stats, and Nightmares gain 5 increased max HP.</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>LEVEL 1 (SHADOWY GLIMPSE): Super Shield has 4 HP. Benefits are capped at 1x, while the Temporal System has any amount of power, benefits are exactly as read in the "ALL LEVELS" section.
+									LEVEL 2 (DARK REGARD): Super Shield has 8 HP. Benefits are now capped at 2x, while the Temporal System has 2 or more power.
+									LEVEL 3 (DARKEST GAZE): Super Shield has 12 HP. Benefits are now capped at 3x, while the Temporal System has 3 power.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Close the book.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<mod:findName type="event" name="STORAGE_CHECK_CREW_REAL">
+	<mod-append:choice req="unique_thescarred" blue="false" hidden="true">
+		<text>Look for the Scarred.</text>
+		<event load="SOCIALIZE_THE_SCARRED_LIST"/>
+	</mod-append:choice>
+	<mod-append:choice req="unique_thehunger" blue="false" hidden="true">
+		<text>Look for the Hunger.</text>
+		<event load="SOCIALIZE_THE_HUNGER_LIST"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_LAB_DEEPONES">
+	<text>You are viewing the lab menu for: [DEEP ONES]</text>
+	<choice req="LAB_DEEPONE_FORTITUDE" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Currently Installed: Fishy Fortitude.
+		[Deep Ones gain 1 healing per second at all times and +20 max HP.]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_RAGE" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Currently Installed: Reckless Rage.
+		[Deep Ones have their ability cooldown cut to 33% of its original duration (60s > 20s).]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_DEEPBREATH" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Currently Installed: Deep Breath.
+		[Deep Ones no longer need oxygen, and they're given 1.2x sabotage speed.]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Currently Installed: None</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Pri: Fishy Fortitude. [An upgrade is already installed]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="0" max_group="1" blue="false" hidden="true">
+		<text>Pri: Fishy Fortitude. [Cost: 60~, 4|]</text>
+		<event load="STORAGE_CHECK_LAB_DEEPONES_FORTITUDE"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Pri: Reckless Rage. [An upgrade is already installed]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="0" max_group="2" blue="false" hidden="true">
+		<text>Pri: Reckless Rage. [Cost: 90~]</text>
+		<event load="STORAGE_CHECK_LAB_DEEPONES_RAGE"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="1" max_group="3" blue="false" hidden="true">
+		<text>Pri: Deep Breath. [An upgrade is already installed]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="LAB_DEEPONE_INSTALLED" lvl="0" max_group="3" blue="false" hidden="true">
+		<text>Pri: Deep Breath. [Cost: 50~, 2{]</text>
+		<event load="STORAGE_CHECK_LAB_DEEPONES_DEEPBREATH"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="4" blue="false" hidden="true">
+		<text>Go back.</text>
+		<event load="STORAGE_CHECK_LAB_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_LAB_DEEPONES_FORTITUDE">
+	<text>You are about to install the Fishy Fortitude modification.
+	[Effects: Deep Ones gain 1 healing per second at all times and +20 max HP.]
+	
+	[Warning: After installing this, you will not be able to install any more primary upgrades for Deep One crew. You will not be able to deactivate this mod either.]</text>
+	<choice hidden="true">
+		<text>Install the modification. [Cost: 60~, 4|]</text>
+		<event>
+			<text>You install the modification.</text>
+			<item_modify>
+				<item type="drones" min="-4" max="-4"/>
+				<item type="scrap" min="-60" max="-60"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_LAB_DEEPONES_FORTITUDE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_LAB_LOAD"/>
+	</choice>
+</event>
+<event name="INSTALL_LAB_DEEPONES_FORTITUDE">
+	<variable name="loc_lab_upgrades" op="add" val="1"/>
+	<hiddenAug>LAB_DEEPONE_FORTITUDE</hiddenAug>
+	<hiddenAug>LAB_DEEPONE_INSTALLED</hiddenAug>
+	<loadEvent>STORAGE_CHECK_LAB_DEEPONES</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_LAB_DEEPONES_RAGE">
+	<text>You are about to install the Reckless Rage modification.
+	[Effects: Deep Ones have their ability cooldown cut to 33% of its original duration (60s > 20s)]
+	
+	[Warning: After installing this, you will not be able to install any more primary upgrades for Deep One crew. You will not be able to deactivate this mod either.]</text>
+	<choice hidden="true">
+		<text>Install the modification. [Cost: 90~]</text>
+		<event>
+			<text>You install the modification.</text>
+			<item_modify>
+				<item type="scrap" min="-90" max="-90"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_LAB_DEEPONES_RAGE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_LAB_LOAD"/>
+	</choice>
+</event>
+<event name="INSTALL_LAB_DEEPONES_RAGE">
+	<variable name="loc_lab_upgrades" op="add" val="1"/>
+	<hiddenAug>LAB_DEEPONE_RAGE</hiddenAug>
+	<hiddenAug>LAB_DEEPONE_INSTALLED</hiddenAug>
+	<loadEvent>STORAGE_CHECK_LAB_DEEPONES</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_LAB_DEEPONES_DEEPBREATH">
+	<text>You are about to install the Deep Breath modification.
+	[Effects: Deep Ones no longer need oxygen, and they're given 1.2x sabotage speed.]
+	
+	[Warning: After installing this, you will not be able to install any more primary upgrades for Deep One crew. You will not be able to deactivate this mod either.]</text>
+	<choice hidden="true">
+		<text>Install the modification. [Cost: 50~, 2{]</text>
+		<event>
+			<text>You install the modification.</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+				<item type="scrap" min="-50" max="-50"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_LAB_DEEPONES_DEEPBREATH"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_LAB_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_LAB_DEEPONES_DEEPBREATH">
+	<variable name="loc_lab_upgrades" op="add" val="1"/>
+	<hiddenAug>LAB_DEEPONE_DEEPBREATH</hiddenAug>
+	<hiddenAug>LAB_DEEPONE_INSTALLED</hiddenAug>
+	<loadEvent>STORAGE_CHECK_LAB_DEEPONES</loadEvent>
+</event>

@@ -1,0 +1,237 @@
+<mod:findName type="sectorType" name="ZONE_SAFE">
+    <mod-append:sector>SECTOR_DEEPONE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="SECTOR_LIST_NEUTRAL">
+    <mod-append:sector>SECTOR_DEEPONE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="SECTOR_LIST_UNIQUE_DEADLY">
+    <mod-append:sector>SECTOR_DISPARITY_UNIQUE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="OVERRIDE_ZONE_SAFE">
+    <mod-append:sector>SECTOR_DEEPONE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="OVERRIDE_SECTOR_LIST_NEUTRAL">
+    <mod-append:sector>SECTOR_DEEPONE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="OVERRIDE_SECTOR_LIST_UNIQUE_DEADLY">
+    <mod-append:sector>SECTOR_DISPARITY_UNIQUE</mod-append:sector>
+</mod:findName>
+
+<mod:findName type="sectorType" name="NEUTRAL">
+    <mod-append:sector>SECTOR_DEEPONE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="HOSTILE">
+    <mod-append:sector>SECTOR_DISPARITY_UNIQUE</mod-append:sector>
+</mod:findName>
+<mod:findName type="sectorType" name="SECRET">
+    <mod-append:sector>SECRET_ENLIGHTENED</mod-append:sector>
+	<mod-append:sector>DARKONE_DOMAIN</mod-append:sector>
+</mod:findName>
+
+<sectorDescription name="SECTOR_DEEPONE" unique="false"> 
+	<nameList>
+		<name>Deep One Assembly</name>
+		<name>Deep One Gathering</name>
+		<name>Deep One Collective</name>
+		<name>Deep One Aggregation</name>
+		<name>Deep One Convocation</name>
+	</nameList>
+	<trackList>
+		<track>voyager</track>
+		<track>cosmos</track> 
+		<track>debris</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="human" rarity="3"/>
+		<blueprint name="human_medic" rarity="0"/>
+		<blueprint name="human_engineer" rarity="0"/>
+		<blueprint name="human_soldier" rarity="0"/>
+		<blueprint name="engi" rarity="5"/>
+		<blueprint name="engi_separatist" rarity="0"/>
+		<blueprint name="engi_defender" rarity="0"/>
+		<blueprint name="zoltan" rarity="0"/>
+		<blueprint name="zoltan_monk" rarity="5"/>
+		<blueprint name="zoltan_devotee" rarity="0"/>
+		<blueprint name="zoltan_peace" rarity="0"/>
+		<blueprint name="rock" rarity="3"/>
+		<blueprint name="rock_outcast" rarity="0"/>
+		<blueprint name="rock_commando" rarity="0"/>
+		<blueprint name="rock_crusader" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="mantis_free" rarity="0"/>
+		<blueprint name="mantis_suzerain" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="slug_clansman" rarity="5"/>
+		<blueprint name="slug_saboteur" rarity="0"/>
+		<blueprint name="crystal" rarity="5"/>
+		<blueprint name="crystal_liberator" rarity="0"/>
+		<blueprint name="crystal_sentinel" rarity="0"/>
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid_vampweed" rarity="0"/>
+		<blueprint name="leech" rarity="0"/>
+		<blueprint name="lanius" rarity="4"/>
+		<blueprint name="lanius_welder" rarity="0"/>
+		<blueprint name="phantom" rarity="5"/>
+		<blueprint name="phantom_goul" rarity="0"/>
+		<blueprint name="phantom_mare" rarity="0"/>
+		<blueprint name="phantom_wraith" rarity="0"/>
+		<blueprint name="deepone" rarity="1"/>
+		<blueprint name="DEEPONE_JELLYFISH" rarity="3"/>
+	</rarityList>
+    <startEvent>ENTER_DEEPONE</startEvent>
+	<removeFirstBeaconNebula/>
+	<exitBeacon event="FINISH_BEACON_DEEPONE" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
+	<rebelBeacon event="FLEET_THREAT_MLOW" nebulaEvent="FLEET_THREAT_MLOW_NEBULA"/>
+	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="OUTPOST_LIST_DEEPONE" min="0" max="1"/>
+	<event name="ENLIGHTENED_QUEST_START" min="1" max="1"/>
+	<event name="STORELIST_DEEPONE" min="2" max="2"/>
+	<event name="ITEMS_DEEPONE" min="2" max="4"/>
+	<event name="NEUTRAL_DEEPONE" min="3" max="5"/>
+	<event name="DISTRESS_DEEPONE" min="1" max="2"/>
+	<event name="HOSTILE_DEEPONE" min="4" max="8"/>
+	<event name="PIRACY_LIST" min="1" max="3"/>
+	<event name="FILLER_LIST" min="999" max="999"/>
+</sectorDescription>
+<sectorDescription name="SECRET_ENLIGHTENED" unique="true">   
+	<nameList>
+		<name>Enlightened Deep Space</name>
+	</nameList>
+	<trackList>
+		<track>lostship</track>
+		<track>debris</track>
+		<track>wasteland</track>
+		<track>deepspace</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="human_medic" rarity="0"/>
+		<blueprint name="human_engineer" rarity="0"/>
+		<blueprint name="human_soldier" rarity="0"/>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="engi_separatist" rarity="0"/>
+		<blueprint name="engi_defender" rarity="0"/>
+		<blueprint name="zoltan" rarity="0"/>
+		<blueprint name="zoltan_monk" rarity="0"/>
+		<blueprint name="zoltan_devotee" rarity="0"/>
+		<blueprint name="zoltan_peace" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="rock_outcast" rarity="0"/>
+		<blueprint name="rock_commando" rarity="0"/>
+		<blueprint name="rock_crusader" rarity="0"/>
+		<blueprint name="rock_cultist" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="mantis_free" rarity="0"/>
+		<blueprint name="mantis_suzerain" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="slug_saboteur" rarity="0"/>
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="crystal_liberator" rarity="0"/>
+		<blueprint name="crystal_sentinel" rarity="0"/>
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid_vampweed" rarity="0"/>
+		<blueprint name="leech" rarity="0"/>
+		<blueprint name="lanius" rarity="0"/>
+		<blueprint name="lanius_welder" rarity="0"/>
+		<blueprint name="phantom" rarity="0"/>
+		<blueprint name="phantom_goul" rarity="0"/>
+		<blueprint name="phantom_mare" rarity="0"/>
+		<blueprint name="phantom_wraith" rarity="0"/>
+		<blueprint name="deepone" rarity="1"/>
+		<blueprint name="deepone_cultist" rarity="2"/>
+		<blueprint name="DEEPONE_JELLYFISH" rarity="4"/>
+		<blueprint name="SHOTGUN_DARKGOD" rarity="5"/>
+		<blueprint name="LASER_DARKGOD" rarity="3"/>
+		<blueprint name="BOMB_DARKGOD" rarity="4"/>
+	</rarityList>
+	<startEvent>START_ENLIGHTENED</startEvent>
+	<removeFirstBeaconNebula/>
+	<exitBeacon event="ENLIGHTENED_EXIT" rebelEvent="ENLIGHTENED_EXIT_REBEL"/>
+	<rebelBeacon event="FLEET_ACE_ENLIGHTENED" nebulaEvent="FLEET_ACE_ENLIGHTENED"/>
+	<event name="TRANSPORT_ENLIGHTENED_LOOT" min="1" max="1"/>
+	<event name="ENLIGHTENED_KYRANDLILITH_MEETING" min="1" max="1"/>
+	<event name="STORE_HOSTILE_ENLIGHTENED" min="2" max="2"/>
+	<event name="EMPTY_ENLIGHTENED" min="1" max="2"/>
+	<event name="NEUTRAL_ENLIGHTENED" min="4" max="5"/>
+	<event name="ITEMS_ENLIGHTENED" min="4" max="5"/>
+	<event name="DISTRESS_ENLIGHTENED" min="1" max="2"/>
+	<event name="HOSTILE_ENLIGHTENED" min="999" max="999"/>
+</sectorDescription>
+
+<sectorDescription name="DARKONE_DOMAIN" unique="true">   
+	<nameList>
+		<name>Dark God's Domain</name>
+	</nameList>
+	<trackList>
+		<track>deepspace</track>
+	</trackList>
+	<startEvent>DARKONE_START</startEvent>
+	<exitBeacon event="DARKONE_FINISH" rebelEvent="DARKONE_FINISH"/>
+	<rebelBeacon event="FLEET_ACE_DARKONE" nebulaEvent="FLEET_ACE_DARKONE"/>
+	<removeFirstBeaconNebula/>
+	<event name="DARKONE_RUN" min="999" max="999"/>
+</sectorDescription>
+
+<sectorDescription name="SECTOR_DISPARITY_UNIQUE" unique="true"> 
+	<nameList>
+		<name>S-62 [Disparity Assault] [!]</name>
+	</nameList>
+	<trackList>
+		<track>engi</track>
+		<track>void</track>
+		<track>insurgence</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="human" rarity="4"/>
+		<blueprint name="human_medic" rarity="0"/>
+		<blueprint name="human_engineer" rarity="0"/>
+		<blueprint name="human_soldier" rarity="0"/>
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="engi_separatist" rarity="2"/>
+		<blueprint name="engi_defender" rarity="0"/>
+		<blueprint name="zoltan" rarity="4"/>
+		<blueprint name="zoltan_monk" rarity="5"/>
+		<blueprint name="zoltan_devotee" rarity="0"/>
+		<blueprint name="zoltan_peace" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="rock_outcast" rarity="0"/>
+		<blueprint name="rock_commando" rarity="0"/>
+		<blueprint name="rock_crusader" rarity="0"/>
+		<blueprint name="mantis" rarity="5"/>
+		<blueprint name="mantis_free" rarity="5"/>
+		<blueprint name="mantis_suzerain" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="slug_saboteur" rarity="0"/>
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="crystal_liberator" rarity="0"/>
+		<blueprint name="crystal_sentinel" rarity="0"/>
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid_vampweed" rarity="0"/>
+		<blueprint name="leech" rarity="0"/>
+		<blueprint name="lanius" rarity="0"/>
+		<blueprint name="lanius_welder" rarity="0"/>
+		<blueprint name="phantom" rarity="0"/>
+		<blueprint name="phantom_goul" rarity="0"/>
+		<blueprint name="phantom_mare" rarity="0"/>
+		<blueprint name="phantom_wraith" rarity="0"/>
+		<blueprint name="DRONE_MINISHROUD" rarity="3"/>
+		<blueprint name="DISPARITY_BROODMOTHERTOG_DEFEND" rarity="4"/>
+	</rarityList>
+	<startEvent>ENTER_DISPARITY_UNIQUE</startEvent>
+	<removeFirstBeaconNebula/>
+	<exitBeacon event="DISPARITY_FINISH" nebulaEvent="DISPARITY_FINISH" rebelEvent="DISPARITY_FINISH_REBEL"/>
+	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="FLEET_THREAT_LOW_NEBULA"/>
+	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
+	<event name="TRANSPORT_DISPARITY_LOOT" min="1" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="STORELIST_DISPARITY" min="2" max="3"/>
+	<event name="NEUTRAL_DISPARITY" min="6" max="8"/>
+	<event name="ITEMS_DISPARITY" min="1" max="2"/>
+	<event name="DISTRESS_DISPARITY" min="2" max="3"/>
+	<event name="HOSTILE_DISPARITY" min="6" max="8"/>
+	<event name="PIRACY_LIST" min="0" max="1"/>
+	<event name="FILLER_LIST" min="999" max="999"/>
+</sectorDescription>

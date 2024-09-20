@@ -1,0 +1,37 @@
+<event name="FLEET_ACE_ENLIGHTENED">
+	<revisitEvent>FLEET_ACE_ENLIGHTENED</revisitEvent>
+	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_REBEL</customFleet>
+	<text>The Rebel fleet has found you, and it appears that they've managed to create pockets within the void via overwhelming firepower... the voice remains quiet, and a nearby ship turns to engage. The ship that approaches is no regular Elite, but rather an MFK Ace! Much stronger than most Rebel ships, if you can defeat it, it may delay the fleet a little longer.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<variable name="loc_dives" op="add" val="1"/>
+	<ship load="SHIP_REBEL_FLEET_S" hostile="true"/>
+	<fleet>rebel</fleet>
+	<environment type="PDS" target="player"/>
+	<noASBPlanet/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice hidden="true" req="engines" lvl="6">
+		<text>(Adv. Engines) Try to escape the Elite.</text>
+		<event load="FLEET_ESCAPE"/>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_JERRY">
+		<text>(Jerry) "Hello!"</text>
+		<event>
+			<text load="TEXT_ENCOUNTER_REBEL_JERRY_HELLO"/>
+			<ship hostile="false"/> 
+		</event>
+	</choice>
+</event>
+
+<event name="FLEET_ACE_DARKONE">
+	<revisitEvent>FLEET_ACE_DARKONE</revisitEvent>
+	<text>The Rebellion should be here, but... instead, the darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>

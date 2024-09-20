@@ -1,0 +1,28 @@
+<mod:findName type="event" name="TRUE_VICTORY_CREW">
+	<mod-append:choice req="unique_thescarred" blue="true" hidden="true">
+		<text>Ask the Scarred about this.</text>
+		<event load="TRUE_VICTORY_CREW_THESCARRED"/>
+	</mod-append:choice>
+	<mod-append:choice req="unique_thehunger" blue="true" hidden="true">
+		<text>Ask the Hunger about this.</text>
+		<event load="TRUE_VICTORY_CREW_THEHUNGER"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="TRUE_VICTORY_CREW_THESCARRED">
+	<text>The Scarred takes a while to answer... eventually, with one hand against their scarred eye, they speak; "In regards to the False God... this bomb solves nothing. Its power eclipses that... of the Paragon, of Multiverse tech. To die here... to let it win..." they briefly tighten their grip on their scar in a flash of anger, before they relent and continue, "...do what you must. I... trust you, kin. I understand... that you have your own wars to win."</text>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_THEHUNGER">
+	<text>The Hunger spends a few moments reverberating, before becoming uncharacteristically still. Then, finally, with a clarity in their voice that you've never before heard, they speak, "Captain. We cannot die here. Our people need us, still. We know your people need you, too. When the people are too weak to fight their own wars, it's us liberators who need to rise up and fight them in their place. Fight them for what's right... and, besides. We've already sacrificed everything once, captain. We cannot afford to do so again." The Hunger pauses, and then returns to its reverberation once more, "U-U-U-UNDERSTOOD: caaaptain?"</text>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1_2</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>

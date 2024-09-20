@@ -1,0 +1,2369 @@
+<FTL>
+
+<event name="FINISH_BEACON_DEEPONE">
+	<text id="finish_beacon"/>
+	<choice hidden="true">
+		<text>Explore.</text>
+		<event load="EXIT_FILLER_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="OUTPOST_LIST_DEEPONE">
+	<event load="EMPTY_DEEPONE"/>
+	<event load="FEDERATION_OUTPOST_DEEPONE"/>
+</eventList>
+
+<event name="FEDERATION_OUTPOST_DEEPONE" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_outpost" global="true">
+		<color r="233" g="123" b="74" a="1.0"/>
+		<unvisitedTooltip id="map_outpost_unvisited"/>
+		<visitedTooltip id="map_outpost_visited"/>
+	</beaconType>
+	<text>You've discovered a Federation outpost! Though, you're a little shocked to see one in Deep One space.</text>
+	<ship load="SHIP_FED_OUTPOST" hostile="false"/>
+	<choice hidden="true" blue="false" req="challenge_level" lvl="0" max_group="1">
+		<text>Contact the outpost.</text>
+		<event>
+			<text>You hail, and to your shock, a Deep One answers! "Welcome... Federation Ship. Please, make... your needs known." You don't know how, but the Federation must have convinced them to keep this outpost running.</text>
+			<damage amount="-7"/>
+			<choice hidden="true">
+				<text>Request fuel.</text>
+				<event>
+					<text>A box of fuel, covered in damp handprints, is brought on-board.</text>
+					<item_modify>
+						<item type="fuel" min="7" max="7"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request ammunition.</text>
+				<event>
+					<text>A shipment of ammunition, covered in damp handprints, is delivered to your ship.</text>
+					<item_modify>
+						<item type="missiles" min="4" max="4"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request droneparts.</text>
+				<event>
+					<text>A shipment of droneparts, covered in damp handprints, is delivered to your ship.</text>
+					<item_modify>
+						<item type="drones" min="3" max="3"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Have your Deep One bargain for a bit of everything.</text>
+				<event>
+					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard Multiverse ship... For you, friend... anything."</text>
+					<item_modify>
+						<item type="fuel" min="3" max="3"/>
+						<item type="missiles" min="2" max="2"/>
+						<item type="drones" min="1" max="1"/>
+					</item_modify>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" blue="false" req="challenge_level" lvl="1" max_group="1">
+		<text>Contact the outpost.</text>
+		<event>
+			<text>You hail, and to your shock, a Deep One answers! "Welcome... Federation Ship. Please, make... your needs known." You don't know how, but the Federation must have convinced them to keep this outpost running.</text>
+			<choice hidden="true">
+				<text>Request repairs.</text>
+				<event>
+					<text>The Deep Ones send a team to repair your ship. You hope they don't get water in any of the electronics...</text>
+					<damage amount="-7"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request fuel.</text>
+				<event>
+					<text>A box of fuel, covered in damp handprints, is brought on-board.</text>
+					<item_modify>
+						<item type="fuel" min="7" max="7"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request ammunition.</text>
+				<event>
+					<text>A shipment of ammunition, covered in damp handprints, is delivered to your ship.</text>
+					<item_modify>
+						<item type="missiles" min="4" max="4"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request droneparts.</text>
+				<event>
+					<text>A shipment of droneparts, covered in damp handprints, is delivered to your ship.</text>
+					<item_modify>
+						<item type="drones" min="3" max="3"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Have your Deep One bargain for a bit of everything.</text>
+				<event>
+					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard Multiverse ship... For you, friend... anything."</text>
+					<damage amount="-3"/>
+					<item_modify>
+						<item type="fuel" min="3" max="3"/>
+						<item type="missiles" min="2" max="2"/>
+						<item type="drones" min="1" max="1"/>
+					</item_modify>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" blue="false" req="pilot" lvl="1" max_group="2">
+		<text>Attack the outpost!</text>
+		<event>
+			<text>You've decided, instead of receiving help, to attack this outpost full of friendlies...</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="EMPTY_DEEPONE">
+	<text load="TEXT_EMPTY_DEEPONE"/>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<textList name="TEXT_EMPTY_DEEPONE">
+	<text>Upon arriving at the beacon, you spot a decrepit, abandoned store. To your disappointment it appears to have been picked clean by the Deep Ones.</text>
+	<text>The beacon here appears to be empty. Though, you can't help but feel like you're always being watched when you're in Deep One space...</text>
+	<text>You're immediately greeted by an object whizzing past at an indescribable speed. As quickly as it came, it goes, and you're not sure what to make of the blue blur.</text>
+	<text>It's quickly assessed that there's nothing of value here. As the FTL charges, you think you see something move outside, but scans of the area don't seem to pick anything up. Must've been your imagination.</text>
+</textList>
+
+<event name="ENLIGHTENED_QUEST_START" unique="true">
+	<preventQuest/>
+	<text>There appears to be nothing here, but... No. Something's wrong. Deeply, deeply wrong.</text>
+	<img back="BACKGROUND" planet="PLANET_INVISIBLE"/>
+	<choice req="loc_mysterious_entity_seen" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Check behind you.</text>
+		<event>
+			<text>You quickly turn around, but there's... nothing there. There's nothing there, right?</text>
+			<variable name="loc_mysterious_entity_seen" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Turn back around.</text>
+				<event>
+					<text>You turn back to face outside your cabin window, but that crushing sense of dread hasn't yet left.</text>
+					<choice hidden="true">
+						<text>Check behind you again.</text>
+						<event>
+							<text>Sweat begins to bead as you swiftly turn around once more. Again, nothing...</text>
+							<choice hidden="true">
+								<text>Turn back around, again.</text>
+								<event>
+									<text>Refusing to let paranoia get the better of you, you shake your head and return to staring out the window.</text>
+									<choice hidden="true">
+										<text>Blink.</text>
+										<event load="ENLIGHTENED_QUEST_START_MIDDLE"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Scan the room.</text>
+								<event>
+									<text>There's something wrong, there has to be. Your eyes dart around to every corner of the room, looking for something, anything, to prove you aren't just going crazy. After a few minutes of frantic searching you're about to give up, when you finally see... it. Something's in the airvent.</text>
+									<choice hidden="true">
+										<text>Inspect the airvent.</text>
+										<event load="ENLIGHTENED_QUEST_START_NEUTRAL_END"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Stare outside the window and try to relax.</text>
+						<event>
+							<text>There's nothing outside but the stars. You take slight comfort in the fact that no matter where you go, the stars are always there to keep you company.</text>
+							<choice hidden="true">
+								<text>Blink.</text>
+								<event load="ENLIGHTENED_QUEST_START_MIDDLE"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Glance around the room.</text>
+				<event>
+					<text>You glance around the room cautiously, but don't see anything out of the ordinary.</text>
+					<choice hidden="true">
+						<text>Turn back around.</text>
+						<event>
+							<text>You turn back to face outside your cabin window, but that crushing sense of dread hasn't yet left.</text>
+							<choice hidden="true">
+								<text>Check behind you again.</text>
+								<event>
+									<text>Sweat begins to bead as you swiftly turn around once more. Again, nothing...</text>
+									<choice hidden="true">
+										<text>Turn back around, again.</text>
+										<event>
+											<text>Refusing to let paranoia get the better of you, you shake your head and return to staring out the window.</text>
+											<choice hidden="true">
+												<text>Blink.</text>
+												<event load="ENLIGHTENED_QUEST_START_MIDDLE"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Scan the room.</text>
+										<event>
+											<text>There's something wrong, there has to be. Your eyes dart around to every corner of the room, looking for something, anything, to prove you aren't just going crazy. After a few minutes of frantic searching you're about to give up, when you finally see... it. Something's in the airvent.</text>
+											<choice hidden="true">
+												<text>Inspect the airvent.</text>
+												<event load="ENLIGHTENED_QUEST_START_NEUTRAL_END"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Stare outside the window and try to relax.</text>
+								<event>
+									<text>There's nothing outside but the stars. You take slight comfort in the fact that no matter where you go, the stars are always there to keep you company.</text>
+									<choice hidden="true">
+										<text>Blink.</text>
+										<event load="ENLIGHTENED_QUEST_START_MIDDLE"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="loc_mysterious_entity_seen" lvl="1" blue="false">
+		<text>Sensing déjà vu, check behind you.</text>
+		<event>
+			<text>Huh. There's nothing there. Suppose nothing's wrong after all! You have time to do something on the ship.</text>
+			<choice hidden="true">
+                <text>Check the storage.</text>
+                <event load="STORAGE_CHECK"/>
+            </choice>
+            <choice hidden="true">
+                <text>Do nothing.</text>
+                <event/>
+            </choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_MIDDLE">
+	<text>The stars blink back.</text>
+	<choice hidden="true">
+		<text>They... what?</text>
+		<event>
+			<text>Just then, the power goes out! You hear the other crew shuffling about in their cabins nearby, but your room is completely dark save for the infinitesimally faint light emanating from the ether outside your window.</text>
+			<choice hidden="true">
+				<text>Glance outside the window.</text>
+				<event>
+					<text>The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone. The stars are gone.</text>
+					<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+					<playMusic>unexplored</playMusic>
+					<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false">
+						<text>Scream.</text>
+						<event load="ENLIGHTENED_QUEST_START_BAD_END"/>
+					</choice>
+					<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false">
+						<text>Scream.</text>
+						<event load="ENLIGHTENED_QUEST_START_BAD_END_NOCREW"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Sit in silence, refusing to look back outside.</text>
+				<event load="ENLIGHTENED_QUEST_START_MIDDLE_TWO"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_MIDDLE_TWO">
+	<text>You wait. Then, you wait some more. As time passes, you feel your paranoia worsening; the darkness feels as if it's growing darker and the silence is becoming deafening. Just as you get up to look for your crew, you hear a noise come from the corner of the room, between you and the door. Something's been in the room with you.</text>
+	<modifyPursuit amount="2"/>
+	<choice hidden="true">
+		<text>Demand that they reveal themselves.</text>
+		<event>
+			<text>No response is made. As far as you can tell, no movement is made either.</text>
+			<choice hidden="true">
+				<text>Repeat yourself; who goes there?</text>
+				<event>
+					<text>You hesitate and repeat your demand feebly. For a moment, there's silence and you begin to assume you must've just misheard something. That was before the heavy footsteps began pounding towards your direction.</text>
+					<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false">
+						<text>Scream.</text>
+						<event load="ENLIGHTENED_QUEST_START_BAD_END"/>
+					</choice>
+					<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false">
+						<text>Scream.</text>
+						<event load="ENLIGHTENED_QUEST_START_BAD_END_NOCREW"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Go silent.</text>
+				<event load="ENLIGHTENED_QUEST_START_GOOD_END"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Keep quiet.</text>
+		<event load="ENLIGHTENED_QUEST_START_GOOD_END"/>
+	</choice>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_BAD_END">
+	<text>You wake up to the sound of one of your crew screaming. You rush to their room, along with your other crew, but none of you are prepared for the horrifying scene before you. They've been completely eviscerated, their blood sprayed along every crevice of the room and their face left so terribly disfigured you wouldn't know who you were looking at without their nametag. You're about to throw up when you notice a set of sector coordinates has been written on the wall in their blood... Whatever bastard did this clearly wants you to head here, and you don't plan on disappointing them. They won't get away with this.</text>
+	<changeBackground>BACKGROUND</changeBackground>
+	<playMusic/>
+	<removeCrew>
+		<clone>false</clone>
+		<text>Whatever did this was smart enough to disable your clone bay and destroy your DNA backups too. Dammit...</text>
+	</removeCrew>
+	<variable name="coords_enlightened" op="set" val="1"/>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_BAD_END_NOCREW">
+	<text>You wake up to the sound of... someone screaming. You're the only one on this ship, though... cautious, you check your ship's systems, but something's off. The same string of characters and numbers repeats itself regardless of the console or system, and you realize you recognize it to be a set of coordinates. You're not sure what's going on, but whatever's done this really wants your attention... still, there's no lasting damage to any of your systems. Perhaps these coordinates are worth visiting, eventually.</text>
+	<changeBackground>BACKGROUND</changeBackground>
+	<playMusic/>
+	<variable name="coords_enlightened" op="set" val="1"/>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_NEUTRAL_END">
+	<text>As soon as you approach the air vent, the power goes out! Whatever's in there makes the loudest getaway in history but there's nothing you can do without being able to see. Moments later, you begin to hear some sort of... tearing... something's ripping through the very hull of the ship! You yell to your crew to get their oxygen masks and, sure enough, the hole in the hull must've come from whatever was in the vent because all the oxygen in the ship is immediately vented out. The power swiftly returns in the nick of time and you're able to send some crew out to patch up the hole and restore the ship's oxygen, but that's not the end of it. Your crew claim that there's sector coordinates "written" on the hull, crudely cut into the ship. You surmise that it's most likely a trap seeing that whatever did this couldn't possibly have had good intentions, but you're intrigued nonetheless and log the coords down.</text>
+	<damage amount="6"/>
+	<variable name="coords_enlightened" op="set" val="1"/>
+</event>
+
+<event name="ENLIGHTENED_QUEST_START_GOOD_END">
+	<text>You stay silent and, for a while, nothing happens. That is, until the power returns! Overwrought, you search around the room with an intense, paranoia-fueled fervour but nothing seems to be out of the ordinary. You're replaying the sound you heard whilst the lights were out in your head when one of your crew rushes into the room. Then another, and another. Apparently, everyone had similar experiences; an overwhelming sense of dread followed by waiting in the darkness and refusing to speak to whatever was there. One particularly flustered crew member, however, reports that the being in the darkness actually spoke to them... nonstop, in fact. They claim it kept repeating a string of numbers, over, and over, and over, and over... until the power returned and nothing was there. Familiar with the patterning, you recognize the string of numbers as a set of sector coordinates. Whatever mysterious entity, or group of entities, is behind this clearly wants you to go there; but who's to say what's waiting.</text>
+	<variable name="coords_enlightened" op="set" val="1"/>
+</event>
+
+<eventList name="STORELIST_DEEPONE">
+	<event load="STOREEVENT_ALIENS"/>
+	<event load="STOREEVENT_DEEPONE_RIDDLE"/>
+	<event load="STOREEVENT_DEEPONE_WAR"/>
+	<event load="STOREEVENT_DEEPONE_STANDARD"/>
+	<event load="STOREEVENT_DEEPONE_INSULT"/>
+	<event load="STOREEVENT_DEEPONE_THEOCRACY"/>
+	<event load="STOREEVENT_FED_AUTO"/>
+	<event load="STOREEVENT_ROCK_MISSION"/>
+	<event load="STOREEVENT_PIRATE_REFUELING"/>
+	<event load="STOREEVENT_PIRATE_SECURITY"/>
+</eventList>
+
+<event name="STOREEVENT_DEEPONE_RIDDLE" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<text>There appears to be a Deep One merchant ship at this beacon, a welcome sight to say the least.</text>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Hail.</text>
+		<event>
+			<text>A giddy Deep One responds to your hail, "Welcome... potential customer. Should you... care to trade, you must... solve my riddle."</text>
+			<choice hidden="true">
+				<text>Accept.</text>
+				<event>
+					<text>"They have..."</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>"...eight fingers."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>"They also have a..."</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>"...pair of thumbs."</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event>
+													<text>"But..."</text>
+													<modifyPursuit amount="1"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event>
+															<text>"...they aren't alive."</text>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event>
+																	<text>"What... are they?"</text>
+																	<choice hidden="true">
+																		<text>You, if you don't shut the hell up and start trading.</text>
+																		<event>
+																			<text>The Deep One frowns, "You must be... fun at parties. Fine, feel free... to look around."</text>
+																			<choice hidden="true">
+																				<text>Continue...</text>
+																				<event load="STORE_LOAD_DEEPONE"/>
+																			</choice>
+																		</event>
+																	</choice>
+																	<choice hidden="true" req="LIST_CREW_DEEPONES">
+																		<text>(Deep One) "They are... a pair of... gloves!"</text>
+																		<event>
+																			<text>The merchant's ecstatic about someone getting his riddle right, and he even gives you some resources on the house!</text>
+																			<autoReward level="LOW">standard</autoReward>
+																			<choice hidden="true">
+																				<text>Continue...</text>
+																				<event load="STORE_LOAD_DEEPONE"/>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>We don't have time for this.</text>
+												<event>
+													<text>"A terrible... shame." They close communications.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Decline.</text>
+				<event>
+					<text>"Maybe... next time, then." They close communications.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Yeah, a welcome sight... a ship to blow up!</text>
+		<event>
+			<text>The merchant ship notices your refusal to accept hails as you approach and turns hostile. Prepare for combat.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You ignore the merchant ship, and the merchant ship ignores you.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STOREEVENT_DEEPONE_WAR" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<text>Upon arriving at the beacon, several Deep One ships whiz past your view. Then, several more... there's an entire armada here! You glance around, looking for the merchant ship, and finally spot it within a crowd of other ships. It'd be suicide to attack it with such a fleet at the ready.</text>
+	<choice hidden="true">
+		<text>Approach the ship and hail.</text>
+		<event>
+			<text>The merchant accepts your hail, but he appears to be busy packing something in the background.</text>
+			<choice hidden="true">
+				<text>Inquire as to what he's doing.</text>
+				<event>
+					<text>"Preparing to... head off for war. We all are, were it not... obvious. The... Theocracy has been ruthless, and we... don't intend to stand idly by."</text>
+					<choice hidden="true" req="rock_commando">
+						<text>(Lost Sun) Your commando wishes to speak.</text>
+						<event>
+							<text>With a remorseful look in their eyes, your member of the Lost Suns steps forward to speak to the merchant, "Of smoldered rock or scaly flesh, it matters not to the Theocracy. We are both seen as a disease, with this 'holy' crusade being their attempt at a cure. We are bound by this, the Elders' ire, and as such I see you as no lesser than any Lost Sun; to me, we are kin, and we could use your strength in the battles to come."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>The merchant seems to have really taken your commando's speech to heart. You can see them tearing up a bit, but, for a moment, they don't reply. Eventually, they break the silence, "Your words... speak true... kin. Yet, this is a fight that I cannot... abandon. My people here, they... need me. Should there be... anything I can do for you, though, let it be... known."</text>
+									<choice hidden="true">
+										<text>Glance outside at his repair team and ask if you could have them go to work on your hull.</text>
+										<event>
+											<text>He nods his head and sends his team to repair your hull. You're offered a chance to shop while they get to work.</text>
+											<damage amount="-14"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORE_LOAD_DEEPONE"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Glance at the Deep One lighting fixtures that lay uninstalled in the corner of the room.</text>
+										<event>
+											<text>He catches your glance and responds, "An... impressive feat of technology, our luminescence... Should you install them... I'm sure you'll find the results to be... satisfactory." You take him up on his offer and take a moment to shop while they're being installed.</text>
+											<augment name="DEEPONE_LIGHTS"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORE_LOAD_DEEPONE"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Glance at the Deep One weapon sitting on a nearby shelf and ask if you can have it.</text>
+										<event>
+											<text>He seems to ponder the request for a moment, and then accepts. "The... Jellyfish Beam. Among the first... weapons created by our ancient kin. They studied... existing ion technology, and then concentrated it... ensuring it would never miss its intended target. Feel... free to shop as I have it installed."</text>
+											<weapon name="DEEPONE_JELLYFISH"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORE_LOAD_DEEPONE"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Offer to help fund the war effort.</text>
+						<event>
+							<text>His face lights up at your generosity.</text>
+							<item_modify>
+								<item type="scrap" min="-40" max="-40"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>"You are... a kind soul. Should you be... willing, I'd like to employ one of my... finest to protect you during these... turbulent times in exchange for this... altruism. Of course, you're welcome to... shop as well."</text>
+									<crewMember amount="1" class="deepone"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORE_LOAD_DEEPONE"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Offer a mighty sum to help fund the war effort.</text>
+						<event>
+							<text>His eyes go wide at your generosity.</text>
+							<item_modify>
+								<item type="scrap" min="-80" max="-80"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>"Your kindness is... truly heartening. I'll see to it that we... slow down the rebels for you while on our... crusade. Please, buy... whatever you need." You're not sure how he knew you were on the run from the rebels but you appreciate the gesture nonetheless.</text>
+									<modifyPursuit amount="-3"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORE_LOAD_DEEPONE"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Offer to practically pay for the whole damn war yourself.</text>
+						<event>
+							<text>He jumps back in shock as a pile of scrap larger than himself is teleported into the room next to him.</text>
+							<item_modify>
+								<item type="scrap" min="-120" max="-120"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>"You either... really love us or... really hate the Theocracy. As such... I find no greater irony than entrusting you with... their general, whom we've captured. He's quite... obedient, after the hell we've... put him through. Feel free... to shop and then do with him... as you see fit."</text>
+									<crewMember amount="1" class="rock_crusader"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="STORE_LOAD_DEEPONE"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Request to shop.</text>
+						<event>
+							<text>He doesn't turn around, but hurriedly mutters "Yes, yes..." and ushers you inside.</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="STORE_LOAD_DEEPONE"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Request to shop.</text>
+				<event>
+					<text>He doesn't turn around, but hurriedly mutters "Yes, yes..." and ushers you inside.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORE_LOAD_DEEPONE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Heh, "Suicide" is my middle name! Attack that merchant!</text>
+		<event>
+			<text>Well, Federation "Suicide" Renegade, you're able to make it about eleven seconds before you're spotted and asked to make your intentions known. You respond with two middle fingers and are promptly shot at by over a dozen ships. Needless to say, you don't reach the merchant.</text>
+			<damage amount="16"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="cloaking" lvl="3">
+		<text>(Cloaking) Use your advanced cloaking to attempt to rob the merchant ship.</text>
+		<event load="STOREEVENT_DEEPONE_WAR_CLOAKING"/>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You ignore the merchant ship and are not bothered as the FTL charges.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="STOREEVENT_DEEPONE_WAR_CLOAKING">
+	<event>
+		<text>In an act that can only be described as a miracle, your cloaking manages to last long enough for your crew to dock with the merchant ship, rob them blind, and then get out of there without anybody noticing a thing. Poor sap was busy packing while muttering some nonsense about going off to war.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<text>Your cloaking lasts long enough for your crew to dock with the merchant ship, but as they begin to start taking things as they see fit you realize your cloaking's about to give out. You hurry them back with their light haul, but, as you expected, your cloaking wears off during the getaway! The merchant realizes what's happened and requests immediate fire support. A few shots graze your hull as you escape, but, overall, it could've been much worse.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<damage amount="4"/>
+	</event>
+	<event>
+		<text>Unfortunately, your cloaking gives out before you even reach the merchant ship. Startled by your sudden appearance, the nearby ships attack you, shredding your hull as you try to make your getaway.</text>
+		<damage amount="11"/>
+	</event>
+	<event>
+		<text>Unfortunately, your cloaking gives out before you even reach the merchant ship. Startled by your sudden appearance, the nearby ships attack you, shredding your hull as you try to make your getaway.</text>
+		<damage amount="11"/>
+	</event>
+</eventList>
+
+<event name="STOREEVENT_DEEPONE_STANDARD">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<text>There's a Deep One merchant vessel here, who promptly hails you upon your entrance to the beacon and offers to trade.</text>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
+	<choice>
+		<text>Look around and shop.</text>
+		<event>
+			<text>The lights within the Deep One store are practically blinding, and you can't get over the overwhelming smell of must and fish. Just as you think this assault on your senses can't get any worse, the clerk just screams at the ceiling for no discernible reason. You try your best to shop quickly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORE_LOAD_DEEPONE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Blow them up!</text>
+		<event>
+			<text>You've decided to attack the trader.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STOREEVENT_DEEPONE_INSULT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<text>You're hailed the second you enter the beacon...</text>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Accept the hail.</text>
+		<event>
+			<text>Two Deep Ones show up on the monitor, but before you can say anything they just start screaming. Then, they... keep screaming.</text>
+			<choice hidden="true">
+				<text>Stare in disbelief.</text>
+				<event>
+					<text>After a few minutes of more screaming, the Deep Ones suddenly cut communications and promptly refuse further hails. Such civility...</text>
+					<choice hidden="true">
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Scream back.</text>
+				<event>
+					<text>You scream at the Deep Ones, who go silent and recoil in shock. One speaks, "Such... barbarism." to which the other responds "We knew Feds were... stupid, yet I still find myself utterly... astonished." You shrug, and they cut communications. You go to leave when, suddenly, their weapons come to life! Talk about barbarism...</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Have your Deep One scream back.</text>
+				<event>
+					<text>Your Deep One screams and the two opposing Deep Ones are taken aback. "Such... eloquence." claims one, "Such... beauty!" proclaims the other. They seem starstruck, and offer to trade. Nothing around here makes any sense to you...</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORE_LOAD_DEEPONE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Refuse the hail.</text>
+		<event>
+			<text>Whatever this ship wants, you aren't interested. You decline their request to hail, and their weapons spring to life in response!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_DEEPONE_THEOCRACY_ATTACK" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="STORE_DEEPONE_THEOCRACY_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="STORE_DEEPONE_THEOCRACY_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="STORE_DEEPONE_THEOCRACY_WIN">
+	<text>The colony thanks you a thousand times over for your heroism and offers to trade.</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="STORE_LOAD_DEEPONE"/>
+	</choice>
+</event>
+
+<event name="STOREEVENT_DEEPONE_THEOCRACY" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<img planet="PLANET_MOONS"/>
+	<text>There's a Deep One trading colony on a nearby moon here, a member of which promptly hails you upon your entrance to the beacon and offers to trade.</text>
+	<choice hidden="true">
+		<text>Move in to trade.</text>
+		<event>
+			<text>You're almost there when you detect an FTL signature nearby, it appears that a Rock ship has jumped into the beacon! They move in to attack the colony, whose anti-ship batteries can't penetrate the Rocks' hull armor.</text>
+			<ship load="SHIP_DEEPONE_THEOCRACY_ATTACK" hostile="false"/>
+			<choice hidden="true">
+				<text>Protect the colony!</text>
+				<event>
+					<text>Not today, you crazed zealots. You prepare to intercept the now hostile Rock ship.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Betray the colony and offer the Rocks some ammunition to make their job a little easier.</text>
+				<event>
+					<text>The Rocks take the ammunition and chuckle.</text>
+					<item_modify>
+						<item type="missiles" min="-8" max="-8"/>
+					</item_modify>
+					<choice>
+						<text>Continue...</text>
+						<event load="STOREEVENT_DEEPONE_THEOCRACY_BETRAYAL"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Stay out of it.</text>
+				<event>
+					<text>You decide to not intervene. You're sure you've just left the colony to a terrible fate, but it's not any of your business.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_CRYSTAL">
+				<text>(Crystal) Have your Crystal hail the Rocks.</text>
+				<event>
+					<text>Upon viewing your Crystal, the Rocks go into hysterics; screaming and smashing everything around them. In the process, one of them must have accidentally hit the button that triggers the FTL, as the ship promptly jumps out of the beacon. The colony is about as dumbfounded as you are, but they thank you and offer to trade nonetheless.</text>
+					<instantEscape/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORE_LOAD_DEEPONE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the colony.</text>
+		<event>
+			<text>You're not interested in trading right now.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="STOREEVENT_DEEPONE_THEOCRACY_BETRAYAL">
+	<event>
+		<text>You see them bundle the missiles together with whatever material they had laying around and promptly launch the makeshift bomb at the colony. It's completely leveled by the explosion, and debris is sent flying everywhere. You scrap some, and the Rock ship leaves; satisfied with their work.</text>
+		<instantEscape/>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<choice>
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>However, moments later an explosion rocks their ship! They must've accidentally set a missile off but, suspecting that you sent them faulty ammunition, the Rocks turn on you. Meanwhile, the colony's inhabitants collectively figure this must've been a planned reverse-betrayal and are rooting for you.</text>
+		<ship hostile="true"/>
+		<enemyDamage amount="6"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="COMBAT_CHECK"/>
+		</choice>
+	</event>
+</eventList>
+
+<event name="STORE_LOAD_DEEPONE">
+	<store>STORE_DEEPONE</store>
+	<text>Before you shop, you still have some time to do something else aboard the ship.</text>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="ITEMS_DEEPONE">
+	<event load="ITEMS_DEEPONE_FRIENDLY"/>
+	<event load="ITEMS_DEEPONE_DARKGOD"/>
+	<event load="ITEMS_DEEPONE_WRECK"/>
+	<event load="ITEMS_DEEPONE_THEOCRACY_HEIST"/>
+	<event load="ITEMS_DEEPONE_DREAD"/>
+</eventList>
+
+<event name="ITEMS_DEEPONE_FRIENDLY">
+	<text>There's a colony of Deep Ones at this beacon, and upon your approach they beckon you to land.</text>
+	<choice hidden="true">
+		<text>We have some time to spare, agree to land.</text>
+		<event>
+			<text>You approach the Deep One colony with caution, but your wariness is quickly proven to be unwarranted. They explain that they so rarely see visitors and are ecstatic at your arrival, soon showering you with gifts! You return the favor with lavish stories of your exploits across the Multiverse, the Deep Ones' eyes further widening in wonder with each self-indulgent tale. Though you spend more time than you probably should, your crew appreciates the rare moment of respite.</text>
+			<modifyPursuit amount="1"/>
+			<autoReward level="MED">standard</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>We don't have any time to spare.</text>
+		<event>
+			<text>You explain to the Deep Ones that time is of the upmost importance in regards to your mission. They're saddened by your refusal, but they understand.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DEEPONE_DARKGOD">
+	<text>Immediately upon entering the system, your ship identifies a foreign mass materializing in the ship's hold. There's no ships nearby for anyone to have teleported from, so you suspect it's a false alarm, but nevertheless you approach the hold with a blaster in hand. Upon further inspection, your suspicions are quickly proven to be correct, as there's nothing out of order here.</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. An assorted pile of junk sits in the middle of it, a mess of scrap and resources that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that free scrap is free scrap and prepare to leave the beacon in a hurry.</text>
+			<autoReward level="MED">stuff</autoReward>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DEEPONE_WRECK">
+	<text>You're met with the sight of a Deep One wreck, its signatures completely cold but its lights as radiant as ever. There's no telling how long it's been here, and the hull seems to somehow be impenetrable to your ship's scans.</text>
+	<choice hidden="true">
+		<text>Inspect the inside of the ship.</text>
+		<event>
+			<text>You send a team to explore the inside of a ship, though upon entering you can immediately tell that this place won't hold together much longer. With the time limit in mind, your team embarks; requesting your instructions in exploring the labyrinth.</text>
+			<choice hidden="true">
+				<text>Go... right.</text>
+				<event>
+					<text>Your team copies and heads right. After a few minutes of silently wandering through the iridescent halls, your team reports a collective sense of dread amongst themselves. You don't think much of it at first, but then you begin to recognize a pattern in the turns your crew are making. It appears that these hallways loop endlessly, but... they haven't seen the entrance since, well, entering. Your crew begins to panic, and you hear the ship buckle. There's not much time left before it rips itself apart.</text>
+					<choice hidden="true">
+						<text>Assure them to keep going.</text>
+						<event>
+							<text>You reassure your team that everything is fine and encourage them to push forward. Begrudgingly, they begin to comply, but moments later they've stopped again. You've nearly returned to reassuring them when you notice the tall, motionless shadow of a figure just out of view ahead of them. Is this the first hallway without a light?</text>
+							<choice hidden="true">
+								<text>Demand that they confront the figure.</text>
+								<event>
+									<text>With stern resolve, you demand that your crew confronts the figure ahead of them. Before they can even protest, however, the visuals on the call abruptly go down and not even a split second later all you can hear through the comms is screaming... followed by heavy footsteps. Both quickly grow fainter and it becomes apparent that your team has dropped their mics amidst the panic. All you can do is sit there in disbelief and wait.</text>
+									<choice hidden="true">
+										<text>Wait.</text>
+										<event>
+											<text>A few minutes go by and, miraculously, your team emerges from the wreck; still screaming and with a Deep One chasing in tow! You demand an explanation and though your crew is in hysterics, the Deep One begs to be given a chance to speak. As it turns out, he didn't mean to scare your team and was merely likewise shocked at the sight of outsiders on what remained of his ship. He explains that he's been drifting for a few days as a result of a collision tearing the engines apart, stranding him here and slowly depressurizing the ship. As if on cue, the ship buckles for the last time and collapses in on itself in the background. Disgruntled, and with nothing left for him here, he offers to join your crew to try to make amends for all the accidental fright he's caused.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Alright, it's definitely time to leave.</text>
+								<event>
+									<text>You don't say a word, but your team agrees with you. They slowly turn around and begin to walk back the way they came but, to their bewilderment, they find the exit within the first couple minutes of backtracking. Though this endeavour has proven fruitless, at least your crew's okay.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Maybe it's time to leave.</text>
+						<event>
+							<text>This place is a maze, and your team's not making any progress. You decide it's time to pull out, but... where exactly is out? Your team spends what feels like hours trying to retrace their steps, until eventually they come across the initial T-shaped hallway they entered from. They barely make it out before the ship buckles for the last time, collapsing in on itself. The fleet's surely caught up to you in the meantime, and you've gotten absolutely nothing out of it, but at least your crew's safe.</text>
+							<modifyPursuit amount="2"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Go... left.</text>
+				<event>
+					<text>Your team copies and heads left. After a few minutes of silently wandering through the iridescent halls, they come across a couple rooms labeled in an alien tongue you don't recognize. You hear the ship begin to buckle, and it becomes apparent that you don't have time to explore both rooms.</text>
+					<choice hidden="true">
+						<text>Enter the dark room.</text>
+						<event>
+							<text>Your crew heads into the room without any lighting, and quickly figure out that it's the ship's resource hold. They gather what loot they can and prepare to leave before the inside of the ship comes crashing down around them. Mission successful.</text>
+							<autoReward level="MED">standard</autoReward>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Enter the illuminated room.</text>
+						<event>
+							<text>Your crew enters the blindingly bright room, but are unsure of what to make of their surroundings. The room appears to twist in one's peripheral vision, each corner never remaining constant unless focused upon. One thing that's certain is that the room is empty, save for the dismantled remains of an Engi. Though, upon further inspection, it's not a form you've ever seen any Engi take... Black and purple, with no arms, and strange spikes jutting out its back; its nanites ever shifting, akin to the room around it.</text>
+							<choice hidden="true" req="LIST_CREW_DISPARITY">
+								<text>(Disparity Crew) Wait a minute. You know exactly what this is!</text>
+								<event>
+									<text>These are the remains of a Disparity Elite! You have your team grab them and pull out, and, once aboard, your own Disparity crew member gets to work on putting them together again. Once finished, the newly rebuilt Disparity Elite stutters a few words in thanks, "[B-b-b-brothers...] -here...?- T-t-thank: y-you..." They'll take some time to fully recover, but, as thanks, they offer to join your crew!</text>
+									<crewMember amount="1" class="disparity_engidefault"/>
+								</event>
+							</choice>
+							<choice hidden="true" req="LIST_VARIANT_SEPARATIST">
+								<text>(Separatist Crew) Your Separatist seems to recognize the design.</text>
+								<event>
+									<text>They speak to you through the comms, "I have: heard -tell- of these ones. I think: I can [fix] them." You have your team grab the dismantled Engi and pull out, and, once aboard, your Separatist crew member gets to work on putting them together again. Once finished, the newly rebuilt Engi stutters a few more words in thanks, "[B-b-b-brothers...] -here...?- T-t-thank: y-you..." They'll take some time to fully recover, but, as thanks, the strange Engi offers to join your crew!</text>
+									<crewMember amount="1" class="disparity_engidefault"/>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>I don't know what this is.</text>
+								<event>
+									<text>As strange as it is, there's nothing you can do, and you make the call to pull your team out. This will have to be a mystery for another day.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DEEPONES">
+						<text>(Deep One) Your Deep One offers to read the labels for you.</text>
+						<event>
+							<text>Your Deep One explains that the dark room is labelled 'HOLD' and that the illuminated one is, quite literally, labelled 'DANGER METAL MAN'.</text>
+							<choice hidden="true">
+								<text>Enter the hold.</text>
+								<event>
+									<text>Your crew heads into the hold. They gather what loot they can and prepare to leave before the inside of the ship comes crashing down around them. Mission successful.</text>
+									<autoReward level="MED">standard</autoReward>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Enter the strangely labeled room.</text>
+								<event>
+									<text>Your crew enters the blindingly bright room, but are unsure of what to make of their surroundings. The room appears to twist in one's peripheral vision, each corner never remaining constant unless focused upon. One thing that's certain is that the room is empty, save for the dismantled remains of an Engi. Though, upon further inspection, it's not a form you've ever seen any Engi take... Black and purple, with no arms, and strange spikes jutting out its back; its nanites ever shifting, akin to the room around it.</text>
+									<choice hidden="true" req="LIST_CREW_DISPARITY">
+										<text>(Disparity Crew) Wait a minute. You know exactly what this is!</text>
+										<event>
+											<text>These are the remains of a Disparity Elite! You have your team grab them and pull out, and, once aboard, your own Disparity crew member gets to work on putting them together again. Once finished, the newly rebuilt Disparity Elite stutters a few words in thanks, "[B-b-b-brothers...] -here...?- T-t-thank: y-you..." They'll take some time to fully recover, but, as thanks, they offer to join your crew!</text>
+											<crewMember amount="1" class="disparity_engidefault"/>
+										</event>
+									</choice>
+									<choice hidden="true" req="LIST_VARIANT_SEPARATIST">
+										<text>(Separatist Crew) Your Separatist seems to recognize the design.</text>
+										<event>
+											<text>They speak to you through the comms, "I have: heard -tell- of these ones. I think: I can [fix] them." You have your team grab the dismantled Engi and pull out, and, once aboard, your Separatist crew member gets to work on putting them together again. Once finished, the newly rebuilt Engi stutters a few more words in thanks, "[B-b-b-brothers...] -here...?- T-t-thank: y-you..." They'll take some time to fully recover, but, as thanks, the strange Engi offers to join your crew!</text>
+											<crewMember amount="1" class="disparity_engidefault"/>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>I don't know what this is.</text>
+										<event>
+											<text>As strange as it is, there's nothing you can do, and you make the call to pull your team out. This will have to be a mystery for another day.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Scrap the outside of the ship.</text>
+		<event>
+			<text>You skirt around the outside of the ship and scrap what you can.</text>
+			<autoReward level="MED">scrap_only</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You don't have any time for ominous wrecks, let alone ones in Deep One space. Not trying to get jumped by some kind of abominable horror, you prepare to leave the beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DEEPONE_THEOCRACY_HEIST" unique="true">
+	<text>Before you can do anything, you're hailed with an invitation to a call on a private channel. You don't see any ships nearby when you look outside. Feels odd...</text>
+	<choice hidden="true">
+		<text>Accept the call.</text>
+		<event>
+			<text>You're greeted with a dark room, duly lit by cyan lights on the ceiling. While you can't make anything out, you recognize the lights as being the same ones the Deep Ones use. A voice from the darkness speaks, "Have you... respect for the Rocks?" and silence ensues as they wait for a reply.</text>
+			<choice hidden="true">
+				<text>Of course.</text>
+				<event>
+					<text>"Then we have no business with you." The call is ended, and you're left alone in silence.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Let your Deep One answer.</text>
+				<event>
+					<text>Your Deep One growls something scathing over the mic. The Deep Ones over the call seem to quite enjoy this answer, and after laughing for a moment brighten the room to reveal themselves. "An enemy of the Theocracy... is a friend of ours." they say, before offering to share in some spoils from their recent heist of a Rock outpost! They regale you with tales of their exploits as their ship zooms into view, and, while they transfer the spoils over, you regale them with tales of your own.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_ROCK">
+				<text>(Rock Crew) Let your Rockman answer.</text>
+				<event>
+					<text>Your Rockman answers "Yes! An infinite well of respect!" proudly, and you're met with a brief moment of silence before the other end replies; "A shame. An infinite well... of shame." The call is ended, and you're left alone in silence.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_CRYSTAL">
+				<text>(Crystal) Let your Crystal answer.</text>
+				<event>
+					<text>Your Crystal shuffles a bit and answers meekly, "Not particularly. Those guys are a little weird, and... fanatical." and you hear a sigh from the Deep Ones as they reply; "Fanatical... to an extreme. Still, an enemy of the Theocracy... is a friend of ours." they say, before offering to share in some spoils from their recent heist of a Rock outpost! They regale you with tales of their exploits as their ship zooms into view, and, while they transfer the spoils over, you regale them with tales of your own.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Of course not.</text>
+				<event>
+					<text>"Quick... to answer. So be it, then. An enemy of the Theocracy... is a friend of ours." they say, before offering to share in some spoils from their recent heist of a Rock outpost! They regale you with tales of their exploits as their ship zooms into view, and, while they transfer the spoils over, you regale them with tales of your own.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Refuse the call.</text>
+		<event>
+			<text>No attempt to call again is made. You have some time before the FTL charges... though you feel uneasy.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DEEPONE_DREAD" unique="true">
+	<text>Something feels off as you pull into the beacon. You're met with the sight of a Deep One outpost, but your hails aren't answered and the whole place seems still.</text>
+	<choice hidden="true">
+		<text>Dock into the station.</text>
+		<event>
+			<text>You and your crew enter the station, and things quickly get weird. There are innumerable Deep Ones, all unmoving, their stares trance-like. You know Deep Ones are an odd bunch, but this seems bizarre even for them. Are they okay?</text>
+			<choice hidden="true">
+				<text>Try to grab a Deep One's attention.</text>
+				<event>
+					<text>You walk up to one of the Deep Ones and wave. Nothing. You clap a few times and still, nothing.</text>
+					<choice hidden="true">
+						<text>Try shaking it.</text>
+						<event>
+							<text>You clasp your hands around the Deep One's shoulders, and immediate dread fills your very being upon making contact. You see dozens of images, each filling you with more terror than the last; visions of rituals and cults. A Deep One brutalized, scarred; blood splatters across the ground as an entourage of yellow Deep Ones look on in worship of the horrible display. Prayers and followers in the name of...</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>You're brought back to reality as your crew pulls you away. What the hell was that, and why did you see it? What's going on with these Deep Ones?</text>
+									<choice hidden="true">
+										<text>Head deeper into the outpost.</text>
+										<event>
+											<text>You and your crew walk past countless Deep Ones, and never once do they stir. At the heart of the outpost lies a pile of... garbage? No, scrap, and a note with it that reads "For you... captain." Do the Deep Ones really put pauses in their writing, too? No, more importantly, is this for you? Did they know you were coming? Your questions fall on deaf ears as the Deep Ones continue to stare into nothing for what feels like eternity, not moving an inch as you and your crew retreat to your ship with your newfound scrap.</text>
+											<autoReward level="RANDOM">scrap_only</autoReward>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>This isn't right, head back before something goes wrong.</text>
+										<event>
+											<text>You and your crew turn back around, and the Deep Ones still don't move. Disturbed, but safe, you've got some time to kill before the FTL charges.</text>
+											<choice>
+												<text>Do something onboard the ship.</text>
+												<event load="STORAGE_CHECK"/>
+											</choice>
+											<choice>
+												<text>Do nothing.</text>
+												<event/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Stop trying, and just keep walking.</text>
+						<event>
+							<text>You and your crew walk past countless Deep Ones, and never once do they stir. At the heart of the outpost lies a pile of... garbage? No, scrap, and a note with it that reads "For you... captain." Do the Deep Ones really put pauses in their writing, too? No, more importantly, is this for you? Did they know you were coming? Your questions fall on deaf ears as the Deep Ones continue to stare into nothing for what feels like eternity, not moving an inch as you and your crew retreat to your ship with your newfound scrap.</text>
+							<autoReward level="RANDOM">scrap_only</autoReward>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Ignore the Deep Ones and keep moving.</text>
+				<event>
+					<text>You and your crew walk past countless Deep Ones, and never once do they stir. At the heart of the outpost lies a pile of... garbage? No, scrap, and a note with it that reads "For you... captain." Do the Deep Ones really put pauses in their writing, too? No, more importantly, is this for you? Did they know you were coming? Your questions fall on deaf ears as the Deep Ones continue to stare into nothing for what feels like eternity, not moving an inch as you and your crew retreat to your ship with your newfound scrap.</text>
+					<autoReward level="RANDOM">scrap_only</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Your Deep One looks troubled.</text>
+				<event>
+					<text>You look to your Deep One for insight into the situation, but they don't seem too keen to provide answers. After pushing a little, they say one word; "Ritual." They insist you leave the Deep Ones here undisturbed. Ominous...</text>
+					<choice hidden="true">
+						<text>Push deeper into the outpost.</text>
+						<event>
+							<text>You and your crew walk past countless Deep Ones, and never once do they stir. At the heart of the outpost lies a pile of... garbage? No, scrap, and a note with it that reads "For you... captain." Do the Deep Ones really put pauses in their writing, too? No, more importantly, is this for you? Did they know you were coming? Your questions fall on deaf ears as the Deep Ones continue to stare into nothing for what feels like eternity, not moving an inch as you and your crew retreat to your ship with your newfound scrap.</text>
+							<autoReward level="RANDOM">scrap_only</autoReward>
+						</event>
+					</choice>
+					<choice>
+						<text>Turn back, this doesn't feel right.</text>
+						<event>
+							<text>You and your crew turn back around, and the Deep Ones still don't move. Disturbed, but safe, you've got some time to kill before the FTL charges.</text>
+							<choice>
+								<text>Do something onboard the ship.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+							<choice>
+								<text>Do nothing.</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>This is way too weird. Get out.</text>
+				<event>
+					<text>You and your crew turn back around, and the Deep Ones still don't move. Disturbed, but safe, you've got some time to kill before the FTL charges.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nope. Staying right here.</text>
+		<event>
+			<text>You don't trust this outpost. As such, you fire up the FTL and prepare to leave the beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NEUTRAL_DEEPONE">
+	<event load="NEUTRAL_DEEPONE_GOOBER"/>
+	<event load="NEUTRAL_DEEPONE_ROCKOFF"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT"/>
+	<event load="NEUTRAL_DEEPONE_LANIUS"/>
+	<event load="DEEPONE_CONFUSION"/>
+</eventList>
+
+<event name="NEUTRAL_DEEPONE_GOOBER" unique="true">
+	<text>You're quickly hailed, met by a little Deep One, "BEHOLD... GUUBARE." You behold Guubare. Besides being short and of a stout build, he's notably... shaky. Fear? The cold? Do fish-people shiver? Whatever it is, it makes an already unintimidating Deep One even less threatening.</text>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>O' mighty GUUBARE, I beholdeth thou in full. Doth thou taketh pity on mine soul?</text>
+		<event>
+			<text>"THIS ONE... SPEAKS AKIN TO THE GHOSTS. YET, THEY SPEAK... HIGHLY OF GUUBARE. GUUBARE... TAKES PITY. BEGONE, LITTLE... THING." Guubare cuts communications and you're left with nothing to do but charge the FTL.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>You're such a little... goober, Guubare.</text>
+		<event>
+			<text>His shaking worsens. He speaks again, but his voice is way less deep now, high-pitched even; "Man... I told you guys I wasn't cut out for this..." Gloomy, he walks away and a new, giant Deep One takes his place. "You've... upset Guubare. The price, for this transgression... your head." They cut communications and a ship zooms into view, guns charging!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_NEUTRAL_DEEPONE_ROCKOFF_FANATIC" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_FANATIC"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_FANATIC"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_NEUTRAL_DEEPONE_ROCKOFF_CALM" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can. Hopefully the lights survived...</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_CALM_RUBBLE"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can before looking for the lights.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_CALM_CREWKILL"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
+	<triggeredEvent event="NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED_FAIL" time="60" thisFight="true">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+			<warning time="10.0" flash="true"/>
+			<tooltip>If you do not defeat the Rock ship in this amount of time, the second ship's signature will go cold!</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can before trying to track the second ship.</text>
+		<autoReward level="MED">item</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED_SUCCESS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can before trying to track the second ship.</text>
+		<autoReward level="HIGH">item</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED_SUCCESS"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_WIN_FANATIC">
+	<text>Unphased by the first ship's destruction, the second speaks up; "A fool, that one. I've got some explaining to do to our superiors, but still, I'd argue you've done me a favor. Here, you can have the lights. There's plenty more where they came from, and I shouldn't have any problems convincing my brethren of their uses with this half-wit silenced." They beam the lights over and promptly leave the system.</text>
+	<augment name="DEEPONE_LIGHTS"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_WIN_CALM_RUBBLE">
+	<text>You comb through the wreckage, and eventually find the lights unharmed! The first ship seems amused by this and speaks up, "FOOLISH, that one. To THINK, they'd DEFY the texts and seek power in the UNHOLY. Take the lights if you wish, FED. I won't be missing their GHASTLY glow." They cut communications and promptly leave the system.</text>
+	<augment name="DEEPONE_LIGHTS"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_WIN_CALM_CREWKILL">
+	<text>You comb through the now-empty ship, and eventually find the lights unharmed! The first ship seems amused by this and speaks up, "FOOLISH, that one. To THINK, they'd DEFY the texts and seek power in the UNHOLY. Take the lights if you wish, FED. I won't be missing their GHASTLY glow." They cut communications and promptly leave the system.</text>
+	<augment name="DEEPONE_LIGHTS"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED_FAIL">
+	<text>The second ship's signature has gone cold. With their partner safe, the first ship escapes off in the opposite direction. Seeing that there's little point in giving chase if you won't be catching the second ship regardless, you prepare to leave the beacon.</text>
+	<recallBoarders/>
+	<instantEscape/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED_SUCCESS">
+	<text>The second ship's signature is still warm! You log their coordinates on your map and prepare to leave the beacon, triumphant.</text>
+	<quest event="NEUTRAL_DEEPONE_ROCKOFF_CHASE"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF" unique="true">
+	<text>There appear to be two Rock ships at this beacon, communicating on an open channel. They don't pay you any mind, but there's nothing stopping you from listening in...</text>
+	<choice hidden="true">
+		<text>Listen in.</text>
+		<event>
+			<text>"They MUST be DESTROYED. This foul creation of the legged-fish-things is blasphemy of the HIGHEST ORDER!" says one ship, to which the other responds "There's nothing in the texts about these infernal lights. Foul they may be, they have their uses in our hands; namely, against the Deep Ones themselves." They notice you listening in and the second ship speaks again, "You there, Federation ship. What know you of these lights?"</text>
+			<choice hidden="true">
+				<text>They're... cyan?</text>
+				<event>
+					<text>"CYAN? Are you visually IMPAIRED, FED? They're CLEARLY turquoise. I TIRE of these games. First, YOU. THEN, we discuss the destruction of these ABOMINABLE lights." The first ship turns to you, weapons charged! The second ship doesn't seem to want to get involved, but sticks around nonetheless.</text>
+					<ship load="SHIP_NEUTRAL_DEEPONE_ROCKOFF_FANATIC" hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_ROCK">
+				<text>(Rock) Let your rock answer.</text>
+				<event>
+					<text>Your Rock speaks up, "Blasted things blind you good, boarding these... "Deep Ones" is a right pain." Satisfied with your answer, the second ship responds, "Hah, indeed. Glad I'm not the only one capable of seeing their potential. Tell you what, seeing that my... partner here is insistent on having them destroyed, I wouldn't mind having you put them to good use. For a price, of course, but I'll give you a discount... I like you."</text>
+					<choice>
+						<text>Agree to the trade.</text>
+						<item_modify>
+							<item type="scrap" min="-45" max="-45"/>
+						</item_modify>
+						<augment name="DEEPONE_LIGHTS"/>
+						<event>
+							<text>The first ship grumbles a little bit over the comms but doesn't intervene. With the lights transferred, and the argument settled, the two ships hang around for a moment before jumping out of the system.</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Pass on the offer.</text>
+						<event>
+							<text>"I understand. Suppose I've got to keep listening to this idiot's blathering, then..." The first ship erupts at this insult and the two go back to arguing. That's that, then.</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The greatest discount is "free." Attack, and take the lights from them.</text>
+						<event>
+							<text>"It's like that, then? Fine, come at me!" They turn to you and prepare to defend themselves. The first ship doesn't seem to want to get involved, but sticks around nonetheless.</text>
+							<ship load="SHIP_NEUTRAL_DEEPONE_ROCKOFF_CALM" hostile="true"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One) Let your Deep One answer.</text>
+				<event>
+					<text>Your Deep One explodes at the two Rocks, "Our technology is not... for the likes of you. Thieves... murderers." The second ship chuckles, "The Federation harboring Deep Ones these days? Suppose they'll let anyone in... deal with them. We'll finish this argument later." The first ship turns to you, weapons charged, and the second jumps out of the system. If you're quick, you might be able to track their FTL signatures and take the lights from them!</text>
+					<ship load="SHIP_NEUTRAL_DEEPONE_ROCKOFF_FANATIC_TIMED" hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Not much.</text>
+				<event>
+					<text>"Not particularly useful, then, are you? We'll be taking our leave, if you have nothing worthwhile to add. We've no need for eavesdroppers." The two ships jump away, and you're left wondering who wins the argument...</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore them.</text>
+		<event>
+			<text>You ignore the two ships. You're here to save reality, not eavesdrop on random Rocks' conversations.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_NEUTRAL_DEEPONE_ROCKOFF_CHASE" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can. Hopefully the lights survived...</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_CHASE_RUBBLE"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can before looking for the lights.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DEEPONE_ROCKOFF_WIN_CHASE_CREWKILL"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_WIN_CHASE_RUBBLE">
+	<text>You find the lights among the wreckage, unharmed... either they're extremely durable, or you're extremely lucky. Regardless, you hope they're worth all the bloodshed, and continue on your way.</text>
+	<augment name="DEEPONE_LIGHTS"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_WIN_CHASE_CREWKILL">
+	<text>You find the lights within the ship's hold, unharmed. They glow so enticingly in the dark, here... you hope they're worth all the bloodshed and continue on your way.</text>
+	<augment name="DEEPONE_LIGHTS"/>
+</event>
+
+<event name="NEUTRAL_DEEPONE_ROCKOFF_CHASE">
+	<text>The second Rock ship is at this beacon, as expected. "You... chased me here? You want these lights that badly? Vicious, this so-called 'Federation.' Fine then, to battle!" They cut communications. Prepare to fight.</text>
+	<ship load="SHIP_NEUTRAL_DEEPONE_ROCKOFF_CHASE" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT" unique="true">
+	<text>A grim sight lays before you. The remains of dozens of ships, some Deep Ones, some Theocracy, are scattered across space here. One intact ship remains, a Deep One Scout that seems to be moving from wreck to wreck.</text>
+	<ship load="DEEP_ONE_SCOUT" hostile="false"/>
+	<choice hidden="true">
+		<text>Hail the ship.</text>
+		<event>
+			<text>A few seconds go by before they accept your request to open communications. "Federation... Speak."</text>
+			<choice hidden="true">
+				<text>What happened here?</text>
+				<event>
+					<text>"The answer remains... unclear. No... call for help was made. No... plans to attack the Theocracy were shared. What occurred... remains a mystery." The Deep One pauses. "I'm here... analyzing. Searching for... anything."</text>
+					<choice hidden="true">
+						<text>Any theories?</text>
+						<event>
+							<text>The Deep One takes a moment to answer. "I.. believe no fight was had. Rather..." It looks around, as if to check if anybody's looking, "...they were brought here. The... wrecks. Individually." It emphasizes that last word, rather ominously.</text>
+							<choice hidden="true">
+								<text>Brought here? For what purpose?</text>
+								<event>
+									<text>"...Tribute." It doesn't elaborate.</text>
+									<choice hidden="true">
+										<text>Tribute? From who, to what?</text>
+										<event>
+											<text>It seems hesitant to answer for a while. Eventually, in a hushed tone, it says "I... should not say. It is not... for you to know. Or... for me, to say."</text>
+											<choice hidden="true">
+												<text>Insist.</text>
+												<event>
+													<text>It looks like it's about to answer when, out of nowhere, communications are cut. You begin to move to hail them again when a violent flash from outside stops you in your tracks; the Deep One's ship has just exploded! It sends the nearby ship debris flying in all directions, and your ship with it. Whatever remains is beyond salvaging, and you're left with nothing but questions.</text>
+													<recallBoarders/>
+													<enemyDamage amount="999"/>
+													<damage amount="4"/>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Relent.</text>
+												<event>
+													<text>The Deep One seems relieved to not be questioned further. "I do believe... we are done here. Feel free to... make use of anything that remains. I... must go, and report." With that, the Deep One leaves, and you scrap what you can of the field of ships. It's not much, but free scrap is free scrap.</text>
+													<instantEscape/>
+													<autoReward level="LOW">scrap_only</autoReward>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Mind if I scrap all this?</text>
+				<event>
+					<text>Slightly confused, it blinks, and then answers "I... suppose I am done here. There's... little of value, but feel free to... use what you can." With that, the Deep One leaves, and you scrap what you can of the field of ships. It's not much, but free scrap is free scrap.</text>
+					<instantEscape/>
+					<autoReward level="LOW">scrap_only</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Attack!</text>
+		<event>
+			<text>You don't know what happened to these ships and you don't have any intention of joining them. The Deep One Scout turns to you, realizes your intent, and prepares to fight back.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship, and the field.</text>
+		<event>
+			<text>Uninterested, you turn away from the field and prepare to leave the beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DEEPONE_LANIUS" unique="true">
+	<text>There's a Lanius ship at this beacon, but it doesn't appear to be doing much. Cautiously, you observe it for a while, but still; nothing.</text>
+	<ship load="SHIP_LANIUS_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Try to communicate.</text>
+		<event>
+			<text>Lanius are notoriously difficult to communicate with, but you try anyways. They do, at the very least, accept your hail and say "Stuck. Need eat. Lights, can't. Help?" They appear to be trying to eat Deep One lights and failing...</text>
+			<choice>
+				<text>Offer them some scrap to eat.</text>
+				<event>
+					<text>The Lanius gladly accept, but they quickly eat through it and turn back to you. "Need eat more. Help?" They're really hungry, you suppose...</text>
+					<item_modify>
+						<item type="scrap" min="-20" max="-20"/>
+					</item_modify>
+					<choice>
+						<text>Offer them even more scrap to eat.</text>
+						<event>
+							<text>This time, it takes them a bit longer to eat through it. Satisfied, they say "Junk eat good. Lights don't eat good. Lights yours, thanks junk. Will send in minute. Any else?"</text>
+							<item_modify>
+								<item type="scrap" min="-35" max="-35"/>
+							</item_modify>
+							<choice>
+								<text>Yes, else. I kinda like feeding you guys.</text>
+								<event>
+									<text>"You, more junk?" They look delighted, and take a minute to eat it.</text>
+									<item_modify>
+										<item type="scrap" min="-20" max="-20"/>
+									</item_modify>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Once they're finished, one of the Lanius speaks up; "Like you. Like you more junk. Staying you, many junk wait me." Moments later, the Deep One lights are beamed into your ship's hold, along with the Lanius! Seems he's up for an adventure, and he's in luck, because there's plenty of scrap to be found when you're working for a Renegade.</text>
+											<augment name="DEEPONE_LIGHTS"/>
+											<crewMember amount="1" class="lanius"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>No, else. Thank you.</text>
+								<event>
+									<text>"Understand. Thanks junk again." Moments later, the Deep One lights are beamed into your ship's hold. Somehow, they're in pristine condition despite the Lanius' innumerable attempts at eating them.</text>
+									<augment name="DEEPONE_LIGHTS"/>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I'm cutting you guys off.</text>
+						<event>
+							<text>"Have help, won't give. Need eat. Take help." Hungry enough to turn on you, the Lanius prepare to attack!</text>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I can't help, sorry.</text>
+				<event>
+					<text>The Lanius look displeased, "Understand. Try eat lights more." They return to what they were doing and promptly cut communications. Hopefully they manage to eat those lights...</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Whatever they're doing can't be good, attack!</text>
+		<event>
+			<text>You give the order to charge the weapons and the Lanius recognize your aggression, they turn and prepare to defend themselves!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore them.</text>
+		<event>
+			<text>You leave the Lanius to their... whatever it is that Lanius do, and prepare to leave the system.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DEEPONE_CONFUSION">
+	<text>Upon arriving at the beacon, you are immediately hailed by a particularly furious Deep One. Though their translator is lacking, you're certainly able to pick up that you aren't wanted here.</text>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
+	<choice>
+		<text>Try to apologize and leave.</text>
+		<event load="DEEPONE_CONFUSION_FLEE"/>
+	</choice>
+	<choice>
+		<text>Attack first!</text>
+		<event>
+			<text>Who cares what the hell they're saying, if it's a fight they want it's a fight they'll get!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DEEPONES">
+		<text>(Deep One) Your Deep One offers to step in.</text>
+		<event>
+			<text>Over the course of a brief conversation between the two Deep Ones you watch as fury is quickly replaced with remorse. As it turns out, pirate raids have been ravaging the local Deep Ones in the area and they've since been wary of strangers. Teary-eyed, he turns to you, and your Deep One explains that he's curious as to your reasoning for coming here.</text>
+			<choice hidden="true">
+				<text>We're on a quest to save this reality.</text>
+				<event>
+					<text>He doesn't understand what you mean exactly, but he nods and seems eager to help get you on your way.</text>
+					<autoReward level="MED">standard</autoReward>
+					<damage amount="-7"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>We're passing through whilst trying to escape the rebel fleet.</text>
+				<event>
+					<text>The fury returns to his eyes at the mention of the word "rebel." He mutters something and, with an air of determination, turns away before cutting communications. Your Deep One assures you the fleet won't be getting through without a fight.</text>
+					<modifyPursuit amount="-2"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>We're kicking ass and taking scrap.</text>
+				<event>
+					<text>Your Deep One stifles a laugh as you're both met with a blank stare. He begins to try to explain your words when he's cut off by what you can only describe as the garbled fish-man equivalent of screaming bloody murder... Suddenly, comms are cut, and you pick up a teleportation signature! Before anyone else reacts, your equally as confused Deep One intervenes and manages to parse that you've inspired the opposing captain to join you in your revelry... Somehow!</text>
+					<crewMember amount="1" class="deepone"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="DEEPONE_CONFUSION_FLEE">
+	<event>
+		<text>You awkwardly manage to make it clear that you mean no harm and the opposing Deep One begrudgingly lets you go, yet you have a feeling that you're still being watched as you cut communications and prepare to leave the beacon.</text>
+		<choice>
+			<text>Do something onboard the ship.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
+		<choice>
+			<text>Do nothing.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Despite your best efforts, it seems the Deep One on the other end has lost his patience. If you won't leave, he'll remove you by force!</text>
+		<ship hostile="true"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="COMBAT_CHECK"/>
+		</choice>
+	</event>
+	<event>
+		<text>Despite your best efforts, it seems the Deep One on the other end has lost his patience. If you won't leave, he'll remove you by force!</text>
+		<ship hostile="true"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="COMBAT_CHECK"/>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="DISTRESS_DEEPONE">
+	<event load="DISTRESS_DEEPONE_DRIFTING"/>
+	<event load="DISTRESS_DEEPONE_CLANSMAN"/>
+	<event load="DISTRESS_DEEPONE_TRAP"/>
+	<event load="DISTRESS_DEEPONE_MISUNDERSTANDING"/>
+</eventList>
+
+<event name="DISTRESS_DEEPONE_DRIFTING" unique="true">
+	<distressBeacon/>
+	<text>Arriving at the distress beacon, you spot a Deep One ship off in the distance. It makes no attempt to move.</text>
+	<choice hidden="true">
+		<text>Hail the ship.</text>
+		<event>
+			<text>Your attempts to hail the ship are met with failure. They aren't denied, they just don't seem to reach the ship in the first place...</text>
+			<choice hidden="true">
+				<text>Approach the ship and inspect it.</text>
+				<event>
+					<text>Upon closer inspection, this isn't a ship at all; at least, not anymore. Effectively a pile of shredded scrap, the immortality of the Deep Ones' lights made it look alright from a distance. You begin to wonder how long the wreck and its distress beacon have been drifting like this, when you notice... shuffling, amongst the wreckage?</text>
+					<choice hidden="true">
+						<text>Get a closer look.</text>
+						<event>
+							<text>It's a Deep One! Alive, in space, just... waiting within this wreck! You quickly get your crew to work, and you have the Deep One on board only a couple minutes later. It might be alive, but it still appears to be in terrible condition; it's barely holding on.</text>
+							<choice hidden="true" req="medbay" lvl="2">
+								<text>(Upg. Medbay) Use your upgraded Medbay to save it.</text>
+								<event>
+									<text>You put the Deep One in your Medbay and it gets to work. Mere moments later, the Deep One's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="clonebay" lvl="2">
+								<text>(Upg. Clonebay) Use your upgraded Clonebay to save it.</text>
+								<event>
+									<text>You use your Clonebay to clone the Deep One. Mere moments later, it's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="LIST_CREW_MEDICAL">
+								<text>(Medical Crew) Use your medical crew to save it.</text>
+								<event>
+									<text>Your crew get to work on stabilizing the Deep One. Mere moments later, it's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="BLUELIST_DRONES_MEDICAL">
+								<text>(Medical Drone) Use a medical drone to save it.</text>
+								<event>
+									<text>Your drone gets to work on stabilizing the Deep One. Mere moments later, it's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="BOMB_HEAL">
+								<text>(Medical Bomb) Use a medical bomb to save it. [-1}]</text>
+								<event>
+									<text>You use your Medical Bomb to stabilize the Deep One. Mere moments later, it's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<item_modify>
+										<item type="missiles" min="-1" max="-1"/>
+									</item_modify>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true" req="RECON_AND_TELEPORT">
+								<text>(Reconstructive Teleporter) Use your Reconstructive Teleporter to save it.</text>
+								<event>
+									<text>A bit unconventional, but you teleport the Deep One in and out of your ship to heal it with your Reconstructive Teleporter. Mere moments later, the Deep One's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
+									<choice hidden="true">
+										<text>What happened to your ship?</text>
+										<event>
+											<text>It seems hesitant to answer. After remaining silent for a moment, it says "I'm... sorry. I cannot tell you, for your good... and mine. I know that sounds... menacing, but I ask that you... trust me." A moment passes. "Regardless, I owe you... my life. Seeing that my ship's now in... pieces, I see no better way to... thank you than to fight by your side. You have... my aid, as I've had yours." With that, it turns away. You have questions, but... you're happy to have its aid.</text>
+											<crewMember amount="1" class="deepone"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>I can't save it.</text>
+								<event>
+									<text>The Deep One, having suffered too much trauma, dies mere moments later. With nothing left to do, you're forced to move on. Damn it all...</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Give up.</text>
+				<event>
+					<text>Oh well, you tried. If they want help the least they can do is answer your calls... You turn away and prepare to leave the beacon.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore it.</text>
+		<event>
+			<text>You've got better things to be doing than saving people. You turn away and prepare to leave the beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_DISTRESS_DEEPONE_CLANSMAN_SLUG_FIGHT" auto_blueprint="LIST_SHIPS_CLAN_FIGHT">
+	<destroyed>
+		<text>Though the Deep Ones aren't here to thank you, you feel rather good about yourself as you scrap the Clansman ship.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Though the Deep Ones aren't here to thank you, you feel rather good about yourself as you scrap the Clansman ship.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_DISTRESS_DEEPONE_CLANSMAN_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DISTRESS_DEEPONE_CLANSMAN_DEEPONE_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DISTRESS_DEEPONE_CLANSMAN_DEEPONE_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DISTRESS_DEEPONE_CLANSMAN_DEEPONE_WIN">
+	<text>Once you're satisfied with what you've salvaged, the Clansmen hail you, "Hope you weren't exxxxxpecting much in the way of thanksssss, Fed, that wasssss our mark. Ssssstill, not like they were going down easssssy..." The Slug pauses for a second. "Guesssss we'll be calling it even. Be ssssseeing you, Fed." With that, the Clansmen jump out of the beacon. Not exactly a standing ovation, but they seemed thankful enough.</text>
+</event>
+
+<eventList name="DISTRESS_DEEPONE_CLANSMAN_GETOUT">
+	<event>
+		<text>Miraculously, you manage to escape from the fight unscathed and find somewhere quiet to keep your distance while the FTL charges.</text>
+		<choice>
+			<text>Do something onboard the ship.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
+		<choice>
+			<text>Do nothing.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Though your ship catches a few stray blasts, you manage to escape from the fight and find somewhere quiet to recuperate while the FTL charges.</text>
+		<damage amount="3"/>
+		<choice>
+			<text>Do something onboard the ship.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
+		<choice>
+			<text>Do nothing.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Your ship catches more crossfire than you would've liked, but you do manage to escape and find somewhere quiet to recuperate while the FTL charges.</text>
+		<damage amount="8"/>
+		<choice>
+			<text>Do something onboard the ship.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
+		<choice>
+			<text>Do nothing.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Your ship catches more crossfire than you would've liked, but you do manage to escape and find somewhere quiet to recuperate while the FTL charges.</text>
+		<damage amount="8"/>
+		<choice>
+			<text>Do something onboard the ship.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
+		<choice>
+			<text>Do nothing.</text>
+			<event/>
+		</choice>
+	</event>
+</eventList>
+
+<event name="DISTRESS_DEEPONE_CLANSMAN" unique="true">
+	<distressBeacon/>
+	<text>Upon arriving at the distress beacon, you're immediately greeted with the sight of shots whizzing past your window... You've dropped into the middle of a fight between two ships! It appears some Slug Clansmen must be on the hunt for Deep Ones for sport, and you'll have to pick a side fast unless you want to get caught in the crossfire.</text>
+	<choice hidden="true">
+		<text>Attack the Clansmen.</text>
+		<event>
+			<text>You face the Clansmen and prepare to attack. Deciding you're the bigger threat, they turn to face you. Meanwhile, the Deep One ship immediately seizes the opportunity to escape and leave the system. Suppose you won't be getting any thanks...</text>
+			<ship load="SHIP_DISTRESS_DEEPONE_CLANSMAN_SLUG_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Attack the Deep Ones.</text>
+		<event>
+			<text>You face the Deep Ones and prepare to attack. Deciding you're the bigger threat, they turn to face you. Meanwhile, the Clansmen seem to have ceased firing; they're watching the fight from a distance. Suppose you won't be getting any help...</text>
+			<ship load="SHIP_DISTRESS_DEEPONE_CLANSMAN_SLUG_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Take your chances; try to escape.</text>
+		<event load="DISTRESS_DEEPONE_CLANSMAN_GETOUT"/>
+	</choice>
+</event>
+
+<event name="DISTRESS_DEEPONE_TRAP">
+	<distressBeacon/>
+	<text>You arrive at the distress beacon, but the Deep One ship here quickly turns to face you, weapons charging; you've become the victim of an ambush. Though not typically malevolent, perhaps something's made these Deep Ones desperate... regardless, it's time to defend yourself!</text>
+	<ship load="DEEP_ONE_FIGHTER" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="DISTRESS_DEEPONE_MISUNDERSTANDING">
+	<distressBeacon/>
+	<text>There's a Deep One settlement on a nearby moon here. You surmise that it must be the source of the distress call, but nothing seems immediately wrong from this distance.</text>
+	<choice hidden="true">
+		<text>Get closer and investigate.</text>
+		<event>
+			<text>Nothing seems out of the ordinary here. Ships are flying in and out at a regular pace and Deep Ones are casually roaming the streets undisturbed.</text>
+			<choice hidden="true">
+				<text>Land and narrow down the source of the distress call.</text>
+				<event>
+					<text>You land, immersing yourself in the surrounding Deep One architecture; a sea of blues of and purples, complete with an excessive amount of blinding turquoise lights. The Deep Ones don't seem to mind your presence here, and eventually you home in on the source of the distress call. You're taken to a quiet corner of the settlement, one of the smaller houses at the end of the residential district. There still isn't anything that strikes you as an emergency as you stand at the door.</text>
+					<choice hidden="true">
+						<text>Knock.</text>
+						<event>
+							<text>No answer is made, and you can't hear any noise from inside.</text>
+							<choice hidden="true">
+								<text>Knock again.</text>
+								<event>
+									<text>This time, you knock much louder. Something shuffles around inside, but nobody comes to answer the door.</text>
+									<choice hidden="true">
+										<text>Knock again...</text>
+										<event>
+											<text>As you go to begin knocking a third time, the door is swung open; you're met with the sight of a dishevelled, old Deep One. It eyes you down, taking in your uniform before speaking, "Federation, here... at my door? For... what purpose?"</text>
+											<choice hidden="true">
+												<text>There's a distress call emitting from inside your house.</text>
+												<event>
+													<text>"A d-" The Deep One pauses briefly, taken aback. "Excuse me... for a moment." It closes the door, and you hear further shuffling. It doesn't take long for it to return with a distress beacon in hand, though this one seems to be in a serious amount of disrepair. "Is this... the source of the call?"</text>
+													<choice hidden="true">
+														<text>Indeed, that's a distress beacon.</text>
+														<event>
+															<text>Obviously embarrassed, it responds "My... goodness. This was sold to me by a... traveling Free Mantis salesman, who had claimed... it to be a 'De-Stress' beacon... Unless, I had just... misheard him." It thinks on this for a moment before continuing, "I'm so... terribly sorry for troubling you, officer. I... wish there were any way I could make this... up to you, but, I don't think there is."</text>
+															<choice hidden="true">
+																<text>You wouldn't happen to have any... junk lying around, would you?</text>
+																<event>
+																	<text>"...Junk?" It looks around for a moment, before its gaze meets the beacon in its hands, "This... would be junk, now, I... suppose." The Deep One hands it to you, apologizes again, and you make your way back onto your ship and out of the settlement. This was a big waste of time, for the most part, but you do get to break down the beacon and get the barest amount of something out of it...</text>
+																	<modifyPursuit amount="1"/>
+																	<autoReward level="LOW">scrap_only</autoReward>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Enough of this, break the door down!</text>
+										<event>
+											<text>As you move to break the door down, it's swung open; you're met with the sight of a dishevelled, old Deep One. It eyes you down, taking in your uniform before speaking, "Federation, here... at my door? For... what purpose?"</text>
+											<choice hidden="true">
+												<text>There's a distress call emitting from inside your house.</text>
+												<event>
+													<text>"A d-" The Deep One pauses briefly, taken aback. "Excuse me... for a moment." It closes the door, and you hear further shuffling. It doesn't take long for it to return with a distress beacon in hand, though this one seems to be in a serious amount of disrepair. "Is this... the source of the call?"</text>
+													<choice hidden="true">
+														<text>Indeed, that's a distress beacon.</text>
+														<event>
+															<text>Obviously embarrassed, it responds "My... goodness. This was sold to me by a... traveling Free Mantis salesman, who had claimed... it to be a 'De-Stress' beacon... Unless, I had just... misheard him." It thinks on this for a moment before continuing, "I'm so... terribly sorry for troubling you, officer. I... wish there were any way I could make this... up to you, but, I don't think there is."</text>
+															<choice hidden="true">
+																<text>You wouldn't happen to have any... junk lying around, would you?</text>
+																<event>
+																	<text>"...Junk?" It looks around for a moment, before its gaze meets the beacon in its hands, "This... would be junk, now, I... suppose." The Deep One hands it to you, apologizes again, and you make your way back onto your ship and out of the settlement. This was a big waste of time, for the most part, but you do get to break down the beacon and get the barest amount of something out of it...</text>
+																	<modifyPursuit amount="1"/>
+																	<autoReward level="LOW">scrap_only</autoReward>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Break the door down.</text>
+								<event>
+									<text>What if there's an emergency in there? You don't have time to be standing around, idle! You throw yourself against the door, and it provides little resistance; it doesn't come down as much as you tear right through it. You begin pondering as to the logistics behind Deep One architecture, but your thoughts are quickly interrupted by the Deep One in front of you. Screaming in terror, it runs past you and through the hole you've just created. Suppose you won't get a chance to explain yourself...</text>
+									<choice hidden="true">
+										<text>Uh oh.</text>
+										<event>
+											<text>You spend a moment standing there dumbfounded, and you've only barely gotten back outside when alarms begin to blare around you! What was once a quiet street explodes into a hub of activity as Deep Ones escape their homes in panic. You had good intentions, but, it looks like things have quickly gotten out of control... and they're only going to get worse unless you get out of here quickly!</text>
+											<choice hidden="true">
+												<text>It's time to leave!</text>
+												<event>
+													<text>Besides the few looks of terror you catch, your sprint back to your ship generally goes unnoticed. However, as you make your ascent back into space, a Deep One ship begins to tail you; looks like you're not getting out of this without a fight... and to think, you were just trying to help!</text>
+													<ship load="SHIP_DEEPONE_FIGHT" hostile="true"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="COMBAT_CHECK"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Must be a false alarm.</text>
+				<event>
+					<text>Everything seems to be in order here. Satisfied, you turn away from the settlement and prepare to leave the system.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Not interested.</text>
+		<event>
+			<text>You can't afford to be distracted, you have a mission to complete. Turning away from the settlement, you prepare to leave the system.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="HOSTILE_DEEPONE">
+	<event load="HOSTILE_DEEPONE_DEEP"/>
+	<event load="HOSTILE_DEEPONE_THEOCRACY"/>
+	<event load="HOSTILE_DEEPONE_PIRATE"/>
+	<event load="HOSTILE_DEEPONE_REBEL"/>
+	<event load="HOSTILE_DEEPONE_LANIUS"/>
+</eventList>
+
+<event name="HOSTILE_DEEPONE_DEEP">
+	<text load="HOSTILE_DEEPONE_DEEP_TEXT"/>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<textList name="HOSTILE_DEEPONE_DEEP_TEXT">
+	<text>The Deep One ship at this beacon doesn't take kindly to your sudden appearance and it turns towards you, weapons charging! They're typically not aggressors... Regardless of what's got them on edge, you have to defend yourself!</text>
+	<text>Upon entering the system, you receive a hail; "Federation, you... are not welcome here. This space... is sacred!" You must be encroaching on their territory, and they see it fit to have you removed by force!</text>
+	<text>A Deep One ship descends upon you, and you're sent a series of one-word messages that all say the same thing: "TRIBUTE." Vague and ominous, but one thing's for sure; it's time for battle.</text>
+</textList>
+
+<event name="HOSTILE_DEEPONE_THEOCRACY">
+	<text load="HOSTILE_DEEPONE_THEOCRACY_TEXT"/>
+	<ship load="SHIP_ROCK_ALL" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<textList name="HOSTILE_DEEPONE_THEOCRACY_TEXT">
+	<text>A Deep One ship whizzes past your view, and hot on their tail is the Theocracy! Whether they think you're a bigger threat or an easier target is unclear, but, regardless of their reasoning, they focus their attention on you and allow the Deep One ship to escape. A thankless job, being a distraction...</text>
+	<text>There's a Rock ship awaiting you at this beacon. Weapons primed, they charge towards you; it seems they're keen to prey on more than just the Deep Ones. Show them what happens when you try to prey on an apex predator.</text>
+	<text>You receive a hail, "Hah, it's nothing personal, Feddie. Crusades don't pay for themselves." With that, a Theocracy ship flies into view and prepares to engage.</text>
+</textList>
+
+<event name="HOSTILE_DEEPONE_PIRATE">
+	<text load="HOSTILE_DEEPONE_PIRATE_TEXT"/>
+	<ship load="SHIP_PIRATE_ALL" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<textList name="HOSTILE_DEEPONE_PIRATE_TEXT">
+	<text>Thriving in the unruly conditions, pirate ships aren't uncommon in the vaguely controlled territory that is Deep One space. One comes at you now, weapons hot!</text>
+	<text>There's a few pirate vessels gathered here. It's unclear what they're up to, and most of them flee at your sudden appearance, but one in particular seems confident in its ability to take you on; it approaches, ready to attack.</text>
+	<text>In Deep One territory, it always pays to be wary, and you get the feeling that something's not quite right at this beacon... Whether it's preternatural instincts or blind luck, seconds later, a pirate ship reveals itself from behind a nearby satellite and moves in to attack!</text>
+</textList>
+
+<event name="HOSTILE_DEEPONE_REBEL">
+	<text load="HOSTILE_DEEPONE_REBEL_TEXT"/>
+	<ship load="SHIP_AUTO_FIGHT" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<textList name="HOSTILE_DEEPONE_REBEL_TEXT">
+	<text>The Rebels rarely travel through Deep One space themselves, but there's nothing stopping them from sending fleets of Auto-ships to do their dirty work for them. Likewise, there's nothing stopping you from making short work of them.</text>
+	<text>Though empty, this beacon appears to be under watch by a Rebel Auto-ship. You're not sure why it's standing guard in territory belonging to the Deep Ones, let alone in empty space, but you're not given much of a chance to think about it; here it comes!</text>
+	<text>"Vessel detected. Identity: Federation. Location: Sector Deep-78314920746128..." It continues for a while, before finally finishing, "...62103. Protocol: Neutralization." With that, it bares its weapons and begins its assault.</text>
+</textList>
+
+<event name="HOSTILE_DEEPONE_LANIUS">
+	<text load="HOSTILE_DEEPONE_LANIUS_TEXT"/>
+	<ship load="SHIP_LANIUS_FIGHT" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<textList name="HOSTILE_DEEPONE_LANIUS_TEXT">
+	<text>Lanius ships are crowding around a gigantic Deep One wreck present at this beacon. They've eaten around the lights, but it still appears to have plenty of metal left... they must not all be content with their meal, however; one of the ships breaks off from the wreck and decides you're its next feast!</text>
+	<text>Unsurprisingly, the Lanius find Deep One sectors to be quite comfortable. Effectively lawless and unguarded save for the Deep Ones' settlements and fleets, the Lanius are practically free to roam and eat what they like. Unfortunately for you, that includes Renegades!</text>
+	<text>You're hailed by a nearby Lanius ship whose translator seems especially lacking, "Eaten need, not eat, eat. Thank." Moments later, their weapons go online and they begin their assault!</text>
+</textList>
+
+<event name="DEEPONE_SURRENDER">
+	<text load="DEEPONE_SURRENDER_TEXT"/>
+	<choice>
+		<text>Accept their offer.</text>
+		<event>
+			<ship hostile="false"/>
+			<autoReward level="RANDOM">stuff</autoReward>
+		</event>
+	</choice>
+	<choice>
+		<text>We will not accept surrender!</text>
+		<event/>
+	</choice>
+</event>
+
+<textList name="DEEPONE_SURRENDER_TEXT">
+	<text>The Deep Ones, as hot-headed as they are, still don't have complete disregard for their lives. They're offering a surrender.</text>
+	<text>You receive several messages that are composed of complete gibberish and accompanied by bribes. You assume this is their idea of surrendering.</text>
+	<text>The Deep Ones hail and struggle to speak your tongue, "For...give... Please."</text>
+	<text>In a moment of clarity, the Deep Ones forget their rage for but a moment and plead for their lives.</text>
+	<text>As the opposing Deep One ship buckles and begins to collapse, you receive a desperate hail for surrender.</text>
+	<text>Fear's not a look that well-suits the Deep Ones. Nevertheless, they cower before you, begging to be spared.</text>
+</textList>
+
+<event name="DEEPONE_ESCAPE">
+	<text>Your scanners are picking up FTL signatures, the Deep Ones are trying to escape!</text>
+	<ship hostile="true"/>
+</event>
+
+<event name="DESTROYED_DEEPONE">
+	<text load="TEXT_DESTROYED_DEEPONE"/>
+	<autoReward level="MED">standard</autoReward>
+</event>
+
+<textList name="TEXT_DESTROYED_DEEPONE">
+	<text>As you scrap the strange ship, you muse to yourself that the Deep Ones would've been better off had they never left the water if the likes of you are all that awaits them in space.</text>
+	<text>The Deep One ship sends one last hail as it splits into two, yet your translator can't even begin to decipher it.</text>
+	<text>During the scrapping operation, your crew comments that the lights adorning the Deep Ones' hull appear to never die. You find that quite ironic.</text>
+	<text>You pull up a database on Old Earth marine life as your crew scraps the ship. The Deep Ones have fine taste in ship architecture, yet they have finer scrap.</text>
+	<text>Though you barely understand the creatures you've just blown up, you can't help but feel like it didn't have to end this way.</text>
+	<text>You breathe a sigh of relief once it's been confirmed that the threat's been eliminated. There's a certain lingering dread that accompanies those in the presence of the Deep Ones...</text>
+	<text>The ship breaks apart much more violently than you expected it to, sending cyan debris in all directions. Or was it turquoise?</text>
+</textList>
+
+<event name="DEAD_CREW_DEEPONE">
+	<text load="TEXT_DEAD_CREW_DEEPONE"/>
+	<autoReward level="HIGH">standard</autoReward>
+</event>
+
+<textList name="TEXT_DEAD_CREW_DEEPONE">
+	<text>As you wander the halls of the strange ship, you muse to yourself that the Deep Ones would've been better off had they never left the water if the likes of you are all that awaits them in space.</text>
+	<text>While cleaning out the ship you come across a dying Deep One who meets your gaze and mutters something before collapsing, yet your translator can't even begin to decipher it.</text>
+	<text>During the scrapping operation, your crew comments that the lights adorning the Deep Ones' halls appear to never die. You find that quite ironic.</text>
+	<text>You pull up a database on Old Earth marine life as your crew explores the now-empty ship. The Deep Ones have fine taste in ship architecture, yet they have finer scrap.</text>
+	<text>Though you barely understand the creatures you've just slaughtered, you can't help but feel like it didn't have to end this way.</text>
+	<text>You breathe a sigh of relief once it's been confirmed that the crew's been eliminated. There's a certain lingering dread that accompanies those in the presence of the Deep Ones...</text>
+	<text>Amidst scrapping, your crew begins to argue about what color the lights the Deep Ones use are. Obviously they're turquoise, but you don't want to ruin their fun.</text>
+</textList>
+
+</FTL>

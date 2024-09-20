@@ -1,0 +1,234 @@
+<FTL>
+
+<event name="SOCIALIZE_THE_SCARRED_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_THE_SCARRED_NOTHING">
+		<event name="SOCIALIZE_THE_SCARRED_GENERIC_1"/>
+		<event name="SOCIALIZE_THE_SCARRED_GENERIC_2"/>
+		<event name="SOCIALIZE_THE_SCARRED_GENERIC_3"/>
+		<event name="SOCIALIZE_THE_SCARRED_GENERIC_4"/>
+		<event name="SOCIALIZE_THE_SCARRED_GENERIC_5"/>
+		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_1" req="unique_thehunger"/>
+		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_2" req="unique_thehunger"/>
+		<event name="SOCIALIZE_THE_SCARRED_VORTIGON_1" req="unique_vortigon"/>
+		<event name="SOCIALIZE_THE_SCARRED_VORTIGON_2" req="unique_vortigon"/>
+		<event name="SOCIALIZE_THE_SCARRED_SLOCKNOG_1" req="unique_slocknog"/>
+		<event name="SOCIALIZE_THE_SCARRED_ALKALI_1" req="unique_alkali"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_NOTHING">
+	<text>You walk in on the Scarred in some sort of meditative state... staring into nothing. You decide it's best to leave them alone.</text>
+</event>
+
+<event name="SOCIALIZE_THE_SCARRED_GENERIC_1" unique="true">
+	<text>You find the Scarred kneeling on the ground... perhaps it's a position they find relaxing? Regardless, they speak, "Well met... kin. Was there something... you needed?"</text>
+	<choice hidden="true">
+		<text>I had a question.</text>
+		<event>
+			<text>Their eyes narrow slightly, "In... regards to?"</text>
+			<choice hidden="true">
+				<text>In regards to you! Tell me more about yourself.</text>
+				<event>
+					<text>The narrowness is gone, and you see the Scarred's body ease, "An... unexpected request. What is it that... you'd like to know?"</text>
+					<choice hidden="true">
+						<text>How'd you steal your powers? What are they, exactly?</text>
+						<event>
+							<text>"Hm..." they close their eye, and think on that question for a moment. Then, "...it is not just my body that is scarred, but... my mind as well. I recall little of what happened... that day. A great machine, floating in an infinite abyss... but that's all it was, a machine. It... did something to me, desired my servitude. I'd... proven myself, and it thought me a good candidate for ascension. It... thought wrong."</text>
+							<choice hidden="true">
+								<text>And?</text>
+								<event>
+									<text>The smile on their face fades, "And... that is all I can remember. The False God... granted me power, and I broke free from its hold. I'm now... labelled a traitor by my people. Hunted, exiled... forsaken. As far as what my powers are exactly..." you watch as their hand begins to dematerialize, fading in and out of reality, before stabilizing again, "...I believe the False God intended to grant me dominion over its... factitious void. I can control its darkness... become it, and withstand its pull on my soul." After a moment of silence the Scarred's smile returns, and they speak again, "Thank you... for inquiring, kin, but I must return to my... meditations. I hope your curiosity is... satisfied."</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>What were you like before, when you still worshipped the Dark God?</text>
+						<event>
+							<text>"I was... a hunter, devout... to a fault. The tribute I gathered was... unrivalled. Many fell at my hands, in the name of a False God's... false cause. I don't expect to ever truly... repent, or forgive myself, but... should the False God be felled, and its madness put to an end... I believe I'll be able to rest easy. Until then..." the Scarred smiles, "...lead the way, kin."</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Favorite hobby?</text>
+						<event>
+							<text>They blink once, and then again, before finally answering, "It's... stargazing." The Scarred's gaze falls to the ground, and you get the feeling that they're... embarrassed? "I... find it calming. That's... that's all I'll say on the matter. Now... if you'll excuse me, I... have some... very important meditating to attend to." You leave the room, almost content, but then you decide to tiptoe back and peek through the doorway... you catch a glimpse of the Scarred staring out the window before they turn, sending you fleeing through the hallway.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>No, just checking in.</text>
+		<event>
+			<text>"Very... well. Yes, I'm fine enough." That's all they say before closing their eye, effectively leaving the conversation.</text>
+		</event>
+	</choice>						
+</event>
+<event name="SOCIALIZE_THE_SCARRED_GENERIC_2" unique="true">
+	<text>You're at the Scarred's door when you hear an intense crashing come from inside, causing you to rush in and find... the Scarred, standing over a pile of shattered glassware. "Uh, kin! It's... not what it looks like!" What exactly does it look like? You're not sure, but you feel uncomfortable with the entire scene and leave the room without saying a word...</text>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_GENERIC_3" unique="true">
+	<text>The Scarred's in the hold, rummaging through the food supply. Noticing your presence, they speak, "Ah, kin. Have you... any idea where we keep the fish?"</text>
+	<choice hidden="true">
+		<text>The fish? Isn't that, like... cannibalism?</text>
+		<event>
+			<text>They stop rummaging to turn and look at you, "What's... that supposed to mean? Do I... look like a fish to you?" You decide it's best to not answer, and guide them to the fish accordingly.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_GENERIC_4" unique="true">
+	<text>The room's pitch black, but you get the feeling that the Scarred's in here meditating... it's less of a feeling, and more that you can hear their strange guttural chanting through the darkness. Best to not disturb them.</text>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_GENERIC_5" unique="true">
+	<text>You catch the Scarred in the hallway, drawing... on the wall. They're extremely crude, but they appear to be pictures of Deep Ones and their ships. The Scarred turns to you, "Kin! I... hope you don't mind. I couldn't find any... paper, and I'm trying... to remember."</text>
+	<choice hidden="true">
+		<text>Remember? Remember what?</text>
+		<event>
+			<text>"Remember... my past, and the people in it. Everything... before my meeting with the False God feels so... foggy. Still, bits and pieces return to me... every now and then. I don't wish to forget again, so I'm... recording them, through art." Remember... the word hangs oddly in your mind, but you can't figure out why. Regardless, you find the sentiment endearing and leave the Scarred to their drawing.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_1" unique="true">
+	<text>You find the Hunger peeking into the Scarred's room, through the crack in the door. The airtight crack... regardless, they realize you've caught them and speak, "CAPTAIN. Inq-q-q-q-uiry: Subjjject: TRAITOR. Request: Request: Request:" It keeps repeating the word request, even as you give up and leave the room...</text>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_2" unique="true">
+	<text>The Scarred and the Hunger are relaxing together, you think... the Scarred speaks, "You... speak strangely, even when compared to your kin. What exactly... has the False God done to you?" The Hunger reverberates in place a bit, "ABOVE. B-b-b-b-below? Subject-tcejbus: EVERYWHERE. State: State!: SCARRED." The Scarred seems troubled by this, but says nothing further. The two sit in silence, and you leave the room, unsure what to think...</text>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_VORTIGON_1" unique="true">
+	<text>Vortigon is staring at the Scarred, as the latter sits deep in meditation. He looks to you and speaks, "Why do they spend all day meditating if they've no God to pray to? What exactly are they accomplishing?" You aren't sure yourself, you realize.</text>
+	<choice hidden="true">
+		<text>Perhaps it has something to do with their power?</text>
+		<event>
+			<text>He rolls his eyes, "A power they've stolen from the very being they condemn! This one's hiding something. I don't know what it is, but should something happen... don't say nobody saw it coming! Until then, I suppose I'll have to trust the faith you place in them." Vortigon returns to his intrusive staring, and you return to your... whatever you were doing.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_VORTIGON_2" unique="true">
+	<text>The scene is tense... you find that Vortigon and the Scarred are sitting together, in uncomfortable silence. Eventually, the Scarred speaks, "You... don't trust me. Tell me, priest... what know you of the False God?" Vortigon gives a hearty laugh, "Never heard of them! False indeed, but their power seems very real... a power you use willingly, for your own gain. Tell me, traitor... what know you of trust? Of faith, or devotion?" The Scarred's face flares up with rage... it's a sort of anger you've never seen in them before.</text>
+	<choice hidden="true">
+		<text>Interrupt.</text>
+		<event>
+			<text>The Scarred's face calms, and they look to you, "Kin! Fancy... meeting you here. On... your ship..." Vortigon, silent, stares into the Scarred's good eye. You've defused the situation, but now it's really awkward... the Scarred coughs, "I... guess I should be going. We can... continue this another time, Vortigon." They get up, and Vortigon replies, "Yes, I believe we can. Until then..." Vortigon closes his eyes and puts his hands together in prayer, "...I've Gods to pray to."</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_SLOCKNOG_1" unique="true">
+	<text>Slocknog and the Scarred appear to be bonding over a cigarette each, smoking together while they talk, "It'sss ssso niccce to meet another exxxxile. Here I wasss thinking I wasss the only one dessspisssed by my own kind!" The Scarred gives him a slight chuckle, "I... do believe our situations have their great deal of... differences, monarch, but... I must agree, this is nice. Few... are so kind to me." The two continue to talk back and forth, and you leave the room with a smile on your face.</text>
+</event>
+<event name="SOCIALIZE_THE_SCARRED_ALKALI_1" unique="true">
+	<text>It's not the Scarred you find, but Alkali, who rolls up to you distraught, "Captain... thhhhat fiend, thhhhe Scarred, hhhhe refuses to call me by my name! Insists on calling me 'thhhhe Science-thhhhing!' Can you believe it? I know othhhher races are typically primitive but thhhhis is a new low. For me, and for thhhhem..." He rolls away, defeated.</text>
+</event>
+
+<event name="SOCIALIZE_THE_HUNGER_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_THE_HUNGER_NOTHING">
+		<event name="SOCIALIZE_THE_HUNGER_GENERIC_1"/>
+		<event name="SOCIALIZE_THE_HUNGER_GENERIC_2"/>
+		<event name="SOCIALIZE_THE_HUNGER_GENERIC_3"/>
+		<event name="SOCIALIZE_THE_HUNGER_TURZIL_1" req="unique_turzil"/>
+		<event name="SOCIALIZE_THE_HUNGER_TURZIL_2" req="unique_turzil"/>
+		<event name="SOCIALIZE_THE_HUNGER_OOJ_1" req="unique_ooj"/>
+		<event name="SOCIALIZE_THE_HUNGER_OOJ_2" req="unique_ooj"/>
+		<event name="SOCIALIZE_THE_HUNGER_ANOINTED_1" req="unique_anointed"/>
+		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_1" req="unique_thescarred"/>
+		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_2" req="unique_thescarred"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_NOTHING">
+	<text>The Hunger appears to be tearing into the floor in its room... they turn to you, "CAPTAIN. Commmmmmplic-c-c-c-cation: HUNGER. Solution? Solution? Solution!: HURRY." Seems they want you to get this ship moving. Now.</text>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_GENERIC_1" unique="true">
+	<text>It's not hard to find them... you follow the scratches in the floor and eventually find the Hunger in the middle of a hallway, gyrating in place.</text>
+	<choice hidden="true">
+		<text>Grab their attention.</text>
+		<event>
+			<text>The Hunger's face turns to meet yours while the rest of their body continues to spin, "PROTOCOL ERROR: PROTOCOL 'GREETING' CORRUPTED. ENFORCING BACKUP PROTOCOL: PROTOCOL FAREWELL. F-f-f-f-farewell, Captain? Captain! Bye-eyb, captain!" With that, you watch as they crawl away, their face still locked with yours as they round the corner.</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave them to their strange ways.</text>
+		<event>
+			<text>On second thought, you're not really in the mood to 'talk' to the Hunger... you leave them to their strange spinning.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_GENERIC_2" unique="true">
+	<text>You find the Hunger in the hold tearing into the food supply. A shame, but, sooner the snacks than you, you suppose... probably best to leave them to their rampage regardless.</text>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_GENERIC_3" unique="true">
+	<text>After a bit of searching you catch the Hunger as it tears a chunk out of the wall. An expendable chunk, you're sure. This seems to satisfy them, and their face meets yours, "Subject... subject? Subject!: HUNGER. Ssssstate: SATISFIED. Request: Request: Request: SPEAK, captain! Captain, s-s-speak!"</text>
+	<choice hidden="true">
+		<text>Uh, hi. How are you, Hunger?</text>
+		<event>
+			<text>"HELLO t-t-to SUBJECT: You! You too, caaaaptain! Captain? Captain. R-r-repeating state: HUNGER is... is? Is! SATISFIED." A few moments pass, and then it jiggles slightly, "STATE update? Update: HUNGER un-un-un... satisfied? Unsatisfied. SOLUTION: Devour! B-b-b-bye, captain...? Bye." They escape into the hole they've created in the wall, and you're left wondering just how much of this ship is expendable...</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_TURZIL_1" unique="true">
+	<text>You come across Turzil examining the Hunger, poking and prodding. You're about to speak when Turzil's arm is torn from his shoulder, engulfed by the Hunger as a reaction to his stimulus. Still, Turzil seems unphased.</text>
+	<choice hidden="true">
+		<text>Is everything, uh... alright in here?</text>
+		<event>
+			<text>Turzil turns to you, "Does your sight -fail- you, captain? I fail to see what is 'alright' here." He turns back to the Hunger, "This is no [mere] case of the Harmony connection eroding, and this is no [mere] Engi. These are -many- Engi, suffering. Held together, by [dark] forces. Forces I -fail- to understand." The Hunger wiggles around for a moment before speaking up, "HUNGER: Dark! Dark, d-d-daaark... HARMONY: at bay? At bay! EROSION: Gone? Gone! PRICE: Deemed. Deemed, deemed, deemed! SUFFICIENT." Turzil rebukes, "You've turned from one [cruel] master to another. You remain -trapped- like this: no more free than I, or any other Engi." He gives a robotic sigh, and turns to leave, "One can only -hope- there's still a chance for them: somewhere. Good [luck] finding it, captain." You're left alone with the Hunger, who appears to have returned to nibbling on Turzil's arm.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_TURZIL_2" unique="true">
+	<text>You enter the Hunger's room, but are surprised to find that it's Turzil standing there. He appears to be inspecting the room, and the damage it's suffered since the Hunger has moved in... of which there's a lot.</text>
+	<choice hidden="true">
+		<text>Cough.</text>
+		<event>
+			<text>Turzil seems startled, but only briefly, "Captain. Inquiry: what do you -think- of the Disparity?"</text>
+			<choice hidden="true">
+				<text>What they're doing isn't right. The Engi under the Harmony don't deserve to suffer for its actions.</text>
+				<event>
+					<text>"To be [stripped] of your self would be described as suffering, by some. Following that logic, why would this -Hunger- sacrifice themselves? Become: many? Become: unthinking..." he pauses, "...perhaps in -losing- themselves, they sought to [save] many. A -daring- gambit. Results: remain to be seen. Part of me [prays] they remain that way. The -other- part... holds out [hope.] [Hope] that the Harmony can fall yet." Turzil leaves the room, and all is silent... save for the chewing sound coming from beneath the floorboards.</text>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I stand by them. The Engi deserve to be free from the Harmony, and the Separatists standing idle won't grant that.</text>
+				<event>
+					<text>"This: is true, regrettably. The problem, though, remains: this is a -war- against the Engi, for the Engi. Not to speak of their -dark- bargains. Should they win, will they truly be [free] to be themselves? [Free] from their shoes?" You blink at that line, confused, and Turzil notices, "Shackles. The word: is shackles. I'm still getting -used- to this [metaphor] thing." Embarrassed, he leaves the room, and all is silent... save for the chewing sound coming from beneath the floorboards.</text>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I'd rather not get involved.</text>
+				<event>
+					<text>"Your actions -betray- your words. Here I and this -Hunger- stand, [free] from the Harmony. Theory: you're merely humble, captain?" You blush, and can't help but smile... you're kind of cool, you suppose. Satisfied, Turzil leaves the room, and all is silent... save for the chewing sound coming from beneath the floorboards.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave him to it.</text>
+		<event>
+			<text>You leave Turzil alone, and return to looking for the Hunger. You don't find them, but you do grow quite accustomed to the chewing sound coming from beneath the floorboards.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_OOJ_1" unique="true">
+	<text>On your way to the Hunger's room, you find them and OOJ in the middle of the hallway facing off... should you be concerned?</text>
+	<choice hidden="true">
+		<text>Intervene.</text>
+		<event>
+			<text>You aren't really sure how to intervene, exactly, so you just kind of stand in-between them... they're both extremely close. You can hear OOJ's body pak-paking in place, and the Hunger as it nibbles upon the floorboards. Eventually, they both seem to back off... slowly. The Hunger never breaks eye contact with you, and OOJ never breaks OOJ-contact. Eventually, the paks and crunching sounds fade, and you're left alone...</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Observe.</text>
+		<event>
+			<text>Nothing happens for a while, until OOJ begins vibrating... then, the Hunger reverberates in kind. You realize all hell is about to break loose as their vibrations pick up in pace to match the other's. OOJ's pak pak pak sounds accelerate faster and faster, as do the strange crunching noises the Hunger seems to be making... are you bearing witness to the creation of a particle accelerator? Can you even flee? Is anywhere within this ship safe? Is anywhere within this sector safe? This reality? This Multiverse? As you ponder these questions, both blobs spontaneously stop moving, completely defying their retention of momentum. OOJ slides one way, and the Hunger slides the other, until both are out of sight... what have you just witnessed?</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_OOJ_2" unique="true">
+	<text>Despite your best efforts, you can't find the Hunger anywhere. You do hear a strange 'pak pak pak' sound coming from above the ceiling, mirrored in kind by a strange 'crunch crunch crunch' sound coming from beneath the floor... but it's probably nothing. Weird space tricks of the mind, and all that.</text>
+</event>
+<event name="SOCIALIZE_THE_HUNGER_ANOINTED_1" unique="true">
+	<text>The sound of crunching alerts you to the Hunger's location from across the ship, but you're surprised to find the Anointed there as well. They appear to be passing a large chunk of metal back and forth, taking turns eating it... the Hunger speaks, "SUBJECT: An-n-n-n-noooointed? Anointed. State-etats-etats-etats: HUNGER? Hunger, too?" to which the Anointed replies, "Correct, strange Engi thing. We need not hunger alone, we need not decay alone. Together, we may devour all." The Hunger jiggles enthusiastically at this, and you leave the room concerned for your safety...</text>
+</event>
+
+</FTL>

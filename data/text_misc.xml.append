@@ -1,0 +1,13 @@
+<text name="map_icon_store_deepone">STORE [DEEP]</text>
+<text name="map_icon_store_disparity">STORE [DISP]</text>
+<text name="map_icon_ddkyrandlilith">KYR</text>
+<text name="map_icon_ddritualreward">RITUAL</text>
+<text name="map_icon_dddisparity_battlefield">BATTLEFIELD</text>
+<text name="map_icon_dddisparity_cache">CACHE</text>
+<text name="map_icon_dddisparity_ambush">AMBUSH</text>
+
+<text name="loot_disparity_1">DISPARITY LOOT
++1 shield piercing
++50% spawn chance, shots cause lockdown</text>
+
+<text name="tip_shadow_weapon">Tip: Shadow weapons spawn Hungering Shadows, which grow in strength when in rooms together. Use them to overwhelm your enemies!</text>
