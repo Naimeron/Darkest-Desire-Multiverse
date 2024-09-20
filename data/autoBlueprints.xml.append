@@ -294,7 +294,6 @@
 	<name>ION_BIO</name>
 	<name>LASER_PIERCE_ENEMY</name>
 	<name>LASER_FROST_1</name>
-	<name>LASER_STUN_ENEMY</name>
 	<name>BEAM_STUN</name>
 	<name>ENERGY_1</name>
 	<name>ENERGY_2</name>
@@ -332,7 +331,6 @@
 	<name>ION_BIO</name>
 	<name>LASER_PIERCE_ENEMY</name>
 	<name>LASER_FROST_1</name>
-	<name>LASER_STUN_ENEMY</name>
 	<name>BEAM_STUN</name>
 	<name>ENERGY_1</name>
 	<name>ENERGY_2</name>
@@ -367,7 +365,6 @@
 	<name>ION_BIO</name>
 	<name>LASER_PIERCE_ENEMY</name>
 	<name>LASER_FROST_1</name>
-	<name>LASER_STUN_ENEMY</name>
 	<name>BEAM_STUN</name>
 	<name>ENERGY_1</name>
 	<name>ENERGY_2</name>
