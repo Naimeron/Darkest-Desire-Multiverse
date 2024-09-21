@@ -222,7 +222,7 @@
 	</rarityList>
 	<startEvent>ENTER_DISPARITY_UNIQUE</startEvent>
 	<removeFirstBeaconNebula/>
-	<exitBeacon event="DISPARITY_FINISH" nebulaEvent="DISPARITY_FINISH" rebelEvent="DISPARITY_FINISH_REBEL"/>
+	<exitBeacon event="FINISH_BEACON" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
 	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="FLEET_THREAT_LOW_NEBULA"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
 	<event name="TRANSPORT_DISPARITY_LOOT" min="1" max="1"/>

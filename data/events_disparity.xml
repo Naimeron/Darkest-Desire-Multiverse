@@ -1467,7 +1467,7 @@
 	</choice>
 </event>
 
-<ship name="NEUTRAL_DISPARITY_BLOODSHED_FIGHT_ELITE" auto_blueprint="SHIP_ENGI_ELITE_FIGHT">
+<ship name="NEUTRAL_DISPARITY_BLOODSHED_FIGHT_ELITE" auto_blueprint="LIST_SHIPS_ENGI_ELITE_FIGHT">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
 		<autoReward level="MED">standard</autoReward>
