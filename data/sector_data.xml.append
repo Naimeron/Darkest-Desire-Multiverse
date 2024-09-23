@@ -28,6 +28,30 @@
 	<mod-append:sector>DARKONE_DOMAIN</mod-append:sector>
 </mod:findName>
 
+<mod:findName type="sectorDescription" name="SECRET_ANCIENT">
+   <mod:findLike type="rarityList">
+      <mod-append:blueprint name="deepone" rarity="0"/>
+	  <mod-append:blueprint name="DEEPONE_JELLYFISH" rarity="0"/>
+	  <mod-append:blueprint name="SHOTGUN_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="LASER_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="BOMB_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="DRONE_MINISHROUD" rarity="0"/>
+	  <mod-append:blueprint name="DISPARITY_BROODMOTHERTOG_DEFEND" rarity="0"/>
+   </mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SECRET_ROYAL">
+   <mod:findLike type="rarityList">
+      <mod-append:blueprint name="deepone" rarity="0"/>
+	  <mod-append:blueprint name="DEEPONE_JELLYFISH" rarity="0"/>
+	  <mod-append:blueprint name="SHOTGUN_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="LASER_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="BOMB_DARKGOD" rarity="0"/>
+	  <mod-append:blueprint name="DRONE_MINISHROUD" rarity="0"/>
+	  <mod-append:blueprint name="DISPARITY_BROODMOTHERTOG_DEFEND" rarity="0"/>
+   </mod:findLike>
+</mod:findName>
+
 <sectorDescription name="SECTOR_DEEPONE" unique="false"> 
 	<nameList>
 		<name>Deep One Assembly</name>
@@ -166,6 +190,9 @@
 	</nameList>
 	<trackList>
 		<track>ddtracklightslament</track>
+		<track>debris</track>
+		<track>unexplored</track>
+		<track>deepspace</track>
 	</trackList>
 	<startEvent>DARKONE_START</startEvent>
 	<exitBeacon event="DARKONE_FINISH" rebelEvent="DARKONE_FINISH"/>
