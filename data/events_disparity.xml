@@ -1502,7 +1502,7 @@
 						<event>
 							<text>No, you don't hear it... you FEEL it. It's an overwhelming feeling... one reminiscent of an embrace, long overdue. It envelops you, and everything, and you're left drifting... no, sinking. You sink deeper into this feeling for what must be an eternity, as time, and everything, becomes nothing. Nothing... were you ever more?</text>
 							<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
-							<playMusic>unexplored</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Yes, I was everything.</text>
 								<event>
@@ -1778,7 +1778,7 @@
 																	<text>No, you don't hear it... you FEEL it. It's an overwhelming feeling... one reminiscent of an embrace, long overdue. It envelops you, and everything, and you're left drifting... no, sinking. You sink deeper into this feeling for what must be an eternity, as time, and everything, becomes nothing. Nothing... were you ever more?</text>
 																	<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
 																	<clearCustomFleet/>
-																	<playMusic>unexplored</playMusic>
+																	<playMusic>ddtracklightslament</playMusic>
 																	<choice hidden="true">
 																		<text>Yes, I was everything.</text>
 																		<event>
@@ -1844,7 +1844,7 @@
 																					<text>No, you don't hear it... you FEEL it. It's an overwhelming feeling... one reminiscent of an embrace, long overdue. It envelops you, and everything, and you're left drifting... no, sinking. You sink deeper into this feeling for what must be an eternity, as time, and everything, becomes nothing. Nothing... were you ever more?</text>
 																					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
 																					<clearCustomFleet/>
-																					<playMusic>unexplored</playMusic>
+																					<playMusic>ddtracklightslament</playMusic>
 																					<choice hidden="true">
 																						<text>Yes, I was everything.</text>
 																						<event>
@@ -2892,7 +2892,7 @@
 														<text>Big guy?</text>
 														<event>
 															<text>"Yeah, the H-" they pause, "Fuck, I nearly did it again. Listen, can I give you a drone and have you be quiet, or something? Maybe share some power with one of your Separatists, if you have: any?"</text>
-															<choice hidden="true" req="LIST_VARIANT_SEPARATIST">
+															<choice hidden="true" req="engi_separatist">
 																<text>(Engi Separatist) Sure, power sounds cool.</text>
 																<event>
 																	<text>The Disparity Elite plays another sigh sound effect, this one lighter, "Phew, awesome. Thanks, Fed, just send 'em: over." You do as you're told and send your Separatist to the other vessel, but they pause communications while they do whatever it is that they're doing. You were a little curious as to the process...</text>
@@ -2901,7 +2901,7 @@
 																		<event>
 																			<text>You're left waiting a lot longer than you expected... though, eventually, your Separatist does indeed return. Transformed into a Disparity Elite, no less... they seem a little out of it, so you move to help them sit down, but you're sent reeling in pain when you try grabbing their arm. For whatever reason, they are extremely hot to the touch. You surmise that it's likely something to do with whatever process was involved in the transformation, but... you're only left feeling more curious than when you started while you prepare to leave the beacon.</text>
 																			<modifyPursuit amount="1"/>
-																			<transformRace class="LIST_VARIANT_SEPARATIST">disparity_engidefault</transformRace>
+																			<transformRace class="engi_separatist">disparity_engidefault</transformRace>
 																		</event>
 																	</choice>
 																</event>
@@ -3041,7 +3041,7 @@
 						<event>
 							<text>As darkness descends upon the moon, you rush for the only door to the building that you can see. Frozen shut and operated by a valve, it takes all your strength to manage to force the door open and throw yourself inside. Closing the door, you scan the room you're in and find that it's... strangely warm, its confines vaguely illuminated by faint, red lights along the walls. You're unsure how long you'll have to be here, so you may as well get settled in...</text>
 							<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-							<playMusic>unexplored</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Explore the facility.</text>
 								<event>

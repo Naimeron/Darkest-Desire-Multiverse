@@ -1,3 +1,11 @@
+<music>
+	<track> <!--composed by Lizzard-->
+		<name>ddtracklightslament</name>
+		<explore>dd_MUS_LightsLamentEXPLORE.ogg</explore>
+		<combat>dd_MUS_LightsLamentBATTLE.ogg</combat>
+	</track>
+</music>
+
 <happierHolidays volume="10">aliens/bp_sfx_happyholidays.ogg</happierHolidays>
 <turnIt volume="10">aliens/bp_sfx_turnitup.ogg</turnIt>
 <boopBoop volume="10">aliens/bp_sfx_boop.ogg</boopBoop>

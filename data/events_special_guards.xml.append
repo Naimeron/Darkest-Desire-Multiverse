@@ -363,6 +363,7 @@
 		<color r="46" g="252" b="51" a="1"/>
 	</beaconType>
 	<text>You've arrived at the mysterious sector, and... there's nothing here. There's nothing anywhere, no stars to be seen; no planets or nebulas... just darkness, in every direction. Where exactly have these coordinates taken you?</text>
+	<metaVariable name="juke_ddtracklightslament" op="set" val="1"/>
 	<unlockCustomShip silent="false">PLAYER_DEEP_ONE</unlockCustomShip>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<playSound>lightspeed</playSound>

@@ -777,6 +777,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	<variable name="ach_crew_thehunger" op="set" val="0"/>
 	<variable name="ach_trans_enlightened" op="set" val="0"/>
 	<variable name="ach_trans_disparity" op="set" val="0"/>
+	<metaVariable name="juke_ddtracklightslament" op="set" val="0"/>
 	<metaVariable name="prof_z_boon_deepone" op="set" val="0"/>
 	<metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
 	<metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
@@ -1095,6 +1096,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="spacetear">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<allDamageTakenMultiplier>0.1</allDamageTakenMultiplier>
 		<canBurn>false</canBurn>
@@ -1142,6 +1144,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="darkgodtendrils">
 		<maxHealth>45</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
@@ -1640,6 +1643,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engidefault_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -1762,6 +1766,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engispeed_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -1885,6 +1890,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engiattack_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -2036,6 +2042,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engidefense_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -2188,6 +2195,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engihazard_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -2514,6 +2522,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_thehunger_beacon">
 		<maxHealth>44</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -2734,6 +2743,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="disparity_engirainbow_beacon">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<repairSpeed>2.0</repairSpeed>
@@ -3087,6 +3097,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3199,6 +3210,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_enemy">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3311,6 +3323,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_a">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3438,6 +3451,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_b">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3550,6 +3564,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_c">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3678,6 +3693,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_ad">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3790,6 +3806,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_ae">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -3902,6 +3919,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_af">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4014,6 +4032,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_ag">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4157,6 +4176,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bd">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4284,6 +4304,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_be">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4411,6 +4432,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bf">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4538,6 +4560,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bg">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4666,6 +4689,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cd">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4778,6 +4802,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_ce">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -4890,6 +4915,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cf">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5002,6 +5028,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cg">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5130,6 +5157,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_adj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5242,6 +5270,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_aej">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5354,6 +5383,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_afj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5466,6 +5496,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_agj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5609,6 +5640,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bdj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5736,6 +5768,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bej">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5863,6 +5896,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bfj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -5990,6 +6024,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_bgj">
 		<maxHealth>666</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6118,6 +6153,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cdj">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6230,6 +6266,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cej">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6342,6 +6379,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cfj">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6454,6 +6492,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="ddnightmare_rift_cgj">
 		<maxHealth>555</maxHealth>
+		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6512,6 +6551,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_crawler">
 		<maxHealth>60</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>1.3</moveSpeedMultiplier>
 		<damageMultiplier>1.3</damageMultiplier>
 		<canSuffocate>false</canSuffocate>
@@ -6532,6 +6572,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_terror">
 		<maxHealth>25</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
 		<damageMultiplier>0.5</damageMultiplier>
 		<sabotageSpeedMultiplier>1.3</sabotageSpeedMultiplier>
@@ -6583,6 +6624,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_priest">
 		<maxHealth>45</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>1</moveSpeedMultiplier>
 		<damageMultiplier>0.5</damageMultiplier>
 		<sabotageSpeedMultiplier>0.5</sabotageSpeedMultiplier>
@@ -6623,6 +6665,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_greaterpriest">
 		<maxHealth>175</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<damageMultiplier>0.5</damageMultiplier>
 		<sabotageSpeedMultiplier>0.5</sabotageSpeedMultiplier>
@@ -6700,6 +6743,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_stalker">
 		<maxHealth>40</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
 		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
 		<teleportMove>true</teleportMove>
@@ -6745,6 +6789,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_engi">
 		<maxHealth>90</maxHealth>
+		<noWarning>true</noWarning>
 		<repairSpeed>2</repairSpeed>
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
@@ -6765,6 +6810,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_greatercrawler">
 		<maxHealth>165</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>2.2</moveSpeedMultiplier>
 		<damageMultiplier>2.2</damageMultiplier>
 		<canSuffocate>false</canSuffocate>
@@ -6803,6 +6849,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_mass">
 		<maxHealth>75</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.4</moveSpeedMultiplier>
 		<sabotageSpeedMultiplier>0.5</sabotageSpeedMultiplier>
 		<doorDamageMultiplier>0.5</doorDamageMultiplier>
@@ -6838,6 +6885,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_greatermass">
 		<maxHealth>110</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 		<powerDrain>3</powerDrain>
 		<powerDrainFriendly>false</powerDrainFriendly>
@@ -6888,6 +6936,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_martyr">
 		<maxHealth>6</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
 		<damageMultiplier>0.1</damageMultiplier>
 		<doorDamageMultiplier>3</doorDamageMultiplier>
@@ -6937,6 +6986,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</mod-append:race>
 	<mod-append:race name="nightmarish_greatermartyr">
 		<maxHealth>20</maxHealth>
+		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>1.6</moveSpeedMultiplier>
 		<damageMultiplier>0.1</damageMultiplier>
 		<doorDamageMultiplier>6</doorDamageMultiplier>
@@ -9992,6 +10042,66 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 	</aug>
 </augments>
 
+<mod:findLike type="augments">
+	<mod:findName type="aug" name="DEATH_VESTS">
+		<mod:findLike type="statBoosts">
+			<mod:findLike type="statBoost">
+				<mod-append:blackList>
+					<nightmarish_crawler/>
+					<nightmarish_terror/>
+					<nightmarish_priest/>
+					<nightmarish_greaterpriest/>
+					<nightmarish_stalker/>
+					<nightmarish_engi/>
+					<nightmarish_greatercrawler/>
+					<nightmarish_greatermass/>
+					<nightmarish_mass/>
+					<nightmarish_martyr/>
+					<nightmarish_greatermartyr/>
+					<ddnightmare_rift/>
+					<ddnightmare_rift_a/>
+					<ddnightmare_rift_b/>
+					<ddnightmare_rift_c/>
+					<ddnightmare_rift_ad/>
+					<ddnightmare_rift_ae/>
+					<ddnightmare_rift_af/>
+					<ddnightmare_rift_ag/>
+					<ddnightmare_rift_bd/>
+					<ddnightmare_rift_be/>
+					<ddnightmare_rift_bf/>
+					<ddnightmare_rift_bg/>
+					<ddnightmare_rift_cd/>
+					<ddnightmare_rift_ce/>
+					<ddnightmare_rift_cf/>
+					<ddnightmare_rift_cg/>
+					<ddnightmare_rift_adj/>
+					<ddnightmare_rift_aej/>
+					<ddnightmare_rift_afj/>
+					<ddnightmare_rift_agj/>
+					<ddnightmare_rift_bdj/>
+					<ddnightmare_rift_bej/>
+					<ddnightmare_rift_bfj/>
+					<ddnightmare_rift_bgj/>
+					<ddnightmare_rift_cdj/>
+					<ddnightmare_rift_cej/>
+					<ddnightmare_rift_cfj/>
+					<ddnightmare_rift_cgj/>
+					<spacetear/>
+					<darkgodtendrils/>
+					<unique_thescarredascended/>
+					<disparity_engidefault_beacon/>
+					<disparity_engispeed_beacon/>
+					<disparity_engiattack_beacon/>
+					<disparity_engidefense_beacon/>
+					<disparity_engihazard_beacon/>
+					<disparity_engirainbow_beacon/>
+					<disparity_thehunger_beacon/>
+				</mod-append:blackList>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+</mod:findLike>
+
 <mod:findLike type="achievements" limit="1">
 	<mod-append:page>
 		<section text="Darkest Desire Achievements" hidden="false">
@@ -10026,6 +10136,15 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 				<header>Boon Received</header>
 				<icon>ach_boon_disparity_equipment</icon>
 				<lockImage>ach_locked</lockImage>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			<achievement name="MUSIC_DDTRACKLIGHTSLAMENT">
+				<name>Light's Lament</name>
+				<description id="jukebox_unlocked"/>
+				<secretDescription id="jukebox_locked"/>
+				<header id="jukebox_header"/>
+				<icon>music_unlocked</icon>
+				<variable name="juke_ddtracklightslament" amount="1"/>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_TRANS_ENLIGHTENED">

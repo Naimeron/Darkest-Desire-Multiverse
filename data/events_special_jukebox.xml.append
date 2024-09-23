@@ -1,0 +1,9 @@
+<mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
+    <mod-append:choice hidden="true" req="juke_ddtracklightslament">
+		<text>DD: Light's Lament</text>
+		<event>
+			<playMusic>ddtracklightslament</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+</mod:findName>

@@ -1134,7 +1134,7 @@
 						<event>
 							<text>Your name is Axolokl, and you are a Dinosaurkin tasked with the reclamation of a crystal sacred to your people. The crystal is said to lie within the mythical Museum of Secrets, a building constructed and kept by the horrific Bird Demons to the south of your lands. After a long and arduous journey, you have finally arrived at the Museum's entrance.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Enter, with the upmost caution.</text>
 								<event>
@@ -1205,7 +1205,7 @@
 						<event>
 							<text>You have no name, but you know yourself to be a Defender of Earth, tasked with the reclamation of a rare crystal vital to keeping the planet safe. It's fallen into the hands of one of your mortal enemies, the Hexdroids, and you've infiltrated one of their bases, where it's rumored to be located... the Garden of Redemption. Now is the time to strike.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Begin searching for the crystal.</text>
 								<event>
@@ -1276,7 +1276,7 @@
 						<event>
 							<text>Your name is Charus, and you are a Bird Demon tasked by your God to steal a relic sacred to the primitive lizard people known as the Dinosaurkin. Your God has revealed to you the crystal's location: atop a temple deep in the Dinosaurkin's Jungles of Savagery. You lie at the Jungles' outskirts, ready to do what you must.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Enter the Jungles of Savagery.</text>
 								<event>
@@ -1347,7 +1347,7 @@
 						<event>
 							<text>Your name is Seegurd, and you are a human worker for an intergalactic mega-corporation. At the bottom of the corporate ladder, it's your job to go to previously abandoned planets and collect what you can... your higher-ups have informed you of a valuable crystal, located on a volcanic planet simply referred to as the Lakes of Rage. As dangerous as it sounds, you have little choice but to do as you're told... you arrive on the planet now, stepping out onto a field of obsidian.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Track the crystal's whereabouts.</text>
 								<event>
@@ -1418,7 +1418,7 @@
 						<event>
 							<text>Your name is Pete, a name so sweet! You seek the crystal, with but a pistol! This is our Nightmare of Nonsense!</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>I seek the crystal, with but a pistol!</text>
 								<event>
@@ -1489,7 +1489,7 @@
 						<event>
 							<text>Your name is Psyrus, and you are a scholar. You've been sentenced to life in prison in the Sea of Solitude, a non-literal sea of ice and snow surrounded by a very literal sea of ice and water. The crime for which you were sentenced, the murder of your wife, was not one you had committed. You know the true culprit... to bring them to justice, you need to get out of this prison, and you know just the way to do it.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Think over the plan.</text>
 								<event>
@@ -1560,7 +1560,7 @@
 						<event>
 							<text>You are Lilac, and you are the hero of this world, as dictated by fate. It is by your hands that the fabled crystal will be taken, and allow time to be restored. No longer will you have to live in the Plains of Perpetuity, but something greater...</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Am I really...?</text>
 								<event>
@@ -1631,7 +1631,7 @@
 						<event>
 							<text>Your name is Lucas, and you are a man of not occupation; but conviction. You carry with you, in a coffin, a piece of the corpse of a long-dead god, whose existence almost spelled the death of the entire Multiverse. With it, you seek to fell another god in this Graveyard of Dragons.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Wander through the Graveyard.</text>
 								<event>
@@ -1702,7 +1702,7 @@
 						<event>
 							<text>Your name is Entropy, and you are a god. You're on a path in the woods, in the Realm of Knighthood, and at the end of that path is a cabin... in the basement of that cabin is a crystal. You're here to grab it. If you don't, it will be the end of the world.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Continue down the path.</text>
 								<event>
@@ -1773,7 +1773,7 @@
 						<event>
 							<text>Your name is Theodore von Fireheart Senior, and you are the captain of the mightiest ship to sail the Sea of Rascals. It is within this Sea of Rascals, though, that the Trenches of Shadow lie... and it has been foretold to you by an oracle that they shall be your grave. You're sailing over them now, in transit to sell your most recent haul of treasure.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>hoedown</playMusic>
+							<playMusic>ddtracklightslament</playMusic>
 							<choice hidden="true">
 								<text>Keep sailing.</text>
 								<event>
@@ -1840,7 +1840,7 @@
 				<event>
 					<text>You are none. You are but part of many.</text>
 					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
-					<playMusic>unexplored</playMusic>
+					<playMusic>ddtracklightslament</playMusic>
 					<choice hidden="true">
 						<text>I am none.</text>
 						<event>

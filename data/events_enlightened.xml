@@ -4000,7 +4000,7 @@
 		<event>
 			<text>Ah, it hits you. You're the one in distress.</text>
 			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
-			<playMusic>unexplored</playMusic>
+			<playMusic>ddtracklightslament</playMusic>
 			<damage amount="1"/>
 			<choice hidden="true">
 				<text>Drown...</text>

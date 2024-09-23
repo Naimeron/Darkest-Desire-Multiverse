@@ -100,9 +100,9 @@
 		<name>Enlightened Deep Space</name>
 	</nameList>
 	<trackList>
-		<track>lostship</track>
+		<track>ddtracklightslament</track>
 		<track>debris</track>
-		<track>wasteland</track>
+		<track>unexplored</track>
 		<track>deepspace</track>
 	</trackList>
 	<rarityList>
@@ -165,7 +165,7 @@
 		<name>Dark God's Domain</name>
 	</nameList>
 	<trackList>
-		<track>deepspace</track>
+		<track>ddtracklightslament</track>
 	</trackList>
 	<startEvent>DARKONE_START</startEvent>
 	<exitBeacon event="DARKONE_FINISH" rebelEvent="DARKONE_FINISH"/>
@@ -181,7 +181,7 @@
 	<trackList>
 		<track>engi</track>
 		<track>void</track>
-		<track>insurgence</track>
+		<track>ddtracklightslament</track>
 		<track>hacking</track>
 	</trackList>
 	<rarityList>

@@ -193,6 +193,311 @@
 	</mod-append:choice>
 </mod:findName>
 
+<mod:findName type="event" name="COMBAT_CHECK_REAL">
+	<mod-append:choice req="BLUELIST_CREW_DISPARITY_ELITE" max_group="404" hidden="true">
+		<text>Change your Disparity Elite's form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD">
+	<loadEvent>COMBAT_CHECK_DISPARITYFORMSWITCH_REAL</loadEvent>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_REAL">
+	<text>Which Disparity Elite do you want to switch?</text>
+	<choice hidden="true" req="disparity_engidefault">
+		<text>(Default Form) Switch a Disparity Elite in its Default Form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_DEFAULTTO"/>
+	</choice>
+	<choice hidden="true" req="disparity_engispeed">
+		<text>(Speed Form) Switch a Disparity Elite in its Speed Form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_SPEEDTO"/>
+	</choice>
+	<choice hidden="true" req="disparity_engiattack">
+		<text>(Attack Form) Switch a Disparity Elite in its Attack Form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_ATTACKTO"/>
+	</choice>
+	<choice hidden="true" req="disparity_engidefense">
+		<text>(Defense Form) Switch a Disparity Elite in its Defense Form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_DEFENSETO"/>
+	</choice>
+	<choice hidden="true" req="disparity_engihazard">
+		<text>(Hazard Form) Switch a Disparity Elite in its Hazard Form.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_HAZARDTO"/>
+	</choice>
+	<choice>
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice>
+		<text>Nevermind, let's fight!</text>
+		<event>
+			<text>You decide not to do anything and prepare to fight.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_DEFAULTTO">
+	<text>Which form would you like to switch to from Default?</text>
+	<choice hidden="true">
+		<text>Switch to Speed Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefault">disparity_engispeed</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Attack Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefault">disparity_engiattack</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Defense Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefault">disparity_engidefense</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Hazard Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefault">disparity_engihazard</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_SPEEDTO">
+	<text>Which form would you like to switch to from Speed?</text>
+	<choice hidden="true">
+		<text>Switch to Default Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engispeed">disparity_engidefault</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Attack Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engispeed">disparity_engiattack</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Defense Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engispeed">disparity_engidefense</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Hazard Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engispeed">disparity_engihazard</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_ATTACKTO">
+	<text>Which form would you like to switch to from Attack?</text>
+	<choice hidden="true">
+		<text>Switch to Default Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engiattack">disparity_engidefault</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Speed Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engiattack">disparity_engispeed</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Defense Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engiattack">disparity_engidefense</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Hazard Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engiattack">disparity_engihazard</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_DEFENSETO">
+	<text>Which form would you like to switch to from Defense?</text>
+	<choice hidden="true">
+		<text>Switch to Default Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefense">disparity_engidefault</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Speed Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefense">disparity_engispeed</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Attack Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefense">disparity_engiattack</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Hazard Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engidefense">disparity_engihazard</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DISPARITYFORMSWITCH_HAZARDTO">
+	<text>Which form would you like to switch to from Hazard?</text>
+	<choice hidden="true">
+		<text>Switch to Default Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engihazard">disparity_engidefault</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Speed Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engihazard">disparity_engispeed</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Attack Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engihazard">disparity_engiattack</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Switch to Defense Form.</text>
+		<event>
+			<text>Your Disparity Elite successfully changes their form.</text>
+			<transformRace class="disparity_engihazard">disparity_engidefense</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
 <event name="COMBAT_CHECK_LIBERATOR_BATTLE">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
