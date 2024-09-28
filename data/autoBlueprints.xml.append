@@ -1039,7 +1039,7 @@
 	<systemList>
 		<cloaking power="1" max="1" room="11" start="false" />
 		<doors power="2" max="3" room="10" start="true" />
-		<drones power="1" max="4" room="8" start="false" />
+		<drones power="1" max="4" room="8" start="true" />
 		<engines power="1" max="2" room="3" start="true" />
 		<medbay power="1" max="1" room="9" start="true" />
 		<mind power="1" max="2" room="12" start="false" />
