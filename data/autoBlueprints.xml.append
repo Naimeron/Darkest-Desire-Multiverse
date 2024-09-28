@@ -7,11 +7,7 @@
 	<mod-append:name>blobdeepone</mod-append:name>
 </mod:findName>
 
-<mod:findName type="blueprintList" name="LIST_CHECKCREW_MORPH_TRANSFORM">
-	<mod-append:name>blobdeepone</mod-append:name>
-</mod:findName>
-
-<mod:findName type="blueprintList" name="LIST_CHECKCREW_MORPH">
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH_TRANSFORMED">
 	<mod-append:name>blobdeepone</mod-append:name>
 </mod:findName>
 
@@ -174,6 +170,21 @@
 	<name>deepone</name>
 	<name>deeponecultist</name>
 	<name>unique_thescarred</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_MORPH_DISPARITYBROODMOTHER">
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_MORPH_DDSERAPHARBITER">
+	<name>DDSERAPH_ARBITERTOG_DEFEND</name>
+	<name>DDSERAPH_ARBITERTOG_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_MORPH_DISPARITYLIBERATOR">
+	<name>DISPARITY_LIBERATORTOG_DEFEND</name>
+	<name>DISPARITY_LIBERATORTOG_BOARDER</name>
 </blueprintList>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_ENGI">
@@ -1030,7 +1041,7 @@
 		<doors power="2" max="3" room="10" start="true" />
 		<drones power="1" max="4" room="8" start="false" />
 		<engines power="1" max="2" room="3" start="true" />
-		<medbay power="1" max="3" room="9" start="true" />
+		<medbay power="1" max="1" room="9" start="true" />
 		<mind power="1" max="2" room="12" start="false" />
 		<oxygen power="1" max="2" room="4" start="true" />
 		<pilot power="1" max="3" room="0" start="true" />
@@ -1040,13 +1051,13 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="2" count="2">
+	<droneList drones="3" count="2">
 		<drone name="DEFENSE_1_ENEMY" />
 		<drone name="REPAIR" />
 	</droneList>
-	<health amount="12" />
+	<health amount="13" />
 	<maxPower amount="9" />
-	<crewCount amount="2" max="5" class="deepone" />
+	<crewCount amount="3" max="5" class="deepone" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DREAD_LIGHTS" />
 	<aug name="UPG_MEDBAY_NANO" />
@@ -1078,33 +1089,32 @@
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
-		<cloaking power="1" max="3" room="3" start="false" />
+		<cloaking power="1" max="1" room="3" start="false" />
 		<doors power="2" max="3" room="10" start="true" />
 		<drones power="7" max="10" room="1" start="true" />
 		<engines power="2" max="2" room="2" start="true" />
-		<hacking power="1" max="3" room="5" start="false" />
-		<medbay power="2" max="3" room="9" start="true" />
-		<mind power="1" max="3" room="6" start="false" />
+		<hacking power="1" max="2" room="5" start="false" />
+		<medbay power="1" max="1" room="9" start="true" />
+		<mind power="1" max="2" room="6" start="false" />
 		<oxygen power="2" max="3" room="8" start="true" />
 		<pilot power="1" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="7" start="true" />
-		<weapons power="7" max="10" room="4" start="true" />
+		<weapons power="7" max="7" room="4" start="true" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
-	<droneSlots>4</droneSlots>
+	<droneSlots>3</droneSlots>
 	<weaponList missiles="9" count="2">
 		<weapon name="TWILIGHT_INEXORABLE" />
 		<weapon name="BOMB_DARKGOD" />
 	</weaponList>
-	<droneList drones="7" count="4">
+	<droneList drones="7" count="3">
 		<drone name="REPAIR" />
 		<drone name="BATTLETOG2_DEFEND" />
 		<drone name="BATTLETOG2_DEFEND" />
-		<drone name="BATTLETOG2_DEFEND" />
 	</droneList>
-	<health amount="16" />
+	<health amount="15" />
 	<maxPower amount="35" />
-	<crewCount amount="7" max="12" class="deeponecultist_enemy" />
+	<crewCount amount="4" max="7" class="deeponecultist_enemy" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_MEDBAY_NANO" />
 	<aug name="UPG_DRONE_SPEED" />
@@ -1154,7 +1164,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="0" count="0" />
 	<droneList drones="0" count="0" />
-	<health amount="9" />
+	<health amount="2" />
 	<maxPower amount="0" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>

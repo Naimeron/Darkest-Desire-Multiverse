@@ -114,7 +114,6 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 		</shipIcons>
 		<crew>
 			<deeponecultist_enemy room="10"/>
-			<deeponecultist_enemy room="6"/>
 		</crew>
 		<noFuelStalemate/>
 	</customShip>
@@ -1028,7 +1027,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 		<passiveStatBoosts>  
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.2</amount>
+				<amount>1.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>CURRENT_ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -1036,7 +1035,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 			</statBoost>
 			<statBoost name="repairSpeed">
 				<boostType>MULT</boostType>
-				<amount>1.2</amount>
+				<amount>1.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>CURRENT_ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -1044,7 +1043,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.2</amount>
+				<amount>1.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>CURRENT_ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -1052,15 +1051,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.2</amount>
-				<affectsSelf>false</affectsSelf>
-				<shipTarget>CURRENT_ALL</shipTarget>
-				<crewTarget>ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-			</statBoost>
-			<statBoost name="allDamageTakenMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.9</amount>
+				<amount>1.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>CURRENT_ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -1068,7 +1059,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 			</statBoost>
 			<statBoost name="maxHealth">
 				<boostType>FLAT</boostType>
-				<amount>20</amount>
+				<amount>15</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>CURRENT_ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -1081,7 +1072,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 				<number>1</number>
 				<race>spacetear</race>
 				<name>Space Tear</name>
-				<lifetime>19</lifetime>
+				<lifetime>10</lifetime>
 				<statBoosts>
 					<statBoost name="noClone">
 						<boostType>SET</boostType>
@@ -1346,14 +1337,14 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 		<powerEffect>
 			<cooldown>60</cooldown>
 			<req>
-				<maxHealth>105</maxHealth>
+				<maxHealth>70</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>queenRoar</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 60s  DURATION: 30s  CASTS UNDER 105 HP]
+			<tooltip>[COOLDOWN: 60s  DURATION: 30s  CASTS UNDER 70 HP]
 				Go berserk, slowing down and losing control but gaining the following benefits:
 				-1.8x damage
 				-0.5x damage resistance
@@ -10112,6 +10103,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 			</achievement>
 			<achievement name="MUSIC_DDTRACKLIGHTSLAMENT">
 				<name>Light's Lament</name>
+				<secretName>???</secretName>
 				<description id="jukebox_unlocked"/>
 				<secretDescription id="jukebox_locked"/>
 				<header id="jukebox_header"/>

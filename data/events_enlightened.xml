@@ -3149,6 +3149,10 @@
 			</choice>
 		</event>
 	</choice>
+	<choice>
+		<text>Actually, nevermind.</text>
+		<event/>
+	</choice>
 </event>
 
 <event name="ITEMS_ENLIGHTENED_HEKTAR_SALESMAN_SHOP_WEAPON">

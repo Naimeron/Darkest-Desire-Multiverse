@@ -4696,7 +4696,7 @@
 	<short>Deep</short>
 	<cost>75</cost>
 	<bp>2</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<powerList>
 		<power>Max HP raised to 140 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
 		<power>Threshold Ability: When their health falls to 105 they go berserk, losing movement speed and control but gaining greatly increased combat prowess and HP regen.</power>
@@ -4754,7 +4754,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Emanates a powerful, soothing aura, increasing movement speed (20%), repair speed (20%), damage (20%), sabotage speed (20%), max HP (+20), and decreasing damage taken (10%) of all other allied crew on the same ship. Takes double damage themselves and can't fight.</power>
+		<power>Emanates a powerful, soothing aura, increasing movement speed (10%), repair speed (10%), damage (10%), sabotage speed (10%), and max HP (+15) of all other allied crew on the same ship. Takes double damage themselves and can't fight.</power>
 		<power>On death, their Dark God rips their soul away, creating a tear in space-time that constantly ravages the room it's in. Can't be cloned, as a clone still needs a soul.</power>
 	</powerList>
 	<colorList>

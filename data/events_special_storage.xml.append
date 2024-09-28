@@ -127,10 +127,10 @@
 </mod:findName>
 
 <mod:findName type="event" name="STORAGE_CHECK_MORPH_TRANSFORM">
-    <mod:findLike type="choice">
+    <mod:findLike type="choice"><mod:selector req="LIST_CREW_MORPH_TRANSFORMED"/>
         <mod:findLike type="event">
             <mod-append:choice hidden="true" req="blobdeepone" blue="false">
-				<text>Reset your Deep One. [-1{]</text>
+				<text>Reset your Deep One Morph. [-1{]</text>
 				<event>
 					<item_modify><item type="fuel" min="-1" max="-1"/></item_modify>
 					<text>Your Morph transforms back to its original shape.</text>
@@ -164,6 +164,72 @@
 			</mod-append:choice>
 		</mod:findLike>
 	</mod:findLike>
+	<mod:findLike type="choice"><mod:selector req="techno"/>
+		<mod:findLike type="event">
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DISPARITYBROODMOTHER">
+				<text>(Broodmother Drone) Take the form of the Disparity Broodmother.</text>
+				<event>
+					<text>Your Morph tries to take the drone's shape, but something is stopping it... perhaps it utilizes some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DDSERAPHARBITER">
+				<text>(Arbiter Drone) Take the form of the Arbiter.</text>
+				<event>
+					<text>Your Morph tries to take the drone's shape, but something is stopping it... perhaps it utilizes some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DISPARITYLIBERATOR">
+				<text>(Liberator Drone) Take the form of the Liberator.</text>
+				<event>
+					<text>Your Morph tries to take the drone's shape, but something is stopping it... perhaps it utilizes some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+		</mod:findLike>
+	</mod:findLike>
+	<mod:findLike type="choice"><mod:selector req="gold"/>
+		<mod:findLike type="event">
+			<mod-append:choice hidden="true" req="LIST_CREW_ENGI">
+				<text>(Engi Crew) Take the form of a Disparity Elite.</text>
+				<event>
+					<text>Your Morph tries to take the Disparity Elite's shape, but something is stopping it... perhaps they utilize some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_AUG_SLUG_DUPLICATOR">
+	<mod-append:choice req="deepone" hidden="true" lvl="2" blue="false">
+		<text>Breed 2 Deep Ones.</text>
+		<event>
+			<text>Your Deep Ones journey into the pods together, and when they exit another Deep One is with them. Don't question how it grew up so fast.</text>
+			<crewMember amount="1" class="deepone"/>
+		</event>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
