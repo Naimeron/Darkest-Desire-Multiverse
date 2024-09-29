@@ -3774,7 +3774,7 @@
 		<text>Sure, I love Shells!</text>
 		<event>
 			<text>As the void recedes, you expect to see a ship, yet there's an entire Shell station built here! They hail, "Fehhhhderation, hhhhere? Hhhhhow... perplexing. Not quite whhhhat I hhhhad in mind, thoughhhh, withhhh thhhhe distress beacon. Still, you wouldn't hhhhappen to hhhhave any Deep Ones onboard, would you? Or perhhhhaps some of their more... exotic weaponry? Eithhhher would do."</text>
-			<ship load="MU_SHELL_STATION" hostile="false"/>
+			<ship load="DISTRESS_ENLIGHTENED_SHELL_RESEARCH_STATION" hostile="false"/>
 			<choice hidden="true">
 				<text>Why do you ask...?</text>
 				<event>
