@@ -3,6 +3,23 @@
 	<mod-append:name>unique_thehunger</mod-append:name>
 </mod:findName>
 
+<mod:findName type="blueprintList" name="LIST_CREW_METAL">
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_engi_enemy</mod-append:name>
+	<mod-append:name>unique_thehunger_enemy</mod-append:name>
+	<mod-append:name>ddultimaarmor</mod-append:name>
+	<mod-append:name>ddultimaarmor_enemy</mod-append:name>
+	<mod-append:name>ddPOWEROFULTIMA</mod-append:name>
+	<mod-append:name>ddPOWEROFULTIMA_enemy</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH">
 	<mod-append:name>blobdeepone</mod-append:name>
 </mod:findName>
@@ -495,7 +512,38 @@
 	<mod-append:name>ddseraph_engi</mod-append:name>
 	<mod-append:name>deeponecultist</mod-append:name>
 	<mod-append:name>deepone</mod-append:name>
-	<mod-append:name>blobdeepone</mod-append:name>
+	<mod-append:name>ddultimaarmor</mod-append:name>
+	<mod-append:name>ddPOWEROFULTIMA</mod-append:name>
+	<mod-append:name>ddtempest_stormborn_spawn</mod-append:name>
+	<mod-append:name>enlightened_horror</mod-append:name>
+	<mod-append:name>enlightened_horror_enemy</mod-append:name>
+	<mod-append:name>enlightened_horror_a</mod-append:name>
+	<mod-append:name>enlightened_horror_b</mod-append:name>
+	<mod-append:name>enlightened_horror_c</mod-append:name>
+	<mod-append:name>enlightened_horror_ad</mod-append:name>
+	<mod-append:name>enlightened_horror_ae</mod-append:name>
+	<mod-append:name>enlightened_horror_af</mod-append:name>
+	<mod-append:name>enlightened_horror_ag</mod-append:name>
+	<mod-append:name>enlightened_horror_bd</mod-append:name>
+	<mod-append:name>enlightened_horror_be</mod-append:name>
+	<mod-append:name>enlightened_horror_bf</mod-append:name>
+	<mod-append:name>enlightened_horror_bg</mod-append:name>
+	<mod-append:name>enlightened_horror_cd</mod-append:name>
+	<mod-append:name>enlightened_horror_ce</mod-append:name>
+	<mod-append:name>enlightened_horror_cf</mod-append:name>
+	<mod-append:name>enlightened_horror_cg</mod-append:name>
+	<mod-append:name>enlightened_horror_adj</mod-append:name>
+	<mod-append:name>enlightened_horror_aej</mod-append:name>
+	<mod-append:name>enlightened_horror_afj</mod-append:name>
+	<mod-append:name>enlightened_horror_agj</mod-append:name>
+	<mod-append:name>enlightened_horror_bdj</mod-append:name>
+	<mod-append:name>enlightened_horror_bej</mod-append:name>
+	<mod-append:name>enlightened_horror_bfj</mod-append:name>
+	<mod-append:name>enlightened_horror_bgj</mod-append:name>
+	<mod-append:name>enlightened_horror_cdj</mod-append:name>
+	<mod-append:name>enlightened_horror_cej</mod-append:name>
+	<mod-append:name>enlightened_horror_cfj</mod-append:name>
+	<mod-append:name>enlightened_horror_cgj</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
@@ -665,6 +713,53 @@
 	<name>disparity_engihazard_beacon</name>
 	<name>disparity_engirainbow_beacon</name>
 	<name>disparity_thehunger_beacon</name>
+	<name>ddultimaarmor</name>
+	<name>ddultimaarmor_enemy</name>
+	<name>ddPOWEROFULTIMA</name>
+	<name>ddPOWEROFULTIMA_enemy</name>
+	<name>ddtempest_stormborn_spawn</name>
+	<name>ddtempest_stormborn_spawn_enemy</name>
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
+	<name>ddtempest_roiling_remnant</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDULTIMAARMOR">
+	<name>ddultimaarmor</name>
+	<name>ddultimaarmor_enemy</name>
+	<name>ddPOWEROFULTIMA</name>
+	<name>ddPOWEROFULTIMA_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDTEMPEST_ALIGNED">
+	<name>ddultimaarmor</name>
+	<name>ddultimaarmor_enemy</name>
+	<name>ddPOWEROFULTIMA</name>
+	<name>ddPOWEROFULTIMA_enemy</name>
+	<name>ddtempest_stormborn_spawn</name>
+	<name>ddtempest_stormborn_spawn_enemy</name>
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
+	<name>ddtempest_roiling_remnant</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDTEMPEST_STORMOMEN">
+	<name>ddultimaarmor</name>
+	<name>ddultimaarmor_enemy</name>
+	<name>ddtempest_stormborn_spawn</name>
+	<name>ddtempest_stormborn_spawn_enemy</name>
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
+	<name>ddtempest_roiling_remnant</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDTEMPEST_LIGHTNING_SUMMON">
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
 </blueprintList>
 
 <blueprintList name="LIST_NIGHTMARES_DDBOLT">
@@ -1501,7 +1596,6 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSERAPH_RADIANT_FLAMES" />
 	<aug name="UPG_MEDBAY_NANO" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="KYR_AND_LILITH_SHIP" layout="kyr_and_lilith_ship" img="kyr_and_lilith_ship">
 	<class>Civilian Ship</class>
@@ -1542,4 +1636,36 @@
 	<health amount="55" />
 	<maxPower amount="10" />
 	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_ULTIMA_MANIFESTATION_SHIP" layout="ddtempest_ultima_manifestation_ship" img="ddtempest_ultima_manifestation_ship">
+	<class>Ultima Manifestation</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="1" room="16" start="false" />
+		<doors power="1" max="2" room="13" start="false" />
+		<drones power="4" max="4" room="5" start="true" />
+		<engines power="2" max="2" room="0" start="true" />
+		<hacking power="1" max="2" room="14" start="true" />
+		<oxygen power="1" max="2" room="15" start="true" />
+		<pilot power="1" max="3" room="4" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="2" max="3" room="2" start="true" />
+		<weapons power="4" max="4" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="ION_PIERCE_2" />
+		<weapon name="ION_PIERCE_2" />
+	</weaponList>
+	<droneList drones="6" count="2">
+		<drone name="REPAIR" />
+		<drone name="ENERGY_1_AMP2_ENEMY" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="35" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
 </shipBlueprint>

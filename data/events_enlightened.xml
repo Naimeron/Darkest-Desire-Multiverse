@@ -4283,7 +4283,7 @@
 	<text>In the wreckage, you find the very superweapon the Enlightened were using against you. Somehow, it seems to be completely unharmed... it's yours now, regardless. You just hope it isn't cursed...</text>
 	<unlockCustomShip silent="false">PLAYER_DEEP_ONE_CULTIST</unlockCustomShip>
 	<weapon name="TWILIGHT_INEXORABLE"/>
-	<choice hidden="true" req="unique_thescarred" lvl="1" max_group="0" blue="false">
+	<choice hidden="true" req="unique_thescarred" lvl="1" blue="false">
 		<text>Continue...</text>
 		<event>
 			<text>The Scarred looks at you and yells triumphantly, "Thus... do the False God's pawns fall! Kin they may be... they succumbed to its wicked influence long ago. I'll... mourn for who they were, not... who they became." It looks around, and then continues, "Still... the battle's not over. It never will be... not as long as the False God stands. Yet, the complete abandonment... of its embrace, now that this void will remain empty... should prove to be a hefty blow to its power." It stops speaking, and now appears to be deep in thought.</text>
@@ -4310,7 +4310,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="unique_thescarred" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="unique_thescarred" lvl="0" max_lvl="0" blue="false">
 		<text>Continue...</text>
 		<event>
 			<text>Unfortunately, the Scarred died during the battle... there's nothing you can do but move on.</text>

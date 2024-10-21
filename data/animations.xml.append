@@ -69,6 +69,13 @@
 	<time>0.75</time>
 </anim>
 
+<animSheet name="ddion_explosion" w="1000" h="100" fw="100" fh="100">effects/ddion_explosion.png</animSheet>
+<anim name="ddion_explosion">
+	<sheet>ddion_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
 <animSheet name="dd_seraph_engi_beam" w="525" h="35" fw="35" fh="35">weapon_bombs/dd_seraph_engi_beam.png</animSheet>
 <anim name="dd_seraph_engi_beam">
 	<sheet>dd_seraph_engi_beam</sheet>
@@ -93,6 +100,20 @@
 <animSheet name="ddnightmarish_bolt_dissipate" w="1600" h="100" fw="100" fh="100">effects/ddnightmarish_bolt_dissipate.png</animSheet>
 <anim name="ddnightmarish_bolt_dissipate">
 	<sheet>ddnightmarish_bolt_dissipate</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddtempest_bolt" w="525" h="35" fw="35" fh="35">weapon_bombs/ddtempest_bolt.png</animSheet>
+<anim name="ddtempest_bolt">
+	<sheet>ddtempest_bolt</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtempest_bolt_dissipate" w="1600" h="100" fw="100" fh="100">effects/ddtempest_bolt_dissipate.png</animSheet>
+<anim name="ddtempest_bolt_dissipate">
+	<sheet>ddtempest_bolt_dissipate</sheet>
 	<desc length="16" x="0" y="0"/>
 	<time>0.75</time>
 </anim>
@@ -253,6 +274,13 @@
 <animSheet name="ddnightmare_erosion" w="175" h="35" fw="35" fh="35">effects/ddnightmare_erosion.png</animSheet>
 <anim name="ddnightmare_erosion">
 	<sheet>ddnightmare_erosion</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.2</time>
+</anim>
+
+<animSheet name="ddroom_tempest_effect" w="175" h="35" fw="35" fh="35">effects/ddroom_tempest_effect.png</animSheet>
+<anim name="ddroom_tempest_effect">
+	<sheet>ddroom_tempest_effect</sheet>
 	<desc length="5" x="0" y="0"/>
 	<time>0.2</time>
 </anim>
@@ -4968,5 +4996,922 @@
 <anim name="ddnightmare_rift_portrait">
 	<sheet>ddnightmare_rift</sheet>
 	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddultimaarmor" w="420" h="455" fw="35" fh="35">people/ddultimaarmor_base.png</animSheet>
+<anim name="ddultimaarmor_clone">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_death_right">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_death_left">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_walk_down">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_walk_right">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_walk_up">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_walk_left">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_shoot_down">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_shoot_right">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_shoot_up">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_shoot_left">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_fire_down">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_fire_right">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_fire_up">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_fire_left">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_repair">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="8" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_punch_up">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="7" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_punch_down">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="7" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddultimaarmor_teleport">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddultimaarmor_type_right">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_type_left">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_type_up">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddultimaarmor_type_down">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddultimaarmor_portrait">
+	<sheet>ddultimaarmor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddPOWEROFULTIMA" w="420" h="455" fw="35" fh="35">people/ddPOWEROFULTIMA_base.png</animSheet>
+<anim name="ddPOWEROFULTIMA_clone">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_death_right">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_death_left">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_walk_down">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_walk_right">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_walk_up">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_walk_left">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_shoot_down">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_shoot_right">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_shoot_up">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_shoot_left">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_fire_down">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_fire_right">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_fire_up">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_fire_left">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_repair">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="8" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_punch_up">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="7" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_punch_down">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="7" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_teleport">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_type_right">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_type_left">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_type_up">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_type_down">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddPOWEROFULTIMA_portrait">
+	<sheet>ddPOWEROFULTIMA</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddstorm_omen_debuff" w="352" h="32" fw="32" fh="32">people/ddstorm_omen_debuff.png</animSheet>
+<anim name="ddstorm_omen_debuff">
+	<sheet>ddstorm_omen_debuff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddultima_consumption_debuff" w="352" h="32" fw="32" fh="32">people/ddultima_consumption_debuff.png</animSheet>
+<anim name="ddultima_consumption_debuff">
+	<sheet>ddultima_consumption_debuff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddultima_power_radiates_buff" w="352" h="32" fw="32" fh="32">people/ddultima_power_radiates_buff.png</animSheet>
+<anim name="ddultima_power_radiates_buff">
+	<sheet>ddultima_power_radiates_buff</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>2.0</time>
+</anim>
+
+<animSheet name="ddtempest_living_lightning" w="385" h="455" fw="35" fh="35">people/ddtempest_living_lightning_base.png</animSheet>
+<anim name="ddtempest_living_lightning_clone">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_death_right">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_death_left">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_walk_down">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_walk_right">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_walk_up">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_walk_left">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_shoot_down">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_shoot_right">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_shoot_up">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_shoot_left">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_fire_down">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_fire_right">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_fire_up">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_fire_left">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_repair">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="8" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_punch_up">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="8" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_punch_down">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="8" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_living_lightning_teleport">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_living_lightning_type_right">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_type_left">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_type_up">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_living_lightning_type_down">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_living_lightning_portrait">
+	<sheet>ddtempest_living_lightning</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_roiling_storm" w="420" h="455" fw="35" fh="35">people/ddtempest_roiling_storm_base.png</animSheet>
+<anim name="ddtempest_roiling_storm_clone">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_death_right">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_death_left">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_walk_down">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_walk_right">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_walk_up">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_walk_left">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_shoot_down">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_shoot_right">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_shoot_up">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="8" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_shoot_left">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_fire_down">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_fire_right">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_fire_up">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_fire_left">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_repair">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="8" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_punch_up">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="8" x="4" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_punch_down">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="8" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_storm_teleport">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_roiling_storm_type_right">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_type_left">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_type_up">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_storm_type_down">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_roiling_storm_portrait">
+	<sheet>ddtempest_roiling_storm</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_roiling_remnant" w="420" h="455" fw="35" fh="35">people/ddtempest_roiling_remnant_base.png</animSheet>
+<anim name="ddtempest_roiling_remnant_clone">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_death_right">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_death_left">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_walk_down">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_walk_right">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_walk_up">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_walk_left">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_shoot_down">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_shoot_right">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_shoot_up">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="8" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_shoot_left">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_fire_down">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_fire_right">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_fire_up">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_fire_left">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_repair">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="8" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_punch_up">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="8" x="4" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_punch_down">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="8" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_teleport">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_type_right">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_type_left">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_type_up">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_type_down">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_roiling_remnant_portrait">
+	<sheet>ddtempest_roiling_remnant</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_thunder_blight" w="315" h="455" fw="35" fh="35">people/ddtempest_thunder_blight_base.png</animSheet>
+<anim name="ddtempest_thunder_blight_clone">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_death_right">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_death_left">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_walk_down">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_walk_right">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_walk_up">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_walk_left">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_shoot_down">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_shoot_right">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_shoot_up">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_shoot_left">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_fire_down">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_fire_right">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_fire_up">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_fire_left">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_repair">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_punch_up">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_punch_down">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_thunder_blight_teleport">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_thunder_blight_type_right">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_type_left">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_type_up">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_thunder_blight_type_down">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_thunder_blight_portrait">
+	<sheet>ddtempest_thunder_blight</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_stormborn_spawn" w="490" h="420" fw="35" fh="35">people/ddtempest_stormborn_spawn_base.png</animSheet>
+<anim name="ddtempest_stormborn_spawn_clone">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_death_right">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_death_left">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_walk_down">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_walk_right">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_walk_up">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_walk_left">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="4" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_shoot_down">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="3" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_shoot_right">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="3" x="3" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_shoot_up">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="3" x="6" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_shoot_left">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_fire_down">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="14" x="0" y="8" />
+	<time>2.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_fire_right">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="14" x="0" y="8" />
+	<time>2.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_fire_up">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="14" x="0" y="8" />
+	<time>2.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_fire_left">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="14" x="0" y="8" />
+	<time>2.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_repair">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_punch_up">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.5</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_punch_down">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="12" x="0" y="6" />
+	<time>1.5</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_teleport">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_type_right">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_type_left">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_type_up">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_type_down">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_stormborn_spawn_portrait">
+	<sheet>ddtempest_stormborn_spawn</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddwarning_ultimapoweroverflowing" w="10240" h="720" fw="1280" fh="720">customizeUI/ddwarning_ultimapoweroverflowing.png</animSheet>
+<anim name="ddwarning_ultimapoweroverflowing">
+	<sheet>ddwarning_ultimapoweroverflowing</sheet>
+	<desc length="8" x="0" y="0"/>
 	<time>1</time>
 </anim>

@@ -110,6 +110,16 @@
 	</choice>
 </event>
 
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_ULTIMACHALLENGEACCEPTED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your challenge...</text>
+	<quest event="DDRITUALS_QUESTS_ULTIMACHALLENGE"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
 <eventList name="DDRITUALS_QUESTS_LIST_THEHUNT">
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS"/>
@@ -1917,5 +1927,95 @@
 		</event>
 	</choice>
 </event>
+
+<!-- <ship name="DDRITUALS_QUESTS_ULTIMACHALLENGE_FIGHT" auto_blueprint="DDTEMPEST_ULTIMA_MANIFESTATION_SHIP">
+	<destroyed>
+		<text>The strange ship begins to glow as its integrity is breached. Glowing one final time, the ship explodes and metal is sent in every direction as innumerable bolts of lightning streak off into space. You've won!</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<variable name="dd_ultimamanifestationdefeated" op="add" val="1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_ULTIMACHALLENGE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The strange armor falls, and you watch as its ship begins to grow unstable. Glowing one final time, the ship explodes and metal is sent in every direction as innumerable bolts of lightning streak off into space. You've won!</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<variable name="dd_ultimamanifestationdefeated" op="add" val="1"/>
+		<recallBoarders/>
+		<enemyDamage amount="999"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_ULTIMACHALLENGE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_ULTIMACHALLENGE_FIGHT_WIN">
+	<text>You're celebrating your victory as you receive another message:
+	ULTIMA_POWER:SURPASSED
+	SUBJECT_DESIRE:ERROR:INTEGER_OVERFLOW
+	DIRECTIVE_EVELYN:OVERRIDDEN
+	RECEIVING_DIRECTIVE:DIRECTIVE_VESSEL
+	EXECUTING_COMMAND:ASSIST:SUBJECT</text>
+	<choice hidden="true">
+		<text>Is that... thing, still alive?</text>
+		<event>
+			<text>As if in response to your question, you receive a third message as the suit of armor appears in the room next to you:
+			ULTIMA_ARMOR:AWAITING:SUBJECT_COMMAND</text>
+			<crewMember amount="1" class="ddultimaarmor">Ultima</crewMember>
+			<choice hidden="true">
+				<text>I suppose this is my reward, then.</text>
+				<event>
+					<text>The Ultima Armor flashes with power, and a strange mass of tentacles, teeth and eyes manifests next to it. The more horrors, the merrier?</text>
+					<crewMember amount="1" class="ddtempest_stormborn_spawn">Y'ulnli</crewMember>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_ULTIMACHALLENGE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself within a pocket of strange clouds. Brief flashes of light can occasionally be seen as lightning weaves its way from cloud to cloud, but, otherwise, you don't spot anything of note.</text>
+	<img back="BACKGROUND_DDTEMPESTVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Isn't there supposed to be some challenge here? Or, like, at least a reward?</text>
+		<event>
+			<text>As you're considering whether or not the Dark God may be a scam artist, an object in the dark space outside catches your attention. It's hard to make out, but it appears to resemble a black suit of armor... as you're analyzing the object, your ship receives a direct message.</text>
+			<choice hidden="true">
+				<text>Open the message.</text>
+				<event>
+					<text>The message reads:
+					ULTIMA_ARMOR:ONLINE
+					SUBJECT_PRESENCE:NULL_REQUEST
+					EXECUTING_COMMAND:SUBJECT_TERMINATION</text>
+					<choice hidden="true">
+						<text>What?</text>
+						<event>
+							<text>Before you can react to the ominous threat, the object outside begins to glow with an ethereal light that pierces deeply into the clouds around you. The glow's intensity grows until a flash of light overtakes your vision... by the time you can see again, the object is gone, and in its place is a ship unlike any you've ever seen before.</text>
+							<ship load="DDRITUALS_QUESTS_ULTIMACHALLENGE_FIGHT" hostile="false"/>
+							<choice hidden="true">
+								<text>This doesn't bode well...</text>
+								<event>
+									<text>Lightning arcs from the ship and only barely misses yours as you realize this strange ship is made of pure electricity... or, at least, some sort of otherworldly energy. It approaches, and another bolt of lightning streaks past your ship. Get ready!</text>
+									<ship hostile="true"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="COMBAT_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event> -->
 
 </FTL>

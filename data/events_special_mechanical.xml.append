@@ -1,11 +1,41 @@
 <FTL>
 
+<event name="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA">
+	<backgroundObject name="DDULTIMAPOWER_OVERFLOWING_WARNINGFLASH">
+		<layer z="1">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddwarning_ultimapoweroverflowing</anim>
+	</backgroundObject>
+	<playSound>ddultimalightningstrike</playSound>
+	<triggeredEvent event="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING" time="1"/>
+</event>
+
+<event name="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING">
+	<clearBackgroundObject name="DDULTIMAPOWER_OVERFLOWING_WARNINGFLASH"/>
+</event>
+
 <event name="DDSERAPH_ENGI_SUMMON_BEAM">
 	<superBarrage player="true" name="DDSERAPH_ENGI_RADIANT_FLAME_BEAM_STRIKE"/>
 </event>
 
 <event name="DDSERAPH_ENGI_SUMMON_BEAM_ENEMY">
 	<superBarrage name="DDSERAPH_ENGI_RADIANT_FLAME_BEAM_STRIKE"/>
+</event>
+
+<event name="DDTEMPEST_SUMMON_BOLT_SINGLE">
+	<superBarrage player="true" name="DDTEMPEST_TEMPEST_LIGHTNING_STRIKE_SINGLE"/>
+</event>
+
+<event name="DDTEMPEST_SUMMON_BOLT_SINGLE_ENEMY">
+	<superBarrage name="DDTEMPEST_TEMPEST_LIGHTNING_STRIKE_SINGLE"/>
+</event>
+
+<event name="DDTEMPEST_SUMMON_BOLT_TRIPLE">
+	<superBarrage player="true" name="DDTEMPEST_TEMPEST_LIGHTNING_STRIKE_TRIPLE"/>
+</event>
+
+<event name="DDTEMPEST_SUMMON_BOLT_TRIPLE_ENEMY">
+	<superBarrage name="DDTEMPEST_TEMPEST_LIGHTNING_STRIKE_TRIPLE"/>
 </event>
 
 <event name="ENLIGHTENED_HORROR_SUMMON_RIFT">

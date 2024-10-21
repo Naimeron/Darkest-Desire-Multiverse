@@ -718,6 +718,73 @@
 	<iconImage>bomb</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="BOMB_DDTEMPEST_LIGHTNING">
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Tempest Lightning</title>
+	<short>T. Lightning</short>
+	<locked>1</locked>
+	<desc>You should never see this!</desc>
+	<tooltip>You shouldn't see this, either!</tooltip>
+	<damage>0</damage>
+	<ion>3</ion>
+	<accuracyMod>100</accuracyMod>
+	<spawnCrew>
+        <race>LIST_DDTEMPEST_LIGHTNING_SUMMON</race>
+		<name>Spawn</name>
+        <number>1</number>
+        <noSlot>true</noSlot>
+        <statBoosts>
+            <statBoost name="noClone">
+                <boostType>SET</boostType>
+                <value>true</value>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+            <statBoost name="maxHealth">
+                <boostType>FLAT</boostType>
+                <amount>-1000000</amount>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+            <statBoost name="maxHealth">
+                <boostType>FLAT</boostType>
+                <amount>1000000</amount>
+                <duration>30</duration>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+        </statBoosts>
+    </spawnCrew>
+	<crewSpawnChance>4</crewSpawnChance>
+	<shots>1</shots>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11</cooldown>
+	<power>2</power>
+	<cost>105</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>ddtempest_bolt</image>
+	<explosion>ddtempest_bolt_dissipate</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>lightning1</sound>
+		<sound>lightning2</sound>
+		<sound>lightning3</sound>
+		<sound>lightning4</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_darkgod</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="BOMB_DDRIFT_SUMMON">
 	<type>BOMB</type>
 	<tip>tip_bombs</tip>
@@ -5875,6 +5942,127 @@
 		<power>Will rapidly disintegrate should the rift be closed.</power>
 	</powerList>
 </crewBlueprint>
+<crewBlueprint name="ddultimaarmor">
+	<desc>This strange set of sentient armor hums with unrealized power. Upon its chestpiece is written a name: 'EVELYN.'</desc>
+	<title>Ultima Armor</title>
+	<short>U. Armor</short>
+	<cost>200</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Incredibly resistant to damage (200 health, 0.4x damage taken, immune to suffocation/fire/mind control, 0.25x stun duration), but otherwise lacking in immediate threat (0.8x combat/sabotage damage, 0.5x movement speed).</power>
+		<power>Has a power recharge multiplier of 0.5x, but inflicts enemies in the same room with Storm Omen; slowing enemy movement speed by 0.8x and increasing power recharge rate by 0.5 for all Tempest-aligned crew per enemy in the room inflicted. Sources of Storm Omen don't stack. Capable of a devastating transformation once its ability is charged, regenerating to full health, summoning a Tempest Whirlwind in the room, damaging enemies ship-wide and conjuring barrages of Tempest Lightning.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddultimaarmor_enemy">
+	<desc>This strange set of sentient armor hums with unrealized power. Upon its chestpiece is written a name: 'EVELYN.'</desc>
+	<title>Ultima Armor</title>
+	<short>U. Armor</short>
+	<cost>200</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Incredibly resistant to damage (200 health, 0.4x damage taken, immune to suffocation/fire/mind control, 0.25x stun duration), but otherwise lacking in immediate threat (0.8x combat/sabotage damage, 0.5x movement speed).</power>
+		<power>Has a power recharge multiplier of 0.5x, but inflicts enemies in the same room with Storm Omen; slowing enemy movement speed by 0.8x and increasing power recharge rate by 0.5 for all Tempest-aligned crew per enemy in the room inflicted. Sources of Storm Omen don't stack. Capable of a devastating transformation once its ability is charged, regenerating to full health, summoning a Tempest Whirlwind in the room, damaging enemies ship-wide and conjuring barrages of Tempest Lightning.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddPOWEROFULTIMA">
+	<desc>ULTIMA_POWER:ERROR:INTEGER_OVERFLOW.EXECUTING_COMMAND:UNIVERSAL_EXTERMINATION.REQUEST:SUBJECT_EVELYN:STRING:"Are you watching?"</desc>
+	<title>Ultima Armor</title>
+	<short>U. Armor</short>
+	<cost>200</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Nigh invulnerable and regenerating rapidly. Incapable of doing anything itself, it's occupied by the overwhelming energy it's emitting. Enemies on the same ship have their abilities overwritten and changed to one that automatically triggers every 4 seconds, forcing them to take 30 damage and summon Tempest Lightning aligned to the Ultima Armor. As well, it summons a Tempest Whirlwind in the room that slows enemies down immensely and makes them take double damage from all sources.</power>
+		<power>Incapable of holding this form for long, it will return to its normal form after 13 seconds.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddPOWEROFULTIMA_enemy">
+	<desc>ULTIMA_POWER:ERROR:INTEGER_OVERFLOW.EXECUTING_COMMAND:UNIVERSAL_EXTERMINATION.REQUEST:SUBJECT_EVELYN:STRING:"Are you watching?"</desc>
+	<title>Ultima Armor</title>
+	<short>U. Armor</short>
+	<cost>200</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Nigh invulnerable and regenerating rapidly. Incapable of doing anything itself, it's occupied by the overwhelming energy it's emitting. Enemies on the same ship have their abilities overwritten and changed to one that automatically triggers every 4 seconds, forcing them to take 30 damage and summon Tempest Lightning aligned to the Ultima Armor. As well, it summons a Tempest Whirlwind in the room that slows enemies down immensely and makes them take double damage from all sources.</power>
+		<power>Incapable of holding this form for long, it will return to its normal form after 13 seconds.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_stormborn_spawn">
+	<desc>A horrific amalgamate formed from an eldritch combination of darkness, electricity and human souls. The Cult of the Tempest claims there to be no greater honor than fighting alongside one of these Major Tempest Spawn.</desc>
+	<title>Stormborn Spawn</title>
+	<short>S. Spawn</short>
+	<cost>120</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>High health (250) and combat damage (1.5x), but it cannot be controlled and its movement speed (0.6x), repair speed (0.5x) and power recharge multiplier (0.5x) are hindered. Immune to fire/suffocation/mind control.</power>
+		<power>Inflicts enemies in the same room with Storm Omen; slowing enemy movement speed by 0.8x and increasing power recharge rate by 0.5 for all Tempest-aligned crew per enemy in the room inflicted. Sources of Storm Omen don't stack. Once its ability is charged, it automatically activates and summons 3 bolts of Tempest Lightning on the enemy ship that ion systems and potentially conjure Minor Tempest Spawn.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_stormborn_spawn_enemy">
+	<desc>A horrific amalgamate formed from an eldritch combination of darkness, electricity and human souls. The Cult of the Tempest claims there to be no greater honor than fighting alongside one of these Major Tempest Spawn.</desc>
+	<title>Stormborn Spawn</title>
+	<short>S. Spawn</short>
+	<cost>120</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>High health (250) and combat damage (1.5x), but it cannot be controlled and its movement speed (0.6x), repair speed (0.5x) and power recharge multiplier (0.5x) are hindered. Immune to fire/suffocation/mind control.</power>
+		<power>Inflicts enemies in the same room with Storm Omen; slowing enemy movement speed by 0.8x and increasing power recharge rate by 0.5 for all Tempest-aligned crew per enemy in the room inflicted. Sources of Storm Omen don't stack. Once its ability is charged, it automatically activates and summons 3 bolts of Tempest Lightning on the enemy ship that ion systems and potentially conjure Minor Tempest Spawn.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_thunder_blight">
+	<desc>A Minor Tempest Spawn in the form of a flower. Something about its shape seems familiar to you.</desc>
+	<title>Thunder Blight</title>
+	<short>T. Blight</short>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Nigh invulnerable to damage, but incapable of moving or performing any action. Drains power from enemy systems.</power>
+		<power>Has an ability recharge rate of 0.5x, but it inflicts enemies in the same room with and benefits from Storm Omen. Its ability only charges if enemies are in the room, and once it's charged it releases its absorbed energy, ioning and summoning a Tempest Whirlwind in the room. Tempest Whirlwinds massively slow down enemy movement speed and make them take double damage from all sources.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_living_lightning">
+	<desc>A Minor Tempest Spawn in the form of a lightning bolt. It crackles with a familiar energy.</desc>
+	<title>Living Lightning</title>
+	<short>L. Lightning</short>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Low health (40), but incredibly high offensive stats (2x movement speed, 2.5x combat/sabotage damage).</power>
+		<power>Has an ability recharge rate of 0.5x, but benefits from ally inflictions of Storm Omen. Once its ability is charged, it lashes out and electrocutes enemies in the room, dealing damage and briefly stunning them.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_roiling_storm">
+	<desc>A Minor Tempest Spawn in the form of ball lightning. The shifting of its energies resonates a familiar sound.</desc>
+	<title>Roiling Storm</title>
+	<short>R. Storm</short>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Moderate health (85), but low movement speed (0.5x) and otherwise average stats. Ions the room and stuns enemies on death.</power>
+		<power>Has an ability recharge rate of 0.5x, but benefits from ally inflictions of Storm Omen. Once its ability is charged, it proliferates and births a Roiling Remnant, which, while incredibly weak, deals ion damage and stuns as it dies.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddtempest_roiling_remnant">
+	<desc>A Minor Tempest Spawn in the form of a spark of electricity. Witnessing its size brings back familiar memories.</desc>
+	<title>Roiling Remnant</title>
+	<short>R. Remnant</short>
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Incredibly low stats (15 health, 0.3x combat/sabotage damage), save for movement speed (1.2x).</power>
+		<power>Ions the room and briefly stuns enemies on death.</power>
+	</powerList>
+</crewBlueprint>
+
 <crewBlueprint name="disparity_liberator">
 	<title>Liberator Drone</title>
 	<short>Liberator Drone</short>
@@ -7082,6 +7270,54 @@
 <augBlueprint name="DARKEST_GAZE_TIER3">
 	<title>Darkest Gaze</title>
 	<desc>The Dark God reveres you as you revere it, and it now watches over you and your journey closely. Though the power it's willing to lend has reached its limit, you can still perform rituals regarding other matters. You can check your devotion and its benefits at the Otherworldly Tome.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER1">
+	<title>Tempest Blessing</title>
+	<desc>[Level 1] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Should you desire greater blessings still, you must perform rituals and help establish new Cults of the Tempest across this reality.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER2">
+	<title>Tempest Blessing</title>
+	<desc>[Level 2] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Should you desire greater blessings still, you must perform rituals and help establish new Cults of the Tempest across this reality.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER3">
+	<title>Tempest Blessing</title>
+	<desc>[Level 3] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Should you desire greater blessings still, you must perform rituals and help establish new Cults of the Tempest across this reality.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER4">
+	<title>Tempest Blessing</title>
+	<desc>[Level 4] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Should you desire greater blessings still, you must perform rituals and help establish new Cults of the Tempest across this reality.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER5">
+	<title>Tempest Blessing</title>
+	<desc>[Level 5] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Should you desire greater blessings still, you must perform rituals and help establish new Cults of the Tempest across this reality.</desc>
+	<cost>15</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDTEMPEST_BLESSING_SHIELD_TIER6">
+	<title>Tempest Blessing</title>
+	<desc>[Level 6] Blessed by the Tempest, your ship is warded against enemy attacks and your Tempest-aligned crew and drones surge with eldritch electricity. Though this is as strong as these blessings get, you may perform further rituals and establish additional Cults of the Tempest if you so desire.</desc>
 	<cost>15</cost>
 	<bp>8</bp>
 	<rarity>0</rarity>

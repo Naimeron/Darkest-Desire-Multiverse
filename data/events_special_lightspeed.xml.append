@@ -227,6 +227,16 @@
 			</choice>
 		</event>
 	</choice>
+	<!--<choice hidden="true" req="dd_ultimamanifestationdefeated" lvl="0" max_lvl="0">
+		<text>A strange page in the Otherworldly Tome sticks out to you.</text>
+		<event>
+			<text>There's a page here that you swear you've never seen before, but it sticks out like a sore thumb. Written in cyan text, your hand is shocked as you turn to the page, and you find that the very air around you crackles with an otherworldly energy as you examine it. The page describes a challenge, and a reward for those who surpass it.</text>
+			<choice hidden="true">
+				<text>Very well, then. Accept the challenge.</text>
+				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_ULTIMACHALLENGEACCEPTED"/>
+			</choice>
+		</event>
+	</choice>-->
 	<choice hidden="true" req="DD_ASCENSIONRITUALSCOMPLETEDCHECKANDBEGINNING">
 		<text>(Lilith) Perform an ascension ritual.</text>
 		<event>
