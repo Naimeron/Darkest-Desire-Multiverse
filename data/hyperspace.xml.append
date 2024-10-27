@@ -986,12 +986,12 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 		<mod-append:name>enlightened_horror_cfj</mod-append:name>
 		<mod-append:name>enlightened_horror_cgj</mod-append:name>
 		<mod-append:req type="all">
-			<mod-append:name>LIST_CREW_DEEPONES</mod-append:name>
-			<mod-append:name>LAB_DEEPONE_DEEPBREATH</mod-append:name>
+			<name>LIST_CREW_DEEPONES</name>
+			<name>LAB_DEEPONE_DEEPBREATH</name>
 		</mod-append:req>
 		<mod-append:req type="all">
-			<mod-append:name>LIST_CREW_DEEPONES</mod-append:name>
-			<mod-append:name>EX_LAB_DEEPONE_DEEPBREATH</mod-append:name>
+			<name>LIST_CREW_DEEPONES</name>
+			<name>EX_LAB_DEEPONE_DEEPBREATH</name>
 		</mod-append:req>
 	</mod:findName>
 	<mod:findName type="req" name="BLUELIST_CREW_NODOORS">
@@ -1022,17 +1022,17 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>60</cooldown>
+			<cooldown>30</cooldown>
 			<req>
-				<maxHealth>105</maxHealth>
+				<maxHealth>95</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
-				<powerSound>queenRoar</powerSound>
+				<powerSound>dddeepone_growl</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 60s  DURATION: 30s  CASTS UNDER 105 HP]
-				Go berserk, slowing down and losing control but gaining the following benefits:
+			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 95 HP]
+				Go berserk, slowing down and losing the power to man and repair but gaining the following benefits:
 				-1.8x damage
 				-0.5x damage resistance
 				-2hp/s regen</tooltip>
@@ -1040,17 +1040,17 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<activateWhenReady>true</activateWhenReady>
 			<temporaryEffect>
 				<duration>30</duration>
-				<cooldownColor r="229" g="70" b="70" />
+				<cooldownColor r="124" g="70" b="70" />
 				<finishSounds>
 					<finishSound>mindControlEnd</finishSound>
 				</finishSounds>
-				<controllable>false</controllable>
 				<canMan>false</canMan>
 				<canRepair>false</canRepair>
 				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 				<damageMultiplier>1.8</damageMultiplier>
 				<damageTakenMultiplier>0.5</damageTakenMultiplier>
 				<healAmount>2</healAmount>
+				<animSheet>deepone_power</animSheet>
 			</temporaryEffect>
 		</powerEffect>	
 	</mod-append:race>
@@ -1132,6 +1132,76 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 				</statBoosts>
 			</spawnCrew>
 		</deathEffect>
+		<powerEffect>
+			<cooldown>25</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddeepone_growl</powerSound>
+			</powerSounds>
+			<buttonText>BLESS</buttonText>
+			<tooltip>[COOLDOWN:25s  DURATION:15s]
+				Extends the Enlightened Cultist's passive ally effects to affect both ships.
+				The Enlightened Cultist will be unable to man or repair and is slowed down while its Bless is active.</tooltip>
+			<cooldownColor r="253" g="216" b="53"/>
+			<temporaryEffect>
+				<duration>15</duration>
+				<cooldownColor r="160" g="110" b="53"/>
+				<canMan>false</canMan>
+				<canRepair>false</canRepair>
+				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
+				<animSheet>deeponecultist_power</animSheet>
+				<statBoosts>
+					<statBoost name="moveSpeedMultiplier">
+						<boostType>MULT</boostType>
+						<amount>1.2</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+					<statBoost name="repairSpeed">
+						<boostType>MULT</boostType>
+						<amount>1.2</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+					<statBoost name="damageMultiplier">
+						<boostType>MULT</boostType>
+						<amount>1.2</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+					<statBoost name="sabotageSpeedMultiplier">
+						<boostType>MULT</boostType>
+						<amount>1.2</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+					<statBoost name="allDamageTakenMultiplier">
+						<boostType>MULT</boostType>
+						<amount>0.9</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+					<statBoost name="maxHealth">
+						<boostType>FLAT</boostType>
+						<amount>20</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>ALL</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+					</statBoost>
+				</statBoosts>
+			</temporaryEffect>
+		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="deeponecultist_enemy">
 		<maxHealth>140</maxHealth>
@@ -1225,6 +1295,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 		<canSabotage>false</canSabotage>
 		<canMan>false</canMan>
 		<validTarget>false</validTarget>
+		<snapToSlot>true</snapToSlot>
 		<deathSounds>
 			<deathSound>ancientDeath</deathSound>
 		</deathSounds>
@@ -1367,6 +1438,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 				<canFight>false</canFight>
 				<canSabotage>false</canSabotage>
 				<canMove>false</canMove>
+				<snapToSlot>true</snapToSlot>
 				<moveSpeedMultiplier>0</moveSpeedMultiplier>
 			</temporaryEffect>
 		</powerEffect>
@@ -1456,17 +1528,17 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>60</cooldown>
+			<cooldown>30</cooldown>
 			<req>
 				<maxHealth>70</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
-				<powerSound>queenRoar</powerSound>
+				<powerSound>dddeepone_growl</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 60s  DURATION: 30s  CASTS UNDER 70 HP]
-				Go berserk, slowing down and losing control but gaining the following benefits:
+			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 70 HP]
+				Go berserk, slowing down and losing the power to man and repair but gaining the following benefits:
 				-1.8x damage
 				-0.5x damage resistance
 				-2hp/s regen</tooltip>
@@ -1474,17 +1546,17 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<activateWhenReady>true</activateWhenReady>
 			<temporaryEffect>
 				<duration>30</duration>
-				<cooldownColor r="229" g="70" b="70" />
+				<cooldownColor r="124" g="70" b="70" />
 				<finishSounds>
 					<finishSound>mindControlEnd</finishSound>
 				</finishSounds>
-				<controllable>false</controllable>
 				<canMan>false</canMan>
 				<canRepair>false</canRepair>
 				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 				<damageMultiplier>1.8</damageMultiplier>
 				<damageTakenMultiplier>0.5</damageTakenMultiplier>
 				<healAmount>2</healAmount>
+				<animSheet>deepone_power</animSheet>
 			</temporaryEffect>
 		</powerEffect>	
 	</mod-append:race>
@@ -1570,13 +1642,13 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<fightAI/>
 			<returnToDroneRoom/>
 		</droneAI>
-		<damageMultiplier>0.2</damageMultiplier>
-		<sabotageSpeedMultiplier>0.2</sabotageSpeedMultiplier>
+		<damageMultiplier>0.5</damageMultiplier>
+		<sabotageSpeedMultiplier>0.5</sabotageSpeedMultiplier>
 		<fireDamageMultiplier>0.25</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<controllable>true</controllable>
 		<powerEffect>
-			<cooldown>30</cooldown>
+			<cooldown>10</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>laser_particle</powerSound>
@@ -1587,11 +1659,13 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<effectAnim>explosion_small_ion</effectAnim>
 			<activateWhenReady>true</activateWhenReady>
 			<temporaryEffect>
-				<duration>15</duration>
+				<duration>20</duration>
 				<cooldownColor r="239" g="97" b="219"/>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-				<damageMultiplier>4</damageMultiplier>
-				<sabotageSpeedMultiplier>4</sabotageSpeedMultiplier>
+				<moveSpeedMultiplier>5</moveSpeedMultiplier>
+				<damageMultiplier>5</damageMultiplier>
+				<sabotageSpeedMultiplier>5</sabotageSpeedMultiplier>
+				<doorDamageMultiplier>2</doorDamageMultiplier>
+				<animSheet>disparity_liberator_power</animSheet>
 			</temporaryEffect>
 		</powerEffect>
 	</mod-append:race>
@@ -1648,8 +1722,8 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>15</cooldown>
-			<jumpCooldown>reset</jumpCooldown>
+			<cooldown>9</cooldown>
+			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>fire_blast_hit</powerSound>
 			</powerSounds>
@@ -2492,11 +2566,11 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<deathSound>engiDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>33</cooldown>
+			<cooldown>24</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<event load="DDSERAPH_ENGI_SUMMON_BEAM_ENEMY"/>
 			<buttonText>PURIFY</buttonText>
-			<tooltip>[COOLDOWN:33s]
+			<tooltip>[COOLDOWN:24s]
 				Harnesses its light to strike at the enemy ship, dealing system damage and causing fires. The flames ravage enemies while soothing allies.</tooltip>
 			<cooldownColor r="231" g="122" b="73"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -2507,7 +2581,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 	</mod-append:race>
 	<mod-append:race name="unique_thehunger">
 		<essential>1</essential>
-		<maxHealth>500</maxHealth>
+		<maxHealth>300</maxHealth>
 		<damageTakenMultiplier>0</damageTakenMultiplier>
 		<stunMultiplier>0</stunMultiplier>
 		<trueHealAmount>-3.4</trueHealAmount>
@@ -2516,7 +2590,6 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
 		<canMan>false</canMan>
-		<validTarget>false</validTarget>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
 		<damageMultiplier>10.0</damageMultiplier>
 		<sabotageSpeedMultiplier>10.0</sabotageSpeedMultiplier>
@@ -2532,11 +2605,11 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<shootingSound>dgtendrilSplat3</shootingSound>
 		</shootingSounds>
 		<powerEffect>
-			<cooldown>10</cooldown>
+			<cooldown>15</cooldown>
 			<jumpCooldown>continue</jumpCooldown>
 			<req>
 				<enemyInRoom/>
-				<maxHealth>100</maxHealth>
+				<maxHealth>200</maxHealth>
 			</req>
 			<chargeReq>
 				<enemyInRoom/>
@@ -2546,8 +2619,8 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			</powerSounds>
 			<lockdown>true</lockdown>
 			<buttonText>DEVOUR</buttonText>
-			<tooltip>[COOLDOWN:10s  DURATION: VARIABLE]
-			This ability charges when in a room with enemies, and will automatically be used when the cooldown is up and the Hunger is under 100 HP.
+			<tooltip>[COOLDOWN:15s  DURATION: VARIABLE]
+			This ability charges when in a room with enemies, and will automatically be used when an enemy is in the room if the Hunger is under 200 health.
 			The Hunger locks down the room and spawns a beacon that causes it (and all other allied Engi) to go on a ravenous rampage, devouring every enemy inside and using them as sustenance to regenerate its decay. Cannot be controlled or teleported while rampaging.</tooltip>
 			<cooldownColor r="142" g="138" b="143"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -2570,7 +2643,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 	</mod-append:race>
 	<mod-append:race name="unique_thehunger_enemy">
 		<essential>1</essential>
-		<maxHealth>500</maxHealth>
+		<maxHealth>300</maxHealth>
 		<damageTakenMultiplier>0</damageTakenMultiplier>
 		<stunMultiplier>0</stunMultiplier>
 		<trueHealAmount>-6</trueHealAmount>
@@ -2579,7 +2652,6 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 		<canSuffocate>false</canSuffocate>
 		<canBurn>false</canBurn>
 		<canMan>false</canMan>
-		<validTarget>false</validTarget>
 		<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 		<damageMultiplier>10.0</damageMultiplier>
 		<sabotageSpeedMultiplier>10.0</sabotageSpeedMultiplier>
@@ -2611,7 +2683,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 			<lockdown>true</lockdown>
 			<buttonText>DEVOUR</buttonText>
 			<tooltip>[COOLDOWN:30s  DURATION: VARIABLE]
-			This ability charges when in a room with enemies, and will automatically be used when the cooldown is up and the Hunger is under 50 HP.
+			This ability charges when in a room with enemies, and will automatically be used when an enemy is in the room if the Hunger is under 50 health.
 			The Hunger locks down the room and spawns a beacon that causes it (and all other allied Engi) to go on a ravenous rampage, devouring every enemy inside and using them as sustenance to regenerate its decay. Cannot be controlled or teleported while rampaging.</tooltip>
 			<cooldownColor r="142" g="138" b="143"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -7230,7 +7302,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 					<maxStacks>1</maxStacks>
 					<priority>10000</priority>
 					<roomAnim renderLayer="3">                                                    
-						<anim animType="default" animBorder="1">ddroom_tempest_effect</anim>
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 							<wallAnim>ddroom_tempest_effect</wallAnim>
 					</roomAnim>
 				</statBoost>
@@ -7328,7 +7400,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 					<maxStacks>1</maxStacks>
 					<priority>10000</priority>
 					<roomAnim renderLayer="3">                                                    
-						<anim animType="default" animBorder="1">ddroom_tempest_effect</anim>
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 							<wallAnim>ddroom_tempest_effect</wallAnim>
 					</roomAnim>
 				</statBoost>
@@ -7782,7 +7854,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 					<maxStacks>1</maxStacks>
 					<priority>10000</priority>
 					<roomAnim renderLayer="3">                                                    
-						<anim animType="default" animBorder="1">ddroom_tempest_effect</anim>
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 							<wallAnim>ddroom_tempest_effect</wallAnim>
 					</roomAnim>
 				</statBoost>
@@ -11557,6 +11629,10 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 					<disparity_engihazard_beacon/>
 					<disparity_engirainbow_beacon/>
 					<disparity_thehunger_beacon/>
+					<ddtempest_thunder_blight/>
+					<ddtempest_living_lightning/>
+					<ddtempest_roiling_storm/>
+					<ddtempest_roiling_remnant/>
 				</mod-append:blackList>
 			</mod:findLike>
 		</mod:findLike>
@@ -11645,7 +11721,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 				<secretName>???</secretName>
 				<secretDescription>Prove your devotion, and know true power.</secretDescription>
 				<name>Dark and Devout</name>
-				<description>Max out your Devotion Level aboard the Horror Cruiser.</description>
+				<description>Max out your Devotion Level aboard the Nightmare Cruiser.</description>
 				<icon>ach_event_dddarkestgaze</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>

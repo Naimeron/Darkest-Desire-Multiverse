@@ -309,7 +309,7 @@
 	<sp>0</sp>
 	<fireChance>5</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>14.5</cooldown>
+	<cooldown>8.5</cooldown>
 	<spawnCrew>
         <race>darkgodtendrils</race>
 		<name>Hungering Shadow</name>
@@ -333,7 +333,7 @@
             <statBoost name="maxHealth">
                 <boostType>FLAT</boostType>
                 <amount>1000000</amount>
-                <duration>21</duration>
+                <duration>14</duration>
                 <shipTarget>ALL</shipTarget>
                 <crewTarget>ALL</crewTarget>
                 <priority>999999</priority>
@@ -376,13 +376,13 @@
 	<tip>tip_shadow_weapon</tip>
 	<desc>Fires a cloud of shadows over an extremely large area, making it very inaccurate.</desc>
 	<tooltip>Shoots 6 projectiles, inaccurately. Every projectile that lands deals damage and has a 70% chance to summon a Hungering Shadow in the target room for 21 seconds.</tooltip>
-	<radius>95</radius>
+	<radius>80</radius>
 	<damage>1</damage>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>16.5</cooldown>
+	<breachChance>1</breachChance>
+	<cooldown>15.5</cooldown>
 	<spawnCrew>
         <race>darkgodtendrils</race>
 		<name>Hungering Shadow</name>
@@ -2980,7 +2980,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3313,7 +3313,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3390,7 +3390,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3467,7 +3467,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3544,7 +3544,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3621,7 +3621,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3698,7 +3698,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3775,7 +3775,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3852,7 +3852,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -3929,7 +3929,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -4006,7 +4006,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -4083,7 +4083,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -4160,7 +4160,7 @@
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
-			<anim animType="default" animBorder="1">ddnightmare_erosion</anim>
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
 				<wallAnim>ddnightmare_erosion</wallAnim>
 		</roomAnim>
 	</erosion>
@@ -4409,7 +4409,7 @@
 </weaponBlueprint>
 
 <weaponBlueprint name="CRYSTAL_ARMOR_PROJ_DISPARITY">
-	<type>MISSILES</type>
+	<type>LASER</type>
 	<title>Disparity Shadow Shard</title>
 	<short>Shadow</short>
 	<desc>DISPARITY VENG PROJECTILE</desc>
@@ -4481,7 +4481,7 @@
 </weaponBlueprint>
 
 <weaponBlueprint name="CRYSTAL_ARMOR_PROJ_DDSERAPH">
-	<type>MISSILES</type>
+	<type>LASER</type>
 	<title>Seraph Fireball</title>
 	<short>Fireball</short>
 	<desc>SERAPH VENG PROJECTILE</desc>
@@ -4648,10 +4648,10 @@
 	<short>Liberator [A]</short>
 	<desc>[CURRENT MODE: Anti-Personnel] A prototype Disparity superweapon, its original purpose was destroying the Harmony. Now, its purpose is destroying your enemies. Can be toggled for Anti-Personnel or Boarding.
     
--750 HP, 0.2x combat/sabotage damage
+-750 HP, 0.5x combat/sabotage damage
 -0.2x movement speed
 -Affected by Disparity Beacons
--Will periodically power up, temporarily multiplying its damage and sabotage/movement speeds by 20x.</desc>
+-Will periodically power up, temporarily doubling its door damage and multiplying its combat/sabotage damage by 10x and its movement speed by 25x.</desc>
 	<power>5</power>
 	<cost>130</cost>
 	<bp>3</bp>
@@ -4666,10 +4666,10 @@
 	<short>Liberator [B]</short>
 	<desc>[CURRENT MODE: Boarding] A prototype Disparity superweapon, this drone's original purpose was destroying the Harmony. Now, its purpose is destroying your enemies. Can be toggled for Anti-Personnel or Boarding.
     
--750 HP, 0.2x combat/sabotage damage
+-750 HP, 0.5x combat/sabotage damage
 -0.2x movement speed
 -Affected by Disparity Beacons
--Will periodically power up, temporarily multiplying its damage and sabotage/movement speeds by 20x.</desc>
+-Will periodically power up, temporarily doubling its door damage and multiplying its combat/sabotage damage by 10x and its movement speed by 25x.</desc>
 	<power>5</power>
 	<speed>18</speed>
 	<cost>130</cost>
@@ -4766,7 +4766,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Max HP raised to 140 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
-		<power>Threshold Ability: When their health falls to 105 they go berserk, losing movement speed and control but gaining greatly increased combat prowess and HP regen.</power>
+		<power>Threshold Ability: When their health falls to 95 they go berserk, losing movement speed and the ability to man or repair but gaining greatly increased combat prowess and HP regen.</power>
 	</powerList>
 	<colorList>
 		<layer>
@@ -4800,7 +4800,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Emanates a powerful, soothing aura, increasing movement speed (20%), repair speed (20%), damage (20%), sabotage speed (20%), max HP (+20), and decreasing damage taken (10%) of all other allied crew on the same ship. Takes double damage themselves and can't fight.</power>
+		<power>Emanates a powerful, soothing aura, increasing movement speed (20%), repair speed (20%), damage (20%), sabotage speed (20%), max HP (+20), and decreasing damage taken (10%) of all other allied crew on the same ship. Can activate its ability to spread these effects to temporarily include the opposite ship. Takes double damage themselves and can't fight.</power>
 		<power>On death, their Dark God rips their soul away, creating a tear in space-time that constantly ravages the room it's in. Can't be cloned, as a clone still needs a soul.</power>
 	</powerList>
 	<colorList>
@@ -4914,8 +4914,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>The Hunger cannot fight or sabotage, but cannot be targeted as well. Though they have an immense amount of HP, they naturally decay as their hunger eats away at them, and Disparity beacons increase the rate of this decay.</power>
-		<power>Active Ability: When the Hunger's HP falls below 100, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage.</power>
+		<power>Cannot fight or sabotage, but is practically invulnerable to incoming damage. Has an immense amount of HP, but naturally decays as their hunger eats away at them, and Disparity beacons increase the rate of this decay.</power>
+		<power>Active Ability: When HP falls below 200, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="unique_thehunger_enemy">
@@ -4926,8 +4926,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>The Hunger cannot fight or sabotage, but cannot be targeted as well. Though they have an immense amount of HP, they naturally decay as their hunger eats away at them, and Disparity beacons increase the rate of this decay.</power>
-		<power>Active Ability: When the Hunger's HP falls below 50, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage. It's of the upmost importance that you avoid giving the Hunger charge, and stay away while they're below 50 HP!</power>
+		<power>Cannot fight or sabotage, but is practically invulnerable to incoming damage. Has an immense amount of HP, but naturally decays as their hunger eats away at them, and Disparity beacons increase the rate of this decay.</power>
+		<power>Active Ability: When HP falls below 50, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage. It's of the upmost importance that you avoid giving the Hunger charge, and stay away while they're below 50 HP!</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddseraph_engi">
@@ -6257,7 +6257,7 @@
 				<number>0</number>
 			</slot>
 		</clonebay>
-		<doors power="1" room="4" start="true" img="room_doors">
+		<doors power="1" room="4" start="false" img="room_doors">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -6276,7 +6276,7 @@
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="2" start="false" img="room_mind_3" />
+		<mind power="1" room="2" start="true" img="room_mind_3" />
 		<oxygen power="1" room="3" start="true" img="room_oxygen_2" />
 		<pilot power="1" room="1" start="true" img="room_pilot_7">
 			<slot>
@@ -6308,7 +6308,6 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="4">
 		<weapon name="ENERGY_CHAINGUN" />
-		<weapon name="BEAM_BIO_CONSERVATIVE" />
 		<weapon name="BEAM_BIO_CONSERVATIVE" />
 	</weaponList>
 	<droneList drones="3" count="2" />
@@ -6611,7 +6610,7 @@
 		<drone name="DRONE_MINISHROUD" />
 	</droneList>
 	<health amount="30" />
-	<maxPower amount="7" />
+	<maxPower amount="8" />
 	<crewCount amount="1" class="disparity_engidefault" />
 	<crewCount amount="1" class="engi_separatist" />
 	<crewCount amount="1" class="engi_separatist" />
@@ -6685,7 +6684,7 @@
 		<drone name="DISPARITY_BROODMOTHERTOG_BOARDER" />
 	</droneList>
 	<health amount="30" />
-	<maxPower amount="8" />
+	<maxPower amount="7" />
 	<crewCount amount="1" class="disparity_engidefault" />
 	<crewCount amount="1" class="crystal_sentinel" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR_LOCKED" />
@@ -6979,7 +6978,7 @@
 	<aug name="MEDBAY_DEFENSE" />
 </shipBlueprint>
 <shipBlueprint name="PLAYER_DDHORROR_SHIP" layout="ddhorror_ship" img="ddhorror_ship">
-	<class>Horror Cruiser</class>
+	<class>Nightmare Cruiser</class>
 	<name>Together Evermore</name>
 	<unlock>Reach a realm far removed from our own and uncover the results of a horrific ritual to unlock this ship.</unlock>
 	<desc>She had mumbled, amidst tears, "I desire... to never be apart..." to which the voice boomed in reply, "TO... NEVER BE APART? MAY IT BE TRUE." Thus was it done.</desc>

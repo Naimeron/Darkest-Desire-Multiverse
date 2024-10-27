@@ -3,7 +3,7 @@
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-70" y="-66" w="260" h="446" />
 <offsets>
-	<floor x="65" y="61" />
+	<floor x="64" y="60" />
 	<cloak x="0" y="0" />
 </offsets>
 <weaponMounts>

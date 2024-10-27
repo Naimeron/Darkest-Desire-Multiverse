@@ -285,6 +285,13 @@
 	<time>0.2</time>
 </anim>
 
+<animSheet name="ddinvisible_effect" w="35" h="35" fw="35" fh="35">effects/ddinvisible_effect.png</animSheet>
+<anim name="ddinvisible_effect">
+	<sheet>ddinvisible_effect</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>0.1</time>
+</anim>
+
 <animSheet name="deepone" w="315" h="455" fw="35" fh="35">people/deepone_base.png</animSheet>
 <anim name="deepone_clone">
 	<sheet>deepone</sheet>

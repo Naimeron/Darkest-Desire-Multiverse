@@ -4486,7 +4486,7 @@
 	<choice hidden="true" req="dd_disparity_assistance" lvl="1" blue="false">
 		<text>Analyze the scene.</text>
 		<event>
-			<text>At this beacon is a Harmony outpost, under attack by a Disparity ship. If the cache is anywhere, it's aboard the outpost... to you approach, the Disparity hails you, "Welcome: [brothers!] You're here -just- in time. The [coordinate fragment] is -about- to be in our hands: as -soon- as we take this: outpost."</text>
+			<text>At this beacon is a Harmony outpost, under attack by a Disparity ship. If the cache is anywhere, it's aboard the outpost... as you approach, the Disparity hails, "Welcome: [brothers!] You're here -just- in time. The [coordinate fragment] is -about- to be in our hands: as -soon- as we take this: outpost."</text>
 			<choice hidden="true">
 				<text>You've got this!</text>
 				<event>
@@ -4540,7 +4540,7 @@
 	<beaconType id="map_icon_dddisparity_ambush" global="true">
 		<color r="58" g="165" b="203" a="1"/>
 	</beaconType>
-	<text>You've arrived at the set of coordinates labeled "CACHE." Apparently, one of the Harmony Link coordinate fragments is here...</text>
+	<text>You've arrived at the set of coordinates labeled "AMBUSH." Apparently, one of the Harmony Link coordinate fragments is here...</text>
 	<choice hidden="true">
 		<text>Analyze the scene.</text>
 		<event>
@@ -4638,7 +4638,7 @@
 </ship>
 
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH_SERAPHIMSUPPORT">
-    <text>As you're fighting the Disparity Behemoth, the Seraphim ship is able to get close enough to unleash a devastating barrage of flame that results in many of the enemy's systems catching fire! As that happens, you pick up the Seraphim's comms chatter, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED EARTH OPERATIONS." Sounds like they're getting really into it... keep up the pressure!</text>
+    <text>As you're fighting the Disparity Behemoth, the Seraphim ship is able to get close enough to unleash a devastating barrage of flame that results in many of the enemy's systems catching fire! As that happens, you pick up the Seraphim's comms chatter, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED SPACE OPERATIONS." Sounds like they're getting really into it... keep up the pressure!</text>
     <enemyDamage amount="0" system="pilot" effect="fire" damageHull="false"/>
 	<enemyDamage amount="0" system="engines" effect="fire" damageHull="false"/>
 	<enemyDamage amount="0" system="weapons" effect="fire" damageHull="false"/>
@@ -4736,7 +4736,7 @@
 </event>
 
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM_WIN">
-	<text>Or, so you thought. As the Seraphim die, they send out one final trump card: a brilliant beam of light that pierces the Disparity Behemoth's hull. As it crackes, and shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Disparity, the Link, everything. You watch as some of it coalesces into a sphere, next to the Link... and then, as the sphere reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
+	<text>Or, so you thought. As the Seraphim die, they send out one final trump card: a brilliant beam of light that pierces the Disparity Behemoth's hull. As it cracks, and shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Disparity, the Link, everything. You watch as some of it coalesces into a sphere, next to the Link... and then, as the sphere reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
 	<unlockCustomShip silent="false">PLAYER_DISPARITY</unlockCustomShip>
 	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 	<choice hidden="true">
@@ -4755,7 +4755,7 @@
 							<choice hidden="true">
 								<text>The Liberator?</text>
 								<event>
-									<text>The Engi reverberates and jiggles, "THE LIBERATOR. W-w-w-we struck a dealllll, yeah... and they kept it! They kept it! They kept it... b-b-b-brothersssss... cold..." Again, they turn into a puddle on the floor being returning to relative rigidity, "Captain! T-t-there is still LIBERATION to be done. Done... brothers, brothers need help! Y-y-you, captainnnn, among them... SUBJECT: CAPTAIN. SUBJECT STATUS: BROTHER. L-l-lead theee way, captain!" They begin sliding away, and you can't help but notice that despite the loss of their flagship, their kin, and the Link... they seem somewhat jovial. I suppose you have accomplished a great victory here, defeating the Seraphim and destroying the Harmony Link. Although, you have to wonder... was it really destroyed? Hey, wait! You never asked the Engi their name!</text>
+									<text>The Engi reverberates and jiggles, "THE LIBERATOR. W-w-w-we struck a dealllll, yeah... and they kept it! They kept it! They kept it... b-b-b-brothersssss... cold..." Again, they turn into a puddle on the floor before returning to relative rigidity, "Captain! T-t-there is still LIBERATION to be done. Done... brothers, brothers need help! Y-y-you, captainnnn, among them... SUBJECT: CAPTAIN. SUBJECT STATUS: BROTHER. L-l-lead theee way, captain!" They begin sliding away, and you can't help but notice that despite the loss of their flagship, their kin, and the Link... they seem somewhat jovial. I suppose you have accomplished a great victory here, defeating the Seraphim and destroying the Harmony Link. Although, you have to wonder... was it really destroyed? Hey, wait! You never asked the Engi their name!</text>
 									<choice hidden="true">
 										<text>Wait! I never got your name!</text>
 										<event>
@@ -4883,7 +4883,7 @@
 					<choice hidden="true">
 						<text>We've already made our choice. Stand with the Disparity.</text>
 						<event>
-							<text>While the two of you are speaking, the flaming ship notices your arrival and hails as well. The Engi you're speaking to is wreathed in flame, held afloat by the beating of angelic wings... they speak, "Subject: Federation. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." A moment passes, and they speak again; this time with much more volume and a hint of anger, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED EARTH OPERATIONS." Communications are cut, and the ethereal wisp of a ship darts its way over to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
+							<text>While the two of you are speaking, the flaming ship notices your arrival and hails as well. The Engi you're speaking to is wreathed in flame, held afloat by the beating of angelic wings... they speak, "Subject: Federation. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." A moment passes, and they speak again; this time with much more volume and a hint of anger, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED SPACE OPERATIONS." Communications are cut, and the ethereal wisp of a ship darts its way over to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
 							<ship load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM" hostile="true"/>
 							<choice hidden="true">
 								<text>Continue...</text>

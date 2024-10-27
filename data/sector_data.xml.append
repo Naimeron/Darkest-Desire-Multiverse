@@ -28,6 +28,12 @@
 	<mod-append:sector>DARKONE_DOMAIN</mod-append:sector>
 </mod:findName>
 
+<mod:findName type="sectorDescription" name="SECTOR_ABANDONED_GENERIC">
+   <mod:findLike type="rarityList">
+      <mod-append:blueprint name="deepone" rarity="5"/>
+   </mod:findLike>
+</mod:findName>
+
 <mod:findName type="sectorDescription" name="SECRET_ANCIENT">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="deepone" rarity="0"/>
