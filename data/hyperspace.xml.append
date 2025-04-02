@@ -35809,6 +35809,7 @@ Nothing is immune.</tooltip>
 		<resistsMindControl>true</resistsMindControl>
 		<teleportMove>true</teleportMove>
 		<canPunch>false</canPunch>
+		<animSheet>ddseraph_shell</animSheet>
 		<deathSounds>
 			<deathSound>energyDeath</deathSound>
 		</deathSounds>
