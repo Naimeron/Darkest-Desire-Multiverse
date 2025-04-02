@@ -228,7 +228,7 @@
 <ship name="STORELIST_DISPARITY_DISPARITY_NORMAL_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="STORELIST_DISPARITY_DISPARITY_NORMAL_FIGHT_WIN"/>
@@ -379,7 +379,7 @@
 <ship name="STORELIST_DISPARITY_DISPARITY_ASSAULT_FIGHT_DISPARITY" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="STORELIST_DISPARITY_DISPARITY_ASSAULT_FIGHT_DISPARITY_WIN"/>
@@ -403,7 +403,7 @@
 <ship name="STORELIST_DISPARITY_DISPARITY_ASSAULT_FIGHT_HARMONY" auto_blueprint="LIST_SHIPS_ENGI_ELITE_FIGHT">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="STORELIST_DISPARITY_DISPARITY_ASSAULT_FIGHT_HARMONY_WIN"/>
@@ -599,6 +599,16 @@
 											</choice>
 										</event>
 									</choice>
+									<choice hidden="true" req="dddeepone_chosen">
+										<text>(Chosen Crew) Inquire.</text>
+										<event>
+											<text>Though initially hesitant to share, your Chosen appears fervent in their explanation of the matter. They claim the Dark One to have blessed this tech, Crystalline or not, and recognize the writhing mass within to be the very same as the darkness that they utilize for their technology. Even still, the Chosen have never received any such crystals. It seems that even they don't know the truth behind this dark technology...</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORELIST_DISPARITY_CRYSTAL_TRUTH"/>
+											</choice>
+										</event>
+									</choice>
 									<choice hidden="true" req="unique_thescarred">
 										<text>(The Scarred) Inquire.</text>
 										<event>
@@ -609,10 +619,20 @@
 											</choice>
 										</event>
 									</choice>
-									<choice hidden="true" req="ddseraph_engi">
+									<choice hidden="true" req="ddunique_theminister">
+										<text>(The Minister) Inquire.</text>
+										<event>
+											<text>The Minister examines the crystal for a time, deep in thought, before turning away from the screen and back to you, "This would undoubtedly be the Tempest's work, but even I can't say I've ever seen anything quite like it. Considering the Seraphim's involvement in this sector, I must raise the possibility that the Disparity has been gifted these strange crystals from... beyond our cluster's seams." An interesting thought... the full truth, though, remains elusive.</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORELIST_DISPARITY_CRYSTAL_TRUTH"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="LIST_CREW_DDSERAPHIM">
 										<text>(Seraphim Crew) Inquire.</text>
 										<event>
-											<text>Divine flames coil around your Seraphim as they speak, as if in anticipation, "Subject origin: Crystal. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." Tainted... another word for perverted, you suppose. Still, any sort of 'purification' wouldn't exactly shed light on the situation. It seems the truth of the matter must remain a mystery for now.</text>
+											<text>Divine flames coil around your Seraph as they speak, as if in defense, and they explain in few words how the crystal has not only been changed by the Dark God, but tainted by it. They seem insistent that you allow them to purify the shard at once, but your thoughts linger on their words... tainted. Another word for perverted, you suppose, but it also begs the question: what exactly has it been tainted by? The blatant answer would be darkness, but darkness isn't a real THING. Not truly, anyways, which means there's some other truth to the strange matter the Dark God appears to manipulate. Still, any sort of 'purification' by your Seraph wouldn't exactly shed light on the situation... it seems the truth of the matter must remain a mystery for now.</text>
 											<choice hidden="true">
 												<text>Continue...</text>
 												<event load="STORELIST_DISPARITY_CRYSTAL_TRUTH"/>
@@ -676,7 +696,7 @@
 	<choice hidden="true">
 		<text>Ignore them.</text>
 		<event>
-			<text>You ignore the Crystal ship, and they ignore you. If there's one thing the Crystals and the rest of the universe can agree on, at least its that one should respect mutual silence...</text>
+			<text>You ignore the Crystal ship, and they ignore you. If there's one thing the Crystals and the rest of the universe can agree on, at least it's that one should respect mutual silence...</text>
 			<choice>
 				<text>Do something onboard the ship.</text>
 				<event load="STORAGE_CHECK"/>
@@ -738,7 +758,7 @@
 <ship name="NEUTRAL_DISPARITY_CRYSTALRAGE_FIGHT_DISPARITY" auto_blueprint="LIST_SHIPS_DISPARITY_NO2">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="NEUTRAL_DISPARITY_CRYSTALRAGE_FIGHT_DISPARITY_WIN"/>
@@ -902,7 +922,7 @@
 <ship name="NEUTRAL_DISPARITY_CHESS_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_NORMAL">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="NEUTRAL_DISPARITY_CHESS_FIGHT_WIN"/>
@@ -957,7 +977,7 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>The Disparity Elite seems to think this over before nodding, "I had [no] idea I was breaking: the rules, nor do I intend: to disrespect: them further. Of -course- I will compensate: you, and, hopefully, we can -both- move: past this as my chess career [blossoms.]" They beam your "compensation" over, and it looks like you're free to go, no questions asked... hopefully the consequences of the birth of Laser Chess don't come back to haunt you.</text>
+							<text>The Disparity Elite seems to think this over before nodding, "I had [no] idea I was breaking: the rules, nor do I intend: to disrespect: them further. Of -course- I will compensate: you, and, hopefully, we can -both- move: past this as my chess career [blossoms.]" They beam your 'compensation' over, and it looks like you're free to go, no questions asked... hopefully the consequences of the birth of Laser Chess don't come back to haunt you.</text>
 							<variable name="dd_disparity_assistance" op="add" val="2"/>
 							<autoReward level="HIGH">stuff</autoReward>
 						</event>
@@ -1470,7 +1490,7 @@
 <ship name="NEUTRAL_DISPARITY_BLOODSHED_FIGHT_ELITE" auto_blueprint="LIST_SHIPS_ENGI_ELITE_FIGHT">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="NEUTRAL_DISPARITY_BLOODSHED_FIGHT_ELITE_WIN"/>
@@ -1675,7 +1695,7 @@
 											</choice>
 										</event>
 									</choice>
-									<choice hidden="true" req="BLUELIST_DRONES_DEFENSE">
+									<choice hidden="true" req="DRONE_CONTROL_DEFENSE">
 										<text>(Defense Drone) Drone power, go! [-1|]</text>
 										<event>
 											<text>Relying on your defense drone, you're able to get through the fleet relatively unscathed... though the enemy's overwhelming firepower does break through at a couple points. Now face to face with the Harmony Elite, you'll need to defeat it quickly and soundly if you are to scare the Harmony into calling off its assault.</text>
@@ -2795,7 +2815,7 @@
 	<triggeredEvent event="NEUTRAL_DISPARITY_OXYGENCURIOSITY_FIGHT_MERCY" enemyHull="3" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="NEUTRAL_DISPARITY_OXYGENCURIOSITY_FIGHT_WIN"/>
@@ -3389,7 +3409,7 @@
 <event name="DESTROYED_DISPARITY">
 	<text load="TEXT_DESTROYED_DISPARITY"/>
 	<variable name="dd_disparity_assistance" op="add" val="-1"/>
-	<autoReward level="MED">standard</autoReward>
+	<autoReward level="HIGH">standard</autoReward>
 </event>
 
 <textList name="TEXT_DESTROYED_DISPARITY">
@@ -3822,7 +3842,7 @@
 	<choice hidden="true">
 		<text>Free scrap!</text>
 		<event>
-			<text>You're right up against the ship, ready to scrap it, when a Ghost phases through the wall. They speak in a polite tone, "Doth thou mind? Thou art intruding on my... personal space." Seems not even Disparity wrecks are free from Ghost habitation.</text>
+			<text>You're right up against the ship, ready to scrap it, when a Ghost phases through the wall. They speak in a polite tone, "Doth thou mind? Thou art intruding on mine... personal space." Seems not even Disparity wrecks are free from Ghost habitation.</text>
 			<choice hidden="true" req="LIST_CREW_GHOST">
 				<text>(Ghost Crew) "Well met, good felow!"</text>
 				<event>
@@ -4063,7 +4083,7 @@
 					<crewMember amount="1" class="engi_defender"/>
 				</event>
 			</choice>
-			<choice hidden="true" req="BLUELIST_DRONES_MEDICAL">
+			<choice hidden="true" req="DRONE_CONTROL_MEDICAL">
 				<text>(Medical Drone) Use your medical drone to save them.</text>
 				<event>
 					<text>Your drone gets to work, and you pray that they'll be okay... and, indeed, after some time passes, they're back on their feet! "Federation assistance: appreciated. Result of Disparity assault: destruction of former Harmony ship. New directive: assist Federation ship." Looks like your heroics have earned you a new ally!</text>
@@ -4135,7 +4155,7 @@
 <ship name="DISTRESS_DISPARITY_HARMONYUNDERATTACK_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISTRESS_DISPARITY_HARMONYUNDERATTACK_FIGHT_WIN"/>
@@ -4393,7 +4413,7 @@
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
 		<variable name="dd_disparity_harmonylinkcoordinatefragment" op="add" val="1"/>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISPARITY_KEYQUEST_CACHE_FIGHT_WIN"/>
@@ -4655,7 +4675,10 @@
 	<text>Or, so you thought. As the Disparity Behemoth shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Seraphim, the Link, everything. You watch as some of it coalesces into a sphere, next to the Link... and then, as the sphere reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
 	<unlockCustomShip silent="false">PLAYER_DISPARITY</unlockCustomShip>
 	<achievement>ACH_EVENT_DISPARITYBEHEMOTH</achievement>
+	<playMusic/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<variable name="ach_event_disparitybehemoth" op="set" val="1"/>
+	<variable name="ach_boss_dddisparity_behemoth" op="set" val="1"/>
 	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 	<choice hidden="true">
 		<text>Brace!</text>
@@ -4673,8 +4696,8 @@
 							<choice hidden="true">
 								<text>Tainted One?</text>
 								<event>
-									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY BLADES, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
-									<crewMember amount="1" class="ddseraph_engi">Sunday</crewMember>
+									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator, Tempest..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY BLADES, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
+									<crewMember amount="1" class="ddseraph_engi" all_skills="2">Sunday</crewMember>
 								</event>
 							</choice>
 						</event>
@@ -4738,6 +4761,9 @@
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM_WIN">
 	<text>Or, so you thought. As the Seraphim die, they send out one final trump card: a brilliant beam of light that pierces the Disparity Behemoth's hull. As it cracks, and shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Disparity, the Link, everything. You watch as some of it coalesces into a sphere, next to the Link... and then, as the sphere reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
 	<unlockCustomShip silent="false">PLAYER_DISPARITY</unlockCustomShip>
+	<playMusic/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
+	<variable name="ach_boss_ddseraphim_judicator" op="set" val="1"/>
 	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 	<choice hidden="true">
 		<text>Brace!</text>
@@ -4761,8 +4787,8 @@
 										<event>
 											<text>As opposed to turning around, the Engi's face shifts to the opposite side of their body. They speak, "WE: ARE THE HUNGER." With that, their face flips back around and they slowly leave... a strange one, indeed!</text>
 											<achievement>ACH_CREW_THEHUNGER</achievement>
-											<variable name="ach_crew_thescarred" op="set" val="1"/>
-											<crewMember amount="1" class="unique_thehunger">The Hunger</crewMember>
+											<variable name="ach_crew_thehunger" op="set" val="1"/>
+											<crewMember amount="1" class="unique_thehunger" all_skills="2">The Hunger</crewMember>
 										</event>
 									</choice>
 								</event>
@@ -4825,7 +4851,10 @@
 	<text>As you stand victorious over yet another so-called hero, the Dark God speaks to you, "YOU... ARE NOT LIKE THE OTHERS. YOU FORGE YOUR OWN PATH. PULL YOUR OWN STRINGS. I ENVY YOU." A blinding light manifests in the room, and as it fades... you see a weapon before you, unlike any you've ever seen before. "THESE ENGI... I HAVE CLAIMED THEM. FOR ONE SUCH AS YOURSELF, I WOULD REFORGE THEM IN YOUR HONOR. GO FORTH, AND DO AS YOU SEE FIT." Indeed, you shall. That's all you've ever done, for as long as you can remember.</text>
 	<unlockCustomShip silent="false">PLAYER_DISPARITY</unlockCustomShip>
 	<achievement>ACH_EVENT_SECONDTRUEHEROSLAIN</achievement>
+	<playMusic/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<variable name="ach_event_secondtrueheroslain" op="set" val="1"/>
+	<variable name="ach_boss_ddthehunger_trueform" op="set" val="1"/>
 	<weapon name="DDDIVINE_DUALITY"/>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -4863,11 +4892,13 @@
 				<text>Approach the conflict.</text>
 				<event>
 					<text>As you approach, it's the ethereal flaming ship that hails you, and you're met with the visage of a most otherworldly Engi... winged, and wreathed in flames, they carry with them a certain divine aura. They speak, "Tainted subjects: seek Harmony Link's destruction. Possibility of successful tainted subject purification in the event of no Federation assistance: low. Seraphim request: Federation assistance." If they can't stop them, what hope do you have? Though, maybe with your strength combined...</text>
+					<variable name="rep_engi" op="add" val="-3"/>
 					<choice hidden="true">
 						<text>We've already made our choice. Stand with the Seraphim.</text>
 						<event>
 							<text>While the two of you are speaking, the colossal Disparity ship notices your arrival and hails as well. The Engi you're speaking to is... strange, and sort of... blobby. Their speech is erratic, "F-F-F-Federation, hates: hates? [LIBERATION.] Hates, hates, hates... us? SUBJECT: HINDRANCE. H-h-hindraaaance... hindrances will be-be-beee [DEVOURED.] Devoured! And we... ewweewwe WE: will be [LIBERATED.] For... for: WE: ARE THE [HUNGER.] WE: ARE THE [LIBERATOR.] SUBJECT STATUS: Dying! Dying dying d-d-dying...? Dying... dying dy-" Communications are cut, and the hulking behemoth of a ship lurches its way to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
 							<ship load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH" hostile="true"/>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4880,11 +4911,13 @@
 				<text>Approach the conflict.</text>
 				<event>
 					<text>As you approach, it's the hulking Disparity ship that hails you, and you're met with the visage of a strange Engi. They're sort of... blobby. Their speech is erratic, "SUBJECT: C-c-c-captain! You're... here? Here! You're h-h-here, captain! STATE: HUNGER UNSATISFIED. Devour! D-d-devooooour...? DESIRE: DEVOUR HARMONY LINK. Request: request: request: h-h-heeeelp out, please? Please! The flames! Flamesflamessemalffffff- they b-b-burn, caaaptain!" So, they need help dealing with the other ship... if they can't stop them, what hope do you have? Though, maybe with your strength combined...</text>
+					<variable name="rep_engi" op="add" val="3"/>
 					<choice hidden="true">
 						<text>We've already made our choice. Stand with the Disparity.</text>
 						<event>
 							<text>While the two of you are speaking, the flaming ship notices your arrival and hails as well. The Engi you're speaking to is wreathed in flame, held afloat by the beating of angelic wings... they speak, "Subject: Federation. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." A moment passes, and they speak again; this time with much more volume and a hint of anger, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED SPACE OPERATIONS." Communications are cut, and the ethereal wisp of a ship darts its way over to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
 							<ship load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM" hostile="true"/>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4909,6 +4942,7 @@
 						<text>Scare them a little bit. Fly closer.</text>
 						<event>
 							<text>The ship glimmers in response, letting off a resplendent glow that lights even the shadows around you ablaze... oh, this ought to be interesting. The Engi speak, simultaneously, "INITIATING: DEVOUR PROTOCOL." So it begins!</text>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<backgroundObject name="INFINITE_HYPERDEATH_THE_SCARRED">
 								<layer z="0">background</layer>
 								<spawnArea x="0" y="0" w="0" h="0"/>

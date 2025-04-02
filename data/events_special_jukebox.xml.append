@@ -6,4 +6,25 @@
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddheartofshatteredpromises">
+		<text>DD: Heart of Shattered Promises</text>
+		<event>
+			<playMusic>ddheartofshatteredpromises</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddtodancewithdarkness">
+		<text>DD: To Dance with Darkness</text>
+		<event>
+			<playMusic>ddtodancewithdarkness</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddtrialbyire">
+		<text>DD: Trial by Ire</text>
+		<event>
+			<playMusic>ddtrialbyire</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
 </mod:findName>

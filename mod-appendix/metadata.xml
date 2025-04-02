@@ -2,14 +2,14 @@
 	<title><![CDATA[ Darkest Desire, an FTL: Multiverse Addon ]]></title>
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/49/darkest-desire ]]></threadUrl>
 	<author><![CDATA[ Naimeron ]]></author>
-	<version><![CDATA[ 2.2.0 ]]></version>
+	<version><![CDATA[ 3.0.0 ]]></version>
 	<description>
 <![CDATA[
-Patch after Multiverse (5.4.6), and make sure your Hyperspace is updated!
+Patch after Multiverse (5.4.6), and make sure your Hyperspace is updated! You need to patch this last and use the FTLman mod manager in order to get the Corruptor system on ships other than Darkest Desire's.
 
-Darkest Desire is a general content mod focused on new, lore-heavy sectors, as well as everything else! Including: a new race, the Deep Ones, Elites and Super Elites for existing races (namely the Engi right now), new Uniques, new ships, new augments, mechanics, weapons, drones, etcetera! To get started, look for non-unique neutral and unique hostile sectors.
+Darkest Desire is a general content mod focused on new, dark and lore-heavy sectors, as well as everything else! Including: a new system, the Corruptor, new races, such as the Deep Ones or the Husks, Elites and Super Elites for existing races (namely both Shells and Engi right now), terrifying new Horror crew, new Uniques, new ships, new augments, mechanics, hazards, weapons, drones, etcetera! To get started, look for non-unique neutral and unique hostile/hazard sectors.
 
-A big thank you to Lizzard for creating the track "Light's Lament", as well as to everyone in the Multiverse Discord server who would help me with any questions I had! As well, I'd like to thank the Eldritch Horrors team for inspiring me to make this addon. My original goal was to revive EH itself, but as the team dissolved I set out to make something new. There's a long road ahead, but I'm looking forward to it! Lastly, I'd like to thank my boyfriend for being lovely and creating the Divine Duality sprite for me (I was really struggling with it lol)!
+A big thank you to Lizzard for creating all of Darkest Desire's music, another big thank you to Arc for the creation of all of the Corruptor system's Lua, a big thank you to my boyfriend for being lovely and also helping me with a few sprites, and one final big thank you to everyone in the Multiverse Discord server who helps me with any questions I have! As well, I'd like to thank the Eldritch Horrors team for inspiring me to make this addon. My original goal was to revive EH itself, but as the team dissolved I set out to make something new. There's a long road ahead, but I'm looking forward to it!
 ]]>
 	</description>
 </metadata>

@@ -35,3 +35,35 @@
 		<event load="COMBAT_CHECK"/>
 	</choice>
 </event>
+
+<event name="FLEET_ACE_DDCOREMASS">
+	<revisitEvent>FLEET_ACE_DDCOREMASS</revisitEvent>
+	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_REBEL</customFleet>
+	<text>It seems the Rebellion must have followed you into the Coremass, as you find their equally immeasurable fleet keeping its endless tentacles at bay here. They notice your arrival, and a nearby ship turns to engage. The ship that approaches is no regular Elite, but rather an MFK Ace! Much stronger than most Rebel ships, if you can defeat it, it may delay the fleet a little longer.</text>
+	<img back="BACKGROUND_DDSOULPLAGUEHEART" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddsoulplagueaura_bg</anim>
+	</backgroundObject>
+	<variable name="loc_dives" op="add" val="1"/>
+	<ship load="SHIP_REBEL_FLEET_S" hostile="true"/>
+	<fleet>rebel</fleet>
+	<environment type="PDS" target="player"/>
+	<noASBPlanet/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice hidden="true" req="engines" lvl="6">
+		<text>(Adv. Engines) Try to escape the Elite.</text>
+		<event load="FLEET_ESCAPE"/>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_JERRY">
+		<text>(Jerry) "Hello!"</text>
+		<event>
+			<text load="TEXT_ENCOUNTER_REBEL_JERRY_HELLO"/>
+			<ship hostile="false"/> 
+		</event>
+	</choice>
+</event>

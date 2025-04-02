@@ -38,7 +38,7 @@
 			<choice hidden="true">
 				<text>Request fuel.</text>
 				<event>
-					<text>A box of fuel, covered in damp handprints, is brought on-board.</text>
+					<text>A box of fuel, covered in damp handprints, is brought onboard.</text>
 					<item_modify>
 						<item type="fuel" min="7" max="7"/>
 					</item_modify>
@@ -65,7 +65,7 @@
 			<choice hidden="true" req="LIST_CREW_DEEPONES">
 				<text>(Deep One) Have your Deep One bargain for a bit of everything.</text>
 				<event>
-					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard Multiverse ship... For you, friend... anything."</text>
+					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard a Multiverse ship... For you, friend... anything."</text>
 					<item_modify>
 						<item type="fuel" min="3" max="3"/>
 						<item type="missiles" min="2" max="2"/>
@@ -89,7 +89,7 @@
 			<choice hidden="true">
 				<text>Request fuel.</text>
 				<event>
-					<text>A box of fuel, covered in damp handprints, is brought on-board.</text>
+					<text>A box of fuel, covered in damp handprints, is brought onboard.</text>
 					<item_modify>
 						<item type="fuel" min="7" max="7"/>
 					</item_modify>
@@ -116,7 +116,7 @@
 			<choice hidden="true" req="LIST_CREW_DEEPONES">
 				<text>(Deep One) Have your Deep One bargain for a bit of everything.</text>
 				<event>
-					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard Multiverse ship... For you, friend... anything."</text>
+					<text>It only takes the sight of your Deep One to light up the outpost captain's face. "Kin? Aboard a Multiverse ship... For you, friend... anything."</text>
 					<damage amount="-3"/>
 					<item_modify>
 						<item type="fuel" min="3" max="3"/>
@@ -161,7 +161,11 @@
 
 <event name="ENLIGHTENED_QUEST_START" unique="true">
 	<preventQuest/>
-	<text>There appears to be nothing here, but... No. Something's wrong. Deeply, deeply wrong.</text>
+	<preventFleet/>
+	<beaconType id="map_icon_ddtruemystery" global="false">
+		<color r="120" g="144" b="156" a="1"/>
+	</beaconType>
+	<text>You can't say why you felt compelled to come here, and you don't see anything out of the ordinary, but... you feel that something's wrong. Deeply, deeply wrong.</text>
 	<img back="BACKGROUND" planet="PLANET_INVISIBLE"/>
 	<choice req="loc_mysterious_entity_seen" lvl="0" max_lvl="0" hidden="true" blue="false">
 		<text>Check behind you.</text>
@@ -463,6 +467,17 @@
 				</event>
 			</choice>
 			<choice hidden="true">
+				<text>Oh, man! I hate riddles! Attack the merchant.</text>
+				<event>
+					<text>"You hate riddles... THAT much?" You move in to attack the riddling Deep One merchant, and it prepares to defend itself.</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
 				<text>Decline.</text>
 				<event>
 					<text>"Maybe... next time, then." They close communications.</text>
@@ -659,8 +674,8 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="cloaking" lvl="3">
-		<text>(Cloaking) Use your advanced cloaking to attempt to rob the merchant ship.</text>
+	<choice hidden="true" req="cloaking" lvl="2">
+		<text>(Upg. Cloaking) Cloak, and attempt to rob the merchant ship.</text>
 		<event load="STOREEVENT_DEEPONE_WAR_CLOAKING"/>
 	</choice>
 	<choice hidden="true">
@@ -699,7 +714,7 @@
 	</event>
 </eventList>
 
-<event name="STOREEVENT_DEEPONE_STANDARD">
+<event name="STOREEVENT_DEEPONE_STANDARD" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_deepone" global="false">
 		<color r="255" g="245" b="175" a="1"/>
@@ -936,9 +951,11 @@
 	<event load="ITEMS_DEEPONE_WRECK"/>
 	<event load="ITEMS_DEEPONE_THEOCRACY_HEIST"/>
 	<event load="ITEMS_DEEPONE_DREAD"/>
+	<event load="ITEMS_DDDEEPONE_CHOSENESCAPE"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION"/>
 </eventList>
 
-<event name="ITEMS_DEEPONE_FRIENDLY">
+<event name="ITEMS_DEEPONE_FRIENDLY" unique="true">
 	<text>There's a colony of Deep Ones at this beacon, and upon your approach they beckon you to land.</text>
 	<choice hidden="true">
 		<text>We have some time to spare, agree to land.</text>
@@ -964,18 +981,75 @@
 	</choice>
 </event>
 
-<event name="ITEMS_DEEPONE_DARKGOD">
+<eventList name="ITEMS_DEEPONE_DARKGOD_LIST">
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_STUFF"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_STUFF"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_STUFF"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_STUFF"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_REACTOR"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_REACTOR"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_DARKWEAPON"/>
+	<event load="ITEMS_DEEPONE_DARKGOD_LIST_DARKDRONE"/>
+</eventList>
+
+<event name="ITEMS_DEEPONE_DARKGOD_LIST_STUFF">
+	<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. An assorted pile of junk sits in the middle of it, a mess of scrap and resources that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that free scrap is free scrap and prepare to leave the beacon in a hurry.</text>
+	<autoReward level="RANDOM">stuff</autoReward>
+</event>
+
+<event name="ITEMS_DEEPONE_DARKGOD_LIST_REACTOR">
+	<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. A neatly stacked pile of reactor cores sits in the middle of it, a sizeable collection that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that free cores are free cores and prepare to leave the beacon in a hurry.</text>
+	<upgrade amount="2" system="reactor"/>
+</event>
+
+<event name="ITEMS_DEEPONE_DARKGOD_LIST_DARKWEAPON">
+	<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. A peculiar piece of machinery sits in the middle of it, a weapon of ominous make that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that a free weapon is a free weapon and prepare to leave the beacon in a hurry.</text>
+	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+</event>
+
+<event name="ITEMS_DEEPONE_DARKGOD_LIST_DARKDRONE">
+	<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. A peculiar piece of machinery sits in the middle of it, a drone of ominous make that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that a free drone is a free drone and prepare to leave the beacon in a hurry.</text>
+	<drone name="GIFTLIST_DARKGOD_DRONES"/>
+</event>
+
+<event name="ITEMS_DEEPONE_DARKGOD" unique="true">
 	<text>Immediately upon entering the system, your ship identifies a foreign mass materializing in the ship's hold. There's no ships nearby for anyone to have teleported from, so you suspect it's a false alarm, but nevertheless you approach the hold with a blaster in hand. Upon further inspection, your suspicions are quickly proven to be correct, as there's nothing out of order here.</text>
 	<choice hidden="true">
 		<text>Continue...</text>
-		<event>
-			<text>You begin to make a mental note to have a word with the Federation engineers responsible for your ship's systems, but you're met with a strange sight once you get back to your room. An assorted pile of junk sits in the middle of it, a mess of scrap and resources that's somehow been planted here whilst leaving the rest of the room undisturbed. Your crew's as clueless about it as you are once you ask around, and the cameras seem to have been conveniently disabled during the incident. Though it makes you uneasy, you surmise that free scrap is free scrap and prepare to leave the beacon in a hurry.</text>
-			<autoReward level="MED">stuff</autoReward>
-		</event>
+		<event load="ITEMS_DEEPONE_DARKGOD_LIST"/>
 	</choice>
 </event>
 
-<event name="ITEMS_DEEPONE_WRECK">
+<eventList name="ITEMS_DEEPONE_WRECK_ESCAPE_LIST">
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_REWARD"/>
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_REWARD"/>
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_REWARD"/>
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_NOTHING"/>
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_LOST"/>
+	<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_ASSAULT"/>
+</eventList>
+
+<event name="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_REWARD">
+	<text>Your team makes a break for the exit, but they manage to stumble upon something they weren't expecting along the way: an Engi Separatist, simply standing there in the hallway. It wasn't here earlier... your crew ask it to identify itself, but it ignores them and instead addresses you directly, "I have been: -waiting- for you, Renegade. Our time here: is [short]." It turns to your crew, finally acknowledging them, "Quickly: -this- way." It leads your crew through the maze of hallways, confident in its movements, and, indeed, they manage to make it out much quicker than you expected. Once onboard, the Engi doesn't request to join your crew as much as it simply... does. You don't have any qualms with that, you suppose.</text>
+	<crewMember amount="1" class="engi_separatist"/>
+</event>
+
+<event name="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_NOTHING">
+	<text>You don't say a word, but your team agrees with you. They quickly turn around and begin to sprint back the way they came but, to their bewilderment, they find the exit within the first couple minutes of backtracking. Though this endeavour has proven fruitless, at least your crew's okay.</text>
+</event>
+
+<event name="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_LOST">
+	<text>You decide it's time to pull out, but... where exactly is out? Your team spends what feels like hours trying to retrace their steps, until eventually they come across the initial T-shaped hallway they entered from. They barely make it out before the ship buckles for the last time, collapsing in on itself. The fleet's surely caught up to you in the meantime, and you've gotten absolutely nothing out of it, but at least your crew's safe.</text>
+	<modifyPursuit amount="1"/>
+</event>
+
+<event name="ITEMS_DEEPONE_WRECK_ESCAPE_LIST_ASSAULT">
+	<text>Your team doesn't struggle to find their way out, but they notice something odd as they approach the exit... the sound of footsteps, echoing towards them. Rapidly. They make a sprint for it as SOMETHING follows them at an impossible speed, and, though they barely manage to make it back onboard in time, you're not able to close the airlock before whatever was following them makes its way inside as well... just what in the hell IS this thing?</text>
+	<playSound>ddilldrythkfog2</playSound>
+	<boarders min="1" max="1" class="ddilldrythk_statue"/>
+</event>
+
+<event name="ITEMS_DEEPONE_WRECK" unique="true">
 	<text>You're met with the sight of a Deep One wreck, its signatures completely cold but its lights as radiant as ever. There's no telling how long it's been here, and the hull seems to somehow be impenetrable to your ship's scans.</text>
 	<choice hidden="true">
 		<text>Inspect the inside of the ship.</text>
@@ -1004,18 +1078,13 @@
 							</choice>
 							<choice hidden="true">
 								<text>Alright, it's definitely time to leave.</text>
-								<event>
-									<text>You don't say a word, but your team agrees with you. They slowly turn around and begin to walk back the way they came but, to their bewilderment, they find the exit within the first couple minutes of backtracking. Though this endeavour has proven fruitless, at least your crew's okay.</text>
-								</event>
+								<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST"/>
 							</choice>
 						</event>
 					</choice>
 					<choice hidden="true">
 						<text>Maybe it's time to leave.</text>
-						<event>
-							<text>This place is a maze, and your team's not making any progress. You decide it's time to pull out, but... where exactly is out? Your team spends what feels like hours trying to retrace their steps, until eventually they come across the initial T-shaped hallway they entered from. They barely make it out before the ship buckles for the last time, collapsing in on itself. The fleet's surely caught up to you in the meantime, and you've gotten absolutely nothing out of it, but at least your crew's safe.</text>
-							<modifyPursuit amount="2"/>
-						</event>
+						<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST"/>
 					</choice>
 				</event>
 			</choice>
@@ -1051,7 +1120,11 @@
 							<choice hidden="true">
 								<text>I don't know what this is.</text>
 								<event>
-									<text>As strange as it is, there's nothing you can do, and you make the call to pull your team out. This will have to be a mystery for another day.</text>
+									<text>As strange as it is, there's nothing you can do. You hear as the ship buckles... this will have to be a mystery for another day.</text>
+									<choice hidden="true">
+										<text>It's time to leave.</text>
+										<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST"/>
+									</choice>
 								</event>
 							</choice>
 						</event>
@@ -1088,7 +1161,11 @@
 									<choice hidden="true">
 										<text>I don't know what this is.</text>
 										<event>
-											<text>As strange as it is, there's nothing you can do, and you make the call to pull your team out. This will have to be a mystery for another day.</text>
+											<text>As strange as it is, there's nothing you can do. You hear as the ship buckles... this will have to be a mystery for another day.</text>
+											<choice hidden="true">
+												<text>It's time to leave.</text>
+												<event load="ITEMS_DEEPONE_WRECK_ESCAPE_LIST"/>
+											</choice>
 										</event>
 									</choice>
 								</event>
@@ -1119,6 +1196,28 @@
 				<event/>
 			</choice>
 		</event>
+	</choice>
+</event>
+
+<eventList name="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST">
+	<event load="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST_WIN"/>
+	<event load="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST_LOSS"/>
+</eventList>
+
+<event name="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST_WIN">
+	<text>"Quick... to answer. So be it, then. An enemy of the Theocracy... is a friend of ours." they say, before offering to share in some spoils from their recent heist of a Rock outpost! They regale you with tales of their exploits as their ship zooms into view, and, while they transfer the spoils over, you regale them with tales of your own.</text>
+	<autoReward level="MED">standard</autoReward>
+</event>
+
+<event name="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST_LOSS">
+	<text>"So... you say. I... am not so easily fooled." They cut communications, having never revealed their ship, and you're left wondering how exactly they expected you to answer that.</text>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
 	</choice>
 </event>
 
@@ -1172,10 +1271,7 @@
 			</choice>
 			<choice hidden="true">
 				<text>Of course not.</text>
-				<event>
-					<text>"Quick... to answer. So be it, then. An enemy of the Theocracy... is a friend of ours." they say, before offering to share in some spoils from their recent heist of a Rock outpost! They regale you with tales of their exploits as their ship zooms into view, and, while they transfer the spoils over, you regale them with tales of your own.</text>
-					<autoReward level="MED">standard</autoReward>
-				</event>
+				<event load="ITEMS_DEEPONE_THEOCRACY_HEIST_LIST"/>
 			</choice>
 		</event>
 	</choice>
@@ -1313,12 +1409,800 @@
 	</choice>
 </event>
 
+<ship name="ITEMS_DDDEEPONE_CHOSENESCAPE_FIGHT" auto_blueprint="LIST_SHIPS_DDCHOSEN">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE_FIGHT_WIN">
+	<text>What??? How'd you do that???</text>
+</event>
+
+<eventList name="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST">
+	<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_SUCCESS"/>
+	<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_FAILURE"/>
+	<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_EXTREMEFAILURE"/>
+</eventList>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_SUCCESS">
+	<text>You try your best to fly in the general direction of where the ship was, and you breathe a sigh of relief as its silhouette appears in the near distance. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+	<choice hidden="true">
+		<text>Hurry!</text>
+		<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_FAILURE">
+	<text>Despite your best efforts, your search proves to be fruitless. Eventually, deciding that feeling around in the dark is pointless, you make the call to prepare to leave before the Rebellion gains any more ground.</text>
+</event>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST_EXTREMEFAILURE">
+	<text>It doesn't take long for you to find the shrouded ship... as you crash into it, sending it cascading back into the darkness! Maybe cluelessly searching around in the dark wasn't the greatest idea after all, but, at least the damage isn't too severe. Still, you're not going to risk trying to find it again...</text>
+	<damage amount="4"/>
+</event>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD">
+	<text>You rush onboard the damaged ship, but quickly realize it's just as dark in here as it was out there... and, yet, you don't necessarily feel as lost. An esoteric warmth in your chest seems to guide you forward, and you don't so much as bump into anything as you traverse the pitch black halls. Eventually, your hand comes to rest on something. The feeling of its surface is alien, almost indescribable, but it emits a heat comparable to the one you feel guiding you. Something wanted you to find this... whatever it is.</text>
+	<choice hidden="true">
+		<text>How strange...</text>
+		<event>
+			<text>There's a loud, tearing noise, and the realization dawns on you that the ship is about to collapse. You're going to have to settle with taking... whatever this object is back, and you're going to have be quick! You pick it up, as heavy as it is, and make a sprint for the exit...</text>
+			<playSound>ddsoulplague_creaking1</playSound>
+			<choice hidden="true">
+				<text>Run!</text>
+				<event>
+					<text>Your mad, blind dash through the darkness goes as smoothly as your entrance had, to your amazement, and you're able to make a decisive leap back into your ship's airlock. As it closes, you see the ship behind you as it's torn apart, and for the first time you get a good look at the object you just risked your life to secure... it seems to be a strange weapon of sorts. The warmth in your chest leaves you, and the weapon quickly becomes almost searing hot to the touch. You're not sure what exactly it is, what's just happened here, or why you couldn't find any of the ship's inhabitants... but you're all the richer for it as you prepare to leave the beacon.</text>
+					<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_CHOSENESCAPE" unique="true">
+	<text>The two ships here, while undoubtedly of Deep One design, are not ones you can say you recognize in the slightest. Whereas most Deep One ships overcompensate with their lighting, these ones seem to lack any amount of external lights whatsoever. In fact, you feel as if they suck in the very light around them... you're not sure if they've noticed you, but you get the impression that they're communicating with each other.</text>
+	<ship load="ITEMS_DDDEEPONE_CHOSENESCAPE_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Approach the two ships.</text>
+		<event>
+			<text>Before you can really get moving, an explosion rocks one of the mysterious Deep One ships; simultaneously, the other jumps out of the beacon. From where the first ship's hull was breached, a dark cloud begins to spew forth, and you find your ship rapidly enveloped in pitch blackness... it's impossible to see anything in here. Still, there's a chance you can locate the remaining ship before it's too late...</text>
+			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+			<playSound>explosion_heavy</playSound>
+			<instantEscape/>
+			<choice hidden="true" req="deeponecultist">
+				<text>(Enlightened Crew) Allow your Enlightened Cultist to guide you through the darkness.</text>
+				<event>
+					<text>Familiar with the darkness that surrounds you, your Enlightened Cultist is successfully able to peer through it and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="unique_thescarred">
+				<text>(The Scarred) Allow the Scarred to guide you through the darkness.</text>
+				<event>
+					<text>Familiar with the darkness that surrounds you, the Scarred is successfully able to peer through it and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dddeepone_chosen">
+				<text>(Chosen Crew) Allow your Chosen to guide you through the darkness.</text>
+				<event>
+					<text>Familiar with the darkness that surrounds you, your Chosen is successfully able to peer through it and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_SLUG">
+				<text>(Slug Crew) Allow your Chosen to guide you through the darkness.</text>
+				<event>
+					<text>Capable of reading the minds of those nearby, your Slug is successfully able to catch a reading and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_SNAIL">
+				<text>(Telepathic Shell) Allow your Shell to guide you through the darkness.</text>
+				<event>
+					<text>Capable of reading the minds of those nearby, your Shell is successfully able to catch a reading and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIFE_SCANNER">
+				<text>(Lifeform Scanner) Allow your Lifeform Scanner to guide you through the darkness.</text>
+				<event>
+					<text>Capable of locating nearby lifeforms, your Lifeform Scanner is successfully able to catch a reading and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="sensors" lvl="3">
+				<text>(Adv. Sensors) Allow your sensors to guide you through the darkness.</text>
+				<event>
+					<text>As powerful as your sensors are, they're still only able to barely catch a reading and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
+					<choice hidden="true">
+						<text>Hurry!</text>
+						<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_REWARD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Try your best to feel your way through the darkness.</text>
+				<event load="ITEMS_DDDEEPONE_CHOSENESCAPE_NAVIGATION_LIST"/>
+			</choice>
+			<choice hidden="true">
+				<text>Screw this. Stay put.</text>
+				<event>
+					<text>God knows what's going on out there, or what exchange you've managed to stumble upon. You're content simply staying put while the FTL drive charges, and ensuring that you don't crash into anything while blindly flying through clouds of unnatural darkness.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Keep to yourself.</text>
+		<event>
+			<text>What business do you have intruding upon random ships' interactions? That, and these ships in particular kind of give you the creeps... you're quite content keeping to yourself while the FTL drive charges.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART">
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH"/>
+</eventList>
+
+<eventList name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY">
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY_LUCKY"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY_UNLUCKY"/>
+</eventList>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY_LUCKY">
+	<text>You raise the bid, and the crowd goes quiet... is this truly all you needed to win? The auctioneer yells out, "We have 65! Going once, going twice..." The crowd stays silent in their shock, and a gavel rings out somewhere, "Sold, to the Federation officer for 65 scrap!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+	<choice hidden="true" req="ddunique_theminister">
+		<text>(The Minister) The Minister clears his throat.</text>
+		<event>
+			<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+					<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Cash!</text>
+		<event>
+			<text>You have the 65 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+			<item_modify>
+				<item type="scrap" min="-65" max="-65"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Uh... man-eating?</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Credit!</text>
+		<event>
+			<text>There's not really any such thing as scrap credit, but you have the 65 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+			<item_modify>
+				<item type="scrap" min="-65" max="-65"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Uh... man-eating?</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I, eh... can't actually afford this.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY_UNLUCKY">
+	<text>For a moment, the crowd stays quiet, but then a particularly well-dressed man curtly raises his hand:
+	
+	"I'll end this. 200."
+	
+	There's an uproar amongst the auction-goers, and the auctioneer's eyes go wide. "200?! That is 200 from my generous friend in the black suit! 200, going once, going twice..." Is this it?</text>
+	<choice hidden="true">
+		<text>Stamp your foot down, and raise the bid to 205.</text>
+		<event>
+			<text>The sound of your foot meeting the floor echoes throughout the room, and everyone in the crowd turns to you. Even the previous bidder seems shocked... but he doesn't raise his hand again. The auctioneer, again, roars to life, "WE HAVE 205! GOING ONCE, GOING TWICE..." The crowd stays silent in their shock, and a gavel rings out somewhere, "SOLD, TO THE GENEROUS FEDERATION OFFICER FOR 205 SCRAP!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+			<choice hidden="true" req="ddunique_theminister">
+				<text>(The Minister) The Minister clears his throat.</text>
+				<event>
+					<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+							<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Cash!</text>
+				<event>
+					<text>You have the 205 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+					<item_modify>
+						<item type="scrap" min="-205" max="-205"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Uh... man-eating?</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Credit!</text>
+				<event>
+					<text>There's not really any such thing as scrap credit, but you have the 205 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+					<item_modify>
+						<item type="scrap" min="-205" max="-205"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Uh... man-eating?</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I, eh... can't actually afford this.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Clench your teeth, and stay quiet.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_CHICKENINGS"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW">
+	<text>You're able to find one of the few empty spots to dock, and are uninterrupted as you and your crew board the outpost. The space inside isn't massive, and you're able to quickly spot a giant crowd of people deeper within. Approaching them, you make out a man raised at the center of the crowd as he circles a cloaked cage and shouts, "Now that you're all aware of what exactly's at stake here... do we have any bidders? The bid starts at a measly 5 scrap!" So this is some sort of auction... hands from the crowd begin to fly into the air as people shout out their bids:
+					
+	"10!"
+	
+	"Oh, I'll take it for 15!"
+	
+	"This is easy, then; 20!"
+	
+	"I'll raise you 25!"
+	
+	Things seem to be going steadily, but there's still a brief silence that allows you to get a word in.</text>
+	<choice hidden="true">
+		<text>Raise the bid to 30.</text>
+		<event>
+			<text>You make your bid, and the man raised in the center of the crowd looks at you, "Oh, Federation! Not exactly who we expected when we pictured paying customers, but... as long as you're not busting us! Very well, 30 it is! Will anybody raise it to 35?!" A few more hands shoot up:
+							
+			"I guess I can do 35..."
+			
+			"40! 40!"
+			
+			"I'm almost out, but... fuck it, 50!"
+			
+			"How about 60?!"
+			
+			The bidding has doubled, just like that, and the crowd murmurs in shock.</text>
+			<choice hidden="true">
+				<text>Keep things steady. Raise it to 65.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_LOW_STEADY"/>
+			</choice>
+			<choice hidden="true">
+				<text>Blow their socks off. Raise it to 120.</text>
+				<event>
+					<text>The crowd collectively turns to you in shock, and the auctioneer yells out triumphantly, "WE HAVE 120! GOING ONCE, GOING TWICE..." The crowd stays silent in their shock, and a gavel rings out somewhere, "SOLD, TO THE GENEROUS FEDERATION OFFICER FOR 120 SCRAP!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+					<choice hidden="true" req="ddunique_theminister">
+						<text>(The Minister) The Minister clears his throat.</text>
+						<event>
+							<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+									<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Cash!</text>
+						<event>
+							<text>You have the 120 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+							<item_modify>
+								<item type="scrap" min="-120" max="-120"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Uh... man-eating?</text>
+								<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Credit!</text>
+						<event>
+							<text>There's not really any such thing as scrap credit, but you have the 120 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+							<item_modify>
+								<item type="scrap" min="-120" max="-120"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Uh... man-eating?</text>
+								<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I, eh... can't actually afford this.</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Chicken out. This is too much.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_CHICKENINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>You're not really interested in an auction. Get out of here.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_LEAVINGS"/>
+	</choice>
+</event>
+
+<eventList name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY">
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY_LUCKY"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY_UNLUCKY"/>
+</eventList>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY_LUCKY">
+	<text>You raise the bid, and the crowd goes quiet... is this truly all you needed to win? The auctioneer yells out, "We have 155! Going once, going twice..." The crowd stays silent in their shock, and a gavel rings out somewhere, "Sold, to the Federation officer for 155 scrap!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+	<choice hidden="true" req="ddunique_theminister">
+		<text>(The Minister) The Minister clears his throat.</text>
+		<event>
+			<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+					<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Cash!</text>
+		<event>
+			<text>You have the 155 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+			<item_modify>
+				<item type="scrap" min="-155" max="-155"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Uh... man-eating?</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Credit!</text>
+		<event>
+			<text>There's not really any such thing as scrap credit, but you have the 155 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+			<item_modify>
+				<item type="scrap" min="-155" max="-155"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Uh... man-eating?</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I, eh... can't actually afford this.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY_UNLUCKY">
+	<text>For a moment, the crowd stays quiet, but then a particularly well-dressed man curtly raises his hand:
+	
+	"I'll end this. 500."
+	
+	There's an uproar amongst the auction-goers, and the auctioneer's eyes go wide. "500?! That is 500 from my generous friend in the black suit! 500, going once, going twice..." Is this it?</text>
+	<choice hidden="true">
+		<text>Stamp your foot down, and raise the bid to 505.</text>
+		<event>
+			<text>The sound of your foot meeting the floor echoes throughout the room, and everyone in the crowd turns to you. Even the previous bidder seems shocked... but he doesn't raise his hand again. The auctioneer, again, roars to life, "WE HAVE 505! GOING ONCE, GOING TWICE..." The crowd stays silent in their shock, and a gavel rings out somewhere, "SOLD, TO THE GENEROUS FEDERATION OFFICER FOR 505 SCRAP!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+			<choice hidden="true" req="ddunique_theminister">
+				<text>(The Minister) The Minister clears his throat.</text>
+				<event>
+					<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+							<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Cash!</text>
+				<event>
+					<text>You have the 505 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+					<item_modify>
+						<item type="scrap" min="-505" max="-505"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Uh... man-eating?</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Credit!</text>
+				<event>
+					<text>There's not really any such thing as scrap credit, but you have the 505 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+					<item_modify>
+						<item type="scrap" min="-505" max="-505"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Uh... man-eating?</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I, eh... can't actually afford this.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Clench your teeth, and stay quiet.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_CHICKENINGS"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH">
+	<text>You're able to find one of the few empty spots to dock, and are uninterrupted as you and your crew board the outpost. The space inside isn't massive, and you're able to quickly spot a giant crowd of people deeper within. Approaching them, you make out a man raised at the center of the crowd as he circles a cloaked cage and shouts, "Now that you're all aware of what exactly's at stake here... do we have any bidders? The bid starts at a measly 5 scrap!" So this is some sort of auction... hands from the crowd begin to fly into the air as people shout out their bids:
+					
+	"10!"
+	
+	"Oh, I'll take it for 50!"
+	
+	"50?! That quickly?!"
+	
+	"I'll raise you 60!"
+	
+	An awkward silence hangs in the air as the bidding immediately get pricy.</text>
+	<choice hidden="true">
+		<text>Raise the bid to 65.</text>
+		<event>
+			<text>You make your bid, and the man raised in the center of the crowd looks at you, "Oh, Federation! Not exactly who we expected when we pictured paying customers, but... as long as you're not busting us! Very well, 65 it is! Will anybody raise it to 70?!" A few more hands shoot up:
+							
+			"I guess I can do 70..."
+			
+			"Fuck it, 100!"
+			
+			"Are you mad?!"
+			
+			"You think THAT'S mad? 150!"
+			
+			The bidding has more than doubled, just like that, and the crowd murmurs in shock.</text>
+			<choice hidden="true">
+				<text>Keep things steady. Raise it to 155.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART_HIGH_STEADY"/>
+			</choice>
+			<choice hidden="true">
+				<text>Blow their socks off. Raise it to 250.</text>
+				<event>
+					<text>The crowd collectively turns to you in shock, and the auctioneer yells out triumphantly, "WE HAVE 250! GOING ONCE, GOING TWICE..." The crowd stays silent in their shock, and a gavel rings out somewhere, "SOLD, TO THE GENEROUS FEDERATION OFFICER FOR 250 SCRAP!" Excited murmurs break out amongst the crowd, and you're ushered to the front before being led to a private room backstage. The auctioneer enters a few moments later, cage in tow, and you're able to get a good look at it for the first time... it's truly massive, and you swear you can hear a strange, faint, almost wet noise coming from within. You get a good look at the auctioneer, as well: a shorter, hunched man adorned in black robes. Around his neck is a pendant that you recognize as sharing the strange symbol on the mysterious ships outside, and he turns to you, "So! Cash or credit?"</text>
+					<choice hidden="true" req="ddunique_theminister">
+						<text>(The Minister) The Minister clears his throat.</text>
+						<event>
+							<text>The robed man jumps as he notices the Minister's presence, before collapsing to his knees and bowing his head, "I-It's not what it looks like, Hand! We were just, uh... gathering funds, in the Tempest's name!" The Minister looks over at the cage, scoffing, "When I said you can find other homes for your excess spawn, I didn't mean aboard civilian ships, you imbecile. You're lucky I don't crush you like the conniving bug you are." The man's bow deepens, and he begins pleading incoherently.</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>The Minister rolls his eyes, "I'll be confiscating this spawn. Allow me to catch you pawning off the Tempest's blessings again, and I'll be infinitely less merciful in the future." He slams a hand against the cage, and it shatters, revealing a Stormborn Spawn. The Minister turns to you, "Let's go. We've wasted enough time here." You and him leave the room, the spawn following in his shadow, and the crowd eyes you and your entourage in disbelief the whole way back to the ship.</text>
+									<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Cash!</text>
+						<event>
+							<text>You have the 250 scrap brought in by your crew, and the robed man counts it excitedly. Once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+							<item_modify>
+								<item type="scrap" min="-250" max="-250"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Uh... man-eating?</text>
+								<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice>
+						<text>Credit!</text>
+						<event>
+							<text>There's not really any such thing as scrap credit, but you have the 250 scrap brought in by your crew. The robed man counts it excitedly, and, once everything is accounted for, he turns to you once more, "Very well, then! The payment's all here; I'll have my subordinates wheel this bastard over to your ship. Glad to finally get rid of this thing, it's been causing a real ruckus... what with all the, uh, man-eating and all." For a moment, you assume he's joking, but you quickly realize the look on his face is completely serious.</text>
+							<item_modify>
+								<item type="scrap" min="-250" max="-250"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Uh... man-eating?</text>
+								<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I, eh... can't actually afford this.</text>
+						<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Chicken out. This is too much.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_CHICKENINGS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>You're not really interested in an auction. Get out of here.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_LEAVINGS"/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_WINNINGS">
+	<text>He nods, a tired look on his face, "Yeah, these spawn can be a real hassle sometimes. The big guy upstairs keeps gifting them, and we keep taking 'em, but there's only so many we can afford to house onboard after a certain point. Thankfully, the Hand doesn't mind us, uh, 'giving' them away. We keep the whole auction thing on the down-low, but... cultists have to pay the bills somehow." Spawn? The big guy upstairs? The Hand?? Cultists??? Speechless during the trip back to your ship, you wonder what exactly it is you've won here...</text>
+	<choice hidden="true">
+		<text>Wait for your winnings aboard the ship.</text>
+		<event>
+			<text>It doesn't take long for similarly robed men to arrive at your ship with the strange cage in hand. They leave it in the ship's hold, dropping it in a hurry and rushing back outside before you can get so much as a word in. Alone with it now, you get a clearer idea of the sound you'd heard earlier... there's certainly something alive in there.</text>
+			<choice hidden="true">
+				<text>Remove the cage's cover.</text>
+				<event>
+					<text>As you move to uncloak the cage, it breaks apart, to your shock, and one of its sides comes crashing down on you. Dazed for a moment, you realize you're pinned to the floor... and standing over you is the cage's former inhabitant. An indescribable, horrific mass of tentacles, eyes and teeth towers over you, its many maws agape. The abomination roars out, and your ears are left ringing as it crawls its way over your legs, onto your torso and towards your head...</text>
+					<playSound>ddstormbornspawngrowl</playSound>
+					<choice hidden="true">
+						<text>Scream.</text>
+						<event>
+							<text>...and removes the side of the cage that had been crushing you, before harmlessly crawling away. 'Removes' is putting it simply; it literally dragged the bars into its being and consumed them. The strange thing leaves the room, slowly but surely, and you're left on the floor catching your breath. There's no telling what in the hell you've just unleashed onboard, but at least it seems to be on your side. The more, the merrier...?</text>
+							<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<eventList name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE">
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE_LUCKY"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE_UNLUCKY"/>
+	<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE_UNLUCKY"/>
+</eventList>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE_LUCKY">
+	<text>As you move to uncloak the cage, it breaks apart, to your shock, and one of its sides comes crashing down on you. Dazed for a moment, you realize you're pinned to the floor... and standing over you is the cage's former inhabitant. An indescribable, horrific mass of tentacles, eyes and teeth towers over you, its many maws agape. The abomination roars out, and your ears are left ringing as it crawls its way over your legs, onto your torso and towards your head...</text>
+	<playSound>ddstormbornspawngrowl</playSound>
+	<choice hidden="true">
+		<text>Scream.</text>
+		<event>
+			<text>...and removes the side of the cage that had been crushing you, before harmlessly crawling away. 'Removes' is putting it simply; it literally dragged the bars into its being and consumed them. The strange thing leaves the room, slowly but surely, and you're left on the floor catching your breath. There's no telling what in the hell you've just unleashed onboard, but at least it seems to be on your side. The more, the merrier...?</text>
+			<crewMember amount="1" class="ddtempest_stormborn_spawn"/>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE_UNLUCKY">
+	<text>As you move to uncloak the cage, it breaks apart, to your shock, and you just narrowly dodge out of the way as one of its sides nearly crashes down on you. You look over, and standing over you is the cage's former inhabitant... an indescribable, horrific mass of tentacles, eyes and teeth towers over you, its many maws agape. The abomination roars out, bloodthirsty, and you sprint out of the room as it begins to make its advance!</text>
+	<playSound>ddstormbornspawngrowl</playSound>
+	<boarders min="1" max="1" class="ddtempest_stormborn_spawn_enemy"/>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN">
+	<text>With the ship and its otherworldly inhabitants defeated, you turn to the cage you'd brought onboard and realize you recognize the noises coming from it. It's the same ones that one of the monsters you just defeated had been making...</text>
+	<status type="clear" target="player" system="engines" amount="100"/>
+	<choice hidden="true">
+		<text>Swallow your fear, and remove the cage's cover.</text>
+		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Launch the cage out the airlock. Better safe than sorry.</text>
+		<event>
+			<text>You wheel the cage over to the airlock, its wet noises never once quieting, and are able to flush it outside without incident. A crisis averted, surely.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS">
+	<text>The robed man blinks, "You... what? Why did you bid it then?" He puts his head in his hands, lamenting his wasted time, and you realize there's an opportunity here...</text>
+	<choice hidden="true">
+		<text>Punch the man while he's distracted.</text>
+		<event>
+			<text>You clock him straight in the head, and he crashes to the floor... he's out cold. On the clock now, you rush out of the room with the cage in hand, but you don't get very far before a similarly robed man spots you, surmises what happened, and yells out, "STOP! THIEF!" The crowd looks over, shock on their faces, and you sprint towards the ship as fast as your legs can carry you. It's good that this cage came on wheels, as you're able to get it onboard before anyone can catch up to you, but you're not out of the woods yet... as you lift off, one of the odd ships you'd spotted before gives chase! A streak of lightning bolts from their ship, striking yours, and you realize they've managed to disable your engines... get ready!</text>
+			<ship load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT" hostile="true"/>
+			<status type="limit" target="player" system="engines" amount="0"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Hold back. I'm at fault here.</text>
+		<event>
+			<text>He raises his head, annoyance on his face, "Can you, like, get out, then? Why are you here?" He sighs, pushing you out of the room, and you catch him saying one more thing under his breath, "I'll have to hold another auction now... Hopefully the Hand doesn't catch wind of all this commotion..." The Hand? You're not sure who he's referring to, but you don't mind having something to ponder as you make your walk of shame back to the ship... empty-handed.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_CHICKENINGS">
+	<text>You're not about to go broke keeping this going. The trip back to the ship is uneventful, but a part of you wonders what exactly was inside of that cage as you prepare to leave the beacon.</text>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_LEAVINGS">
+	<text>You're not about to go broke participating in an auction. The trip back to the ship is uneventful, but a part of you wonders what exactly was inside of that cage as you prepare to leave the beacon.</text>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<ship name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FIGHT_WIN">
+	<text>With the ship and its otherworldly inhabitants defeated, you ponder the peculiarity of the abominations they had onboard... what exactly is going on at that outpost? You may never know, now, you fear.</text>
+</event>
+
+<event name="ITEMS_DDDEEPONE_TEMPESTAUCTION" unique="true">
+	<text>A blindingly bright light forces you to cover your eyes as you enter the beacon, but its source is not the Deep One lights you'd expect it to be. Not entirely, anyways; there's a small, makeship outpost here with several dozen ships huddled around it. Some of them are indeed Deep One ships, but not as many as you'd expect seeing that you're in the closest thing they have to proper territory.</text>
+	<choice hidden="true">
+		<text>Inspect the outpost further.</text>
+		<event>
+			<text>Comically large spotlights beam off of the outpost, moving in a constant sweeping pattern. You make sure to duck your ship to avoid being blinded again, and you get a closer look at the ships gathered here as you do so... to your surprise, it seems to be mostly Union ships. That, the Deep One ships, and a few alien ships you recognize the make of, but not the paint jobs and markings of: they've been painted all black, save for what seems to be a symbol of a light blue eye next to a lightning bolt. Your curiosity is piqued...</text>
+			<choice hidden="true">
+				<text>This seems interesting... dock your ship, and board the outpost.</text>
+				<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_BIDSTART"/>
+			</choice>
+			<choice hidden="true">
+				<text>Hmm. I'm feeling some terrorism right about now. Attack the outpost!</text>
+				<event>
+					<text>You open fire on the ships parked around the outpost, and it doesn't take long for one of the odd ships you'd noticed before to roar to life. You make a break for it, but they manage to catch up some ways away from the outpost... get ready!</text>
+					<ship load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FIGHT" hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Nah. I don't care, actually. Ignore the outpost.</text>
+				<event>
+					<text>Curiosity, more like SCHMURIOSITY. You turn away from the outpost, an indignant look on your face, and prepare to leave the beacon.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <eventList name="NEUTRAL_DEEPONE">
 	<event load="NEUTRAL_DEEPONE_GOOBER"/>
 	<event load="NEUTRAL_DEEPONE_ROCKOFF"/>
 	<event load="NEUTRAL_DEEPONE_WARSCOUT"/>
 	<event load="NEUTRAL_DEEPONE_LANIUS"/>
 	<event load="DEEPONE_CONFUSION"/>
+	<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING"/>
+	<event load="NEUTRAL_DDDEEPONE_SHADOWCULT"/>
+	<event load="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER"/>
 </eventList>
 
 <event name="NEUTRAL_DEEPONE_GOOBER" unique="true">
@@ -1341,7 +2225,7 @@
 	<choice hidden="true">
 		<text>You're such a little... goober, Guubare.</text>
 		<event>
-			<text>His shaking worsens. He speaks again, but his voice is way less deep now, high-pitched even; "Man... I told you guys I wasn't cut out for this..." Gloomy, he walks away and a new, giant Deep One takes his place. "You've... upset Guubare. The price, for this transgression... your head." They cut communications and a ship zooms into view, guns charging!</text>
+			<text>His shaking worsens. He speaks again, but his voice is way less deep now, high-pitched even; "Man... I told you guys I wasn't cut out for this..." Gloomy, he walks away and a new, giant Deep One takes his place. "You've... upset Guubare. The price, for this transgression... is your head." They cut communications and a ship zooms into view, guns charging!</text>
 			<ship hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -1459,17 +2343,17 @@
 				</event>
 			</choice>
 			<choice hidden="true" req="LIST_CREW_ROCK">
-				<text>(Rock) Let your rock answer.</text>
+				<text>(Rock) Let your Rock answer.</text>
 				<event>
 					<text>Your Rock speaks up, "Blasted things blind you good, boarding these... "Deep Ones" is a right pain." Satisfied with your answer, the second ship responds, "Hah, indeed. Glad I'm not the only one capable of seeing their potential. Tell you what, seeing that my... partner here is insistent on having them destroyed, I wouldn't mind having you put them to good use. For a price, of course, but I'll give you a discount... I like you."</text>
 					<choice>
 						<text>Agree to the trade.</text>
-						<item_modify>
-							<item type="scrap" min="-45" max="-45"/>
-						</item_modify>
-						<augment name="DEEPONE_LIGHTS"/>
 						<event>
 							<text>The first ship grumbles a little bit over the comms but doesn't intervene. With the lights transferred, and the argument settled, the two ships hang around for a moment before jumping out of the system.</text>
+							<item_modify>
+								<item type="scrap" min="-45" max="-45"/>
+							</item_modify>
+							<augment name="DEEPONE_LIGHTS"/>
 						</event>
 					</choice>
 					<choice hidden="true">
@@ -1564,6 +2448,71 @@
 	</choice>
 </event>
 
+<eventList name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST">
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_SMALL"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_SMALL"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_SMALL"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_MEDIUM"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_MEDIUM"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_MEDIUM"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_MEDIUM"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_SOULPLAGUE"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_DARKWEAPON"/>
+	<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_DARKDRONE"/>
+</eventList>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_SMALL">
+	<text>Indeed, there's little here of value... still, free scrap is free scrap.</text>
+	<autoReward level="LOW">scrap_only</autoReward>
+</event>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_MEDIUM">
+	<text>Though it's not an absurd amount of loot, you manage to find way more resources than you expected!</text>
+	<autoReward level="MED">standard</autoReward>
+</event>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_SOULPLAGUE">
+	<text>You're moving from ship to ship, scrapping what you can when a strange, iridescent ship catches your eye... investigating its cargo, you manage to find a peculiar weapon in seemingly perfect condition. You weren't expecting to find something so unique in the equivalent of a space-landfill, but you've managed to all the same!</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<weapon name="GIFTLIST_DDSOULPLAGUE_WEAPONS"/>
+	<choice hidden="true">
+		<text>Jackpot!</text>
+		<event>
+			<text>Taking your new loot aboard, you notice as some sort of goo secretes off of it. This goo smacks against the floor, and then immediately begins to writhe and bubble before rising to take the form of a humanoid figure... this is a Soulplague Husk! More of these goo-things begin to propagate, and you realize you've got trouble!</text>
+			<playSound>blobDeath</playSound>
+			<boarders min="2" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
+		</event>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_DARKWEAPON">
+	<text>You're moving from ship to ship, scrapping what you can when a strange, decrepit Deep One ship catches your eye... investigating its cargo, you manage to find a peculiar weapon in seemingly perfect condition. You weren't expecting to find something so unique in the equivalent of a space-landfill, but you've managed to all the same!</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+	<choice hidden="true">
+		<text>Jackpot!</text>
+		<event>
+			<text>Taking your new loot aboard, you notice as some sort of darkness emanates from it. This darkness coalesces, eventually forming a mass of tentacles atop the floor. Then, another, and another... what is this madness? More of these shadow-things begin to propagate, and you realize you've got trouble!</text>
+			<playSound>ddsoulplague_creaking1</playSound>
+			<boarders min="3" max="6" class="darkgodtendrils"/>
+		</event>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST_JACKPOT_DARKDRONE">
+	<text>You're moving from ship to ship, scrapping what you can when a strange, crystalline ship catches your eye... investigating its cargo, you manage to find a peculiar drone in seemingly perfect condition. You weren't expecting to find something so unique in the equivalent of a space-landfill, but you've managed to all the same!</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<drone name="GIFTLIST_DARKGOD_DRONES"/>
+	<choice hidden="true">
+		<text>Jackpot!</text>
+		<event>
+			<text>Taking your new loot aboard, you notice as some sort of darkness emanates from it. This darkness coalesces, eventually forming a mass of tentacles atop the floor. Then, another, and another... what is this madness? More of these shadow-things begin to propagate, and you realize you've got trouble!</text>
+			<playSound>ddsoulplague_creaking1</playSound>
+			<boarders min="3" max="6" class="darkgodtendrils"/>
+		</event>
+	</choice>
+</event>
+
 <event name="NEUTRAL_DEEPONE_WARSCOUT" unique="true">
 	<text>A grim sight lays before you. The remains of dozens of ships, some Deep Ones, some Theocracy, are scattered across space here. One intact ship remains, a Deep One Scout that seems to be moving from wreck to wreck.</text>
 	<ship load="DEEP_ONE_SCOUT" hostile="false"/>
@@ -1599,9 +2548,12 @@
 											<choice hidden="true">
 												<text>Relent.</text>
 												<event>
-													<text>The Deep One seems relieved to not be questioned further. "I do believe... we are done here. Feel free to... make use of anything that remains. I... must go, and report." With that, the Deep One leaves, and you scrap what you can of the field of ships. It's not much, but free scrap is free scrap.</text>
+													<text>The Deep One seems relieved to not be questioned further. "I do believe... we are done here. Feel free to... make use of anything that remains. I... must go, and report." With that, the Deep One leaves, and you're left with the field of debris.</text>
 													<instantEscape/>
-													<autoReward level="LOW">scrap_only</autoReward>
+													<choice hidden="true">
+														<text>Let's see what we can find here...</text>
+														<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST"/>
+													</choice>
 												</event>
 											</choice>
 										</event>
@@ -1615,9 +2567,12 @@
 			<choice hidden="true">
 				<text>Mind if I scrap all this?</text>
 				<event>
-					<text>Slightly confused, it blinks, and then answers "I... suppose I am done here. There's... little of value, but feel free to... use what you can." With that, the Deep One leaves, and you scrap what you can of the field of ships. It's not much, but free scrap is free scrap.</text>
+					<text>Slightly confused, it blinks, and then answers "I... suppose I am done here. There's... little of value, but feel free to... use what you can." With that, the Deep One leaves, and you're left with the field of debris.</text>
 					<instantEscape/>
-					<autoReward level="LOW">scrap_only</autoReward>
+					<choice hidden="true">
+						<text>Let's see what we can find here...</text>
+						<event load="NEUTRAL_DEEPONE_WARSCOUT_LOOT_LIST"/>
+					</choice>
 				</event>
 			</choice>
 		</event>
@@ -1744,24 +2699,9 @@
 	</choice>
 </event>
 
-<event name="DEEPONE_CONFUSION">
+<event name="DEEPONE_CONFUSION" unique="true">
 	<text>Upon arriving at the beacon, you are immediately hailed by a particularly furious Deep One. Though their translator is lacking, you're certainly able to pick up that you aren't wanted here.</text>
 	<ship load="SHIP_DEEPONE_FIGHT" hostile="false"/>
-	<choice>
-		<text>Try to apologize and leave.</text>
-		<event load="DEEPONE_CONFUSION_FLEE"/>
-	</choice>
-	<choice>
-		<text>Attack first!</text>
-		<event>
-			<text>Who cares what the hell they're saying, if it's a fight they want it's a fight they'll get!</text>
-			<ship hostile="true"/>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
-			</choice>
-		</event>
-	</choice>
 	<choice hidden="true" req="LIST_CREW_DEEPONES">
 		<text>(Deep One) Your Deep One offers to step in.</text>
 		<event>
@@ -1787,6 +2727,21 @@
 					<text>Your Deep One stifles a laugh as you're both met with a blank stare. He begins to try to explain your words when he's cut off by what you can only describe as the garbled fish-man equivalent of screaming bloody murder... Suddenly, comms are cut, and you pick up a teleportation signature! Before anyone else reacts, your equally as confused Deep One intervenes and manages to parse that you've inspired the opposing captain to join you in your revelry... Somehow!</text>
 					<crewMember amount="1" class="deepone"/>
 				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Try to apologize and leave.</text>
+		<event load="DEEPONE_CONFUSION_FLEE"/>
+	</choice>
+	<choice>
+		<text>Attack first!</text>
+		<event>
+			<text>Who cares what the hell they're saying, if it's a fight they want it's a fight they'll get!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
 			</choice>
 		</event>
 	</choice>
@@ -1822,11 +2777,359 @@
 	</event>
 </eventList>
 
+<ship name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_FIGHT_WIN">
+	<text>You're in the middle of processing the horrors you just witnessed when one final bolt of lightning shoots out from the remains of the strange ship, striking the very room you're standing in... but, instead of being electrocuted and fried to death, a hooded figure harmlessly manifests beside you. You recognize it as being identical to one of the ones you just fought, and prepare to defend yourself, but it makes no move against you. If anything, it seems to be repairing damage and helping around. You're not one to be lulled into a false sense of security, but... you're willing to trust this tentacled freak as long as it remains useful.</text>
+	<crewMember amount="1" class="ddtempest_spawn_warden"/>
+	<choice hidden="true" req="ddunique_theminister">
+		<text>(The Minister) "Hah! To think they'd come at their own Hand..."</text>
+		<event>
+			<text>You ask him what's got him laughing, but he dismisses you completely before leaving the room, mumbling something about inferior beings. This guy's not very forthcoming, is he...</text>
+		</event>
+	</choice>
+	<choice>
+		<text>Dear lord...</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST">
+	<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_STRANGENOISES"/>
+	<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_ESCAPEDSACRIFICES"/>
+	<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_BLESSING"/>
+</eventList>
+
+<event name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_STRANGENOISES">
+	<text>You accept the hail, but the opposing ship doesn't have a camera feed. Instead, you're only given disturbing audio... a faint, heavy breathing from the other side. No, not breathing; growling. Is this their idea of a prank?</text>
+	<choice hidden="true">
+		<text>Clear your throat and try to ask what they need.</text>
+		<event>
+			<text>Despite your best efforts, you receive no answer from the other side of the call. It's just that rhythmic growling...</text>
+			<choice hidden="true">
+				<text>I've had enough of this. Hang up the call.</text>
+				<event>
+					<text>As you move to do so, you catch the briefest start of a hushed sentence, "...succulent-" Then, communications are cut as the strange ship whirs to life... they're moving in to attack!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I've REALLY had enough of this. Attack!</text>
+				<event>
+					<text>As you move to cut communications and begin your assault, you catch the briefest start of a hushed sentence, "...succulent-" Then, the strange ship whirs to life... they're moving in to attack as well!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_ESCAPEDSACRIFICES">
+	<text>You're met with the visage of a human, terribly bloody and bruised. Before you can say a word, they put a finger over their mouth to signal that you should be quiet.</text>
+	<choice hidden="true">
+		<text>Tilt your head to the side (to mimic confusion).</text>
+		<event>
+			<text>The human points behind them, into the darkness, before running their thumb across their throat. You get the feeling that they're being held captive and need your help... they must be risking their life to make this call.</text>
+			<choice hidden="true" req="teleporter">
+				<text>(Teleporter) Nod, and flail your fingers around (to mimic teleportation).</text>
+				<event>
+					<text>They don't quite understand your intention, but you're able to teleport them aboard all the same. As you do so, the lights come on over the call, and the strange ship begins to move... it seems your actions haven't gone unnoticed, as they're moving in to attack!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Check on the human before preparing for battle.</text>
+						<event>
+							<text>You pull the beaten human to their feet, and ask if they feel fine enough to fight. They nod, and move to take whatever position you need of them... do they know they don't still have to be quiet, or do they just like pantomiming?</text>
+							<crewMember amount="1" class="human"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Put your hand up to your chin (to mimic thinking).</text>
+				<event>
+					<text>You're so busy engaging in pantomime that you forget to actually think for a moment, but then it hits you... you just have to sneakily board the ship!</text>
+					<choice hidden="true">
+						<text>Tighten your shoulders, raise your forearms and bob up and down (to mimic skulking).</text>
+						<event>
+							<text>The human laughs at your ridiculous display, before immediately covering their mouth as the realization of what they've done washes over them. The last thing you see before the video feed dies is their look of terror as the lights come on behind them... then, the strange ship begins to move. It seems your involvement hasn't gone unnoticed, as they're moving in to attack!</text>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the signal, and ask them what's going on.</text>
+		<event>
+			<text>A look of terror overtakes their face as the lights come on behind them, and the video feed dies. You blink a couple times, dumbfounded by your own actions. A few moments then pass, before the strange ship begins to move... it seems your involvement hasn't gone unnoticed, as they're moving in to attack!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST_BLESSING">
+	<text>An electric shock runs through your hand as you accept the call, and an immense amount of power surges through it and into your systems somehow. You're expecting this to be some kind of virus, or maybe a cyberattack, but everything quickly returns to normal... if anything, it seems to have made things run MORE efficiently. You look outside, and, to your further confusion, the ship has vanished into thin air. What in the hell just happened...?</text>
+	<instantEscape/>
+	<upgrade amount="3" system="reactor"/>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING" unique="true">
+	<text>For a moment, everything seems quiet, but then your systems start blaring as requests to hail are spammed. Looking at the space outside, you manage to spot a single ship far off in the distance. They don't seem to be moving... what could they want?</text>
+	<choice hidden="true">
+		<text>Get closer and try to identify the ship.</text>
+		<event>
+			<text>You fly in to get a good look at the ship, and they remain still as you do so. You recognize the make of the ship, but not the colors they fly... the hastily painted markings are reminiscent of the many pirate ships throughout the Multiverse, but you can't say you've seen these ones in particular before. As you observe the ship, many more dozens of requests to hail have since been sent.</text>
+			<ship load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_FIGHT" hostile="false"/>
+			<choice hidden="true">
+				<text>Accept the request.</text>
+				<event load="NEUTRAL_DDDEEPONE_TEMPESTSCAVENGING_HAILLIST"/>
+			</choice>
+			<choice hidden="true">
+				<text>Attack the ship.</text>
+				<event>
+					<text>These guys sure are persistent... you'll teach them a thing or two about spamming a Renegade's systems! You move in further, your intentions clear, and the strange ship finally begins to move as they recognize your hostility... looks like you've picked a fight!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Ignore the request, and the ship.</text>
+				<event>
+					<text>This is likely just some amateur pirate trap... and you're no amateur! You put a good distance between you and the strange ship, and the requests to hail eventually go quiet.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Keep to yourself.</text>
+		<event>
+			<text>You don't know who's spamming you with requests to hail, but you really wish they'd be a little more considerate and not be so annoying about it. You put a good distance between you and the mystery ship, and the requests to hail eventually go quiet.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT" auto_blueprint="LIST_SHIPS_UNION_FIGHT">
+	<triggeredEvent event="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_LOSS" time="40" thisFight="true">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+			<warning time="6.0" flash="true"/>
+			<tooltip>If you do not defeat the Union ship in this amount of time, their esoteric ritual will be completed.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">item</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">item</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_LOSS">
+	<text>With their ritual complete, a wave of destructive energy is sent out from the Union ship as it's torn apart, and a cloud of darkness fills the space outside. Some of this strange darkness manages to seep into the newly formed breaches in your ship, as you realize you've got unwanted company!</text>
+	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+	<recallBoarders/>
+	<boarders min="3" max="6" class="darkgodtendrils"/>
+	<enemyDamage amount="999"/>
+	<damage amount="4"/>
+	<damage amount="1" system="random" effect="breach"/>
+	<damage amount="2" system="random" effect="breach"/>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_WIN">
+	<text>You stopped the ship before they could complete their unknowable ritual, but you've dirtied your hands with Union blood nonetheless. It's hard to win, sometimes...</text>
+	<choice>
+		<text>Continue...</text>
+		<event load="MORALITY_UPDATE_GENERAL"/>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_SHADOWCULT" unique="true">
+	<text>To your surprise, it's a Union ship that greets you here. Well, to call it a greeting would be a bit of an exaggeration... it's more like, they hail, threateningly, and say "Give us a human sacrifice or it's YOUR head that's rolling, Renegade!" Not exactly a warm welcome...</text>
+	<ship load="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Woah, woah, woah. What the hell are you talking about?</text>
+		<event>
+			<text>They interrupt you, mid-sentence, "NO! No questions. Not unless you want us to drag this beacon to HELL! WE'VE SEEN HORRORS GREATER THAN DEATH! WE'RE NOT AFRAID OF YOU!" You're not even sure if you're the one they're shouting at... regardless, they've made their demands clear. What's your answer?</text>
+			<choice req="ddhuman_sacrifice">
+				<text>(Human Sacrifice) Yeah, alright. You can have it.</text>
+				<event>
+					<text>You beam your prepared human sacrifice over, and the citizen over the comms becomes ecstatic, "OH! You're familiar with the Dark One's ways...? A member of the Federation...? What are you, some kind of spy?" You shrug, and the citizen chuckles, "Well, thanks, Renegade! We're off to go spill some blood! Maybe a Ritual of Corruption, this time..." Their ship jumps out of the beacon, and you're left somewhat confused and considerably less sacrifice-ful.</text>
+					<instantEscape/>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone your human sacrifice, as they are not dead.</text>
+					</removeCrew>
+				</event>
+			</choice>
+			<choice req="LIST_CREW_HUMAN">
+				<text>(Human Crew) Yeah, alright. You can have them.</text>
+				<event>
+					<text>You beam your human over, ignoring their kicking and screaming, and the citizen over the comms calms down a bit, "Finally, FINALLY! We can take lives with our own hands, and take our lives into our own hands!" You shuffle slightly, uncomfortable, and the citizen chuckles, "Well, thanks, Renegade! We're off to go spill some blood! Maybe a Ritual of Corruption, this time..." Their ship jumps out of the beacon, and you're left somewhat horrified and considerably less crew-ful.</text>
+					<instantEscape/>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone your human crew member, as they are not dead.</text>
+					</removeCrew>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I'm not sending anybody over to die, you psycho.</text>
+				<event>
+					<text>"Then you're condemning us ALL to death, FEDDIE! You, us, AND your little buddies... PREPARE TO DIE!" You watch as they stand around a ritual circle in the middle of the room, and an eldritch power flows through them... you're going to need to stop them before they do whatever it is they're doing, and fast!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER_FIGHT" auto_blueprint="DDDEEP_ONE_BATTLESHIP_DDSOULPLAGUE_CORRUPTION">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER_FIGHT_WIN">
+	<text>Now that you have a moment to catch your breath, you're left completely bewildered by what you just witnessed. Soulplague Husks, masquerading as Deep Ones and trying to trick people... if not for the spoils of war and the mess all over the place, you'd figure you just dreamt all that. Still, there's little you can do sitting here pondering... it's time to leave, unanswered qustions in tow.</text>
+	<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+		<text>(Soulplague Crew) Your Soulplague-aligned crew member makes a strange gurgling noise.</text>
+		<event>
+			<text>It's hard to think about the madness you've just had the displeasure of living through with your crew member making noises like that... can't they see you're trying to solve a mystery here?</text>
+		</event>
+	</choice>
+	<choice>
+		<text>I don't get paid enough for this...</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER" unique="true">
+	<text>You feel a little lightheaded as you enter the beacon, but it's quickly brushed aside as a nearby Deep One vessel approaches and hails you. They seem a bit disheveled, their speaking little more than a whisper, "...scrap... give... scrap..." You can hardly make out their form under their robes, but you get the sense that something is off...</text>
+	<choice hidden="true">
+		<text>Hold on. Scrap? What for, and how much?</text>
+		<event>
+			<text>The cloaked Deep One lowers their head even more, "...reward... boon... favor... 60..." They say no more than that.</text>
+			<choice>
+				<text>Alright, sure. Color me intrigued.</text>
+				<event>
+					<text>You send the requested scrap over, and it manifests beside the strange Deep One. A moment of silence passes between the two of you, and you're about to break it when the figure derobes and reveals their true form... or, rather, the lack of any form at all. They're little more than a humanoid, oily blob... they feast on the scrap you've sent for a moment, before turning back to you and whispering once more, "...generous... gratitude..." It hits you that they don't speak so much as you simply hear their whispering in your head, and then you realize what it is you're facing: a Soulplague Husk.</text>
+					<item_modify>
+						<item type="scrap" min="-60" max="-60"/>
+					</item_modify>
+					<choice hidden="true">
+						<text>Uh... what was my reward, exactly?</text>
+						<event>
+							<text>They whisper in your head again, "...travel... companion... assist..." You raise an eyebrow, and they melt into a puddle before vanishing... then, a moment later, they somehow manage to reappear beside you! "...captain... spread... love..." The Husk staggers away, and you make a mental note to check the ship's carbon monoxide levels...</text>
+							<crewMember amount="1" class="LIST_DDSOULPLAGUERANDOM_SUMMON"/>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>No, sorry. Not interested.</text>
+				<event>
+					<text>You're not running a charity here... nor are you interested in any mystery reward. Your intentions clear, the strange figure derobes and reveals their true form... or, rather, the lack of any form at all. They're little more than a humanoid, oily blob... they roar out, and the Deep One ship makes a strange, wobbly advance towards you. With its weapons hot, your instincts begin to kick in... prepare for battle!</text>
+					<ship load="NEUTRAL_DDDEEPONE_MATTERVIRUSDEALER_FIGHT" hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <eventList name="DISTRESS_DEEPONE">
 	<event load="DISTRESS_DEEPONE_DRIFTING"/>
 	<event load="DISTRESS_DEEPONE_CLANSMAN"/>
 	<event load="DISTRESS_DEEPONE_TRAP"/>
 	<event load="DISTRESS_DEEPONE_MISUNDERSTANDING"/>
+	<event load="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION"/>
 </eventList>
 
 <event name="DISTRESS_DEEPONE_DRIFTING" unique="true">
@@ -1883,7 +3186,7 @@
 									</choice>
 								</event>
 							</choice>
-							<choice hidden="true" req="BLUELIST_DRONES_MEDICAL">
+							<choice hidden="true" req="DRONE_CONTROL_MEDICAL">
 								<text>(Medical Drone) Use a medical drone to save it.</text>
 								<event>
 									<text>Your drone gets to work on stabilizing the Deep One. Mere moments later, it's alright and extremely grateful. "A thousand... blessings, and thank-you's upon you, friend. Without you..." it pauses, "I'm afraid I would've... met my end in that wreck."</text>
@@ -2069,7 +3372,7 @@
 		<text>Attack the Deep Ones.</text>
 		<event>
 			<text>You face the Deep Ones and prepare to attack. Deciding you're the bigger threat, they turn to face you. Meanwhile, the Clansmen seem to have ceased firing; they're watching the fight from a distance. Suppose you won't be getting any help...</text>
-			<ship load="SHIP_DISTRESS_DEEPONE_CLANSMAN_SLUG_FIGHT" hostile="true"/>
+			<ship load="SHIP_DISTRESS_DEEPONE_CLANSMAN_DEEPONE_FIGHT" hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="COMBAT_CHECK"/>
@@ -2082,17 +3385,17 @@
 	</choice>
 </event>
 
-<event name="DISTRESS_DEEPONE_TRAP">
+<event name="DISTRESS_DEEPONE_TRAP" unique="true">
 	<distressBeacon/>
 	<text>You arrive at the distress beacon, but the Deep One ship here quickly turns to face you, weapons charging; you've become the victim of an ambush. Though not typically malevolent, perhaps something's made these Deep Ones desperate... regardless, it's time to defend yourself!</text>
-	<ship load="DEEP_ONE_FIGHTER" hostile="true"/>
+	<ship load="SHIP_DEEPONE_FIGHT" hostile="true"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
 	</choice>
 </event>
 
-<event name="DISTRESS_DEEPONE_MISUNDERSTANDING">
+<event name="DISTRESS_DEEPONE_MISUNDERSTANDING" unique="true">
 	<distressBeacon/>
 	<text>There's a Deep One settlement on a nearby moon here. You surmise that it must be the source of the distress call, but nothing seems immediately wrong from this distance.</text>
 	<choice hidden="true">
@@ -2123,11 +3426,45 @@
 														<text>Indeed, that's a distress beacon.</text>
 														<event>
 															<text>Obviously embarrassed, it responds "My... goodness. This was sold to me by a... traveling Free Mantis salesman, who had claimed... it to be a 'De-Stress' beacon... Unless, I had just... misheard him." It thinks on this for a moment before continuing, "I'm so... terribly sorry for troubling you, officer. I... wish there were any way I could make this... up to you, but, I don't think there is."</text>
+															<choice hidden="true" req="LIST_CREW_DEEPONES">
+																<text>(Deep One Crew) Maybe there is?</text>
+																<event>
+																	<text>Your Deep One whispers something to the older one before you, and a sense of dread seems to overcome its face. It nods, murmuring something in return, before closing the door and vanishing back inside. You ask your Deep One what that was about, but it hushes you and insists that you both wait a moment.</text>
+																	<choice hidden="true">
+																		<text>We'll wait, then.</text>
+																		<event>
+																			<text>After waiting for a while, the Deep One returns, a briefcase in hand. "Let us go, then... if that is what they decree." It puts extra stress on the word they, and you raise an eyebrow, but your Deep One merely brushes it off. You all return to the ship, the old Deep One in tow, and it seems intent on joining your crew. You're not sure what was said to convince it to abandon everything it has going on here, but... you're not one to turn down new deckhands.</text>
+																			<modifyPursuit amount="1"/>
+																			<crewMember amount="1" class="deepone"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_FREEMAN">
+																<text>(Free Mantis Crew) "Do not doubts traveler-salesing!"</text>
+																<event>
+																	<text>Your Free Mantis smacks the beacon in the Deep One's hand, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_SLUG">
+																<text>(Slug Crew) "Heh, typical sssscam!"</text>
+																<event>
+																	<text>Your Slug gives a hearty laugh, smacking the small device out of the Deep One's hands in the process, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. This wave seems to have the opposite effect on your Slug, as they scream and run back to the ship in horror, but you figure that they're probably just terrified of their own mechanically-gifted power. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_ENGINEER">
+																<text>(Engineer Crew) Have your engineer inspect the beacon.</text>
+																<event>
+																	<text>Your engineer weighs the small device in their hands for a few moments, before giving it a decisive SMACK with their wrench. The beacon roars to life, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
 															<choice hidden="true">
 																<text>You wouldn't happen to have any... junk lying around, would you?</text>
 																<event>
 																	<text>"...Junk?" It looks around for a moment, before its gaze meets the beacon in its hands, "This... would be junk, now, I... suppose." The Deep One hands it to you, apologizes again, and you make your way back onto your ship and out of the settlement. This was a big waste of time, for the most part, but you do get to break down the beacon and get the barest amount of something out of it...</text>
-																	<modifyPursuit amount="1"/>
 																	<autoReward level="LOW">scrap_only</autoReward>
 																</event>
 															</choice>
@@ -2149,11 +3486,45 @@
 														<text>Indeed, that's a distress beacon.</text>
 														<event>
 															<text>Obviously embarrassed, it responds "My... goodness. This was sold to me by a... traveling Free Mantis salesman, who had claimed... it to be a 'De-Stress' beacon... Unless, I had just... misheard him." It thinks on this for a moment before continuing, "I'm so... terribly sorry for troubling you, officer. I... wish there were any way I could make this... up to you, but, I don't think there is."</text>
+															<choice hidden="true" req="LIST_CREW_DEEPONES">
+																<text>(Deep One Crew) Maybe there is?</text>
+																<event>
+																	<text>Your Deep One whispers something to the older one before you, and a sense of dread seems to overcome its face. It nods, murmuring something in return, before closing the door and vanishing back inside. You ask your Deep One what that was about, but it hushes you and insists that you both wait a moment.</text>
+																	<choice hidden="true">
+																		<text>We'll wait, then.</text>
+																		<event>
+																			<text>After waiting for a while, the Deep One returns, a briefcase in hand. "Let us go, then... if that is what they decree." It puts extra stress on the word they, and you raise an eyebrow, but your Deep One merely brushes it off. You all return to the ship, the old Deep One in tow, and it seems intent on joining your crew. You're not sure what was said to convince it to abandon everything it has going on here, but... you're not one to turn down new deckhands.</text>
+																			<modifyPursuit amount="1"/>
+																			<crewMember amount="1" class="deepone"/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_FREEMAN">
+																<text>(Free Mantis Crew) "Do not doubts traveler-salesing!"</text>
+																<event>
+																	<text>Your Free Mantis smacks the beacon in the Deep One's hand, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_SLUG">
+																<text>(Slug Crew) "Heh, typical sssscam!"</text>
+																<event>
+																	<text>Your Slug gives a hearty laugh, smacking the small device out of the Deep One's hands in the process, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. This wave seems to have the opposite effect on your Slug, as they scream and run back to the ship in horror, but you figure that they're probably just terrified of their own mechanically-gifted power. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
+															<choice hidden="true" req="LIST_CREW_ENGINEER">
+																<text>(Engineer Crew) Have your engineer inspect the beacon.</text>
+																<event>
+																	<text>Your engineer weighs the small device in their hands for a few moments, before giving it a decisive SMACK with their wrench. The beacon roars to life, and it suddenly emits a wave of soothing energy... wow, that IS de-stressing. Equally as amazed by this, the Deep One tries its best to speak amidst its sighs of relief, "This... is wonderful... Here, take... this... It's the least... I can do to... repay this... immense favor..." It slowly trudges back inside, its steps steeped in bliss, and it returns with a massive pile of goodies in hand... you're not sure if it's giving this stuff to you in its best mind, but you're not one to turn down hospitality. You accept the reward, bidding the Deep One farewell, and then begin your trek back to the ship.</text>
+																	<autoReward level="HIGH">standard</autoReward>
+																</event>
+															</choice>
 															<choice hidden="true">
 																<text>You wouldn't happen to have any... junk lying around, would you?</text>
 																<event>
 																	<text>"...Junk?" It looks around for a moment, before its gaze meets the beacon in its hands, "This... would be junk, now, I... suppose." The Deep One hands it to you, apologizes again, and you make your way back onto your ship and out of the settlement. This was a big waste of time, for the most part, but you do get to break down the beacon and get the barest amount of something out of it...</text>
-																	<modifyPursuit amount="1"/>
 																	<autoReward level="LOW">scrap_only</autoReward>
 																</event>
 															</choice>
@@ -2224,7 +3595,158 @@
 	</choice>
 </event>
 
+<ship name="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT" auto_blueprint="DDDEEP_ONE_DESTROYER_SOULPLAGUE">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT_WIN_DESTROYED"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT_WIN_DEADCREW"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT_WIN_DESTROYED">
+	<text>You're still trying to process what just happened as another roar breaks out, this time all around you, and the space outside begins to... shift? An odd darkness envelops your ship, as realization dawns on you: some impossibly large THING is trying to swallow you whole. You aren't sure what it is, or what exactly's going on, but you know you've got to get out of here, and fast!</text>
+	<playSound>ddsoulplague_assault</playSound>
+	<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddsoulplagueaura_bg</anim>
+	</backgroundObject>
+	<choice hidden="true">
+		<text>Make a break for it!</text>
+		<event>
+			<text>As you move to make your escape, the thing's tendrils crash into your ship, and more Soulplague Husks begin to flood in from the resulting breaches. They're trying to prevent your getaway!</text>
+			<boarders min="2" max="3" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT_WIN_DEADCREW">
+	<text>One of the Husks melts into a puddle on the floor before you, and you watch as its matter twists and writhes... as it takes on a new form. Rather than any being, though, it instead resembles some sort of oily weapon...</text>
+	<weapon name="GIFTLIST_DDSOULPLAGUE_WEAPONS"/>
+	<choice hidden="true">
+		<text>What in the hell is going on...?</text>
+		<event>
+			<text>You're still trying to process what just happened as another roar breaks out, this time all around you, and the space outside begins to... shift? An odd darkness envelops your ship, as realization dawns on you: some impossibly large THING is trying to swallow you whole. You aren't sure what it is, or what exactly's going on, but you know you've got to get out of here, and fast!</text>
+			<playSound>ddsoulplague_assault</playSound>
+			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+			<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>ddsoulplagueaura_bg</anim>
+			</backgroundObject>
+			<choice hidden="true">
+				<text>Make a break for it!</text>
+				<event>
+					<text>As you move to make your escape, the thing's tendrils crash into your ship, and more Soulplague Husks begin to flood in from the resulting breaches. They're trying to prevent your getaway!</text>
+					<boarders min="2" max="3" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
+					<damage amount="0" system="random" effect="breach"/>
+					<damage amount="0" system="random" effect="breach"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION" unique="true">
+	<distressBeacon/>
+	<text>Though you can't pinpoint why, you feel uneasy as you arrive at the distress beacon and are met with a Deep One ship. Its engines are off, but it otherwise appears to be powered... what exactly do they need help with?</text>
+	<ship load="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Hail the drifting ship.</text>
+		<event>
+			<text>Your hail seems to automatically connect, but you're not quite sure what you're seeing. The screen is extremely dark, though not quite completely black, and you can't really make much out... save for some figures on the opposite side of the room. A strange gurgling can be heard over the call... you know Deep Ones can be weird, but are they typically THIS weird? If they're aware that they've been hailed, they don't seem to want to act on it. Or do much of anything, really. They're just standing there.</text>
+			<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+				<text>(Soulplague Crew) Have your Soulplague-aligned crew member gurgle back.</text>
+				<event>
+					<text>Your crew member mimics the odd gurgling, and the figures in the back of the room snap their heads to face the screen. You hear as one of them roars at you, to your bewilderment, before they all collectively sprint out of the room... then, their ship's engines roar to life! Whatever the hell's going on, they seem to be making a move on your ship. Get ready!</text>
+					<playSound>ddsoulplague_assault</playSound>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>As you're preparing for battle, a Soulplague Husk teleports into the room next to you, but you realize it isn't hostile... it seems intent on joining you. You weren't aware that Husks could perform mutinies, but you figure your crew member's gurgling somehow convinced it to do so. Still, its allies don't seem to be so agreeable!</text>
+							<crewMember amount="1" class="ddsoulplague_husk_deepone"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Clear your throat.</text>
+				<event>
+					<text>You cough slightly, and the figures in the back of the room snap their heads to face the screen. You hear as one of them roars at you, to your bewilderment, before they all collectively sprint out of the room... then, their ship's engines roar to life! Whatever the hell's going on, they seem to be making a move on your ship. Get ready!</text>
+					<playSound>ddsoulplague_assault</playSound>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Cut the call. This is weird.</text>
+				<event>
+					<text>Indeed, you end communications with the strange Deep Ones and aren't once bothered by them as you prepare to leave the beacon.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Attack the ship, before they realize you're here.</text>
+		<event>
+			<text>You move to engage the Deep One ship, and readings from your ship's systems make you realize something is off... before you can hesitate, though, the opposing ship's engines roar to life! Whatever the hell's going on, they seem to be making a move on your ship. Get ready!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore them. If they want help, they can ask for it.</text>
+		<event>
+			<text>And, yet... they don't ask for it. You're left completely undisturbed as you sit there, preparing to leave the beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <eventList name="HOSTILE_DEEPONE">
+	<event load="HOSTILE_DEEPONE_DEEP"/>
+	<event load="HOSTILE_DEEPONE_DEEP"/>
+	<event load="HOSTILE_DEEPONE_DEEP"/>
 	<event load="HOSTILE_DEEPONE_DEEP"/>
 	<event load="HOSTILE_DEEPONE_THEOCRACY"/>
 	<event load="HOSTILE_DEEPONE_PIRATE"/>

@@ -4,7 +4,7 @@
             <mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DEEPONE" blue="false">
 				<text>Contact Federation command.</text>
 				<event>
-					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He looks a little puzzled for a moment but eventually speaks; "A Deep One ship? I'd figure that you'd prefer to remain neutral in this affair. Leaving deep space to save the Federation is... heroic, to say the least. I thank you, but I have more to ask of you still."</text>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He looks a little puzzled for a moment but eventually speaks; "A Deep One ship? I'd figure that you'd prefer to remain neutral in this affair. Leaving deep space to save the Federation is... heroic, to say the least. I'd thank you, but I have more to ask of you still."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>
@@ -24,7 +24,7 @@
 			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDSERAPH" blue="false">
 				<text>Contact Federation command.</text>
 				<event>
-					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully scratches his head, "A... flaming Engi ship? I can't say I'm familiar with this design..." he turns to his fellow officers, but they shake their heads, "...hmm. No matter. You're here to help, and we need all the help we can get right now."</text>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully scratches his head, "A... flaming ship? I can't say I'm familiar with such a design..." He turns to his fellow officers, but they too shake their heads, "Hmm. No matter. You're here to help, and we need all the help we can get right now."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>
@@ -34,7 +34,17 @@
 			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDHORROR" blue="false">
 				<text>Contact Federation command.</text>
 				<event>
-					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He gazes at the mesmerizing patterns that flow throughout your ship, before eventually speaking, "You're... something strange, aren't you?" Tully sighs and stares off at nothing, "We really are desperate... alright, welcome aboard."</text>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He gazes at the oddity that is your ship, eyeing it up and down before eventually speaking, "You're... something strange, aren't you?" Tully sighs and stares off at nothing, "We really are desperate... alright, welcome aboard."</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+            </mod-append:choice>
+			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDSOULPLAGUE" blue="false">
+				<text>Contact Federation command.</text>
+				<event>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. There's a concerned look on his face as he speaks, "I've heard tell from the droppoint that there's been some... complications, as a result of your ship? You seem fine enough yourself, though... I can only hope you know what you're doing. We need you in the fights ahead."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>
@@ -43,4 +53,26 @@
             </mod-append:choice>
 		</mod:findLike>
     </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="BOSS_TEXT_1">
+    <mod:findLike type="choice"><mod:selector req="PEACE"/>
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" req="ach_boss_ddseraphim_judicator">
+				<text>We fought alongside a sect of Separatists and stood against the Harmony to destroy one of its Links and free an entire sector's worth of Engi.</text>
+				<event load="BOSS_NEGOTIATE_1"/>
+			</mod-append:choice>
+		</mod:findLike>
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="BOSS_NEGOTIATE_1">
+	<mod-append:choice hidden="true" req="ach_boss_dddreadnought_of_darkness">
+		<text>We baited your fleet into overrunning a secretive sector belonging to the Deep Ones, forcing them to reconcile with the rest of reality and change their ways for the better.</text>
+		<event load="BOSS_NEGOTIATE_2"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="ach_boss_ddsoulplague_devourer">
+		<text>We stopped the proliferation of the Soulplague mattervirus, and freed the helpless Shells under its grasp.</text>
+		<event load="BOSS_NEGOTIATE_2"/>
+	</mod-append:choice>
 </mod:findName>

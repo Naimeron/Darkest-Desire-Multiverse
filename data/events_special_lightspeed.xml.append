@@ -1,11 +1,23 @@
 <mod:findName type="event" name="ATLAS_MENU">
 	<mod-append:choice hidden="true" req="SEC SECTOR_DEEPONE" blue="false">
-		<text>Proceed to the Deep One sector.</text>
+		<text>Proceed to the Deep One Sector.</text>
 		<event load="DEEPONE_WARP"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
-		<text>Proceed to the Harmony(?) sector.</text>
+		<text>Proceed to the Harmony(?) Sector.</text>
 		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DDSOULPLAGUE_UNIQUE" blue="false">
+		<text>Proceed to the Abandoned Nebula Sector.</text>
+		<event load="DDSOULPLAGUE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECRET_DDSOULPLAGUE" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDCOREMASS_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC DARKONE_DOMAIN" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDDARKONE_WARP"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -17,6 +29,18 @@
 	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
 		<text>Proceed to the Harmony(?) sector.</text>
 		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DDSOULPLAGUE_UNIQUE" blue="false">
+		<text>Proceed to the Abandoned Nebula Sector.</text>
+		<event load="DDSOULPLAGUE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECRET_DDSOULPLAGUE" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDCOREMASS_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC DARKONE_DOMAIN" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDDARKONE_WARP"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -30,6 +54,33 @@
 </event>
 
 <event name="ENTER_DISPARITY_UNIQUE">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_DDSOULPLAGUE_UNIQUE">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_DDCOREMASS">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_DDDARKONE">
 	<text load="TEXT_LIGHTSPEED"/>
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
 	<choice hidden="true">
@@ -74,6 +125,66 @@
 	</choice>
 </event>
 
+<event name="DDSOULPLAGUE_WARP">
+	<text>Name: Nebulous Dead Zone
+	Type: Uncolonized
+	Unique: True
+	Dominant Faction: None
+	Rebel Threat Level: Medium (Auto)
+	
+	Aside from a brief history of Shell occupation prior to its abandonment, this sector remains entirely uncolonized by the galaxy at large. Notable, though, is that this unoccupation is not from a lack of trying. Several factions, and many more minor parties, have attempted to enter this nebulous mass; yet no reports back have ever officially been documented. Rumors point to many things: Slug pirates hunting within the clouds, secret Shell experiments gone wrong, even talk of illegal Duskbringer activity... but nobody has ever returned to say for certain. Thus has this mysterious sector earned its name: the Nebulous Dead Zone. You should stay vigilant, lest you become its next victim.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DDSOULPLAGUE"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
+
+<event name="DDCOREMASS_WARP">
+	<text>Name: ???
+	Type: ???
+	Dominant Faction: ???
+	Rebel Threat Level: ???
+
+	Readings signify that you've yet to move anywhere, but you're evidently being pulled at hyperspeed. Wherever this wormhole is taking you, it mustn't abide by the same rules as the rest of the Multiverse...</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DDCOREMASS"/>
+	</choice>
+	<choice hidden="true" req="loc_task_accepted" blue="false">
+		<text>Your connection with C.U.R.A. is currently unavailable.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>You cannot reroute during this jump.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event>
+
+<event name="DDDARKONE_WARP">
+	<text>Name: ???
+	Type: ???
+	Dominant Faction: ???
+	Rebel Threat Level: ???
+
+	It seems you're being pulled deeper, and deeper, and deeper still into the inner regions of whatever vast space the Enlightened's void occupies. You feel more and more uneasy as your ship continues to be dragged, and dragged...</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="DARKONE_START"/>
+	</choice>
+	<choice hidden="true" req="loc_task_accepted" blue="false">
+		<text>Your connection with C.U.R.A. is currently unavailable.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>You cannot reroute during this jump.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event>
+
 <mod:findName type="event" name="REROUTE_MENU">
 	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
 		<text>Proceed to the unknown sector.</text>
@@ -101,8 +212,22 @@
 		<text>Prepare a sacrifice.</text>
 		<event>
 			<text>Do you desire to sacrifice a human life, or your scrap?</text>
-			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
-				<text>Sacrifice a human life.</text>
+			<choice req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Sacrifice one of your prepared human lives.</text>
+				<event>
+					<text>Your human sacrifice doesn't so much as stir as you sink a dagger in their chest. Their blood spills out, some of it directly onto your hands, and you remark that it feels oddly cold... but it doesn't matter. The sacrifice has been made.</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been stripped from their body.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Prepare a ritual.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Sacrifice a human life.</text>
 				<event>
 					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_HUMANSACRIFICE"/>
 					<removeCrew class="LIST_CREW_HUMAN">
@@ -115,7 +240,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="false">
+			<choice>
 				<text>Sacrifice a heap of scrap.</text>
 				<event>
 					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SCRAPSACRIFICE"/>
@@ -141,7 +266,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice hidden="true" req="LIST_CREW_DDHUMANSACRIFICE" lvl="0" max_lvl="8" blue="false">
 		<text>Perform the Ritual of the Hunt.</text>
 		<event>
 			<text>Candles lit, you kneel in front of the altar upon which the Otherworldly Tome lies. Reciting a prayer, you offer your devotion to the Dark God and make your desire known...</text>
@@ -181,6 +306,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY">
 	<text>With the sacrifice made, you're ready to perform a ritual... though you know there is little time to hesitate as your destination approaches.</text>
+	<variable name="dd_ritual_side_effect_triggered" op="set" val="0"/>
 	<choice hidden="true">
 		<text>Perform a basic ritual.</text>
 		<event>
@@ -206,6 +332,16 @@
 				</event>
 			</choice>
 			<choice hidden="true">
+				<text>Perform the Ritual of Corruption.</text>
+				<event>
+					<text>You take a spare pipe against your knee, and break it. Then, you break your other one, and your weak shoulder, and each of your ribs individually. To describe the pain as being excruciating would be an understatement, and yet, you know it to be worth it as your bones heal and a humming within your chest beckons you to realize your desire...</text>
+					<choice hidden="true">
+						<text>I desire... corruption.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CORRUPTIONPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
 				<text>Perform the Ritual of Occult Recruitment.</text>
 				<event>
 					<text>The Otherworldly Tome reads that you must meditate and conjure a picture in your head... thus, you sit down in the middle of the room, legs crossed, and raise your hands to your chest in prayer. Ready to meditate, you think on potential recruits... several faces come to you, but the specifics don't matter. You must focus on your desire...</text>
@@ -225,18 +361,18 @@
 					</choice>
 				</event>
 			</choice>
-		</event>
-	</choice>
-	<!--<choice hidden="true" req="dd_ultimamanifestationdefeated" lvl="0" max_lvl="0">
-		<text>A strange page in the Otherworldly Tome sticks out to you.</text>
-		<event>
-			<text>There's a page here that you swear you've never seen before, but it sticks out like a sore thumb. Written in cyan text, your hand is shocked as you turn to the page, and you find that the very air around you crackles with an otherworldly energy as you examine it. The page describes a challenge, and a reward for those who surpass it.</text>
 			<choice hidden="true">
-				<text>Very well, then. Accept the challenge.</text>
-				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_ULTIMACHALLENGEACCEPTED"/>
+				<text>Perform the Ritual of Resolution.</text>
+				<event>
+					<text>You close your eyes, and think of your mission... to save this reality from the Rebellion. You don't wish to sacrifice another soul for the sake of the Dark God's twisted game. It accepts this, ever eager to please, and wishes to hear your desire...</text>
+					<choice hidden="true">
+						<text>I desire... resolution.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESOLUTIONPERFORMED"/>
+					</choice>
+				</event>
 			</choice>
 		</event>
-	</choice>-->
+	</choice>
 	<choice hidden="true" req="DD_ASCENSIONRITUALSCOMPLETEDCHECKANDBEGINNING">
 		<text>(Lilith) Perform an ascension ritual.</text>
 		<event>
@@ -783,6 +919,148 @@
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="deeponecultist">
+		<text>(Enlightened Crew) Perform a proving ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedure for proving oneself to the Dark God and becoming one of its Chosen is described.</text>
+			<choice hidden="true" blue="false">
+				<text>Perform the Ritual of Divine Devotion.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the yellow text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_PRAYEROFPROVINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dddeepone_chosen">
+		<text>(Chosen Crew) Perform an enemy-locating ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a murky gray. In it, the procedure for hunting down enemies of the Dark God and reaping its favor is described.</text>
+			<choice hidden="true" blue="false">
+				<text>Perform the Ritual of Lightbreaking.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the gray text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DARKCALLINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK">
+		<text>(Ill'drythk Statue) Perform an Ill'drythk ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a fuzzy brown. In it, the procedures for growing the strength and numbers of your collective of Ill'drythk Statues are described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Rivalry.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the brown text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RIVALRYPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DD_ILLDRYTHKPALEHEARTRITUALCHECK" blue="false">
+				<text>Perform the Ritual of Mutinous Mutation.</text>
+				<event>
+					<text>Your Ill'drythk Statues stand around the Otherworldly Tome, ready to function as conduits for the ritual. From their hollow bodies, a song rings out, and the brown text within the Otherworldly Tome twists and shifts...</text>
+					<variable name="dd_paleheartritualcompleted" op="set" val="1"/>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_MUTINOUSMUTATIONPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
+		<text>(Tempest Crew) Perform a spawn-summoning ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an electric blue. In it, the procedures for summoning the Tempest's spawn and enthralling them are described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Stormcalling.</text>
+				<event>
+					<text>You recite the words of prayer to the Tempest described in the Otherworldly Tome, and you focus your mind on the type of spawn that you desire...</text>
+					<choice hidden="true">
+						<text>I desire... a Stormborn Spawn.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_STORMCALLINGPERFORMED_STORMBORN"/>
+					</choice>
+					<choice hidden="true">
+						<text>I desire... a Spawn Warden.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_STORMCALLINGPERFORMED_WARDEN"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+		<text>(Ultima Armor) Perform a cult-establishing ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a blinding white. In it, the procedure for discovering locations of interest to the Cult of the Tempest and bolstering their ranks is described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Tempestuous Expansion.</text>
+				<event>
+					<text>The Ultima Armor drones, and, with your desire known, the white text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_TEMPESTUOUSEXPANSIONPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+		<text>(Soulplague Crew) Perform a Soulplague ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an iridescent rainbow. In it, several procedures for propagating the Soulplague mattervirus and harnessing its power are described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Soul Eating.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the rainbow text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SOULEATINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Soul Weaving.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, your Soulplague crew member's skin bubbles and hums...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SOULWEAVINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Soul Firing.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the rainbow text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SOULFIRINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DD_SOULPLAGUESOULBINDINGRITUALCHECK" blue="false">
+				<text>Perform the Ritual of Soul Binding.</text>
+				<event>
+					<text>Your Soulplague crew members stand around the Otherworldly Tome, ready to function as conduits for the ritual. Their bodies begin to contort as Soulplague tentacles burst forth from them, writhing for a moment before inevitably withering, and the rainbow text within the Otherworldly Tome twists and shifts...</text>
+					<variable name="dd_soulplaguesoulbindingritualcompleted" op="set" val="1"/>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SOULBINDINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="DARKEST_GAZE_TIER1">
 		<text>(Shadowy Glimpse) Perform a ritual to increase your Devotion Level.</text>
 		<event>
@@ -903,6 +1181,10 @@
 		<text>Go to the Disparity Assault.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_DISPARITY"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true">
+		<text>Go to the Nebulous Dead Zone.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_DDSOULPLAGUE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <event name="LIGHTSPEED_SECTOR_WARP_DISPARITY">
@@ -923,6 +1205,35 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event><secretSector>SECTOR_DISPARITY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="LIGHTSPEED_SECTOR_WARP_DDSOULPLAGUE">
+	<text>Name: Nebulous Dead Zone
+	Type: Uncolonized
+	Unique: True
+	Dominant Faction: None
+	Rebel Threat Level: Medium (Auto)
+	
+	Aside from a brief history of Shell occupation prior to its abandonment, this sector remains entirely uncolonized by the galaxy at large. Notable, though, is that this unoccupation is not from a lack of trying. Several factions, and many more minor parties, have attempted to enter this nebulous mass; yet no reports back have ever officially been documented. Rumors point to many things: Slug pirates hunting within the clouds, secret Shell experiments gone wrong, even talk of illegal Duskbringer activity... but nobody has ever returned to say for certain. Thus has this mysterious sector earned its name: the Nebulous Dead Zone. You should stay vigilant, lest you become its next victim.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DDSOULPLAGUE_UNIQUE">SECTOR_GENIOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DDSOULPLAGUE_UNIQUE</secretSector></event>
 			</choice>
 		</event>
 	</choice>

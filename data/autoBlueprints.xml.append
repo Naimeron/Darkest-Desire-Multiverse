@@ -1,6 +1,13 @@
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYSTEMS_BONUS">
+    <mod-append:name>dd_corruptor</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE">
 	<mod-append:name>unique_thescarred</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_METAL">
@@ -10,7 +17,18 @@
 	<mod-append:name>disparity_engiattack</mod-append:name>
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
-	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemy</mod-append:name>
+	<mod-append:name>disparity_engidefault_beacon</mod-append:name>
+	<mod-append:name>disparity_engispeed_beacon</mod-append:name>
+	<mod-append:name>disparity_engiattack_beacon</mod-append:name>
+	<mod-append:name>disparity_engidefense_beacon</mod-append:name>
+	<mod-append:name>disparity_engihazard_beacon</mod-append:name>
+	<mod-append:name>disparity_engirainbow_beacon</mod-append:name>
+	<mod-append:name>disparity_thehunger_beacon</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_engi_beacon</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddunique_theheroine_enemy</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
 	<mod-append:name>ddseraph_engi_enemy</mod-append:name>
 	<mod-append:name>unique_thehunger_enemy</mod-append:name>
@@ -20,12 +38,145 @@
 	<mod-append:name>ddPOWEROFULTIMA_enemy</mod-append:name>
 </mod:findName>
 
+<mod:findName type="blueprintList" name="LIST_CREW_GAS">
+	<mod-append:name>ddsoulplague_husk_human</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_human_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_crystal</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_crystal_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_engi</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_engi_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_engi_beacon</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_zoltan</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_zoltan_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_orchid</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_orchid_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_mantis</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_mantis_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_rockman</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_rockman_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_slug</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_slug_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_shell</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_shell_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_lanius</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_lanius_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_deepone</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_deepone_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_ghost</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_ghost_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_leech</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_leech_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_obelisk</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_obelisk_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_shellcultist</mod-append:name>
+	<mod-append:name>ddsoulplague_shellcultist_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver_enemy</mod-append:name>
+	<mod-append:name>ddsoulplague_corruptor_tide</mod-append:name>
+	<mod-append:name>ddsoulplague_corruptor_tide_enemy</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theaberration_enemy</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
+	<mod-append:name>ddseraph_shell_enemy</mod-append:name>
+	<mod-append:name>spacetear</mod-append:name>
+	<mod-append:name>dddark_obelisk</mod-append:name>
+	<mod-append:name>dddark_obelisk_enemy</mod-append:name>
+	<mod-append:name>darkgodtendrils</mod-append:name>
+	<mod-append:name>unique_thescarredascended</mod-append:name>
+	<mod-append:name>disparity_engidefault_beacon</mod-append:name>
+	<mod-append:name>disparity_engispeed_beacon</mod-append:name>
+	<mod-append:name>disparity_engiattack_beacon</mod-append:name>
+	<mod-append:name>disparity_engidefense_beacon</mod-append:name>
+	<mod-append:name>disparity_engihazard_beacon</mod-append:name>
+	<mod-append:name>disparity_engirainbow_beacon</mod-append:name>
+	<mod-append:name>disparity_thehunger_beacon</mod-append:name>
+	<mod-append:name>ddtempest_thunder_blight</mod-append:name>
+	<mod-append:name>ddtempest_living_lightning</mod-append:name>
+	<mod-append:name>ddtempest_roiling_storm</mod-append:name>
+	<mod-append:name>ddtempest_roiling_remnant</mod-append:name>
+	<mod-append:name>ddnightmare_rift</mod-append:name>
+	<mod-append:name>ddnightmare_rift_a</mod-append:name>
+	<mod-append:name>ddnightmare_rift_b</mod-append:name>
+	<mod-append:name>ddnightmare_rift_c</mod-append:name>
+	<mod-append:name>ddnightmare_rift_ad</mod-append:name>
+	<mod-append:name>ddnightmare_rift_ae</mod-append:name>
+	<mod-append:name>ddnightmare_rift_af</mod-append:name>
+	<mod-append:name>ddnightmare_rift_ag</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bd</mod-append:name>
+	<mod-append:name>ddnightmare_rift_be</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bf</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bg</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cd</mod-append:name>
+	<mod-append:name>ddnightmare_rift_ce</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cf</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cg</mod-append:name>
+	<mod-append:name>ddnightmare_rift_adj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_aej</mod-append:name>
+	<mod-append:name>ddnightmare_rift_afj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_agj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bdj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bej</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bfj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_bgj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cdj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cej</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cfj</mod-append:name>
+	<mod-append:name>ddnightmare_rift_cgj</mod-append:name>
+	<mod-append:name>nightmarish_crawler</mod-append:name>
+	<mod-append:name>nightmarish_terror</mod-append:name>
+	<mod-append:name>nightmarish_priest</mod-append:name>
+	<mod-append:name>nightmarish_greaterpriest</mod-append:name>
+	<mod-append:name>nightmarish_stalker</mod-append:name>
+	<mod-append:name>nightmarish_engi</mod-append:name>
+	<mod-append:name>nightmarish_greatercrawler</mod-append:name>
+	<mod-append:name>nightmarish_greatermass</mod-append:name>
+	<mod-append:name>nightmarish_mass</mod-append:name>
+	<mod-append:name>nightmarish_martyr</mod-append:name>
+	<mod-append:name>nightmarish_greatermartyr</mod-append:name>
+	<mod-append:name>ddmanifestationofdetermination</mod-append:name>
+	<mod-append:name>ddmanifestationofbravery</mod-append:name>
+	<mod-append:name>ddmanifestationofintegrity</mod-append:name>
+	<mod-append:name>ddmanifestationofintegrity_enemy</mod-append:name>
+	<mod-append:name>ddmanifestationofjustice</mod-append:name>
+	<mod-append:name>ddmanifestationofkindness</mod-append:name>
+	<mod-append:name>ddmanifestationofpatience</mod-append:name>
+	<mod-append:name>ddmanifestationofperseverance</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH_RANDOM">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH_RANDOM_ONLY">
 	<mod-append:name>blobdeepone</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_TRANSFORMED">
 	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="MV_CREW_NO2">
+	<mod-append:name>blobdeepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_PIRATE_RANDOM">
+	<mod-append:name>deepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_SMUGGLER_RANDOM">
+	<mod-append:name>deepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_SLAVER_RANDOM">
+	<mod-append:name>deepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_SLAVES_GOOD">
+	<mod-append:name>deepone</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
@@ -39,6 +190,19 @@
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
 	<mod-append:name>BOMB_DARKGOD</mod-append:name>
 	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
+	<mod-append:name>DDLASER_CHARGE_DARKGOD</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM_CHAOS</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL">
@@ -49,6 +213,13 @@
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
 	<mod-append:name>DRONE_MINISHROUD</mod-append:name>
+	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFAULT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_SPEED</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
@@ -62,6 +233,19 @@
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
 	<mod-append:name>BOMB_DARKGOD</mod-append:name>
 	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
+	<mod-append:name>DDLASER_CHARGE_DARKGOD</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM_CHAOS</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL_CRAPBUCKET">
@@ -72,6 +256,13 @@
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
 	<mod-append:name>DRONE_MINISHROUD</mod-append:name>
+	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFAULT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_SPEED</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
@@ -79,11 +270,27 @@
 	<mod-append:name>deeponecultist</mod-append:name>
 	<mod-append:name>disparity_engidefault</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
+	<mod-append:name>dddeepone_chosen</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_human</mod-append:name>
+	<mod-append:name>ddsoulplague_shellcultist</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE_CRAPBUCKET">
 	<mod-append:name>unique_thescarred</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="MV_CREW_ALL">
+	<mod-append:name>deepone</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="MV_CREW_BRICK">
+	<mod-append:name>deepone</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_BOMBS">
@@ -97,25 +304,86 @@
 <mod:findName type="blueprintList" name="BLUELIST_ION">
 	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>DDARTILLERY_PALE_ION</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_BEAMS_ALL">
 	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
 	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_FOCUS_ALL">
+	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
 	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
 	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
+	<mod-append:name>DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NOMISSILE">
+	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
+	<mod-append:name>DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NODAMAGE">
 	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
+	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
+	<mod-append:name>DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE</mod-append:name>
+	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_MISSILES_ALL">
+	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDARTILLERY_ECLIPTIC_EXTINCTION</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_MISSILES_DAMAGE">
+	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDARTILLERY_ECLIPTIC_EXTINCTION</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_CRYSTAL">
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_FIRE_ALL">
+	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_FIRE_NONBALLISTIC">
+	<mod-append:name>DDDIVINE_DUALITY</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_DRONES_BEAM">
+	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING">
@@ -134,13 +402,22 @@
 	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
 </mod:findName>
 
+<mod:findName type="blueprintList" name="LIST_CREW_SHELL">
+	<mod-append:name>ddsoulplague_shellcultist</mod-append:name>
+	<mod-append:name>ddsoulplague_shellcultist_enemy</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theaberration_enemy</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
+	<mod-append:name>ddseraph_shell_enemy</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="LIST_CREW_ENGI">
 	<mod-append:name>disparity_engidefault</mod-append:name>
 	<mod-append:name>disparity_engispeed</mod-append:name>
 	<mod-append:name>disparity_engiattack</mod-append:name>
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
-	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemy</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
 	<mod-append:name>ddseraph_engi_enemy</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
@@ -158,7 +435,7 @@
 	<mod-append:name>disparity_engiattack</mod-append:name>
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
-	<mod-append:name>disparity_engihazard_enemynotransform</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemy</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
 	<mod-append:name>unique_thehunger_enemy</mod-append:name>
 </mod:findName>
@@ -169,7 +446,7 @@
 	<name>disparity_engiattack</name>
 	<name>disparity_engidefense</name>
 	<name>disparity_engihazard</name>
-	<name>disparity_engihazard_enemynotransform</name>
+	<name>disparity_engihazard_enemy</name>
 	<name>unique_thehunger</name>
 	<name>unique_thehunger_enemy</name>
 </blueprintList>
@@ -180,12 +457,14 @@
 	<name>disparity_engiattack</name>
 	<name>disparity_engidefense</name>
 	<name>disparity_engihazard</name>
-	<name>disparity_engihazard_enemynotransform</name>
+	<name>disparity_engihazard_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_MORPH_DEEPONE">
 	<name>deepone</name>
 	<name>deeponecultist</name>
+	<name>dddeepone_chosen</name>
+	<name>ddunique_theheroine</name>
 	<name>unique_thescarred</name>
 </blueprintList>
 
@@ -204,16 +483,22 @@
 	<name>DISPARITY_LIBERATORTOG_BOARDER</name>
 </blueprintList>
 
-<mod:findName type="blueprintList" name="LIST_CREW_MORPH_ENGI">
-	<mod-append:name>disparity_engidefault</mod-append:name>
-	<mod-append:name>disparity_engispeed</mod-append:name>
-	<mod-append:name>disparity_engiattack</mod-append:name>
-	<mod-append:name>disparity_engidefense</mod-append:name>
-	<mod-append:name>disparity_engihazard</mod-append:name>
-	<mod-append:name>ddseraph_engi</mod-append:name>
-	<mod-append:name>unique_thehunger</mod-append:name>
-	<mod-append:name>unique_thehunger_enemy</mod-append:name>
-</mod:findName>
+<blueprintList name="LIST_CREW_MORPH_DDDISPARITYADMINISTRATOR">
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
+	<name>DDDISPARITY_ADMINISTRATOR_SPEED</name>
+	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
+	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDTEMPEST_AUGMENTBLESSINGS">
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER1</name>
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER2</name>
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER3</name>
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER4</name>
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER5</name>
+	<name>DDTEMPEST_BLESSING_SHIELD_TIER6</name>
+</blueprintList>
 
 <mod:findName type="blueprintList" name="LIST_JUMPSPACE_EQUIPMENT">
 	<mod-append:name>DARKGOD_CURSED_BOOK</mod-append:name>
@@ -226,17 +511,45 @@
 	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFAULT</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_SPEED</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
+	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
 </mod:findName>
 
 <blueprintList name="GIFTLIST_DARKGOD_WEAPONS">
 	<name>SHOTGUN_DARKGOD</name>
 	<name>LASER_DARKGOD</name>
 	<name>BOMB_DARKGOD</name>
+	<name>DD_BEAM_INSTANT_DARKGOD</name>
+	<name>DDLASER_CHARGE_DARKGOD</name>
+</blueprintList>
+
+<blueprintList name="GIFTLIST_DDSOULPLAGUE_WEAPONS">
+	<name>DDPHASE_SOULPLAGUE</name>
+	<name>DDFOCUS_SOULPLAGUE</name>
+	<name>DDSHOTGUN_SOULPLAGUE</name>
+	<name>DDMISSILES_SOULPLAGUE</name>
 </blueprintList>
 
 <blueprintList name="GIFTLIST_DARKGOD_DRONES">
 	<name>DRONE_MINISHROUD</name>
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDDARKGOD_DRONES">
+	<name>DRONE_MINISHROUD</name>
+	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
+	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
+	<name>DDDISPARITY_ADMINISTRATOR_SPEED</name>
+	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
+	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDDARKEST_GAZE">
@@ -249,7 +562,20 @@
 	<name>deepone</name>
 	<name>deeponecultist</name>
 	<name>deeponecultist_enemy</name>
+	<name>dddeepone_chosen</name>
+	<name>ddunique_theheroine</name>
+	<name>ddunique_theheroine_enemy</name>
 	<name>unique_thescarred</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDSERAPHIM">
+	<name>ddseraph_engi</name>
+	<name>ddseraph_shell</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDSERAPHIM_ENEMY">
+	<name>ddseraph_engi_enemy</name>
+	<name>ddseraph_shell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_HAPPYHOLIDAYS">
@@ -262,6 +588,8 @@
 	<name>DEEP_ONE_FIGHTER</name>
 	<name>DEEP_ONE_SCOUT</name>
 	<name>DEEP_ONE_DESTROYER</name>
+	<name>DDDEEP_ONE_BATTLESHIP</name>
+	<name>DDDEEP_ONE_SKIRMISHER</name>
 </blueprintList>
 
 <blueprintList name="LIST_SHIPS_ENLIGHTENED">
@@ -269,6 +597,67 @@
 	<name>DEEP_ONE_FIGHTER_CULTIST</name>
 	<name>DEEP_ONE_SCOUT_CULTIST</name>
 	<name>DEEP_ONE_DESTROYER_CULTIST</name>
+	<name>DDDEEP_ONE_BATTLESHIP_CULTIST</name>
+	<name>DDDEEP_ONE_SKIRMISHER_CULTIST</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDCHOSEN">
+	<name>DDDEEP_ONE_CARRIER_ELITE</name>
+	<name>DDDEEP_ONE_DESTROYER_ELITE</name>
+	<name>DDDEEP_ONE_FIGHTER_ELITE</name>
+	<name>DDDEEP_ONE_SCOUT_ELITE</name>
+	<name>DDDEEP_ONE_BATTLESHIP_ELITE</name>
+	<name>DDDEEP_ONE_SKIRMISHER_ELITE</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDILLDRYTHK">
+	<name>DDILLDRYTHK_NEST</name>
+	<name>DDILLDRYTHK_PUFFBALL</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDTEMPEST">
+	<name>DDTEMPEST_DEEP_ONE_CARRIER</name>
+	<name>DDTEMPEST_VAMPWEED_TRAPPER</name>
+	<name>DDTEMPEST_MANTIS_MARAUDER</name>
+	<name>DDTEMPEST_ENGI_PROTECTOR</name>
+	<name>DDTEMPEST_UNION_OUTRIDER</name>
+	<name>DDTEMPEST_SLUG_INTERCEPTOR</name>
+	<name>DDTEMPEST_ROCK_ENFORCER</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDSOULPLAGUE_NORMAL">
+	<name>DDSOULPLAGUE_HUNTER</name>
+	<name>DDSOULPLAGUE_JUGGERNAUT</name>
+	<name>DDSOULPLAGUE_STALKER</name>
+	<name>DDSOULPLAGUE_SCAVENGER</name>
+	<name>DDSOULPLAGUE_PROWLER</name>
+	<name>DDSOULPLAGUE_INCUBATOR</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDSOULPLAGUE_HUSKWEAVER">
+	<name>DDSOULPLAGUE_HUNTER_HUSKWEAVER</name>
+	<name>DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER</name>
+	<name>DDSOULPLAGUE_STALKER_HUSKWEAVER</name>
+	<name>DDSOULPLAGUE_SCAVENGER_HUSKWEAVER</name>
+	<name>DDSOULPLAGUE_PROWLER_HUSKWEAVER</name>
+	<name>DDSOULPLAGUE_INCUBATOR_HUSKWEAVER</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDSOULPLAGUE_CORRUPTION">
+	<name>MU_UNION_DROPSHIP_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_FED_DESTROYER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_ZOLTAN_ENFORCER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_VAMPWEED_BOMBER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_FREEMANTIS_FIGHTER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_SHELL_ABDUCTOR_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_SHELL_SKIRMISHER_SOLDIER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_SHELL_FIGHTER_SOLDIER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_GHOST_REBEL_FIGHTER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_GHOST_ROCK_ASSAULT_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_DYNASTY_SCOUT_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_SLUG_ABDUCTOR_DDSOULPLAGUE_CORRUPTION</name>
+	<name>MU_LANIUS_RAVAGER_DDSOULPLAGUE_CORRUPTION</name>
+	<name>DDDEEP_ONE_BATTLESHIP_DDSOULPLAGUE_CORRUPTION</name>
 </blueprintList>
 
 <blueprintList name="LIST_SHIPS_DISPARITY_NORMAL">
@@ -296,9 +685,13 @@
 	<name>DISPARITY_ENGI_SCOUT_NO2</name>
 </blueprintList>
 
+<mod:findName type="blueprintList" name="LIST_MULTIVERSE_TRAVELERS">
+	<mod-append:name>DDMT_DEEP_ONE_1</mod-append:name>
+	<mod-append:name>DDMT_DEEP_ONE_2</mod-append:name>
+</mod:findName>
+
 <blueprintList name="LIST_WEAPONS_DEEPONES">
 	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2_ENEMY</name>
 	<name>LASER_BURST_3</name>
 	<name>LASER_HEAVY_1</name>
 	<name>BEAM_1</name>
@@ -320,7 +713,6 @@
 	<name>ION_TRI</name>
 	<name>ION_FIRE</name>
 	<name>ION_BIO</name>
-	<name>LASER_PIERCE_ENEMY</name>
 	<name>LASER_FROST_1</name>
 	<name>BEAM_STUN</name>
 	<name>ENERGY_1</name>
@@ -344,6 +736,7 @@
 	<name>SHOTGUN_DARKGOD</name>
 	<name>LASER_DARKGOD</name>
 	<name>BOMB_DARKGOD</name>
+	<name>DDLASER_CHARGE_DARKGOD</name>
 	<name>ION_1</name>
 	<name>ION_2</name>
 	<name>ION_3</name>
@@ -365,6 +758,49 @@
 	<name>ENERGY_HULL</name>
 	<name>ENERGY_STUN</name>
 	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_DDSOULPLAGUE">  
+	<name>LASER_HULL_1_ENEMY</name>
+	<name>LASER_HULL_1_ENEMY</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_HULL_3</name>
+	<name>LASER_HULL_3</name>
+	<name>LASER_HULL_CHAINGUN</name>
+	<name>LASER_HULL_CHAINGUN</name>
+	<name>BEAM_HULL</name>
+	<name>BEAM_HULL</name>
+	<name>BEAM_HULL_2</name>
+	<name>BEAM_HULL_2</name>
+	<name>DDSHOTGUN_SOULPLAGUE_ENEMY</name>
+	<name>DDMISSILES_SOULPLAGUE_ENEMY</name>
+	<name>DDFOCUS_SOULPLAGUE_ENEMY</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_3</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_CHAINGUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_CHAIN</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_BREACH</name>
+	<name>BOMB_BREACH_1_ENEMY</name>
+	<name>BOMB_1_ENEMY</name>
+	<name>FOCUS_CHAIN_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_FROST_2</name>
+	<name>BEAM_BIO</name>
+	<name>BEAM_STUN</name>
+	<name>LASER_BIO</name>
+	<name>LASER_STUN</name>
+	<name>LASER_CHARGEGUN_ENEMY</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_CHAINGUN_ENEMY</name>
+	<name>LASER_CHAINGUN_2</name>
 </blueprintList>
 
 <blueprintList name="SHOP_DEEPONE_ITEM_WEAPONS">
@@ -403,8 +839,10 @@
 
 <blueprintList name="SHOP_DISPARITY_ITEM_DRONES"> 
 	<name>BATTLETOG_DEFEND</name>
+	<name>REPAIR</name>
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
 	<name>DRONE_MINISHROUD</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
 </blueprintList>
 
 <blueprintList name="LIST_DRONES_DISPARITY"> 
@@ -417,6 +855,11 @@
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
 	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
 	<name>DRONE_MINISHROUD</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
+	<name>DDDISPARITY_ADMINISTRATOR_SPEED</name>
+	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
+	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
 </blueprintList>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE_RHYME">
@@ -425,11 +868,16 @@
 	<mod-append:name>disparity_engiattack</mod-append:name>
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>dddeepone_chosen</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_UNIQUE">
 	<mod-append:name>unique_thescarred</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ELITE">
@@ -443,6 +891,8 @@
 	<name>SHOTGUN_DARKGOD</name>
 	<name>LASER_DARKGOD</name>
 	<name>BOMB_DARKGOD</name>
+	<name>DD_BEAM_INSTANT_DARKGOD</name>
+	<name>DDLASER_CHARGE_DARKGOD</name>
 	<name>DEEPONE_LIGHTS</name>
 	<name>DEEPONE_LIGHTS_LOCKED</name>
 	<name>DREAD_LIGHTS</name>
@@ -455,10 +905,24 @@
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
 	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
 	<name>DRONE_MINISHROUD</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
+	<name>DDDISPARITY_ADMINISTRATOR_SPEED</name>
+	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
+	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
+	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
 	<name>ARTILLERY_DISPARITY_LIFETAKER</name>
 	<name>LASER_DISPARITY_LOOT</name>
 	<name>DISPARITY_CRYSTAL_ARMOR</name>
 	<name>DISPARITY_CRYSTAL_ARMOR_LOCKED</name>
+</blueprintList>
+
+<blueprintList name="JUDGELIST_ROCK_DDSOULPLAGUE_GEAR">
+	<name>DDPHASE_SOULPLAGUE</name>
+	<name>DDFOCUS_SOULPLAGUE</name>
+	<name>DDSHOTGUN_SOULPLAGUE</name>
+	<name>DDMISSILES_SOULPLAGUE</name>
+	<name>DDHELLRAISER_HULL_LOOT</name>
+	<name>DDHELLRAISER_FIRE_LOOT</name>
 </blueprintList>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_RAREELITE">
@@ -467,15 +931,29 @@
 	<mod-append:name>disparity_engiattack</mod-append:name>
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>dddeepone_chosen</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_SELITE">
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ROCK_TRANSPORT_LOOT">
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
+	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="JUDGELIST_ROCK_RENEGADE_LOOT">
+	<mod-append:name>DDDEEP_ONE_SHOTGUN</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
+	<mod-append:name>DDPHASE_SERAPHIM_CHAOS</mod-append:name>
+	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE">
@@ -485,6 +963,8 @@
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>dddeepone_chosen</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE_FIRE">
@@ -494,11 +974,15 @@
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_PARAGON_UNIQUE">
 	<mod-append:name>unique_thescarred</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
@@ -510,6 +994,7 @@
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
 	<mod-append:name>deeponecultist</mod-append:name>
 	<mod-append:name>deepone</mod-append:name>
 	<mod-append:name>ddultimaarmor</mod-append:name>
@@ -544,11 +1029,46 @@
 	<mod-append:name>enlightened_horror_cej</mod-append:name>
 	<mod-append:name>enlightened_horror_cfj</mod-append:name>
 	<mod-append:name>enlightened_horror_cgj</mod-append:name>
+	<mod-append:name>dddeepone_chosen</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_human</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_crystal</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_engi</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_zoltan</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_orchid</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_mantis</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_rockman</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_slug</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_shell</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_lanius</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_deepone</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_ghost</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_leech</mod-append:name>
+	<mod-append:name>ddsoulplague_husk_obelisk</mod-append:name>
+	<mod-append:name>ddsoulplague_shellcultist</mod-append:name>
+	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>ddsoulplague_corruptor_tide</mod-append:name>
+	<mod-append:name>ddsoulplague_corruptor_tide_enemy</mod-append:name>
+	<mod-append:name>ddunique_theaberration</mod-append:name>
+	<mod-append:name>ddilldrythk_statue</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_cinderbark</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_frostwood</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_ironbound</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_leafhost</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_toxblood</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_voidroot</mod-append:name>
+	<mod-append:name>ddunique_theheroine</mod-append:name>
+	<mod-append:name>ddtempest_spawn_warden</mod-append:name>
+	<mod-append:name>ddtempest_spawn_warden_praying</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
 	<mod-append:name>happyholidays</mod-append:name>
 	<mod-append:name>happyholidays_healing</mod-append:name>
+	<mod-append:name>ddunique_theminister</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_ENGINEER">
+	<mod-append:name>ddunique_theminister</mod-append:name>
 </mod:findName>
 
 <blueprintList name="LIST_DDNIGHTMARES">
@@ -704,6 +1224,8 @@
 	<name>ddnightmare_rift_cfj</name>
 	<name>ddnightmare_rift_cgj</name>
 	<name>spacetear</name>
+	<name>dddark_obelisk</name>
+	<name>dddark_obelisk_enemy</name>
 	<name>darkgodtendrils</name>
 	<name>unique_thescarredascended</name>
 	<name>disparity_engidefault_beacon</name>
@@ -723,6 +1245,287 @@
 	<name>ddtempest_living_lightning</name>
 	<name>ddtempest_roiling_storm</name>
 	<name>ddtempest_roiling_remnant</name>
+	<name>dddevouring_shadow</name>
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_engi_beacon</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_husk_obelisk</name>
+	<name>ddsoulplague_husk_crystal_enemy</name>
+	<name>ddsoulplague_husk_deepone_enemy</name>
+	<name>ddsoulplague_husk_engi_enemy</name>
+	<name>ddsoulplague_husk_ghost_enemy</name>
+	<name>ddsoulplague_husk_lanius_enemy</name>
+	<name>ddsoulplague_husk_leech_enemy</name>
+	<name>ddsoulplague_husk_mantis_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_husk_rockman_enemy</name>
+	<name>ddsoulplague_husk_shell_enemy</name>
+	<name>ddsoulplague_husk_slug_enemy</name>
+	<name>ddsoulplague_husk_zoltan_enemy</name>
+	<name>ddsoulplague_husk_human_enemy</name>
+	<name>ddsoulplague_husk_obelisk_enemy</name>
+	<name>ddsoulplague_huskweaver</name>
+	<name>ddsoulplague_huskweaver_enemy</name>
+	<name>ddsoulplague_corruptor_tide</name>
+	<name>ddsoulplague_corruptor_tide_enemy</name>
+	<name>ddilldrythk_statue</name>
+	<name>ddilldrythk_statue_cinderbark</name>
+	<name>ddilldrythk_statue_frostwood</name>
+	<name>ddilldrythk_statue_ironbound</name>
+	<name>ddilldrythk_statue_leafhost</name>
+	<name>ddilldrythk_statue_toxblood</name>
+	<name>ddilldrythk_statue_voidroot</name>
+	<name>ddmanifestationofdetermination</name>
+	<name>ddmanifestationofbravery</name>
+	<name>ddmanifestationofintegrity</name>
+	<name>ddmanifestationofintegrity_enemy</name>
+	<name>ddmanifestationofjustice</name>
+	<name>ddmanifestationofkindness</name>
+	<name>ddmanifestationofpatience</name>
+	<name>ddmanifestationofperseverance</name>
+	<name>ddeclipticextinctioncrew</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDDARK_OBELISK_ENTITIES">
+	<name>ddsoulplague_corruptor_tide</name>
+	<name>ddsoulplague_huskweaver</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_shellcultist</name>
+	<name>darkgodtendrils</name>
+	<name>dddevouring_shadow</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_stormborn_spawn</name>
+	<name>deepone</name>
+	<name>dddeepone_chosen</name>
+	<name>disparity_engiattack</name>
+	<name>disparity_engispeed</name>
+	<name>ddseraph_engi</name>
+	<name>ddseraph_shell</name>
+	<name>ddilldrythk_statue</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDDARK_OBELISK_ENTITIES_ENEMY">
+	<name>ddsoulplague_corruptor_tide_enemy</name>
+	<name>ddsoulplague_huskweaver_enemy</name>
+	<name>ddsoulplague_husk_human_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_shellcultist_enemy</name>
+	<name>darkgodtendrils</name>
+	<name>dddevouring_shadow</name>
+	<name>ddtempest_living_lightning</name>
+	<name>ddtempest_roiling_storm</name>
+	<name>ddtempest_thunder_blight</name>
+	<name>ddtempest_stormborn_spawn_enemy</name>
+	<name>deepone</name>
+	<name>dddeepone_chosen</name>
+	<name>disparity_engiattack</name>
+	<name>disparity_engispeed</name>
+	<name>ddseraph_engi_enemy</name>
+	<name>ddseraph_shell_enemy</name>
+	<name>ddilldrythk_statue</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDCREW_ILLDRYTHK">
+	<name>ddilldrythk_statue</name>
+	<name>ddilldrythk_statue_cinderbark</name>
+	<name>ddilldrythk_statue_frostwood</name>
+	<name>ddilldrythk_statue_ironbound</name>
+	<name>ddilldrythk_statue_leafhost</name>
+	<name>ddilldrythk_statue_toxblood</name>
+	<name>ddilldrythk_statue_voidroot</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUE_HUSKS_ALL">
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_husk_obelisk</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUE_HUSKS_NOHUMAN">
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUE_HUSKS_NOHUMAN_ENEMY">
+	<name>ddsoulplague_husk_crystal_enemy</name>
+	<name>ddsoulplague_husk_deepone_enemy</name>
+	<name>ddsoulplague_husk_engi_enemy</name>
+	<name>ddsoulplague_husk_ghost_enemy</name>
+	<name>ddsoulplague_husk_lanius_enemy</name>
+	<name>ddsoulplague_husk_leech_enemy</name>
+	<name>ddsoulplague_husk_mantis_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_husk_rockman_enemy</name>
+	<name>ddsoulplague_husk_shell_enemy</name>
+	<name>ddsoulplague_husk_slug_enemy</name>
+	<name>ddsoulplague_husk_zoltan_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUE_ALIGNED">
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_husk_obelisk</name>
+	<name>ddsoulplague_husk_crystal_enemy</name>
+	<name>ddsoulplague_husk_deepone_enemy</name>
+	<name>ddsoulplague_husk_engi_enemy</name>
+	<name>ddsoulplague_husk_ghost_enemy</name>
+	<name>ddsoulplague_husk_lanius_enemy</name>
+	<name>ddsoulplague_husk_leech_enemy</name>
+	<name>ddsoulplague_husk_mantis_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_husk_rockman_enemy</name>
+	<name>ddsoulplague_husk_shell_enemy</name>
+	<name>ddsoulplague_husk_slug_enemy</name>
+	<name>ddsoulplague_husk_zoltan_enemy</name>
+	<name>ddsoulplague_husk_human_enemy</name>
+	<name>ddsoulplague_husk_obelisk_enemy</name>
+	<name>ddsoulplague_huskweaver</name>
+	<name>ddsoulplague_huskweaver_enemy</name>
+	<name>ddsoulplague_corruptor_tide</name>
+	<name>ddsoulplague_corruptor_tide_enemy</name>
+	<name>ddunique_theaberration</name>
+	<name>ddunique_theaberration_enemy</name>
+	<name>ddsoulplague_shellcultist</name>
+	<name>ddsoulplague_shellcultist_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUE_ALIGNED_NOSHELL">
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_husk_obelisk</name>
+	<name>ddsoulplague_husk_crystal_enemy</name>
+	<name>ddsoulplague_husk_deepone_enemy</name>
+	<name>ddsoulplague_husk_engi_enemy</name>
+	<name>ddsoulplague_husk_ghost_enemy</name>
+	<name>ddsoulplague_husk_lanius_enemy</name>
+	<name>ddsoulplague_husk_leech_enemy</name>
+	<name>ddsoulplague_husk_mantis_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_husk_rockman_enemy</name>
+	<name>ddsoulplague_husk_shell_enemy</name>
+	<name>ddsoulplague_husk_slug_enemy</name>
+	<name>ddsoulplague_husk_zoltan_enemy</name>
+	<name>ddsoulplague_husk_human_enemy</name>
+	<name>ddsoulplague_husk_obelisk_enemy</name>
+	<name>ddsoulplague_huskweaver</name>
+	<name>ddsoulplague_huskweaver_enemy</name>
+	<name>ddsoulplague_corruptor_tide</name>
+	<name>ddsoulplague_corruptor_tide_enemy</name>
+	<name>ddunique_theaberration</name>
+	<name>ddunique_theaberration_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUERANDOM_SUMMON">
+	<name>ddsoulplague_husk_crystal</name>
+	<name>ddsoulplague_husk_deepone</name>
+	<name>ddsoulplague_husk_engi</name>
+	<name>ddsoulplague_husk_ghost</name>
+	<name>ddsoulplague_husk_lanius</name>
+	<name>ddsoulplague_husk_leech</name>
+	<name>ddsoulplague_husk_mantis</name>
+	<name>ddsoulplague_husk_orchid</name>
+	<name>ddsoulplague_husk_rockman</name>
+	<name>ddsoulplague_husk_shell</name>
+	<name>ddsoulplague_husk_slug</name>
+	<name>ddsoulplague_husk_zoltan</name>
+	<name>ddsoulplague_husk_human</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY">
+	<name>ddsoulplague_husk_crystal_enemy</name>
+	<name>ddsoulplague_husk_deepone_enemy</name>
+	<name>ddsoulplague_husk_engi_enemy</name>
+	<name>ddsoulplague_husk_ghost_enemy</name>
+	<name>ddsoulplague_husk_lanius_enemy</name>
+	<name>ddsoulplague_husk_leech_enemy</name>
+	<name>ddsoulplague_husk_mantis_enemy</name>
+	<name>ddsoulplague_husk_orchid_enemy</name>
+	<name>ddsoulplague_husk_rockman_enemy</name>
+	<name>ddsoulplague_husk_shell_enemy</name>
+	<name>ddsoulplague_husk_slug_enemy</name>
+	<name>ddsoulplague_husk_zoltan_enemy</name>
+	<name>ddsoulplague_husk_human_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDHEROINEMANIFESTATION_SUMMON">
+	<name>ddmanifestationofdetermination</name>
+	<name>ddmanifestationofbravery</name>
+	<name>ddmanifestationofintegrity</name>
+	<name>ddmanifestationofjustice</name>
+	<name>ddmanifestationofkindness</name>
+	<name>ddmanifestationofpatience</name>
+	<name>ddmanifestationofperseverance</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDHEROINEMANIFESTATION_SUMMON_ENEMY">
+	<name>ddmanifestationofdetermination</name>
+	<name>ddmanifestationofbravery</name>
+	<name>ddmanifestationofintegrity_enemy</name>
+	<name>ddmanifestationofjustice</name>
+	<name>ddmanifestationofkindness</name>
+	<name>ddmanifestationofpatience</name>
+	<name>ddmanifestationofperseverance</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDHUMANSACRIFICE">
+	<name>ddhuman_sacrifice</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_DDULTIMAARMOR">
@@ -733,6 +1536,7 @@
 </blueprintList>
 
 <blueprintList name="LIST_CREW_DDTEMPEST_ALIGNED">
+	<name>ddunique_theminister</name>
 	<name>ddultimaarmor</name>
 	<name>ddultimaarmor_enemy</name>
 	<name>ddPOWEROFULTIMA</name>
@@ -743,9 +1547,12 @@
 	<name>ddtempest_living_lightning</name>
 	<name>ddtempest_roiling_storm</name>
 	<name>ddtempest_roiling_remnant</name>
+	<name>ddtempest_spawn_warden</name>
+	<name>ddtempest_spawn_warden_praying</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDTEMPEST_STORMOMEN">
+	<name>ddunique_theminister</name>
 	<name>ddultimaarmor</name>
 	<name>ddultimaarmor_enemy</name>
 	<name>ddtempest_stormborn_spawn</name>
@@ -1019,13 +1826,85 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DEEPONE_LIGHTS" />
 </shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_SKIRMISHER" layout="dddeep_one_skirmisher" img="dddeep_one_skirmisher">
+	<class>Deep One Skirmisher</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="6" start="false" />
+		<engines power="1" max="3" room="2" start="true" />
+		<mind power="1" max="2" room="5" start="false" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="2" max="7" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="5" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_BATTLESHIP" layout="dddeep_one_battleship" img="dddeep_one_battleship">
+	<class>Deep One Battleship</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="6" start="true" />
+		<engines power="1" max="2" room="7" start="true" />
+		<hacking power="1" max="2" room="10" start="false" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="2" room="11" start="true" />
+		<pilot power="1" max="2" room="12" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="2" max="10" room="0" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="6" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="4" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="8" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_DESTROYER_SOULPLAGUE" layout="deep_one_destroyer" img="deep_one_destroyer">
+	<class>Deep One Destroyer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="false" />
+		<drones power="2" max="4" room="9" start="true" />
+		<engines power="1" max="2" room="1" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="10" room="11" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="4" count="2" load="LIST_DRONES_ENEMY_COMBAT" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="4" max="7" class="ddsoulplague_husk_deepone_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
 <shipBlueprint name="DEEP_ONE_FIGHTER_CULTIST" layout="deep_one_fighter_cultist" img="deep_one_fighter_cultist">
 	<class>Enlightened Fighter</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="0" start="true" />
-		<drones power="1" max="2" room="7" start="true" />
+		<drones power="1" max="4" room="7" start="true" />
 		<engines power="1" max="2" room="2" start="true" />
 		<medbay power="1" max="3" room="5" start="true" />
 		<mind power="1" max="2" room="6" start="false" />
@@ -1037,10 +1916,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="3" count="2">
-		<drone name="BATTLETOG_DEFEND" />
-		<drone name="BATTLETOG_DEFEND" />
-	</droneList>
+	<droneList drones="3" count="2" load="LIST_DRONES_ENEMY_CREW" />
 	<health amount="10" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="6" class="deepone" />
@@ -1079,7 +1955,7 @@
 	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="4" start="true" />
-		<drones power="2" max="6" room="7" start="true" />
+		<drones power="1" max="6" room="7" start="true" />
 		<engines power="1" max="1" room="10" start="true" />
 		<hacking power="1" max="3" room="5" start="false" />
 		<medbay power="1" max="3" room="1" start="true" />
@@ -1091,10 +1967,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="4" count="2">
-		<drone name="BATTLETOG_DEFEND" />
-		<drone name="REPAIR" />
-	</droneList>
+	<droneList drones="5" count="2" load="LIST_DRONES_ENEMY_CREW" />
 	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="3" max="6" class="deepone" />
@@ -1113,8 +1986,8 @@
 		<oxygen power="1" max="2" room="6" start="true" />
 		<pilot power="1" max="3" room="5" start="true" />
 		<shields power="2" max="10" room="3" start="true" />
-		<teleporter power="1" max="3" room="2" start="true" />
-		<weapons power="2" max="10" room="4" start="true" />
+		<teleporter power="1" max="3" room="2" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -1123,6 +1996,59 @@
 	<health amount="10" />
 	<maxPower amount="8" />
 	<crewCount amount="3" max="7" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_SKIRMISHER_CULTIST" layout="dddeep_one_skirmisher_cultist" img="dddeep_one_skirmisher_cultist">
+	<class>Enlightened Skirmisher</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="1" start="true" />
+		<drones power="1" max="6" room="5" start="false" />
+		<engines power="1" max="3" room="2" start="true" />
+		<medbay power="1" max="3" room="0" start="true" />
+		<oxygen power="1" max="2" room="3" start="true" />
+		<pilot power="1" max="3" room="6" start="true" />
+		<shields power="2" max="10" room="7" start="true" />
+		<teleporter power="1" max="2" room="4" start="false" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="5" count="3" load="LIST_DRONES_ENGI" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DREAD_LIGHTS" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_BATTLESHIP_CULTIST" layout="dddeep_one_battleship_cultist" img="dddeep_one_battleship_cultist">
+	<class>Enlightened Battleship</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="10" start="true" />
+		<drones power="1" max="5" room="5" start="false" />
+		<engines power="1" max="1" room="1" start="true" />
+		<hacking power="1" max="2" room="3" start="false" />
+		<medbay power="1" max="3" room="7" start="true" />
+		<mind power="1" max="2" room="2" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="9" start="true" />
+		<weapons power="2" max="10" room="8" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="6" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="5" count="2" load="LIST_DRONES_ENEMY_STANDARD" />
+	<health amount="11" />
+	<maxPower amount="9" />
+	<crewCount amount="3" max="6" class="deepone" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DREAD_LIGHTS" />
 	<aug name="UPG_MEDBAY_NANO" />
@@ -1184,38 +2110,34 @@
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
-		<cloaking power="1" max="1" room="3" start="false" />
-		<doors power="2" max="3" room="10" start="true" />
-		<drones power="7" max="10" room="1" start="true" />
-		<engines power="2" max="2" room="2" start="true" />
-		<hacking power="1" max="2" room="5" start="false" />
-		<medbay power="1" max="1" room="9" start="true" />
-		<mind power="1" max="2" room="6" start="false" />
-		<oxygen power="2" max="3" room="8" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="10" room="7" start="true" />
-		<weapons power="7" max="7" room="4" start="true" />
+		<artillery power="3" max="3" room="14" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<cloaking power="1" max="1" room="11" start="false" />
+		<doors power="2" max="3" room="12" start="true" />
+		<engines power="2" max="2" room="7" start="true" />
+		<medbay power="1" max="3" room="4" start="true" />
+		<mind power="1" max="2" room="13" start="false" />
+		<oxygen power="2" max="3" room="10" start="true" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="4" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="6" start="false" />
+		<weapons power="3" max="7" room="0" start="true" />
 	</systemList>
-	<weaponSlots>2</weaponSlots>
-	<droneSlots>3</droneSlots>
-	<weaponList missiles="9" count="2">
-		<weapon name="TWILIGHT_INEXORABLE" />
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="9" count="3">
+		<weapon name="DDLASER_CHARGE_DARKGOD" />
 		<weapon name="BOMB_DARKGOD" />
+		<weapon name="LASER_DARKGOD" />
 	</weaponList>
-	<droneList drones="7" count="3">
-		<drone name="REPAIR" />
-		<drone name="BATTLETOG2_DEFEND" />
-		<drone name="BATTLETOG2_DEFEND" />
-	</droneList>
+	<droneList drones="0" count="0" />
 	<health amount="15" />
 	<maxPower amount="35" />
-	<crewCount amount="4" max="7" class="deeponecultist_enemy" />
+	<crewCount amount="3" max="8" class="dddeepone_chosen" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="UPG_MEDBAY_NANO" />
-	<aug name="UPG_DRONE_SPEED" />
+	<aug name="DDOVERWHELMING_DARKNESS" />
 </shipBlueprint>
 <shipBlueprint name="DREADNOUGHT_OF_HOPESANDDREAMS" layout="dreadnought_of_hopesanddreams" img="dreadnought_of_hopesanddreams">
-	<class>Determination, Given Form</class>
+	<class>Desire, Given Form</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
@@ -1227,7 +2149,7 @@
 		<mind power="1" max="3" room="10" start="true" />
 		<oxygen power="2" max="3" room="7" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
-		<shields power="2" max="10" room="4" start="true" />
+		<shields power="4" max="10" room="4" start="true" />
 		<teleporter power="2" max="3" room="6" start="true" />
 		<weapons power="10" max="10" room="5" start="true" />
 	</systemList>
@@ -1237,18 +2159,174 @@
 		<weapon name="TWILIGHT_INEXORABLE" />
 		<weapon name="TWILIGHT_INEXORABLE" />
 	</weaponList>
-	<droneList drones="11" count="4">
+	<droneList drones="15" count="4">
 		<drone name="ENERGY_1_AMP2_ENEMY" />
 		<drone name="ENERGY_1_AMP2_ENEMY" />
 		<drone name="REPAIR" />
 		<drone name="REPAIR" />
 	</droneList>
-	<health amount="23" />
+	<health amount="27" />
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="deepone" />
 	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
 	<aug name="UPG_MEDBAY_NANO" />
 	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_CARRIER_ELITE" layout="dddeep_one_carrier_elite" img="dddeep_one_carrier_elite">
+	<class>Chosen Carrier</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<clonebay power="1" max="3" room="2" start="true" />
+		<doors power="2" max="3" room="4" start="false" />
+		<engines power="1" max="2" room="7" start="true" />
+		<mind power="1" max="2" room="8" start="false" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="1" max="2" room="3" start="true" />
+		<shields power="4" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="10" start="false" />
+		<weapons power="4" max="10" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="12" />
+	<crewCount amount="3" max="7" class="dddeepone_chosen" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_DESTROYER_ELITE" layout="dddeep_one_destroyer_elite" img="dddeep_one_destroyer_elite">
+	<class>Chosen Destroyer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<cloaking power="1" max="3" room="5" start="true" />
+		<doors power="2" max="3" room="2" start="false" />
+		<engines power="1" max="1" room="8" start="true" />
+		<medbay power="1" max="3" room="6" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="1" start="true" />
+		<shields power="4" max="10" room="3" start="true" />
+		<weapons power="4" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="11" />
+	<maxPower amount="9" />
+	<crewCount amount="3" max="6" class="dddeepone_chosen" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
+	<aug name="UPG_CLOAK_FIRE" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_FIGHTER_ELITE" layout="dddeep_one_fighter_elite" img="dddeep_one_fighter_elite">
+	<class>Chosen Fighter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<doors power="2" max="3" room="3" start="false" />
+		<engines power="1" max="2" room="9" start="true" />
+		<hacking power="1" max="2" room="6" start="false" />
+		<medbay power="1" max="3" room="5" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="1" start="true" />
+		<shields power="4" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="4" max="10" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="6" count="0" />
+	<health amount="11" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="6" class="dddeepone_chosen" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_SCOUT_ELITE" layout="dddeep_one_scout_elite" img="dddeep_one_scout_elite">
+	<class>Chosen Scout</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<cloaking power="1" max="2" room="2" start="false" />
+		<doors power="2" max="3" room="1" start="false" />
+		<engines power="1" max="3" room="4" start="true" />
+		<medbay power="1" max="3" room="7" start="true" />
+		<oxygen power="1" max="2" room="9" start="true" />
+		<pilot power="2" max="3" room="5" start="true" />
+		<shields power="4" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="4" max="10" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="dddeepone_chosen" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_SKIRMISHER_ELITE" layout="dddeep_one_skirmisher_elite" img="dddeep_one_skirmisher_elite">
+	<class>Chosen Skirmisher</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<clonebay power="1" max="3" room="8" start="true" />
+		<doors power="2" max="3" room="5" start="false" />
+		<engines power="1" max="3" room="4" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="2" max="3" room="1" start="true" />
+		<shields power="4" max="10" room="2" start="true" />
+		<teleporter power="1" max="3" room="3" start="true" />
+		<weapons power="4" max="10" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="2" max="5" class="dddeepone_chosen" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_BATTLESHIP_ELITE" layout="dddeep_one_battleship_elite" img="dddeep_one_battleship_elite">
+	<class>Chosen Battleship</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="2" room="1" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<artillery power="2" max="2" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
+		<clonebay power="1" max="3" room="9" start="true" />
+		<doors power="2" max="3" room="12" start="false" />
+		<engines power="1" max="1" room="3" start="true" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="1" max="2" room="11" start="true" />
+		<shields power="4" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="7" start="false" />
+		<weapons power="4" max="10" room="13" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="10" />
+	<crewCount amount="4" max="8" class="dddeepone_chosen" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDOVERWHELMING_DARKNESS" />
 </shipBlueprint>
 <shipBlueprint name="DARKONE_SHADOW_TENDRILS" layout="darkone_shadow_tendrils" img="darkone_shadow_tendrils">
 	<class>The Darkness</class>
@@ -1260,6 +2338,19 @@
 	<weaponList missiles="0" count="0" />
 	<droneList drones="0" count="0" />
 	<health amount="2" />
+	<maxPower amount="0" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DARKONE_SHADOW_TENDRILS_TRIALDUMMY" layout="darkone_shadow_tendrils" img="darkone_shadow_tendrils">
+	<class>The Darkness</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList />
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="90" />
 	<maxPower amount="0" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
@@ -1530,7 +2621,7 @@
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_BEHEMOTHDETERMINATION" layout="disparity_engi_behemothdetermination" img="disparity_engi_behemothdetermination">
-	<class>Determination, Made Manifest</class>
+	<class>Judgment, Foreordained</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
@@ -1547,7 +2638,7 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="11" count="4">
+	<weaponList missiles="28" count="4">
 		<weapon name="BOMB_FIRE_ENEMY" />
 		<weapon name="BOMB_FIRE_ENEMY" />
 		<weapon name="CRYSTAL_BURST_1_RED_ENEMY" />
@@ -1557,7 +2648,7 @@
 		<drone name="DISPARITY_LIBERATORTOG_BOARDER" />
 		<drone name="DDSERAPH_ARBITERTOG_BOARDER" />
 	</droneList>
-	<health amount="23" />
+	<health amount="27" />
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="disparity_engidefault" />
 	<boardingAI>sabotage</boardingAI>
@@ -1573,9 +2664,9 @@
 		<doors power="3" max="3" room="9" start="true" />
 		<drones power="10" max="10" room="2" start="true" />
 		<engines power="2" max="4" room="1" start="true" />
-		<medbay power="1" max="2" room="11" start="true" />
+		<medbay power="1" max="3" room="11" start="true" />
 		<oxygen power="1" max="2" room="7" start="true" />
-		<pilot power="1" max="2" room="0" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="4" start="true" />
 		<weapons power="4" max="6" room="3" start="true" />
 	</systemList>
@@ -1637,6 +2728,258 @@
 	<maxPower amount="10" />
 	<boardingAI>invasion</boardingAI>
 </shipBlueprint>
+<shipBlueprint name="DDILLDRYTHK_PUFFBALL" layout="ddilldrythk_puffball" img="ddilldrythk_puffball">
+	<class>Ill'drythk Puffball</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="1" room="2" start="true" />
+		<oxygen power="1" max="1" room="0" start="true" />
+		<teleporter power="1" max="1" room="3" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="2" class="ddilldrythk_statue" />
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DDILLDRYTHK_NEST" layout="ddilldrythk_nest" img="ddilldrythk_nest">
+	<class>Ill'drythk Nest</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="1" room="0" start="true" />
+		<oxygen power="1" max="1" room="3" start="true" />
+		<teleporter power="1" max="1" room="1" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="3" class="ddilldrythk_statue" />
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DDILLDRYTHK_THE_PALE_HEART" layout="ddilldrythk_the_pale_heart" img="ddilldrythk_the_pale_heart">
+	<class>The Pale Heart</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="true" />
+		<mind power="1" max="2" room="1" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<teleporter power="1" max="3" room="8" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="0" count="0" />
+	<health amount="15" />
+	<maxPower amount="12" />
+	<crewCount amount="4" max="5" class="LIST_DDCREW_ILLDRYTHK" />
+	<boardingAI>invasion</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_ROCK_ENFORCER" layout="ddtempest_rock_enforcer" img="ddtempest_rock_enforcer">
+	<class>Tempest Enforcer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="9" start="false" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_ROCK" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="6" />
+	<crewCount amount="1" max="4" class="rock" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_SLUG_INTERCEPTOR" layout="ddtempest_slug_interceptor" img="ddtempest_slug_interceptor">
+	<class>Tempest Interceptor</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="1" max="2" room="4" start="true" />
+		<oxygen power="1" max="2" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="7" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_SLUG" />
+	<droneList drones="0" count="2" />
+	<health amount="6" />
+	<maxPower amount="6" />
+	<crewCount amount="1" max="2" class="slug" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_CRYSTAL_TRANSPORT" layout="ddtempest_crystal_transport" img="ddtempest_crystal_transport">
+	<class>Tempest Transport</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="8" start="false" />
+		<doors power="1" max="3" room="1" start="false" />
+		<engines power="1" max="2" room="3" start="true" />
+		<medbay power="1" max="2" room="7" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="3" room="5" start="true" />
+		<shields power="2" max="10" room="0" start="true" />
+		<teleporter power="1" max="3" room="6" start="false" />
+		<weapons power="2" max="7" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="9" count="4" load="LIST_WEAPONS_CRYSTAL" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="7" />
+	<crewCount amount="1" max="3" class="crystal" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CRYSTAL_ARMOR_ENEMY" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_UNION_OUTRIDER" layout="ddtempest_union_outrider" img="ddtempest_union_outrider">
+	<class>Tempest Outrider</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="1" start="true" />
+		<engines power="1" max="2" room="3" start="true" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="2" max="6" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_UNION" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="6" />
+	<crewCount amount="1" max="2" class="LIST_CREW_UNION_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UNION_JACKETS" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_ENGI_PROTECTOR" layout="ddtempest_engi_protector" img="ddtempest_engi_protector">
+	<class>Tempest Protector</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="9" start="false" />
+		<doors power="1" max="3" room="7" start="false" />
+		<drones power="2" max="7" room="14" start="true" />
+		<engines power="1" max="2" room="8" start="true" />
+		<hacking power="1" max="3" room="6" start="false" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<weapons power="2" max="8" room="11" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="8" count="3" load="LIST_DRONES_ENGI" />
+	<health amount="12" />
+	<maxPower amount="10" />
+	<crewCount amount="1" max="5" class="engi" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_MANTIS_MARAUDER" layout="ddtempest_mantis_marauder" img="ddtempest_mantis_marauder">
+	<class>Tempest Marauder</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="1" max="1" room="1" start="true" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<oxygen power="1" max="2" room="3" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="3" room="9" start="true" />
+		<weapons power="1" max="6" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_MANTIS" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="1" max="3" class="mantis" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CREW_STIMS" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_VAMPWEED_TRAPPER" layout="ddtempest_vampweed_trapper" img="ddtempest_vampweed_trapper">
+	<class>Tempest Trapper</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="1" max="2" room="6" start="true" />
+		<medbay power="1" max="2" room="10" start="false" />
+		<oxygen power="1" max="1" room="9" start="true" />
+		<pilot power="1" max="1" room="5" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="0" start="false" />
+		<weapons power="2" max="7" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="11" count="4" load="LIST_WEAPONS_VAMPWEED" />
+	<droneList drones="0" count="2" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="1" max="3" class="orchid_vampweed" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SPORE_AIR_BUFF" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
+<shipBlueprint name="DDTEMPEST_DEEP_ONE_CARRIER" layout="ddtempest_deep_one_carrier" img="ddtempest_deep_one_carrier">
+	<class>Tempest Carrier</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="1" room="8" start="false" />
+		<doors power="1" max="2" room="3" start="true" />
+		<engines power="1" max="1" room="6" start="true" />
+		<medbay power="1" max="3" room="5" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="1" max="3" room="9" start="true" />
+		<weapons power="2" max="7" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="5" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+</shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ULTIMA_MANIFESTATION_SHIP" layout="ddtempest_ultima_manifestation_ship" img="ddtempest_ultima_manifestation_ship">
 	<class>Ultima Manifestation</class>
 	<minSector>1</minSector>
@@ -1668,4 +3011,1138 @@
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
 	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_HUNTER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
+	<class>Soulplague Hunter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="true" />
+		<engines power="1" max="3" room="5" start="true" />
+		<dd_corruptor power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="1" max="2" room="7" start="false" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
+	<class>Soulplague Juggernaut</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="true" />
+		<doors power="1" max="2" room="9" start="false" />
+		<engines power="1" max="1" room="11" start="true" />
+		<dd_corruptor power="1" max="1" room="0" start="false" />
+		<mind power="1" max="1" room="10" start="false" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="1" max="2" room="4" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="2" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="4" count="0" />
+	<health amount="11" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_STALKER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
+	<class>Soulplague Stalker</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="2" room="0" start="true" />
+		<engines power="1" max="2" room="2" start="true" />
+		<dd_corruptor power="1" max="1" room="5" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="2" room="6" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="1" room="1" start="false" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_SCAVENGER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
+	<class>Soulplague Scavenger</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="1" max="3" room="4" start="true" />
+		<medbay power="1" max="3" room="3" start="true" />
+		<dd_corruptor power="1" max="3" room="1" start="false" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="2" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_PROWLER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
+	<class>Soulplague Prowler</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="true" />
+		<engines power="1" max="3" room="7" start="true" />
+		<hacking power="1" max="2" room="2" start="false" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="3" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="1" max="3" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_INCUBATOR" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
+	<class>Soulplague Incubator</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="3" start="false" />
+		<drones power="1" max="7" room="8" start="true" />
+		<engines power="1" max="1" room="4" start="true" />
+		<medbay power="1" max="2" room="1" start="true" />
+		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<weapons power="1" max="6" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="5" count="2" load="LIST_DRONES_SHELL_SCIENCE" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_HUNTER_HUSKWEAVER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
+	<class>Soulplague Hunter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="true" />
+		<engines power="1" max="3" room="5" start="true" />
+		<dd_corruptor power="1" max="2" room="6" start="false" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<teleporter power="1" max="2" room="7" start="false" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
+	<class>Soulplague Juggernaut</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="true" />
+		<doors power="1" max="2" room="9" start="false" />
+		<engines power="1" max="1" room="11" start="true" />
+		<dd_corruptor power="1" max="1" room="0" start="false" />
+		<mind power="1" max="1" room="10" start="false" />
+		<pilot power="1" max="2" room="4" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="2" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="4" count="0" />
+	<health amount="11" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_STALKER_HUSKWEAVER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
+	<class>Soulplague Stalker</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="2" room="0" start="true" />
+		<engines power="1" max="2" room="2" start="true" />
+		<dd_corruptor power="1" max="1" room="5" start="false" />
+		<pilot power="1" max="2" room="6" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="1" room="1" start="false" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_SCAVENGER_HUSKWEAVER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
+	<class>Soulplague Scavenger</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="1" max="3" room="4" start="true" />
+		<medbay power="1" max="3" room="3" start="true" />
+		<dd_corruptor power="1" max="3" room="1" start="false" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="3" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_PROWLER_HUSKWEAVER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
+	<class>Soulplague Prowler</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="3" start="true" />
+		<engines power="1" max="3" room="7" start="true" />
+		<hacking power="1" max="2" room="2" start="false" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="3" count="0" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_INCUBATOR_HUSKWEAVER" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
+	<class>Soulplague Incubator</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="2" room="3" start="false" />
+		<drones power="1" max="7" room="8" start="true" />
+		<engines power="1" max="1" room="4" start="true" />
+		<medbay power="1" max="2" room="1" start="true" />
+		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<weapons power="1" max="6" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="5" count="2" load="LIST_DRONES_SHELL_SCIENCE" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_TRANSPORT" layout="ddsoulplague_transport" img="ddsoulplague_transport">
+	<class>Soulplague Transport</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="8" start="true" />
+		<doors power="1" max="3" room="0" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<mind power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="3" room="1" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="2" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSOULPLAGUE_DEVOURER" layout="ddsoulplague_devourer" img="ddsoulplague_devourer">
+	<class>Soulplague Devourer</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="3" room="3" start="true" />
+		<engines power="2" max="2" room="12" start="true" />
+		<dd_corruptor power="1" max="2" room="5" start="true" />
+		<clonebay power="1" max="3" room="10" start="true" />
+		<mind power="1" max="2" room="4" start="true" />
+		<oxygen power="1" max="2" room="13" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="2" max="10" room="17" start="true" />
+		<teleporter power="3" max="3" room="11" start="true" />
+		<weapons power="4" max="6" room="16" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDPHASE_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="6" count="0" />
+	<health amount="16" />
+	<maxPower amount="35" />
+	<crewCount amount="4" max="8" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDHEROINE_VILLAINSLAYER" layout="ddheroine_villainslayer" img="ddheroine_villainslayer">
+	<class>Hope's Retort</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="3" max="4" room="12" start="true" weapon="DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE_ENEMY" />
+		<doors power="2" max="3" room="4" start="true" />
+		<drones power="6" max="6" room="8" start="true" />
+		<engines power="3" max="3" room="7" start="true" />
+		<dd_corruptor power="1" max="3" room="9" start="true" />
+		<medbay power="1" max="3" room="0" start="true" />
+		<oxygen power="2" max="3" room="13" start="true" />
+		<pilot power="2" max="3" room="3" start="true" />
+		<shields power="2" max="10" room="11" start="true" />
+		<teleporter power="1" max="3" room="5" start="true" />
+		<weapons power="10" max="10" room="10" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="28" count="6">
+		<weapon name="DDMISSILES_SOULPLAGUE_ENEMY" />
+		<weapon name="DDMISSILES_SOULPLAGUE_ENEMY" />
+		<weapon name="DDPHASE_SOULPLAGUE_ENEMY" />
+		<weapon name="DDPHASE_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="15" count="3">
+		<drone name="REPAIR" />
+		<drone name="REPAIR" />
+		<drone name="DEFENSE_3_ENEMY" />
+	</droneList>
+	<health amount="27" />
+	<maxPower amount="45" />
+	<crewCount amount="1" max="1" class="ddsoulplague_husk_deepone_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDSERAPH_SHELL_PROPHET" layout="ddseraph_shell_prophet" img="ddseraph_shell_prophet">
+	<class>Seraphim Prophet</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="7" start="true" />
+		<doors power="3" max="3" room="6" start="true" />
+		<engines power="1" max="2" room="11" start="true" />
+		<medbay power="1" max="3" room="12" start="true" />
+		<oxygen power="1" max="2" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="5" start="true" />
+		<weapons power="7" max="10" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4">
+		<weapon name="LASER_FIRE" />
+		<weapon name="LASER_FIRE" />
+		<weapon name="LASER_FIRE" />
+		<weapon name="BOMB_FIRE_ENEMY" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="14" />
+	<maxPower amount="35" />
+	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPH_RADIANT_FLAMES" />
+	<aug name="DDSERAPHIM_GAS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SOULPLAGUE_NORMAL" layout="ddmt_boss_soulplague" img="ddmt_boss_soulplague">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<clonebay power="2" max="2" room="11" start="true" />
+		<doors power="1" max="1" room="9" start="true" />
+		<engines power="2" max="2" room="1" start="true" />
+		<dd_corruptor power="1" max="1" room="12" start="true" />
+		<oxygen power="1" max="1" room="7" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="2" max="2" room="4" start="true" />
+		<weapons power="4" max="4" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDFOCUS_SOULPLAGUE_ENEMY" />
+		<weapon name="DDFOCUS_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="14" />
+	<maxPower amount="20" />
+	<crewCount amount="1" max="1" class="ddsoulplague_husk_human_enemy" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SOULPLAGUE_CHALLENGE" layout="ddmt_boss_soulplague" img="ddmt_boss_soulplague">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<clonebay power="2" max="2" room="11" start="true" />
+		<doors power="1" max="1" room="9" start="true" />
+		<engines power="2" max="2" room="1" start="true" />
+		<dd_corruptor power="2" max="2" room="12" start="true" />
+		<oxygen power="1" max="1" room="7" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="2" max="2" room="4" start="true" />
+		<weapons power="5" max="5" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDFOCUS_SOULPLAGUE_ENEMY" />
+		<weapon name="DDFOCUS_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="15" />
+	<maxPower amount="21" />
+	<crewCount amount="1" max="1" class="ddsoulplague_husk_human_enemy" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SOULPLAGUE_EXTREME" layout="ddmt_boss_soulplague" img="ddmt_boss_soulplague">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<clonebay power="2" max="2" room="11" start="true" />
+		<doors power="2" max="2" room="9" start="true" />
+		<engines power="2" max="2" room="1" start="true" />
+		<dd_corruptor power="2" max="2" room="12" start="true" />
+		<oxygen power="2" max="2" room="7" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="3" max="3" room="4" start="true" />
+		<weapons power="6" max="6" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDFOCUS_SOULPLAGUE_ENEMY" />
+		<weapon name="DDPHASE_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="ddsoulplague_husk_human_enemy" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SOULPLAGUE_CHAOS" layout="ddmt_boss_soulplague" img="ddmt_boss_soulplague">
+	<class>Chaotic Renegade Cruiser</class>
+	<systemList>
+		<clonebay power="2" max="2" room="11" start="true" />
+		<doors power="2" max="2" room="9" start="true" />
+		<engines power="2" max="2" room="1" start="true" />
+		<dd_corruptor power="2" max="2" room="12" start="true" />
+		<oxygen power="2" max="2" room="7" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="3" max="3" room="4" start="true" />
+		<weapons power="8" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDCHAINLASER_SOULPLAGUE_ENEMY" />
+		<weapon name="DDPHASE_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="ddsoulplague_husk_human_enemy" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_DEEP_ONE_NORMAL" layout="ddmt_boss_deep_one" img="ddmt_boss_deep_one">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<cloaking power="1" max="1" room="12" start="true" />
+		<doors power="1" max="1" room="8" start="true" />
+		<drones power="4" max="4" room="11" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<medbay power="2" max="2" room="6" start="true" />
+		<oxygen power="1" max="1" room="5" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="5" max="5" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="ION_CHAINGUN" />
+		<weapon name="ENERGY_1" />
+		<weapon name="ENERGY_1" />
+		<weapon name="ENERGY_1" />
+	</weaponList>
+	<droneList drones="4" count="2">
+		<drone name="BATTLETOG_BOARDER" />
+		<drone name="BATTLETOG_BOARDER" />
+	</droneList>
+	<health amount="14" />
+	<maxPower amount="20" />
+	<crewCount amount="1" max="1" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_DEEP_ONE_CHALLENGE" layout="ddmt_boss_deep_one" img="ddmt_boss_deep_one">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<cloaking power="1" max="1" room="12" start="true" />
+		<doors power="1" max="1" room="8" start="true" />
+		<drones power="5" max="5" room="11" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<medbay power="2" max="2" room="6" start="true" />
+		<oxygen power="1" max="1" room="5" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<weapons power="6" max="6" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="ION_CHAINGUN" />
+		<weapon name="ENERGY_2" />
+		<weapon name="ENERGY_1" />
+		<weapon name="ENERGY_1" />
+	</weaponList>
+	<droneList drones="4" count="2">
+		<drone name="BATTLETOG2_BOARDER" />
+		<drone name="BATTLETOG_BOARDER" />
+	</droneList>
+	<health amount="15" />
+	<maxPower amount="21" />
+	<crewCount amount="1" max="1" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_DEEP_ONE_EXTREME" layout="ddmt_boss_deep_one" img="ddmt_boss_deep_one">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<cloaking power="2" max="2" room="12" start="true" />
+		<doors power="2" max="2" room="8" start="true" />
+		<drones power="6" max="6" room="11" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<medbay power="2" max="2" room="6" start="true" />
+		<oxygen power="2" max="2" room="5" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="7" max="7" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="ION_CHAINGUN" />
+		<weapon name="ENERGY_CHAINGUN" />
+		<weapon name="ENERGY_1" />
+		<weapon name="ENERGY_1" />
+	</weaponList>
+	<droneList drones="4" count="2">
+		<drone name="BATTLETOG2_BOARDER" />
+		<drone name="BOARDER_ION" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_DEEP_ONE_CHAOS" layout="ddmt_boss_deep_one" img="ddmt_boss_deep_one">
+	<class>Chaotic Renegade Cruiser</class>
+	<systemList>
+		<cloaking power="2" max="2" room="12" start="true" />
+		<doors power="2" max="2" room="8" start="true" />
+		<drones power="6" max="6" room="11" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<medbay power="2" max="2" room="6" start="true" />
+		<oxygen power="2" max="2" room="5" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="9" max="9" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDDEEP_ONE_SHOTGUN" />
+		<weapon name="ENERGY_CHAINGUN" />
+		<weapon name="ENERGY_1" />
+		<weapon name="ENERGY_1" />
+	</weaponList>
+	<droneList drones="4" count="2">
+		<drone name="BATTLETOG2_BOARDER" />
+		<drone name="BOARDER_ION" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="deepone" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SERAPHIM_NORMAL" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
+	<class>Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="1" room="5" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<hacking power="1" max="1" room="0" start="true" />
+		<medbay power="2" max="2" room="1" start="true" />
+		<oxygen power="1" max="1" room="2" start="true" />
+		<pilot power="1" max="1" room="15" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="1" room="12" start="true" />
+		<weapons power="6" max="6" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_FIRE" />
+		<weapon name="ION_FIRE" />
+		<weapon name="LASER_LIGHT" />
+		<weapon name="BEAM_1" />
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="14" />
+	<maxPower amount="20" />
+	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPHIM_GAS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SERAPHIM_CHALLENGE" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
+	<class>Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="1" max="1" room="5" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<hacking power="1" max="1" room="0" start="true" />
+		<medbay power="2" max="2" room="1" start="true" />
+		<oxygen power="1" max="1" room="2" start="true" />
+		<pilot power="1" max="1" room="15" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="2" max="2" room="12" start="true" />
+		<weapons power="7" max="7" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_FIRE" />
+		<weapon name="ION_FIRE" />
+		<weapon name="BEAM_1" />
+		<weapon name="LASER_FIRE" />
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="15" />
+	<maxPower amount="21" />
+	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPHIM_GAS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SERAPHIM_EXTREME" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
+	<class>Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="5" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<hacking power="1" max="1" room="0" start="true" />
+		<medbay power="2" max="2" room="1" start="true" />
+		<oxygen power="1" max="1" room="2" start="true" />
+		<pilot power="2" max="2" room="15" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<teleporter power="2" max="2" room="12" start="true" />
+		<weapons power="8" max="8" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_FIRE" />
+		<weapon name="ION_FIRE" />
+		<weapon name="BEAM_FIRE" />
+		<weapon name="LASER_FIRE" />
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPHIM_GAS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_BOSS_SERAPHIM_CHAOS" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
+	<class>Chaotic Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="5" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<hacking power="1" max="1" room="0" start="true" />
+		<medbay power="2" max="2" room="1" start="true" />
+		<oxygen power="1" max="1" room="2" start="true" />
+		<pilot power="2" max="2" room="15" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+		<teleporter power="2" max="2" room="12" start="true" />
+		<weapons power="9" max="9" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_FIRE" />
+		<weapon name="DDPHASE_SERAPHIM" />
+		<weapon name="BEAM_FIRE" />
+		<weapon name="LASER_FIRE" />
+	</weaponList>
+	<droneList drones="3" count="0" />
+	<health amount="18" />
+	<maxPower amount="25" />
+	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDSERAPHIM_GAS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_DEEP_ONE_1" layout="ddmt_deep_one_1" img="ddmt_deep_one_1">
+	<class>Multiverse Renegade</class>
+	<minSector>3</minSector>
+	<systemList>
+		<clonebay power="2" max="3" room="3" start="true" />
+		<drones power="2" max="8" room="9" start="true" />
+		<engines power="1" max="2" room="1" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="11" start="true" />
+		<dd_corruptor power="1" max="2" room="2" start="true" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="4" load="MV_WEAPONS_ALL" />
+	<droneList drones="4" count="2" load="MV_DRONES_CREW_BOARDER" />
+	<health amount="11" />
+	<maxPower amount="11" />
+	<crewCount amount="4" max="9" class="MV_CREW_ALL" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDMT_DEEP_ONE_2" layout="ddmt_deep_one_2" img="ddmt_deep_one_2">
+	<class>Multiverse Renegade</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="4" start="true" />
+		<clonebay power="1" max="3" room="10" start="true" />
+		<doors power="1" max="2" room="5" start="true" />
+		<engines power="1" max="2" room="3" start="true" />
+		<dd_corruptor power="1" max="1" room="6" start="true" />
+		<oxygen power="1" max="2" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="6" count="4" load="MV_WEAPONS_ALL" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="8" class="MV_CREW_ALL" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="MU_UNION_DROPSHIP_DDSOULPLAGUE_CORRUPTION" layout="mu_union_dropship" img="mu_union_dropship">
+	<class>Union Carryship</class>
+	<minSector>3</minSector>
+	<systemList>
+		<dd_corruptor power="1" max="3" room="11" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="1" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<teleporter power="1" max="3" room="5" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_UNION" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="9" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UNION_JACKETS" />
+</shipBlueprint>
+<shipBlueprint name="MU_FED_DESTROYER_DDSOULPLAGUE_CORRUPTION" layout="mu_fed_destroyer" img="mu_fed_destroyer">
+	<class>Federation Destroyer</class>
+	<minSector>3</minSector>
+	<systemList>
+		<dd_corruptor power="1" max="3" room="7" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="2" room="6" start="false" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="4" start="false" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="15" count="4" load="LIST_WEAPONS_FED" />
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="8" />
+	<crewCount amount="4" max="8" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="MU_ZOLTAN_ENFORCER_DDSOULPLAGUE_CORRUPTION" layout="mu_zoltan_enforcer" img="mu_zoltan_enforcer">
+	<class>Ministry Enforcer</class>
+	<systemList>
+		<dd_corruptor power="1" max="3" room="8" start="false" />
+		<engines power="1" max="1" room="6" start="true" />
+		<medbay power="1" max="3" room="4" start="false" />
+		<mind power="1" max="3" room="0" start="false" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="2" room="3" start="true" />
+		<shields power="2" max="6" room="5" start="false" />
+		<teleporter power="1" max="3" room="1" start="false" />
+		<weapons power="2" max="8" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="9" count="4" load="LIST_WEAPONS_ZOLTAN" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="6" class="ddsoulplague_husk_zoltan_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ENERGY_SHIELD" />
+</shipBlueprint>
+<shipBlueprint name="MU_VAMPWEED_BOMBER_DDSOULPLAGUE_CORRUPTION" layout="mu_vampweed_bomber" img="mu_vampweed_bomber">
+	<class>Confederate Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<drones power="2" max="6" room="4" start="true" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<oxygen power="1" max="1" room="8" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="6" start="false" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_VAMPWEED" />
+	<droneList drones="5" count="2" load="LIST_DRONES_VAMPWEED" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="6" class="ddsoulplague_husk_orchid_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SPORE_AIR_BUFF" />
+</shipBlueprint>
+<shipBlueprint name="MU_FREEMANTIS_FIGHTER_DDSOULPLAGUE_CORRUPTION" layout="mu_freemantis_fighter" img="mu_freemantis_fighter">
+	<class>Free Mantis Fighter</class>
+	<systemList>
+		<engines power="1" max="2" room="1" start="true" />
+		<dd_corruptor power="1" max="2" room="2" start="false" />
+		<oxygen power="1" max="2" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="8" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_FREEMANTIS" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="3" class="ddsoulplague_husk_mantis_enemy" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="SUPER_CREW_STIMS" />
+	<aug name="UPG_TECH_BYPASS" />
+</shipBlueprint>
+<shipBlueprint name="MU_SHELL_ABDUCTOR_DDSOULPLAGUE_CORRUPTION" layout="mu_shell_abductor" img="mu_shell_abductor">
+	<class>Geniocracy Abductor</class>
+	<systemList>
+		<dd_corruptor power="1" max="2" room="0" start="false" />
+		<clonebay power="1" max="3" room="2" start="false" />
+		<doors power="2" max="3" room="1" start="false" />
+		<engines power="1" max="1" room="4" start="true" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<mind power="1" max="3" room="5" start="true" />
+		<oxygen power="2" max="3" room="6" start="true" />
+		<pilot power="1" max="2" room="7" start="true" />
+		<shields power="3" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="9" start="true" />
+		<weapons power="1" max="6" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="6" count="4" load="LIST_WEAPONS_SHELL" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="5" class="ddsoulplague_husk_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="TOXIC_GAS" />
+</shipBlueprint>
+<shipBlueprint name="MU_SHELL_SKIRMISHER_SOLDIER_DDSOULPLAGUE_CORRUPTION" layout="mu_shell_skirmisher_soldier" img="mu_shell_skirmisher_soldier">
+	<class>Geniocracy Militant Skirmisher</class>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="false" />
+		<dd_corruptor power="2" max="3" room="0" start="false" />
+		<engines power="1" max="1" room="6" start="true" />
+		<mind power="1" max="1" room="5" start="false" />
+		<oxygen power="2" max="3" room="2" start="true" />
+		<pilot power="1" max="2" room="7" start="true" />
+		<shields power="3" max="10" room="4" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_SHELL" />
+	<droneList drones="4" count="0" />
+	<health amount="8" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="5" class="ddsoulplague_husk_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="TOXIC_GAS" />
+</shipBlueprint>
+<shipBlueprint name="MU_SHELL_FIGHTER_SOLDIER_DDSOULPLAGUE_CORRUPTION" layout="mu_shell_fighter_soldier" img="mu_shell_fighter_soldier">
+	<class>Geniocracy Militant Fighter</class>
+	<systemList>
+		<engines power="1" max="1" room="9" start="true" />
+		<clonebay power="1" max="3" room="10" start="false" />
+		<dd_corruptor power="1" max="2" room="4" start="false" />
+		<oxygen power="2" max="3" room="7" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="3" max="10" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="false" />
+		<weapons power="2" max="8" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="8" count="4" load="LIST_WEAPONS_SHELL" />
+	<droneList drones="3" count="2" />
+	<health amount="8" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="6" class="ddsoulplague_husk_shell_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="TOXIC_GAS" />
+</shipBlueprint>
+<shipBlueprint name="MU_GHOST_REBEL_FIGHTER_DDSOULPLAGUE_CORRUPTION" layout="mu_ghost_rebel_fighter" img="mu_ghost_rebel_fighter">
+	<class>Wrecked Fighter</class>
+	<systemList>
+		<engines power="1" max="1" room="5" start="true" />
+		<medbay power="1" max="2" room="3" start="false" />
+		<dd_corruptor power="1" max="2" room="2" start="false" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="7" room="6" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="1" max="7" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_GHOST" />
+	<droneList drones="0" count="2" />
+	<health amount="8" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="6" class="ddsoulplague_husk_ghost_enemy" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="MU_GHOST_ROCK_ASSAULT_DDSOULPLAGUE_CORRUPTION" layout="mu_ghost_rock_assault" img="mu_ghost_rock_assault">
+	<class>Wrecked Assault</class>
+	<minSector>4</minSector>
+	<systemList>
+		<dd_corruptor power="1" max="2" room="4" start="false" />
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="1" max="1" room="7" start="true" />
+		<medbay power="1" max="3" room="1" start="false" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="7" room="6" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="1" max="9" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_GHOST" />
+	<droneList drones="0" count="2" />
+	<health amount="10" />
+	<maxPower amount="11" />
+	<crewCount amount="3" max="8" class="ddsoulplague_husk_ghost_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR" />
+</shipBlueprint>
+<shipBlueprint name="MU_DYNASTY_SCOUT_DDSOULPLAGUE_CORRUPTION" layout="mu_dynasty_scout" img="mu_dynasty_scout">
+	<class>Spectral Scout</class>
+	<systemList>
+		<dd_corruptor power="1" max="3" room="5" start="false" />
+		<drones power="2" max="6" room="3" start="false" />
+		<engines power="1" max="1" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="1" max="7" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DYNASTY" />
+	<droneList drones="4" count="2" load="LIST_DRONES_DYNASTY" />
+	<health amount="8" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="6" class="ddsoulplague_husk_ghost_enemy" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="MU_SLUG_ABDUCTOR_DDSOULPLAGUE_CORRUPTION" layout="mu_slug_abductor_a" img="mu_slug_abductor_a">
+	<class>Kleptocracy Abductor</class>
+	<systemList>
+		<clonebay power="1" max="3" room="8" start="false" />
+		<doors power="1" max="3" room="11" start="false" />
+		<engines power="1" max="2" room="4" start="true" />
+		<medbay power="1" max="3" room="8" start="false" />
+		<dd_corruptor power="1" max="3" room="3" start="true" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="1" max="3" room="1" start="false" />
+		<weapons power="1" max="8" room="10" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="2" load="LIST_WEAPONS_SLUG" />
+	<droneList drones="6" count="0" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="6" class="ddsoulplague_husk_slug_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+</shipBlueprint>
+<shipBlueprint name="MU_LANIUS_RAVAGER_DDSOULPLAGUE_CORRUPTION" layout="mu_lanius_ravager_a" img="mu_lanius_ravager_a">
+	<class>Lanius Ravager</class>
+	<systemList>
+		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<clonebay power="1" max="3" room="4" start="false" />
+		<doors power="1" max="3" room="9" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="5" start="true" />
+		<teleporter power="1" max="2" room="6" start="false" />
+		<weapons power="2" max="8" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="16" count="4" load="LIST_WEAPONS_LANIUS" />
+	<droneList drones="0" count="0" />
+	<health amount="8" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="7" class="ddsoulplague_husk_lanius_enemy" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<shipBlueprint name="DDDEEP_ONE_BATTLESHIP_DDSOULPLAGUE_CORRUPTION" layout="dddeep_one_battleship" img="dddeep_one_battleship">
+	<class>Deep One Battleship</class>
+	<minSector>3</minSector>
+	<systemList>
+		<dd_corruptor power="1" max="2" room="6" start="true" />
+		<engines power="1" max="2" room="7" start="true" />
+		<hacking power="1" max="2" room="10" start="false" />
+		<medbay power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="2" room="11" start="true" />
+		<pilot power="1" max="2" room="12" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="2" max="10" room="0" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="6" load="LIST_WEAPONS_DEEPONES" />
+	<droneList drones="4" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="8" class="ddsoulplague_husk_deepone_enemy" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DEEPONE_LIGHTS" />
 </shipBlueprint>

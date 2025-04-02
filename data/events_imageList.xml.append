@@ -13,3 +13,23 @@
 <imageList name="BACKGROUND_DDTEMPESTVOID">
 	<img w="1280" h="720">stars_sectors/bg_ddtempestvoid.png</img>
 </imageList>
+
+<imageList name="BACKGROUND_DDSOULPLAGUEHEART">
+	<img w="1280" h="720">stars_sectors/bg_soulplagueheart.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDCOREMASSCENTER">
+	<img w="1280" h="720">stars_sectors/bg_ddcoremasscenter.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDSOULPLAGUELIGHTNEBULA">
+	<img w="1280" h="720">stars_sectors/bg_ddsoulplaguelightnebula.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDSOULPLAGUETRICKHAHAUTHOUGHT">
+	<img w="1280" h="720">stars_hazard/bg_lightnebula3_nohazard.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDILLDRYTHKFOG">
+	<img w="1280" h="720">stars_sectors/bg_ddilldrythkfog.png</img>
+</imageList>

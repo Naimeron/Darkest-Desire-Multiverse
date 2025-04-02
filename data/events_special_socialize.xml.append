@@ -1,5 +1,3 @@
-<FTL>
-
 <event name="SOCIALIZE_THE_SCARRED_LIST">
 	<metaVariable name="prof_socialization" op="add" val="1"/>
 	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
@@ -15,6 +13,9 @@
 		<event name="SOCIALIZE_THE_SCARRED_VORTIGON_2" req="unique_vortigon"/>
 		<event name="SOCIALIZE_THE_SCARRED_SLOCKNOG_1" req="unique_slocknog"/>
 		<event name="SOCIALIZE_THE_SCARRED_ALKALI_1" req="unique_alkali"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THESCARRED_1" req="ddunique_theaberration"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THESCARRED_1" req="ddunique_theminister"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_THESCARRED_1" req="ddunique_theheroine"/>
 	</loadEventList>
 </event>
 <event name="SOCIALIZE_THE_SCARRED_NOTHING">
@@ -34,11 +35,11 @@
 					<choice hidden="true">
 						<text>How'd you steal your powers? What are they, exactly?</text>
 						<event>
-							<text>"Hm..." they close their eye, and think on that question for a moment. Then, "...it is not just my body that is scarred, but... my mind as well. I recall little of what happened... that day. A great machine, floating in an infinite abyss... but that's all it was, a machine. It... did something to me, desired my servitude. I'd... proven myself, and it thought me a good candidate for ascension. It... thought wrong."</text>
+							<text>"Hm..." they close their eye, and think on that question for a moment. Then, "It... is not just my body that is scarred, but... my mind as well. I recall little of what happened... that day. A great machine, floating in an infinite abyss... but that's all it was, a machine. It... did something to me, desired my servitude. I'd... proven myself, and it thought me a good candidate for ascension. It... thought wrong."</text>
 							<choice hidden="true">
 								<text>And?</text>
 								<event>
-									<text>The smile on their face fades, "And... that is all I can remember. The False God... granted me power, and I broke free from its hold. I'm now... labelled a traitor by my people. Hunted, exiled... forsaken. As far as what my powers are exactly..." you watch as their hand begins to dematerialize, fading in and out of reality, before stabilizing again, "...I believe the False God intended to grant me dominion over its... factitious void. I can control its darkness... become it, and withstand its pull on my soul." After a moment of silence the Scarred's smile returns, and they speak again, "Thank you... for inquiring, kin, but I must return to my... meditations. I hope your curiosity is... satisfied."</text>
+									<text>The smile on their face fades, "And... that is all I can remember. The False God... granted me power, and I broke free from its hold. I'm now... labelled a traitor by my people. Hunted, exiled... forsaken. As far as what my powers are exactly..." their hand begins to dematerialize, fading in and out of reality, before stabilizing again, "...I believe the False God intended to grant me dominion over its... factitious void. I can control its darkness... become it, and withstand its pull on my soul." After a moment of silence the Scarred's smile returns, and they speak again, "Thank you... for inquiring, kin, but I must return to my... meditations. I hope your curiosity is... satisfied."</text>
 								</event>
 							</choice>
 						</event>
@@ -118,7 +119,7 @@
 	<text>Slocknog and the Scarred appear to be bonding over a cigarette each, smoking together while they talk, "It'sss ssso niccce to meet another exxxxile. Here I wasss thinking I wasss the only one dessspisssed by my own kind!" The Scarred gives him a slight chuckle, "I... do believe our situations have their great deal of... differences, monarch, but... I must agree, this is nice. Few... are so kind to me." The two continue to talk back and forth, and you leave the room with a smile on your face.</text>
 </event>
 <event name="SOCIALIZE_THE_SCARRED_ALKALI_1" unique="true">
-	<text>It's not the Scarred you find, but Alkali, who rolls up to you distraught, "Captain... thhhhat fiend, thhhhe Scarred, hhhhe refuses to call me by my name! Insists on calling me 'thhhhe Science-thhhhing!' Can you believe it? I know othhhher races are typically primitive but thhhhis is a new low. For me, and for thhhhem..." He rolls away, defeated.</text>
+	<text>It's not the Scarred you find, but Alkali, who rolls up to you distraught, "Captain... thhhhat fiend, thhhhe Scarred, he refuses to call me by my name! Insists on calling me 'thhhhe Science-thhhhing!' Can you believe it? I know othhhher races are typically primitive but thhhhis is a new low. For me, and for thhhhem..." He rolls away, defeated.</text>
 </event>
 
 <event name="SOCIALIZE_THE_HUNGER_LIST">
@@ -135,6 +136,8 @@
 		<event name="SOCIALIZE_THE_HUNGER_ANOINTED_1" req="unique_anointed"/>
 		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_1" req="unique_thescarred"/>
 		<event name="SOCIALIZE_THE_SCARRED_THEHUNGER_2" req="unique_thescarred"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THEHUNGER_1" req="ddunique_theaberration"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THEHUNGER_1" req="ddunique_theminister"/>
 	</loadEventList>
 </event>
 <event name="SOCIALIZE_THE_HUNGER_NOTHING">
@@ -231,4 +234,737 @@
 	<text>The sound of crunching alerts you to the Hunger's location from across the ship, but you're surprised to find the Anointed there as well. They appear to be passing a large chunk of metal back and forth, taking turns eating it... the Hunger speaks, "SUBJECT: An-n-n-n-noooointed? Anointed. State-etats-etats-etats: HUNGER? Hunger, too?" to which the Anointed replies, "Correct, strange Engi thing. We need not hunger alone, we need not decay alone. Together, we may devour all." The Hunger jiggles enthusiastically at this, and you leave the room concerned for your safety...</text>
 </event>
 
-</FTL>
+<event name="SOCIALIZE_DDTHE_FOOLISH_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_DDTHE_FOOLISH_NOTHING">
+		<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_1"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_2"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_3"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_4"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_ALKALI_1" req="unique_alkali"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_ALKALI_2" req="unique_alkali"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_TULLY_1" req="unique_tully"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THESCARRED_1" req="unique_thescarred"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THEHUNGER_1" req="unique_thehunger"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THEHEROINE_1" req="ddunique_theheroine"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_NOTHING">
+	<text>As you approach the Foolish, his stance shrinks, "Don't you have somebody worthhhhwhile you could be talking to...? Leave me alone..." Dejected, he floats away, and you make a mental note to invest in some therapy lessons for your crew.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_1" unique="true">
+	<text>Entering the Foolish's room, it appears to be empty... until you hear a thud above you. Looking up, you find that the Foolish is floating against the ceiling, slowly bumping into it and bouncing off over and over again. If he's aware of your presence, he isn't making it obvious.</text>
+	<choice hidden="true">
+		<text>Hey, uh... you alright?</text>
+		<event>
+			<text>He rotates to face you, still bumping against the ceiling, "Yeah, I'm fine... Thhhhanks..." Though he breaks eye contact, he doesn't turn back around.</text>
+			<choice hidden="true">
+				<text>Somehow, I doubt that.</text>
+				<event>
+					<text>The Foolish meets your gaze once more, his tone sterner, "Really, I'm fine. I just... get thhhhis way, sometimes." He returns to being silent for a moment, and then sighs as he continues, "Even if I wanted to cheer up, it's not exactly up to me. Thhhhings just... weigh heavily on my mind."</text>
+					<choice hidden="true">
+						<text>What kinds of things? Anything I can help with?</text>
+						<event>
+							<text>He seems to take a moment to gather his thoughts before answering, "Not anymore thhhhan you already have, captain. It's just a mental battle withhhh myself..." You notice as his attention is drawn to the floor, "Thhhhough, if you could help me, uh... get down from here, I'd appreciate it." He outstretches his hand.</text>
+							<choice hidden="true">
+								<text>Grab his hand and help him down.</text>
+								<event>
+									<text>As you grab his hand, a sense of unease overwhelms your body, and you feel... nothing. As quick as it came, whatever the feeling was vanishes, and the Foolish looks at you expectantly, "Captain? You alright?"</text>
+									<choice hidden="true">
+										<text>Yeah, I just... felt something. This is safe, right?</text>
+										<event>
+											<text>For a moment, the Foolish just blinks, but then he pulls his hand away aggressively as concern coats his tone, "Wait, what did you feel exactly?"</text>
+											<choice hidden="true">
+												<text>I... can't say I'm sure. I just felt wrong for a moment.</text>
+												<event>
+													<text>He eases up a little, "Well, thhhhe Soulplague isn't a thhhhreat, if thhhhat's your worry. It obeys me... as much as I loathhhhe thhhhe fact. My concern is thhhhe Dark God... it still holds some level of influence over me. If you felt somethhhhing, that probably means it's trying to pull somethhhhing, and I'm not allowing anybody else to endanger thhhhemselves for my sake." You watch as the Foolish takes a deep breath, before releasing it, as he slowly drifts back towards the floor. "Thhhhank you for calming me down, at least. Sorry for my short-sightedness, thhhhough... I'd hate if I was used for anothhhher of the Dark God's schemes. I'll try to be more careful in the future." The Foolish floats out of the room, and you're left to wonder... what is the Dark God after, exactly?</text>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>I... felt close. To each other.</text>
+												<event>
+													<text>His body tilts a little, as if in confusion, "Well... yeah? Meaning?"</text>
+													<choice hidden="true">
+														<text>We've never really gotten close before. I've always assumed it's unsafe.</text>
+														<event>
+															<text>He seems to ponder this a moment before responding, "Well, thhhhe Soulplague isn't a thhhhreat, if thhhhat's your worry. It obeys me... as much as I loathhhhe thhhhe fact. My concern is thhhhe Dark God... it still holds some level of influence over me. If you felt somethhhhing, that probably means it's trying to pull somethhhhing, and I'm not allowing anybody else to endanger thhhhemselves for my sake." You watch as the Foolish takes a deep breath, before releasing it, as he slowly drifts back towards the floor. "Thhhhank you for calming me down, at least. Sorry for my short-sightedness, thhhhough... I'd hate if I was used for anothhhher of the Dark God's schemes. I'll try to be more careful in the future." The Foolish floats out of the room, and you're left to wonder... what is the Dark God after, exactly?</text>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Hesitate.</text>
+								<event>
+									<text>A few moments pass as you stand there, staring at his hand. This appears to make the Foolish anxious, but he's yet to speak up.</text>
+									<choice hidden="true">
+										<text>Is it safe for you to touch people?</text>
+										<event>
+											<text>He thinks on it for a moment, before pulling his hand back, "Well, thhhhe Soulplague isn't a thhhhreat, if thhhhat's your worry. It obeys me... as muchhhh as I loathhhhe thhhhe fact. Still, thhhhoughhhh, who knows what thhhhe Dark God might try to pull. It's probably for thhhhe best if I keep to myself." You watch as the Foolish takes a deep breath, before releasing it, as he slowly drifts back towards the floor. "Thhhhank you for calming me down, at least. Sorry for my short-sightedness, thhhhough... I'd hate if I was used for anothhhher of the Dark God's schemes. I'll try to be more careful in the future." The Foolish floats out of the room, and you're left to wonder... what is the Dark God after, exactly?</text>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Shells have hands?</text>
+										<event>
+											<text>He seems bewildered by your question, "Yes? How else would we be doing thhhhings? You've seen us repair, at least, haven't you?"</text>
+											<choice hidden="true">
+												<text>Yeah, I just like... never really thought about it?</text>
+												<event>
+													<text>The Foolish laughs, and your heart warms at the rare sight. "Well, yes, we have hands." He pulls his hand back, before taking a deep breath and releasing it. Slowly, his body drifts back towards the floor, "Thhhhank you for cheering me up, captain... you're silly." He pauses, before getting flustered, "In a good way, thhhhough!" The Foolish hurries to float out of the room, and you get the feeling that he's blushing within his shell.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>You... have cute hands.</text>
+										<event>
+											<text>The Foolish is utterly taken aback by this as he struggles to stutter out a response, "I- My- What? My hands? You... Do you really... I..." his breathing quickens, and you notice as his body begins to drift back towards the floor on its own, "...I, uh, have to go, captain! Thhhhank you for, um, cheering me up!" He rushes to float out of the room, bumping into several things on the way, and you can't help but think... he really is cute.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Well, alright... I won't pry.</text>
+				<event>
+					<text>Though his words aren't exactly convincing, you're not in the business of pushing your crew to open up. The Foolish thanks you for understanding, and you leave him to his... floating against the ceiling.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_2" unique="true">
+	<text>As you approach the Foolish's room, you notice strange, iridescent lights shimmering from within the cracks in his door... What in the Multiverse is going on in there?</text>
+	<choice hidden="true">
+		<text>That's probably normal. Enter the room.</text>
+		<event>
+			<text>Pressing your hand against the door, pain shoots through your arm as you find yourself launched back several feet. Your body crashes into the wall with immense force, and you spend a few moments lying on the ground in a daze before clamoring to stand back up. Struggling to stand, you decide that it's probably best to come back later...</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Yeah, no, screw that. I'm not getting involved with any weird alien business today.</text>
+		<event>
+			<text>Whatever the hell's going on in there, you're not interested in finding out. Cautiously, you back away from the door, and it merely continues to glisten in response.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_3" unique="true">
+	<text>It takes you a moment, but you find the Foolish rummaging through a container in the hold. Sensing your presence, he turns to face you, "Oh, uh, hello... Was thhhhere somethhhhing you needed?" He seems nervous, but you figure he always is.</text>
+	<choice hidden="true">
+		<text>I wanted to see you! What're you doing in here?</text>
+		<event>
+			<text>He appears to be shocked by that, fidgeting a bit before answering, "I was just, um, a bit hungry... As a mattervirus, thhhhe Soulplague typically lets me get away withhhh eating just about anythhhhing, but... sometimes it craves somethhhhing in particular."</text>
+			<choice hidden="true">
+				<text>Something in particular? Like?</text>
+				<event>
+					<text>"Like... well... cardboard..." The Foolish averts his gaze and sinks a little from where he typically floats in the air, bumping against the floor. "You don't, uh... happen to know where we might keep some, do you, captain?"</text>
+					<choice hidden="true">
+						<text>I can't say I do.</text>
+						<event>
+							<text>Pressing against the floor harder, he replies, dejected, "Thhhhat's okay, it was a stupid craving anyways... Thhhhanks for wanting to talk to me, at least. See you around, captain..." The Foolish closes the container he'd been rummaging through, and, as opposed to rolling or floating, scrapes his body against the floor as he inches his way out of the room.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Oh, I was just passing by.</text>
+		<event>
+			<text>This appears to relieve him a bit, as his tone lightens, "Oh, alright. We'll, uh, talk later thhhhen, captain. See you around... maybe..." The Foolish continues to stare at you until you leave the hold, where you then hear him return to his rummaging. You can only wonder what he's searching for...</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_GENERIC_4" unique="true">
+	<text>You find the Foolish messing about with his shell, making measurements and taking samples. He seems deep in thought, and doesn't comment on your approach, so you figure it's best to come back another time. As you leave the room, you hear him mumble to himself, "Is thhhhis... cyan or turquoise? Last week it was cyan, but... now it feels hard to tell..." Isn't it always?</text>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_ALKALI_1" unique="true">
+	<text>Alkali appears to be experimenting on the Foolish, who only sits there dejectedly. The former speaks, still poking and prodding, "You know, when I heard thhhhat communication had been lost with Epsilon, I'd figured you guys had just managed to blow yourselves up or somethhhhing. Never could I have imagined thhhhe truthhhh of the matter! Tell me, what was it like?" The Foolish turns away, before Alkali turns him back, and he sighs a little, "What was what like? Thhhhe cold? Thhhhe... voices? Thhhhe... genocide...?" Alkali scoffs, "No, nothhhhing so trivial, obviously. I meant approaching my genius! Thhhhis Soulplague stuff is impressive! Relative to thhhhose less impressive thhhhan me, of course."</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>You feel the room physically heat up, ever so slightly, as contempt literally radiates from the Foolish. He glares at Alkali, "Do you thhhhink our colleagues found it impressive, as it ravaged thhhheir minds and puppeted thhhheir bodies? Do you thhhhink you'd find it impressive, if you... met thhhhe same fate?" Alkali briefly pauses whatever test he's conducting, taken aback slightly. Then, he continues, "Well, I don't have to worry about thhhhat, do I? Not as long as you control it, anyways. You, er, do control it, don't you?" The Foolish relaxes a bit, returning to his usual demeanor, "As much as I can, anyways... It's not a thhhhreat, if thhhhat's what you mean. Still... rogue strains of thhhhe mattervirus are out thhhhere, hurting people..." He slouches, and Alkali slaps him on the back, "All thhhhe more reason to sit still and allow me to perform my tests! If anybody can cure thhhhis virus, it's me!" Seemingly in agreement, the Foolish only sighs again, and the two Shells go quiet. You decide to leave them to their experiments.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_ALKALI_2" unique="true">
+	<text>Though you can't find the Foolish, you do find Alkali, who appears to be looking for him himself. He turns to you, "Say, Renegade, you haven't seen thhhhat botched experiment, have you? Thhhhe Epsilon reject, I mean."</text>
+	<choice hidden="true">
+		<text>You mean the Foolish?</text>
+		<event>
+			<text>Alkali chuckles, "I'm glad we're on thhhhe same page, thhhough 'foolish' isn't exactly how I'd put it. I'd choose a stronger title, like, 'Thhhhe Completely Irredeemable Dumbass' or somethhhhing. Anyways, have you seen him?" He's as charming as always...</text>
+			<choice hidden="true">
+				<text>Right... well, no, I haven't. I'm looking for him myself.</text>
+				<event>
+					<text>He sighs and begins to roll away, "Figured you'd be useless. Well, if you do see him, let him know thhhhat mattervirus of his transmogrified my toothhhbrush into a sentient globule of matter-devouring hatred again. Please remind him to refrain from using my toothhhbrush, before I turn his into a makeshift explosive." Alkali turns the corner, and you're only left wondering... do Shells really have teeth?</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_TULLY_1" unique="true">
+	<text>Tully and the Foolish are locked in a heated game of chess, Tully seeming to be way more into it than the Foolish is. You can't really track the match, but Tully moves a piece and seems proud of himself, "You know, I don't get a lot of time to play it anymore, but back in the day I was a natural at this stuff! It's nice to relax and go back to those times, even if only for a moment." The Foolish fidgets around with a piece, before making a move himself, "Thhhhings really were a lot simpler in thhhhe past... Never really was into chess, thhhough. Still, I'm having fun, I thhhhink..." Tully moves a piece, and the Foolish doesn't hesitate to move his in response, "Thhhhat's checkmate, right...?" Scanning the board, Tully laughs, "So it is! Gah, it seems I've lost my touch! You'll let me take another crack at it sometime, won't you?" Seemingly in better spirits, the Foolish replies amidst cleaning up the board, "Sure, I had fun. Thhhhanks, Tully..." You're glad to see that even the pessimists among your crew have their spirits high as the two leave the room, content.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_THESCARRED_1" unique="true">
+	<text>You walk in on the Foolish as the Scarred inspects his body, the iridescence of his skin seeming to recoil at the latter's touch. The Foolish turns to them, hesitance in his voice, "I've... never seen thhhhe mattervirus react to someone's touch like this. Who exactly ARE you?" The Scarred sighs, backing away slightly, "I wish... I could answer that myself. The False God... took my name, as it took yours. Both of our powers are... of its making, and yet... they seem to antagonize one another. For... what purpose?" The two sit in silence for a while, deep in thought, and you decide its best to leave them to their pondering.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_THEHUNGER_1" unique="true">
+	<text>Walking through the hall, you're stopped in your tracks as you're surprised to see the Foolish standing there, yelling out to you, "CAPTAIN!!! Whatever you do, don't move!"</text>
+	<choice hidden="true">
+		<text>What? What is it?</text>
+		<event>
+			<text>He cuts you off mid-sentence, "SSSHHHHHH! Listen! Somethhhhing's HERE, in the ship!" Indeed, you try your best to listen. Beneath the humming of the ship's many functions is an almost inaudible sound; a distant crunch, crunch, crunch... you could recognize that noise anywhere!</text>
+			<choice hidden="true">
+				<text>Oh, that's just the Hunger. Nothing to worry about.</text>
+				<event>
+					<text>The Foolish is taken aback, "Nothhhhing to- Thhhhat THHHHING is eating thhhhrough the ship's hull? And... you're sure thhhhat's safe?" You nod, and he begins to float away in confusion, "I guess we all have our peculiarities, one way or anothhhher... Look at me talking, like I'm any less potentially life-thhhhreatening..." The Foolish turns the corner, further ruminating on its own self-worth, and you're left alone with that familiar crunching noise.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_FOOLISH_THEHEROINE_1" unique="true">
+	<text>A spear flies right past your head, whizzing through the air behind you before digging itself several feet into the wall with a resounding THUD. The Heroine calls out, "Hold STILL already! This will be QUICK, if you just STOP!!! RUNNING!!!" She appears to be chasing around one of the Foolish's Soulplague Husks... not wanting to get caught in the crossfire of her righteous wrath, you choose to simply turn the other way before one of those hull-shattering spears makes you its next victim.</text>
+</event>
+
+<event name="SOCIALIZE_DDTHE_MINISTER_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_DDTHE_MINISTER_NOTHING">
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_1"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_2"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_3"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_4"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_5"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_6"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_VORTIGON_1" req="unique_vortigon"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_JERRY_1" req="LIST_CREW_JERRY"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_HAYNES_1" req="unique_haynes"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THESCARRED_1" req="unique_thescarred"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THEHUNGER_1" req="unique_thehunger"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THEHEROINE_1" req="ddunique_theheroine"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_NOTHING">
+	<text>Tinkering with his armor, the Minister puts up his free hand as you approach, "Sorry, Renegade. Busy right now. The armor's core is acting up again, and I've got to get it stable before it tears a hole in the fabric of spacetime and rips this ship apart." Yeah, that, uh... sounds important. You'll try again later.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_1" unique="true">
+	<text>As you're looking for the Minister, the power to the ship briefly flickers off. A few moments later, it happens again, and you hear the man you're looking for cry out, "Why are you being greedy NOW? How much of this do you want, exactly?"</text>
+	<choice hidden="true">
+		<text>Rush to his side.</text>
+		<event>
+			<text>You follow the sound of his voice, and he turns to face you as the power returns once more, "Oh, Renegade. Sorry about the, er, instability of the ship's systems. Armor's hungry." He doesn't elaborate before returning to whatever it is that he was doing, and you notice the cables flowing from his suit... drawing power directly from the ship's reactor.</text>
+			<choice hidden="true">
+				<text>Is that safe?</text>
+				<event>
+					<text>He turns to you again, making no effort to hide his annoyance, "Yes? Would I be doing it if it wasn't? Like I said, the armor's hungry, and I hardly think you'd prefer the alternative solutions." He tinkers with one of the cables, before shooting one more glare back at you, "It's fine, Renegade. I won't blow up the ship, or otherwise do whatever it is that you're worried about. You can run along now; I must see to it that this is sorted before our next scuffle." His condescending demeanor aside, you feel confident that you can trust him as you leave the room and move to wander the halls. As you do so, the power flickers off and on again, and that confidence begins to wane ever so slightly.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave him alone.</text>
+		<event>
+			<text>He sounds like he's having a rough time, and you know he hardly likes to be bothered. Leaving him alone, you move to wander the ship's halls, confident that whatever he's doing is probably fine. The lights continue to flicker, off and on, then off and on again, and that confidence begins to wane ever so slightly.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_2" unique="true">
+	<text>Searching for the Minister, you find that he's in the break room, sipping coffee. You don't recall this ship having a coffee machine...</text>
+	<choice hidden="true">
+		<text>Where'd you get that?</text>
+		<event>
+			<text>He tilts his head to the side as he takes another sip, signaling for you to look over, and you move to do so... If YOU had coffee in your mouth, you'd be spitting it out at the sight of the mess across the room. An unholy contraption lay devastated atop the counter, the loose coffee beans laying around remaining as the only hint towards its purpose. The space around it is scorched, and what remains of the machine itself is utterly warped and shredded.</text>
+			<choice hidden="true">
+				<text>You... made an impromptu explosive, and used it to make coffee?</text>
+				<event>
+					<text>He puts his cup down, and smirks, "That's one way to put it, yes. Genius, no?"</text>
+					<choice hidden="true">
+						<text>But, where did you get the coffee beans?</text>
+						<event>
+							<text>Another head tilt, this time to the opposite side of the room, draws your gaze once more. You stare at the monstrosity there for a moment, half horrible-slime-creature, half coffee-plant-thing, before moving to pick up the Minister's coffee. He doesn't object as you do so, and you take a long, hard sip.</text>
+							<choice hidden="true">
+								<text>Spit the coffee out everywhere.</text>
+								<event>
+									<text>You can't think of a reponse more appropriate. The Minister seems amused, more than anything, as you put his cup back down and turn to leave the room, neither of you speaking another word of the horrors he's born here.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_3" unique="true">
+	<text>Though it isn't hard to find him, you don't get much of a word in before the Minister shoos you out of his room with a list of things he needs you to grab... for his experiments, allegedly, though it reads more like a grocery list. Doesn't he have underlings that can handle this?</text>
+	<choice hidden="true">
+		<text>Read the list.</text>
+		<event>
+			<text>Inked upon a piece of lined paper is the Minister's list:
+			
+			Eg g
+			Egg
+			Sugar
+			-----flour
+			Inordinate-spacetime matter-stabilizing device (turquoise)
+			egg</text>
+			<choice hidden="true">
+				<text>Okay, sure. Get the Minister the things he's asked for.</text>
+				<event>
+					<text>The cooking ingredients aren't so hard to scrounge around for, but the space and time thingy seems a bit... exotic. The best you can find is cyan food coloring, and you decide to leave his requests outside his door, lest he asks you to explain yourself. Later that day, you hear yelling from his room, "No, no! I said turquoise! TURQUOISE!" Is the difference really that important?</text>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>What am I? His mother? Crumple the list into a ball and throw it away.</text>
+				<event>
+					<text>Tossing the piece of paper aside, a flash of light bursts forth from it; by the time your vision recovers, you feel even more blinded by what you're seeing... in the crumpled paper's place are all the things that were listed on it. Not really wanting to question it, and certainly not wanting to approach the mysterious, reverberating device that you can only assume is the space and time thingy, you leave the collection of items outside the Minister's door. Later that day, you hear yelling from his room, "No, no! I said turquoise! TURQUOISE!" You thought it was...</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_4" unique="true">
+	<text>You find the Minister in his room, kneeling down on the floor and inspecting a photograph. If he's noticed your presence, he's yet to make it obvious.</text>
+	<choice hidden="true">
+		<text>Clear your throat.</text>
+		<event>
+			<text>He sighs, and turns to you, "Yes, I'm aware you're here. I'd have to be deaf not to be... Is there truly something so important that you deem it necessary to interrupt my ruminations?"</text>
+			<choice hidden="true">
+				<text>Your... ruminations? What's on your mind exactly?</text>
+				<event>
+					<text>The Minister looks you over, as if measuring whether or not you're worth talking to, before sighing again and looking back at the photo in his hands, "It's... my daughter. She rarely leaves my mind. I've already told you enough on the matter, but... there's something about it I'd like to ask you."</text>
+					<choice hidden="true">
+						<text>Me? I can try to answer, but I'm not sure what I can offer you.</text>
+						<event>
+							<text>He nods, "An answer is all I seek." The Minister then stares you straight in the eyes, a sense of hollowness behind his own, "Do you believe everything you've seen? Everything you've been told?"</text>
+							<choice hidden="true">
+								<text>That's... a vague question.</text>
+								<event>
+									<text>"Everything about our situations, and our relationship, is vague. Yet, we must trust our own judgments on such matters nonetheless." He blinks, for the first time during this conversation, "So, tell me. Do you trust in what you've been told? About the Rebellion, or the Tempest, or... anything, really. To put it simply: do you trust in the authenticity of our reality?"</text>
+									<choice hidden="true">
+										<text>Yes.</text>
+										<event>
+											<text>It's common to entertain notions of simulated realities, or of coma-induced dream states, but you get the sense that the Minister is referring to something else entirely. Something darker, and more sinister. Yet, he seems satisfied with your answer as he turns to the photo in his hands once more, "Very well, Renegade. That will be all."</text>
+											<choice hidden="true">
+												<text>Wait, really? You're going to drop a question as ominous as that and then refuse to elaborate?</text>
+												<event>
+													<text>He chuckles slightly, "You're easily spooked, aren't you? It's just something that's been on my mind, lately, as I continue down this path set before me. Despite my genius, and the power this damnable armor grants me, I feel no greater than a pawn as I blindly follow the orders given to me. As I exist in this state of limbo, ever in search of an outcome that may very well never come to pass. I... felt we were similar in that regard." He lets out a deep sigh, "Perhaps I misjudged. Or maybe I'm just too damn gloomy for my own good. Whatever the case, I suspect I won't get to the bottom of it standing here and discussing it with you. Minimal offense meant, of course." Right... taking the hint, you leave the Minister to his eerie ponderings, but a part of them leave the room with you. What is it that he's doubtful of, exactly?</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Yes!</text>
+										<event>
+											<text>It's common to entertain notions of simulated realities, or of coma-induced dream states, but you get the sense that the Minister is referring to something else entirely. Something darker, and more sinister. Yet, he seems satisfied with your answer as he turns to the photo in his hands once more, "Very well, Renegade. That will be all."</text>
+											<choice hidden="true">
+												<text>Wait, really? You're going to drop a question as ominous as that and then refuse to elaborate?</text>
+												<event>
+													<text>He chuckles slightly, "You're easily spooked, aren't you? It's just something that's been on my mind, lately, as I continue down this path set before me. Despite my genius, and the power this damnable armor grants me, I feel no greater than a pawn as I blindly follow the orders given to me. As I exist in this state of limbo, ever in search of an outcome that may very well never come to pass. I... felt we were similar in that regard." He lets out a deep sigh, "Perhaps I misjudged. Or maybe I'm just too damn gloomy for my own good. Whatever the case, I suspect I won't get to the bottom of it standing here and discussing it with you. Minimal offense meant, of course." Right... taking the hint, you leave the Minister to his eerie ponderings, but a part of them leave the room with you. What is it that he's doubtful of, exactly?</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Yes?</text>
+										<event>
+											<text>It's common to entertain notions of simulated realities, or of coma-induced dream states, but you get the sense that the Minister is referring to something else entirely. Something darker, and more sinister. Yet, he seems satisfied with your answer as he turns to the photo in his hands once more, "Very well, Renegade. That will be all."</text>
+											<choice hidden="true">
+												<text>Wait, really? You're going to drop a question as ominous as that and then refuse to elaborate?</text>
+												<event>
+													<text>He chuckles slightly, "You're easily spooked, aren't you? It's just something that's been on my mind, lately, as I continue down this path set before me. Despite my genius, and the power this damnable armor grants me, I feel no greater than a pawn as I blindly follow the orders given to me. As I exist in this state of limbo, ever in search of an outcome that may very well never come to pass. I... felt we were similar in that regard." He lets out a deep sigh, "Perhaps I misjudged. Or maybe I'm just too damn gloomy for my own good. Whatever the case, I suspect I won't get to the bottom of it standing here and discussing it with you. Minimal offense meant, of course." Right... taking the hint, you leave the Minister to his eerie ponderings, but a part of them leave the room with you. What is it that he's doubtful of, exactly?</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Yesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyesyes</text>
+										<event>
+											<text>It's common to entertain notions of simulated realities, or of coma-induced dream states, but you get the sense that the Minister is referring to something else entirely. Something darker, and more sinister. Yet, he seems satisfied with your answer as he turns to the photo in his hands once more, "Very well, Renegade. That will be all."</text>
+											<choice hidden="true">
+												<text>Wait, really? You're going to drop a question as ominous as that and then refuse to elaborate?</text>
+												<event>
+													<text>He chuckles slightly, "You're easily spooked, aren't you? It's just something that's been on my mind, lately, as I continue down this path set before me. Despite my genius, and the power this damnable armor grants me, I feel no greater than a pawn as I blindly follow the orders given to me. As I exist in this state of limbo, ever in search of an outcome that may very well never come to pass. I... felt we were similar in that regard." He lets out a deep sigh, "Perhaps I misjudged. Or maybe I'm just too damn gloomy for my own good. Whatever the case, I suspect I won't get to the bottom of it standing here and discussing it with you. Minimal offense meant, of course." Right... taking the hint, you leave the Minister to his eerie ponderings, but a part of them leave the room with you. What is it that he's doubtful of, exactly?</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave him be.</text>
+		<event>
+			<text>He seems busy, you decide. You quietly make an exit, the Minister never once stirring, and you're left to wonder what's weighing so heavily on his mind.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_5" unique="true">
+	<text>A strange chanting can be heard from within the Minister's room as you near his door, its hymns seeming to worm their way into your mind. Immeasurable amounts of unease wash over you as you question your decision to enter.</text>
+	<choice hidden="true">
+		<text>Steel yourself, and enter.</text>
+		<event>
+			<text>You press yourself against the door, ready for any of the possible scenarios your mind can think of... but not for the one in front of you. The Minister, as well as several other cloaked cultists of the Tempest, sit around a rounded coffee table; you gather that they're playing a board game of some sort. Across the room is a radio, blasting the chanting you'd heard prior. The Minister turns to you, trying his best to yell over its immense volume, "RENEGADE? HAVE YOU SOME REASON FOR INTERRUPTING OUR PROCEEDINGS?"</text>
+			<choice hidden="true">
+				<text>I, uh... thought you were opening portals to other dimensions in here, or something.</text>
+				<event>
+					<text>He squints at you, "WHAT? I CAN'T QUITE- HOLD ON FOR A MOMENT." The Minister stands up and walks over to the radio, turning it off with a spark of energy from his gauntlet, and the room goes deafeningly quiet. He turns to you once more, "Well, whatever your reason for interrupting, we were just about done here anyways. Next Tuesday, gentlemen?" A series of consenting murmurs break out from the gathered cultists, and they all vanish in a blinding flash of light.</text>
+					<choice hidden="true">
+						<text>What was that about?</text>
+						<event>
+							<text>The Minister raises an eyebrow, gesturing to the game laid out on the table, "Hm? Are you truly unfamiliar with Khl'gthkk'xri?" You blink a couple times, and he sighs, "I should expect as much. It's not exactly renowned, but I wouldn't have been surprised if you'd heard of it either. It's something of a... cult classic." He stares at you, completely stone-faced, and you have no idea if he's expecting you to laugh or not.</text>
+							<choice hidden="true">
+								<text>Force a laugh.</text>
+								<event>
+									<text>His eyebrow arches even higher, "Did... I say something funny? Are you quite alright, Renegade? Did you hit your head on the way in?"</text>
+									<choice hidden="true">
+										<text>Uh...</text>
+										<event>
+											<text>You two spend a few moments staring at each other, both at a loss for words. Eventually, it's your will that breaks first, as you awkwardly excuse yourself and slip away into the hall. That, uh... sucked. A lot. Of all the questions that have gone unanswered, one rings throughout your mind above all... who convenes on a Tuesday?</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Stay silent.</text>
+								<event>
+									<text>You stand there, speechless, and his eyebrow arches even higher, "Are... you quite alright, Renegade? Did you hit your head on the way in?"</text>
+									<choice hidden="true">
+										<text>Uh...</text>
+										<event>
+											<text>You two spend a few moments staring at each other, the Minister joining you in speechlessness. Eventually, it's your will that breaks first, as you awkwardly excuse yourself and slip away into the hall. That, uh... sucked. A lot. Of all the questions that have gone unanswered, one rings throughout your mind above all... who convenes on a Tuesday?</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nope. Walk away.</text>
+		<event>
+			<text>Whatever the hell is going on in there is none of your business, and you're not trying to get caught in the crossfire of any of the Minister's eldritch rituals. Though you get quite some distance away, you can still hear that droning chanting... it's as if it follows you, everywhere you go. You shrug, and decide that it's just par for the course in housing the leader of an esoteric cult.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_GENERIC_6" unique="true">
+	<text>A white blur whizzes past you, and the Minister comes running soon after, "Make way, make way! One of the Tempest's spawn has broken containment!" He turns the corner, and an explosion blasts from it mere seconds later... you need to take cover!</text>
+	<choice hidden="true">
+		<text>Drop to the floor, and cover your head!</text>
+		<event>
+			<text>You assume a defensive position, and close your eyes, but... nothing happens. You look up, and are surprised to see the Minister return, the boots of his armor dragging against the ground. He shoots you a glance, "The problem child's been dealt with. My sincerest apologies for the disturbance, Renegade. It won't happen again." There's a tinge of scorn in his voice as he walks past you, and you're left alone, lying on the floor.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_VORTIGON_1" unique="true">
+	<text>You come across Vortigon and the Minister, deep in conversation, as the former speaks, "So... this, eh, Tempest that you worship. You claim it to have dominion over the Holy Ones?" He says the name Tempest as if it'd stolen his lunch money. The Minister puts a hand to his chin, ignoring the slight, "There are Crystals among the Cult of the Tempest's ranks, yes. Why do you ask? Are you looking to switch religions?" Vortigon lets out a deep belly laugh, "I can't say so, but, you've confirmed a suspicion of mine. This Tempest of yours must be none other than a Holy one, holier than any other! To think such a thing possible... I'll have to consult the scriptures..." He walks away, lost in thought, and the Minister notices your presence as he shoots you a puzzled look. You shrug.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_JERRY_1" unique="true">
+	<text>Though you don't find the Minister, you do find Jerry walking through the halls. His eyes are wide, as if he'd seen a ghost, and he doesn't so much as look at you as he slowly shambles by. You know he's a bit of an awkward fellow, but... this is weird, even for him.</text>
+	<choice hidden="true">
+		<text>Try to grab his attention.</text>
+		<event>
+			<text>You call his name, and Jerry stops in his tracks, making the slowest turn in human history towards you. Eventually, he's facing you, as he struggles to stammer something out, "C-c-c-captain... That... t-that... THING, in the b-b-bathroom... is it r-real? REALLY real?"</text>
+			<choice hidden="true">
+				<text>Thing? What thing?</text>
+				<event>
+					<text>Jerry takes a few minutes to describe the horror plaguing him: some sort of tentacled fiend, eyeing him from the darkness. From his description, you gather that it's just one of the Tempest's spawn, likely let loose by the Minister for some unknowable purpose. You could tell Jerry as much, of course, but...</text>
+					<choice hidden="true">
+						<text>Tell him the truth, and comfort him.</text>
+						<event>
+							<text>You explain the nature of the Tempest's spawn to the best of your limited ability, and Jerry blinks a few times. "So... it's alright then?" You nod, and he breathes a comically large sigh of relief, "Okay, thank goodness! I'll try not to stare the next time it, uh... stares, then. To think that uncle would hire men with interests in such odd company!" Jerry walks away, the life returning to his stride, and you feel the teeniest bit of warmth within your heart.</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Come up with a lie, and mess with him.</text>
+						<event>
+							<text>You put a hand to your chin, feigning deep thought, and you tell Jerry he might've been contacted by something otherworldly. His jaw drops, and he stares at you for a moment before his eyes roll back in his head, and his body drops to the floor; Jerry has passed out. He's... really that easy to scare, huh? Feeling slightly bad, you get him a blanket and ask someone to watch over him and make sure nobody trips on him in the hall.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave the poor boy be.</text>
+		<event>
+			<text>Something's clearly disturbed him, but you figure it's best to leave Jerry alone. Besides, what if he's just sleepwalking? You'd hate to ruin whatever wondrous dreams he's having in that, uh, Jerry head of his.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_HAYNES_1" unique="true">
+	<text>Turning a corner, you find Haynes interrogating the Minister, the latter hardly entertained by the matter as he tinkers away at something.
+	
+	"Profession?"
+	
+	"Minister."
+	
+	"Allegiance?"
+	
+	"The Tempest."
+	
+	"Family?"
+	
+	"Missing."
+	
+	"Date of birth?"
+	
+	"Irrelevant."
+	
+	Haynes seems stumped by that last one, "How are we going to fill out the form, then? Are you taking this pizza order as seriously as I am?"</text>
+	<choice hidden="true">
+		<text>Pizza order...?</text>
+		<event>
+			<text>The Minister snaps his attention to the detective, clearly fed up, "And why in the Tempest's name do they need to know any of that in order to deliver us a pepperoni pizza? Are they delivering it via interdimensional wormhole?" Haynes crosses his arms, "How should I know? I'm just trying to fill the damned thing out." To which the Minister raises his voice, "You're the GREAT detective, are you not? Isn't it your job to know?" Said detective takes a step forward, raising his own voice, "Well, aren't you THE Minister? Can't you just ask this 'The Tempest' of yours for a pizza?" This causes the Minister to slam his fist down, "You should know such frivolities to be below its concerns! Or are you as dense as everyone else here?" The two continue to go back and forth for a while, getting progressively heated, and you get the sneaking suspicion that you won't be receiving any pizza deliveries.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_THESCARRED_1" unique="true">
+	<text>While the two aren't necessarily hostile to one another, there's an undeniable tension in the room whenever both the Scarred and the Minister are present. You find the two in the cafeteria, sitting opposite each other. Neither is speaking a word as they both stare off into space. Though you decide it would be awkward here to confront them here, in front of everybody, a part of you would really like to ask the two to just relax and ease up a bit; our enemies are the Rebels, not each other! Right?</text>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_THEHUNGER_1" unique="true">
+	<text>A loud, crunching noise draws your attention, and you find the Minister feeding bits of metal to the Hunger as if it were a pet. Eventually, the latter seems to get a bit rowdy, and it attempts to nibble at the Minister's armor. As it does so, its blobby body is sent flying, and its screams pierce your ears, "I-I-I-INEDIBLE. FAMILIAR? Liberator? H-h-how...? How!" The Minister lets out a chuckle in response, as he tosses one last scrap of metal towards the reeling Engi, "How interesting... I'll be keeping an eye on you, spawn. Do be careful around the armor, yes?" He walks away, amused with himself, and the Hunger jiggles its way towards you, "Captain... C-c-c-captain... INQUIRY: What? Why! WHO IS HE. E-e-exactly...?" You wish you were sure yourself.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_MINISTER_THEHEROINE_1" unique="true">
+	<text>You're walking to the Minister's room as an armored hand tightly grasps your shoulder, and you're aggressively turned around to face its owner. To your surprise, though, it's not the Minister standing there, but... the Heroine. Though it's hard to get a read on her through her helmet, you feel a level of intensity in her stare uncommon for even her.</text>
+	<choice hidden="true">
+		<text>Are you alright? What's the matter?</text>
+		<event>
+			<text>The Heroine's grip around your shoulder tightens a little as she leans in, "You trust me, right? You stood with me against evil before, simply because I asked you to. Simply because I said it was what was right, and you trusted that."</text>
+			<choice hidden="true">
+				<text>I mean, yes, but... what's this about?</text>
+				<event>
+					<text>Her voice quivers a bit, uncharacteristically, "I... believe we have welcomed yet another evil onto our very ship. This Minister of yours, and the spawn of this Tempest... they... REEK. Of evil, of deceit, and of ILL INTENTIONS. My spear burns hot in their presence, and I'm of sure of this as it is. However..." She stares off to the side for a moment, before locking eyes again, "He is here as your ally, as I am, and I trust your judgment... as you trust mine. So, I ask you this, comrade: do you truly believe in this Minister?"</text>
+					<choice hidden="true">
+						<text>Yes, I do. I trust him as much as I'd trust you.</text>
+						<event>
+							<text>She relaxes, and simply nods her head before walking away. Let's hope you can trust in your own decisions as much as she does.</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I... can't say I do. I share your same concerns.</text>
+						<event>
+							<text>The Heroine tightens her grip once more, now practically crushing your shoulder with her fervor, "Then let us do what heroes do BEST. A NEW EVIL DIES TONIGHT, COMRADE! STAND WITH ME AS WE MARCH AGAINST THE SHORES OF ITS DARK STRONGHOLD, AND DESTROY THIS CORRUPTION THAT BLIGHTS US. FOR THE MULTIVERSE!!!" Her spear in hand, she sprints in the general direction of the Minister's room, and you have little choice but to follow her.</text>
+							<choice hidden="true">
+								<text>Run after her.</text>
+								<event>
+									<text>It's not easy, but you manage to keep up with her zealous march. You're right behind the Heroine as she crashes through the door to the Minister's room, yelling out, "SHOW YOURSELF, EVIL, FOR RIGHTEOUSNESS IS INEVITABLE! YOUR DEFENSES HAVE FAILED YOU, AND JUSTICE KNOCKS AT YOUR DOOR!!" The Minister sits up in his chair, completely bewildered, "The door you've just DEMOLISHED? What in the hell is the meaning of this?" He looks past the Heroine, and towards you, "Renegade? May I suggest you keep this brute on a leash if she's out and about, destroying things as she pleases?" Shes brandishes her spear at him, and his stature tenses, "Or, are you with her? Is this your idea of camaraderie?"</text>
+									<choice hidden="true">
+										<text>I, uh...</text>
+										<event>
+											<text>The Heroine interrupts you before you can really get a word in, "SILENCE, SNAKE, BEFORE I CUT OFF YOUR SILVERED TONGUE." Her grip around her spear tightens, and you realize you can hear it searing within her hands as it's pointed towards the Minister's armor. She speaks, "THIS... ARMOR OF YOURS, FIEND. I CAN SENSE ITS MALICE. ITS HATRED FOR LIFE, AND ALL WHO DEFEND IT. FOR WHAT REASON DO YOU DON THIS EVIL?" The Minister rolls his eyes, immediately tired of the theatrics, "Am I to be silent, or are you here to question me?" A spear narrowly whizzes past his head, and the Heroine takes a step forward, "THE NEXT ONE WILL NOT MISS. SPEAK." The annoyance previously present on the Minister's face has been all but replaced with an emotion you can't say you've never seen him express before: fear.</text>
+											<choice hidden="true">
+												<text>Isn't this a bit much?</text>
+												<event>
+													<text>This time, your words reach her, and her intensity lowers slightly, "Forgive me, comrade, but this is a serious matter. This armor of his isn't just evil, it's MADE of evil. A physical evil akin to that dreaded mattervirus, if not even greater... so, again, I ask you, fiend. For what reason do you wear it?" The Minister answers quickly, panic overtaking his voice, "Are you people MAD? I've explained all I know of the armor, and its purpose. It isn't fucking evil, it is ARMOR! CLOTHING! Impossibly resilient and unspeakably dangerous clothing, sure, but it doesn't INTEND anything. It is an object that I am bound to- to my own dismay, may I add, and it does as I instruct it to. For the most part, anyways, as is the case with any unstable machine..." A sadness coats his voice as his words drift off, but the Heroine hardly seems to care, "If this THING of evil truly holds you against your will, then you should have no qualm with me destroying it."</text>
+													<choice hidden="true">
+														<text>Can you really destroy it?</text>
+														<event>
+															<text>"There is no evil in this Multiverse that I CAN'T destroy. Such is my vow..." You look to the Minister, and to your surprise, he looks as if he's considering the possibility. After a moment of doing so, he speaks, "You are extraordinary yourself, sure, but this armor is indestructible. I was promised as much as it forced itself onto me, and... trust me, I've tried." He sighs for a moment, before continuing, "I'm not opposed to having it removed, if that will absolve me in your eyes, but I fear for the potential consequences. The armor hasn't taken kindly to my attempts to remove it in the past." The Heroine takes his words to heart, and she lowers her spear as she turns to you, "I... believe him, comrade. Even still... while he may not be evil, that armor is. I would attempt to remove it, if you would allow." You look to the Minister, and he seems to be in agreement. It's your call.</text>
+															<choice hidden="true">
+																<text>We came here to vanquish evil. Let's see this through.</text>
+																<event>
+																	<text>The Heroine nods, and turns to the Minister, "Take a moment to brace yourself. I will be driving my spear through the armor's core, the source of its evil, and attempting to shatter its hold over you from there. Let me know when you are ready." The Minister nods in turn, and takes a moment to gather himself. You watch as he turns his hands over, observing his gauntlets and clenching them into a fist. Should the Heroine succeed here... he will be free not only from the armor, but maybe even the Tempest. He could search for his daughter, earnestly, and leave the horrors of his cult-life behind him. With you, the Heroine, and... everyone. He would truly be free, and you feel that he knows it as much as you do. With a deep breath, he closes his eyes and puffs his chest out, "Alright. I'm ready. Give it your best shot, hero."</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event>
+																			<text>Raising her spear at the armor once more, the Heroine cries out, "INANIMATE YOU MAY BE, CAGE, YOU ARE NO LESS EVIL FOR IT. I WILL CRUSH YOU, AND, ONE DAY, TOO WILL I CRUSH YOUR MALEVOLENT MASTER. OF THIS, I PROMISE." She assumes a stance, ready to strike, "Now... FALL, CAGE! BREAK. UNDER THE WEIGHT OF YOUR SINS, AND UNDER THE FORCE OF MY WILL!!" The Heroine rushes forward with supernatural speed, and her spear meets the Minister's armor with a thunderous CRACK. Thin tendrils of light begin to spill forth from its core... and you realize she's managed to penetrate it, if only slightly. With a roar, she thrusts again, and again, and again; manifestations of her will empowering her as she does so. A cacophony of colors rushes forth from her spear as she makes one final, decisive strike, and...</text>
+																			<choice hidden="true">
+																				<text>And...?</text>
+																				<event>
+																					<text>Your vision is overtaken as the core's light becomes blinding, and the only sense you can rely on becomes your hearing. You hear the Heroine as she cries out, the Minister as he recoils under the weight of her blow, and... a third thing within the chaos. A droning noise, beneath everything else. Before you can really pinpoint it, though, the Minister screams out, "STOP! The suit, it's-" He stops speaking for a moment, before wincing in pain as horror overtakes his voice, "-I FEEL IT! IT'S- AACK... IT'S TEARING ME APART!!! IT'S KILLING ME- STOP!! PLEASE-" The Heroine responds in kind, panic in her own voice, "I... I don't know what this is! My spear is stuck fast... Have we made a mistake...?"</text>
+																					<choice hidden="true">
+																						<text>What can I do...?</text>
+																						<event>
+																							<text>The Minister's screams intensify as he begs for help, for forgiveness... for his daughter. The Heroine desperately tries to help, but there's nothing to be done. The only thing louder than the Minister's screams are the silence that follows, and... that noise. It's stronger now, overpowering the Heroine's own desperate cries. The light in the room grows in strength, brighter than merely blinding, and you do your best to shield your eyes. By the time you open them again, the light is gone, but... so is the Minister. In the Heroine's arms is his armor, now empty. You notice her spear still embedded in its core, but... whatever damage it had done appears to have been undone somehow, as you realize the core's exterior has closed around the spear itself.</text>
+																							<removeCrew class="ddunique_theminister">
+																								<clone>false</clone>
+																								<text>No trace of the Minister remains in your systems... what exactly happened to him...?</text>
+																							</removeCrew>
+																							<choice hidden="true">
+																								<text>What... did you do...?</text>
+																								<event>
+																									<text>You can hear her crying as she answers you, "I... I don't... I'm sorry... I didn't think-" Before she can finish her sentence, that humming from before strikes you as it continues to grow louder, and louder. It's... the armor. Is it going to explode? You call out to her again, this time to tell her to drop the armor and run, but... it's too late. As she turns to face you, the armor releases another flash of light from within her arms, and you're forced to guard your eyes once more. By the time your vision recovers... the Heroine, too, is gone. This time, not even her armor remains. Only the Minister's, and... her spear, still stuck fast within its core. The armor crashes to the ground, and you're left utterly alone in the wake of its light.</text>
+																									<removeCrew class="ddunique_theheroine">
+																										<clone>false</clone>
+																										<text>The Heroine, too, leaves no trace. Damn it all...</text>
+																									</removeCrew>
+																									<choice hidden="true">
+																										<text>Scream out for your friends.</text>
+																										<event>
+																											<text>You're not sure what else to do. What else you CAN do. As you're crying out, releasing your anguish, a movement in the room catches your attention. The armor just moved.</text>
+																											<choice hidden="true">
+																												<text>What...?</text>
+																												<event>
+																													<text>For a moment you think you must've just imagined it, but then it happens again. The armor's fingers begin to twitch, and then its legs, and then it in its entirety. It spasms, and jerks, its movements growing more and more intense, before... it locks in place, arms and legs straight, and begins to float.</text>
+																													<choice hidden="true">
+																														<text>Have I lost my mind?</text>
+																														<event>
+																															<text>The armor faces you in a way that feels intentional. Its gauntlet reaches over, grasping the spear within its chest, and it simply... removes it. Its core heals over as it does so, and it looks as if it'd never been pierced at all. It drops the spear to the ground, and continues to face you.</text>
+																															<choice hidden="true">
+																																<text>What are you? What have you done with my friends?</text>
+																																<event>
+																																	<text>Its core dims, then flashes, and then REALLY flashes as the room goes white once more. This time... it's the armor that vanishes, but not without a trace. Inspecting your ship's systems, it seems to have left a piece of data for you to find... a set of coordinates. Your mind screams that it must be some sort of trap, but your heart aches for your missing friends. If there's any chance that they're at these coordinates, or that you can avenge them there, you'd like to take it.</text>
+																																	<choice hidden="true">
+																																		<text>Don't worry... I'm coming.</text>
+																																		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_ULTIMACHALLENGEACCEPTED"/>
+																																	</choice>
+																																</event>
+																															</choice>
+																														</event>
+																													</choice>
+																												</event>
+																											</choice>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text>I don't think this is worth the risk. We should figure out another way.</text>
+																<event>
+																	<text>The two begrudgingly agree, and the situation settles down. If the Minister is lastingly upset about the attempt on his life, he doesn't make it apparent, but... you still feel awkward about the whole thing. As well, what the Heroine said about the Minister's armor continues to ring throughout your head. Can it truly be a being made of pure hatred?</text>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="SOCIALIZE_DDTHE_HEROINE_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_DDTHE_HEROINE_NOTHING">
+		<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_1"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_2"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_3"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_4"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_FREDDY_1" req="LIST_CREW_FREDDY"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_EATER_1" req="unique_eater"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_NIGHTS_1" req="unique_nights"/>
+		<event name="SOCIALIZE_DDTHE_HEROINE_THESCARRED_1" req="unique_thescarred"/>
+		<event name="SOCIALIZE_DDTHE_FOOLISH_THEHEROINE_1" req="ddunique_theaberration"/>
+		<event name="SOCIALIZE_DDTHE_MINISTER_THEHEROINE_1" req="ddunique_theminister"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_NOTHING">
+	<text>You try to grab her attention, but the Heroine seems to be preoccupied with chasing a rat around the ship. Though she doesn't pay you any mind, she does yell after the rodent as it outspeeds her, "YOU MAY RUN, VILE VERMIN, BUT KNOW THIS. JUSTICE. NEVER! TIRES!! YOUR INFECTIOUS REIGN OF TERRORS ENDS HERE!!!" At least she's having fun.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_1" unique="true">
+	<text>Searching for the Heroine, a loud noise grabs your attention... it sounds like glass being shattered. Following the sound, you're drawn to the cafeteria, where, sure enough, the Heroine appears to be smashing dishes against the ground. She yells out as she does so, "BE FREE, GLASS-KIN! NO MORE WILL YOU BE SHACKLED TO THE WHIMS OF MAN, FORCED TO LABOR AND TOIL FOR THE SAKE OF 'CONVENIENCE'. FOOD IS TO BE HELD BY ONE'S OWN HAND, NOT BY THOSE OF AN ENSLAVED CONSTRUCT!!" She continues her heroic rampage for quite some time, and you're left wondering how she goes about using ANY object if it's glassware that embodies cruelty.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_2" unique="true">
+	<text>The Heroine approaches you, a book in her hand, "I found this in your quarters, on the ground. I saved it from collecting dust, but... tell me, comrade, do you truly read?"</text>
+	<choice hidden="true">
+		<text>Yes?</text>
+		<event>
+			<text>She nods, and leans in close, handing you the book as she does so, "Do not fret, then, comrade. The secret of your nerdiness dies with me." She pats you on the back and walks away, though, you could swear she was stifling a laugh...</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>No?</text>
+		<event>
+			<text>Her stance tenses, and her free hand draws her spear, "You mean to tell me there's a SECRET nerd aboard this ship, reading books in YOUR quarters?!" The Heroine runs off, power behind her hastened steps, and she yells out as she does so, "SHOW YOURSELF, DECEITFUL NERD! THERE IS NO HIDING FROM JUSTICE!!!" You could swear she was stifling a laugh...</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_3" unique="true">
+	<text>You find the Heroine passed out in her bed, armor still donned, which makes you realize you've never seen her take it off... next to her is her phone, yet to enter sleep mode itself.</text>
+	<choice hidden="true">
+		<text>Sneak a peek at her phone.</text>
+		<event>
+			<text>You reach over the Heroine, trying your best to be stealthy, and grab her phone from her side. Scrolling through it, it seems she was looking through pictures of fish... like, she literally just searched the word 'fish' in the ship's database. Though you're not sure why, you feel somewhat embarrassed as you return her phone to her side and swiftly leave the room.</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Put a blanket over her.</text>
+		<event>
+			<text>You recall the fact that most fish are cold-blooded as you put a warm blanket over the Heroine; you can't have the Multiverse's champion catching a cold! Assuming... Deep Ones can catch colds...? She stirs slightly as you do so, mumbling in her sleep, "Fall... zzz... you dummy villain... zzzz... Be crushed... honk mimimimimi... under the weight of my awesomeness... zzzzz..." She literally verbalizes the words 'honk mimimimimi.'</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Leave her be.</text>
+		<event>
+			<text>There's no reason to bother her as she sleeps... it can't be easy to fall asleep in a suit of armor like that. You leave the room, quiet as a mouse, and she merely continues to snore.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_GENERIC_4" unique="true">
+	<text>The Heroine is in her room, exercising by the looks of things. You can't imagine that it's easy to do so inside all that armor... she's just completed a triple-backflip when she notices you, and stops for a moment, "Comrade! Come, join me!" She gestures to a 200 kilogram dumbbell to her side, which you notice is all but crushing the stand it's been left on.</text>
+	<choice hidden="true">
+		<text>Alright, I'll, uh... try my best?</text>
+		<event>
+			<text>She cheers you on as you grab the dumbbell, and you close your eyes... your whole life has been preparing you for this. You channel all the strength within yourself and lift, and, to your surprise... it feels... effortless?? You drop it in shock, nearly crushing your foot as the dumbbell sinks into the floor, and the Heroine laughs from behind you, "YEAH!! That's the spirit!"</text>
+			<choice hidden="true">
+				<text>What the hell? How did I do that?</text>
+				<event>
+					<text>The Heroine slaps the dumbbell, it still sinking into the floor slightly, "These aren't just ANY weights, you know!! They're a hero's weights... they train the body AND the spirit, and respond in kind. A true hero values both qualities... as do these weights! Your spirit must be really strong, comrade, if you're lifting them with arms like THOSE!!" She laughs again, and you do your best to ignore the insult as the two of you train for a while. Indeed, your body and spirit alike feel like they're blazing with power by the end of the workout... or, maybe that's just your muscles screaming for dear life.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I'll pass, thanks.</text>
+		<event>
+			<text>She shrugs, "Alright, but don't slack on your training, comrade... evil could strike at ANY moment!!" Well, then you'd hate for it to strike while your body is exhausted from trying to lift something heavier than you are!! You'll, like, jog sometime, or something??</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_FREDDY_1" unique="true">
+	<text>Bonding over a cup of tea, Freddy and the Heroine seem to be deep in conversation when you find them in the break room. Freddy speaks, tipping his hat to her, "This has been lovely, you know. I haven't had the pleasure of speaking to many Deep Ones, but, compared to the ones I have, you're much more, shall I say... enthusiastic, in regards to conversation." The Heroine smashes her teacup over her face, tea seeping through her visor, "You THINK?? I really appreciate the kind words, comrade! My kin back home used to get tired of me REAL quick." Freddy looks at the shattered glassware, clearing his throat, "Yes, well, uh... we can all be a bit extreme sometimes, I'm sure." Their conversation goes on for quite some time, several more teacups becoming casualties, and you decide to leave the room before any glass shrapnel hits you.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_EATER_1" unique="true">
+	<text>Eater runs past you, a spear half-eaten in his hands, and the Heroine follows suit but a few moments later. The two turn the corner, and you hear her yell after him, "RETURN MY SPEAR AT ONCE, COMRADE!! SPEARS ARE FOR DESTROYING EVIL, NOT APPETITES!!!" You're, uh... sure they'll figure something out.</text>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_NIGHTS_1" unique="true">
+	<text>You're strolling through the hall as Nights walks past, several spears embedded in his slimy skin. You ask him about it, and he begrudgingly elaborates, "That fisssh lady, the psssycho in the armor? I wassss enjoying breakfassst, a few beersss asss usssual, when ssshe ssstarted CHASSSING me, throwing ssspearsss and calling me 'he who imbibesss pure evil' and whatnot."</text>
+	<choice hidden="true">
+		<text>Wow, that, uh... truly sounds awful.</text>
+		<event>
+			<text>He tries to tug at one of the spears, but it holds fast within his slime. "Where doesss ssshe even get thessse thingsss...? God, I don't drink enough for thisss..." Nights slithers away, mumbling about his misery, and you can't help but be mildly amused by the situation.</text>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Maybe this is a good reason to go sober?</text>
+		<event>
+			<text>He looks at you as if you just said the dumbest thing he's ever heard, "A good reassson to- there ISSS no good reassson to go sssober. If anything, thisss just makesss me want to drink more..." Nights slithers away, mumbling about his misery, and you can't help but be mildly amused by the situation.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_HEROINE_THESCARRED_1" unique="true">
+	<text>You come across the Heroine and the Scarred sitting together, both engrossed in meditation. The two Deep Ones hum a low, guttural melody in unison, and you get the feeling that you shouldn't interrupt them. Later, you ask the Scarred about what they were up to, and you swear he blushes a little bit as he describes it as a 'ritual sacred to his kin.' You're glad you didn't interrupt them, then...</text>
+</event>

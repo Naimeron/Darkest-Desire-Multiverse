@@ -132,7 +132,9 @@
             <mod-append:choice hidden="true" req="blobdeepone" blue="false">
 				<text>Reset your Deep One Morph. [-1{]</text>
 				<event>
-					<item_modify><item type="fuel" min="-1" max="-1"/></item_modify>
+					<item_modify>
+						<item type="fuel" min="-1" max="-1"/>
+					</item_modify>
 					<text>Your Morph transforms back to its original shape.</text>
 					<transformRace class="blobdeepone">blob</transformRace>
 					<choice hidden="true">
@@ -202,6 +204,18 @@
 					</choice>
 				</event>
 			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DDDISPARITYADMINISTRATOR">
+				<text>(Administrator Drone) Take the form of the Disparity Administrator.</text>
+				<event>
+					<text>Your Morph tries to take the drone's shape, but something is stopping it... perhaps it utilizes some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
 		</mod:findLike>
 	</mod:findLike>
 	<mod:findLike type="choice"><mod:selector req="gold"/>
@@ -210,6 +224,30 @@
 				<text>(Engi Crew) Take the form of a Disparity Elite.</text>
 				<event>
 					<text>Your Morph tries to take the Disparity Elite's shape, but something is stopping it... perhaps they utilize some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One Crew) Take the form of a Deep One Chosen.</text>
+				<event>
+					<text>Your Morph tries to take the Chosen's shape, but something is stopping it... perhaps they utilize some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+				<text>(Soulplague Crew) Take the form of a Soulplague Huskweaver.</text>
+				<event>
+					<text>Your Morph tries to take the Huskweaver's shape, but something is stopping it... perhaps they utilize some unknowable power that even the Morphs can't mimic.</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
@@ -231,6 +269,179 @@
 		</event>
 	</mod-append:choice>
 </mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_AUG">
+	<mod-append:choice req="DARKGOD_CURSED_BOOK">
+		<text>(Otherworldly Tome) Brand one of your human crew members as a future human sacrifice.</text>
+		<event load="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDPALE_HEART">
+		<text>(Pale Heart) Investigate the Pale Heart and prepare Ill'drythk Mutagens.</text>
+		<event load="STORAGE_CHECK_AUG_DDPALEHEARTINVESTIGATION"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_JOB">
+	<mod-append:choice hidden="true" req="dd_corruptor">
+		<text>(Corruptor) Investigate the Corruptor System.</text>
+		<event load="STORAGE_CHECK_DDCORRUPTOR_SUBSUMATIONS"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION">
+	<text>Are you sure you want to do this? Preparing one of your crew members as a human sacrifice renders them useless for most tasks and strips away their sense of self, but allows them to not take up crew slots (making them useful for future sacrifices required by the Otherworldly Tome). You cannot prepare any additional sacrifices if you already have eight or more prepared.</text>
+	<choice req="DD_PREPARINGHUMANSACRIFICEINSTORAGECHECK">
+		<text>(Human Crew) Prepare a human sacrifice.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens and their eyes cloud over...</text>
+			<removeCrew class="LIST_CREW_HUMAN">
+				<clone>false</clone>
+				<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done.</text>
+					<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+					<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_AUG_DDPALEHEARTINVESTIGATION">
+	<text>You approach the Pale Heart, and watch as it continues its perpetual beating. From your understanding, you're able to sacrifice certain crew members to the Heart and convert them into Ill'drythk Mutagen that can be used to mutate your Ill'drythk Statues.
+	
+	CRYSTAL: FROSTWOOD MUTAGEN
+	DEEP ONE: VOIDROOT MUTAGEN
+	LANIUS: IRONBOUND MUTAGEN
+	LEECH: TOXBLOOD MUTAGEN
+	ORCHID: LEAFHOST MUTAGEN
+	ROCKMAN: CINDERBARK MUTAGEN</text>
+	<choice req="LIST_CREW_CRYSTAL">
+		<text>(Crystal Crew) Prepare a vial of Frostwood Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_CRYSTAL">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_frostwood" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_DEEPONES">
+		<text>(Deep One Crew) Prepare a vial of Voidroot Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_DEEPONES">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_voidroot" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_LANIUS">
+		<text>(Lanius Crew) Prepare a vial of Ironbound Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_LANIUS">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_ironbound" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_LEECH">
+		<text>(Leech Crew) Prepare a vial of Toxblood Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_LEECH">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_toxblood" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ORCHID">
+		<text>(Orchid Crew) Prepare a vial of Leafhost Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_ORCHID">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_leafhost" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_ROCK">
+		<text>(Rock Crew) Prepare a vial of Cinderbark Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_ROCK">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_cinderbark" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
 
 <mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
 	<mod-append:choice req="DISPARITY_LIBERATORTOG_DEFEND" blue="false">
@@ -257,12 +468,44 @@
 		<text>(Broodmother Drone) Set the state of the drone. [Current mode: Boarder]</text>
 		<event load="COMBAT_CHECK_BROODMOTHER_BOARDER"/>
 	</mod-append:choice>
+	<mod-append:choice req="DDHELLRAISER_FIRE_LOOT" blue="false">
+		<text>(Soulplague Loot Drone) Set the state of the drone. [Current mode: Plague]</text>
+		<event load="COMBAT_CHECK_DDHELLRAISER_FIRE_LOOT"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDHELLRAISER_HULL_LOOT" blue="false">
+		<text>(Soulplague Loot Drone) Set the state of the drone. [Current mode: Mayhem]</text>
+		<event load="COMBAT_CHECK_DDHELLRAISER_HULL_LOOT"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_DEFAULT" blue="false">
+		<text>(Administrator Drone) Set the state of the drone. [Current mode: Default]</text>
+		<event load="COMBAT_CHECK_DDADMINISTRATOR_DEFAULT"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_SPEED" blue="false">
+		<text>(Administrator Drone) Set the state of the drone. [Current mode: Speed]</text>
+		<event load="COMBAT_CHECK_DDADMINISTRATOR_SPEED"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_ATTACK" blue="false">
+		<text>(Administrator Drone) Set the state of the drone. [Current mode: Attack]</text>
+		<event load="COMBAT_CHECK_DDADMINISTRATOR_ATTACK"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_DEFENSE" blue="false">
+		<text>(Administrator Drone) Set the state of the drone. [Current mode: Defense]</text>
+		<event load="COMBAT_CHECK_DDADMINISTRATOR_DEFENSE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_HAZARD" blue="false">
+		<text>(Administrator Drone) Set the state of the drone. [Current mode: Hazard]</text>
+		<event load="COMBAT_CHECK_DDADMINISTRATOR_HAZARD"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="COMBAT_CHECK_REAL">
 	<mod-append:choice req="BLUELIST_CREW_DISPARITY_ELITE" max_group="404" hidden="true">
 		<text>Change your Disparity Elite's form.</text>
 		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</mod-append:choice>
+	<mod-append:choice req="dd_soulplaguemassbindedcheck" lvl="1" max_lvl="1" max_group="405" hidden="true">
+		<text>Call upon your binded Soulplague mass.</text>
+		<event load="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -564,6 +807,100 @@
 	</choice>
 </event>
 
+<event name="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON">
+	<text>You perform a quick ritual, and feel faint whispers in your mind as the space outside warps and shifts... your binded Soulplague mass has arrived.</text>
+	<playSound>ddsoulplague_assault</playSound>
+	<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddsoulplagueaura_bg</anim>
+	</backgroundObject>
+	<choice hidden="true">
+		<text>Offer no sacrifice, but command the Soulplague mass to attack your enemy. [28s cooldown]</text>
+		<event>
+			<text>The Soulplague mass will strike somewhat sluggishly without a sacrifice to fuel it, but it will obey your command nevertheless and prepare to assault the opposing ship.</text>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="28.0" maxTime="28.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
+				<triggeredEventBox load="DEFAULT_TIMER">
+					<warning time="5.0" flash="true"/>
+					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
+				</triggeredEventBox>
+			</triggeredEvent>
+			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
+				<layer z="2">background</layer>
+				<spawnArea x="660" y="127" w="0" h="0"/>
+				<anim>danger_ddsoulplague_allies</anim>
+				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
+			</backgroundObject>
+			<choice>
+				<text>Continue to the fight!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="ddhuman_sacrifice" blue="false">
+		<text>(Human Sacrifice) Offer a prepared human sacrifice and command the Soulplague mass to attack your enemy. [14s cooldown]</text>
+		<event>
+			<text>You quickly throw your sacrifice out of the airlock, and they're ravenously torn apart by the waiting Soulplague tendrils. Heightened by your tribute, the Soulplague mass obeys your command and prepares to assault the opposing ship more fervently.</text>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
+				<triggeredEventBox load="DEFAULT_TIMER">
+					<warning time="5.0" flash="true"/>
+					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
+				</triggeredEventBox>
+			</triggeredEvent>
+			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
+				<layer z="2">background</layer>
+				<spawnArea x="660" y="127" w="0" h="0"/>
+				<anim>danger_ddsoulplague_allies</anim>
+				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
+			</backgroundObject>
+			<choice>
+				<text>Continue to the fight!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_HUMAN" blue="false">
+		<text>(Human Crew) Offer one of your human crew members as a sacrifice and command the Soulplague mass to attack your enemy. [14s cooldown]</text>
+		<event>
+			<text>You quickly throw your crew member out of the airlock, before they can even realize your intentions, and they're ravenously torn apart by the waiting Soulplague tendrils. Heightened by your tribute, the Soulplague mass obeys your command and prepares to assault the opposing ship more fervently.</text>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
+				<triggeredEventBox load="DEFAULT_TIMER">
+					<warning time="5.0" flash="true"/>
+					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
+				</triggeredEventBox>
+			</triggeredEvent>
+			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
+				<layer z="2">background</layer>
+				<spawnArea x="660" y="127" w="0" h="0"/>
+				<anim>danger_ddsoulplague_allies</anim>
+				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
+			</backgroundObject>
+			<choice>
+				<text>Continue to the fight!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice>
+		<text>Nevermind, let's fight!</text>
+		<event>
+			<text>You decide not to do anything and prepare to fight.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT">
+	<superBarrage player="true" name="DDSOULPLAGUE_HAZARD_STRIKE_ALLY"/>
+</event>
+
 <event name="COMBAT_CHECK_LIBERATOR_BATTLE">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
@@ -714,11 +1051,727 @@
         <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
     </choice>
 </event>
+<event name="COMBAT_CHECK_DDHELLRAISER_FIRE_LOOT">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Mayhem Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDHELLRAISER_FIRE_LOOT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDHELLRAISER_HULL_LOOT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDHELLRAISER_HULL_LOOT">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Plague Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDHELLRAISER_HULL_LOOT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDHELLRAISER_FIRE_LOOT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDADMINISTRATOR_DEFAULT">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Speed Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Attack Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Defense Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Hazard Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDADMINISTRATOR_SPEED">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Default Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Attack Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Defense Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Hazard Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDADMINISTRATOR_ATTACK">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Default Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Speed Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Defense Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Hazard Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDADMINISTRATOR_DEFENSE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Default Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Speed Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Attack Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Hazard Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDADMINISTRATOR_HAZARD">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Default Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Speed Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Attack Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Set the drone to Defense Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+
+<mod:findName type="event" name="STORAGE_CHECK_INVENTORY_UPGRADES">
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT1" lvl="1" blue="false">
+		<text>Matter Disperser [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT1" lvl="0" max_lvl="0" blue="false">
+		<text>Matter Disperser [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT2" lvl="1" blue="false">
+		<text>Psychic Emanator [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT2" lvl="0" max_lvl="0" blue="false">
+		<text>Psychic Emanator [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT3" lvl="1" blue="false">
+		<text>Density Amplifier [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT3" lvl="0" max_lvl="0" blue="false">
+		<text>Density Amplifier [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_INVENTORY_LAB">
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_FORTITUDE" lvl="1" blue="false">
+		<text>Fishy Fortitude [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_FORTITUDE" lvl="0" max_lvl="0" blue="false">
+		<text>Fishy Fortitude [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_RAGE" lvl="1" blue="false">
+		<text>Reckless Rage [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_RAGE" lvl="0" max_lvl="0" blue="false">
+		<text>Reckless Rage [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_DEEPBREATH" lvl="1" blue="false">
+		<text>Deep Breath [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="LAB_DEEPONE_DEEPBREATH" lvl="0" max_lvl="0" blue="false">
+		<text>Deep Breath [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_SYSTEM">
+	<mod-append:choice hidden="true" req="dd_corruptor" blue="false">
+		<text>Corruptor.</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR">
+	<text>What upgrade do you want to install?</text>
+	<choice req="dd_corruptor" lvl="0" max_lvl="1" max_group="0" blue="false" hidden="true">
+        <text>Level 3 Corruptor. [UNAVAILABLE: system is not level 2]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="dd_corruptor" lvl="2" max_group="0" blue="false" hidden="true">
+        <text>Level 3 Corruptor [Cost: 65~, 6{]</text>
+        <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3"/>
+    </choice>
+    <choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
+        <text>Level 4 Corruptor [Cost: 80~, 8{, 3}]</text>
+        <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4"/>
+    </choice>
+	<choice req="dd_corruptor" lvl="4" max_group="0" blue="false" hidden="true">
+        <text>Level 4 Corruptor [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT1" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Matter Disperser. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT1" lvl="0" max_group="1" blue="false" hidden="true">
+		<text>Matter Disperser. [Cost: 40~, 3{]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_MATTERDISPERSER"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT2" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Psychic Emanator. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT2" lvl="0" max_group="2" blue="false" hidden="true">
+		<text>Psychic Emanator. [Cost: 50~, 1|]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_PSYCHICEMANATOR"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="1" max_group="3" blue="false" hidden="true">
+		<text>Density Amplifier. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="3" blue="false" hidden="true">
+		<text>Density Amplifier. [Cost: 35~, 2{, 2}]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_DENSITYAMPLIFIER"/>
+	</choice>
+	<choice>
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_MATTERDISPERSER">
+	<text>You are about to install the Matter Disperser upgrade.
+	[Effects: Corruptor system heals all Soulplague-aligned crew in the target room for 8 HP each time it spawns a Soulplague Tide.]</text>
+	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 40~, 3{]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="fuel" min="-3" max="-3"/>
+				<item type="scrap" min="-40" max="-40"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDCORRUPTOR_MATTERDISPERSER"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDCORRUPTOR_MATTERDISPERSER">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT1</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_PSYCHICEMANATOR">
+	<text>You are about to install the Psychic Emanator upgrade.
+	[Effects: Corruptor system stuns all non-Soulplague-aligned crew in the room for 2 seconds each time it spawns a Soulplague Tide.]</text>
+	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 50~, 1|]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+				<item type="scrap" min="-50" max="-50"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDCORRUPTOR_PSYCHICEMANATOR"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDCORRUPTOR_PSYCHICEMANATOR">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT2</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_DENSITYAMPLIFIER">
+	<text>You are about to install the Density Amplifier upgrade.
+	[Effects: Soulplague Tides spawned by the Corruptor system have +10 max HP and take 0.25x damage from fire, is not compatible with Corruptor lvl 3]</text>
+	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 35~, 2{, 2}]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="missiles" min="-2" max="-2"/>
+				<item type="fuel" min="-2" max="-2"/>
+				<item type="scrap" min="-35" max="-35"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDCORRUPTOR_DENSITYAMPLIFIER"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable: not compatible with Corruptor Level 3.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDCORRUPTOR_DENSITYAMPLIFIER">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT3</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3">
+	<text>You are about to upgrade the Corruptor to level 3.
+	[Effects: 16s infection, 5s per spawn]</text>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 65~, 6{]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<upgrade amount="1" system="dd_corruptor"/>
+			<item_modify>
+				<item type="fuel" min="-6" max="-6"/>
+				<item type="scrap" min="-65" max="-65"/>
+			</item_modify>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable: not compatible with Density Amplifier.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4">
+	<text>You are about to upgrade the Corruptor to level 4.
+	[Effects: 17s infection, 4s per spawn]</text>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 80~, 8{, 3}]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<upgrade amount="1" system="dd_corruptor"/>
+			<achievement>ACH_EVENT_DDCORRUPTORMAX</achievement>
+			<item_modify>
+				<item type="missiles" min="-3" max="-3"/>
+				<item type="fuel" min="-8" max="-8"/>
+				<item type="scrap" min="-80" max="-80"/>
+			</item_modify>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT3" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable: not compatible with Density Amplifier.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
 
 <mod:findName type="event" name="STORAGE_CHECK_BUTTON">
 	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
-		<text>(Otherworldly Tome) Investigate the available rituals.</text>
+		<text>(Otherworldly Tome) Investigate the Otherworldly Tome's rituals.</text>
 		<event load="STORAGE_CHECK_DARKGOD_CURSED_BOOK"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DDILLDRYTHK_RAINBOW_MUTAGEN" blue="false">
+		<text>(Rainbow Mutagen) Mutate an Ill'drythk Statue.</text>
+		<event load="STORAGE_CHECK_DDILLDRYTHK_RAINBOWMUTAGEN_USAGE"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_OWNINGILLDRYTHKMUTAGEN_CHECK" blue="false">
+		<text>(Ill'drythk Mutagen) Mutate an Ill'drythk Statue.</text>
+		<event load="STORAGE_CHECK_DDILLDRYTHKMUTAGEN_USAGE"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_BRINGTHEMINISTERBACKFROMTHEDEADCHECK" blue="false">
+		<text>(The Minister) Revive the Minister.</text>
+		<event load="STORAGE_CHECK_DDMINISTER_RESURRECTION"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -971,6 +2024,236 @@
 		</event>
 	</choice>
 	<choice hidden="true">
+		<text>Investigate the glistening yellow text, the Prayers of Proving.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase depictions of darkness and ritualistic devotion. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="deeponecultist">
+				<text>(Enlightened Crew) Have your Enlightened crew member transcribe the text.</text>
+				<event>
+					<text>Your Enlightened crew member writes you a cipher. Using it, you're able to understand what the text describes: a single ritual that allows Enlightened to ascend from their position as mere cultists, and become one of the Dark God's Chosen.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Divine Devotion.</text>
+						<event>
+							<text>RITUAL OF DIVINE DEVOTION:
+							This ritual gives you the location of a ship belonging to the Dark God's Chosen, which you will have to defeat in battle to prove yourself worthy. Doing so allows one of your Enlightened Cultists to become one of the Dark God's Chosen themselves.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the murky gray text, the Dark Callings.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase several races you recognize as enemies of the Dark God, among more vague things. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="dddeepone_chosen">
+				<text>(Chosen Crew) Have your Chosen crew member transcribe the text.</text>
+				<event>
+					<text>Your Chosen crew member writes you a cipher. Using it, you're able to understand that Chosen are capable of using human sacrifices to locate their enemies; those who oppose the Dark God.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Lightbreaking.</text>
+						<event>
+							<text>RITUAL OF LIGHTBREAKING:
+							This ritual gives you the location of a ship belonging to a random enemy of the Dark God. Defeating them grants you its favor, in the form of two random rewards from the basic ritual pool (you may receive the same reward twice, rewards from the Rituals of Corruption, True Devotion and Resolution will not appear). In addition, you will receive an extra reward depending on the enemy that appears, but this ritual is guaranteed to incur a random side effect.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the fuzzy brown text, the Hymns to Salvation.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase what appears to be plants of some kind. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK">
+				<text>(Ill'drythk Statue) Have your Ill'drythk Statue transcribe the text.</text>
+				<event>
+					<text>Your Ill'drythk Statue secretes a white substance over the relevant pages, which appears to transcribe them into a language you can understand. Looking at the pages now, you're able to comprehend their purpose: hunting down fellow Ill'drythk trees and claiming their Statues.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Rivalry.</text>
+						<event>
+							<text>RITUAL OF RIVALRY:
+							This ritual gives you the location of a Ill'drythk tree, which you can crew kill to subsume one of its Ill'drythk Statues into your own collective. Destroying the tree won't yield any special rewards.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Mutinous Mutation.</text>
+						<event>
+							<text>RITUAL OF MUTINOUS MUTATION:
+							This ritual gives you the location of an Ill'drythk Pale Heart; a particularly powerful Ill'drythk tree that has unlocked the secrets of Ill'drythk mutation. Killing its crew allows you to claim these secrets for yourself, but destroying it will destroy its secrets with it. You need at least three Ill'drythk Statues to act as conduits for the ritual, and you can only perform it once.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the electric blue text, the Tidings of the Tempest.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase what you can only surmise to be lightning storms and the strange entities that wield them. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
+				<text>(Tempest Crew) Have your Tempest-aligned crew member transcribe the text.</text>
+				<event>
+					<text>Your Tempest-aligned crew member touches the page, and it suddenly becomes legible. You're able to understand that the Cult of the Tempest uses these rituals to prove their devotion to the Tempest and receive its spawn in turn.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Stormcalling.</text>
+						<event>
+							<text>RITUAL OF STORMCALLING:
+							This ritual summons either a Stormborn Spawn or a Spawn Warden into the room with you, depending on which you desire. A Spawn Warden may merely be enthralled for no additional cost, but a Stormborn Spawn will require 1-2 additional human sacrifices to properly enthrall it. If its demands for flesh aren't met, the ritual will fail and the spawn will turn hostile.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the blindingly white text, the Neoborn Edicts.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase many bolts of lightning, encompassing an empty suit of armor. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+				<text>(Ultima Armor) Have the Ultima Armor transcribe the text.</text>
+				<event>
+					<text>The Ultima Armor's core flashes, and you realize you can now understand the words before you. It seems that you can perform this ritual to establish cults in the name of the Tempest, and gain its boons in return.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Tempestuous Expansion.</text>
+						<event>
+							<text>RITUAL OF TEMPESTUOUS EXPANSION:
+							This ritual gives you a location of interest, at which you can call in a ship belonging to the Cult of the Tempest. From there, they seek to spread their influence, but they'll need supplies to do so. Grant them this, and the Tempest will grant you a random boon and strengthen its blessing on your ship. Offering larger amounts of supplies increases your odds of receiving a higher quality boon. Received boons are separated into three qualities: minor, major and cosmic.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Investigate the iridescent rainbow text, the Corrupting Whispers.</text>
+		<event>
+			<text>Though you can't read the text, this section's diagrams showcase mutation and decay; the entropy of all things. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+				<text>(Soulplague Crew) Have your Soulplague-aligned crew member transcribe the text.</text>
+				<event>
+					<text>Your Soulplague-aligned crew member touches the relevant pages, and their text suddenly becomes legible. You're able to understand the pages' contents: several rituals describing the spread of the Soulplague mattervirus and the bolstering of its power.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Soul Eating.</text>
+						<event>
+							<text>RITUAL OF SOUL EATING:
+							This ritual gives you the location of a pirate ship, which you can defeat to offer the souls of its crew to the nearest Soulplague mass. Doing so makes it grant you a soul of its own in return, in the form of a selection of random Soulplague Husks. You may choose one Husk from the selection to keep.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Soul Weaving.</text>
+						<event>
+							<text>RITUAL OF SOUL WEAVING:
+							This ritual allows you to feed a blob of the Soulplague mattervirus in order to empower it and allow it to become a Huskweaver. Doing so requires the souls of 1-2 additional human sacrifices. Failing to properly empower the blob results in it becoming hostile and merely mutating into a Soulplague Husk.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Soul Firing.</text>
+						<event>
+							<text>RITUAL OF SOUL FIRING:
+							This ritual gives you the location of a Shell ship, which you can weaken to allow the nearest Soulplague mass to subsume them into the Children of the Stars' collective. Doing so allows them to grant you a reward in return, in the form of a random Soulplague weapon. Completely destroying the ship or killing its crew will result in you failing the ritual, and not receiving any additional rewards.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Soul Binding.</text>
+						<event>
+							<text>RITUAL OF SOUL BINDING:
+							This ritual gives you the location of the nearest Soulplague mass, which you can attempt to bind to your service. Doing so will have the mass attack you with all the souls it can afford to; you will have to survive an onslaught of Soulplague Husks and Huskweavers as they invade in waves. If you can survive the assault, you can bind the mass to your service, and it will arrive to assist you in any future fights you demand it to. You need at least six Soulplague-aligned crew to function as conduits for the ritual, and you can only perform it once.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
 		<text>Investigate the inky black text, the Beginner's Guide to the Occult.</text>
 		<event>
 			<text>You realize you actually CAN read this section... it appears to outline several basic rituals, and goes into detail about the requirements and rules for rituals in general.</text>
@@ -978,17 +2261,20 @@
 				<text>Investigate the Ritual Requirements and Rules.</text>
 				<event>
 					<text>The rules are outlined thusly:
+					
 					RULE 1: RITUALS MUST BE PERFORMED WHILST AT LIGHTSPEED.
 					RULE 2: RITUALS, SAVE FOR THE RITUAL OF THE HUNT, REQUIRE A HUMAN SACRIFICE.
 					RULE 3: A SUBSTITUTE OF IMMENSE AMOUNTS OF GARBAGE (100 SCRAP) MAY BE SACRIFICED SHOULD A HUMAN SACRIFICE NOT BE AVAILABLE.
-					RULE 4: CERTAIN RITUALS REQUIRE CERTAIN FOLLOWERS AND UNDERSTANDINGS OF THE DARK ONE'S WAYS.</text>
+					RULE 4: CERTAIN RITUALS REQUIRE CERTAIN FOLLOWERS AND UNDERSTANDINGS OF THE DARK ONE'S WAYS.
+					RULE 5: THERE ARE TYPICALLY NO PENALTIES FOR FAILING TO COMPLETE A RITUAL, BUT YOUR SACRIFICE WILL NOT BE RETURNED.</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>RULE 5: THERE ARE NO PENALTIES FOR FAILING TO COMPLETE A RITUAL, BUT YOUR SACRIFICE WILL NOT BE RETURNED.
-							RULE 6: CERTAIN RITUALS MAY ONLY BE MADE AVAILABLE WHEN THEIR PREREQUISITE RITUALS HAVE BEEN PERFORMED.
+							<text>RULE 6: CERTAIN RITUALS MAY ONLY BE MADE AVAILABLE WHEN THEIR PREREQUISITES HAVE BEEN FULFILLED.
 							RULE 7: IF YOU PERFORM A RITUAL AND THEN REROUTE, ANY RESULTING QUEST WILL BE LOST.
-							RULE 8: SHOULD YOU DESIRE TO BOTH PERFORM A RITUAL AND SPEAK WITH A CERTAIN CURATOR, YOU MUST DECIDE TO VIEW THEIR TASKS AND USE A JUMPSPEED AUGMENT.</text>
+							RULE 8: SHOULD YOU DESIRE TO BOTH PERFORM A RITUAL AND SPEAK WITH A CERTAIN CURATOR, YOU MUST DECIDE TO VIEW THEIR TASKS AND USE A JUMPSPEED AUGMENT.
+							RULE 9: THERE IS A CHANCE THAT CERTAIN RITUALS MAY INCUR UNWANTED SIDE EFFECTS; THESE WILL NOT PREVENT THE COMPLETION OF THE RITUAL.
+							RULE 10: CERTAIN RITUALS MAY RARELY ALLOW SPECIAL FOLLOWERS OF THE DARK GOD TO GRACE YOUR PRESENCE. DEFEATING THEM MAY GRANT ADDITIONAL REWARDS.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -1020,10 +2306,21 @@
 				</event>
 			</choice>
 			<choice hidden="true">
+				<text>Investigate the Ritual of Corruption.</text>
+				<event>
+					<text>RITUAL OF CORRUPTION:
+					This ritual gives you the location of a strange fountain, from which one of your crew members can drink to embrace the Dark God's gifts. The fountain's location is random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
 				<text>Investigate the Ritual of Occult Recruitment.</text>
 				<event>
 					<text>RITUAL OF OCCULT RECRUITMENT:
-					This ritual gives you the location of one of the Dark One's followers (Deep Ones or Engi Separatists), though they'll still need to undergo the Ritual of True Devotion to gain otherworldly powers. The follower, and their location, are random.</text>
+					This ritual gives you the location of one of the Dark One's followers (Deep Ones, Engi Separatists or Shells), though they'll still need to undergo the Ritual of True Devotion to gain otherworldly powers. The follower, and their location, are random.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
@@ -1034,7 +2331,7 @@
 				<text>Investigate the Ritual of True Devotion.</text>
 				<event>
 					<text>RITUAL OF TRUE DEVOTION:
-					This ritual gives you the location of a site where one of your followers of the Dark One may devote themselves and gain otherworldly powers (Deep Ones may become Enlightened Cultists and Engi Separatists may become Disparity Elites). The location of the site is random.</text>
+					This ritual gives you the location of a site where one of your followers of the Dark One may devote themselves and gain otherworldly powers (Deep Ones may become Enlightened Cultists, Engi Separatists may become Disparity Elites and Shells may become Children of the Stars). The location of the site is random.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
@@ -1046,6 +2343,17 @@
 				<event>
 					<text>RITUAL OF THE HUNT:
 					This ritual gives you the location of human sacrifices so you may perform other rituals. The amount, and their location, are random.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Resolution.</text>
+				<event>
+					<text>RITUAL OF RESOLUTION:
+					This ritual allows you to unbind the Otherworldly Tome from your ship. Doing so will cause it to vanish; who's to say if you will ever find it again.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
@@ -1069,13 +2377,13 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>ALL LEVELS: Gain a Super Shield with 4 hit points. Allies on the enemy ship constantly heal (0.4HP/s), constantly heal at twice the rate on your ship (0.8HP/s), and any allies within the room of the Temporal System constantly heal at a greatly increased pace (4HP/s). All allies get slight multipliers (1.1x) to most of their stats, and Nightmares gain 5 increased max HP.</text>
+							<text>ALL LEVELS: Gain a Super Shield with 8 hit points. Allies on the enemy ship constantly heal (0.4HP/s), constantly heal at twice the rate on your ship (0.8HP/s), and any allies within the room of the Temporal System constantly heal at a greatly increased pace (4HP/s). All allies get slight multipliers (1.1x) to most of their stats, and Nightmares gain 5 increased max HP. Enlightened Horrors become permanently controllable.</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>LEVEL 1 (SHADOWY GLIMPSE): Super Shield has 4 HP. Benefits are capped at 1x, while the Temporal System has any amount of power, benefits are exactly as read in the "ALL LEVELS" section.
-									LEVEL 2 (DARK REGARD): Super Shield has 8 HP. Benefits are now capped at 2x, while the Temporal System has 2 or more power.
-									LEVEL 3 (DARKEST GAZE): Super Shield has 12 HP. Benefits are now capped at 3x, while the Temporal System has 3 power.</text>
+									<text>LEVEL 1 (SHADOWY GLIMPSE): Super Shield has 8 HP. Benefits are capped at 1x, while the Temporal System has any amount of power, benefits are exactly as read in the "ALL LEVELS" section.
+									LEVEL 2 (DARK REGARD): Super Shield has 12 HP. Benefits are now capped at 2x, while the Temporal System has 2 or more power.
+									LEVEL 3 (DARKEST GAZE): Super Shield has 16 HP. Benefits are now capped at 3x, while the Temporal System has 3 power.</text>
 									<choice req="pilot" lvl="1" max_group="1" blue="false">
 										<text>Interesting. Close the book.</text>
 										<event load="STORAGE_CHECK"/>
@@ -1098,6 +2406,669 @@
 	</choice>
 </event>
 
+<event name="STORAGE_CHECK_DDILLDRYTHK_RAINBOWMUTAGEN_USAGE">
+	<text>You may apply a vial of Rainbow Ill'drythk Mutagen to one of your Ill'drythk Statues, forcing a controlled mutation. Do you desire to do so?</text>
+	<choice hidden="true" req="ddilldrythk_statue" blue="false">
+		<text>(Ill'drythk Statue) Mutate an Ill'drythk Statue.</text>
+		<event>
+			<text>Which mutation do you desire?</text>
+			<choice hidden="true">
+				<text>A Frostwood mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an icy blue hue, and horns of some sort begin to sprout from its head. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_frostwood</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>A Voidroot mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin darkens, and its face begins to contort as eerie eyes sprout from within its orifices. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_voidroot</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>An Ironbound mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a grayish-white hue, and spikes begin to protrude from its shoulders. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_ironbound</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>A Toxblood mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a purple hue, and a green liquid begins to ooze from its face. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_toxblood</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>A Leafhost mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a brown hue, and plants begin to sprout across its body. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_leafhost</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>A Cinderbark mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an orangeish-red hue, and flames begin to spew from its neck. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_cinderbark</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDILLDRYTHKMUTAGEN_USAGE">
+	<text>You may apply a vial of Ill'drythk Mutagen to one of your Ill'drythk Statues, forcing a controlled mutation. Do you desire to do so?</text>
+	<choice hidden="true" req="ddilldrythk_statue" blue="false">
+		<text>(Ill'drythk Statue) Mutate an Ill'drythk Statue.</text>
+		<event>
+			<text>Which vial of Mutagen will you apply?</text>
+			<choice hidden="true" req="dd_illdrythkmutagen_frostwood" lvl="1">
+				<text>(Frostwood Mutagen) Apply a vial of Frostwood Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an icy blue hue, and horns of some sort begin to sprout from its head. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_frostwood</transformRace>
+					<variable name="dd_illdrythkmutagen_frostwood" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_voidroot" lvl="1">
+				<text>(Voidroot Mutagen) Apply a vial of Voidroot Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin darkens, and its face begins to contort as eerie eyes sprout from within its orifices. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_voidroot</transformRace>
+					<variable name="dd_illdrythkmutagen_voidroot" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_ironbound" lvl="1">
+				<text>(Ironbound Mutagen) Apply a vial of Ironbound Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a grayish-white hue, and spikes begin to protrude from its shoulders. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_ironbound</transformRace>
+					<variable name="dd_illdrythkmutagen_ironbound" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_toxblood" lvl="1">
+				<text>(Toxblood Mutagen) Apply a vial of Toxblood Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a purple hue, and a green liquid begins to ooze from its face. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_toxblood</transformRace>
+					<variable name="dd_illdrythkmutagen_toxblood" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_leafhost" lvl="1">
+				<text>(Leafhost Mutagen) Apply a vial of Leafhost Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a brown hue, and plants begin to sprout across its body. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_leafhost</transformRace>
+					<variable name="dd_illdrythkmutagen_leafhost" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_cinderbark" lvl="1">
+				<text>(Cinderbark Mutagen) Apply a vial of Cinderbark Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an orangeish-red hue, and flames begin to spew from its neck. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_cinderbark</transformRace>
+					<variable name="dd_illdrythkmutagen_cinderbark" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDCORRUPTOR_SUBSUMATIONS">
+	<text>The true nature of the Soulplague mattervirus, and by extension the Corruptor system, are a mystery to most, but its utility in self-defense and combat scenarios has seen its usage commercialized and widespread across the Multiverse. Truthfully, nobody knows who invented the Corruptor, or how its usage spread in the first place, but it's now a common sight at stores anywhere and everywhere.
+	
+	It's understood that feeding Soulplague-corrupted entities (otherwise known as Soulplague Husks) to the Corruptor empowers the capabilities of the Soulplague Tides it spawns. You may do so here, assuming you have any Husks to offer.</text>
+	<choice hidden="true" req="ddsoulplague_husk_human">
+		<text>(Human Husk) Feed your Human Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_HUMAN" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_human">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							HUMAN SUBSUMATION: The Corruptor's Soulplague Tides have +0.4 movement speed.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_HUMAN</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_HUMAN" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_crystal">
+		<text>(Crystal Husk) Feed your Crystal Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_CRYSTAL" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_crystal">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							CRYSTAL SUBSUMATION: The Corruptor's Soulplague Tides have +10 max HP.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_CRYSTAL</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_CRYSTAL" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_engi">
+		<text>(Engi Husk) Feed your Engi Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ENGI" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_engi">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							ENGI SUBSUMATION: The Corruptor's Soulplague Tides have 1.3x repair speed.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ENGI</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ENGI" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_zoltan">
+		<text>(Zoltan Husk) Feed your Zoltan Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ZOLTAN" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_zoltan">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							ZOLTAN SUBSUMATION: The Corruptor's Soulplague Tides provide 1 power to friendly systems.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ZOLTAN</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ZOLTAN" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_orchid">
+		<text>(Orchid Husk) Feed your Orchid Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ORCHID" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_orchid">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							ORCHID SUBSUMATION: The Corruptor's Soulplague Tides provide oxygen to rooms they occupy.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ORCHID</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ORCHID" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_mantis">
+		<text>(Mantis Husk) Feed your Mantis Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_MANTIS" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_mantis">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							MANTIS SUBSUMATION: The Corruptor's Soulplague Tides have +0.2 combat damage.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_MANTIS</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_MANTIS" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_rockman">
+		<text>(Rockman Husk) Feed your Rockman Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ROCK" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_rockman">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							ROCKMAN SUBSUMATION: The Corruptor's Soulplague Tides take 0.1x damage from fires.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ROCK</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_ROCK" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_slug">
+		<text>(Slug Husk) Feed your Slug Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SLUG" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_slug">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							SLUG SUBSUMATION: The Corruptor's Soulplague Tides have 1.3x sabotage speed.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SLUG</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SLUG" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_shell">
+		<text>(Shell Husk) Feed your Shell Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SHELL" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_shell">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							SHELL SUBSUMATION: The Corruptor's Soulplague Tides have 1.3x heal speed.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SHELL</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_SHELL" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_lanius">
+		<text>(Lanius Husk) Feed your Lanius Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LANIUS" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_lanius">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							LANIUS SUBSUMATION: The Corruptor's Soulplague Tides drain oxygen from rooms they occupy.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LANIUS</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LANIUS" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_ghost">
+		<text>(Ghost Husk) Feed your Ghost Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_GHOST" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_ghost">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							GHOST SUBSUMATION: The Corruptor's Soulplague Tides can phase through doors.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_GHOST</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_GHOST" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_deepone">
+		<text>(Deep One Husk) Feed your Deep One Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_DEEPONE" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_deepone">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							DEEP ONE SUBSUMATION: The Corruptor's Soulplague Tides take 0.8x damage from crew.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_DEEPONE</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_DEEPONE" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_leech">
+		<text>(Leech Husk) Feed your Leech Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LEECH" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_leech">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							LEECH SUBSUMATION: The Corruptor's Soulplague Tides are stunned for 0.1x as long.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LEECH</hiddenAug>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LEECH" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddsoulplague_husk_obelisk">
+		<text>(Obelisk Husk) Feed your Obelisk Husk to the Corruptor.</text>
+		<event>
+			<text>Feeding a Husk to the Corruptor renders it subsumed in its entirety, leaving the Husk itself irretrievable. Are you sure you'd like to do this?</text>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_OBELISK" lvl="0" max_lvl="0" blue="false">
+				<text>Go through with the feeding.</text>
+				<event>
+					<text>Your Husk is grappled by the Corruptor's tentacles, and slowly absorbed into its being...</text>
+					<removeCrew class="ddsoulplague_husk_obelisk">
+						<clone>false</clone>
+						<text>You cannot clone your Husk, for it is part of the Corruptor now.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
+							
+							OBELISK SUBSUMATION: The Corruptor's Soulplague Tides take 0.5x damage from crew.</text>
+							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_OBELISK</hiddenAug>
+							<achievement>ACH_EVENT_DDOBELISKCORRUPTOR</achievement>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_OBELISK" lvl="1" blue="false">
+				<text>You cannot feed the Corruptor the same variant of Husk twice.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Nevermind, do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDMINISTER_RESURRECTION">
+	<text>It doesn't take you long to find the Minister's lifeless body - giving it a good kick, a flash of light bursts forth from it... and he's alive once more. He stands up, cracks his back, and then walks away without a word.</text>
+	<variable name="dd_minister_immortal_check" op="set" val="0"/>
+	<crewMember amount="1" class="ddunique_theminister" all_skills="2">The Minister</crewMember>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Continue...</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
 <mod:findName type="event" name="STORAGE_CHECK_CREW_REAL">
 	<mod-append:choice req="unique_thescarred" blue="false" hidden="true">
 		<text>Look for the Scarred.</text>
@@ -1106,6 +3077,195 @@
 	<mod-append:choice req="unique_thehunger" blue="false" hidden="true">
 		<text>Look for the Hunger.</text>
 		<event load="SOCIALIZE_THE_HUNGER_LIST"/>
+	</mod-append:choice>
+	<mod-append:choice req="ddunique_theaberration" blue="false" hidden="true">
+		<text>Look for the Foolish.</text>
+		<event load="SOCIALIZE_DDTHE_FOOLISH_LIST"/>
+	</mod-append:choice>
+	<mod-append:choice req="ddunique_theminister" blue="false" hidden="true">
+		<text>Look for the Minister.</text>
+		<event load="SOCIALIZE_DDTHE_MINISTER_LIST"/>
+	</mod-append:choice>
+	<mod-append:choice req="ddunique_theheroine" blue="false" hidden="true">
+		<text>Look for the Heroine.</text>
+		<event load="SOCIALIZE_DDTHE_HEROINE_LIST"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_BOSS">
+	<mod-append:choice req="ach_boss_dddreadnought_of_darkness" lvl="1" blue="false" hidden="true">
+		<text>Dreadnought of Darkness [Enlightened Deep Space]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_dddisparity_behemoth" lvl="1" blue="false" hidden="true">
+		<text>Disparity Behemoth [Disparity Assault]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddseraphim_judicator" lvl="1" blue="false" hidden="true">
+		<text>Seraphim Judicator [Disparity Assault]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddseraphim_prophet" lvl="1" blue="false" hidden="true">
+		<text>Seraphim Prophet [Nebulous Dead Zone]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddsoulplague_devourer" lvl="1" blue="false" hidden="true">
+		<text>Soulplague Devourer [Soulplague Coremass]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddlilith" lvl="1" blue="false" hidden="true">
+		<text>??? [Dark God's Domain]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddultimaarmor" lvl="1" blue="false" hidden="true">
+		<text>Ultima Manifestation [???]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddpaleheart" lvl="1" blue="false" hidden="true">
+		<text>The Pale Heart [???]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddthescarred_trueform" lvl="1" blue="false" hidden="true">
+		<text>Desire, Given Form [Enlightened Deep Space]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddthehunger_trueform" lvl="1" blue="false" hidden="true">
+		<text>Judgment, Foreordained [Disparity Assault]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddtheheroine_trueform" lvl="1" blue="false" hidden="true">
+		<text>Hope's Retort [Soulplague Coremass]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
+	<mod-append:choice req="ach_ddmv_soulplague" lvl="1" blue="false" hidden="true">
+		<text>Soulplague(?) Cruiser</text>
+		<event>
+			<text>CLASS: Soulplague(?) Cruiser
+			FACTION: Soulplague-aligned
+			
+			Though not resembling any Soulplague ship anybody else has ever seen, this ship is undoubtedly completely corrupted by the Soulplague mattervirus. There's little else you could possibly know about it... but the memory of its whispers have yet to leave your mind.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_ddmv_deep_one" lvl="1" blue="false" hidden="true">
+		<text>Deep One Cruiser</text>
+		<event>
+			<text>CLASS: Deep One Cruiser
+			FACTION: Roaming Deep Ones
+			
+			This Deep One war-vessel is adapted from a more secretive, occult design; the purpose of its construction was to allow token Deep One fleets to properly defend themselves in the face of the Theocracy's crusades. Though, it seems that its captains aren't too far-removed from the original design's occult origins... tales of these massive ships shaking down citizens and soldiers alike for all they're worth circulate the Multiverse.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_ddmv_seraphim" lvl="1" blue="false" hidden="true">
+		<text>Seraphim(?) Cruiser</text>
+		<event>
+			<text>CLASS: Seraphim(?) Cruiser
+			FACTION: The Seraphim
+			
+			Very few can claim to have seen Seraphim vessels, and even fewer can claim to have left with their lives after doing so, but this ship breaks all conventions for what those few witnesses have described. There's little else you could possibly know about it... but the memory of its chorus has yet to leave your mind.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_CREW">
+	<mod-append:choice req="ach_crew_thescarred" lvl="1" blue="false" hidden="true">
+		<text>The Scarred</text>
+		<event>
+			<text>PROFILE: The Scarred
+			Titles: Traitor to the Dark One, (Former) Chosen
+			Species: Deep One - Age: 43 - Gender: Non-binary
+			
+			The Scarred themselves struggles to recall much of their past, a staple for those touched by the Dark God, but they were once an Enlightened Cultist prior to their ascension and subsequent betrayal as one of the Dark God's Chosen. They saw something as the Dark God gazed at them; something that shattered their faith entirely and allowed them to see not only the error of their own ways but of all Deep Ones. Now, they fight against the Dark God in any way they can in search of a way to free their kin from its divine grasp.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_crew_thehunger" lvl="1" blue="false" hidden="true">
+		<text>The Hunger</text>
+		<event>
+			<text>PROFILE: The Hunger
+			Titles: The Liberator, Disparity Leader
+			Species: Engi - Age: ??? - Gender: N/A
+			
+			The Hunger is a mystery even among its closest subordinates, but it's vaguely recognized by the other members of the Disparity to have sacrificed a great deal in order to barter for the powers they all wield. With these powers, it and the other members of the Disparity seek to shatter the Harmony's hold over Engi-kind at any cost. Its speaking is erratic, utilizing several voices and implying the possible existence of multiple personalities within its being.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_crew_ddthefoolish" lvl="1" blue="false" hidden="true">
+		<text>The Foolish</text>
+		<event>
+			<text>PROFILE: The Foolish
+			Titles: Heart of the Soulplague Coremass, (Former) Lead Scientist of the Geniocracy Science District's Epsilon Lab
+			Species: Shell - Age: 37 - Gender: Male
+			
+			The Foolish's consciousness was lost for a great deal of time after his deal with the Dark God and the subsequent destruction and enthrallment of the Geniocracy's Epsilon Lab, as he became the beating heart of his Soulplague mattervirus' expansion. His desperation for results led to the downfall of both his lab and his co-workers; this, combined with the countless deaths actively being accrued by the remaining rogue Soulplague masses, weighs incredibly heavy on his mind. Even still, he seeks to repent for his past mistakes and put an end to the Dark God's twisted ways.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_crew_ddtheminister" lvl="1" blue="false" hidden="true">
+		<text>The Minister</text>
+		<event>
+			<text>PROFILE: The Minister
+			Titles: Minister of the Cult of the Tempest, the Tempest's Hand, (Former) Rebellion Head Engineer
+			Species: Human - Age: 74 - Gender: Male
+			
+			The Minister is incredibly snide, and only slightly less-so secretive, but you know that his deal with the Tempest is a result of having lost his daughter in a Rebellion lab accident many decades ago. Though his and the Tempest's motives aren't clear, he seems to hold no particular love for the the Rebellion he once served and fights against your foes as if they were the Tempest's own. Even still, under the figurative mask he puts on, you get the feeling that he resents the hand he's been dealt and the divinity he claims to serve...</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_crew_ddtheheroine" lvl="1" blue="false" hidden="true">
+		<text>The Heroine</text>
+		<event>
+			<text>PROFILE: The Heroine
+			Titles: True Hero, Kin-savior, Villain-slayer
+			Species: Deep One - Age: 27 (1204) - Gender: Female
+			
+			The Heroine is the truest embodiment of her namesake: a completely selfless hero who works to serve both her kin and all that is good in the Multiverse. Having spent nearly a dozen centuries within a time-independent sub-reality (constructed as a prison by the Dark God) has resulted in the loss of both her memory and her sense of self, but her emotions and righteousness fuel her and her heroic escapades all the same. These desires and emotions burn so strongly within her that she's managed to manifest them as physical beacons of power, much to the Dark God's disdain.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_LOOT">
+	<mod-append:choice req="ach_trans_enlightened" lvl="1" blue="false" hidden="true">
+		<text>(Enlightened Deep Space)</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_trans_disparity" lvl="1" blue="false" hidden="true">
+		<text>(Disparity Assault)</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_trans_ddsoulplague" lvl="1" blue="false" hidden="true">
+		<text>(Soulplague Coremass)</text>
+		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -1118,7 +3278,7 @@
 	</choice>
 	<choice req="LAB_DEEPONE_RAGE" lvl="1" max_group="0" blue="false" hidden="true">
 		<text>Currently Installed: Reckless Rage.
-		[Deep Ones have their ability cooldown cut to 33% of its original duration (60s > 20s).]</text>
+		[Deep Ones regenerate their abilities at 3x the rate.]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="LAB_DEEPONE_DEEPBREATH" lvl="1" max_group="0" blue="false" hidden="true">
@@ -1193,7 +3353,7 @@
 
 <event name="STORAGE_CHECK_LAB_DEEPONES_RAGE">
 	<text>You are about to install the Reckless Rage modification.
-	[Effects: Deep Ones have their ability cooldown cut to 33% of its original duration (60s > 20s)]
+	[Effects: Deep Ones regenerate their abilities at 3x the rate.]
 	
 	[Warning: After installing this, you will not be able to install any more primary upgrades for Deep One crew. You will not be able to deactivate this mod either.]</text>
 	<choice hidden="true">

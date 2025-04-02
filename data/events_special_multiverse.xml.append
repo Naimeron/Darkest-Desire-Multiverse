@@ -12,6 +12,35 @@
 			</choice>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice req="LIST_DDSOULPLAGUE_ALIGNED" blue="false">
+		<text>Present your Soulplague-aligned crew.</text>
+		<event>
+			<text>"Their pretty colors... may allure some, but I know better. I would be... disturbed, were I not so... impressed. Well done, traveler. Expect... rewards before your next journey."</text>
+			<achievement>ACH_BOON_DDSOULPLAGUE_CREW</achievement>
+			<metaVariable name="prof_z_boon_ddsoulplague" op="set" val="1"/>
+			<variable name="ach_boon_ddsoulplague_crew" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="THE_JUDGES_ENGI_REAL">
+	<mod-append:choice req="dd_corruptor" lvl="4" blue="false">
+		<text>Present your Corruptor system.</text>
+		<event>
+			<text>"Corruptor - for c-c-corrupting all! You pilot a: vessel worth steering clear from! Scary! Scary! For scary vessel: I provide Grant of C-c-corrupting! Grant of Corrupting! Save it - for the future!"</text>
+			<achievement>ACH_BOON_DDCORRUPTOR</achievement>
+			<metaVariable name="prof_e_boon_ddcorruptor" op="set" val="1"/>
+			<variable name="ach_boon_ddcorruptor" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ENGI_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="THE_JUDGES_ROCKMAN_REAL">
@@ -28,9 +57,6 @@
 			</choice>
 		</event>
 	</mod-append:choice>
-</mod:findName>
-
-<mod:findName type="event" name="THE_JUDGES_ROCKMAN_REAL">
 	<mod-append:choice req="JUDGELIST_ROCK_DISPARITY_GEAR" blue="false">
 		<text>Present Disparity tech.</text>
 		<event>
@@ -44,10 +70,678 @@
 			</choice>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice req="JUDGELIST_ROCK_DDSOULPLAGUE_GEAR" blue="false">
+		<text>Present Soulplague tech.</text>
+		<event>
+			<text>"Oh my... SOULPLAGUE Tech? Sure. This is tribute, I suppose. Its many colors may FOOL the UNSUSPECTING, but I know BETTER! This is dangerous, DANGEROUS stuff... but I DIGRESS. I shall BLESS you with the BLESSING OF IRIDESCENT CORRUPTION. But have PATIENCE. It is not for now, but for LATER!"</text>
+			<achievement>ACH_BOON_DDSOULPLAGUE_EQUIPMENT</achievement>
+			<metaVariable name="prof_r_boon_ddsoulplague_gear" op="set" val="1"/>
+			<variable name="ach_boon_ddsoulplague_equipment" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ROCK_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="THE_JUDGES_VARIABLE_CLEAR">
     <mod-append:metaVariable name="prof_z_boon_deepone" op="set" val="0"/>
+	 <mod-append:metaVariable name="prof_z_boon_ddsoulplague" op="set" val="0"/>
+	  <mod-append:metaVariable name="prof_e_boon_ddcorruptor " op="set" val="0"/>
     <mod-append:metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_r_boon_ddsoulplague_gear" op="set" val="0"/>
 </mod:findName>
+
+<mod:findName type="event" name="MV_TRAVELER_SECRET_NORMAL">
+    <mod:findLike type="loadEventList">
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_NORMAL"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_DEEP_ONE_NORMAL"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SERAPHIM_NORMAL"/>
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="MV_TRAVELER_SECRET_CHALLENGE">
+    <mod:findLike type="loadEventList">
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_CHALLENGE"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_DEEP_ONE_CHALLENGE"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SERAPHIM_CHALLENGE"/>
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="MV_TRAVELER_SECRET_EXTREME">
+    <mod:findLike type="loadEventList">
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_EXTREME"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_DEEP_ONE_EXTREME"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SERAPHIM_EXTREME"/>
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="MV_TRAVELER_SECRET_CHAOS">
+    <mod:findLike type="loadEventList">
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_CHAOS"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_DEEP_ONE_CHAOS"/>
+		<mod-append:event name="DDMV_TRAVELER_BOSS_SERAPHIM_CHAOS"/>
+    </mod:findLike>
+</mod:findName>
+
+<ship name="SHIP_DDMTBOSS_SOULPLAGUE_NORMAL" auto_blueprint="DDMT_BOSS_SOULPLAGUE_NORMAL">
+	<destroyed load="DDMTBOSS_SOULPLAGUE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SOULPLAGUE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_NORMAL">
+	<text>From out of the tunnel comes a not-so massive cruiser vessel, of a strange design... its surface and viscosity seem quite oily, and yet it manages to stay together somehow. You hear soft whispering, almost as if it's coming from within your head, "...Renegade... here... why here..."</text>
+	<ship load="SHIP_DDMTBOSS_SOULPLAGUE_NORMAL" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>The whispering continues; you turn around to find its source, but don't see anything, "...we'll remember... we'll always remember... die..."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-35" max="-35"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SOULPLAGUE_CHALLENGE" auto_blueprint="DDMT_BOSS_SOULPLAGUE_CHALLENGE">
+	<destroyed load="DDMTBOSS_SOULPLAGUE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SOULPLAGUE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_CHALLENGE">
+	<beaconType id="map_icon_quest" global="true">
+		<color r="25" g="205" b="150" a="1.0"/>
+		<unvisitedTooltip>This is the location of abnormal energy signatures. [Soulplague]</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+	</beaconType>
+	<text>From out of the tunnel comes a not-so massive cruiser vessel, of a strange design... its surface and viscosity seem quite oily, and yet it manages to stay together somehow. You hear soft whispering, almost as if it's coming from within your head, "...Renegade... here... why here..."</text>
+	<ship load="SHIP_DDMTBOSS_SOULPLAGUE_CHALLENGE" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>The whispering continues; you turn around to find its source, but don't see anything, "...we'll remember... we'll always remember... die..."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-40" max="-40"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SOULPLAGUE_EXTREME" auto_blueprint="DDMT_BOSS_SOULPLAGUE_EXTREME">
+	<destroyed load="DDMTBOSS_SOULPLAGUE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SOULPLAGUE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_EXTREME">
+	<text>From out of the tunnel comes a not-so massive cruiser vessel, of a strange design... its surface and viscosity seem quite oily, and yet it manages to stay together somehow. You hear soft whispering, almost as if it's coming from within your head, "...Renegade... here... why here..."</text>
+	<ship load="SHIP_DDMTBOSS_SOULPLAGUE_EXTREME" hostile="false"/> 
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>The whispering continues; you turn around to find its source, but don't see anything, "...we'll remember... we'll always remember... die..."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="loc_sector_count" lvl="0" max_lvl="4">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="loc_sector_count" lvl="5">
+		<text id="renegade_tribute_scrap_impossible"/>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SOULPLAGUE_DESTROYED">
+	<text id="renegade_destroyed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_soulplague" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DDMTBOSS_SOULPLAGUE_DROP_CHANCE"/>
+	</choice>
+</event>
+
+<eventList name="DDMTBOSS_SOULPLAGUE_DROP_CHANCE">
+	<event>
+		<text id="renegade_drop_fail"/>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event><loadEvent>DDMTBOSS_SOULPLAGUE_DROP</loadEvent></event>
+</eventList>
+
+<event name="DDMTBOSS_SOULPLAGUE_DEADCREW">
+	<text id="renegade_killed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_soulplague" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event><loadEvent>DDMTBOSS_SOULPLAGUE_DROP</loadEvent></event>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SOULPLAGUE_DROP">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_SOULPLAGUE</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDCHAINLASER_SOULPLAGUE"/>
+</event>
+
+<ship name="SHIP_DDMTBOSS_DEEP_ONE_NORMAL" auto_blueprint="DDMT_BOSS_DEEP_ONE_NORMAL">
+	<destroyed load="DDMTBOSS_DEEP_ONE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_DEEP_ONE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_DEEP_ONE_NORMAL">
+	<text>From out of the tunnel comes a massive cruiser vessel, of Deep One design! Though, it's larger than any Deep One ship you've ever seen... they hail you, "Renegade! Do you... have tribute? Tribute... for our Dark One?"</text>
+	<ship load="SHIP_DDMTBOSS_DEEP_ONE_NORMAL" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>"If... you won't give us tribute, then... we shall take it! O', Dark One... see me, as I kill these fools... in your name! For the sake... of your glory!"</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-35" max="-35"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_DEEP_ONE_CHALLENGE" auto_blueprint="DDMT_BOSS_DEEP_ONE_CHALLENGE">
+	<destroyed load="DDMTBOSS_DEEP_ONE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_DEEP_ONE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_DEEP_ONE_CHALLENGE">
+	<beaconType id="map_icon_quest" global="true">
+		<color r="25" g="205" b="150" a="1.0"/>
+		<unvisitedTooltip>This is the location of abnormal energy signatures. [Deep One]</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+	</beaconType>
+	<text>From out of the tunnel comes a massive cruiser vessel, of Deep One design! Though, it's larger than any Deep One ship you've ever seen... they hail you, "Renegade! Do you... have tribute? Tribute... for our Dark One?"</text>
+	<ship load="SHIP_DDMTBOSS_DEEP_ONE_CHALLENGE" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>"If... you won't give us tribute, then... we shall take it! O', Dark One... see me, as I kill these fools... in your name! For the sake... of your glory!"</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-40" max="-40"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_DEEP_ONE_EXTREME" auto_blueprint="DDMT_BOSS_DEEP_ONE_EXTREME">
+	<destroyed load="DDMTBOSS_DEEP_ONE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_DEEP_ONE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_DEEP_ONE_EXTREME">
+	<text>From out of the tunnel comes a massive cruiser vessel, of Deep One design! Though, it's larger than any Deep One ship you've ever seen... they hail you, "Renegade! Do you... have tribute? Tribute... for our Dark One?"</text>
+	<ship load="SHIP_DDMTBOSS_DEEP_ONE_EXTREME" hostile="false"/> 
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>"If... you won't give us tribute, then... we shall take it! O', Dark One... see me, as I kill these fools... in your name! For the sake... of your glory!"</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="loc_sector_count" lvl="0" max_lvl="4">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="loc_sector_count" lvl="5">
+		<text id="renegade_tribute_scrap_impossible"/>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_DEEP_ONE_DESTROYED">
+	<text id="renegade_destroyed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_deep_one" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DDMTBOSS_DEEP_ONE_DROP_CHANCE"/>
+	</choice>
+</event>
+
+<eventList name="DDMTBOSS_DEEP_ONE_DROP_CHANCE">
+	<event>
+		<text id="renegade_drop_fail"/>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event><loadEvent>DDMTBOSS_DEEP_ONE_DROP</loadEvent></event>
+</eventList>
+
+<event name="DDMTBOSS_DEEP_ONE_DEADCREW">
+	<text id="renegade_killed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_deep_one" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event><loadEvent>DDMTBOSS_DEEP_ONE_DROP</loadEvent></event>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_DEEP_ONE_DROP">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_DEEP_ONE</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDDEEP_ONE_SHOTGUN"/>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SERAPHIM_NORMAL" auto_blueprint="DDMT_BOSS_SERAPHIM_NORMAL">
+	<destroyed load="DDMTBOSS_SERAPHIM_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SERAPHIM_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SERAPHIM_NORMAL">
+	<text>From out of the tunnel comes a massive cruiser vessel, of strange design... its flames dance and weave between an impossible, physical darkness. They hail, and a chorus of voices speak over one another:
+	
+	"A Renegade? Here?"
+	"PURIFICATION: IMMINENT."
+	"Your fate lies in light's hands..."</text>
+	<ship load="SHIP_DDMTBOSS_SERAPHIM_NORMAL" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>Again, the chorus speaks:
+			
+			"I'd really rather not, but... oh well..."
+			"PURIFICATION: UNDERWAY. BURN."
+			"...and it is light's duty to chase away thhhhe shadows."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-35" max="-35"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SERAPHIM_CHALLENGE" auto_blueprint="DDMT_BOSS_SERAPHIM_CHALLENGE">
+	<destroyed load="DDMTBOSS_SERAPHIM_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SERAPHIM_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SERAPHIM_CHALLENGE">
+	<beaconType id="map_icon_quest" global="true">
+		<color r="25" g="205" b="150" a="1.0"/>
+		<unvisitedTooltip>This is the location of abnormal energy signatures. [Deep One]</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+	</beaconType>
+	<text>From out of the tunnel comes a massive cruiser vessel, of strange design... its flames dance and weave between an impossible, physical darkness. They hail, and a chorus of voices speak over one another:
+	
+	"A Renegade? Here?"
+	"PURIFICATION: IMMINENT."
+	"Your fate lies in light's hands..."</text>
+	<ship load="SHIP_DDMTBOSS_SERAPHIM_CHALLENGE" hostile="false"/> 
+	<choice hidden="true">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>Again, the chorus speaks:
+			
+			"I'd really rather not, but... oh well..."
+			"PURIFICATION: UNDERWAY. BURN."
+			"...and it is lighhhht's duty to chase away thhhhe shadows."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-40" max="-40"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SERAPHIM_EXTREME" auto_blueprint="DDMT_BOSS_SERAPHIM_EXTREME">
+	<destroyed load="DDMTBOSS_SERAPHIM_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SERAPHIM_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SERAPHIM_EXTREME">
+	<text>From out of the tunnel comes a massive cruiser vessel, of strange design... its flames dance and weave between an impossible, physical darkness. They hail, and a chorus of voices speak over one another:
+	
+	"A Renegade? Here?"
+	"PURIFICATION: IMMINENT."
+	"Your fate lies in light's hands..."</text>
+	<ship load="SHIP_DDMTBOSS_SERAPHIM_EXTREME" hostile="false"/> 
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>Again, the chorus speaks:
+			
+			"I'd really rather not, but... oh well..."
+			"PURIFICATION: UNDERWAY. BURN."
+			"...and it is light's duty to chase away thhhhe shadows."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="loc_sector_count" lvl="0" max_lvl="4">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" req="loc_sector_count" lvl="5">
+		<text id="renegade_tribute_scrap_impossible"/>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SERAPHIM_DESTROYED">
+	<text id="renegade_destroyed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_seraphim" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DDMTBOSS_SERAPHIM_DROP_CHANCE"/>
+	</choice>
+</event>
+
+<eventList name="DDMTBOSS_SERAPHIM_DROP_CHANCE">
+	<event>
+		<text id="renegade_drop_fail"/>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event><loadEvent>DDMTBOSS_SERAPHIM_DROP</loadEvent></event>
+</eventList>
+
+<event name="DDMTBOSS_SERAPHIM_DEADCREW">
+	<text id="renegade_killed"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<variable name="ach_ddmv_seraphim" op="set" val="1"/>
+	<metaVariable name="prof_renegades_killed" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event><loadEvent>DDMTBOSS_SERAPHIM_DROP</loadEvent></event>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SERAPHIM_DROP">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_SERAPHIM</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDPHASE_SERAPHIM"/>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SOULPLAGUE_CHAOS" auto_blueprint="DDMT_BOSS_SOULPLAGUE_CHAOS">
+	<destroyed load="DDMTBOSS_SOULPLAGUE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SOULPLAGUE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SOULPLAGUE_CHAOS">
+	<text>From out of the tunnel comes a not-so massive cruiser vessel, of a strange design... its surface and viscosity seem quite oily, and yet it manages to stay together somehow. You hear soft whispering, almost as if it's coming from within your head, "...Renegade... here... why here..."</text>
+	<ship load="SHIP_DDMTBOSS_SOULPLAGUE_CHAOS" hostile="false"/>
+	<eventAlias jumpClear="false" name="DDMTBOSS_SOULPLAGUE_DROP">DDMTBOSS_SOULPLAGUE_DROP_CHAOS</eventAlias>
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>The whispering continues; you turn around to find its source, but don't see anything, "...we'll remember... we'll always remember... die..."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="BRIBE_CHAOS" lvl="1">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed_chaos"/>
+			<playSound>gm_bribe</playSound>
+			<variable name="gnome_bribe" op="set" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" blue="false" req="BRIBE_CHAOS" lvl="0" max_lvl="0">
+		<text>*%$##@*%!</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SOULPLAGUE_DROP_CHAOS">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_SOULPLAGUE</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDCHAINLASER_SOULPLAGUE_CHAOS"/>
+</event>
+
+<ship name="SHIP_DDMTBOSS_DEEP_ONE_CHAOS" auto_blueprint="DDMT_BOSS_DEEP_ONE_CHAOS">
+	<destroyed load="DDMTBOSS_DEEP_ONE_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_DEEP_ONE_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_DEEP_ONE_CHAOS">
+	<text>From out of the tunnel comes a massive cruiser vessel, of Deep One design! Though, it's larger than any Deep One ship you've ever seen... they hail you, "Renegade! Do you... have tribute? Tribute... for our Dark One?"</text>
+	<ship load="SHIP_DDMTBOSS_DEEP_ONE_CHAOS" hostile="false"/>
+	<eventAlias jumpClear="false" name="DDMTBOSS_DEEP_ONE_DROP">DDMTBOSS_DEEP_ONE_DROP_CHAOS</eventAlias>
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>"If... you won't give us tribute, then... we shall take it! O', Dark One... see me, as I kill these fools... in your name! For the sake... of your glory!"</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="BRIBE_CHAOS" lvl="1">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed_chaos"/>
+			<playSound>gm_bribe</playSound>
+			<variable name="gnome_bribe" op="set" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" blue="false" req="BRIBE_CHAOS" lvl="0" max_lvl="0">
+		<text>*%$##@*%!</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_DEEP_ONE_DROP_CHAOS">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_DEEP_ONE</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDDEEP_ONE_SHOTGUN_CHAOS"/>
+</event>
+
+<ship name="SHIP_DDMTBOSS_SERAPHIM_CHAOS" auto_blueprint="DDMT_BOSS_SERAPHIM_CHAOS">
+	<destroyed load="DDMTBOSS_SERAPHIM_DESTROYED"/>
+	<deadCrew load="DDMTBOSS_SERAPHIM_DEADCREW"/>
+</ship>
+
+<event name="DDMV_TRAVELER_BOSS_SERAPHIM_CHAOS">
+	<text>From out of the tunnel comes a massive cruiser vessel, of strange design... its flames dance and weave between an impossible, physical darkness. They hail, and a chorus of voices speak over one another:
+	
+	"A Renegade? Here?"
+	"PURIFICATION: IMMINENT."
+	"Your fate lies in light's hands..."</text>
+	<ship load="SHIP_DDMTBOSS_SERAPHIM_CHAOS" hostile="false"/>
+	<eventAlias jumpClear="false" name="DDMTBOSS_SERAPHIM_DROP">DDMTBOSS_SERAPHIM_DROP_CHAOS</eventAlias>
+	<choice hidden="true" max_group="0">
+		<text>Prepare to fight!</text>
+		<event>
+			<text>Again, the chorus speaks:
+			
+			"I'd really rather not, but... oh well..."
+			"PURIFICATION: UNDERWAY. BURN."
+			"...and it is light's duty to chase away thhhhe shadows."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice blue="false" req="BRIBE_CHAOS" lvl="1">
+		<text id="renegade_tribute_scrap"/>
+		<event>
+			<text id="renegade_tributed_chaos"/>
+			<playSound>gm_bribe</playSound>
+			<variable name="gnome_bribe" op="set" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-45" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true" blue="false" req="BRIBE_CHAOS" lvl="0" max_lvl="0">
+		<text>*%$##@*%!</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="JUDGE_BOON_RENEGADE">
+		<text>Use your blessing to avoid combat.</text>
+		<event load="MV_TRAVELER_BOON"/>
+	</choice>
+</event>
+
+<event name="DDMTBOSS_SERAPHIM_DROP_CHAOS">
+	<text id="renegade_drop_yes"/>
+	<achievement silent="false">ACH_DDREN_SERAPHIM</achievement>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="DDPHASE_SERAPHIM_CHAOS"/>
+</event>

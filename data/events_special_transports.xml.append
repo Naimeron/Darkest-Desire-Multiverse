@@ -99,10 +99,167 @@
         </event>
     </choice>
 </event>
+
 <event name="TRANSPORT_CAPTURE_DISPARITY" unique="true">
 	<text>The crew is dead, leaving you with the ship. Its cargo is yours for the taking. Aboard is the special tech you expected, which you bring back to your ship.</text>
 	<autoReward level="MED">standard_no_item</autoReward>
 	<achievement>ACH_TRANS_DISPARITY</achievement>
 	<weapon name="LASER_DISPARITY_LOOT"/>
 	<variable name="ach_trans_disparity" op="set" val="1"/>
+</event>
+
+<ship name="SHIP_DDSOULPLAGUE_TEMPEST_TRANSPORT_LOOT" auto_blueprint="DDTEMPEST_CRYSTAL_TRANSPORT">
+	<escape timer="30" min="999" max="999" >
+		<text>They look like they don't want to fight. They are trying to escape.</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="TRANSPORT_DESTROYED"/>
+	<deadCrew load="TRANSPORT_CAPTURE_DDSOULPLAGUE_TEMPEST"/>
+</ship>
+
+<event name="NEBULA_DDSOULPLAGUE_TEMPEST_TRANSPORT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_transport" global="true" req="LOOT_COMPASS">
+		<color r="255" g="186" b="0" a="1"/>
+		<unvisitedTooltip>An unvisited location.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
+	</beaconType>
+	<text>This beacon hosts a... Crystal transport? You're not sure that you recognize their decal, or if you understand why they're here, but... it's safe to bet the ship is most likely carrying some special tech. If you can kill its crew, their cargo will be yours.</text>
+	<ship load="SHIP_DDSOULPLAGUE_TEMPEST_TRANSPORT_LOOT" hostile="false"/>
+	<choice>
+		<text>Demand the surrender of their goods.</text>
+		<event>
+			<text>You prepare to secure their cargo by force.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+        <text>Avoid the ship.</text>
+        <event>
+            <text>They stay outside your weapons range, and eventually jump away.</text>
+			<choice hidden="true">
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice hidden="true">
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+        </event>
+    </choice>
+</event>
+
+<event name="TRANSPORT_CAPTURE_DDSOULPLAGUE_TEMPEST" unique="true">
+	<text>The crew, as well as their strange monsters, are dead, leaving you with the ship. Its cargo is yours for the taking... is what you would think, if they had any! There's no loot here! What's the meaning of this?! You're just shy of tearing the place apart when a flashing console of theirs catches your attention...</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<achievement>ACH_TRANS_DDSOULPLAGUE_TEMPEST</achievement>
+	<variable name="ach_trans_ddsoulplague_tempest" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Investigate the console.</text>
+		<event>
+			<text>This isn't just any console, but their navigational one. Whatever coordinates they were trying to get away to seem to still be locked into their systems... perhaps you can investigate them yourself, and get something out of this after all. Though you're not necessarily satisfied just yet, you jot down the coordinates and make do with what resources you've gathered from the ship for the time being.</text>
+			<quest event="NEBULA_QUEST_DDSOULPLAGUE_THEMINISTER"/>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_DDCOREMASS_TRANSPORT_LOOT" auto_blueprint="DDSOULPLAGUE_TRANSPORT">
+	<escape timer="30" min="999" max="999" >
+		<text>They look like they don't want to fight. They are trying to escape.</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="TRANSPORT_DESTROYED"/>
+	<deadCrew load="TRANSPORT_CAPTURE_DDCOREMASS"/>
+</ship>
+
+<event name="TRANSPORT_DDCOREMASS_LOOT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_ddcoremass_love" global="false">
+		<color r="213" g="110" b="83" a="1"/>
+	</beaconType>
+	<text load="TEXT_DDCOREMASS_VENTUREDEEPER"/>
+	<img back="BACKGROUND_DDSOULPLAGUEHEART" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddsoulplagueaura_bg</anim>
+	</backgroundObject>
+	<choice hidden="true" req="dd_soulplague_coremass_heartdefeated" lvl="0" max_lvl="0" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as expected, whispers fill your mind, but you find that they're less... intimidating, than usual:
+			
+			"...our loot... not yours..."
+			"...it's ours... join us..."
+			"...stars' loot... your loot..."</text>
+			<ship load="SHIP_DDCOREMASS_TRANSPORT_LOOT" hostile="false"/>
+			<choice hidden="true">
+				<text>Demand the surrender of their goods.</text>
+				<event>
+					<text>You prepare to secure their cargo by force.</text>
+					<ship hostile="true"/>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+						<triggeredEventBox load="DEFAULT_TIMER">
+							<warning time="5.0" flash="true"/>
+							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
+						</triggeredEventBox>
+					</triggeredEvent>
+					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
+						<layer z="2">background</layer>
+						<spawnArea x="660" y="127" w="60" h="58" center="true"/>
+						<anim>danger_ddsoulplague</anim>
+						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
+					</backgroundObject>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Avoid the ship.</text>
+				<event>
+					<text>They stay outside your weapons range, and eventually jump away... odd, that even the Children of the Stars may covet loot.</text>
+					<choice hidden="true">
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice hidden="true">
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_soulplague_coremass_heartdefeated" lvl="1" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
+			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<playSound>ddsoulplague_assault</playSound>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="TRANSPORT_CAPTURE_DDCOREMASS" unique="true">
+	<text>The crew is dead, leaving you with the ship. Its cargo is yours for the taking. Aboard is the special tech you expected, which you bring back to your ship.</text>
+	<autoReward level="MED">standard_no_item</autoReward>
+	<achievement>ACH_TRANS_DDCOREMASS</achievement>
+	<drone name="DDHELLRAISER_FIRE_LOOT"/>
+	<variable name="ach_trans_ddcoremass" op="set" val="1"/>
 </event>

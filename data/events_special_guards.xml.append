@@ -245,6 +245,7 @@
 		<color r="46" g="252" b="51" a="1"/>
 	</beaconType>
 	<text>Before you can so much as blink upon entering the sector, a barrage of ion projectiles whizzes past your window... met by another coming from the opposite direction! You're in the middle of a battle between two forces! On one side, you recognize the Harmony, but on the other...</text>
+	<variable name="loc_unique_sectors" op="add" val="1"/>
 	<changeBackground>BACK_SECTOR_ENGI</changeBackground>
 	<playSound>lightspeed</playSound>
 	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_DDENGI</customFleet>
@@ -262,9 +263,9 @@
 		</event>
 	</choice>
 	<choice hidden="true" req="ddseraph_engi">
-		<text>(Seraphim Crew) "Subject: Disparity."</text>
+		<text>(Engi Seraph) "Subject: Disparity."</text>
 		<event>
-			<text>The Seraphim elaborates, "Subject origin: Engi. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." Disparity? Well, you guess you kind of already knew that, given the distress call... still, who are they exactly, and what does your Seraphim mean by 'tainted'?</text>
+			<text>The Seraph elaborates, "Subject origin: Engi. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." Disparity? Well, you guess you kind of already knew that, given the distress call... still, who are they exactly, and what does your Seraph mean by 'tainted'?</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
@@ -352,6 +353,103 @@
 						</event>
 					</choice>
 				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="SHIP_START_DDSOULPLAGUE_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_CORRUPTION">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DDSOULPLAGUE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="START_DDSOULPLAGUE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="START_DDSOULPLAGUE_FIGHT_WIN">
+	<text>As things die down, the realization begins to sink in... that ship was piloted by Soulplague Husks. Most of what the Multiverse knows about the Soulplague mattervirus, and by extension its Husks, comes from infections born from the now-widespread use of the Corruptor system, but it's not unheard of to find the zombified remains of a ship's crew after they've been executed by it. Still, though... to find it all the way out here feels like an omen of things to come. Stay on your guard.</text>
+	<choice hidden="true">
+		<text>Let's head off, then.</text>
+		<event>
+			<text>You're preparing to leave as a marked beacon deeper in the sector catches your eye. Its data seems to be corrupted, but you're able to make out a strange, if not outright nonsensical, series of messages encrypted within:
+			
+			HOPE'S FALL
+			LIFE QUIVERS, AS DEATH MAULS
+			
+			HOPE'S STALL
+			PIERCE THE HEART, END ITS BRAWLS
+			
+			HOPE'S THRALL
+			OUT TO HEROES, IT CALLS
+			
+			
+			You're not sure what to make of it, if anything. It could be a pirate's attempt to lure lost explorers into a trap, an honest call to arms, simply someone's long-lost poetry caught in the system... it's impossible to say. At the very least, the mere possibility of allies in a sector such as this is something worth keeping in mind. Who's to say what hardships await you on the path ahead...</text>
+		</event>
+	</choice>
+</event>
+
+<event name="START_DDSOULPLAGUE">
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text>For all of the Atlas' talk of lifelessness and abandonment, this sector seems populated enough to you... at the very least, there's a ship here at its entrance. They don't really come off as any sort of guard, though, as their ship slowly drifts through the space outside...</text>
+	<variable name="loc_unique_sectors" op="add" val="1"/>
+	<ship load="SHIP_START_DDSOULPLAGUE_FIGHT" hostile="false"/>
+	<changeBackground>BACK_SECTOR_SHELL</changeBackground>
+	<playSound>lightspeed</playSound>
+	<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+		<text>(Soulplague Crew) Your crew member makes a gurgling, whispery noise...</text>
+		<event>
+			<text>Before you can ponder the logistics of whispering a gurgle, the ominous ship outside begins to head towards you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You try to find a quiet spot at the beacon to wait while the FTL charges, but the ominous ship outside trails behind you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Contact the ship.</text>
+		<event>
+			<text>You try to contact the ominous ship outside, but it ignores your attempts to hail and instead begins to head towards you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Attack the ship.</text>
+		<event>
+			<text>You move to prepare an assault on the ominous ship, and it begins to advance towards you in response. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
 			</choice>
 		</event>
 	</choice>

@@ -7,6 +7,18 @@
 		<text>Ask the Hunger about this.</text>
 		<event load="TRUE_VICTORY_CREW_THEHUNGER"/>
 	</mod-append:choice>
+	<mod-append:choice req="ddunique_theaberration" blue="true" hidden="true">
+		<text>Ask the Foolish about this.</text>
+		<event load="TRUE_VICTORY_CREW_DDTHEFOOLISH"/>
+	</mod-append:choice>
+	<mod-append:choice req="ddunique_theminister" blue="true" hidden="true">
+		<text>Ask the Minister about this.</text>
+		<event load="TRUE_VICTORY_CREW_DDTHEMINISTER"/>
+	</mod-append:choice>
+	<mod-append:choice req="ddunique_theheroine" blue="true" hidden="true">
+		<text>Ask the Heroine about this.</text>
+		<event load="TRUE_VICTORY_CREW_DDTHEHEROINE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <event name="TRUE_VICTORY_CREW_THESCARRED">
@@ -21,6 +33,33 @@
 <event name="TRUE_VICTORY_CREW_THEHUNGER">
 	<text>The Hunger spends a few moments reverberating, before becoming uncharacteristically still. Then, finally, with a clarity in their voice that you've never before heard, they speak, "Captain. We cannot die here. Our people need us, still. We know your people need you, too. When the people are too weak to fight their own wars, it's us liberators who need to rise up and fight them in their place. Fight them for what's right... and, besides. We've already sacrificed everything once, captain. We cannot afford to do so again." The Hunger pauses, and then returns to its reverberation once more, "U-U-U-UNDERSTOOD: caaaptain?"</text>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1_2</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_DDTHEFOOLISH">
+	<text>The Foolish seems surprisingly enthusiastic about the situation, bobbing up and down in the air as he speaks, "Yes, thhhhis is perfect! A way to put an end to dimensional travel, and halt thhhhe mattervirus' expansion once for all... thhhhis is a sacrifice we have to make, right? Not just for thhhhe sake of thhhhe Rebellion, or thhhhe Federation, but... for everyone thhhhe mattervirus would hope to devour. I'll stand by whatever decision you make, captain, but thhhhis sounds like thhhhe exact way to redeem myself thhhhat I've been so desperately searching for."</text>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD2</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_DDTHEMINISTER">
+	<text>The Minister clenches his gauntlet, a maneuver you're all too familiar with now, and holds it in front of his face. "I can hear the Tempest here, Renegade; louder than I've heard it in quite some time. It feels close. Personally, I've little care for my life, and even less for the Rebellion, but the Tempest differs. It does not want that bomb detonated." He unclenches his fist, lowers it, and gives you a curt nod. There's a trust in his eyes you've never noticed before. "Do with that what you will."</text>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1_3</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_DDTHEHEROINE">
+	<text>The Heroine is quite a bit more troubled than you'd expected; if anyone was ready to sacrifice themselves, you figured it'd be her. She turns to you, amidst her pacing, "I've heard of determining the lesser of two evils, comrade, but... never the greater of two goods. Is it worth sacrificing ourselves here, and robbing the Multiverse of its greatest heroes? Who will fight against its evils in our place?" She looks you down, reading your expression, and you see the tenseness in her stature lessen a little, "Oh, who am I kidding? We're HEROES! WHETHER WE ARE TO DIE HERE, AND END THE REBELLION'S REIGN OF TERROR, OR LIVE ON, AND FIGHT AGAINST EVIL IN ALL FORMS..." She pauses to raise her helmet, her teeth shining brighter than any star in the Multiverse as she gives you a toothy grin, "...I stand with you, comrade."</text>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD2_2</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="TRUE_VICTORY_LOAD"/>

@@ -10,8 +10,24 @@
 	<triggeredEvent event="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING" time="1"/>
 </event>
 
+<event name="ADDON_DD">
+	<text>Darkest Desire, an FTL: Multiverse Addon
+	Developed by: Naimeron
+	Currently Enabled.
+			
+	Darkest Desire is a general content mod focused on new, dark and lore-heavy sectors, as well as everything else! Including: a new system, the Corruptor, new races, such as the Deep Ones or the Husks, Elites and Super Elites for existing races (namely both Shells and Engi right now), terrifying new Horror crew, new Uniques, new ships, new augments, mechanics, hazards, weapons, drones, etcetera! To get started, look for non-unique neutral and unique hostile/hazard sectors.</text>
+</event>
+
+<event name="DDMINISTER_IMMORTALITY_GUARANTEE">
+	<variable name="dd_minister_immortal_check" op="set" val="1"/>
+</event>
+
 <event name="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING">
 	<clearBackgroundObject name="DDULTIMAPOWER_OVERFLOWING_WARNINGFLASH"/>
+</event>
+
+<event name="DDCOREMASS_EVILWAAAMASS_ASSAULT">
+	<superBarrage name="DDSOULPLAGUE_HAZARD_STRIKE"/>
 </event>
 
 <event name="DDSERAPH_ENGI_SUMMON_BEAM">
@@ -20,6 +36,170 @@
 
 <event name="DDSERAPH_ENGI_SUMMON_BEAM_ENEMY">
 	<superBarrage name="DDSERAPH_ENGI_RADIANT_FLAME_BEAM_STRIKE"/>
+</event>
+
+<event name="DDECLIPTIC_EXTINCTION_SUMMON_BEAMS">
+	<superBarrage player="true" name="DDECLIPTIC_EXTINCTION_BEAMS_STRIKE"/>
+</event>
+
+<event name="DDHEROINE_MANIFESTATION_SUMMON_BEAM">
+	<superBarrage player="true" name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_STRIKE"/>
+</event>
+
+<event name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_ENEMY">
+	<superBarrage name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_INTEGRITYABILITY">
+	<superBarrage player="true" name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_INTEGRITYABILITY_STRIKE"/>
+</event>
+
+<event name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_INTEGRITYABILITY_ENEMY">
+	<superBarrage name="DDHEROINE_MANIFESTATION_SUMMON_BEAM_INTEGRITYABILITY_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_RANDOM">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTALABILITY">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTALABILITY_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTALABILITY_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTALABILITY_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_GHOSTABILITY">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_GHOSTABILITY_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_GHOSTABILITY_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_GHOSTABILITY_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_OBELISKABILITY">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_OBELISKABILITY_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_OBELISKABILITY_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_OBELISKABILITY_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ENGI">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_ENGI_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_GHOST">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_GHOST_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_LANIUS">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_LANIUS_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_LEECH">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_LEECH_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_MANTIS">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_MANTIS_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_OBELISK">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_OBELISK_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ORCHID">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_ORCHID_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_SHELL">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_SHELL_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_SLUG">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_SLUG_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_HUMAN">
+	<superBarrage player="true" name="DDSOULPLAGUE_SUMMON_BEAM_HUMAN_STRIKE"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ENGI_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_ENGI_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_GHOST_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_GHOST_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_LANIUS_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_LANIUS_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_LEECH_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_LEECH_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_MANTIS_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_MANTIS_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_OBELISK_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_OBELISK_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ORCHID_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_ORCHID_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_SHELL_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_SHELL_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_SLUG_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_SLUG_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN_STRIKE_ENEMY"/>
+</event>
+
+<event name="DDSOULPLAGUE_SUMMON_BEAM_HUMAN_ENEMY">
+	<superBarrage name="DDSOULPLAGUE_SUMMON_BEAM_HUMAN_STRIKE_ENEMY"/>
 </event>
 
 <event name="DDTEMPEST_SUMMON_BOLT_SINGLE">
@@ -268,6 +448,48 @@
 
 <event name="DDRIFT_SUMMON_BOLT_CGJ">
 	<superBarrage player="true" name="DDRIFT_SUMMON_BOLT_STRIKE_CGJ"/>
+</event>
+
+<eventList name="DDDARK_OBELISK_LIST">
+	<event load="DDDARK_OBELISK_LIST_FIRE"/>
+	<event load="DDDARK_OBELISK_LIST_BREACH"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
+</eventList>
+
+<eventList name="DDDARK_OBELISK_LIST_ENEMY">
+	<event load="DDDARK_OBELISK_LIST_FIRE_ENEMY"/>
+	<event load="DDDARK_OBELISK_LIST_BREACH_ENEMY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY_ENEMY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY_ENEMY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY_ENEMY"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY_ENEMY"/>
+</eventList>
+
+<event name="DDDARK_OBELISK_LIST_FIRE">
+	<superBarrage player="true" name="DDDARK_OBELISK_SUMMON_BEAM_FIRE"/>
+</event>
+
+<event name="DDDARK_OBELISK_LIST_BREACH">
+	<superBarrage player="true" name="DDDARK_OBELISK_SUMMON_BEAM_BREACH"/>
+</event>
+
+<event name="DDDARK_OBELISK_LIST_ENTITY">
+	<superBarrage player="true" name="DDDARK_OBELISK_SUMMON_BEAM_ENTITY"/>
+</event>
+
+<event name="DDDARK_OBELISK_LIST_FIRE_ENEMY">
+	<superBarrage name="DDDARK_OBELISK_SUMMON_BEAM_FIRE"/>
+</event>
+
+<event name="DDDARK_OBELISK_LIST_BREACH_ENEMY">
+	<superBarrage name="DDDARK_OBELISK_SUMMON_BEAM_BREACH"/>
+</event>
+
+<event name="DDDARK_OBELISK_LIST_ENTITY_ENEMY">
+	<superBarrage name="DDDARK_OBELISK_SUMMON_BEAM_ENTITY_ENEMY"/>
 </event>
 
 </FTL>

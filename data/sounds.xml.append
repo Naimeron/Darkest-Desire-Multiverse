@@ -1,8 +1,21 @@
 <music>
-	<track> <!--composed by Lizzard-->
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
 		<name>ddtracklightslament</name>
 		<explore>dd_MUS_LightsLamentEXPLORE.ogg</explore>
 		<combat>dd_MUS_LightsLamentBATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddheartofshatteredpromises</name>
+		<explore>dd_MUS_HeartofShatteredPromises_EXPLORE.ogg</explore>
+		<combat>dd_MUS_HeartofShatteredPromises_BATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddtodancewithdarkness</name>
+		<explore>dd_MUS_ToDancewithDarkness.ogg</explore>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddtrialbyire</name>
+		<explore>dd_MUS_TrialbyIre.ogg</explore>
 	</track>
 </music>
 
@@ -18,3 +31,29 @@
 <ddultimalightningstrike volume="10">aliens/bp_sfx_ddultimalightningstrike.ogg</ddultimalightningstrike>
 <ddstormbornspawngrowl volume="10">aliens/bp_sfx_ddstormbornspawngrowl.ogg</ddstormbornspawngrowl>
 <dddeepone_growl volume="6">aliens/bp_sfx_dddeepone_growl.ogg</dddeepone_growl>
+<ddhopesflame_crackling volume="9">aliens/bp_sfx_ddhopesflame_crackling.ogg</ddhopesflame_crackling>
+<ddaberrationheartbeat volume="9">aliens/bp_sfx_ddaberrationheartbeat.ogg</ddaberrationheartbeat>
+<ddilldrythkfog1 volume="10">aliens/bp_sfx_ddilldrythkfog1.ogg</ddilldrythkfog1>
+<ddilldrythkfog2 volume="10">aliens/bp_sfx_ddilldrythkfog2.ogg</ddilldrythkfog2>
+<ddilldrythkfog3 volume="10">aliens/bp_sfx_ddilldrythkfog3.ogg</ddilldrythkfog3>
+<ddilldrythkfog4 volume="10">aliens/bp_sfx_ddilldrythkfog4.ogg</ddilldrythkfog4>
+<ddilldrythkfog5 volume="10">aliens/bp_sfx_ddilldrythkfog5.ogg</ddilldrythkfog5>
+<ddilldrythkfog6 volume="10">aliens/bp_sfx_ddilldrythkfog6.ogg</ddilldrythkfog6>
+<ddilldrythkfog7 volume="10">aliens/bp_sfx_ddilldrythkfog7.ogg</ddilldrythkfog7>
+<ddtheheroinesoul volume="5">aliens/bp_sfx_ddtheheroinesoul.ogg</ddtheheroinesoul>
+<ddtheheroinedeath volume="4">aliens/bp_sfx_ddtheheroinedeath.ogg</ddtheheroinedeath>
+<ddtheheroineability volume="4">aliens/bp_sfx_ddtheheroineability.ogg</ddtheheroineability>
+<ddtheheroineshoot1 volume="4">aliens/bp_sfx_ddtheheroineshoot1.ogg</ddtheheroineshoot1>
+<ddtheheroineshoot2 volume="4">aliens/bp_sfx_ddtheheroineshoot2.ogg</ddtheheroineshoot2>
+<ddtheheroineshoot3 volume="5">aliens/bp_sfx_ddtheheroineshoot3.ogg</ddtheheroineshoot3>
+<ddwardenpray1 volume="6">aliens/bp_sfx_ddwarden_pray1.ogg</ddwardenpray1>
+<ddwardenpray2 volume="6">aliens/bp_sfx_ddwarden_pray2.ogg</ddwardenpray2>
+<ddwardenpray3 volume="6">aliens/bp_sfx_ddwarden_pray3.ogg</ddwardenpray3>
+<ddwardenpray4 volume="6">aliens/bp_sfx_ddwarden_pray4.ogg</ddwardenpray4>
+<ddsoulplague_assault volume="4">aliens/bp_sfx_ddsoulplague_assault.ogg</ddsoulplague_assault>
+<ddsoulplague_creaking1 volume="3">aliens/bp_sfx_ddsoulplague_creaking1.ogg</ddsoulplague_creaking1>
+<ddsoulplague_creaking2 volume="3">aliens/bp_sfx_ddsoulplague_creaking2.ogg</ddsoulplague_creaking2>
+<ddsoulplague_creaking3 volume="3">aliens/bp_sfx_ddsoulplague_creaking3.ogg</ddsoulplague_creaking3>
+<ddsoulplaguecorruptorflood volume="7">aliens/bp_sfx_ddsoulplaguecorruptorflood.ogg</ddsoulplaguecorruptorflood>
+<ddsoulplaguedeathnoise volume="6">aliens/bp_sfx_ddsoulplaguedeathnoise.ogg</ddsoulplaguedeathnoise>
+<ddsoulplaguehuskweavergoobling volume="7">aliens/bp_sfx_ddsoulplaguehuskweavergoobling.ogg</ddsoulplaguehuskweavergoobling>

@@ -86,24 +86,12 @@
 				<text>We've got to try! Send a crew member to board and repair their hull.</text>
 				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_ENDURE"/>
 			</choice>
-			<choice hidden="true" req="SHIP_REPAIR">
-				<text>(Hull Repair) Send your ship-repair drone to repair their hull.</text>
-				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_SAVED"/>
-			</choice>
-			<choice hidden="true" req="COMBAT_REPAIR">
-				<text>(Repair-Bot Dispersal) Use your nano-repair-bots to repair their hull.</text>
+			<choice hidden="true" req="DRONE_CONTROL_REPAIR_ALL">
+				<text>(Repair Drone) Send your drone to repair their hull.</text>
 				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_SAVED"/>
 			</choice>
 			<choice hidden="true" req="BEAM_REPAIR">
 				<text>(Pro-Hull Beam) Use your repair beam to repair their hull.</text>
-				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_SAVED"/>
-			</choice>
-			<choice hidden="true" req="REPAIR">
-				<text>(Maintenance Drone) Send your repair drone to board and repair their hull.</text>
-				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_SAVED"/>
-			</choice>
-			<choice hidden="true" req="DIVREPAIR">
-				<text>(Divine Repair) Send your divine repair drone to board and repair their hull.</text>
 				<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS_SAVED"/>
 			</choice>
 			<choice hidden="true" req="BLUELIST_CREW_NO2">
@@ -1103,7 +1091,7 @@
 <ship name="NEUTRAL_ENLIGHTENED_PALADIN_CRUSADE_SHIP" auto_blueprint="LIST_SHIPS_ROCK_SELITE_GENERIC">
 	<destroyed>
 		<text>Against all odds, you've broken through the Paladins' armor! You quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="NEUTRAL_ENLIGHTENED_PALADIN_CRUSADE_SHIP_WIN"/>
@@ -1152,7 +1140,7 @@
 						</event>
 					</choice>
 					<choice hidden="true" req="LIST_CREW_HAPPYHOLIDAYS">
-						<text>(HAPPY HOLIDAYS) I need more of... whatever this is.</text>
+						<text>(Happy Holidays) I need more of... whatever this is.</text>
 						<event>
 							<text>One of the engineers morphs into a second Happy Holidays, and the rest of the Deep Ones scream in terror. They quickly end communications, but you find that the second Happy Holidays has somehow gotten behind you in the meantime. Crazy rollout.</text>
 							<crewMember amount="1" class="happyholidays">John Holidays</crewMember>
@@ -1215,7 +1203,7 @@
 						</event>
 					</choice>
 					<choice hidden="true" req="LIST_CREW_HAPPYHOLIDAYS">
-						<text>(HAPPY HOLIDAYS) I need more of... whatever this is.</text>
+						<text>(Happy Holidays) I need more of... whatever this is.</text>
 						<event>
 							<text>One of the engineers morphs into a second Happy Holidays, and the rest of the Deep Ones scream in terror. They quickly end communications, but you find that the second Happy Holidays has somehow gotten behind you in the meantime. Crazy rollout.</text>
 							<crewMember amount="1" class="happyholidays">John Holidays</crewMember>
@@ -1281,7 +1269,7 @@
 										</event>
 									</choice>
 									<choice hidden="true" req="LIST_CREW_HAPPYHOLIDAYS">
-										<text>(HAPPY HOLIDAYS) I need more of... whatever this is.</text>
+										<text>(Happy Holidays) I need more of... whatever this is.</text>
 										<event>
 											<text>One of the engineers morphs into a second Happy Holidays, and the rest of the Deep Ones scream in terror. They quickly end communications, but you find that the second Happy Holidays has somehow gotten behind you in the meantime. Crazy rollout.</text>
 											<crewMember amount="1" class="happyholidays">John Holidays</crewMember>
@@ -1629,7 +1617,7 @@
 											<choice hidden="true">
 												<text>0.</text>
 												<event>
-													<text>Your crew member inputs the final digit, and the vault opens... inside of it, an inexplicable eldritch horror beyond description lays. You've unleashed an ancient evil on this reality... it looks at you, and then your crew, and says "Look at this team, we're gonna do great!" May God have mercy on our souls.</text>
+													<text>Your crew member inputs the final digit, and the vault opens... inside of it, an inexplicable eldritch horror beyond description lays. You've unleashed an ancient evil on this reality... it looks at you, and then your crew, and says "Look at this team, we're gonna do great!" May God have mercy on your souls.</text>
 													<crewMember amount="1" class="happyholidays">Happy Holidays</crewMember>
 												</event>
 											</choice>
@@ -2582,7 +2570,7 @@
 <ship name="ITEMS_ENLIGHTENED_ENGI_INVESTIGATION_SHIP" auto_blueprint="LIST_SHIPS_ENGI_ELITE_GENERIC">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
-		<autoReward level="MED">standard</autoReward>
+		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="ITEMS_ENLIGHTENED_ENGI_INVESTIGATION_SHIP_WIN"/>
@@ -3082,7 +3070,7 @@
 						<event load="ITEMS_ENLIGHTENED_EXILE_SCAN_HIGH"/>
 					</choice>
 					<choice req="BLUELIST_CREW_SNAIL" hidden="true">
-						<text>(Telepathic Shell) "Void, more like... shhhhmoid. Hhhahhh."</text>
+						<text>(Telepathic Shell) "Void, more like... shmoid. Hah."</text>
 						<event load="ITEMS_ENLIGHTENED_EXILE_SCAN_HIGH"/>
 					</choice>
 				</event>
@@ -3655,15 +3643,15 @@
 	<choice hidden="true">
 		<text>Wait.</text>
 		<event>
-			<text>Eventually, the Shell returns... alone. "Thhhhe test... I'm sorry to report, that... your Deep one..." It's choking on its words, struggling to speak.</text>
+			<text>Eventually, the Shell returns... alone. "Thhhhe test... I'm sorry to report, thhhat... your Deep one..." It's choking on its words, struggling to speak.</text>
 			<choice hidden="true">
 				<text>These things happen, I understand.</text>
 				<event>
-					<text>It looks up, "Nahhhh, I'm just pulling your leg. Thhhhey're fine. Hhhhere, I'll go get 'em." What kind of...?</text>
+					<text>It looks up, "Nahhhh, I'm just pulling your leg. Thhhhey're fine. Here, I'll go get 'em." What kind of...?</text>
 					<choice hidden="true">
 						<text>Wait, again.</text>
 						<event>
-							<text>This time, you don't have to wait long. The Shell returns with your Deep One in tow, and it hands you some scrap; "Hhhhere, for your troubles. I know you Fed types love your trashhhh." Oh, really? Was it the doctorate that tipped you off to that one? Still, though... it's a lot of scrap... it's hard to stay mad.</text>
+							<text>This time, you don't have to wait long. The Shell returns with your Deep One in tow, and it hands you some scrap; "Here, for your troubles. I know you Fed types love your trash." Oh, really? Was it the doctorate that tipped you off to that one? Still, though... it's a lot of scrap... it's hard to stay mad.</text>
 							<autoReward level="HIGH">scrap_only</autoReward>
 						</event>
 					</choice>
@@ -3672,11 +3660,11 @@
 			<choice hidden="true">
 				<text>You bastard, I'll kill you!</text>
 				<event>
-					<text>It backs up and shouts, "Woahhhh, woahhhh, woahhhh, I'm just pulling your leg! Thhhhey're fine! Hhhhere, I'll go get 'em!" What kind of...?</text>
+					<text>It backs up and shouts, "Woah, woah, woah, I'm just pulling your leg! Thhhhey're fine! Here, I'll go get 'em!" What kind of...?</text>
 					<choice hidden="true">
 						<text>Wait, again.</text>
 						<event>
-							<text>This time, you don't have to wait long. The Shell returns with your Deep One in tow, and it hands you some scrap; "Hhhhere, for your troubles. I know you Fed types love your trashhhh." Oh, really? Was it the doctorate that tipped you off to that one? Still, though... it's a lot of scrap... it's hard to stay mad.</text>
+							<text>This time, you don't have to wait long. The Shell returns with your Deep One in tow, and it hands you some scrap; "Here, for your troubles. I know you Fed types love your trash." Oh, really? Was it the doctorate that tipped you off to that one? Still, though... it's a lot of scrap... it's hard to stay mad.</text>
 							<autoReward level="HIGH">scrap_only</autoReward>
 						</event>
 					</choice>
@@ -3691,11 +3679,11 @@
 	<choice hidden="true">
 		<text>Wait.</text>
 		<event>
-			<text>Eventually, the Shell returns... alone. "I'll be blunt... complete fuck-up. They're dead. I am capable of compensating you, hhhhowever; science is nothhhhing if not about being prepared." It turns to gather the compensation, and the voice calls to you, outraged, "This... this... MURDERER... has intruded on our lands. Led... my kin into its den of lies. Lines... their graves with silver. I... make few, requests, outsider... its damnation is one of them. Be the judge, jury... and executioner."</text>
+			<text>Eventually, the Shell returns... alone. "I'll be blunt... complete fuck-up. Thhhey're dead. I am capable of compensating you, however; science is nothhhhing if not about being prepared." It turns to gather the compensation, and the voice calls to you, outraged, "This... this... MURDERER... has intruded on our lands. Led... my kin into its den of lies. Lines... their graves with silver. I... make few, requests, outsider... its damnation is one of them. Be the judge, jury... and executioner."</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>The Shell turns back to you, with compensation in hand, "I hhhhope we can move past thhhhis, truly. If it's any consolation... thhhhey died in the name of science."</text>
+					<text>The Shell turns back to you, with compensation in hand, "I hope we can move past thhhhis, truly. If it's any consolation... thhhhey died in the name of science."</text>
 					<choice hidden="true">
 						<text>Take the compensation and leave.</text>
 						<event>
@@ -3713,11 +3701,11 @@
 					<choice hidden="true">
 						<text>And... what science is that, exactly?</text>
 						<event>
-							<text>The Shell tugs at its tie, "Well, uhhhh, I'm hhhhere in Deep One territory studying the strange, ehhhh, 'gas,' you could call it, thhhhat completely smothhhhers this region." Its gaze briefly darts around the room.</text>
+							<text>The Shell tugs at its tie, "Well, uh, I'm here in Deep One territory studying the strange, eh, 'gas,' you could call it, thhhhat completely smothhhhers thhhis region." Its gaze briefly darts around the room.</text>
 							<choice hidden="true">
 								<text>And... what have you discovered, doctor?</text>
 								<event>
-									<text>Panic overtakes the pitiful thing. "Thhhhe, uhhhhm... thhhhe... 'gas,' it defies explanation. It's... phhhhysical, thhhhat's for sure; it can be destroyed, and manipulated. Whhhhat stumps us, thhhhoughhhh, is its... intelligence. Whhhhethhhher real, or anthhhhropomorphhhhized, it appears to abide by some form of logic, or, uhhhhm, thhhhoughhhht process. Thhhhat, and we can't figure out its origin, or its purpose, for thhhhat matter..." It keeps rambling on. Does it think you're listening?</text>
+									<text>Panic overtakes the pitiful thing. "Thhhhe, um... thhhhe... 'gas,' it defies explanation. It's... phhhhysical, thhhhat's for sure; it can be destroyed, and manipulated. What stumps us, thhhhough, is its... intelligence. Whethhhher real, or anthhhhropomorphhhhized, it appears to abide by some form of logic, or, um, thhhhought process. Thhhhat, and we can't figure out its origin, or its purpose, for thhhhat matter..." It keeps rambling on. Does it think you're listening?</text>
 									<choice hidden="true">
 										<text>Shoot it.</text>
 										<event>
@@ -3773,12 +3761,12 @@
 	<choice hidden="true">
 		<text>Sure, I love Shells!</text>
 		<event>
-			<text>As the void recedes, you expect to see a ship, yet there's an entire Shell station built here! They hail, "Fehhhhderation, hhhhere? Hhhhhow... perplexing. Not quite whhhhat I hhhhad in mind, thoughhhh, withhhh thhhhe distress beacon. Still, you wouldn't hhhhappen to hhhhave any Deep Ones onboard, would you? Or perhhhhaps some of their more... exotic weaponry? Eithhhher would do."</text>
+			<text>As the void recedes, you expect to see a ship, yet there's an entire Shell station built here! They hail, "Federation, here? How... perplexing. Not quite what I had in mind, thhhhough, with thhhe distress beacon. Still, you wouldn't happen to have any Deep Ones onboard, would you? Or perhaps some of thhhheir more... exotic weaponry? Eithhhher would do."</text>
 			<ship load="DISTRESS_ENLIGHTENED_SHELL_RESEARCH_STATION" hostile="false"/>
 			<choice hidden="true">
 				<text>Why do you ask...?</text>
 				<event>
-					<text>It rolls its eye, "I need thhhhem for science, whhhhat else? Do you hhhhave somethhhhing or not? Othhhherwise, you're just wasting my time." Impatient, this one...</text>
+					<text>You get the feeling that it tries to rolls its eye, "I need thhhhem for science, of course; what else? Do you have somethhhhing or not? Othhhherwise, you're just wasting my time." Impatient, this one...</text>
 					<choice hidden="true" req="LIST_CREW_DEEPONES">
 						<text>(Deep One) Sure, yeah.</text>
 						<event load="DISTRESS_ENLIGHTENED_SHELL_RESEARCH_SCIENCE"/>
@@ -3786,11 +3774,11 @@
 					<choice hidden="true" req="GIFTLIST_DARKGOD_WEAPONS">
 						<text>(Darkness Weaponry) Sure, yeah.</text>
 						<event>
-							<text>It seems elated at the sight of it, "Strange techhhh, withhhh even stranger origins, shhhhould the Deep Ones be believed. Thhhhey claim thhhhem to be gifts from thhhheir 'Dark One,' and I wouldn't be surprised were it true. Thhhhey appear to hhhharness a gas similar, if not identical, to thhhhat of thhhhis region; furthhhher, said gas seems to hhhhave a mind of its own..." it pauses, perhaps realizing it's rambling, and then clears its throat before continuing, "Allow me a moment to study whhhhat I can, I'll keep it brief."</text>
+							<text>It seems elated at the sight of it, "Strange tech, with even stranger origins, should the Deep Ones be believed. Thhhhey claim thhhhem to be gifts from thhhheir 'Dark One,' and I wouldn't be surprised were it true. Thhhhey appear to harness a gas similar, if not identical, to thhhhat of thhhhis region; furthhhher, said gas seems to have a mind of its own..." it pauses, perhaps realizing it's rambling, and then clears its throat before continuing, "Allow me a moment to study what I can; I'll keep it brief."</text>
 							<choice hidden="true">
 								<text>Wait for the Shell to finish.</text>
 								<event>
-									<text>Apparently, it did manage to keep it brief, as it returns only moments later, "My hhhhypothhhhesis appears to be correct; thhhhe gas withhhhin thhhhese weapons and thhhhe gas thhhhat makes up thhhhis region are indeed one and thhhhe same. I was able to cross-chhhheck my findings withhhh thhhhat of my previous tests, involving anothhhher weapon I managed to get my hhhhands on. Seeing thhhhat I now hhhhave the information thhhhat I needed from it, it may as well be yours now; I figure it may prove more... useful to one suchhhh as yourself. Consider it your compensation." The Shell returns your weapon, and with it, a second!</text>
+									<text>Apparently, it did manage to keep it brief, as it returns only moments later, "My hypothhhhesis appears to be correct; thhhhe gas withhhhin thhhhese weapons and thhhhe gas thhhhat makes up thhhhis region are indeed one and thhhhe same. I was able to cross-check my findings withhh thhhhat of my previous tests, involving anothhhher weapon I managed to get my hands on. Seeing thhhhat I now have the information thhhhat I needed from it, it may as well be yours now; I figure it may prove more... useful to one such as yourself. Consider it your compensation." The Shell returns your weapon, and with it, a second!</text>
 									<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
 									<choice hidden="true">
 										<text>Thanks, science!</text>
@@ -3823,6 +3811,13 @@
 							</choice>
 						</event>
 					</choice>
+					<choice hidden="true" req="GIFTLIST_DDSOULPLAGUE_WEAPONS">
+						<text>(Soulplague Weaponry) Does this work?</text>
+						<event>
+							<text>You hand your Soulplague-infected weapon over to the Shell, and they look at it, perplexed, "No, why would thhhhis work? Thhhhis is just an ordinary weapon, infected by... thhhhe Soulplague... matter... virus... Ughhh..." As they touch it, they seem to... mutate, and turn iridescent, before just sitting around and moaning. Not wanting to leave them here alone, unable to help themself, you take them aboard, but... something's definitely wrong with them. Though the voice is quiet, you feel that they're likely disturbed by the matter.</text>
+							<crewMember amount="1" class="ddsoulplague_shellcultist">I'nft'in</crewMember>
+						</event>
+					</choice>
 					<choice hidden="true">
 						<text>I'll pass, thanks.</text>
 						<event>
@@ -3840,7 +3835,7 @@
 					<choice hidden="true">
 						<text>I don't like your tone.</text>
 						<event>
-							<text>"Shhhhould I care? I'm not hhhhere to entertain your pointless inquiries. If you're hhhhere to contribute to science, please do."</text>
+							<text>"Should I care? I'm not here to entertain your pointless inquiries. If you're here to contribute to science, please do."</text>
 							<choice hidden="true" req="LIST_CREW_DEEPONES">
 								<text>(Deep One) Sure, yeah.</text>
 								<event load="DISTRESS_ENLIGHTENED_SHELL_RESEARCH_SCIENCE"/>
@@ -3848,11 +3843,11 @@
 							<choice hidden="true" req="GIFTLIST_DARKGOD_WEAPONS">
 								<text>(Darkness Weaponry) Sure, yeah.</text>
 								<event>
-									<text>It seems elated at the sight of it, "Strange techhhh, withhhh even stranger origins, shhhhould the Deep Ones be believed. Thhhhey claim thhhhem to be gifts from thhhheir 'Dark One,' and I wouldn't be surprised were it true. Thhhhey appear to hhhharness a gas similar, if not identical, to thhhhat of thhhhis region; furthhhher, said gas seems to hhhhave a mind of its own..." it pauses, perhaps realizing it's rambling, and then clears its throat before continuing, "Allow me a moment to study whhhhat I can, I'll keep it brief."</text>
+									<text>It seems elated at the sight of it, "Strange tech, with even stranger origins, should the Deep Ones be believed. Thhhhey claim thhhhem to be gifts from thhhheir 'Dark One,' and I wouldn't be surprised were it true. Thhhhey appear to harness a gas similar, if not identical, to thhhhat of thhhhis region; furthhhher, said gas seems to have a mind of its own..." it pauses, perhaps realizing it's rambling, and then clears its throat before continuing, "Allow me a moment to study what I can; I'll keep it brief."</text>
 									<choice hidden="true">
 										<text>Wait for the Shell to finish.</text>
 										<event>
-											<text>Apparently, it did manage to keep it brief, as it returns only moments later, "My hhhhypothhhhesis appears to be correct; thhhhe gas withhhhin thhhhese weapons and thhhhe gas thhhhat makes up thhhhis region are indeed one and thhhhe same. I was able to cross-chhhheck my findings withhhh thhhhat of my previous tests, involving anothhhher weapon I managed to get my hhhhands on. Seeing thhhhat I now hhhhave the information thhhhat I needed from it, it may as well be yours now; I figure it may prove more... useful to one suchhhh as yourself. Consider it your compensation." The Shell returns your weapon, and with it, a second!</text>
+											<text>Apparently, it did manage to keep it brief, as it returns only moments later, "My hypothhhhesis appears to be correct; thhhhe gas withhhhin thhhhese weapons and thhhhe gas thhhhat makes up thhhhis region are indeed one and thhhhe same. I was able to cross-check my findings withhh thhhhat of my previous tests, involving anothhhher weapon I managed to get my hands on. Seeing thhhhat I now have the information thhhhat I needed from it, it may as well be yours now; I figure it may prove more... useful to one such as yourself. Consider it your compensation." The Shell returns your weapon, and with it, a second!</text>
 											<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
 											<choice hidden="true">
 												<text>Thanks, science!</text>
@@ -3885,6 +3880,13 @@
 									</choice>
 								</event>
 							</choice>
+							<choice hidden="true" req="GIFTLIST_DDSOULPLAGUE_WEAPONS">
+								<text>(Soulplague Weaponry) Does this work?</text>
+								<event>
+									<text>You hand your Soulplague-infected weapon over to the Shell, and they look at it, perplexed, "No, why would thhhhis work? Thhhhis is just an ordinary weapon, infected by... thhhhe Soulplague... matter... virus... Ughhh..." As they touch it, they seem to... mutate, and turn iridescent, before just sitting around and moaning. Not wanting to leave them here alone, unable to help themself, you take them aboard, but... something's definitely wrong with them. Though the voice is quiet, you feel that they're likely disturbed by the matter.</text>
+									<crewMember amount="1" class="ddsoulplague_shellcultist">I'nft'in</crewMember>
+								</event>
+							</choice>
 							<choice hidden="true">
 								<text>I'll pass, thanks.</text>
 								<event>
@@ -3902,7 +3904,7 @@
 							<choice hidden="true">
 								<text>I'm not here to entertain YOUR pointless inquiries. Attack!</text>
 								<event>
-									<text>It looks alarmed, "Wait, whhhhat are you doing? You can't be serious, can you...?" There's nowhere it can run.</text>
+									<text>It looks alarmed, "Wait, what are you doing? You can't be serious, can you...?" There's nowhere it can run.</text>
 									<ship hostile="true"/>
 									<choice hidden="true">
 										<text>Continue...</text>
@@ -3934,7 +3936,7 @@
 
 <eventList name="DISTRESS_ENLIGHTENED_JUDGMENT_TEST">
 	<event load="DISTRESS_ENLIGHTENED_JUDGMENT_PUNISHMENT"/>	
-	<event load="DISTRESS_ENLIGHTENED_JUDGMENT_PUNISHMENT"/>
+	<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 	<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 </eventList>
 				
@@ -4010,12 +4012,12 @@
 				<text>Drown...</text>
 				<event>
 					<text>The question is...</text>
-					<damage amount="2"/>
+					<damage amount="1"/>
 					<choice hidden="true">
 						<text>...in...</text>
 						<event>
 							<text>...who will come to save you?</text>
-							<damage amount="3"/>
+							<damage amount="1"/>
 							<choice hidden="true">
 								<text>...the...</text>
 								<event>
@@ -4042,6 +4044,10 @@
 												<text>(Paladin Armor) Hah, I'd like to see it try!</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
+											<choice hidden="true" req="GIFTLIST_DARKGOD_WEAPONS">
+												<text>(Darkness Weaponry) I do not fear the darkness, for it is I who WIELDS it! Obey me!</text>
+												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
+											</choice>
 											<choice hidden="true" req="DEEPONE_LIGHTS">
 												<text>(Deep One Lights) When dawn breaks, dusk falls; become that which the shadows fear.</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
@@ -4050,12 +4056,20 @@
 												<text>(Dread Lights) When dawn breaks, dusk falls; become that which the shadows fear.</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
+											<choice hidden="true" req="dddeepone_chosen">
+												<text>(Chosen Crew) "ALLOW US... PASSAGE, O' DARK ONE."</text>
+												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
+											</choice>
 											<choice hidden="true" req="deeponecultist">
 												<text>(Deep One Cultist) "Dark One, be with us..."</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="unique_thescarred">
 												<text>(The Scarred) "To defy the False God... nothing would bring me greater pleasure."</text>
+												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
+											</choice>
+											<choice hidden="true" req="ddunique_theheroine">
+												<text>(The Heroine) "So, they seek to crush our hope? Let us CRUSH THEIRS!"</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="LIST_CREW_HAPPYHOLIDAYS">
@@ -4114,7 +4128,7 @@
 	<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS" lvl="0" max_lvl="0" blue="false">
 		<text>Sure, let's see what they're up to.</text>
 		<event>
-			<text>The void parts, and you're met with the visage of a civillian ship of all things. They hail, and you find that it is indeed a human and Enlightened Cultist on the other end. The human, musculuar and well-built, speaks, "Hoho! Federation, a Renegade no less! Are you here seeking the truths of this place, as well?"</text>
+			<text>The void parts, and you're met with the visage of a civillian ship of all things. They hail, and you find that it is indeed a human and Enlightened Cultist on the other end. The human, muscular and well-built, speaks, "Hoho! Federation, a Renegade no less! Are you here seeking the truths of this place, as well?"</text>
 			<ship load="ENLIGHTENED_KYRANDLILITH_MEETING_FIGHT" hostile="false"/>
 			<choice hidden="true">
 				<text>Something like that.</text>
@@ -4280,8 +4294,11 @@
 </event>
 
 <event name="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD_WIN">
-	<text>In the wreckage, you find the very superweapon the Enlightened were using against you. Somehow, it seems to be completely unharmed... it's yours now, regardless. You just hope it isn't cursed...</text>
+	<text>In the wreckage, you find yet another weapon of darkness... though, this one is unfamiliar to you. Somehow, it seems to be completely unharmed... it's yours now, regardless. You just hope it isn't cursed...</text>
+	<playMusic/>
 	<unlockCustomShip silent="false">PLAYER_DEEP_ONE_CULTIST</unlockCustomShip>
+	<variable name="ach_boss_dddreadnought_of_darkness" op="set" val="1"/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<weapon name="TWILIGHT_INEXORABLE"/>
 	<choice hidden="true" req="unique_thescarred" lvl="1" blue="false">
 		<text>Continue...</text>
@@ -4296,7 +4313,7 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word... "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, grows darker. You realize you're being pulled through it at lightspeed!</text>
+							<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word... "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 							<choice hidden="true">
 								<text>Hold on!</text>
 								<event>
@@ -4317,7 +4334,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, grows darker. You realize you're being pulled through it at lightspeed!</text>
+					<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 					<choice hidden="true">
 						<text>Hold onto something!</text>
 						<event>
@@ -4332,13 +4349,16 @@
 </event>
 
 <event name="ENLIGHTENED_EXIT_DREADNOUGHT_NEUTRAL_WIN">
-	<text>In the wreckage, you find the very superweapon the Enlightened were using against you. Somehow, it seems to be completely unharmed... it's yours now, regardless. You just hope it isn't cursed... all that's left, now, is to leave this dreadful darkness behind.</text>
+	<text>In the wreckage, you find yet another weapon of darkness... though, this one is unfamiliar to you. Somehow, it seems to be completely unharmed... it's yours now, regardless. You just hope it isn't cursed...</text>
+	<playMusic/>
 	<unlockCustomShip silent="false">PLAYER_DEEP_ONE_CULTIST</unlockCustomShip>
+	<variable name="ach_boss_dddreadnought_of_darkness" op="set" val="1"/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<weapon name="TWILIGHT_INEXORABLE"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, grows darker. You realize you're being pulled through it at lightspeed!</text>
+			<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the voice had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 			<choice hidden="true">
 				<text>Hold onto something!</text>
 				<event>
@@ -4351,10 +4371,13 @@
 </event>
 
 <event name="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO_WIN">
-	<text>Time around you seems to stop, and... a new voice calls to you, one you feel you recognize but can't place, "YOU... INTEREST ME. COME, I WELCOME YOU INTO MY EMBRACE." You feel everything accelerate around you, and space itself warps outside... the void, somehow, grows darker. You realize you're being pulled through it at lightspeed!</text>
+	<text>Time around you seems to stop, and... a new voice calls to you, one you feel you recognize but can't place, "YOU... INTEREST ME. COME, I WELCOME YOU INTO MY EMBRACE." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
+	<playMusic/>
 	<achievement>ACH_EVENT_TRUEHEROSLAIN</achievement>
 	<variable name="ach_event_trueheroslain" op="set" val="1"/>
+	<variable name="ach_boss_ddthescarred_trueform" op="set" val="1"/>
 	<variable name="darkone_alignment" op="set" val="1"/>
+	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<choice hidden="true">
 		<text>Hold onto something!</text>
 		<event>
@@ -4378,25 +4401,26 @@
 					<choice hidden="true">
 						<text>What will happen to you?</text>
 						<event>
-							<text>A sense of gloom tinges its words, "It... matters not. It never... has. As long as my people are safe... as long as my people are truly free, my fate is... irrelevant. I can only pray that they take this opportunity... this chance, and never return to their Dark One." Is there anything you can do...?</text>
+							<text>A sense of gloom tinges its words, "It... matters not. It never... has. As long as my people are safe... as long as my people are truly free, my fate is... irrelevant. I can only pray that they take this opportunity... this chance, and never return to their Dark One."</text>
 							<choice hidden="true">
-								<text>I will stand with you, and fight; for you, and the Enlightened.</text>
+								<text>No, not like this. Not now. I will stand with you, and fight; for you, and the Enlightened.</text>
 								<event>
 									<text>It seems surprised... but only somewhat. It's seen all you've done for the Enlightened as you've traversed this sector together, and it realizes... it trusts you. "Very well, outsider... no, you are an outsider no more. Shall we die here... we die here as kin." Then, a Deep One bearing innumerable scars materializes in front of you... you're face to face with the voice you've been speaking to.</text>
 									<choice hidden="true">
 										<text>What should I, uh, call you?</text>
 										<event>
 											<text>It puts its hand over its scarred eye and, with a grunt, answers, "You... asked before. Should you truly need a name with which to call me... my kin refer to me in their fables as the Scarred... they're terrible tales, used to give the younglings nightmares. The truth behind them is... terrible, in its own way." It looks to the void outside, and drops its hand, "They're... here."</text>
-											<crewMember amount="1" class="unique_thescarred">The Scarred</crewMember>
+											<crewMember amount="1" class="unique_thescarred" all_skills="2">The Scarred</crewMember>
 											<choice hidden="true">
 												<text>Continue...</text>
 												<event>
-													<text>You watch as the Scarred waves its hand, and the shadows outside are pushed back; in their place, a new shadow takes hold... a tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+													<text>You watch as the Scarred waves its hand, and the shadows outside are pushed back; in their place, a new shadow takes hold... a tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 													<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD" hostile="false"/>
 													<choice hidden="true">
 														<text>Brace yourself.</text>
 														<event>
-															<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU HARBOR... THE TRAITOR. YOU INTEND TO FIGHT. OUR LORD... INTENDS TO WIN." They end communications, and their weapons come online... you realize one of them is of a design unknown to you. The Scarred meets your gaze, and speaks, "They possess... a superweapon created by their False God. Its function... is unknown to me, and yet... I can feel the darkness it harbors. Prepare yourself, kin, and fight... for the Enlightened!" With that, it leaves the room and prepares for battle. The dreadnought approaches, and you realize it's time to do the same... to be a beacon, where the darkness festers greatest.</text>
+															<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU HARBOR... THE TRAITOR. YOU INTEND TO FIGHT. OUR LORD... INTENDS TO WIN." They end communications, and their weapons come online... all ones of dark design. The Scarred meets your gaze, and speaks, "We would do well... to not allow their weapons of evil to overwhelm our ranks. Prepare yourself, kin... and fight! For the Enlightened!" With that, it leaves the room and prepares for battle. The dreadnought approaches, and you realize it's time to do the same... to be a beacon, where the darkness festers greatest.</text>
+															<playMusic>ddtodancewithdarkness</playMusic>
 															<ship hostile="true"/>
 															<choice hidden="true">
 																<text>Continue...</text>
@@ -4408,12 +4432,6 @@
 											</choice>
 										</event>
 									</choice>
-								</event>
-							</choice>
-							<choice hidden="true">
-								<text>Thank you... for your sacrifice. I won't forget you, or the Enlightened.</text>
-								<event>
-									<text>"Nor will I forget you... kin. Now, go. Save... this reality, and push back... the dark." The voice goes silent for the last time, and you prepare to leave the sector. You've escaped this madness, but at no small cost...</text>
 								</event>
 							</choice>
 						</event>
@@ -4429,12 +4447,13 @@
 			<choice hidden="true">
 				<text>Prepare to leave.</text>
 				<event>
-					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... and a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... as a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 					<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_NEUTRAL" hostile="false"/>
 					<choice hidden="true">
 						<text>What's this?</text>
 						<event>
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -4449,16 +4468,17 @@
 	<choice hidden="true" req="the_scarred_judgment" lvl="-15" max_lvl="-4" blue="false">
 		<text>Ask the voice what happens now.</text>
 		<event>
-			<text>It doesn't respond, and you watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. The voice then speaks, "Now... we part ways. My people will need me... for the battles to come, should the world outside this false void... prove to be half as ruthless as you are. Still, I request... one last thing of you, outsider..." it pauses, "...don't come back." With that, the voice goes silent for the last time, and the ship retreats back into the darkness.</text>
+			<text>It doesn't respond, and you watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. The voice then speaks, "Now... we part ways. My people will need me... for the battles to come, should the world outside this false void... prove to be half as ruthless as you are. Still, I request... one last thing of you, outsider..." It pauses for an uncomfortably long while, "...don't come back." With that, the voice goes silent for the last time, and the ship retreats back into the darkness.</text>
 			<choice hidden="true">
 				<text>Prepare to leave.</text>
 				<event>
-					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... and a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... as a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 					<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_NEUTRAL" hostile="false"/>
 					<choice hidden="true">
 						<text>What's this?</text>
 						<event>
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -4485,7 +4505,8 @@
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>"...you're gonna have to try a little harder than THAT." A new ship bursts from where the previous lay shrouded; the hero appears, and you prepare for the end.</text>
+									<text>"...you're gonna have to try... a little harder than THAT." A new ship bursts from where the previous lay shrouded; the hero appears, and you prepare for the end.</text>
+									<playMusic>ddtodancewithdarkness</playMusic>
 									<backgroundObject name="INFINITE_HYPERDEATH_THE_SCARRED">
 										<layer z="0">background</layer>
 										<spawnArea x="0" y="0" w="0" h="0"/>
@@ -4520,25 +4541,26 @@
 					<choice hidden="true">
 						<text>What will happen to you?</text>
 						<event>
-							<text>A sense of gloom tinges its words, "It... matters not. It never... has. As long as my people are safe... as long as my people are truly free, my fate is... irrelevant. I can only pray that they take this opportunity... this chance, and never return to their Dark One." Is there anything you can do...?</text>
+							<text>A sense of gloom tinges its words, "It... matters not. It never... has. As long as my people are safe... as long as my people are truly free, my fate is... irrelevant. I can only pray that they take this opportunity... this chance, and never return to their Dark One."</text>
 							<choice hidden="true">
-								<text>I will stand with you, and fight; for you, and the Enlightened.</text>
+								<text>No, not like this. Not now. I will stand with you, and fight; for you, and the Enlightened.</text>
 								<event>
 									<text>It seems surprised... but only somewhat. It's seen all you've done for the Enlightened as you've traversed this sector together, and it realizes... it trusts you. "Very well, outsider... no, you are an outsider no more. Shall we die here... we die here as kin." Then, a Deep One bearing innumerable scars materializes in front of you... you're face to face with the voice you've been speaking to.</text>
 									<choice hidden="true">
 										<text>What should I, uh, call you?</text>
 										<event>
 											<text>It puts its hand over its scarred eye and, with a grunt, answers, "You... asked before. Should you truly need a name with which to call me... my kin refer to me in their fables as the Scarred... they're terrible tales, used to give the younglings nightmares. The truth behind them is... terrible, in its own way." It looks to the void outside, and drops its hand, "They're... here."</text>
-											<crewMember amount="1" class="unique_thescarred">The Scarred</crewMember>
+											<crewMember amount="1" class="unique_thescarred" all_skills="2">The Scarred</crewMember>
 											<choice hidden="true">
 												<text>Continue...</text>
 												<event>
-													<text>You watch as the Scarred waves its hand, and the shadows outside are pushed back; in their place, a new shadow takes hold... a tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+													<text>You watch as the Scarred waves its hand, and the shadows outside are pushed back; in their place, a new shadow takes hold... a tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 													<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD" hostile="false"/>
 													<choice hidden="true">
 														<text>Brace yourself.</text>
 														<event>
-															<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU HARBOR... THE TRAITOR. YOU INTEND TO FIGHT. OUR LORD... INTENDS TO WIN." They end communications, and their weapons come online... you realize one of them is of a design unknown to you. The Scarred meets your gaze, and speaks, "They possess... a superweapon created by their False God. Its function... is unknown to me, and yet... I can feel the darkness it harbors. Prepare yourself, kin, and fight... for the Enlightened!" With that, it leaves the room and prepares for battle. The dreadnought approaches, and you realize it's time to do the same... to be a beacon, where the darkness festers greatest.</text>
+															<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU HARBOR... THE TRAITOR. YOU INTEND TO FIGHT. OUR LORD... INTENDS TO WIN." They end communications, and their weapons come online... all ones of dark design. The Scarred meets your gaze, and speaks, "We would do well... to not allow their weapons of evil to overwhelm our ranks. Prepare yourself, kin... and fight! For the Enlightened!" With that, it leaves the room and prepares for battle. The dreadnought approaches, and you realize it's time to do the same... to be a beacon, where the darkness festers greatest.</text>
+															<playMusic>ddtodancewithdarkness</playMusic>
 															<ship hostile="true"/>
 															<choice hidden="true">
 																<text>Continue...</text>
@@ -4550,12 +4572,6 @@
 											</choice>
 										</event>
 									</choice>
-								</event>
-							</choice>
-							<choice hidden="true">
-								<text>Thank you... for your sacrifice. I won't forget you, or the Enlightened.</text>
-								<event>
-									<text>"Nor will I forget you... kin. Now, go. Save... this reality, and push back... the dark." The voice goes silent for the last time, and you prepare to leave the sector. You've escaped this madness, but at no small cost...</text>
 								</event>
 							</choice>
 						</event>
@@ -4571,12 +4587,13 @@
 			<choice hidden="true">
 				<text>Prepare to leave.</text>
 				<event>
-					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... and a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... as a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 					<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_NEUTRAL" hostile="false"/>
 					<choice hidden="true">
 						<text>What's this?</text>
 						<event>
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -4591,16 +4608,17 @@
 	<choice hidden="true" req="the_scarred_judgment" lvl="-15" max_lvl="-4" blue="false">
 		<text>Ask the voice what happens now.</text>
 		<event>
-			<text>It doesn't respond, and you watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. The voice then speaks, "Now... we part ways. My people will need me... for the battles to come, should the world outside this false void... prove to be half as ruthless as you are. Still, I request... one last thing of you, outsider..." it pauses, "...don't come back." With that, the voice goes silent for the last time, and the ship retreats back into the darkness.</text>
+			<text>It doesn't respond, and you watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. The voice then speaks, "Now... we part ways. My people will need me... for the battles to come, should the world outside this false void... prove to be half as ruthless as you are. Still, I request... one last thing of you, outsider..." It pauses for an uncomfortably long while, "...don't come back." With that, the voice goes silent for the last time, and the ship retreats back into the darkness.</text>
 			<choice hidden="true">
 				<text>Prepare to leave.</text>
 				<event>
-					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... and a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels odd... as does the lack of color.</text>
+					<text>As you turn to leave the room and prepare to leave the sector... you feel something. A foreboding feeling, of impending doom... as a new shadow emerges from the darkness. A tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 					<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_NEUTRAL" hostile="false"/>
 					<choice hidden="true">
 						<text>What's this?</text>
 						<event>
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
+							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -4627,7 +4645,8 @@
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>"...you're gonna have to try a little harder than THAT." A new ship bursts from where the previous lay shrouded; the hero appears, and you prepare for the end.</text>
+									<text>"...you're gonna have to try... a little harder than THAT." A new ship bursts from where the previous lay shrouded; the hero appears, and you prepare for the end.</text>
+									<playMusic>ddtodancewithdarkness</playMusic>
 									<backgroundObject name="INFINITE_HYPERDEATH_THE_SCARRED">
 										<layer z="0">background</layer>
 										<spawnArea x="0" y="0" w="0" h="0"/>
@@ -4646,7 +4665,7 @@
 			</choice>
 		</event>
 	</choice>
-</event> 
+</event>
 
 <event name="ENLIGHTENED_SURRENDER">
 	<text load="ENLIGHTENED_SURRENDER_TEXT"/>
