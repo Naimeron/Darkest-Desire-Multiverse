@@ -4429,12 +4429,6 @@ Nothing is immune.</tooltip>
 	<mod:findName type="req" name="LIST_UPG_EXTINGUISHERS">
 		<mod-append:name>DDSERAPHIM_GAS</mod-append:name>
 	</mod:findName>
-	<mod:findName type="req" name="LIST_UPG_ION">
-		<mod-append:name>DEEPONE_LIGHTS</mod-append:name>
-		<mod-append:name>DEEPONE_LIGHTS_LOCKED</mod-append:name>
-		<mod-append:name>DREAD_LIGHTS</mod-append:name>
-		<mod-append:name>DREAD_LIGHTS_LOCKED</mod-append:name>
-	</mod:findName>
 </mod:findLike>
 
 <mod:findName type="event" name="BOON_SELECT">
