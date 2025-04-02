@@ -869,7 +869,7 @@
 	<hitShipSounds>
 		<sound>smallExplosion</sound>
 	</hitShipSounds>
-	<weaponArt>bomblauncher_darkgod</weaponArt>
+	<weaponArt>bomblauncher_ddobelisk</weaponArt>
 	<iconImage>bomb</iconImage>
 </weaponBlueprint>
 

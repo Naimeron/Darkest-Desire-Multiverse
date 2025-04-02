@@ -222,8 +222,11 @@
 			<text>...as does another...</text>
 			<autoReward level="HIGH">standard</autoReward>
 			<choice hidden="true">
-				<text>...as does a... Deep One Chosen?! You assume this to be be an invader and prepare to defend yourself, but, to your surprise, they begin to bow as you hear the voice again, "TO SERVE IS TO DESIRE BEING A PART OF SOMETHING GREATER. THIS ONE SERVES ME, AS YOU'VE SERVED MY AMUSEMENT; THUS DO I SERVE YOU. THUS DO THEY SERVE YOU." Silence falls, and you're left with the unsettling presence of your newfound companion... whose side is the Dark God on, really? Is this all just a game to them? You receive no answer, but the single, clear truth of the matter is that one of its most venerated warriors now sits among your ranks.</text>
-				<crewMember amount="1" class="dddeepone_chosen">Nervasdren</crewMember>
+				<text>Continue...</text>
+				<event>
+					<text>...as does a... Deep One Chosen?! You assume this to be be an invader and prepare to defend yourself, but, to your surprise, they begin to bow as you hear the voice again, "TO SERVE IS TO DESIRE BEING A PART OF SOMETHING GREATER. THIS ONE SERVES ME, AS YOU'VE SERVED MY AMUSEMENT; THUS DO I SERVE YOU. THUS DO THEY SERVE YOU." Silence falls, and you're left with the unsettling presence of your newfound companion... whose side is the Dark God on, really? Is this all just a game to them? You receive no answer, but the single, clear truth of the matter is that one of its most venerated warriors now sits among your ranks.</text>
+					<crewMember amount="1" class="dddeepone_chosen">Nervasdren</crewMember>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -304,8 +307,11 @@
 							<text>...and another...</text>
 							<autoReward level="HIGH">standard</autoReward>
 							<choice hidden="true">
-								<text>...and yet another, in the form of one of the Dark God's Chosen. It seems you've truly earned its reverence.</text>
-								<crewMember amount="1" class="dddeepone_chosen">Nervasdren</crewMember>
+								<text>Continue...</text>
+								<event>
+									<text>...and yet another, in the form of one of the Dark God's Chosen. It seems you've truly earned its reverence.</text>
+									<crewMember amount="1" class="dddeepone_chosen">Nervasdren</crewMember>
+								</event>
 							</choice>
 						</event>
 					</choice>
@@ -390,7 +396,6 @@
 
 <event name="DDDARKGODDOMAIN_TRIAL_IMPOSSIBLE_CHOSENWAVE">
 	<text>Another wave of energy, different from the rest, pulses as your trial reaches its climax...</text>
-	<playMusic>ddtodancewithdarkness</playMusic>
 	<triggeredEvent event="DDDARKGODDOMAIN_TRIAL_IMPOSSIBLE_SUCCESS" thisFight="false" clearOnJump="true">
 		<enemyCrew amount="0" includeClonebay="false"/>
 	</triggeredEvent>
