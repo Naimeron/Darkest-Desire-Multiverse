@@ -421,17 +421,6 @@
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Ignore the ship.</text>
-		<event>
-			<text>You try to find a quiet spot at the beacon to wait while the FTL charges, but the ominous ship outside trails behind you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
-			<ship hostile="true"/>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
-			</choice>
-		</event>
-	</choice>
-	<choice hidden="true">
 		<text>Contact the ship.</text>
 		<event>
 			<text>You try to contact the ominous ship outside, but it ignores your attempts to hail and instead begins to head towards you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
@@ -446,6 +435,17 @@
 		<text>Attack the ship.</text>
 		<event>
 			<text>You move to prepare an assault on the ominous ship, and it begins to advance towards you in response. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You try to find a quiet spot at the beacon to wait while the FTL charges, but the ominous ship outside trails behind you. At first, its movements are erratic, but as the ship nears yours they become sharper... until, eventually, they make a beeline straight at you! Your instincts kick in as you recognize their aggression, narrowly dodging the ship out of the way of their charge... are they insane?! They turn around, ready to face you once more, and you sound the alarm; it's time for battle!</text>
 			<ship hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>

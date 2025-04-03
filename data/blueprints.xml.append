@@ -5246,7 +5246,6 @@
 	<desc>You should never see this!</desc>
 	<tooltip>You shouldn't see this, either!</tooltip>
 	<damage>0</damage>
-	<lockdown>1</lockdown>
 	<accuracyMod>100</accuracyMod>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
@@ -7212,7 +7211,6 @@
 	<desc>You should never see this!</desc>
 	<tooltip>You shouldn't see this, either!</tooltip>
 	<damage>0</damage>
-	<lockdown>1</lockdown>
 	<accuracyMod>100</accuracyMod>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
@@ -15961,7 +15959,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Increased damage (1.3x) and damage resistance (0.7x), but lower movement (0.8x) and repair (0.8x) speed. Immune to suffocation and mind control, but weak to fire.</power>
-		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability kills the Husk but spawns another random Husk. If it dies before it can activate its ability, it cannot be cloned.</power>
+		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Has no ability, but can be freely transformed into another variety of Husk at an empty beacon.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddsoulplague_husk_human_enemy">
@@ -15973,7 +15971,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Increased damage (1.3x) and damage resistance (0.7x), but lower movement (0.8x) and repair (0.8x) speed. Immune to suffocation and mind control, but weak to fire.</power>
-		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability kills the Husk but spawns another random Husk. If it dies before it can activate its ability, it cannot be cloned.</power>
+		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Has no ability, but can be freely transformed into another variety of Husk at an empty beacon.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddsoulplague_husk_crystal">
@@ -18658,7 +18656,7 @@
 				<number>1</number>
 			</slot>
 		</clonebay>
-		<doors power="1" room="14" start="false" img="room_doors">
+		<doors power="1" room="14" start="true" img="room_doors">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -18709,7 +18707,7 @@
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="0" count="2" />
-	<droneList drones="13" count="4">
+	<droneList drones="16" count="4">
 		<drone name="ENERGY_1_AMP2" />
 		<drone name="DRONE_SHIELD" />
 		<drone name="MANNING" />

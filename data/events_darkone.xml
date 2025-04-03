@@ -59,21 +59,18 @@
 					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, YOU WILL DROWN. PROVE YOURSELF, STRUGGLE, OR PERISH. THIS IS MY DECREE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
 					<damage amount="-14"/>
 					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+					<status type="limit" target="player" system="hacking" amount="0"/>
 					<boarders min="2" max="3" class="darkgodtendrils"/>
 					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
-						<text>Continue...</text>
+						<text>Prepare to defend yourself!</text>
 						<event>
 							<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
 							<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event load="COMBAT_CHECK"/>
-							</choice>
 						</event>
 					</choice>
 					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
-						<text>Continue...</text>
-						<event load="COMBAT_CHECK"/>
+						<text>Prepare to defend yourself!</text>
+						<event/>
 					</choice>
 				</event>
 			</choice>
@@ -89,21 +86,18 @@
 					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, I WELCOME YOU. YET STILL DOES MY WILL FESTER. DESIRE INTERVENTION, AND IT WILL BE DONE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
 					<damage amount="-14"/>
 					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+					<status type="limit" target="player" system="hacking" amount="0"/>
 					<boarders min="2" max="3" class="darkgodtendrils"/>
 					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
-						<text>Continue...</text>
+						<text>Prepare to defend yourself!</text>
 						<event>
 							<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
 							<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event load="COMBAT_CHECK"/>
-							</choice>
 						</event>
 					</choice>
 					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
-						<text>Continue...</text>
-						<event load="COMBAT_CHECK"/>
+						<text>Prepare to defend yourself!</text>
+						<event/>
 					</choice>
 				</event>
 			</choice>
@@ -115,14 +109,15 @@
 	<text>The darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
 	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+	<status type="limit" target="player" system="hacking" amount="0"/>
 	<boarders min="3" max="6" class="darkgodtendrils"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
 		<event load="DDDARKGODDOMAIN_INTERVENTION"/>
 	</choice>
 	<choice hidden="true">
-		<text>Continue...</text>
-		<event load="COMBAT_CHECK"/>
+		<text>Get ready!</text>
+		<event/>
 	</choice>
 </event>
 

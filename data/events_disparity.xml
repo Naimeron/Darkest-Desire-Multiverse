@@ -3261,11 +3261,8 @@
 								<event>
 									<text>You try to move the ship, but something in the darkness appears to be holding it in place... or, it IS the darkness holding it in place. You're either going to need to jump straight out of here, or combat this shadowy menace head-on. As you move to give the combat command, several intruders are detected... it seems that some of the darkness has managed to get inside!</text>
 									<ship load="NEUTRAL_DISPARITY_SHADOWSTORM_APPROACHES_THESHADOWSTORM" hostile="true"/>
+									<status type="limit" target="player" system="hacking" amount="0"/>
 									<boarders min="3" max="6" class="darkgodtendrils"/>
-									<choice hidden="true">
-										<text>Continue...</text>
-										<event load="COMBAT_CHECK"/>
-									</choice>
 								</event>
 							</choice>
 						</event>
@@ -3941,11 +3938,8 @@
 		<event>
 			<text>Drawing the tendrils' ire, they pull away from the Separatist ship and reenter the amorphous cloud of darkness you find yourself surrounded by... then, they strike from beneath you! Get ready!</text>
 			<ship load="DISTRESS_DISPARITY_DARKNESSASSAULT_FIGHT" hostile="true"/>
+			<status type="limit" target="player" system="hacking" amount="0"/>
 			<boarders min="3" max="6" class="darkgodtendrils"/>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
-			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">

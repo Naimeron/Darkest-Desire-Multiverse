@@ -286,6 +286,10 @@
 		<text>(Corruptor) Investigate the Corruptor System.</text>
 		<event load="STORAGE_CHECK_DDCORRUPTOR_SUBSUMATIONS"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="ddsoulplague_husk_human">
+		<text>(Human Husk) Mutate your Human Husk into another type of Husk.</text>
+		<event load="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM"/>
+	</mod-append:choice>
 </mod:findName>
 
 <event name="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION">
@@ -3051,6 +3055,98 @@
 				<text>Nevermind, do something else.</text>
 				<event load="STORAGE_CHECK"/>
 			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM">
+	<text>You may force one of your Human Husks to mutate into another variety of Husk by connecting to the whispers within their mind, and focusing on the instability within their DNA... assuming you desire to do so, of course.</text>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Crystal Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_crystal</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into an Engi Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_engi</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Zoltan Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_zoltan</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into an Orchid Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_orchid</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Mantis Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_mantis</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Rockman Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_rockman</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Slug Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_slug</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Shell Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_shell</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Lanius Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_lanius</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Deep One Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_deepone</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Ghost Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_ghost</transformRace>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Transform your Human Husk into a Leech Husk.</text>
+		<event>
+			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
+			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_leech</transformRace>
 		</event>
 	</choice>
 	<choice req="pilot" lvl="1" max_group="1" blue="false">

@@ -204,8 +204,7 @@
 </eventList>
 
 <event name="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_MINORSUCCESS_ACTIVATION_BATTLE_LOOT">
-	<text>The final Husk melts into a puddle on the floor, and the Auto-ship violently bursts free from the remains of the Federation ship. Its hull splinters, sending wreckage in every direction, and the Auto-ship hovers just outside... you know it has enough energy to fulfill only one request. What will it be?</text>
-	<enemyDamage amount="999"/>
+	<text>The final Husk melts into a puddle on the floor, and you return your attention to the Auto-ship hovering outside. You know it has enough energy to fulfill only one request. What will it be?</text>
 	<choice hidden="true">
 		<text>Send a repair command.</text>
 		<event>
@@ -230,14 +229,15 @@
 </event>
 
 <event name="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_MINORSUCCESS_ACTIVATION_BATTLE">
-	<text>You press a button on the Auto-ship, and it roars to life... it'll deploy in a few moments, and you realize that you need to get out of here before it lifts off and tears a hole in the hull! You sprint through the wrecked ship's musty halls, the iridescent puddles around you reverberating as the drone prepares its takeoff, and you're able to make it back in time...</text>
+	<text>You press a button on the Auto-ship, and it roars to life... it'll deploy in a few moments, and you realize that you need to get out of here before it lifts off and tears a hole in the hull! You sprint through the wrecked ship's musty halls, the iridescent puddles around you reverberating as the drone prepares its takeoff, and you're able to make it back in time... as you do, the Auto-ship violently bursts free from the remains of the Federation ship. Its hull splinters, sending wreckage in every direction, and the Auto-ship hovers just outside...</text>
+	<enemyDamage amount="999"/>
 	<triggeredEvent event="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_MINORSUCCESS_ACTIVATION_BATTLE_LOOT" thisFight="false" clearOnJump="true">
 		<enemyCrew amount="0" includeClonebay="false"/>
 	</triggeredEvent>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>...but not without a horde of Soulplague Husks waking up and following you!</text>
+			<text>...but, it seems a horde of Husks woke up and followed you aboard just beforehand! You'll have to take care of them first...</text>
 			<boarders min="3" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
 		</event>
 	</choice>
@@ -305,20 +305,20 @@
 </eventList>
 
 <event name="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_CRITICALSUCCESS_ACTIVATION_BATTLE_LOOT">
-	<text>The final Husk melts into a puddle on the floor, and the Auto-ship violently bursts free from the remains of the Federation ship. Its hull splinters, sending wreckage in every direction, and the Auto-ship hovers just outside... it's free now. Before it begins its aimless journey through the nebula, though, there's still time to trade with it. You do so with a heavy heart; one can only pray that the drone's journey here goes better than your fallen Federation allies' had.</text>
-	<enemyDamage amount="999"/>
+	<text>The final Husk melts into a puddle on the floor, and you return your attention to the Auto-ship hovering outside. Before it begins its aimless journey through the nebula, you know that there's still time to trade with it. You do so with a heavy heart; one can only pray that the drone's journey here goes better than your fallen Federation allies' had.</text>
 	<store>STORE_AUTO</store>
 </event>
 
 <event name="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_CRITICALSUCCESS_ACTIVATION_BATTLE">
-	<text>You press a button on the Auto-ship, and it roars to life... it'll deploy in a few moments, and you realize that you need to get out of here before it lifts off and tears a hole in the hull! You sprint through the wrecked ship's musty halls, the iridescent puddles around you reverberating as the drone prepares its takeoff, and you're able to make it back in time...</text>
+	<text>You press a button on the Auto-ship, and it roars to life... it'll deploy in a few moments, and you realize that you need to get out of here before it lifts off and tears a hole in the hull! You sprint through the wrecked ship's musty halls, the iridescent puddles around you reverberating as the drone prepares its takeoff, and you're able to make it back in time... as you do, the Auto-ship violently bursts free from the remains of the Federation ship. Its hull splinters, sending wreckage in every direction, and the Auto-ship hovers just outside...</text>
+	<enemyDamage amount="999"/>
 	<triggeredEvent event="NEBULA_STORELIST_DDSOULPLAGUE_FEDERATIONREMAINS_INVESTIGATION_CRITICALSUCCESS_ACTIVATION_BATTLE_LOOT" thisFight="false" clearOnJump="true">
 		<enemyCrew amount="0" includeClonebay="false"/>
 	</triggeredEvent>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>...but not without a horde of Soulplague Husks waking up and following you!</text>
+			<text>...but, it seems a horde of Husks woke up and followed you aboard just beforehand! You'll have to take care of them first...</text>
 			<boarders min="3" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
 		</event>
 	</choice>
@@ -5065,7 +5065,7 @@
 			<choice hidden="true">
 				<text>The eyes to see... what does that mean?</text>
 				<event>
-					<text>An explosion from behind you sends you flying into the ship's console, and you turn around to see... someone armored head-to-toe, stepping out of some kind of portal. No, not so much stepping out as much as they're fighting their way out - the spear in their hands tearing away at the goopy, oily tentacles that threaten to pull them in. You realize you recognize these tentacles... this Soulplague-infected matter! You watch, in awe, as the figure finishes cutting away at the tentacles, and the portal shuts closed behind them. They take a moment to take wipe themselves off, deactivated Soulplague matter splattering against the floor as they do so, before turning to you, pointing at themself, and finally speaking:
+					<text>An explosion from behind you sends you flying into the ship's console, and you turn around to see... someone armored head-to-toe, stepping out of some kind of portal. No, not so much stepping out as much as they're fighting their way out - the spear in their hands tearing away at the goopy, oily tentacles that threaten to pull them in. You realize that you recognize these tentacles... this is Soulplague-infected matter! You watch, in awe, as the figure finishes cutting away at the tentacles, and the portal shuts closed behind them. They take a moment to wipe themself off, deactivated Soulplague matter splattering against the floor as they do so, before turning to you, pointing at themself, and finally speaking:
 					
 					"It means... you're gonna need a little help!"
 					
@@ -5111,7 +5111,7 @@
 																								<text>This sounds absurd, but... screw it, I'm in.</text>
 																								<event>
 																									<text>There's a loud, clanging noise as she slams the butt of her spear against the floor, and puts her hand to her chest once more, "THAT'S THE HEROIC SPIRIT! To fight for no reason, other than because it is what's right... THIS is how heroes are born. If you are to venture with me into the belly of the beast, then you will be needing this!" She holds her hand out, palm up, and tenses it... for a moment, you're left wondering what's supposed to happen, but then a resplendent, roaring flame bursts out from the very air between her fingertips! She pulls her hand back, and the golden fire stays hovering in the air where she left it, "This... is 'hope'. The prison's Children, or, heavens forbid, its Weavers, will undoubtedly try to bargain with you once you're within their realm. They may promise power, freedom, peace, WHATEVER; all of it will be lies for the sole purpose of luring you to your death. THAT, is where 'hope' comes in. It is a fraction of my power, and what's caused my imprisonment in the first place... it is to act as your torch in the upcoming darkness. Invoke it, and you may burn away the shadows of doubt, revealing truth... what that truth entails, exactly, is up to you. I only ask that you use it wisely, for its power is finite." She gestures for you to take the flame, and you hestitantly cup it in your hands... but it doesn't burn you. Rather, you feel that you find it soothing.</text>
-																									<variable name="dd_soulplague_coremass_hopesflamecharges" op="set" val="5"/>
+																									<variable name="dd_soulplague_coremass_hopesflamecharges" op="set" val="4"/>
 																									<choice hidden="true">
 																										<text>Alright, I'll try to be smart about it. When exactly are we expecting your captors to return, then?</text>
 																										<event>
@@ -5168,7 +5168,7 @@
 												<text>Of course! I'm in.</text>
 												<event>
 													<text>There's a loud, clanging noise as she slams the butt of her spear against the floor, and puts her hand to her chest once more, "THAT'S THE HEROIC SPIRIT! To fight for no reason, other than because it is what's right... THIS is how heroes are born. If you are to venture with me into the belly of the beast, then you will be needing this!" She holds her hand out, palm up, and tenses it... for a moment, you're left wondering what's supposed to happen, but then a resplendent, roaring flame bursts out from the very air between her fingertips! She pulls her hand back, and the golden fire stays hovering in the air where she left it, "This... is 'hope'. The prison's Children, or, heavens forbid, its Weavers, will undoubtedly try to bargain with you once you're within their realm. They may promise power, freedom, peace, WHATEVER; all of it will be lies for the sole purpose of luring you to your death. THAT, is where 'hope' comes in. It is a fraction of my power, and what's caused my imprisonment in the first place... it is to act as your torch in the upcoming darkness. Invoke it, and you may burn away the shadows of doubt, revealing truth... what that truth entails, exactly, is up to you. I only ask that you use it wisely, for its power is finite." She gestures for you to take the flame, and you hestitantly cup it in your hands... but it doesn't burn you. Rather, you feel that you find it soothing.</text>
-													<variable name="dd_soulplague_coremass_hopesflamecharges" op="set" val="5"/>
+													<variable name="dd_soulplague_coremass_hopesflamecharges" op="set" val="4"/>
 													<choice hidden="true">
 														<text>Alright, I'll try to be smart about it. When exactly are we expecting your captors to return, then?</text>
 														<event>

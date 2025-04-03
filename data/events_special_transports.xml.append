@@ -204,7 +204,7 @@
 					<text>You prepare to secure their cargo by force.</text>
 					<ship hostile="true"/>
 					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
 						<triggeredEventBox load="DEFAULT_TIMER">
 							<warning time="5.0" flash="true"/>
 							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
@@ -212,7 +212,7 @@
 					</triggeredEvent>
 					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
 						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="60" h="58" center="true"/>
+						<spawnArea x="660" y="127" w="0" h="0"/>
 						<anim>danger_ddsoulplague</anim>
 						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
 					</backgroundObject>

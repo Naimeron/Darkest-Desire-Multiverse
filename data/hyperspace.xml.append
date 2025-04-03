@@ -12079,7 +12079,6 @@ Nothing is immune.</tooltip>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
 		<damageTakenMultiplier>0.7</damageTakenMultiplier>
 		<resistsMindControl>true</resistsMindControl>
-		<noClone>true</noClone>
 		<animBase>human</animBase>
 		<deathSounds>
 			<deathSound>ddsoulplaguedeathnoise</deathSound>
@@ -12546,29 +12545,6 @@ Nothing is immune.</tooltip>
 				<boostAnim>ddsoulplague_infected_debuff</boostAnim>
 			</statBoost>
 		</passiveStatBoosts>
-		<powerEffect>
-			<cooldown>5</cooldown>
-			<jumpCooldown>full</jumpCooldown>
-			<req>
-				<maxHealth>15</maxHealth>
-			</req>
-			<powerSounds>
-				<powerSound>blobDeath</powerSound>
-			</powerSounds>
-			<buttonText>MUTATE</buttonText>
-			<tooltip>[COOLDOWN:5s]
-				Dies, but spawns a random mutation of Soulplague Husk (other than another Human mutation). Only activates in response to the Husk approaching death.</tooltip>
-			<cooldownColor r="164" g="102" b="175"/>
-			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
-			<activateWhenReady>true</activateWhenReady>
-			<selfHealth>-99999</selfHealth>
-			<friendlyFire>true</friendlyFire>
-			<spawnCrew>
-				<race>LIST_DDSOULPLAGUE_HUSKS_NOHUMAN</race>
-				<name>Husk</name>
-				<number>1</number>
-			</spawnCrew>
-		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddsoulplague_husk_human_enemy">
 		<maxHealth>60</maxHealth>
@@ -12579,7 +12555,6 @@ Nothing is immune.</tooltip>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
 		<damageTakenMultiplier>0.7</damageTakenMultiplier>
 		<resistsMindControl>true</resistsMindControl>
-		<noClone>true</noClone>
 		<animBase>human</animBase>
 		<animSheet>ddsoulplague_husk_human</animSheet>
 		<deathSounds>
@@ -13047,30 +13022,6 @@ Nothing is immune.</tooltip>
 				<boostAnim>ddsoulplague_infected_debuff</boostAnim>
 			</statBoost>
 		</passiveStatBoosts>
-		<powerEffect>
-			<cooldown>5</cooldown>
-			<jumpCooldown>full</jumpCooldown>
-			<req>
-				<maxHealth>15</maxHealth>
-				<inCombat/>
-			</req>
-			<powerSounds>
-				<powerSound>blobDeath</powerSound>
-			</powerSounds>
-			<buttonText>MUTATE</buttonText>
-			<tooltip>[COOLDOWN:5s]
-				Dies, but spawns a random mutation of Soulplague Husk (other than another Human mutation). Only activates in response to the Husk approaching death.</tooltip>
-			<cooldownColor r="164" g="102" b="175"/>
-			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
-			<activateWhenReady>true</activateWhenReady>
-			<selfHealth>-99999</selfHealth>
-			<friendlyFire>true</friendlyFire>
-			<spawnCrew>
-				<race>LIST_DDSOULPLAGUE_HUSKS_NOHUMAN_ENEMY</race>
-				<name>Husk</name>
-				<number>1</number>
-			</spawnCrew>
-		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddsoulplague_husk_crystal">
 		<maxHealth>60</maxHealth>
@@ -42104,7 +42055,7 @@ Nothing is immune.</tooltip>
 			<achievement name="ACH_TRANS_DDSOULPLAGUE_TEMPEST">
 				<secretName>???</secretName>
 				<secretDescription>Obtain the loot from the ??? transport.</secretDescription>
-				<name>Disparity Transport</name>
+				<name>Tempest Transport</name>
 				<description>Obtain the "loot" from the Tempest loot transport.</description>
 				<icon>ach_trans_ddsoulplague_tempest</icon>
 				<lockImage>ach_locked</lockImage>
@@ -42112,7 +42063,7 @@ Nothing is immune.</tooltip>
 			<achievement name="ACH_TRANS_DDCOREMASS">
 				<secretName>???</secretName>
 				<secretDescription>Obtain the loot from the ??? transport.</secretDescription>
-				<name>Disparity Transport</name>
+				<name>Soulplague Transport</name>
 				<description>Obtain the loot from the Soulplague loot transport.</description>
 				<icon>ach_trans_ddcoremass</icon>
 				<lockImage>ach_locked</lockImage>
