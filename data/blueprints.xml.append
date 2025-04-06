@@ -859,6 +859,11 @@
 	<power>0</power>
 	<mv-conservative/>
 	<cost>130</cost>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>2</count>
+	</boost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>bomb_darkgod</image>
@@ -1243,7 +1248,7 @@
 	<title>Plagueridden Pinpoint</title>
 	<short>P. Pinpoint</short>
 	<desc>This weapon appears to vaguely resemble the 'Anelace' Rad-Pinpoint, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
-	<tooltip>Pinpoint weapon that deals heavy crew damage and pierces 3 shields, but deals no damage to systems or hull. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
+	<tooltip>Pinpoint weapon that deals heavy crew damage and pierces 2 shields, but deals no damage to systems or hull. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>0</damage>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
@@ -2119,6 +2124,300 @@
 	</missSounds>
 	<weaponArt>ddsoulplague_missile</weaponArt>
 	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="DDLASER_HEAVY_SOULPLAGUE">
+	<type>LASER</type>
+	<title>Plagueridden Heavy Laser</title>
+	<short>P. Heavy</short>
+	<tip>tip_ddplagueridden_weapon</tip>
+	<desc>This weapon appears to vaguely resemble the Heavy Laser MK III, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
+	<tooltip>Heavy laser; 2 damage, 3 shots. 18.5 second cooldown. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
+	<damage>2</damage>
+	<roomStatBoosts>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.5</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList load="LIST_CREW_DDNOFEAR"/>
+			<roomAnim renderLayer="3">                                                    
+				<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+					<wallAnim>ddroom_plagueridden_effect</wallAnim>
+			</roomAnim>
+		</statBoost>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-3.7</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList load="LIST_CREW_DDNOFEAR"/>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_CRYSTAL"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_DEEPONES"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ENGI"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ENGI"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_GHOST"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_GHOST"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_LANIUS"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_LANIUS"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_LEECH"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_LEECH"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_MANTIS"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_MANTIS"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_OBELISK"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ANCIENT"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ORCHID"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ORCHID"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ROCK"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_SHELL"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_SHELL"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_SLUG"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_SLUG"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ZOLTAN"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_HUMAN"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList>
+				<blueprintList load="LIST_CREW_CRYSTAL"/>
+				<blueprintList load="LIST_CREW_DEEPONES"/>
+				<blueprintList load="LIST_CREW_ENGI"/>
+				<blueprintList load="LIST_CREW_GHOST"/>
+				<blueprintList load="LIST_CREW_LANIUS"/>
+				<blueprintList load="LIST_CREW_LEECH"/>
+				<blueprintList load="LIST_CREW_MANTIS"/>
+				<blueprintList load="LIST_CREW_ANCIENT"/>
+				<blueprintList load="LIST_CREW_ORCHID"/>
+				<blueprintList load="LIST_CREW_ROCK"/>
+				<blueprintList load="LIST_CREW_SHELL"/>
+				<blueprintList load="LIST_CREW_SLUG"/>
+				<blueprintList load="LIST_CREW_ZOLTAN"/>
+				<blueprintList load="LIST_CREW_DDNOFEAR"/>
+			</blackList>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+	</roomStatBoosts>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>18.5</cooldown>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>10</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy_burst_ddsoulplague</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ddsoulplague_laser_heavy</weaponArt>
+	<iconImage>heavyL</iconImage>
 </weaponBlueprint>
 
 <weaponBlueprint name="DDSHOTGUN_SOULPLAGUE_ENEMY">
@@ -3305,6 +3604,300 @@
 	</missSounds>
 	<weaponArt>ddsoulplague_missile</weaponArt>
 	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="DDLASER_HEAVY_SOULPLAGUE_ENEMY">
+	<type>LASER</type>
+	<title>Plagueridden Heavy Laser</title>
+	<short>P. Heavy</short>
+	<tip>tip_ddplagueridden_weapon</tip>
+	<desc>This weapon appears to vaguely resemble the Heavy Laser MK III, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
+	<tooltip>Heavy laser; 2 damage, 3 shots. 18.5 second cooldown. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
+	<damage>2</damage>
+	<roomStatBoosts>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.5</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList load="LIST_CREW_DDNOFEAR"/>
+			<roomAnim renderLayer="3">                                                    
+				<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+					<wallAnim>ddroom_plagueridden_effect</wallAnim>
+			</roomAnim>
+		</statBoost>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-3.7</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList load="LIST_CREW_DDNOFEAR"/>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_CRYSTAL_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_CRYSTAL"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_DEEPONE_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_DEEPONES"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ENGI_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ENGI"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_GHOST_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_GHOST"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_LANIUS_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_LANIUS"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_LEECH_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_LEECH"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_MANTIS_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_MANTIS"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_OBELISK_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ANCIENT"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ORCHID_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ORCHID"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ROCKMAN_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ROCK"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_SHELL_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_SHELL"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_SLUG_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_SLUG"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_ZOLTAN_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<whiteList load="LIST_CREW_ZOLTAN"/>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+		<statBoost name="deathEffect">
+			<boostType>ADD</boostType>
+			<deathEffect>
+				<event load="DDSOULPLAGUE_SUMMON_BEAM_HUMAN_ENEMY"/>
+			</deathEffect>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>false</affectsSelf>
+			<duration>12</duration>
+			<maxStacks>1</maxStacks>
+			<priority>10001</priority>
+			<blackList>
+				<blueprintList load="LIST_CREW_CRYSTAL"/>
+				<blueprintList load="LIST_CREW_DEEPONES"/>
+				<blueprintList load="LIST_CREW_ENGI"/>
+				<blueprintList load="LIST_CREW_GHOST"/>
+				<blueprintList load="LIST_CREW_LANIUS"/>
+				<blueprintList load="LIST_CREW_LEECH"/>
+				<blueprintList load="LIST_CREW_MANTIS"/>
+				<blueprintList load="LIST_CREW_ANCIENT"/>
+				<blueprintList load="LIST_CREW_ORCHID"/>
+				<blueprintList load="LIST_CREW_ROCK"/>
+				<blueprintList load="LIST_CREW_SHELL"/>
+				<blueprintList load="LIST_CREW_SLUG"/>
+				<blueprintList load="LIST_CREW_ZOLTAN"/>
+				<blueprintList load="LIST_CREW_DDNOFEAR"/>
+			</blackList>
+			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
+		</statBoost>
+	</roomStatBoosts>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>18.5</cooldown>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>10</bp>
+	<rarity>0</rarity>
+	<image>laser_heavy_burst_ddsoulplague</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ddsoulplague_laser_heavy</weaponArt>
+	<iconImage>heavyL</iconImage>
 </weaponBlueprint>
 
 <weaponBlueprint name="DDDEEP_ONE_SHOTGUN">
@@ -17132,8 +17725,7 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="0" count="3">
-		<weapon name="LASER_DARKGOD" />
-		<weapon name="LASER_DARKGOD" />
+		<weapon name="SHOTGUN_DARKGOD" />
 	</weaponList>
 	<droneList drones="6" count="3">
 		<drone name="BATTLETOG_DEFEND" />
@@ -17201,7 +17793,7 @@
 		</shields>
 		<teleporter power="1" room="10" start="false" />
 		<dd_corruptor power="1" room="9" start="false" img="room_ddcorruptor_23" />
-		<weapons max="8" power="4" room="0" start="true" img="room_weapons_10">
+		<weapons max="8" power="3" room="0" start="true" img="room_weapons_10">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -17212,11 +17804,11 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="4">
 		<weapon name="BEAM_FIRE_INSTANT" />
-		<weapon name="SHOTGUN_DARKGOD" />
+		<weapon name="DDLASER_CHARGE_DARKGOD" />
 	</weaponList>
 	<droneList drones="0" count="2" />
 	<health amount="30" />
-	<maxPower amount="8" />
+	<maxPower amount="7" />
 	<crewCount amount="1" class="deeponecultist" />
 	<crewCount amount="1" class="deepone" />
 	<aug name="DREAD_LIGHTS_LOCKED" />
@@ -17440,10 +18032,11 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="3">
 		<weapon name="DD_BEAM_INSTANT_DARKGOD" />
+		<weapon name="LASER_DARKGOD" />
 	</weaponList>
 	<droneList drones="0" count="2" />
 	<health amount="15" />
-	<maxPower amount="6" />
+	<maxPower amount="7" />
 	<crewCount amount="1" class="dddeepone_chosen" />
 	<crewCount amount="1" class="deeponecultist" />
 	<aug name="DDOVERWHELMING_DARKNESS" />
@@ -17517,7 +18110,7 @@
 	<weaponList missiles="0" count="2" />
 	<droneList drones="0" count="2" />
 	<health amount="15" />
-	<maxPower amount="5" />
+	<maxPower amount="6" />
 	<crewCount amount="1" class="dddeepone_chosen" />
 	<crewCount amount="1" class="ddsoulplague_huskweaver" />
 	<crewCount amount="1" class="disparity_engidefault" />
@@ -17605,7 +18198,7 @@
 	<class>Soulplague Cruiser</class>
 	<name>Consumption</name>
 	<unlock>Get to Sector 5 with the Type A to unlock this ship.</unlock>
-	<desc>Voracious, the Husk of this ship is specialized in keeping its allies going and allowing them to assimilate as many enemies as they can.</desc>
+	<desc>Voracious, this ship's Husk is specialized in keeping its allies going and allowing them to assimilate as many enemies as they can.</desc>
 	<systemList>
 		<battery power="1" room="14" start="false" img="room_battery_14" />
 		<cloaking power="1" room="10" start="false" img="room_cloaking_9" />
@@ -17641,7 +18234,7 @@
 				<number>1</number>
 			</slot>
 		</pilot>
-		<sensors power="1" room="4" start="true" img="room_sensors_3">
+		<sensors power="2" room="4" start="true" img="room_sensors_3">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -17664,13 +18257,14 @@
 	</systemList>
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="9" count="2">
+	<weaponList missiles="11" count="2">
 		<weapon name="DDMISSILES_SOULPLAGUE" />
 	</weaponList>
 	<droneList drones="0" count="2" />
 	<health amount="15" />
-	<maxPower amount="6" />
+	<maxPower amount="7" />
 	<crewCount amount="1" class="ddsoulplague_shellcultist" />
+	<crewCount amount="1" class="shell_guardian" />
 	<crewCount amount="1" class="ddsoulplague_husk_shell" />
 	<aug name="DDSOULPLAGUE_GAS" />
 	<aug name="DARKGOD_CURSED_BOOK" />
@@ -17746,6 +18340,7 @@
 	<health amount="15" />
 	<maxPower amount="5" />
 	<crewCount amount="1" class="ddsoulplague_huskweaver" />
+	<crewCount amount="1" class="ddsoulplague_husk_ghost" />
 	<aug name="DDSOULPLAGUE_GAS" />
 	<aug name="DARKGOD_CURSED_BOOK" />
 	<aug name="EX_LIFE_SCANNER" />

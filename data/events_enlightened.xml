@@ -1618,6 +1618,7 @@
 												<text>0.</text>
 												<event>
 													<text>Your crew member inputs the final digit, and the vault opens... inside of it, an inexplicable eldritch horror beyond description lays. You've unleashed an ancient evil on this reality... it looks at you, and then your crew, and says "Look at this team, we're gonna do great!" May God have mercy on your souls.</text>
+													<achievement>ACH_EVENT_DDHAPPYHOLIDAYS</achievement>
 													<crewMember amount="1" class="happyholidays">Happy Holidays</crewMember>
 												</event>
 											</choice>

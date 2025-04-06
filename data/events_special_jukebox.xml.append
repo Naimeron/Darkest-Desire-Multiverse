@@ -1,8 +1,22 @@
 <mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
-    <mod-append:choice hidden="true" req="juke_ddtracklightslament">
-		<text>DD: Light's Lament</text>
+	<mod-append:choice hidden="true" req="juke_ddhymntothedeep">
+		<text>DD: Hymn to the Deep</text>
 		<event>
-			<playMusic>ddtracklightslament</playMusic>
+			<playMusic>ddhymntothedeep</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddharmoniousdissonance">
+		<text>DD: Harmonious Dissonance</text>
+		<event>
+			<playMusic>ddharmoniousdissonance</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_dddemiurgicoblivion">
+		<text>DD: Demiurgic Oblivion</text>
+		<event>
+			<playMusic>dddemiurgicoblivion</playMusic>
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>
@@ -10,6 +24,13 @@
 		<text>DD: Heart of Shattered Promises</text>
 		<event>
 			<playMusic>ddheartofshatteredpromises</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddtracklightslament">
+		<text>DD: Light's Lament</text>
+		<event>
+			<playMusic>ddtracklightslament</playMusic>
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>

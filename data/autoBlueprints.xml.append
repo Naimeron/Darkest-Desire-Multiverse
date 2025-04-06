@@ -194,6 +194,7 @@
 	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDLASER_HEAVY_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
 	<mod-append:name>DDLASER_CHARGE_DARKGOD</mod-append:name>
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
@@ -237,6 +238,7 @@
 	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDLASER_HEAVY_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
 	<mod-append:name>DDLASER_CHARGE_DARKGOD</mod-append:name>
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
@@ -332,6 +334,7 @@
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDLASER_HEAVY_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
@@ -344,6 +347,7 @@
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDSHOTGUN_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDLASER_HEAVY_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 </mod:findName>
@@ -532,6 +536,7 @@
 	<name>DDPHASE_SOULPLAGUE</name>
 	<name>DDFOCUS_SOULPLAGUE</name>
 	<name>DDSHOTGUN_SOULPLAGUE</name>
+	<name>DDLASER_HEAVY_SOULPLAGUE</name>
 	<name>DDMISSILES_SOULPLAGUE</name>
 </blueprintList>
 
@@ -775,6 +780,7 @@
 	<name>BEAM_HULL_2</name>
 	<name>DDSHOTGUN_SOULPLAGUE_ENEMY</name>
 	<name>DDMISSILES_SOULPLAGUE_ENEMY</name>
+	<name>DDLASER_HEAVY_SOULPLAGUE_ENEMY</name>
 	<name>DDFOCUS_SOULPLAGUE_ENEMY</name>
 	<name>ENERGY_1</name>
 	<name>ENERGY_2</name>
@@ -920,6 +926,7 @@
 	<name>DDPHASE_SOULPLAGUE</name>
 	<name>DDFOCUS_SOULPLAGUE</name>
 	<name>DDSHOTGUN_SOULPLAGUE</name>
+	<name>DDLASER_HEAVY_SOULPLAGUE</name>
 	<name>DDMISSILES_SOULPLAGUE</name>
 	<name>DDHELLRAISER_HULL_LOOT</name>
 	<name>DDHELLRAISER_FIRE_LOOT</name>

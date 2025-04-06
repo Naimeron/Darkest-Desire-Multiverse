@@ -4099,6 +4099,9 @@ Nothing is immune.</tooltip>
 	<metaVariable name="juke_ddheartofshatteredpromises" op="set" val="0"/>
 	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="0"/>
 	<metaVariable name="juke_ddtrialbyire" op="set" val="0"/>
+	<metaVariable name="juke_ddhymntothedeep" op="set" val="0"/>
+	<metaVariable name="juke_ddharmoniousdissonance" op="set" val="0"/>
+	<metaVariable name="juke_dddemiurgicoblivion" op="set" val="0"/>
 	<metaVariable name="prof_z_boon_deepone" op="set" val="0"/>
 	<metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
 	<metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
@@ -32564,7 +32567,7 @@ Nothing is immune.</tooltip>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM"/>
 							<buttonText>SOULPUMP</buttonText>
 							<tooltip>[CD:3s  -4HP]
-								The Aberration channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
+								The Foolish channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>
@@ -33295,7 +33298,7 @@ Nothing is immune.</tooltip>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_ENEMY"/>
 							<buttonText>SOULPUMP</buttonText>
 							<tooltip>[CD:3s  -4HP]
-								The Aberration channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
+								The Foolish channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>
@@ -41092,7 +41095,7 @@ Nothing is immune.</tooltip>
 	<aug name="DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_LANIUS">
 		<statBoosts>
 			<statBoost name="oxygenChangeSpeed">
-				<boostType>MULT</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-0.5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -41996,14 +41999,34 @@ Nothing is immune.</tooltip>
 				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
-			<achievement name="MUSIC_DDTRACKLIGHTSLAMENT">
-				<name>Light's Lament</name>
+			<achievement name="MUSIC_DDTRACKHYMNTOTHEDEEP">
+				<name>Hymn to the Deep</name>
 				<secretName>???</secretName>
 				<description id="jukebox_unlocked"/>
 				<secretDescription id="jukebox_locked"/>
 				<header id="jukebox_header"/>
 				<icon>music_unlocked</icon>
-				<variable name="juke_ddtracklightslament" amount="1"/>
+				<variable name="juke_ddhymntothedeep" amount="1"/>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			<achievement name="MUSIC_DDTRACKHARMONIOUSDISSONANCE">
+				<name>Harmonious Dissonance</name>
+				<secretName>???</secretName>
+				<description id="jukebox_unlocked"/>
+				<secretDescription id="jukebox_locked"/>
+				<header id="jukebox_header"/>
+				<icon>music_unlocked</icon>
+				<variable name="juke_ddharmoniousdissonance" amount="1"/>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			<achievement name="MUSIC_DDTRACKDEMIURGICOBLIVION">
+				<name>Demiurgic Oblivion</name>
+				<secretName>???</secretName>
+				<description id="jukebox_unlocked"/>
+				<secretDescription id="jukebox_locked"/>
+				<header id="jukebox_header"/>
+				<icon>music_unlocked</icon>
+				<variable name="juke_dddemiurgicoblivion" amount="1"/>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="MUSIC_DDTRACKHEARTOFSHATTEREDPROMISES">
@@ -42014,6 +42037,16 @@ Nothing is immune.</tooltip>
 				<header id="jukebox_header"/>
 				<icon>music_unlocked</icon>
 				<variable name="juke_ddheartofshatteredpromises" amount="1"/>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			<achievement name="MUSIC_DDTRACKLIGHTSLAMENT">
+				<name>Light's Lament</name>
+				<secretName>???</secretName>
+				<description id="jukebox_unlocked"/>
+				<secretDescription id="jukebox_locked"/>
+				<header id="jukebox_header"/>
+				<icon>music_unlocked</icon>
+				<variable name="juke_ddtracklightslament" amount="1"/>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="MUSIC_DDTRACKTODANCEWITHDARKNESS">
@@ -42074,6 +42107,14 @@ Nothing is immune.</tooltip>
 				<name>Leviathan of Greed</name>
 				<description>Thus doth the beast fall... succumb to greed and defeat the Leviathan in the Enlightened sector.</description>
 				<icon>ach_event_greedleviathan</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
+			<achievement name="ACH_EVENT_DDHAPPYHOLIDAYS">
+				<secretName>???</secretName>
+				<secretDescription>Crack the code of a mysterious vault.</secretDescription>
+				<name>0230</name>
+				<description>That's not his birthday, but rather his average Healing Done over the span of 10 minutes. And it's all self-healing.</description>
+				<icon>ach_event_ddhappyholidays</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
 			<achievement name="ACH_EVENT_DDFOOLISHNOTES">

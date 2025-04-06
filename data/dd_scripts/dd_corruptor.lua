@@ -145,21 +145,22 @@ end
 local function corruptor_spawn(roomId, shipId, originId, amount, player)
     local shipManager = Hyperspace.ships(shipId)
     local originShip = Hyperspace.ships(originId)
-
-    if originShip:HasAugmentation("DD_INTERNAL_AUGMENT1") > 0 then
-        for crew in vter(shipManager.vCrewList) do
-            if crew.iRoomId == roomId and soulPlagueCrew[crew.type] then
-                crew:ApplyDamage(8)
-            end
-        end
-    end
-    if originShip:HasAugmentation("DD_INTERNAL_AUGMENT2") > 0 then
-        for crew in vter(shipManager.vCrewList) do
-            if crew.iRoomId == roomId and not soulPlagueCrew[crew.type] then
-                crew.fStunTime = 2
-            end
-        end
-    end
+	if originShip then
+		if originShip:HasAugmentation("DD_INTERNAL_AUGMENT1") > 0 then
+			for crew in vter(shipManager.vCrewList) do
+				if crew.iRoomId == roomId and soulPlagueCrew[crew.type] then
+					crew:ApplyDamage(8)
+				end
+			end
+		end
+		if originShip:HasAugmentation("DD_INTERNAL_AUGMENT2") > 0 then
+			for crew in vter(shipManager.vCrewList) do
+				if crew.iRoomId == roomId and not soulPlagueCrew[crew.type] then
+					crew.fStunTime = 2
+				end
+			end
+		end
+	end
     local crewId = "ddsoulplague_corruptor_tide_enemy"
     if player then
         crewId = "ddsoulplague_corruptor_tide"
@@ -500,4 +501,33 @@ script.on_render_event(Defines.RenderEvents.SHIP_SPARKS, function() end, functio
         render_icon(Hyperspace.ShipSystem.NameToSystemId(systemIdName), shipManager, sysInfo)
     end
     return Defines.Chain.CONTINUE
+end)
+
+local huskList = {}
+huskList["ddsoulplague_husk_human"] = true
+huskList["ddsoulplague_husk_crystal"] = true
+huskList["ddsoulplague_husk_engi"] = true
+huskList["ddsoulplague_husk_zoltan"] = true
+huskList["ddsoulplague_husk_orchid"] = true
+huskList["ddsoulplague_husk_mantis"] = true
+huskList["ddsoulplague_husk_rockman"] = true
+huskList["ddsoulplague_husk_slug"] = true
+huskList["ddsoulplague_husk_shell"] = true
+huskList["ddsoulplague_husk_lanius"] = true
+huskList["ddsoulplague_husk_deepone"] = true
+huskList["ddsoulplague_husk_ghost"] = true
+huskList["ddsoulplague_husk_leech"] = true
+huskList["ddsoulplague_husk_obelisk"] = true
+
+script.on_internal_event(Defines.InternalEvents.HAS_EQUIPMENT, function(shipManager, equipment, value)
+    if huskList[equipment] and shipManager.iShipId == 0 then
+        local count = 0
+        for crewmem in vter(Hyperspace.ships.player.vCrewList) do
+            if crewmem.type == equipment and crewmem.iShipId == 0 then
+                count = count + 1
+            end
+        end
+        return Defines.Chain.CONTINUE, count
+    end
+    return Defines.Chain.CONTINUE, value
 end)

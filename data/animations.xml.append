@@ -363,6 +363,16 @@
 	<mountPoint x="7" y="38"/>
 </weaponAnim>
 
+<animSheet name="ddsoulplague_laser_heavy" w="248" h="74" fw="31" fh="74">weapon_laser/ddsoulplague_laser_heavy.png</animSheet>
+<weaponAnim name="ddsoulplague_laser_heavy">
+	<sheet>ddsoulplague_laser_heavy</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="20" y="7"/>
+	<mountPoint x="3" y="52"/>
+</weaponAnim>
+
 <animSheet name="ddend_of_hope" w="108" h="95" fw="36" fh="95">weapon_beams/ddend_of_hope.png</animSheet>
 <weaponAnim name="ddend_of_hope">
 	<sheet>ddend_of_hope</sheet>
@@ -411,6 +421,13 @@
 <animSheet name="laser_burst_ddsoulplague" w="60" h="20" fw="60" fh="20">projectiles/laser_burst_ddsoulplague.png</animSheet>
 <anim name="laser_burst_ddsoulplague">
 	<sheet>laser_burst_ddsoulplague</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<animSheet name="laser_heavy_burst_ddsoulplague" w="60" h="20" fw="60" fh="20">projectiles/laser_heavy_burst_ddsoulplague.png</animSheet>
+<anim name="laser_heavy_burst_ddsoulplague">
+	<sheet>laser_heavy_burst_ddsoulplague</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>0.3</time>
 </anim>

@@ -63,8 +63,8 @@
 		<name>Deep One Convocation</name>
 	</nameList>
 	<trackList>
-		<track>voyager</track>
-		<track>cosmos</track> 
+		<track>ddhymntothedeep</track>
+		<track>voyager</track> 
 		<track>debris</track>
 		<track>lostship</track>
 	</trackList>
@@ -134,7 +134,7 @@
 		<track>ddtracklightslament</track>
 		<track>debris</track>
 		<track>unexplored</track>
-		<track>deepspace</track>
+		<track>ddhymntothedeep</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="human" rarity="0"/>
@@ -205,7 +205,7 @@
 		<track>ddtracklightslament</track>
 		<track>debris</track>
 		<track>unexplored</track>
-		<track>deepspace</track>
+		<track>ddhymntothedeep</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="human" rarity="5"/>
@@ -274,8 +274,8 @@
 		<name>S-62 [Disparity Assault] [!]</name>
 	</nameList>
 	<trackList>
+		<track>ddharmoniousdissonance</track>
 		<track>engi</track>
-		<track>void</track>
 		<track>ddtracklightslament</track>
 		<track>hacking</track>
 	</trackList>
@@ -341,7 +341,7 @@
 		<name>Nebulous Dead Zone [!]</name>
 	</nameList>
 	<trackList>
-		<track>deepspace</track>
+		<track>dddemiurgicoblivion</track>
 		<track>wasteland</track>
 		<track>serenity</track>
 		<track>ddtracklightslament</track>
@@ -411,7 +411,7 @@
 	<trackList>
 		<track>ddheartofshatteredpromises</track>
 		<track>ddtracklightslament</track>
-		<track>morph</track>
+		<track>dddemiurgicoblivion</track>
 		<track>wasteland</track>
 	</trackList>
 	<rarityList>

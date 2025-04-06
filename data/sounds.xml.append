@@ -10,6 +10,21 @@
 		<combat>dd_MUS_HeartofShatteredPromises_BATTLE.ogg</combat>
 	</track>
 	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddhymntothedeep</name>
+		<explore>dd_MUS_HymntotheDeepEXPLORE.ogg</explore>
+		<combat>dd_MUS_HymntotheDeepBATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddharmoniousdissonance</name>
+		<explore>dd_MUS_HarmoniousDissonanceEXPLORE.ogg</explore>
+		<combat>dd_MUS_HarmoniousDissonanceBATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>dddemiurgicoblivion</name>
+		<explore>dd_MUS_DemiurgicOblivionEXPLORE.ogg</explore>
+		<combat>dd_MUS_DemiurgicOblivionBATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
 		<name>ddtodancewithdarkness</name>
 		<explore>dd_MUS_ToDancewithDarkness.ogg</explore>
 	</track>
