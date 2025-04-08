@@ -4361,7 +4361,7 @@
 	</deadCrew>
 </ship>
 
-<event name="NEBULA_DISTRESS_DDSOULPLAGUE_STRANDEDGOOBERS_SEARCHLIST_HUSK_FIGHT_WIN">
+<event name="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN">
 	<text>Was this some kind of ambush by the Husks? You shiver at the possibility... still, there's little left to do but move on. At the very least, that's one less ship full of mindless zombies left to harass the galaxy.</text>
 </event>
 
