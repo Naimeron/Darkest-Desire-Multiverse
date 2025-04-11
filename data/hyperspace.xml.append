@@ -4095,6 +4095,7 @@ Nothing is immune.</tooltip>
 	<variable name="ach_trans_disparity" op="set" val="0"/>
 	<variable name="ach_trans_ddsoulplague_tempest" op="set" val="0"/>
 	<variable name="ach_trans_ddcoremass" op="set" val="0"/>
+	<metaVariable name="dd_otherworldlytome_permaunlocked" op="set" val="0"/>
 	<metaVariable name="juke_ddtracklightslament" op="set" val="0"/>
 	<metaVariable name="juke_ddheartofshatteredpromises" op="set" val="0"/>
 	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="0"/>
@@ -41957,7 +41958,7 @@ Nothing is immune.</tooltip>
 			</achievement>
 			<achievement name="ACH_BOON_DDCORRUPTOR">
 				<secretName>Grant of ???</secretName>
-				<secretDescription>Receive the Boon of ??? from Corby.</secretDescription>
+				<secretDescription>Receive the Grant of ??? from Corby.</secretDescription>
 				<name>Grant of Corrupting</name>
 				<description>Show a max-level Corruptor system to Corby.
 				While in effect; +5 max health for Soulplague Tides.</description>
@@ -42133,6 +42134,14 @@ Nothing is immune.</tooltip>
 				<icon>ach_event_ddobeliskcorruptor</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
+			<achievement name="ACH_EVENT_DDCONSOLATIONSACRIFICE">
+				<secretName>???</secretName>
+				<secretDescription>Receive a consolation prize for trying to double up on occult antics.</secretDescription>
+				<name>Consolation Prize</name>
+				<description>Receive a human sacrifice for trying to grab the Otherworldly Tome within the hangar while you already have it.</description>
+				<icon>ach_event_ddconsolationsacrifice</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
 			<achievement name="ACH_EVENT_DDSACRIFICE">
 				<secretName>???</secretName>
 				<secretDescription>Mark one of your crew members for certain death.</secretDescription>
@@ -42147,6 +42156,14 @@ Nothing is immune.</tooltip>
 				<name>I'm the Coremass Now</name>
 				<description>Bind a Soulplague mass to your will.</description>
 				<icon>ach_event_ddbindedmass</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
+			<achievement name="ACH_EVENT_DDOTHERWORLDLYTOMEGRABBED">
+				<secretName>???</secretName>
+				<secretDescription>Claim that which you don't understand, after having understood it.</secretDescription>
+				<name>Takeout Horrors</name>
+				<description>Find and grab the Otherworldly Tome within the hangar.</description>
+				<icon>ach_event_ddotherworldlytomegrabbed</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
 			<achievement name="ACH_EVENT_DDLEGENDARYCRYSTAL">

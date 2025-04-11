@@ -944,6 +944,20 @@
 	<time>0.1</time>
 </anim>
 
+<animSheet name="ddotherworldly_tome_decor" w="31" h="31" fw="31" fh="31">decor/ddotherworldly_tome_decor.png</animSheet>
+<anim name="ddotherworldly_tome_decor">
+	<sheet>ddotherworldly_tome_decor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddotherworldly_tome_decor_hover" w="31" h="31" fw="31" fh="31">decor/ddotherworldly_tome_decor_hover.png</animSheet>
+<anim name="ddotherworldly_tome_decor_hover">
+	<sheet>ddotherworldly_tome_decor_hover</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
 <animSheet name="deepone" w="315" h="455" fw="35" fh="35">people/deepone_base.png</animSheet>
 <anim name="deepone_clone">
 	<sheet>deepone</sheet>

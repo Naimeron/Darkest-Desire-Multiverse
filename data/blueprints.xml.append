@@ -19539,7 +19539,7 @@
 </augBlueprint>
 <augBlueprint name="DARKGOD_CURSED_BOOK">
 	<title>Otherworldly Tome</title>
-	<desc>This strange book radiates an ominous energy, and you find that much of its contents are made up of glyphs that your translator can't recognize. Regardless, the tome appears to be bound to you; you're capable of inspecting it in your storage to read about rituals, as well as perform said rituals while in lightspeed in-between sectors.</desc>
+	<desc>This strange book radiates an ominous energy, and you find that much of its contents are made up of glyphs that your translator can't recognize. Regardless, the tome appears to be bound to you; you're capable of inspecting it in your storage to read about rituals, as well as perform said rituals while traveling hyperspeed in-between sectors.</desc>
 	<cost>15</cost>
 	<bp>8</bp>
 	<rarity>0</rarity>

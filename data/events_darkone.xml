@@ -869,7 +869,7 @@
 																	<text>Mere inches away from you, Lilith stops. At lightning speed, a writhing tendril tears itself from her body and... grabs the photo. It seems to be capable of keeping her calm, slowly, and politely, you take the photo back, to which Lilith makes no move to stop you. As you leave the room and make for your ship, she follows, and you realize you've pacified an eldritch abomination... still, she's your friend, too. Once you're back on the ship, you take out the book, and Lilith reacts to its presence with a low growl.</text>
 																	<crewMember amount="1" class="enlightened_horror">Lilith</crewMember>
 																	<achievement>ACH_CREW_DDLILITH</achievement>
-																	<choice hidden="true">
+																	<choice hidden="true" req="DARKGOD_CURSED_BOOK" lvl="0" max_lvl="0" blue="false">
 																		<text>Inspect the book.</text>
 																		<event>
 																			<text>Flipping through its pages, you realize you can't read any of it. It's written in a script that none of your translators or crew recognize... save for Lilith, who stares at the crimson text with intensity. With a mysterious ink expelled from her body, she writes out a cipher on the floor at your request... you wonder just how much of her is still in there, if she's capable of such a thing. Eventually, with the cipher finished, you're able to recognize that the text does indeed depict several rituals... most notably, a ritual that allows one to ascend and convene with the Dark One. You glance at Lilith.</text>
@@ -881,11 +881,19 @@
 																						<text>Kyr...</text>
 																						<event>
 																							<text>There's nothing you could have done. You'll have to move forward, and do what you can to take care of Lilith... as well as complete these otherworldly rituals, if you so desire.</text>
+																							<metaVariable name="dd_otherworldlytome_permaunlocked" op="set" val="1"/>
 																							<augment name="DARKGOD_CURSED_BOOK"/>
 																						</event>
 																					</choice>
 																				</event>
 																			</choice>
+																		</event>
+																	</choice>
+																	<choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
+																		<text>Inspect the book.</text>
+																		<event>
+																			<text>You realize, rather quickly, that this book is identical to the Otherworldly Tome already within your possession. She and Kyr must've performed some unspeakable ritual contained within its pages, with him serving as its sacrifice... horrible, to say the least, but there's little of value to you in owning a second copy of the ghastly book. You leave it behind, and Lilith's ceaseless writhing seems to calm down ever so slightly.</text>
+																			<metaVariable name="dd_otherworldlytome_permaunlocked" op="set" val="1"/>
 																		</event>
 																	</choice>
 																</event>
