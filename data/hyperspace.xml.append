@@ -4039,6 +4039,8 @@ Nothing is immune.</tooltip>
 	<variable name="dd_incantationsofgreatersummoningcompleted" op="set" val="0"/>
 	<variable name="dd_incantationsofpowercompleted" op="set" val="0"/>
 	<variable name="dd_paleheartritualcompleted" op="set" val="0"/>
+	<variable name="dd_illdrythkritualscompleted" op="set" val="0"/>
+	<variable name="dd_soulplagueritualscompleted" op="set" val="0"/>
 	<variable name="dd_soulplaguesoulbindingritualcompleted" op="set" val="0"/>
 	<variable name="dd_crystalhuntcompleted" op="set" val="0"/>
 	<variable name="the_scarred_judgment" op="set" val="0"/>
@@ -4184,16 +4186,16 @@ Nothing is immune.</tooltip>
 		</req>
 	</req>
 	<req name="DD_ILLDRYTHKPALEHEARTRITUALCHECK" type="all">
-		<req lvl="3">
-			<name>LIST_DDCREW_ILLDRYTHK</name>
+		<req lvl="2">
+			<name>dd_illdrythkritualscompleted</name>
 		</req>
 		<req lvl="0" max_lvl="0">
 			<name>dd_paleheartritualcompleted</name>
 		</req>
 	</req>
 	<req name="DD_SOULPLAGUESOULBINDINGRITUALCHECK" type="all">
-		<req lvl="6">
-			<name>LIST_DDSOULPLAGUE_ALIGNED</name>
+		<req lvl="3">
+			<name>dd_soulplagueritualscompleted</name>
 		</req>
 		<req lvl="0" max_lvl="0">
 			<name>dd_soulplaguesoulbindingritualcompleted</name>
@@ -4280,6 +4282,32 @@ Nothing is immune.</tooltip>
 				<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
 				<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
 				<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
+				<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
             </mod:findLike>
         </mod:findLike>
     </mod:findName>
@@ -35640,6 +35668,7 @@ Nothing is immune.</tooltip>
 		<canMan>false</canMan>
 		<validTarget>false</validTarget>
 		<snapToSlot>true</snapToSlot>
+		<lowHealthThreshold>-1</lowHealthThreshold>
 		<deathSounds>
 			<deathSound>ancientDeath</deathSound>
 		</deathSounds>
@@ -36621,6 +36650,1108 @@ Nothing is immune.</tooltip>
 			</roomStatBoosts>
 		</powerEffect>
 	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierzero">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>225</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierone_abyss">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>225</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>6</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>ABYSS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="88" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_abyssblessing_effect</wallAnim>
+					</roomAnim>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+				<statBoost name="healAmount">
+					<boostType>FLAT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tiertwo_abyss">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>300</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>2.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>4</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>ABYSS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="88" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_abyssblessing_effect</wallAnim>
+					</roomAnim>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+				<statBoost name="healAmount">
+					<boostType>FLAT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierthree_abyss">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>400</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>2.0</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>4.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>2</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>ABYSS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="88" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_abyssblessing_effect</wallAnim>
+					</roomAnim>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+				<statBoost name="healAmount">
+					<boostType>FLAT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_abyss_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierone_stars">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>225</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>6</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>STARS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="225" g="182" b="252"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_starsblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tiertwo_stars">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>300</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>2.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>4</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>STARS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="225" g="182" b="252"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_starsblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierthree_stars">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>400</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>2.0</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>4.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>2</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>STARS</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="225" g="182" b="252"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_starsblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+				<statBoost name="damageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.9</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_stars_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierone_mire">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>225</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>6</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>MIRE</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="128" g="255" b="168"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_mireblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_mire_buff</boostAnim>
+				</statBoost>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="doorDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_mire_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tiertwo_mire">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>300</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>2.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>4</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>MIRE</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="128" g="255" b="168"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_mireblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_mire_buff</boostAnim>
+				</statBoost>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="doorDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_mire_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierthree_mire">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>400</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>2.0</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>4.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>2</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>MIRE</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="128" g="255" b="168"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_mireblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+				</statBoost>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="doorDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_mire_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierone_dawn">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>225</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>6</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>DAWN</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="217" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_dawnblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="suffocationModifier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>15</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tiertwo_dawn">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>300</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>1.5</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>2.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>4</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>DAWN</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="217" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_dawnblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="suffocationModifier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>20</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddenlightened_darktemplar_tierthree_dawn">
+		<selectable>true</selectable>
+		<canFight>true</canFight>
+		<canSabotage>true</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>400</maxHealth>
+		<stunMultiplier>0.25</stunMultiplier>
+		<canTeleport>false</canTeleport>
+		<resistsMindControl>true</resistsMindControl>
+		<noClone>true</noClone>
+		<droneAI>
+			<fightAI/>
+			<returnToDroneRoom/>
+		</droneAI>
+		<damageMultiplier>2.0</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<doorDamageMultiplier>4.0</doorDamageMultiplier>
+		<controllable>true</controllable>
+		<shootingSounds>
+			<shootingSound>vanceShoot</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>2</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>dddarktemplarability</powerSound>
+			</powerSounds>
+			<req>
+				<enemyInRoom/>
+			</req>
+			<chargeReq>
+				<enemyInRoom/>
+			</chargeReq>
+			<buttonText>DAWN</buttonText>
+			<tooltip>This ability will activate automatically in combat.</tooltip>
+			<cooldownColor r="255" g="217" b="88"/>
+			<effectAnim>explosion_small_ion</effectAnim>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<roomAnim renderLayer="3">                                                    
+						<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+						<wallAnim>ddroom_darktemplar_dawnblessing_effect</wallAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="suffocationModifier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>FLAT</boostType>
+					<amount>0.325</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>25</duration>
+					<priority>10001</priority>
+					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
+					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
 </mod:findLike>
 
 <mod:findLike type="drones" limit="1">
@@ -36667,6 +37798,110 @@ Nothing is immune.</tooltip>
 	<mod-append:drone name="DDDISPARITY_ADMINISTRATOR_HAZARD">
 		<crewBlueprint>dddisparity_administrator_hazard</crewBlueprint>
 		<tooltipName>Administrator</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierzero</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierzero</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_abyss</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_stars</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_mire</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierone_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tiertwo_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
+	</mod-append:drone>
+	<mod-append:drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER">
+		<crewBlueprint>ddenlightened_darktemplar_tierthree_dawn</crewBlueprint>
+		<tooltipName>Templar</tooltipName>
 	</mod-append:drone>
 </mod:findLike>
 
@@ -41925,6 +43160,33 @@ Nothing is immune.</tooltip>
 					<ddtempest_living_lightning/>
 					<ddtempest_roiling_storm/>
 					<ddtempest_roiling_remnant/>
+					<dddark_obelisk/>
+					<dddark_obelisk_enemy/>
+					<dddevouring_shadow/>
+					<ddsoulplague_husk_crystal/>
+					<ddsoulplague_husk_deepone/>
+					<ddsoulplague_husk_engi/>
+					<ddsoulplague_husk_engi_beacon/>
+					<ddsoulplague_husk_ghost/>
+					<ddsoulplague_husk_lanius/>
+					<ddsoulplague_husk_leech/>
+					<ddsoulplague_husk_mantis/>
+					<ddsoulplague_husk_orchid/>
+					<ddsoulplague_husk_rockman/>
+					<ddsoulplague_husk_shell/>
+					<ddsoulplague_husk_slug/>
+					<ddsoulplague_husk_zoltan/>
+					<ddsoulplague_husk_human/>
+					<ddsoulplague_husk_obelisk/>
+					<ddsoulplague_corruptor_tide/>
+					<ddmanifestationofdetermination/>
+					<ddmanifestationofbravery/>
+					<ddmanifestationofintegrity/>
+					<ddmanifestationofjustice/>
+					<ddmanifestationofkindness/>
+					<ddmanifestationofpatience/>
+					<ddmanifestationofperseverance/>
+					<ddeclipticextinctioncrew/>
 				</mod-append:blackList>
 			</mod:findLike>
 		</mod:findLike>
@@ -42186,7 +43448,7 @@ Nothing is immune.</tooltip>
 				<secretName>???</secretName>
 				<secretDescription>Perform a ritual and collect the heart of a strange tree.</secretDescription>
 				<name>Pale, Paler, Yet Paler</name>
-				<description>Obtain three Ill'drythk Statues and complete the ritual to obtain the Pale Heart.</description>
+				<description>Make two sacrifices in the name of Ill'drythk rituals and complete a final ritual to obtain the Pale Heart.</description>
 				<icon>ach_event_ddpaleheart</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>

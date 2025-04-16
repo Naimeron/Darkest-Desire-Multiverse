@@ -216,6 +216,18 @@
 					</choice>
 				</event>
 			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_MORPH_DDDARKTEMPLAR">
+				<text>(Templar Drone) Take the form of the Templar.</text>
+				<event>
+					<text>Your Morph tries to take the drone's shape, but something is stopping it... perhaps it utilizes some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
 		</mod:findLike>
 	</mod:findLike>
 	<mod:findLike type="choice"><mod:selector req="gold"/>
@@ -499,6 +511,110 @@
 	<mod-append:choice req="DDDISPARITY_ADMINISTRATOR_HAZARD" blue="false">
 		<text>(Administrator Drone) Set the state of the drone. [Current mode: Hazard]</text>
 		<event load="COMBAT_CHECK_DDADMINISTRATOR_HAZARD"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND" blue="false">
+		<text>(Unseen Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_UNSEEN_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER" blue="false">
+		<text>(Unseen Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_UNSEEN_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND" blue="false">
+		<text>(Abyss I Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_ABYSS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER" blue="false">
+		<text>(Abyss I Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND" blue="false">
+		<text>(Abyss II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER" blue="false">
+		<text>(Abyss II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND" blue="false">
+		<text>(Abyss III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_ABYSS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER" blue="false">
+		<text>(Abyss III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_ABYSS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND" blue="false">
+		<text>(Stars I Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_STARS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER" blue="false">
+		<text>(Stars I Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_STARS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND" blue="false">
+		<text>(Stars II Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_STARS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER" blue="false">
+		<text>(Stars II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_STARS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND" blue="false">
+		<text>(Stars III Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_STARS_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER" blue="false">
+		<text>(Stars III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_STARS_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND" blue="false">
+		<text>(Mire I Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_MIRE_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER" blue="false">
+		<text>(Mire I Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_MIRE_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND" blue="false">
+		<text>(Mire II Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_MIRE_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER" blue="false">
+		<text>(Mire II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_MIRE_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND" blue="false">
+		<text>(Mire III Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_MIRE_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER" blue="false">
+		<text>(Mire III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_MIRE_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND" blue="false">
+		<text>(Dawn I Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_DAWN_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER" blue="false">
+		<text>(Dawn I Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_DAWN_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND" blue="false">
+		<text>(Dawn II Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_DAWN_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER" blue="false">
+		<text>(Dawn II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_DAWN_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND" blue="false">
+		<text>(Dawn III Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_DAWN_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER" blue="false">
+		<text>(Dawn III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_DAWN_BOARDER"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -1500,6 +1616,656 @@
 		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
 	</choice>
 </event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_UNSEEN_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_UNSEEN_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_ABYSS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_ABYSS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_ABYSS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_ABYSS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_STARS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_STARS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_STARS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_STARS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_STARS_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_STARS_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_MIRE_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_MIRE_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_MIRE_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_MIRE_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_MIRE_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_MIRE_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_DAWN_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_DAWN_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_DAWN_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_DAWN_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_DAWN_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_DAWN_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
 
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_UPGRADES">
 	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT1" lvl="1" blue="false">
@@ -2030,16 +2796,27 @@
 	<choice hidden="true">
 		<text>Investigate the glistening yellow text, the Prayers of Proving.</text>
 		<event>
-			<text>Though you can't read the text, this section's diagrams showcase depictions of darkness and ritualistic devotion. You'll need to find somebody who understands the text to perform its rituals.</text>
+			<text>Though you can't read the text, this section's diagrams showcase depictions of wispy, shadowy darkness and ritualistic devotion. You'll need to find somebody who understands the text to perform its rituals.</text>
 			<choice hidden="true" req="deeponecultist">
 				<text>(Enlightened Crew) Have your Enlightened crew member transcribe the text.</text>
 				<event>
-					<text>Your Enlightened crew member writes you a cipher. Using it, you're able to understand what the text describes: a single ritual that allows Enlightened to ascend from their position as mere cultists, and become one of the Dark God's Chosen.</text>
+					<text>Your Enlightened crew member writes you a cipher. Using it, you're able to understand what the text describes: a couple rituals; one that allows Enlightened to ascend from their position as mere cultists, and become one of the Dark God's Chosen, and a second that allows you to collect a form of robotic gifts unique to the Enlightened.</text>
 					<choice hidden="true">
 						<text>Investigate the Ritual of Divine Devotion.</text>
 						<event>
 							<text>RITUAL OF DIVINE DEVOTION:
 							This ritual gives you the location of a ship belonging to the Dark God's Chosen, which you will have to defeat in battle to prove yourself worthy. Doing so allows one of your Enlightened Cultists to become one of the Dark God's Chosen themselves.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Blessed Gifts.</text>
+						<event>
+							<text>RITUAL OF BLESSED GIFTS:
+							This ritual allows you to offer tribute to the Dark God, in the form of as many human sacrifices as you desire. Each human sacrifice made in the name of the ritual, including the first one made to initiate it (regardless of whether or not this first one was a human sacrifice), will grant you a choice between an Unseen Templar drone, Blessings for any aforementioned drones you may already own and the ability to strengthen any Blessings they may already possess.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -2112,7 +2889,7 @@
 						<text>Investigate the Ritual of Mutinous Mutation.</text>
 						<event>
 							<text>RITUAL OF MUTINOUS MUTATION:
-							This ritual gives you the location of an Ill'drythk Pale Heart; a particularly powerful Ill'drythk tree that has unlocked the secrets of Ill'drythk mutation. Killing its crew allows you to claim these secrets for yourself, but destroying it will destroy its secrets with it. You need at least three Ill'drythk Statues to act as conduits for the ritual, and you can only perform it once.</text>
+							This ritual gives you the location of an Ill'drythk Pale Heart; a particularly powerful Ill'drythk tree that has unlocked the secrets of Ill'drythk mutation. Killing its crew allows you to claim these secrets for yourself, but destroying it will destroy its secrets with it. You need to have made at least two sacrifices in the name of Ill'drythk rituals in order to perform this ritual, and you can only perform it once.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -2238,7 +3015,7 @@
 						<text>Investigate the Ritual of Soul Binding.</text>
 						<event>
 							<text>RITUAL OF SOUL BINDING:
-							This ritual gives you the location of the nearest Soulplague mass, which you can attempt to bind to your service. Doing so will have the mass attack you with all the souls it can afford to; you will have to survive an onslaught of Soulplague Husks and Huskweavers as they invade in waves. If you can survive the assault, you can bind the mass to your service, and it will arrive to assist you in any future fights you demand it to. You need at least six Soulplague-aligned crew to function as conduits for the ritual, and you can only perform it once.</text>
+							This ritual gives you the location of the nearest Soulplague mass, which you can attempt to bind to your service. Doing so will have the mass attack you with all the souls it can afford to; you will have to survive an onslaught of Soulplague Husks and Huskweavers as they invade in waves. If you can survive the assault, you can bind the mass to your service, and it will arrive to assist you in any future fights you demand it to. You need to have made at least three sacrifices in the name of Soulplague rituals in order to perform this ritual, and you can only perform it once.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>

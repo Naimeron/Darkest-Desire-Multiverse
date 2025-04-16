@@ -4,6 +4,7 @@
 	<event load="STORE_HOSTILE_ENLIGHTENED_GAMBLING"/>
 	<event load="STORE_HOSTILE_ENLIGHTENED_DARKNESS"/>
 	<event load="STORE_HOSTILE_ENLIGHTENED_CYAN"/>
+	<event load="STORE_HOSTILE_ENLIGHTENED_MALFUNCTIONINGTEMPLAR"/>
 </eventList>
 
 <event name="STORE_HOSTILE_ENLIGHTENED_GAMBLING" unique="true">
@@ -245,6 +246,102 @@
 		<text>I don't want anything to do with whatever's happening over there.</text>
 		<event>
 			<text>"Not... a terrible call." The voice goes quiet, and you're left alone with the darkness. Well, and with the distant sound of weapons being fired into the void.</text>
+			<choice hidden="true">
+				<text>Check the storage.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice hidden="true">
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STORE_HOSTILE_ENLIGHTENED_MALFUNCTIONINGTEMPLAR_SAVEDFROMDOOM">
+	<text>Shadows erupt from the Templar as it's defeated, but, as opposed to being destroyed, it seems to enter a powered down state. More important than that, though, is the fact that this Templar in particular was such a threat... why don't all of the Enlightened carry ones this strong?</text>
+	<variable name="the_scarred_judgment" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Hail the merchants back.</text>
+		<event>
+			<text>The Enlightened are ecstatic at hearing the news of the Templar's defeat, and you ask them about its current condition. Collectively, they seem hesitant to answer, but one of the Deep Ones speaks up, "It... has lost the Dark One's blessing. It... is powerless, now. Serves it... right, for betraying us! It... must have broken free of the Dark One's will! Death... to the betrayer!" There's an uproar of assent as the Enlightened all praise their Dark God, continuing to celebrate your defeat of the Templar as if their deity had willed it itself.</text>
+			<choice hidden="true">
+				<text>I'll just hold onto it, then. Now, with that settled...</text>
+				<event>
+					<text>There's no disagreement from the merchants as you decide to keep what remains of their Templar, and they rush to show you their wares in thanks.</text>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORE_LOAD_DEEPONE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STORE_HOSTILE_ENLIGHTENED_MALFUNCTIONINGTEMPLAR" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_store_deepone" global="false">
+		<color r="255" g="245" b="175" a="1"/>
+	</beaconType>
+	<text>The voice seems startled as you pull into the beacon, "My... kin are here, yes, but... there seems to be some sort of struggle... aboard their ship. Would you... wish to help them?"</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>I can sure try!</text>
+		<event>
+			<text>An appreciative grunt sounds out within your head as the shadows outside are parted, and you're indeed met with the visage of an Enlightened merchant vessel. They seem to be at a standstill within the void outside, though, so you request to hail and get a better picture of what's happening. An Enlightened Cultist answers, and they speak to you frantically, "Outsider! We... need help! O', Dark One, forgive us... our Templar has lost control! What did we... do wrong, o' Dark One? Why do you... punish us so?" The Deep One continues to lament to their uncaring deity, as if you weren't even there.</text>
+			<choice hidden="true">
+				<text>Your, uh... Templar, you say?</text>
+				<event>
+					<text>The Deep One's head snaps back towards you, regardless of their lack of eyes, "Oh, why... yes. It was supposed to be... a gift, for our tribute, but... it's lost control! It's... rampaging throughout the ship, smashing things... recklessly! O', Dark One... why?"</text>
+					<choice hidden="true">
+						<text>Have you tried to jettison it?</text>
+						<event>
+							<text>"We have, but... it just comes back. We're... being punished! Punished, for... our sins! Please, o' Dark One... forgive us!" With the Enlightened being as vulnerable as they are in a fight, you suppose that they can't handle the drone themselves and would sooner stand around praying to the void around them than try to deal with it.</text>
+							<choice hidden="true">
+								<text>The void may not answer, but I will. Send that Templar this way!</text>
+								<event>
+									<text>The Enlightened thank you for your intervention, and move to lure their Templar back into an airlock...</text>
+									<triggeredEvent event="STORE_HOSTILE_ENLIGHTENED_MALFUNCTIONINGTEMPLAR_SAVEDFROMDOOM" thisFight="false" clearOnJump="true">
+										<enemyCrew amount="0" includeClonebay="false"/>
+									</triggeredEvent>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>...and it doesn't take long for them to jettison it in your direction, grabbing its attention!</text>
+											<boarders min="1" max="1" class="LIST_EVENT_DDDARKTEMPLAR_ATTACKS"/>
+											<damage amount="0" system="random" effect="breach"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>They can keep praying. I don't want to deal with this.</text>
+								<event>
+									<text>These Enlightened are hardly acknowledging your presence as is, and you're not sure you want to risk a one-on-one tussle with one of the Dark God's creations. You end the call, and you're not sure if they even notice... but that doesn't mean that your cowardice has gone unseen.</text>
+									<variable name="the_scarred_judgment" op="add" val="-1"/>
+									<choice hidden="true">
+										<text>Check the storage.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+									<choice hidden="true">
+										<text>Do nothing.</text>
+										<event/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I'd really rather not.</text>
+		<event>
+			<text>Store beacon be damned, you don't trust a single thing in this hellish place. The voice sighs within your head, "Very... well, then. Do as you wish." It then goes quiet, and you're left alone with your thoughts. Your thoughts, and the, uh... fathomless expanse of darkness outside.</text>
+			<variable name="the_scarred_judgment" op="add" val="-1"/>
 			<choice hidden="true">
 				<text>Check the storage.</text>
 				<event load="STORAGE_CHECK"/>

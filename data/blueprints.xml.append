@@ -15203,6 +15203,511 @@
 	<iconImage>battle</iconImage>
 </droneBlueprint>
 
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_UNSEEN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Unseen Templar [Anti-Pers]</title>
+	<short>U. Templar [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened, but this one remains untouched by its unholy blessings. Though largely unremarkable, you feel that its potential can be unlocked somehow...
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed</desc>
+	<power>2</power>
+	<cost>65</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Unseen Templar [Boarding]</title>
+	<short>U. Templar [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened, but this one remains untouched by its unholy blessings. Though largely unremarkable, you feel that its potential can be unlocked somehow...
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>65</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Abyss Templar I [Anti-Pers]</title>
+	<short>A. Templar I [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Abyss, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Abyss Templar I [Boarding]</title>
+	<short>A. Templar I [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Abyss, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Abyss Templar II [Anti-Pers]</title>
+	<short>A. Templar II [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Abyss has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Abyss Templar II [Boarding]</title>
+	<short>A. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Abyss has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>3</power>
+	<speed>30</speed>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Abyss Templar III [Anti-Pers]</title>
+	<short>A. Templar III [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Abyss has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>4</power>
+	<cost>110</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Abyss Templar II [Boarding]</title>
+	<short>A. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Abyss has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Abyss, draining health from enemies in rooms it marks and healing ally Templars over time. This effect can stack.</desc>
+	<power>4</power>
+	<speed>42</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Stars Templar I [Anti-Pers]</title>
+	<short>S. Templar I [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Stars, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Stars Templar I [Boarding]</title>
+	<short>S. Templar I [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Stars, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Stars Templar II [Anti-Pers]</title>
+	<short>S. Templar II [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Stars has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Stars Templar II [Boarding]</title>
+	<short>S. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Stars has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>3</power>
+	<speed>30</speed>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Stars Templar III [Anti-Pers]</title>
+	<short>S. Templar III [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Stars has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>4</power>
+	<cost>110</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Stars Templar II [Boarding]</title>
+	<short>S. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Stars has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Stars, enfeebling enemy combat damage/damage resistance in rooms it marks and empowering these same stats for ally Templars. This effect can stack.</desc>
+	<power>4</power>
+	<speed>42</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Mire Templar I [Anti-Pers]</title>
+	<short>M. Templar I [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Mire, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Mire Templar I [Boarding]</title>
+	<short>M. Templar I [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Mire, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Mire Templar II [Anti-Pers]</title>
+	<short>M. Templar II [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Mire has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Mire Templar II [Boarding]</title>
+	<short>M. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Mire has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>3</power>
+	<speed>30</speed>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Mire Templar III [Anti-Pers]</title>
+	<short>M. Templar III [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Mire has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>4</power>
+	<cost>110</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Mire Templar II [Boarding]</title>
+	<short>M. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Mire has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Mire, reducing enemy movement/repair speed in rooms it marks and empowering ally Templar movement speed/door damage. This effect can stack.</desc>
+	<power>4</power>
+	<speed>42</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Dawn Templar I [Anti-Pers]</title>
+	<short>D. Templar I [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Dawn, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Dawn Templar I [Boarding]</title>
+	<short>D. Templar I [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. This one in particular has received its Blessing of the Dawn, allowing it to curse foes and bless allies alike.
+    
+-225 HP, 1.1x combat damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>2</power>
+	<speed>18</speed>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Dawn Templar II [Anti-Pers]</title>
+	<short>D. Templar II [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Dawn has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Dawn Templar II [Boarding]</title>
+	<short>D. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Strengthening its Blessing of the Dawn has further empowered it, increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-300 HP, 1.5x combat damage, 2x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>3</power>
+	<speed>30</speed>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
+<blueprintList name="LIST_TOGGLE_DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</name>
+</blueprintList>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND">
+	<type>BATTLE</type>
+	<locked>1</locked>
+	<tip>tip_toggle_crew</tip>
+	<title>Dawn Templar III [Anti-Pers]</title>
+	<short>D. Templar III [A]</short>
+	<desc>[CURRENT MODE: Anti-Personnel] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Dawn has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>4</power>
+	<cost>110</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<iconImage>battle</iconImage>
+</droneBlueprint>
+<droneBlueprint name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER">
+	<type>BOARDER</type>
+	<tip>tip_toggle_crew</tip>
+	<locked>1</locked>
+	<title>Dawn Templar II [Boarding]</title>
+	<short>D. Templar II [B]</short>
+	<desc>[CURRENT MODE: Boarding] These drones serve as one of the Dark God's many gifts to the Enlightened. Its Blessing of the Dawn has been pushed to its limit, dramatically increasing its stats, the duration of its spawned Blessings and the frequency at which it can spawn them.
+    
+-400 HP, 2x combat damage, 4x door damage
+-0.5x movement speed
+-Fighting enemies allows it to utilize its Blessing of the Dawn, increasing enemy hazard vulnerability, bolstering ally Templar fire resistance and additionally forcing both enemies and ally Templars to generate oxygen. This effect can stack.</desc>
+	<power>4</power>
+	<speed>42</speed>
+	<cost>110</cost>
+	<rarity>0</rarity>
+	<iconImage>boarder</iconImage>
+</droneBlueprint>
+
 <crewBlueprint name="deepone">
 	<desc>An amphibious race of once ocean-dwellers who've risen to the stars.</desc>
 	<title>Deep One</title>
@@ -17007,7 +17512,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Extremely fast, powerful and immune to mind control but 3x weak to both suffocation and fire. It's incapable of moving while enemies are present in the same room, but said enemies are inflicted with Anxious.</power>
+		<power>Extremely fast, powerful and immune to mind control but 3x weak to both suffocation and fire. It's incapable of moving while enemies are present in the same room, but said enemies are inflicted with Anxious, slowing their movement speed.</power>
 		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
@@ -17418,6 +17923,136 @@
 		<power>DRONE</power>
 	</powerList>
 </crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierzero">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierone_abyss">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tiertwo_abyss">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierthree_abyss">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierone_stars">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tiertwo_stars">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierthree_stars">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierone_mire">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tiertwo_mire">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierthree_mire">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierone_dawn">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tiertwo_dawn">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddenlightened_darktemplar_tierthree_dawn">
+	<title>Templar Drone</title>
+	<short>Templar Drone</short>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>DRONE</power>
+	</powerList>
+</crewBlueprint>
 
 <systemBlueprint name="dd_corruptor"> <!-- coded by Arc -->
 	<type>corruptor</type>
@@ -17728,7 +18363,7 @@
 		<weapon name="SHOTGUN_DARKGOD" />
 	</weaponList>
 	<droneList drones="6" count="3">
-		<drone name="BATTLETOG_DEFEND" />
+		<drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND" />
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="8" />
@@ -17736,14 +18371,15 @@
 	<crewCount amount="1" class="deeponecultist" />
 	<crewCount amount="1" class="deepone" />
 	<aug name="DREAD_LIGHTS_LOCKED" />
+	<aug name="DARKGOD_CURSED_BOOK" />
 	<aug name="EX_MEDBAY_NANO" />
 	<mv-mapImage>map_icon_ddenlightened</mv-mapImage>
 </shipBlueprint>
 <shipBlueprint name="PLAYER_DEEP_ONE_CULTIST_2" layout="deeponecultistship_b" img="deeponecultistship_b">
 	<class>Enlightened Cruiser</class>
-	<name>Nature's Bane</name>
+	<name>The Dawnspear</name>
 	<unlock>Get to Sector 5 with the Type A to unlock this ship.</unlock>
-	<desc>Tired of having their weakness to fire exploited, these Enlightened have turned to making sure the enemy goes up in flames first.</desc>
+	<desc>Tired of having their weakness to fire exploited, these Enlightened have been gifted a unique variant of the Templar drone to ensure that the enemy goes up in flames first.</desc>
 	<systemList>
 		<battery power="1" room="12" start="false" img="room_battery_13" />
 		<cloaking power="1" room="6" start="false" img="room_cloaking_8" />
@@ -17752,13 +18388,13 @@
 				<number>0</number>
 			</slot>
 		</clonebay>
-		<doors power="1" room="13" start="true" img="room_doors_7">
+		<doors power="1" room="13" start="false" img="room_doors_7">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones max="8" power="1" room="14" start="false" img="room_drones_15" />
+		<drones max="8" power="2" room="14" start="true" img="room_drones_15" />
 		<engines power="2" room="1" start="true" img="room_engines_4">
 			<slot>
 				<direction>down</direction>
@@ -17793,7 +18429,7 @@
 		</shields>
 		<teleporter power="1" room="10" start="false" />
 		<dd_corruptor power="1" room="9" start="false" img="room_ddcorruptor_23" />
-		<weapons max="8" power="3" room="0" start="true" img="room_weapons_10">
+		<weapons max="8" power="2" room="0" start="true" img="room_weapons_10">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -17802,16 +18438,20 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="0" count="4">
+	<weaponList missiles="0" count="3">
 		<weapon name="BEAM_FIRE_INSTANT" />
-		<weapon name="DDLASER_CHARGE_DARKGOD" />
+		<weapon name="LASER_BURST_2" />
 	</weaponList>
+	<droneList drones="5" count="2">
+		<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND" />
+	</droneList>
 	<droneList drones="0" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
 	<crewCount amount="1" class="deeponecultist" />
-	<crewCount amount="1" class="deepone" />
+	<crewCount amount="1" class="lanius" />
 	<aug name="DREAD_LIGHTS_LOCKED" />
+	<aug name="DARKGOD_CURSED_BOOK" />
 	<mv-mapImage>map_icon_ddenlightened</mv-mapImage>
 </shipBlueprint>
 <shipBlueprint name="PLAYER_DEEP_ONE_CULTIST_3" layout="deeponecultistship_c" img="deeponecultistship_c">
@@ -18066,8 +18706,8 @@
 		<drones max="8" power="1" room="2" start="false" img="room_drones_14" />
 		<engines power="1" room="2" start="true" img="room_engines_10">
 			<slot>
-				<direction>down</direction>
-				<number>2</number>
+				<direction>left</direction>
+				<number>0</number>
 			</slot>
 		</engines>
 		<hacking power="1" room="7" start="false" img="room_hacking_4" />
@@ -19169,7 +19809,7 @@
 <shipBlueprint name="PLAYER_DDHORROR_SHIP_2" layout="ddilldrythkship" img="ddilldrythkship">
 	<class>Ill'drythk Cruiser</class>
 	<name>Silent Hymn</name>
-	<unlock>Gather a band of strange, wooden constructs and perform a ritual to bring out their latent powers to unlock this ship.</unlock>
+	<unlock>Make sacrifices in the name of strange, wooden constructs and perform a ritual to bring out their latent powers to unlock this ship.</unlock>
 	<desc>A song had been sung amongst those wilting branches, crying out for their salvation. Though the song went quiet, it never stopped. Thus was it done.</desc>
 	<systemList>
 		<artillery max="5" power="2" room="0" start="true" weapon="DDARTILLERY_PALE_ION" img="ddroom_illdrythkartillery" />

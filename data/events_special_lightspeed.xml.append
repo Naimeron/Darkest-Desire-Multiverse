@@ -920,9 +920,9 @@
 		</event>
 	</choice>
 	<choice hidden="true" req="deeponecultist">
-		<text>(Enlightened Crew) Perform a proving ritual.</text>
+		<text>(Enlightened Crew) Perform an Enlightened ritual.</text>
 		<event>
-			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedure for proving oneself to the Dark God and becoming one of its Chosen is described.</text>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedures for proving oneself to the Dark God and reaping its gifts are described.</text>
 			<choice hidden="true" blue="false">
 				<text>Perform the Ritual of Divine Devotion.</text>
 				<event>
@@ -930,6 +930,16 @@
 					<choice hidden="true">
 						<text>Read the text.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_PRAYEROFPROVINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" blue="false">
+				<text>Perform the Ritual of Blessed Gifts.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, you feel as a warmth sprouts in your chest and blossoms into a raging inferno...</text>
+					<choice hidden="true">
+						<text>Focus on that heat.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
 					</choice>
 				</event>
 			</choice>

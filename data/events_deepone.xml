@@ -3405,7 +3405,7 @@
 			<choice hidden="true">
 				<text>Land and narrow down the source of the distress call.</text>
 				<event>
-					<text>You land, immersing yourself in the surrounding Deep One architecture; a sea of blues of and purples, complete with an excessive amount of blinding turquoise lights. The Deep Ones don't seem to mind your presence here, and eventually you home in on the source of the distress call. You're taken to a quiet corner of the settlement, one of the smaller houses at the end of the residential district. There still isn't anything that strikes you as an emergency as you stand at the door.</text>
+					<text>You land, immersing yourself in the surrounding Deep One architecture; a sea of blues and purples, complete with an excessive amount of blinding turquoise lights. The Deep Ones don't seem to mind your presence here, and eventually you home in on the source of the distress call. You're taken to a quiet corner of the settlement, one of the smaller houses at the end of the residential district. There still isn't anything that strikes you as an emergency as you stand at the door.</text>
 					<choice hidden="true">
 						<text>Knock.</text>
 						<event>

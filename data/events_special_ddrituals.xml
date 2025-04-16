@@ -140,6 +140,1236 @@
 	</choice>
 </event>
 
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD">
+	<loadEvent>ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_REAL</loadEvent>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_REAL">
+	<text>...eventually threatening to coalesce physically, in whichever way you desire.</text>
+	<choice hidden="true">
+		<text>I desire... an Unseen Templar, to pave the way for greater gifts.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_UNSEENTEMPLAR"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND">
+		<text>(Unseen Templar) I desire... a Blessing, to bolster one of my Unseen Templars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_GIVEMEBLESSINGS_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER">
+		<text>(Unseen Templar) I desire... a Blessing, to bolster one of my Unseen Templars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_GIVEMEBLESSINGS_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND">
+		<text>(Tier One Abyss Templar) I desire... the strengthening of my Templar's Blessing of the Abyss.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_ABYSS_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER">
+		<text>(Tier One Abyss Templar) I desire... the strengthening of my Templar's Blessing of the Abyss.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_ABYSS_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND">
+		<text>(Tier Two Abyss Templar) I desire... the strengthening of my Templar's Blessing of the Abyss.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_ABYSS_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER">
+		<text>(Tier Two Abyss Templar) I desire... the strengthening of my Templar's Blessing of the Abyss.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_ABYSS_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND">
+		<text>(Tier One Stars Templar) I desire... the strengthening of my Templar's Blessing of the Stars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_STARS_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER">
+		<text>(Tier One Stars Templar) I desire... the strengthening of my Templar's Blessing of the Stars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_STARS_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND">
+		<text>(Tier Two Stars Templar) I desire... the strengthening of my Templar's Blessing of the Stars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_STARS_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER">
+		<text>(Tier Two Stars Templar) I desire... the strengthening of my Templar's Blessing of the Stars.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_STARS_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND">
+		<text>(Tier One Mire Templar) I desire... the strengthening of my Templar's Blessing of the Mire.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_MIRE_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER">
+		<text>(Tier One Mire Templar) I desire... the strengthening of my Templar's Blessing of the Mire.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_MIRE_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND">
+		<text>(Tier Two Mire Templar) I desire... the strengthening of my Templar's Blessing of the Mire.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_MIRE_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER">
+		<text>(Tier Two Mire Templar) I desire... the strengthening of my Templar's Blessing of the Mire.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_MIRE_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND">
+		<text>(Tier One Dawn Templar) I desire... the strengthening of my Templar's Blessing of the Dawn.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_DAWN_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER">
+		<text>(Tier One Dawn Templar) I desire... the strengthening of my Templar's Blessing of the Dawn.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_DAWN_BOARDER"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND">
+		<text>(Tier Two Dawn Templar) I desire... the strengthening of my Templar's Blessing of the Dawn.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_DAWN_DEFEND"/>
+	</choice>
+	<choice hidden="true" req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER">
+		<text>(Tier Two Dawn Templar) I desire... the strengthening of my Templar's Blessing of the Dawn.</text>
+		<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_DAWN_BOARDER"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_UNSEENTEMPLAR">
+	<text>The heat, now almost unbearable in its intensity, escapes your chest in a flash of light... ultimately manifesting within the space before you in the form of the Unseen Templar that you desired. Will you further the ritual, in search of additional gifts?</text>
+	<drone name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND"/>
+	<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+		<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+		<event>
+			<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<removeCrew class="ddhuman_sacrifice">
+				<clone>false</clone>
+				<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+		<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+		<event>
+			<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<removeCrew class="LIST_CREW_HUMAN">
+				<clone>false</clone>
+				<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>That'll be all, for now.</text>
+		<event>
+			<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+			<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="LOAD_ATLAS"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_GIVEMEBLESSINGS_DEFEND">
+	<text>A shroud of darkness manifests around your Templar, and you ponder on the Blessing you'd like it to receive...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND"/>
+	<choice>
+		<text>Call out, to the Abyss.</text>
+		<event>
+			<text>A sickening, red hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Abyss; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Call out, to the Stars.</text>
+		<event>
+			<text>An eerie, purple hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Stars; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Call out, to the Mire.</text>
+		<event>
+			<text>A gloomy, greenish-blue hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Mire; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_ABYSS_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar red glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Abyss has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_ABYSS_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar red glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Abyss has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_STARS_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar purple glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Stars has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_STARS_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar purple glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Stars has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_MIRE_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar greenish-blue glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Mire has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_MIRE_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar greenish-blue glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Mire has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_DAWN_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar orange glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Dawn has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_DAWN_DEFEND">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar orange glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Dawn has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_GIVEMEBLESSINGS_BOARDER">
+	<text>A shroud of darkness manifests around your Templar, and you ponder on the Blessing you'd like it to receive...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER"/>
+	<choice>
+		<text>Call out, to the Abyss.</text>
+		<event>
+			<text>A sickening, red hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Abyss; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Call out, to the Stars.</text>
+		<event>
+			<text>An eerie, purple hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Stars; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Call out, to the Mire.</text>
+		<event>
+			<text>A gloomy, greenish-blue hue overtakes the room as the shadows dissipate, and your Templar is transformed. It has received the Blessing of the Mire; will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_ABYSS_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar red glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Abyss has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_ABYSS_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar red glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Abyss has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_STARS_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar purple glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Stars has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_STARS_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar purple glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Stars has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_MIRE_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar greenish-blue glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Mire has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_MIRE_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar greenish-blue glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Mire has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERONE_DAWN_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar orange glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Dawn has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_TIERTWO_DAWN_BOARDER">
+	<text>A shroud of darkness manifests around your Templar...</text>
+	<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and a familiar orange glow fills the room as this darkness promptly dissipates, leaving you with your Templar; their Blessing of the Dawn has been bolstered. Will you further the ritual, in search of additional gifts?</text>
+			<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER"/>
+			<choice hidden="false" req="ddhuman_sacrifice" blue="false">
+				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
+				<event>
+					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="ddhuman_sacrifice">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="false" req="LIST_CREW_HUMAN" blue="false">
+				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
+				<event>
+					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>That'll be all, for now.</text>
+				<event>
+					<text>The temperature of the room settles, and your connection to this enigmatic heat is severed. The ritual is complete.</text>
+					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DARKCALLINGPERFORMED">
 	<text>...and it morphs into a map, leading to the location of a ship belonging to an enemy of the Dark God. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_LIST_DARKCALLING"/>
@@ -154,6 +1384,7 @@
 	<text>...and it morphs into a map, leading to the location of an Ill'drythk tree. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_RIVALRY"/>
 	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_illdrythkritualscompleted" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST"/>
@@ -253,6 +1484,7 @@
 	<text>...and it morphs into a map, leading to the location of a pirate ship with which to sacrifice. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_LIST_SOULEATING"/>
 	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST"/>
@@ -263,10 +1495,12 @@
 	<text>...as a globule of the Soulplague mattervirus breaks off from them, slapping against the floor with a wet smack. The globule writhes in anticipation, but you understand that it will need to be fed an additional soul or two to have the power required to form a Huskweaver.</text>
 	<playSound>blobDeath</playSound>
 	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 	<choice hidden="false" req="ddhuman_sacrifice" blue="false">
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the Soulplague blob, and watch as it slowly consumes them...</text>
+			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>
@@ -281,6 +1515,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the Soulplague blob, their screams echoing throughout the room as you do so, and watch as it slowly consumes them...</text>
+			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>
@@ -310,6 +1545,7 @@
 	<text>...and it morphs into a map, leading to the location of a Shell ship with which to sacrifice. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_LIST_SOULFIRING"/>
 	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST"/>
@@ -320,6 +1556,7 @@
 	<text>...and it morphs into a map, leading to the location of the nearest Soulplague mass. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_SOULBINDING"/>
 	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="LOAD_ATLAS"/>

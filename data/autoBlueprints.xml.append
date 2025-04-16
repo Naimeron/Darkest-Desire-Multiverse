@@ -221,6 +221,32 @@
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
@@ -265,6 +291,14 @@
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
 	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
@@ -397,6 +431,32 @@
 	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
 	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING_DAMAGE">
@@ -404,6 +464,32 @@
 	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
 	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
 	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
+	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_SHELL">
@@ -487,12 +573,128 @@
 	<name>DISPARITY_LIBERATORTOG_BOARDER</name>
 </blueprintList>
 
+<blueprintList name="LIST_CREW_MORPH_DDDARKTEMPLAR">
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH">
+	<name>ddenlightened_darktemplar_tierzero</name>
+	<name>ddenlightened_darktemplar_tierone_abyss</name>
+	<name>ddenlightened_darktemplar_tiertwo_abyss</name>
+	<name>ddenlightened_darktemplar_tierthree_abyss</name>
+	<name>ddenlightened_darktemplar_tierone_stars</name>
+	<name>ddenlightened_darktemplar_tiertwo_stars</name>
+	<name>ddenlightened_darktemplar_tierthree_stars</name>
+	<name>ddenlightened_darktemplar_tierone_mire</name>
+	<name>ddenlightened_darktemplar_tiertwo_mire</name>
+	<name>ddenlightened_darktemplar_tierthree_mire</name>
+	<name>ddenlightened_darktemplar_tierone_dawn</name>
+	<name>ddenlightened_darktemplar_tiertwo_dawn</name>
+	<name>ddenlightened_darktemplar_tierthree_dawn</name>
+</blueprintList>
+
 <blueprintList name="LIST_CREW_MORPH_DDDISPARITYADMINISTRATOR">
 	<name>DDDISPARITY_ADMINISTRATOR_DEFAULT</name>
 	<name>DDDISPARITY_ADMINISTRATOR_SPEED</name>
 	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
 	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
 	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
+</blueprintList>
+
+<blueprintList name="LIST_EVENT_DDDARKTEMPLAR_ATTACKS">
+	<name>ddenlightened_darktemplar_tierthree_abyss</name>
+	<name>ddenlightened_darktemplar_tierthree_stars</name>
+	<name>ddenlightened_darktemplar_tierthree_mire</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_UNSEEN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERONE_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTWO_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTHREE_ABYSS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERONE_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTWO_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTHREE_STARS">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERONE_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTWO_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTHREE_MIRE">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERONE_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTWO_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDDARKTEMPLAR_TIERTHREE_DAWN">
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDTEMPEST_AUGMENTBLESSINGS">
@@ -506,22 +708,6 @@
 
 <mod:findName type="blueprintList" name="LIST_JUMPSPACE_EQUIPMENT">
 	<mod-append:name>DARKGOD_CURSED_BOOK</mod-append:name>
-</mod:findName>
-
-<mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
-	<mod-append:name>DISPARITY_LIBERATORTOG_DEFEND</mod-append:name>
-	<mod-append:name>DISPARITY_LIBERATORTOG_BOARDER</mod-append:name>
-	<mod-append:name>DDSERAPH_ARBITERTOG_DEFEND</mod-append:name>
-	<mod-append:name>DDSERAPH_ARBITERTOG_BOARDER</mod-append:name>
-	<mod-append:name>DISPARITY_BROODMOTHERTOG_DEFEND</mod-append:name>
-	<mod-append:name>DISPARITY_BROODMOTHERTOG_BOARDER</mod-append:name>
-	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
-	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
-	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFAULT</mod-append:name>
-	<mod-append:name>DDDISPARITY_ADMINISTRATOR_SPEED</mod-append:name>
-	<mod-append:name>DDDISPARITY_ADMINISTRATOR_ATTACK</mod-append:name>
-	<mod-append:name>DDDISPARITY_ADMINISTRATOR_DEFENSE</mod-append:name>
-	<mod-append:name>DDDISPARITY_ADMINISTRATOR_HAZARD</mod-append:name>
 </mod:findName>
 
 <blueprintList name="GIFTLIST_DARKGOD_WEAPONS">
@@ -765,6 +951,25 @@
 	<name>ENERGY_CHARGEGUN</name>
 </blueprintList>
 
+<blueprintList name="LIST_DRONES_DDENLIGHTENED_ENEMY">
+	<name>REPAIR</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</name>
+	<name>DEFENSE_1_ENEMY</name>
+	<name>DEFENSE_2_ENEMY</name>
+	<name>GUARDIAN_1_MISSILE</name>
+	<name>GUARDIAN_1_DRONE</name>
+	<name>ION_1_AMP2_ENEMY</name>
+	<name>ION_1_AMP3_ENEMY</name>
+	<name>ION_1_AMP4</name>
+	<name>ENERGY_1_AMP2_ENEMY</name>
+	<name>ENERGY_1_AMP3_ENEMY</name>
+</blueprintList>
+
 <blueprintList name="LIST_WEAPONS_DDSOULPLAGUE">  
 	<name>LASER_HULL_1_ENEMY</name>
 	<name>LASER_HULL_1_ENEMY</name>
@@ -903,6 +1108,32 @@
 	<name>DEEPONE_LIGHTS_LOCKED</name>
 	<name>DREAD_LIGHTS</name>
 	<name>DREAD_LIGHTS_LOCKED</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_UNSEEN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERONE_DAWN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</name>
 </blueprintList>
 
 <blueprintList name="JUDGELIST_ROCK_DISPARITY_GEAR">
@@ -1739,8 +1970,6 @@
 
 <shipBlueprint name="DEEPONE_CARRIER" layout="deep_one_carrier" img="deep_one_carrier">
 	<class>Deep One Carrier</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="8" start="false" />
 		<doors power="1" max="2" room="3" start="true" />
@@ -1764,8 +1993,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_FIGHTER" layout="deep_one_fighter" img="deep_one_fighter">
 	<class>Deep One Fighter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="3" room="10" start="false" />
 		<doors power="1" max="2" room="5" start="true" />
@@ -1788,8 +2015,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_SCOUT" layout="deep_one_scout" img="deep_one_scout">
 	<class>Deep One Scout</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="1" max="3" room="3" start="true" />
 		<medbay power="1" max="2" room="4" start="false" />
@@ -1811,8 +2036,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_DESTROYER" layout="deep_one_destroyer" img="deep_one_destroyer">
 	<class>Deep One Destroyer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="false" />
 		<drones power="2" max="4" room="9" start="true" />
@@ -1835,8 +2058,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_SKIRMISHER" layout="dddeep_one_skirmisher" img="dddeep_one_skirmisher">
 	<class>Deep One Skirmisher</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="6" start="false" />
 		<engines power="1" max="3" room="2" start="true" />
@@ -1859,7 +2080,6 @@
 <shipBlueprint name="DDDEEP_ONE_BATTLESHIP" layout="dddeep_one_battleship" img="dddeep_one_battleship">
 	<class>Deep One Battleship</class>
 	<minSector>3</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="6" start="true" />
 		<engines power="1" max="2" room="7" start="true" />
@@ -1883,8 +2103,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_DESTROYER_SOULPLAGUE" layout="deep_one_destroyer" img="deep_one_destroyer">
 	<class>Deep One Destroyer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="false" />
 		<drones power="2" max="4" room="9" start="true" />
@@ -1907,8 +2125,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_FIGHTER_CULTIST" layout="deep_one_fighter_cultist" img="deep_one_fighter_cultist">
 	<class>Enlightened Fighter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="0" start="true" />
 		<drones power="1" max="4" room="7" start="true" />
@@ -1923,7 +2139,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="5" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="3" count="2" load="LIST_DRONES_ENEMY_CREW" />
+	<droneList drones="3" count="2" load="LIST_DRONES_DDENLIGHTENED_ENEMY" />
 	<health amount="10" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="6" class="deepone" />
@@ -1933,8 +2149,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_SCOUT_CULTIST" layout="deep_one_scout_cultist" img="deep_one_scout_cultist">
 	<class>Enlightened Scout</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="2" room="7" start="false" />
 		<doors power="2" max="2" room="3" start="true" />
@@ -1958,8 +2172,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEPONE_CARRIER_CULTIST" layout="deep_one_carrier_cultist" img="deep_one_carrier_cultist">
 	<class>Enlightened Carrier</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="4" start="true" />
 		<drones power="1" max="6" room="7" start="true" />
@@ -1974,7 +2186,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="5" count="2" load="LIST_DRONES_ENEMY_CREW" />
+	<droneList drones="5" count="2" load="LIST_DRONES_DDENLIGHTENED_ENEMY" />
 	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="3" max="6" class="deepone" />
@@ -1984,8 +2196,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_DESTROYER_CULTIST" layout="deep_one_destroyer_cultist" img="deep_one_destroyer_cultist">
 	<class>Enlightened Destroyer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="7" start="true" />
 		<engines power="1" max="2" room="0" start="true" />
@@ -2009,8 +2219,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_SKIRMISHER_CULTIST" layout="dddeep_one_skirmisher_cultist" img="dddeep_one_skirmisher_cultist">
 	<class>Enlightened Skirmisher</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="1" start="true" />
 		<drones power="1" max="6" room="5" start="false" />
@@ -2025,7 +2233,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="4" count="4" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="5" count="3" load="LIST_DRONES_ENGI" />
+	<droneList drones="5" count="3" load="LIST_DRONES_DDENLIGHTENED_ENEMY" />
 	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="5" class="deepone" />
@@ -2036,7 +2244,6 @@
 <shipBlueprint name="DDDEEP_ONE_BATTLESHIP_CULTIST" layout="dddeep_one_battleship_cultist" img="dddeep_one_battleship_cultist">
 	<class>Enlightened Battleship</class>
 	<minSector>3</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="10" start="true" />
 		<drones power="1" max="5" room="5" start="false" />
@@ -2052,7 +2259,7 @@
 	<weaponSlots>6</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="5" count="6" load="LIST_WEAPONS_DEEPONES_CULTIST" />
-	<droneList drones="5" count="2" load="LIST_DRONES_ENEMY_STANDARD" />
+	<droneList drones="5" count="2" load="LIST_DRONES_DDENLIGHTENED_ENEMY" />
 	<health amount="11" />
 	<maxPower amount="9" />
 	<crewCount amount="3" max="6" class="deepone" />
@@ -2062,8 +2269,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_TRANSPORT_CULTIST" layout="deep_one_transport_cultist" img="deep_one_transport_cultist">
 	<class>Enlightened Transport</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="11" start="false" />
 		<doors power="2" max="3" room="10" start="true" />
@@ -2092,8 +2297,6 @@
 </shipBlueprint>
 <shipBlueprint name="DEEP_ONE_FIGHTER_MORPH" layout="deep_one_fighter_morph" img="deep_one_fighter_morph">
 	<class>Enlightened? Fighter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="8" start="true" />
 		<engines power="1" max="2" room="3" start="true" />
@@ -2114,8 +2317,6 @@
 </shipBlueprint>
 <shipBlueprint name="DREADNOUGHT_OF_DARKNESS" layout="dreadnought_of_darkness" img="dreadnought_of_darkness">
 	<class>Dreadnought of Darkness</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="3" max="3" room="14" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<cloaking power="1" max="1" room="11" start="false" />
@@ -2145,8 +2346,6 @@
 </shipBlueprint>
 <shipBlueprint name="DREADNOUGHT_OF_HOPESANDDREAMS" layout="dreadnought_of_hopesanddreams" img="dreadnought_of_hopesanddreams">
 	<class>Desire, Given Form</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="3" room="8" start="true" />
 		<drones power="8" max="8" room="13" start="true" />
@@ -2166,10 +2365,9 @@
 		<weapon name="TWILIGHT_INEXORABLE" />
 		<weapon name="TWILIGHT_INEXORABLE" />
 	</weaponList>
-	<droneList drones="15" count="4">
+	<droneList drones="15" count="3">
+		<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER" />
 		<drone name="ENERGY_1_AMP2_ENEMY" />
-		<drone name="ENERGY_1_AMP2_ENEMY" />
-		<drone name="REPAIR" />
 		<drone name="REPAIR" />
 	</droneList>
 	<health amount="27" />
@@ -2182,8 +2380,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_CARRIER_ELITE" layout="dddeep_one_carrier_elite" img="dddeep_one_carrier_elite">
 	<class>Chosen Carrier</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<clonebay power="1" max="3" room="2" start="true" />
@@ -2208,8 +2404,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_DESTROYER_ELITE" layout="dddeep_one_destroyer_elite" img="dddeep_one_destroyer_elite">
 	<class>Chosen Destroyer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<cloaking power="1" max="3" room="5" start="true" />
@@ -2234,8 +2428,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_FIGHTER_ELITE" layout="dddeep_one_fighter_elite" img="dddeep_one_fighter_elite">
 	<class>Chosen Fighter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<doors power="2" max="3" room="3" start="false" />
@@ -2260,8 +2452,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_SCOUT_ELITE" layout="dddeep_one_scout_elite" img="dddeep_one_scout_elite">
 	<class>Chosen Scout</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<cloaking power="1" max="2" room="2" start="false" />
@@ -2286,8 +2476,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDDEEP_ONE_SKIRMISHER_ELITE" layout="dddeep_one_skirmisher_elite" img="dddeep_one_skirmisher_elite">
 	<class>Chosen Skirmisher</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="3" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<clonebay power="1" max="3" room="8" start="true" />
@@ -2312,7 +2500,6 @@
 <shipBlueprint name="DDDEEP_ONE_BATTLESHIP_ELITE" layout="dddeep_one_battleship_elite" img="dddeep_one_battleship_elite">
 	<class>Chosen Battleship</class>
 	<minSector>3</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="2" max="2" room="1" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
 		<artillery power="2" max="2" room="0" start="true" weapon="DDARTILLERY_RAVAGING_VOID" />
@@ -2337,8 +2524,6 @@
 </shipBlueprint>
 <shipBlueprint name="DARKONE_SHADOW_TENDRILS" layout="darkone_shadow_tendrils" img="darkone_shadow_tendrils">
 	<class>The Darkness</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList />
 	<weaponSlots>0</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -2350,8 +2535,6 @@
 </shipBlueprint>
 <shipBlueprint name="DARKONE_SHADOW_TENDRILS_TRIALDUMMY" layout="darkone_shadow_tendrils" img="darkone_shadow_tendrils">
 	<class>The Darkness</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList />
 	<weaponSlots>0</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -2363,8 +2546,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_ASSAULT" layout="disparity_engi_assault" img="disparity_engi_assault">
 	<class>Disparity Assault</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="11" start="false" />
 		<drones power="3" max="6" room="9" start="true" />
@@ -2390,8 +2571,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_ASSAULT_NO2" layout="disparity_engi_assault" img="disparity_engi_assault">
 	<class>Disparity Assault</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="11" start="false" />
 		<drones power="3" max="6" room="9" start="true" />
@@ -2415,8 +2594,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_OUTRIDER" layout="disparity_engi_outrider" img="disparity_engi_outrider">
 	<class>Disparity Outrider</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="5" start="false" />
 		<doors power="1" max="2" room="7" start="false" />
@@ -2441,8 +2618,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_OUTRIDER_NO2" layout="disparity_engi_outrider" img="disparity_engi_outrider">
 	<class>Disparity Outrider</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="5" start="false" />
 		<doors power="1" max="2" room="7" start="false" />
@@ -2465,8 +2640,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_RIGGER" layout="disparity_engi_rigger" img="disparity_engi_rigger">
 	<class>Disparity Rigger</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="8" start="false" />
 		<drones power="4" max="9" room="1" start="true" />
@@ -2491,8 +2664,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_RIGGER_NO2" layout="disparity_engi_rigger" img="disparity_engi_rigger">
 	<class>Disparity Rigger</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="8" start="false" />
 		<drones power="4" max="9" room="1" start="true" />
@@ -2516,8 +2687,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_SCOUT" layout="disparity_engi_scout" img="disparity_engi_scout">
 	<class>Disparity Scout</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="3" room="8" start="true" />
 		<drones power="1" max="4" room="4" start="false" />
@@ -2541,8 +2710,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_SCOUT_NO2" layout="disparity_engi_scout" img="disparity_engi_scout">
 	<class>Disparity Scout</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="3" room="8" start="true" />
 		<drones power="1" max="4" room="4" start="false" />
@@ -2565,8 +2732,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_TRANSPORT" layout="disparity_engi_transport" img="disparity_engi_transport">
 	<class>Disparity Transport</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="3" room="11" start="false" />
 		<drones power="2" max="8" room="10" start="true" />
@@ -2595,8 +2760,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_BEHEMOTH" layout="disparity_engi_behemoth" img="disparity_engi_behemoth">
 	<class>Disparity Behemoth</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="3" max="3" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER" />
 		<clonebay power="1" max="2" room="1" start="true" />
@@ -2629,8 +2792,6 @@
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_BEHEMOTHDETERMINATION" layout="disparity_engi_behemothdetermination" img="disparity_engi_behemothdetermination">
 	<class>Judgment, Foreordained</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="3" max="4" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER_DETERMINATION" />
 		<doors power="2" max="3" room="10" start="true" />
@@ -2665,8 +2826,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_ENGI_JUDICATOR" layout="ddseraph_engi_judicator" img="ddseraph_engi_judicator">
 	<class>Seraphim Judicator</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="3" max="3" room="9" start="true" />
 		<drones power="10" max="10" room="2" start="true" />
@@ -2697,8 +2856,6 @@
 </shipBlueprint>
 <shipBlueprint name="KYR_AND_LILITH_SHIP" layout="kyr_and_lilith_ship" img="kyr_and_lilith_ship">
 	<class>Civilian Ship</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="2" max="2" room="3" start="true" />
 		<medbay power="2" max="2" room="2" start="true" />
@@ -2717,8 +2874,6 @@
 </shipBlueprint>
 <shipBlueprint name="KYR_AND_LILITH_HORROR" layout="kyr_and_lilith_horror" img="kyr_and_lilith_horror">
 	<class>???</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="2" max="2" room="1" start="true" />
 		<medbay power="2" max="2" room="2" start="true" />
@@ -2737,8 +2892,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_PUFFBALL" layout="ddilldrythk_puffball" img="ddilldrythk_puffball">
 	<class>Ill'drythk Puffball</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="1" room="2" start="true" />
 		<oxygen power="1" max="1" room="0" start="true" />
@@ -2755,8 +2908,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_NEST" layout="ddilldrythk_nest" img="ddilldrythk_nest">
 	<class>Ill'drythk Nest</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="1" room="0" start="true" />
 		<oxygen power="1" max="1" room="3" start="true" />
@@ -2773,8 +2924,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_THE_PALE_HEART" layout="ddilldrythk_the_pale_heart" img="ddilldrythk_the_pale_heart">
 	<class>The Pale Heart</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<mind power="1" max="2" room="1" start="false" />
@@ -2792,8 +2941,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ROCK_ENFORCER" layout="ddtempest_rock_enforcer" img="ddtempest_rock_enforcer">
 	<class>Tempest Enforcer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="3" room="6" start="false" />
 		<engines power="1" max="2" room="1" start="true" />
@@ -2816,8 +2963,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_SLUG_INTERCEPTOR" layout="ddtempest_slug_interceptor" img="ddtempest_slug_interceptor">
 	<class>Tempest Interceptor</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="1" max="2" room="4" start="true" />
 		<oxygen power="1" max="2" room="3" start="true" />
@@ -2838,8 +2983,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_CRYSTAL_TRANSPORT" layout="ddtempest_crystal_transport" img="ddtempest_crystal_transport">
 	<class>Tempest Transport</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="8" start="false" />
 		<doors power="1" max="3" room="1" start="false" />
@@ -2864,8 +3007,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_UNION_OUTRIDER" layout="ddtempest_union_outrider" img="ddtempest_union_outrider">
 	<class>Tempest Outrider</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="3" room="1" start="true" />
 		<engines power="1" max="2" room="3" start="true" />
@@ -2888,7 +3029,6 @@
 <shipBlueprint name="DDTEMPEST_ENGI_PROTECTOR" layout="ddtempest_engi_protector" img="ddtempest_engi_protector">
 	<class>Tempest Protector</class>
 	<minSector>3</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="2" room="9" start="false" />
 		<doors power="1" max="3" room="7" start="false" />
@@ -2914,8 +3054,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_MANTIS_MARAUDER" layout="ddtempest_mantis_marauder" img="ddtempest_mantis_marauder">
 	<class>Tempest Marauder</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="3" room="6" start="false" />
 		<engines power="1" max="1" room="1" start="true" />
@@ -2939,8 +3077,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_VAMPWEED_TRAPPER" layout="ddtempest_vampweed_trapper" img="ddtempest_vampweed_trapper">
 	<class>Tempest Trapper</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="1" max="2" room="6" start="true" />
 		<medbay power="1" max="2" room="10" start="false" />
@@ -2963,8 +3099,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_DEEP_ONE_CARRIER" layout="ddtempest_deep_one_carrier" img="ddtempest_deep_one_carrier">
 	<class>Tempest Carrier</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="1" room="8" start="false" />
 		<doors power="1" max="2" room="3" start="true" />
@@ -2989,8 +3123,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ULTIMA_MANIFESTATION_SHIP" layout="ddtempest_ultima_manifestation_ship" img="ddtempest_ultima_manifestation_ship">
 	<class>Ultima Manifestation</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="1" room="16" start="false" />
 		<doors power="1" max="2" room="13" start="false" />
@@ -3021,8 +3153,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_HUNTER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
 	<class>Soulplague Hunter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="5" start="true" />
@@ -3045,8 +3175,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
 	<class>Soulplague Juggernaut</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="3" room="3" start="true" />
 		<doors power="1" max="2" room="9" start="false" />
@@ -3071,8 +3199,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_STALKER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
 	<class>Soulplague Stalker</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="2" room="8" start="true" />
 		<clonebay power="1" max="2" room="0" start="true" />
@@ -3096,8 +3222,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_SCAVENGER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
 	<class>Soulplague Scavenger</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="1" max="3" room="4" start="true" />
 		<medbay power="1" max="3" room="3" start="true" />
@@ -3119,8 +3243,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_PROWLER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
 	<class>Soulplague Prowler</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="7" start="true" />
@@ -3143,8 +3265,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_INCUBATOR" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
 	<class>Soulplague Incubator</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="3" start="false" />
 		<drones power="1" max="7" room="8" start="true" />
@@ -3168,8 +3288,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_HUNTER_HUSKWEAVER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
 	<class>Soulplague Hunter</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="5" start="true" />
@@ -3191,8 +3309,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
 	<class>Soulplague Juggernaut</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="3" room="3" start="true" />
 		<doors power="1" max="2" room="9" start="false" />
@@ -3216,8 +3332,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_STALKER_HUSKWEAVER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
 	<class>Soulplague Stalker</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="2" room="8" start="true" />
 		<clonebay power="1" max="2" room="0" start="true" />
@@ -3240,8 +3354,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_SCAVENGER_HUSKWEAVER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
 	<class>Soulplague Scavenger</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<engines power="1" max="3" room="4" start="true" />
 		<medbay power="1" max="3" room="3" start="true" />
@@ -3262,8 +3374,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_PROWLER_HUSKWEAVER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
 	<class>Soulplague Prowler</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="7" start="true" />
@@ -3285,8 +3395,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_INCUBATOR_HUSKWEAVER" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
 	<class>Soulplague Incubator</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="2" room="3" start="false" />
 		<drones power="1" max="7" room="8" start="true" />
@@ -3309,8 +3417,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_TRANSPORT" layout="ddsoulplague_transport" img="ddsoulplague_transport">
 	<class>Soulplague Transport</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<clonebay power="1" max="3" room="8" start="true" />
 		<doors power="1" max="3" room="0" start="false" />
@@ -3334,8 +3440,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_DEVOURER" layout="ddsoulplague_devourer" img="ddsoulplague_devourer">
 	<class>Soulplague Devourer</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="3" room="3" start="true" />
 		<engines power="2" max="2" room="12" start="true" />
@@ -3365,8 +3469,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDHEROINE_VILLAINSLAYER" layout="ddheroine_villainslayer" img="ddheroine_villainslayer">
 	<class>Hope's Retort</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<artillery power="3" max="4" room="12" start="true" weapon="DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE_ENEMY" />
 		<doors power="2" max="3" room="4" start="true" />
@@ -3405,8 +3507,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_SHELL_PROPHET" layout="ddseraph_shell_prophet" img="ddseraph_shell_prophet">
 	<class>Seraphim Prophet</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="1" max="2" room="7" start="true" />
 		<doors power="3" max="3" room="6" start="true" />
@@ -3672,8 +3772,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDMT_BOSS_SERAPHIM_NORMAL" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
 	<class>Renegade Cruiser</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="1" room="5" start="true" />
 		<engines power="2" max="2" room="4" start="true" />
@@ -3702,8 +3800,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDMT_BOSS_SERAPHIM_CHALLENGE" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
 	<class>Renegade Cruiser</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="1" max="1" room="5" start="true" />
 		<engines power="2" max="2" room="4" start="true" />
@@ -3732,8 +3828,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDMT_BOSS_SERAPHIM_EXTREME" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
 	<class>Renegade Cruiser</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="5" start="true" />
 		<engines power="2" max="2" room="4" start="true" />
@@ -3762,8 +3856,6 @@
 </shipBlueprint>
 <shipBlueprint name="DDMT_BOSS_SERAPHIM_CHAOS" layout="ddmt_boss_seraphim" img="ddmt_boss_seraphim">
 	<class>Chaotic Renegade Cruiser</class>
-	<minSector>1</minSector>
-	<maxSector>8</maxSector>
 	<systemList>
 		<doors power="2" max="2" room="5" start="true" />
 		<engines power="2" max="2" room="4" start="true" />
