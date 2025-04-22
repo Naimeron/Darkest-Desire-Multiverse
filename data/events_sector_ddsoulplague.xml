@@ -2548,9 +2548,9 @@
 </event>
 
 <event name="NEBULA_ITEMS_DDSOULPLAGUE_FOOLISHNOTES" unique="true">
-	<text>A Shell ship floats almost motionlessly in the nebula outside, its signatures completely dead. You get the feeling that it has to have been abandoned for at least a few years, with the sheer level of disrepair it's in...</text>
+	<text>A Shell ship floats almost motionlessly in the stormy nebula outside, its signatures completely dead. You get the feeling that it has to have been abandoned for at least a few years, with the sheer level of disrepair it's in...</text>
 	<ship load="NEBULA_ITEMS_DDSOULPLAGUE_FOOLISHNOTES_FIGHT" hostile="false"/>
-	<environment type="nebula"/>
+	<environment type="storm"/>
 	<choice hidden="true">
 		<text>Approach the abandoned ship.</text>
 		<event>
@@ -4597,7 +4597,7 @@
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
-	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
+	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_STORM"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_AUTO"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_SLUG"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_GHOST"/>
@@ -4610,6 +4610,12 @@
 	<text>You feel as if this sector chokes out all semblances of life, using these damnable Husks as its executioner. It's uncertain whether or not anthropomorphizing a sector like that is a sign that you're losing it a little, but the fact of the matter is that your life could very well be next on the chopping block.</text>
 	<text>Is there an end to these Husks? For what reason do they plague this sector? As another ship overran by them makes its jittery, unsettling approach, you make a silent vow to get to the bottom of these questions... and put an end to their propagation.</text>
 	<text>A ship roars past you as you enter the beacon, but you don't get a good look at it before it sinks deeper into the nebula. Following it comes a second ship, much shakier in its approach... you quickly realize that they're Husks, and it seems you've pulled their attention!</text>
+</textList>
+
+<textList name="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_STORM_TEXT">
+	<text>There's a sinking feeling in your stomach as the shadow of a ship looms within the storm outside. You catch its attention, and your worst fears are confirmed as it makes its unsteady approach!</text>
+	<text>For a moment, there's a glimmer of hope in your heart as you spot a ship amidst the storm... but it's extinguished in an instant when you notice the way they move. It's yet another Husk ship, and they're headed this way!</text>
+	<text>A ship roars past you as you enter the beacon, but you don't get a good look at it before it sinks deeper into the storm. Following it comes a second ship, much shakier in its approach... you quickly realize that they're Husks, and it seems you've pulled their attention!</text>
 </textList>
 
 <event name="DESTROYED_DDSOULPLAGUE_HUSKCORRUPTION">
@@ -4643,6 +4649,16 @@
 <event name="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS">
 	<text load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_TEXT"/>
 	<environment type="nebula"/>
+	<ship load="SHIP_DDSOULPLAGUE_HUSKCORRUPTION" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_STORM">
+	<text load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_STORM_TEXT"/>
+	<environment type="storm"/>
 	<ship load="SHIP_DDSOULPLAGUE_HUSKCORRUPTION" hostile="true"/>
 	<choice hidden="true">
 		<text>Continue...</text>

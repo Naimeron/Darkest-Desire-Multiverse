@@ -216,6 +216,7 @@
 				<text>(Human Sacrifice) Sacrifice one of your prepared human lives.</text>
 				<event>
 					<text>Your human sacrifice doesn't so much as stir as you sink a dagger in their chest. Their blood spills out, some of it directly onto your hands, and you remark that it feels oddly cold... but it doesn't matter. The sacrifice has been made.</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been stripped from their body.</text>
@@ -230,6 +231,7 @@
 				<text>(Human Crew) Sacrifice a human life.</text>
 				<event>
 					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_HUMANSACRIFICE"/>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been stripped from their body.</text>
@@ -244,6 +246,7 @@
 				<text>Sacrifice a heap of scrap.</text>
 				<event>
 					<text load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SCRAPSACRIFICE"/>
+					<playSound>ddbook_scrap_clang</playSound>
 					<item_modify>
 						<item type="scrap" min="-100" max="-100"/>
 					</item_modify>
@@ -961,10 +964,10 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK">
-		<text>(Ill'drythk Statue) Perform an Ill'drythk ritual.</text>
+	<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+		<text>(Ill'drythk Crew) Perform an Ill'drythk ritual.</text>
 		<event>
-			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a fuzzy brown. In it, the procedures for growing the strength and numbers of your collective of Ill'drythk Statues are described.</text>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a fuzzy brown. In it, the procedures for growing the strength and numbers of your collective of Ill'drythk crew members are described.</text>
 			<choice hidden="true">
 				<text>Perform the Ritual of Rivalry.</text>
 				<event>
@@ -975,10 +978,20 @@
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Rebirth.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the brown text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_REBIRTHPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
 			<choice hidden="true" req="DD_ILLDRYTHKPALEHEARTRITUALCHECK" blue="false">
 				<text>Perform the Ritual of Mutinous Mutation.</text>
 				<event>
-					<text>Your Ill'drythk Statues stand around the Otherworldly Tome, ready to function as conduits for the ritual. From their hollow bodies, a song rings out, and the brown text within the Otherworldly Tome twists and shifts...</text>
+					<text>Your Ill'drythk crew members stand around the Otherworldly Tome, ready to function as conduits for the ritual. From their strange, goo-filled bodies, a song rings out, and the brown text within the Otherworldly Tome twists and shifts...</text>
 					<variable name="dd_paleheartritualcompleted" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Read the text.</text>

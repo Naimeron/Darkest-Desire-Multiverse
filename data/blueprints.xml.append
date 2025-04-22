@@ -951,6 +951,55 @@
 	<tooltip>Shoots 2 projectiles, somewhat inaccurately. Each projectile that lands deals damage and inflicts rooms hit with Plagueridden for 12 seconds.</tooltip>
 	<radius>50</radius>
 	<damage>1</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-15</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -1250,6 +1299,55 @@
 	<desc>This weapon appears to vaguely resemble the 'Anelace' Rad-Pinpoint, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Pinpoint weapon that deals heavy crew damage and pierces 2 shields, but deals no damage to systems or hull. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>0</damage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-60</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -1505,7 +1603,6 @@
 			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
 		</statBoost>
 	</roomStatBoosts>
-	<persDamage>4</persDamage>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
@@ -1838,6 +1935,55 @@
 	<desc>This weapon appears to vaguely resemble the 'Hermes' Heavy Missiles, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Fires 1 missile; does 3 damage; pierces all shields. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>3</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-45</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -2134,6 +2280,55 @@
 	<desc>This weapon appears to vaguely resemble the Heavy Laser MK III, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Heavy laser; 2 damage, 3 shots. 18.5 second cooldown. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>2</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-30</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -2431,6 +2626,55 @@
 	<tooltip>Shoots 2 projectiles, somewhat inaccurately. Each projectile that lands deals damage and inflicts rooms hit with Plagueridden for 12 seconds.</tooltip>
 	<radius>50</radius>
 	<damage>1</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-15</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -2730,6 +2974,54 @@
 	<desc>This weapon appears to vaguely resemble the 'Anelace' Rad-Pinpoint, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Pinpoint weapon that deals heavy crew damage and pierces 3 shields, but deals no damage to systems or hull. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>0</damage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-60</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -2985,7 +3277,6 @@
 			<boostAnim>ddsoulplague_infected_debuff</boostAnim>
 		</statBoost>
 	</roomStatBoosts>
-	<persDamage>4</persDamage>
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
@@ -3318,6 +3609,55 @@
 	<desc>This weapon appears to vaguely resemble the 'Hermes' Heavy Missiles, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Fires 1 missile; does 3 damage; pierces all shields. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>3</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-45</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -3614,6 +3954,55 @@
 	<desc>This weapon appears to vaguely resemble the Heavy Laser MK III, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts room hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Heavy laser; 2 damage, 3 shots. 18.5 second cooldown. Inflicts room hit with Plagueridden for 12 seconds.</tooltip>
 	<damage>2</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-30</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -4257,6 +4646,55 @@
 	<tooltip>Boss Loot.</tooltip>
 	<radius>50</radius>
 	<damage>1</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-15</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -4562,7 +5000,54 @@
 	<radius>50</radius>
 	<damage>0</damage>
 	<sysDamage>1</sysDamage>
-	<persDamage>1</persDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-15</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -4866,6 +5351,55 @@
 	<tooltip>Boss Loot.</tooltip>
 	<radius>50</radius>
 	<damage>1</damage>
+	<noPersDamage>true</noPersDamage>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-15</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>1</duration>
+			<blackList>
+				<ddsoulplague_husk_crystal/>
+				<ddsoulplague_husk_deepone/>
+				<ddsoulplague_husk_engi/>
+				<ddsoulplague_husk_ghost/>
+				<ddsoulplague_husk_lanius/>
+				<ddsoulplague_husk_leech/>
+				<ddsoulplague_husk_mantis/>
+				<ddsoulplague_husk_orchid/>
+				<ddsoulplague_husk_rockman/>
+				<ddsoulplague_husk_shell/>
+				<ddsoulplague_husk_slug/>
+				<ddsoulplague_husk_zoltan/>
+				<ddsoulplague_husk_human/>
+				<ddsoulplague_husk_obelisk/>
+				<ddsoulplague_husk_crystal_enemy/>
+				<ddsoulplague_husk_deepone_enemy/>
+				<ddsoulplague_husk_engi_enemy/>
+				<ddsoulplague_husk_ghost_enemy/>
+				<ddsoulplague_husk_lanius_enemy/>
+				<ddsoulplague_husk_leech_enemy/>
+				<ddsoulplague_husk_mantis_enemy/>
+				<ddsoulplague_husk_orchid_enemy/>
+				<ddsoulplague_husk_rockman_enemy/>
+				<ddsoulplague_husk_shell_enemy/>
+				<ddsoulplague_husk_slug_enemy/>
+				<ddsoulplague_husk_zoltan_enemy/>
+				<ddsoulplague_husk_human_enemy/>
+				<ddsoulplague_husk_obelisk_enemy/>
+				<ddsoulplague_huskweaver/>
+				<ddsoulplague_huskweaver_enemy/>
+				<ddsoulplague_corruptor_tide/>
+				<ddsoulplague_corruptor_tide_enemy/>
+				<ddunique_theaberration/>
+				<ddunique_theaberration_enemy/>
+				<ddsoulplague_shellcultist/>
+				<ddsoulplague_shellcultist_enemy/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
 			<boostType>MULT</boostType>
@@ -9682,7 +10216,7 @@
 	<desc>You should never see this!</desc>
 	<tooltip>You shouldn't see this, either!</tooltip>
 	<damage>0</damage>
-	<sysDamage>2</sysDamage>
+	<sysDamage>1</sysDamage>
 	<accuracyMod>100</accuracyMod>
 	<roomStatBoosts>
 		<statBoost name="repairSpeed">
@@ -14301,8 +14835,8 @@
 	<type>LASER</type>
 	<title>Pale Ion Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 9] Fires a mysterious phase ion that carries with it Illdrythk Fog, spreading it in rooms it hits.</desc>
-	<tooltip>Artillery: Fires a mysterious phase ion that carries with it Illdrythk Fog, spreading it in rooms it hits.</tooltip>
+	<desc>[Base cooldown: 9] Fires a mysterious Phaser-type ion that carries with it Ill'drythk Fog, spreading it in the room it hits.</desc>
+	<tooltip>Artillery: Fires a mysterious Phaser-type ion that carries with it Ill'drythk Fog, spreading it in the room it hits.</tooltip>
 	<damage>0</damage>
 	<ion>1</ion>
 	<speed>23</speed>
@@ -15122,7 +15656,7 @@
     
 -75 HP
 -1.3x movement speed
--Will periodically emit a Default Beacon overclock command, increasing ally Engi heal speed. Vulnerable while the command is active.
+-Will periodically emit a Default overclock command, adding an additive 50% (of default) heal speed to all allied Engi on either ship. Vulnerable while the command is active.
 -The nature of its construction means it does not interfere with Disparity Beacons' decay or suffer from decay itself, but it also requires close proximity to the Drone Control room and thus cannot be used to board.</desc>
 	<power>1</power>
 	<cost>65</cost>
@@ -15140,7 +15674,7 @@
     
 -75 HP
 -1.3x movement speed
--Will periodically emit a Speed Beacon overclock command, increasing ally Engi movement speed. Vulnerable while the command is active.
+-Will periodically emit a Speed overclock command, adding an additive 50% (of default) movement speed to all allied Engi on either ship. Vulnerable while the command is active.
 -The nature of its construction means it does not interfere with Disparity Beacons' decay or suffer from decay itself, but it also requires close proximity to the Drone Control room and thus cannot be used to board.</desc>
 	<power>1</power>
 	<cost>65</cost>
@@ -15158,7 +15692,7 @@
     
 -75 HP
 -1.3x movement speed
--Will periodically emit a Attack Beacon overclock command, increasing ally Engi damage and sabotage speed. Vulnerable while the command is active.
+-Will periodically emit a Attack overclock command, adding an additive 30% (of default) damage and sabotage speed to all allied Engi on either ship. Vulnerable while the command is active.
 -The nature of its construction means it does not interfere with Disparity Beacons' decay or suffer from decay itself, but it also requires close proximity to the Drone Control room and thus cannot be used to board.</desc>
 	<power>1</power>
 	<cost>65</cost>
@@ -15176,7 +15710,7 @@
     
 -75 HP
 -1.3x movement speed
--Will periodically emit a Defense Beacon overclock command, increasing ally Engi repair speed and damage resistance. Vulnerable while the command is active.
+-Will periodically emit a Defense overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Engi on either ship. Vulnerable while the command is active.
 -The nature of its construction means it does not interfere with Disparity Beacons' decay or suffer from decay itself, but it also requires close proximity to the Drone Control room and thus cannot be used to board.</desc>
 	<power>1</power>
 	<cost>65</cost>
@@ -15194,7 +15728,7 @@
     
 -75 HP
 -1.3x movement speed
--Will periodically emit a Hazard Beacon overclock command, increasing ally Engi hazard resistance and healing them over time. Vulnerable while the command is active.
+-Will periodically emit a Hazard overclock command, adding a multiplicative 0.5x hazard (fire/suffocation) resistance to all allied Engi on either ship and healing them for 1hp/s. Vulnerable while the command is active.
 -The nature of its construction means it does not interfere with Disparity Beacons' decay or suffer from decay itself, but it also requires close proximity to the Drone Control room and thus cannot be used to board.</desc>
 	<power>1</power>
 	<cost>65</cost>
@@ -15915,7 +16449,9 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engidefault">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15928,7 +16464,9 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engispeed">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15941,7 +16479,9 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engiattack">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15954,7 +16494,9 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engidefense">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15967,7 +16509,9 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engihazard">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15976,11 +16520,13 @@
 	<powerList>
 		<power>Active Ability: Overclock, switching forms and spawning a Disparity beacon that gives a buff corresponding to the form that created it to all allied Engi.</power>
 		<power>CURRENT FORM: HAZARD</power>
-		<power>Hazard Form Stats: Immune to Hazards, Regenerates 3HP/s, 0.2x Damage, Sabotage Speed, Repair Speed, and Movement Speed</power>
+		<power>Hazard Form Stats: Immune to Hazards and Mind Control, Regenerates 3HP/s, 0.2x Damage, Sabotage Speed, Repair Speed, and Movement Speed</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engihazard_enemy">
-	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.</desc>
+	<desc>Elite Separatist Crew. Member of the Disparity, a sect of Engi Separatists who have decided to take action against the Harmony.
+	
+	Inherited Separatist stats: 0.75x combat damage, 1.75x repair speed, reduced suffocation damage</desc>
 	<title>Disparity Elite</title>
 	<short>Disparity</short>
 	<cost>95</cost>
@@ -15989,7 +16535,7 @@
 	<powerList>
 		<power>Active Ability: Overclock, switching forms and spawning a Disparity beacon that gives a buff corresponding to the form that created it to all allied Engi.</power>
 		<power>CURRENT FORM: HAZARD</power>
-		<power>Hazard Form Stats: Immune to Hazards, Regenerates 3HP/s, 0.2x Damage, Sabotage Speed, Repair Speed, and Movement Speed</power>
+		<power>Hazard Form Stats: Immune to Hazards and Mind Control, Regenerates 3HP/s, 0.2x Damage, Sabotage Speed, Repair Speed, and Movement Speed</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engidefault_beacon">
@@ -17842,6 +18388,18 @@
 		<power>Periodically manifests a bolt of random chaos whilst placing a 10HP/s healing and 3x combat damage vulnerability aura in the current room.</power>
 	</powerList>
 </crewBlueprint>
+<crewBlueprint name="ddilldrythk_caretaker">
+	<desc>A strange, leafy construct created by an Ill'drythk Tree for the purpose of self-care. Though shrouded within its shrubbery, it appears to be piloted by some sort of semi-sentient ooze.</desc>
+	<title>Ill'drythk Caretaker</title>
+	<short>Caretaker</short>
+	<cost>55</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Incapable of fighting, but has 1.5x repair speed, 3x fire extinguish speed, quick-to-act 2.1hp/s regeneration, mind control immunity and 0.25x hazard resistance.</power>
+		<power>Periodic Ability: Rapidly fills rooms with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
+	</powerList>
+</crewBlueprint>
 
 <crewBlueprint name="disparity_liberator">
 	<title>Liberator Drone</title>
@@ -18062,7 +18620,7 @@
 	<maxPower>4</maxPower>
 	<rarity>1</rarity>
 	<upgradeCost>
-		<level>55</level> <!-- level 2 -->
+		<level>65</level> <!-- level 2 -->
 		<level>9999</level> <!-- level 3 -->
 		<level>9999</level> <!-- level 4 -->
 	</upgradeCost>
@@ -18299,7 +18857,7 @@
 <shipBlueprint name="PLAYER_DEEP_ONE_CULTIST" layout="deeponecultistship" img="deeponecultistship">
 	<class>Enlightened Cruiser</class>
 	<name>Darkness' Lament</name>
-	<unlock>Defy fate, and become a beacon where the shadows fester greatest to unlock this ship... or, become that which drowns the light.</unlock>
+	<unlock>Defeat darkness' champions where its shadows fester greatest to unlock this ship.</unlock>
 	<desc>The Enlightened use their wicked Dread Lights in combination with self-defense drone/nano-bot technology to ward off boarders, whilst overwhelming enemy ships with their weapons of darkness... they claim all of the above are gifts from their Dark God.</desc>
 	<systemList>
 		<battery power="1" room="14" start="false" img="room_battery_11" />
@@ -18533,7 +19091,7 @@
 <shipBlueprint name="PLAYER_DDDEEP_ONE_CHOSEN" layout="dddeeponechosenship" img="dddeeponechosenship">
 	<class>Chosen Cruiser</class>
 	<name>Voracious Void</name>
-	<unlock>Overcome the impossible in the face of overwhelming evil and prove yourself worthy of devotion to unlock this ship.</unlock>
+	<unlock>Overcome an impossible trial while within a mysterious entity's harrowing domain to unlock this ship.</unlock>
 	<desc>Permitted to leave the Dark God's domain, its Chosen have been commanded to work in the Federation's name. This ship's shadows claw at your mind, promising endless power in exchange for unholy tribute...</desc>
 	<systemList>
 		<artillery max="4" power="1" room="13" start="true" weapon="DDARTILLERY_RAVAGING_VOID" img="ddroom_artillery_tome" />
@@ -18585,7 +19143,7 @@
 			</slot>
 		</shields>
 		<teleporter power="1" room="7" start="true" />
-		<weapons max="8" power="1" room="12" start="false" img="ddroom_weapons_1">
+		<weapons max="8" power="1" room="12" start="false" img="room_ddweapons_1">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -18661,7 +19219,7 @@
 		</shields>
 		<teleporter power="1" room="9" start="false" />
 		<dd_corruptor power="1" room="9" start="false" img="room_ddcorruptor_19" />
-		<weapons max="8" power="2" room="5" start="true" img="ddroom_weapons_2">
+		<weapons max="8" power="2" room="5" start="true" img="room_ddweapons_2">
 			<slot>
 				<direction>right</direction>
 				<number>3</number>
@@ -18761,7 +19319,7 @@
 <shipBlueprint name="PLAYER_DDSOULPLAGUE" layout="ddsoulplagueship" img="ddsoulplagueship">
 	<class>Soulplague Cruiser</class>
 	<name>Corruption</name>
-	<unlock>Venture into the belly of an unfathomable beast and discover what lies at its heart to unlock this ship.</unlock>
+	<unlock>Venture into the belly of an unfathomable beast and discover the truth of what lies at its heart to unlock this ship.</unlock>
 	<desc>Overtaken by the Soulplague mattervirus, the Children of the Stars are about as mindless as the Husks that surround them. Even so, something seems to beckon the crew of this ship to follow your command...</desc>
 	<systemList>
 		<battery power="1" room="7" start="false" img="room_battery_6" />
@@ -18792,7 +19350,7 @@
 		</medbay>
 		<mind power="1" room="3" start="false" img="room_mind_5" />
 		<oxygen power="1" room="6" start="true" img="room_oxygen_13" />
-		<pilot power="2" room="11" start="true" img="ddroom_pilot_tome">
+		<pilot power="2" room="11" start="true" img="room_ddpilot_tome">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -18812,7 +19370,7 @@
 		</shields>
 		<teleporter power="1" room="1" start="false" />
 		<dd_corruptor power="1" room="4" start="true" img="room_ddcorruptor_4" />
-		<weapons power="3" max="8" room="5" start="true" img="ddroom_weapons_3">
+		<weapons power="3" max="8" room="5" start="true" img="room_ddweapons_3">
 			<slot>
 				<direction>down</direction>
 				<number>2</number>
@@ -18868,7 +19426,7 @@
 		</medbay>
 		<mind power="1" room="5" start="false" img="room_mind_12" />
 		<oxygen power="1" room="3" start="true" img="room_oxygen_17" />
-		<pilot power="1" room="0" start="true" img="ddroom_pilot_tome">
+		<pilot power="1" room="0" start="true" img="room_ddpilot_tome">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -18944,7 +19502,7 @@
 		</medbay>
 		<mind power="1" room="7" start="true" img="room_mind_5" />
 		<oxygen power="1" room="2" start="false" img="room_oxygen_9" />
-		<pilot power="1" room="11" start="true" img="ddroom_pilot_tome">
+		<pilot power="1" room="11" start="true" img="room_ddpilot_tome">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -18989,7 +19547,7 @@
 <shipBlueprint name="PLAYER_DISPARITY" layout="disparityengiship" img="disparityengiship">
 	<class>Disparity Cruiser</class>
 	<name>Umbral Shimmer</name>
-	<unlock>Pick a side and fight in a divine war to unlock this ship... or, prove yourself to be the only victor.</unlock>
+	<unlock>Pick a side and fight in a divine war between two Engi factions to unlock this ship.</unlock>
 	<desc>Protected by a corrupted Crystalline armor, and with their shadow drones in hand, the Disparity are ready to liberate themselves from their chains.</desc>
 	<systemList>
 		<battery power="1" room="8" start="false" img="room_battery_9" />
@@ -19471,7 +20029,7 @@
 		</medbay>
 		<mind power="1" room="16" start="false" img="room_mind_4" />
 		<oxygen power="1" room="8" start="true" img="room_oxygen_9" />
-		<pilot power="1" room="7" start="true" img="ddroom_pilot_tome">
+		<pilot power="1" room="7" start="true" img="room_ddpilot_tome">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -19737,7 +20295,7 @@
 <shipBlueprint name="PLAYER_DDHORROR_SHIP" layout="ddhorror_ship" img="ddhorror_ship">
 	<class>Nightmare Cruiser</class>
 	<name>Together Evermore</name>
-	<unlock>Reach a realm far removed from our own and uncover the results of a horrific ritual to unlock this ship.</unlock>
+	<unlock>Follow a pair of lovers into a sea of madness and uncover the results of a horrific ritual to unlock this ship.</unlock>
 	<desc>She had mumbled, amidst tears, "I desire... to never be apart..." to which a voice boomed in reply, "TO... NEVER BE APART? MAY IT BE TRUE." Thus was it done.</desc>
 	<systemList>
 		<battery power="1" room="13" start="false" img="room_battery_ddhorror_1" />

@@ -2335,11 +2335,11 @@
         <event load="OPTION_INVALID"/>
     </choice>
 	<choice req="dd_corruptor" lvl="2" max_group="0" blue="false" hidden="true">
-        <text>Level 3 Corruptor [Cost: 65~, 6{]</text>
+        <text>Level 3 Corruptor [Cost: 80~, 4{]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3"/>
     </choice>
     <choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
-        <text>Level 4 Corruptor [Cost: 80~, 8{, 3}]</text>
+        <text>Level 4 Corruptor [Cost: 110~, 6{, 3}]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4"/>
     </choice>
 	<choice req="dd_corruptor" lvl="4" max_group="0" blue="false" hidden="true">
@@ -2472,13 +2472,13 @@
 	<text>You are about to upgrade the Corruptor to level 3.
 	[Effects: 16s infection, 5s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 65~, 6{]</text>
+		<text>Perform the upgrade. [Cost: 80~, 4{]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
 			<item_modify>
-				<item type="fuel" min="-6" max="-6"/>
-				<item type="scrap" min="-65" max="-65"/>
+				<item type="fuel" min="-4" max="-4"/>
+				<item type="scrap" min="-80" max="-80"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -2500,15 +2500,15 @@
 	<text>You are about to upgrade the Corruptor to level 4.
 	[Effects: 17s infection, 4s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 80~, 8{, 3}]</text>
+		<text>Perform the upgrade. [Cost: 110~, 6{, 3}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
 			<achievement>ACH_EVENT_DDCORRUPTORMAX</achievement>
 			<item_modify>
 				<item type="missiles" min="-3" max="-3"/>
-				<item type="fuel" min="-8" max="-8"/>
-				<item type="scrap" min="-80" max="-80"/>
+				<item type="fuel" min="-6" max="-6"/>
+				<item type="scrap" min="-110" max="-110"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -2547,6 +2547,7 @@
 
 <event name="STORAGE_CHECK_DARKGOD_CURSED_BOOK">
 	<text>Opening the book, its contents are separated into different colors. Rituals can only be performed while you're traveling at lightspeed, as they require a certain attunement to the Multiverse's dark energies. Here, though, you may investigate the rituals and figure out what they do.</text>
+	<playSound>ddbook_turn_page</playSound>
 	<choice hidden="true">
 		<text>Investigate the crimson red text, the Ascension Rituals.</text>
 		<event>
@@ -2870,15 +2871,26 @@
 		<text>Investigate the fuzzy brown text, the Hymns to Salvation.</text>
 		<event>
 			<text>Though you can't read the text, this section's diagrams showcase what appears to be plants of some kind. You'll need to find somebody who understands the text to perform its rituals.</text>
-			<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK">
-				<text>(Ill'drythk Statue) Have your Ill'drythk Statue transcribe the text.</text>
+			<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+				<text>(Ill'drythk Crew) Have your Ill'drythk crew member transcribe the text.</text>
 				<event>
-					<text>Your Ill'drythk Statue secretes a white substance over the relevant pages, which appears to transcribe them into a language you can understand. Looking at the pages now, you're able to comprehend their purpose: hunting down fellow Ill'drythk trees and claiming their Statues.</text>
+					<text>Your Ill'drythk crew member secretes a white substance over the relevant pages, which appears to transcribe them into a language you can understand. Looking at the pages now, you're able to comprehend their purpose: hunting down other Ill'drythk trees and claiming their power.</text>
 					<choice hidden="true">
 						<text>Investigate the Ritual of Rivalry.</text>
 						<event>
 							<text>RITUAL OF RIVALRY:
-							This ritual gives you the location of a Ill'drythk tree, which you can crew kill to subsume one of its Ill'drythk Statues into your own collective. Destroying the tree won't yield any special rewards.</text>
+							This ritual gives you the location of an Ill'drythk tree, which you can crew kill to subsume one of its Ill'drythk Statues into your own collective. Destroying the tree won't yield any special rewards.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Rebirth.</text>
+						<event>
+							<text>RITUAL OF REBIRTH:
+							This ritual gives you the location of an Ill'drythk tree, reaching the end of its life, which you can approach to subsume its Ill'drythk Caretakers into your own collective. Though the tree won't defend itself, it will be located at the heart of whatever unknown danger has led it to its untimely demise.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -3004,7 +3016,7 @@
 						<text>Investigate the Ritual of Soul Firing.</text>
 						<event>
 							<text>RITUAL OF SOUL FIRING:
-							This ritual gives you the location of a Shell ship, which you can weaken to allow the nearest Soulplague mass to subsume them into the Children of the Stars' collective. Doing so allows them to grant you a reward in return, in the form of a random Soulplague weapon. Completely destroying the ship or killing its crew will result in you failing the ritual, and not receiving any additional rewards.</text>
+							This ritual gives you the location of a Shell ship, which you can get to low hull health to allow the nearest Soulplague mass to subsume them into the Children of the Stars' collective. Doing so allows them to grant you a reward in return, in the form of a random Soulplague weapon. Completely destroying the ship or killing its crew will result in you failing the ritual, and not receiving any additional rewards.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>

@@ -231,6 +231,7 @@
 		<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 		<event>
 			<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -245,6 +246,7 @@
 		<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 		<event>
 			<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -280,6 +282,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -294,6 +297,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -326,6 +330,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -340,6 +345,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -372,6 +378,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -386,6 +393,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -423,6 +431,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -437,6 +446,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -474,6 +484,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -488,6 +499,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -525,6 +537,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -539,6 +552,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -576,6 +590,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -590,6 +605,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -627,6 +643,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -641,6 +658,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -678,6 +696,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -692,6 +711,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -729,6 +749,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -743,6 +764,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -780,6 +802,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -794,6 +817,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -831,6 +855,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -845,6 +870,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -877,6 +903,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -891,6 +918,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -923,6 +951,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -937,6 +966,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -974,6 +1004,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -988,6 +1019,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1025,6 +1057,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1039,6 +1072,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1076,6 +1110,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1090,6 +1125,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1127,6 +1163,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1141,6 +1178,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1178,6 +1216,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1192,6 +1231,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1229,6 +1269,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1243,6 +1284,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1280,6 +1322,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1294,6 +1337,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1331,6 +1375,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1345,6 +1390,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
 						<text>You cannot clone someone whose soul has been offered to the Dark God.</text>
@@ -1391,6 +1437,17 @@
 	</choice>
 </event>
 
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_REBIRTHPERFORMED">
+	<text>...and it morphs into a map, leading to the location of a dying Ill'drythk tree. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_REBIRTH"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<variable name="dd_illdrythkritualscompleted" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_MUTINOUSMUTATIONPERFORMED">
 	<text>...and it morphs into a map, leading to the location of an Ill'drythk Pale Heart. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_MUTINOUSMUTATION"/>
@@ -1420,6 +1477,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the horror's many gaping maws, and watch as it tears them apart...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Tempest.</text>
@@ -1434,6 +1492,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the horror's many gaping maws, their screams echoing throughout the room as you do so, and watch as it tears them apart...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Tempest.</text>
@@ -1501,6 +1560,7 @@
 		<event>
 			<text>You throw your human sacrifice into the Soulplague blob, and watch as it slowly consumes them...</text>
 			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>
@@ -1516,6 +1576,7 @@
 		<event>
 			<text>You throw your human crew member into the Soulplague blob, their screams echoing throughout the room as you do so, and watch as it slowly consumes them...</text>
 			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>
@@ -1586,6 +1647,7 @@
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_SOULPLAGUE_ASSAULT"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_WAVE_OF_CORRUPTION"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_TEMPESTUOUS_STORM"/>
+	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_CONTEMPTFUL_CONSTRUCT"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_ILLDRYTHK_INVASION"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_TIDE_OF_DARKNESS"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_HEAVENS_JUDGMENT"/>
@@ -1820,6 +1882,14 @@
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_HUNT_SEVENHUMANS"/>
 </eventList>
 
+<eventList name="DDRITUALS_QUESTS_LIST_REBIRTH">
+	<event load="DDRITUALS_QUESTS_LIST_REBIRTH_FIRERAIN"/>
+	<event load="DDRITUALS_QUESTS_LIST_REBIRTH_METEORSTORM"/>
+	<event load="DDRITUALS_QUESTS_LIST_REBIRTH_PIRATESTRIKE"/>
+	<event load="DDRITUALS_QUESTS_LIST_REBIRTH_DARKNESSDROWNING"/>
+	<event load="DDRITUALS_QUESTS_LIST_REBIRTH_MANTISION"/>
+</eventList>
+
 <eventList name="DDRITUALS_LIST_STORMCALLING">
 	<event load="DDRITUALS_LIST_STORMCALLING_SATED"/>
 	<event load="DDRITUALS_LIST_STORMCALLING_HUNGRY"/>
@@ -1907,7 +1977,7 @@
 	<text>As you're preparing for battle, alarms begin to blare throughout the ship... things just got more complicated.
 	
 	RITUAL SIDE EFFECT: FLASH OF CHAOS
-	A strange, runed obelisk appears within your ship... you'll want to destroy it before it unleashes too much madness!</text>
+	A strange, runed obelisk appears within your ship... it must be destroyed, before the ceaseless power it channels overwhelms you!</text>
 	<playSound>vanceShoot</playSound>
 	<boarders min="1" max="1" class="dddark_obelisk_enemy"/>
 	<choice hidden="true">
@@ -1988,6 +2058,20 @@
 	Eldritch lightning strikes your ship, and from its energy a Stormborn Spawn has been born!</text>
 	<playSound>ddultimalightningstrike</playSound>
 	<boarders min="1" max="1" class="ddtempest_stormborn_spawn_enemy"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+
+<event name="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_CONTEMPTFUL_CONSTRUCT">
+	<text>As you're preparing for battle, alarms begin to blare throughout the ship... things just got more complicated.
+	
+	RITUAL SIDE EFFECT: CONTEMPTFUL CONSTRUCT
+	The terrible, grating sound of a blade against metal blesses your ears as a Templar manifests aboard your ship, empowered by a dark Blessing of its own!</text>
+	<playSound>dddarktemplarability</playSound>
+	<boarders min="1" max="1" class="LIST_EVENT_DDDARKTEMPLAR_ATTACKS"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
@@ -7871,7 +7955,7 @@
 						<event>
 							<text>Your name is Axolokl, and you are a Dinosaurkin tasked with the reclamation of a crystal sacred to your people. The crystal is said to lie within the mythical Museum of Secrets, a building constructed and kept by the horrific Bird Demons to the south of your lands. After a long and arduous journey, you have finally arrived at the Museum's entrance.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Enter, with the upmost caution.</text>
 								<event>
@@ -7942,7 +8026,7 @@
 						<event>
 							<text>You have no name, but you know yourself to be a Defender of Earth, tasked with the reclamation of a rare crystal vital to keeping the planet safe. It's fallen into the hands of one of your mortal enemies, the Hexdroids, and you've infiltrated one of their bases, where it's rumored to be located... the Garden of Redemption. Now is the time to strike.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Begin searching for the crystal.</text>
 								<event>
@@ -8013,7 +8097,7 @@
 						<event>
 							<text>Your name is Charus, and you are a Bird Demon tasked by your God to steal a relic sacred to the primitive lizard people known as the Dinosaurkin. Your God has revealed to you the crystal's location: atop a temple deep in the Dinosaurkin's Jungles of Savagery. You lie at the Jungles' outskirts, ready to do what you must.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Enter the Jungles of Savagery.</text>
 								<event>
@@ -8084,7 +8168,7 @@
 						<event>
 							<text>Your name is Seegurd, and you are a human worker for an intergalactic mega-corporation. At the bottom of the corporate ladder, it's your job to go to previously abandoned planets and collect what you can... your higher-ups have informed you of a valuable crystal, located on a volcanic planet simply referred to as the Lakes of Rage. As dangerous as it sounds, you have little choice but to do as you're told... you arrive on the planet now, stepping out onto a field of obsidian.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Track the crystal's whereabouts.</text>
 								<event>
@@ -8155,7 +8239,7 @@
 						<event>
 							<text>Your name is Pete, a name so sweet! You seek the crystal, with but a pistol! This is our Nightmare of Nonsense!</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>I seek the crystal, with but a pistol!</text>
 								<event>
@@ -8226,7 +8310,7 @@
 						<event>
 							<text>Your name is Psyrus, and you are a scholar. You've been sentenced to life in prison in the Sea of Solitude, a non-literal sea of ice and snow surrounded by a very literal sea of ice and water. The crime for which you were sentenced, the murder of your wife, was not one you had committed. You know the true culprit... to bring them to justice, you need to get out of this prison, and you know just the way to do it.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Think over the plan.</text>
 								<event>
@@ -8297,7 +8381,7 @@
 						<event>
 							<text>You are Lilac, and you are the hero of this world, as dictated by fate. It is by your hands that the fabled crystal will be taken, and allow time to be restored. No longer will you have to live in the Plains of Perpetuity, but something greater...</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Am I really...?</text>
 								<event>
@@ -8368,7 +8452,7 @@
 						<event>
 							<text>Your name is Lucas, and you are a man of not occupation; but conviction. You carry with you, in a coffin, a piece of the corpse of a long-dead god, whose existence almost spelled the death of the entire Multiverse. With it, you seek to fell another god in this Graveyard of Dragons.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Wander through the Graveyard.</text>
 								<event>
@@ -8439,7 +8523,7 @@
 						<event>
 							<text>Your name is Entropy, and you are a god. You're on a path in the woods, in the Realm of Knighthood, and at the end of that path is a cabin... in the basement of that cabin is a crystal. You're here to grab it. If you don't, it will be the end of the world.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Continue down the path.</text>
 								<event>
@@ -8510,7 +8594,7 @@
 						<event>
 							<text>Your name is Theodore von Fireheart Senior, and you are the captain of the mightiest ship to sail the Sea of Rascals. It is within this Sea of Rascals, though, that the Trenches of Shadow lie... and it has been foretold to you by an oracle that they shall be your grave. You're sailing over them now, in transit to sell your most recent haul of treasure.</text>
 							<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
-							<playMusic>ddtracklightslament</playMusic>
+							<playMusic>ddharmoniousdissonance</playMusic>
 							<choice hidden="true">
 								<text>Keep sailing.</text>
 								<event>
@@ -8577,7 +8661,7 @@
 				<event>
 					<text>You are none. You are but part of many.</text>
 					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
-					<playMusic>ddtracklightslament</playMusic>
+					<playMusic>ddharmoniousdissonance</playMusic>
 					<choice hidden="true">
 						<text>I am none.</text>
 						<event>
@@ -8628,7 +8712,7 @@
 																									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 																									<playMusic/>
 																									<hiddenAug>DISPARITY_LEGENDARY_CRYSTAL</hiddenAug>
-																									<boarders min="4" max="4" class="ddseraph_engi_enemy"/>
+																									<boarders min="5" max="5" class="ddseraph_engi_enemy"/>
 																								</event>
 																							</choice>
 																						</event>
@@ -9477,6 +9561,73 @@
 	</choice>
 </event>
 
+<event name="DDRITUALS_QUESTS_LIST_REBIRTH_FIRERAIN">
+	<text>Before you can leave, though, a flash of light bursts through the sea of blackness outside as the nature of the Ill'drythk tree's death makes itself apparent... there's an entire star nearby, and you're dangerously close to it!</text>
+	<environment type="sun"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_REBIRTH_METEORSTORM">
+	<text>Before you can leave, though, a set of objects fly towards you, ultimately scratching your hull, as the nature of the Ill'drythk tree's death makes itself apparent... there's an entire field of asteroids here, and you're in the middle of it!</text>
+	<environment type="asteroid"/>
+	<damage amount="0" system="random" effect="breach"/>
+	<damage amount="0" system="random" effect="breach"/>
+	<damage amount="0" system="random" effect="breach"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_REBIRTH_PIRATESTRIKE">
+	<text>Before you can leave, though, a projectile whizzes past your ship as the nature of the Ill'drythk tree's death makes itself apparent... there's a pirate outpost-planet, armed to the teeth, in the sea of blackness outside, and they seem intent on destroying you next! The planet's many cannons open fire, and alarms blare as a group of boarders force their way onboard.</text>
+	<environment type="PDS" target="player"/>
+	<boarders min="3" max="5" class="LIST_CREW_PIRATE_RANDOM"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_REBIRTH_DARKNESSDROWNING">
+	<text>Before you can leave, though, there's a groaning from the hull as the nature of the Ill'drythk tree's death makes itself apparent... the darkness outside is hungry, and hostile! Some of it seeps through your hull, and into your ship...</text>
+	<boarders min="5" max="7" class="darkgodtendrils"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_REBIRTH_MANTISION">
+	<text>Before you can leave, though, you realize your systems are unresponsive as the nature of the Ill'drythk tree's death makes itself apparent... the sea of blackness dissipates as a pulsar makes itself seen. That's not all; a band of opportunistic Mantis appear to have been patiently for their chance to strike! As they board, one of them shouts, "Fleshy bits make power bits! Find flesh-bags, keep live for Darking One!" It would seem they're here in search of sacrifices... small Multiverse, huh?</text>
+	<environment type="pulsar"/>
+	<boarders min="3" max="5" class="mantis"/>
+</event>
+
+<event name="DDRITUALS_QUESTS_REBIRTH">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>Within the clouds of darkness outside, you quickly spot what little remains of the Ill'drythk tree you came here to find. Though there's no sign of its destructor, you know to be on your guard as you move in to examine the tree.</text>
+			<choice hidden="true">
+				<text>Search the tree's remains for signs of life.</text>
+				<event>
+					<text>Though the integrity of its bark has been entirely compromised, you spot a wriggling mass amidst the rubble. It seems the tree's Ill'drythk Caretakers have, indeed, survived... at your approach, a faint hum rings throughout the air, and the shaggy things propel themselves towards your ship. First, one...</text>
+					<crewMember amount="1" class="ddilldrythk_caretaker"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...and then, the other. Having made their way inside the ship, they seem perfectly content mindlessly roaming around, crawling from room to room. Though you don't fully grasp the nature of Ill'drythk trees, their Caretakers, or their Statues, you suppose they'll do anything to succeed each other and survive; a behavior you're more than willing to take advantage of.</text>
+							<crewMember amount="1" class="ddilldrythk_caretaker"/>
+							<choice hidden="true">
+								<text>That's it, then. Let's get out of here.</text>
+								<event load="DDRITUALS_QUESTS_LIST_REBIRTH"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <ship name="DDRITUALS_QUESTS_MUTINOUSMUTATION_FIGHT" auto_blueprint="DDILLDRYTHK_THE_PALE_HEART">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
@@ -9571,6 +9722,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the horror's many gaping maws, and watch as it tears them apart...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Tempest.</text>
@@ -9585,6 +9737,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the horror's many gaping maws, their screams echoing throughout the room as you do so, and watch as it tears them apart...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Tempest.</text>
@@ -14362,6 +14515,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the Soulplague blob, and watch as it slowly consumes them...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>
@@ -14376,6 +14530,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the Soulplague blob, their screams echoing throughout the room as you do so, and watch as it slowly consumes them...</text>
+			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been subsumed by the Soulplague mattervirus.</text>

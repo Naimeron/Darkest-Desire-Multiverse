@@ -170,10 +170,26 @@ Nothing is immune.</tooltip>
 		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
+	<mod-append:customShip name="DDILLDRYTHK_PUFFBALL">
+		<crew>
+			<ddilldrythk_caretaker room="0"/>
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+	<mod-append:customShip name="DDILLDRYTHK_NEST">
+		<crew>
+			<ddilldrythk_caretaker room="3"/>
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
 	<mod-append:customShip name="DDILLDRYTHK_THE_PALE_HEART">
 		<shipIcons>
+			<shipIcon>icon_zoltan_shield</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
 		</shipIcons>
+		<crew>
+			<ddilldrythk_caretaker room="1"/>
+		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DREADNOUGHT_OF_DARKNESS">
@@ -1644,7 +1660,6 @@ Nothing is immune.</tooltip>
 	<mod-append:customShip name="DDHEROINE_VILLAINSLAYER">
 		<shipIcons>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
-			<shipIcon>icon_deep_one_lights</shipIcon>
 			<shipIcon>icon_majorthreat</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -3566,9 +3581,10 @@ Nothing is immune.</tooltip>
 	<mod-append:customShip name="PLAYER_DDHORROR_SHIP_2">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DDHORROR</hiddenAug>
-		<crewLimit>6</crewLimit>
+		<crewLimit>12</crewLimit>
 		<crew>
-			<ddilldrythk_statue room="1"/>
+			<ddilldrythk_statue room="12"/>
+			<ddilldrythk_caretaker room="1"/>
 			<ddhuman_sacrifice room="0"/>
 		</crew>
 		<rooms>
@@ -3637,7 +3653,7 @@ Nothing is immune.</tooltip>
 	<mod-append:customShip name="PLAYER_DDHORROR_SHIP_3">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DDHORROR</hiddenAug>
-		<crewLimit>5</crewLimit>
+		<crewLimit>6</crewLimit>
 		<crew>
 			<ddultimaarmor room="0" name="Ultima Armor"/>
 			<ddtempest_spawn_warden room="12"/>
@@ -4871,8 +4887,8 @@ Nothing is immune.</tooltip>
 				<powerSound>ghostDeath</powerSound>
 			</powerSounds>
 			<jumpCooldown>full</jumpCooldown>
-			<req type="enemy">
-				<enemyShip/>
+			<req type="enemy">      
+				<aiDisabled/>
 			</req>
 			<buttonText>ASCEND</buttonText>
 			<tooltip>[COOLDOWN:120s  DURATION:21s]
@@ -5777,6 +5793,7 @@ Nothing is immune.</tooltip>
 		<maxHealth>100</maxHealth>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
+		<resistsMindControl>true</resistsMindControl>
 		<repairSpeed>0.2</repairSpeed>
 		<damageMultiplier>0.2</damageMultiplier>
 		<sabotageSpeedMultiplier>0.2</sabotageSpeedMultiplier>
@@ -5935,6 +5952,7 @@ Nothing is immune.</tooltip>
 		<maxHealth>100</maxHealth>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
+		<resistsMindControl>true</resistsMindControl>
 		<repairSpeed>0.2</repairSpeed>
 		<damageMultiplier>0.2</damageMultiplier>
 		<sabotageSpeedMultiplier>0.2</sabotageSpeedMultiplier>
@@ -36420,7 +36438,6 @@ Nothing is immune.</tooltip>
 		<canBurn>false</canBurn>
 		<stunMultiplier>0</stunMultiplier>
 		<healSpeed>0</healSpeed>
-		<damageTakenMultiplier>2.0</damageTakenMultiplier>
 		<controllable>false</controllable>
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
@@ -36545,9 +36562,7 @@ Nothing is immune.</tooltip>
 		<canBurn>false</canBurn>
 		<stunMultiplier>0</stunMultiplier>
 		<healSpeed>0</healSpeed>
-		<damageTakenMultiplier>2.0</damageTakenMultiplier>
 		<controllable>false</controllable>
-		<noSlot>true</noSlot>
 		<noClone>true</noClone>
 		<canFight>false</canFight>
 		<canMove>false</canMove>
@@ -37748,6 +37763,105 @@ Nothing is immune.</tooltip>
 					<priority>10001</priority>
 					<whiteList load="LIST_CREW_DDDARKTEMPLAR_STUFF_YEAH"/>
 					<boostAnim>ddenlightened_darktemplar_dawn_buff</boostAnim>
+				</statBoost>
+			</roomStatBoosts>
+		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddilldrythk_caretaker">
+		<maxHealth>70</maxHealth>
+		<noWarning>true</noWarning>
+		<repairSpeed>1.5</repairSpeed>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<suffocationModifier>0.25</suffocationModifier>
+		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<passiveHealAmount>2.1</passiveHealAmount>
+		<passiveHealDelay>2</passiveHealDelay>
+		<resistsMindControl>true</resistsMindControl>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canPunch>false</canPunch>
+		<canShoot>false</canShoot>
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>blobDeath</deathSound>
+		</deathSounds>
+		<repairSounds>
+		  <repairSound>shrikeRepair</repairSound>
+		</repairSounds>
+		<powerEffect>
+			<cooldown>1</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<buttonText>FOG</buttonText>
+			<tooltip>[COOLDOWN:1s DURATION:6s]
+				Clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present.</tooltip>
+			<cooldownColor r="223" g="223" b="223"/>
+			<activateWhenReady>true</activateWhenReady>
+			<roomStatBoosts>
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>true</affectsSelf>
+					<droneTarget>CREW</droneTarget>
+					<duration>6</duration>
+					<maxStacks>1</maxStacks>
+					<priority>10001</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+					<roomAnim renderLayer="3">
+						<anim animType="default" animBorder="1">ddilldrythk_fog_effect</anim>
+						<wallAnim>ddilldrythk_fog_effect</wallAnim>
+						<tileAnim>ddilldrythk_fog_effect</tileAnim>
+					</roomAnim>
+				</statBoost>
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>true</affectsSelf>
+					<droneTarget>CREW</droneTarget>
+					<duration>6</duration>
+					<maxStacks>1</maxStacks>
+					<priority>10001</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>true</affectsSelf>
+					<droneTarget>CREW</droneTarget>
+					<duration>6</duration>
+					<maxStacks>1</maxStacks>
+					<priority>10001</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>true</affectsSelf>
+					<droneTarget>CREW</droneTarget>
+					<duration>6</duration>
+					<maxStacks>1</maxStacks>
+					<priority>10001</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<statBoost name="canMove">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>true</affectsSelf>
+					<droneTarget>CREW</droneTarget>
+					<duration>6</duration>
+					<maxStacks>1</maxStacks>
+					<priority>10001</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 			</roomStatBoosts>
 		</powerEffect>

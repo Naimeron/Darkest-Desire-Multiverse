@@ -4417,9 +4417,45 @@
 	</deadCrew>
 </ship>
 
+<event name="DDCOREMASS_EXIT_NOTALLHOPEISLOST">
+	<text>As the battle draws on, you're expecting the Coremass to strike at your ship... but, instead, you hear faint whispers at the edge of your mind once more:
+	
+	"...no... no more suffering..."
+	"...thhhhis madness... ends here..."
+	"...even if i... must die withhh it..."
+	
+	Outside, the Coremass' heart glows brighter, and its monstrous, innumerable tentacles are halted in their approach as they're wracked by violent spasms...</text>
+	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...before they seem to be possessed by a new conviction, focusing their ire upon the Soulplague Devourer!</text>
+			<superBarrage player="true" name="DDSOULPLAGUE_HAZARD_STRIKE_ALLY"/>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
+				<triggeredEventBox load="DEFAULT_TIMER">
+					<warning time="5.0" flash="true"/>
+					<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
+				</triggeredEventBox>
+			</triggeredEvent>
+			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
+				<layer z="2">background</layer>
+				<spawnArea x="660" y="127" w="0" h="0"/>
+				<anim>danger_ddsoulplague_allies</anim>
+				<tooltip>You're not sure why, but the Coremass seems to have turned on the Soulplague Devourer and is periodically assaulting it!</tooltip>
+			</backgroundObject>
+			<choice>
+				<text>Everyone; keep up the pressure! We can do this!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <event name="DDCOREMASS_EXIT_FIGHT_THEDEVOURER_WIN">
 	<text>With its guardian defeated, the heart lays exposed... all that's left is to finish this.</text>
 	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
+	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY"/>
 	<playMusic/>
 	<achievement>ACH_EVENT_DDDEVOURER</achievement>
 	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
@@ -4435,8 +4471,8 @@
 					<text>She motions for you to follow her, and proceeds to lead you back to the cockpit. The view of the light outside is still so wonderful... you feel as it whispers to you again:
 					
 					"...you've done it... you've won?"
-					"...i... didn't thhhhink it possible..."
-					"...is thhhhis... thhhhe end...?"
+					"...i wasn't... sure it was possible..."
+					"...is thhhhis truly... thhhhe end...?"
 					
 					The armored woman looks at you, distraction apparent on your face, and tilts her head, "Is something the matter? If not, I believe it to be time we end this. With its guardian defeated, all it takes is one powerful strike to destroy the heart, and end this nightmare once and for all... fret not! I can do it safely, from here. Such is the power of a hero's hope..."</text>
 					<playSound>ddaberrationheartbeat</playSound>
@@ -4634,8 +4670,8 @@
 			<text>With a heavy heart yourself, you turn back to face the Coremass' heart. The view of the light outside is still so wonderful... you feel as it whispers to you again:
 			
 			"...you've done it... you've won?"
-			"...i... didn't thhhhink it possible..."
-			"...is thhhhis... thhhhe end...?"
+			"...i wasn't... sure it was possible..."
+			"...is thhhhis truly... thhhhe end...?"
 			
 			Is it trying to lure you in, even now? If it truly is speaking to you, there should be a way to reveal its true intentions beyond a shadow of a doubt...</text>
 			<playSound>ddaberrationheartbeat</playSound>
@@ -4959,8 +4995,8 @@
 		<event>
 			<text>You travel a bit further, in search of the heart, and then notice something far off in the distance - the source of the Coremass' light, a beacon of multi-colored splendor most resplendent. Its visage is beautiful, almost ethereal, and you find yourself lost in awe as it whispers to you:
 			
-			"...run... quickly!"
-			"...thhhhe devourer... hunts for you!"
+			"...this place... isn't safe..."
+			"...it's... hunting for you..."
 			"...you must... leave, before it's too late!"</text>
 			<playSound>ddaberrationheartbeat</playSound>
 			<choice hidden="true">
@@ -4978,7 +5014,7 @@
 							
 							Your death... is this the end?</text>
 							<ship load="DDCOREMASS_EXIT_FIGHT_THEDEVOURER" hostile="true"/>
-							<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
+							<triggeredEvent event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" thisFight="true" minTime="14.0" maxTime="14.0">
 								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
 								<triggeredEventBox load="DEFAULT_TIMER">
 									<warning time="5.0" flash="true"/>

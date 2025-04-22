@@ -30,9 +30,11 @@
 	<text>The Rebellion should be here, but... instead, the darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
 	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+	<status type="limit" target="player" system="hacking" amount="0"/>
+	<boarders min="3" max="6" class="darkgodtendrils"/>
 	<choice hidden="true">
-		<text>Continue...</text>
-		<event load="COMBAT_CHECK"/>
+		<text>Get ready!</text>
+		<event/>
 	</choice>
 </event>
 

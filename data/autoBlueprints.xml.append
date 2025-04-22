@@ -627,9 +627,9 @@
 </blueprintList>
 
 <blueprintList name="LIST_EVENT_DDDARKTEMPLAR_ATTACKS">
-	<name>ddenlightened_darktemplar_tierthree_abyss</name>
-	<name>ddenlightened_darktemplar_tierthree_stars</name>
-	<name>ddenlightened_darktemplar_tierthree_mire</name>
+	<name>ddenlightened_darktemplar_tiertwo_abyss</name>
+	<name>ddenlightened_darktemplar_tiertwo_stars</name>
+	<name>ddenlightened_darktemplar_tiertwo_mire</name>
 </blueprintList>
 
 <blueprintList name="LIST_DRONES_DDDARKTEMPLAR_UNSEEN">
@@ -1549,6 +1549,9 @@
 	<name>ddtempest_stormborn_spawn</name>
 	<name>deepone</name>
 	<name>dddeepone_chosen</name>
+	<name>ddenlightened_darktemplar_tierone_abyss</name>
+	<name>ddenlightened_darktemplar_tierone_stars</name>
+	<name>ddenlightened_darktemplar_tierone_mire</name>
 	<name>disparity_engiattack</name>
 	<name>disparity_engispeed</name>
 	<name>ddseraph_engi</name>
@@ -1570,6 +1573,9 @@
 	<name>ddtempest_stormborn_spawn_enemy</name>
 	<name>deepone</name>
 	<name>dddeepone_chosen</name>
+	<name>ddenlightened_darktemplar_tierone_abyss</name>
+	<name>ddenlightened_darktemplar_tierone_stars</name>
+	<name>ddenlightened_darktemplar_tierone_mire</name>
 	<name>disparity_engiattack</name>
 	<name>disparity_engispeed</name>
 	<name>ddseraph_engi_enemy</name>
@@ -1585,6 +1591,17 @@
 	<name>ddilldrythk_statue_leafhost</name>
 	<name>ddilldrythk_statue_toxblood</name>
 	<name>ddilldrythk_statue_voidroot</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+	<name>ddilldrythk_statue</name>
+	<name>ddilldrythk_statue_cinderbark</name>
+	<name>ddilldrythk_statue_frostwood</name>
+	<name>ddilldrythk_statue_ironbound</name>
+	<name>ddilldrythk_statue_leafhost</name>
+	<name>ddilldrythk_statue_toxblood</name>
+	<name>ddilldrythk_statue_voidroot</name>
+	<name>ddilldrythk_caretaker</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDSOULPLAGUE_HUSKS_ALL">
@@ -2543,6 +2560,7 @@
 	<health amount="90" />
 	<maxPower amount="0" />
 	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_ASSAULT" layout="disparity_engi_assault" img="disparity_engi_assault">
 	<class>Disparity Assault</class>
@@ -2821,8 +2839,8 @@
 	<crewCount amount="1" max="1" class="disparity_engidefault" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSERAPH_RADIANT_FLAMES" />
-	<aug name="UPG_MEDBAY_NANO" />
 	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_ENGI_JUDICATOR" layout="ddseraph_engi_judicator" img="ddseraph_engi_judicator">
 	<class>Seraphim Judicator</class>
@@ -2853,6 +2871,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSERAPH_RADIANT_FLAMES" />
 	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="KYR_AND_LILITH_SHIP" layout="kyr_and_lilith_ship" img="kyr_and_lilith_ship">
 	<class>Civilian Ship</class>
@@ -2889,6 +2908,7 @@
 	<health amount="55" />
 	<maxPower amount="10" />
 	<boardingAI>invasion</boardingAI>
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_PUFFBALL" layout="ddilldrythk_puffball" img="ddilldrythk_puffball">
 	<class>Ill'drythk Puffball</class>
@@ -2905,6 +2925,7 @@
 	<maxPower amount="7" />
 	<crewCount amount="2" max="2" class="ddilldrythk_statue" />
 	<boardingAI>invasion</boardingAI>
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_NEST" layout="ddilldrythk_nest" img="ddilldrythk_nest">
 	<class>Ill'drythk Nest</class>
@@ -2921,6 +2942,7 @@
 	<maxPower amount="7" />
 	<crewCount amount="2" max="3" class="ddilldrythk_statue" />
 	<boardingAI>invasion</boardingAI>
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDILLDRYTHK_THE_PALE_HEART" layout="ddilldrythk_the_pale_heart" img="ddilldrythk_the_pale_heart">
 	<class>The Pale Heart</class>
@@ -2929,6 +2951,7 @@
 		<mind power="1" max="2" room="1" start="false" />
 		<oxygen power="1" max="2" room="4" start="true" />
 		<teleporter power="1" max="3" room="8" start="true" />
+		<shields power="2" max="10" room="7" start="true" />
 	</systemList>
 	<weaponSlots>0</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -2938,6 +2961,8 @@
 	<maxPower amount="12" />
 	<crewCount amount="4" max="5" class="LIST_DDCREW_ILLDRYTHK" />
 	<boardingAI>invasion</boardingAI>
+	<aug name="DDPALE_HEART" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ROCK_ENFORCER" layout="ddtempest_rock_enforcer" img="ddtempest_rock_enforcer">
 	<class>Tempest Enforcer</class>
@@ -3150,13 +3175,14 @@
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
 	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_HUNTER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
 	<class>Soulplague Hunter</class>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="5" start="true" />
-		<dd_corruptor power="1" max="2" room="6" start="false" />
+		<dd_corruptor power="1" max="2" room="6" start="true" />
 		<oxygen power="1" max="2" room="4" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="1" start="true" />
@@ -3172,6 +3198,7 @@
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
 	<class>Soulplague Juggernaut</class>
@@ -3179,12 +3206,12 @@
 		<clonebay power="1" max="3" room="3" start="true" />
 		<doors power="1" max="2" room="9" start="false" />
 		<engines power="1" max="1" room="11" start="true" />
-		<dd_corruptor power="1" max="1" room="0" start="false" />
+		<dd_corruptor power="1" max="1" room="0" start="true" />
 		<mind power="1" max="1" room="10" start="false" />
 		<oxygen power="1" max="2" room="1" start="true" />
 		<pilot power="1" max="2" room="4" start="true" />
 		<shields power="2" max="10" room="5" start="true" />
-		<teleporter power="1" max="2" room="2" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
 		<weapons power="2" max="8" room="6" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3196,14 +3223,15 @@
 	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_STALKER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
 	<class>Soulplague Stalker</class>
 	<systemList>
-		<cloaking power="1" max="2" room="8" start="true" />
+		<cloaking power="1" max="2" room="8" start="false" />
 		<clonebay power="1" max="2" room="0" start="true" />
 		<engines power="1" max="2" room="2" start="true" />
-		<dd_corruptor power="1" max="1" room="5" start="false" />
+		<dd_corruptor power="1" max="1" room="5" start="true" />
 		<oxygen power="1" max="2" room="4" start="true" />
 		<pilot power="1" max="2" room="6" start="true" />
 		<shields power="2" max="10" room="3" start="true" />
@@ -3219,13 +3247,14 @@
 	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_SCAVENGER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
 	<class>Soulplague Scavenger</class>
 	<systemList>
 		<engines power="1" max="3" room="4" start="true" />
 		<medbay power="1" max="3" room="3" start="true" />
-		<dd_corruptor power="1" max="3" room="1" start="false" />
+		<dd_corruptor power="1" max="3" room="1" start="true" />
 		<oxygen power="1" max="2" room="2" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="5" start="true" />
@@ -3240,6 +3269,7 @@
 	<crewCount amount="1" max="2" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_PROWLER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
 	<class>Soulplague Prowler</class>
@@ -3250,7 +3280,7 @@
 		<oxygen power="1" max="2" room="6" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="1" start="true" />
-		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<dd_corruptor power="1" max="2" room="5" start="true" />
 		<weapons power="2" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3262,6 +3292,7 @@
 	<crewCount amount="1" max="3" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_INCUBATOR" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
 	<class>Soulplague Incubator</class>
@@ -3270,7 +3301,7 @@
 		<drones power="1" max="7" room="8" start="true" />
 		<engines power="1" max="1" room="4" start="true" />
 		<medbay power="1" max="2" room="1" start="true" />
-		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<dd_corruptor power="1" max="2" room="7" start="true" />
 		<oxygen power="1" max="2" room="5" start="true" />
 		<pilot power="1" max="2" room="0" start="true" />
 		<shields power="2" max="10" room="6" start="true" />
@@ -3285,13 +3316,14 @@
 	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_HUNTER_HUSKWEAVER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
 	<class>Soulplague Hunter</class>
 	<systemList>
 		<clonebay power="1" max="2" room="3" start="true" />
 		<engines power="1" max="3" room="5" start="true" />
-		<dd_corruptor power="1" max="2" room="6" start="false" />
+		<dd_corruptor power="1" max="2" room="6" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="1" start="true" />
 		<teleporter power="1" max="2" room="7" start="false" />
@@ -3306,6 +3338,7 @@
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER" layout="ddsoulplague_juggernaut" img="ddsoulplague_juggernaut">
 	<class>Soulplague Juggernaut</class>
@@ -3313,11 +3346,11 @@
 		<clonebay power="1" max="3" room="3" start="true" />
 		<doors power="1" max="2" room="9" start="false" />
 		<engines power="1" max="1" room="11" start="true" />
-		<dd_corruptor power="1" max="1" room="0" start="false" />
+		<dd_corruptor power="1" max="1" room="0" start="true" />
 		<mind power="1" max="1" room="10" start="false" />
 		<pilot power="1" max="2" room="4" start="true" />
 		<shields power="2" max="10" room="5" start="true" />
-		<teleporter power="1" max="2" room="2" start="true" />
+		<teleporter power="1" max="2" room="2" start="false" />
 		<weapons power="2" max="8" room="6" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3329,14 +3362,15 @@
 	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_STALKER_HUSKWEAVER" layout="ddsoulplague_stalker" img="ddsoulplague_stalker">
 	<class>Soulplague Stalker</class>
 	<systemList>
-		<cloaking power="1" max="2" room="8" start="true" />
+		<cloaking power="1" max="2" room="8" start="false" />
 		<clonebay power="1" max="2" room="0" start="true" />
 		<engines power="1" max="2" room="2" start="true" />
-		<dd_corruptor power="1" max="1" room="5" start="false" />
+		<dd_corruptor power="1" max="1" room="5" start="true" />
 		<pilot power="1" max="2" room="6" start="true" />
 		<shields power="2" max="10" room="3" start="true" />
 		<teleporter power="1" max="1" room="1" start="false" />
@@ -3351,13 +3385,14 @@
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_SCAVENGER_HUSKWEAVER" layout="ddsoulplague_scavenger" img="ddsoulplague_scavenger">
 	<class>Soulplague Scavenger</class>
 	<systemList>
 		<engines power="1" max="3" room="4" start="true" />
 		<medbay power="1" max="3" room="3" start="true" />
-		<dd_corruptor power="1" max="3" room="1" start="false" />
+		<dd_corruptor power="1" max="3" room="1" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="5" start="true" />
 		<weapons power="2" max="8" room="6" start="true" />
@@ -3371,6 +3406,7 @@
 	<crewCount amount="3" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_PROWLER_HUSKWEAVER" layout="ddsoulplague_prowler" img="ddsoulplague_prowler">
 	<class>Soulplague Prowler</class>
@@ -3380,7 +3416,7 @@
 		<hacking power="1" max="2" room="2" start="false" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="1" start="true" />
-		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<dd_corruptor power="1" max="2" room="5" start="true" />
 		<weapons power="2" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3392,6 +3428,7 @@
 	<crewCount amount="2" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_INCUBATOR_HUSKWEAVER" layout="ddsoulplague_incubator" img="ddsoulplague_incubator">
 	<class>Soulplague Incubator</class>
@@ -3400,7 +3437,7 @@
 		<drones power="1" max="7" room="8" start="true" />
 		<engines power="1" max="1" room="4" start="true" />
 		<medbay power="1" max="2" room="1" start="true" />
-		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<dd_corruptor power="1" max="2" room="7" start="true" />
 		<pilot power="1" max="2" room="0" start="true" />
 		<shields power="2" max="10" room="6" start="true" />
 		<weapons power="1" max="6" room="2" start="true" />
@@ -3414,6 +3451,7 @@
 	<crewCount amount="3" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_TRANSPORT" layout="ddsoulplague_transport" img="ddsoulplague_transport">
 	<class>Soulplague Transport</class>
@@ -3425,7 +3463,7 @@
 		<oxygen power="1" max="2" room="10" start="true" />
 		<pilot power="1" max="3" room="1" start="true" />
 		<shields power="2" max="10" room="3" start="true" />
-		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<dd_corruptor power="1" max="2" room="5" start="true" />
 		<weapons power="2" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3437,19 +3475,20 @@
 	<crewCount amount="2" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_DEVOURER" layout="ddsoulplague_devourer" img="ddsoulplague_devourer">
 	<class>Soulplague Devourer</class>
 	<systemList>
 		<doors power="2" max="3" room="3" start="true" />
 		<engines power="2" max="2" room="12" start="true" />
-		<dd_corruptor power="1" max="2" room="5" start="true" />
-		<clonebay power="1" max="3" room="10" start="true" />
+		<dd_corruptor power="2" max="2" room="5" start="true" />
+		<clonebay power="1" max="2" room="10" start="true" />
 		<mind power="1" max="2" room="4" start="true" />
 		<oxygen power="1" max="2" room="13" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="2" room="2" start="true" />
 		<shields power="2" max="10" room="17" start="true" />
-		<teleporter power="3" max="3" room="11" start="true" />
+		<teleporter power="1" max="2" room="11" start="true" />
 		<weapons power="4" max="6" room="16" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -3461,11 +3500,12 @@
 		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
 	</weaponList>
 	<droneList drones="6" count="0" />
-	<health amount="16" />
+	<health amount="21" />
 	<maxPower amount="35" />
 	<crewCount amount="4" max="8" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDHEROINE_VILLAINSLAYER" layout="ddheroine_villainslayer" img="ddheroine_villainslayer">
 	<class>Hope's Retort</class>
@@ -3474,7 +3514,7 @@
 		<doors power="2" max="3" room="4" start="true" />
 		<drones power="6" max="6" room="8" start="true" />
 		<engines power="3" max="3" room="7" start="true" />
-		<dd_corruptor power="1" max="3" room="9" start="true" />
+		<dd_corruptor power="3" max="3" room="9" start="true" />
 		<medbay power="1" max="3" room="0" start="true" />
 		<oxygen power="2" max="3" room="13" start="true" />
 		<pilot power="2" max="3" room="3" start="true" />
@@ -3501,9 +3541,9 @@
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="ddsoulplague_husk_deepone_enemy" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="DEEPONE_LIGHTS" />
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
 	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_SHELL_PROPHET" layout="ddseraph_shell_prophet" img="ddseraph_shell_prophet">
 	<class>Seraphim Prophet</class>
@@ -3933,7 +3973,7 @@
 	<class>Union Carryship</class>
 	<minSector>3</minSector>
 	<systemList>
-		<dd_corruptor power="1" max="3" room="11" start="false" />
+		<dd_corruptor power="1" max="3" room="11" start="true" />
 		<engines power="1" max="2" room="1" start="true" />
 		<medbay power="1" max="3" room="2" start="false" />
 		<oxygen power="1" max="1" room="8" start="true" />
@@ -3956,7 +3996,7 @@
 	<class>Federation Destroyer</class>
 	<minSector>3</minSector>
 	<systemList>
-		<dd_corruptor power="1" max="3" room="7" start="false" />
+		<dd_corruptor power="1" max="3" room="7" start="true" />
 		<engines power="1" max="2" room="1" start="true" />
 		<medbay power="1" max="2" room="6" start="false" />
 		<oxygen power="1" max="3" room="3" start="true" />
@@ -3977,7 +4017,7 @@
 <shipBlueprint name="MU_ZOLTAN_ENFORCER_DDSOULPLAGUE_CORRUPTION" layout="mu_zoltan_enforcer" img="mu_zoltan_enforcer">
 	<class>Ministry Enforcer</class>
 	<systemList>
-		<dd_corruptor power="1" max="3" room="8" start="false" />
+		<dd_corruptor power="1" max="3" room="8" start="true" />
 		<engines power="1" max="1" room="6" start="true" />
 		<medbay power="1" max="3" room="4" start="false" />
 		<mind power="1" max="3" room="0" start="false" />
@@ -4001,7 +4041,7 @@
 	<class>Confederate Bomber</class>
 	<minSector>3</minSector>
 	<systemList>
-		<dd_corruptor power="1" max="2" room="5" start="false" />
+		<dd_corruptor power="1" max="2" room="5" start="true" />
 		<drones power="2" max="6" room="4" start="true" />
 		<engines power="1" max="2" room="1" start="true" />
 		<medbay power="1" max="3" room="7" start="false" />
@@ -4025,7 +4065,7 @@
 	<class>Free Mantis Fighter</class>
 	<systemList>
 		<engines power="1" max="2" room="1" start="true" />
-		<dd_corruptor power="1" max="2" room="2" start="false" />
+		<dd_corruptor power="1" max="2" room="2" start="true" />
 		<oxygen power="1" max="2" room="3" start="true" />
 		<pilot power="1" max="3" room="0" start="true" />
 		<shields power="2" max="8" room="8" start="true" />
@@ -4046,7 +4086,7 @@
 <shipBlueprint name="MU_SHELL_ABDUCTOR_DDSOULPLAGUE_CORRUPTION" layout="mu_shell_abductor" img="mu_shell_abductor">
 	<class>Geniocracy Abductor</class>
 	<systemList>
-		<dd_corruptor power="1" max="2" room="0" start="false" />
+		<dd_corruptor power="1" max="2" room="0" start="true" />
 		<clonebay power="1" max="3" room="2" start="false" />
 		<doors power="2" max="3" room="1" start="false" />
 		<engines power="1" max="1" room="4" start="true" />
@@ -4072,7 +4112,7 @@
 	<class>Geniocracy Militant Skirmisher</class>
 	<systemList>
 		<clonebay power="1" max="3" room="3" start="false" />
-		<dd_corruptor power="2" max="3" room="0" start="false" />
+		<dd_corruptor power="2" max="3" room="0" start="true" />
 		<engines power="1" max="1" room="6" start="true" />
 		<mind power="1" max="1" room="5" start="false" />
 		<oxygen power="2" max="3" room="2" start="true" />
@@ -4096,7 +4136,7 @@
 	<systemList>
 		<engines power="1" max="1" room="9" start="true" />
 		<clonebay power="1" max="3" room="10" start="false" />
-		<dd_corruptor power="1" max="2" room="4" start="false" />
+		<dd_corruptor power="1" max="2" room="4" start="true" />
 		<oxygen power="2" max="3" room="7" start="true" />
 		<pilot power="1" max="2" room="0" start="true" />
 		<shields power="3" max="10" room="3" start="true" />
@@ -4118,7 +4158,7 @@
 	<systemList>
 		<engines power="1" max="1" room="5" start="true" />
 		<medbay power="1" max="2" room="3" start="false" />
-		<dd_corruptor power="1" max="2" room="2" start="false" />
+		<dd_corruptor power="1" max="2" room="2" start="true" />
 		<pilot power="1" max="3" room="0" start="true" />
 		<shields power="2" max="7" room="6" start="true" />
 		<teleporter power="1" max="2" room="1" start="false" />
@@ -4137,7 +4177,7 @@
 	<class>Wrecked Assault</class>
 	<minSector>4</minSector>
 	<systemList>
-		<dd_corruptor power="1" max="2" room="4" start="false" />
+		<dd_corruptor power="1" max="2" room="4" start="true" />
 		<doors power="1" max="3" room="3" start="false" />
 		<engines power="1" max="1" room="7" start="true" />
 		<medbay power="1" max="3" room="1" start="false" />
@@ -4159,7 +4199,7 @@
 <shipBlueprint name="MU_DYNASTY_SCOUT_DDSOULPLAGUE_CORRUPTION" layout="mu_dynasty_scout" img="mu_dynasty_scout">
 	<class>Spectral Scout</class>
 	<systemList>
-		<dd_corruptor power="1" max="3" room="5" start="false" />
+		<dd_corruptor power="1" max="3" room="5" start="true" />
 		<drones power="2" max="6" room="3" start="false" />
 		<engines power="1" max="1" room="6" start="true" />
 		<pilot power="1" max="3" room="0" start="true" />
@@ -4203,7 +4243,7 @@
 <shipBlueprint name="MU_LANIUS_RAVAGER_DDSOULPLAGUE_CORRUPTION" layout="mu_lanius_ravager_a" img="mu_lanius_ravager_a">
 	<class>Lanius Ravager</class>
 	<systemList>
-		<dd_corruptor power="1" max="2" room="7" start="false" />
+		<dd_corruptor power="1" max="2" room="7" start="true" />
 		<clonebay power="1" max="3" room="4" start="false" />
 		<doors power="1" max="3" room="9" start="false" />
 		<engines power="1" max="2" room="1" start="true" />

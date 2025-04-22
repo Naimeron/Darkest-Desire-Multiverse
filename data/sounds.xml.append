@@ -73,3 +73,5 @@
 <ddsoulplaguedeathnoise volume="6">aliens/bp_sfx_ddsoulplaguedeathnoise.ogg</ddsoulplaguedeathnoise>
 <ddsoulplaguehuskweavergoobling volume="7">aliens/bp_sfx_ddsoulplaguehuskweavergoobling.ogg</ddsoulplaguehuskweavergoobling>
 <dddarktemplarability volume="10">aliens/bp_sfx_dddarktemplarability.ogg</dddarktemplarability>
+<ddbook_turn_page volume="10">aliens/bp_sfx_ddbook_turn_page.ogg</ddbook_turn_page>
+<ddbook_scrap_clang volume="10">aliens/bp_sfx_ddbook_scrap_clang.ogg</ddbook_scrap_clang>
