@@ -141,7 +141,7 @@
 	<breachChance>0</breachChance>
 	<stun>12</stun>
 	<stunChance>10</stunChance>
-	<cooldown>24</cooldown>
+	<cooldown>19</cooldown>
 	<speed>5</speed>
 	<color>
 		<r>66</r>
@@ -177,7 +177,7 @@
 	<breachChance>0</breachChance>
 	<stun>15</stun>
 	<stunChance>10</stunChance>
-	<cooldown>24</cooldown>
+	<cooldown>19</cooldown>
 	<speed>4</speed>
 	<color>
 		<r>228</r>
@@ -14307,7 +14307,7 @@
 	<tip>tip_shadow_weapon</tip>
 	<title>Lifetaker Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 50] Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</desc>
+	<desc>[Base cooldown: 45] Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</desc>
 	<tooltip>Artillery: Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</tooltip>
 	<damage>0</damage>
 	<sysDamage>0</sysDamage>
@@ -14346,7 +14346,7 @@
         </statBoosts>
     </spawnCrew>
 	<crewSpawnChance>2</crewSpawnChance>
-	<cooldown>50</cooldown>
+	<cooldown>45</cooldown>
 	<color>
 		<r>255</r>
 		<g>129</g>
@@ -14370,7 +14370,7 @@
 	<tip>tip_shadow_weapon</tip>
 	<title>Lifetaker Artillery [Red]</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 50] Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</desc>
+	<desc>[Base cooldown: 45] Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</desc>
 	<tooltip>Artillery: Powers a sinister, piercing beam that causes breaches, spawns Hungering Shadows, and completely obliterates any entity it hits.</tooltip>
 	<damage>0</damage>
 	<sysDamage>0</sysDamage>
@@ -14409,7 +14409,7 @@
         </statBoosts>
     </spawnCrew>
 	<crewSpawnChance>3</crewSpawnChance>
-	<cooldown>50</cooldown>
+	<cooldown>45</cooldown>
 	<color>
 		<r>241</r>
 		<g>55</g>
@@ -14434,7 +14434,7 @@
 	<drone_targetable>1</drone_targetable>
 	<title>Ravaging Void Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 18] Fires a burst of 3 flak-like shadow projectiles.</desc>
+	<desc>[Base cooldown: 12.5] Fires a burst of 3 flak-like shadow projectiles.</desc>
 	<tooltip>Artillery: Fires a burst of 3 flak-like shadow projectiles. Each projectile that lands has a 70% chance to summon a Hungering Shadow in the target room for 21 seconds.</tooltip>
 	<radius>37</radius>
 	<damage>1</damage>
@@ -14442,7 +14442,7 @@
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>18</cooldown>
+	<cooldown>12.5</cooldown>
 	<spawnCrew>
         <race>darkgodtendrils</race>
 		<name>Hungering Shadow</name>
@@ -14508,13 +14508,13 @@
 	<type>BEAM</type>
 	<title>Dark Metamorphosis Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 15] Fires a piercing beam that summons a Hungering Shadow and creates a temporary shroud of darkness in the room hit.</desc>
+	<desc>[Base cooldown: 14] Fires a piercing beam that summons a Hungering Shadow and creates a temporary shroud of darkness in the room hit.</desc>
 	<tooltip>Artillery: Fires a piercing beam that has a 100% chance of summoning a Hungering Shadow for 21 seconds and additionally creates a temporary shroud of darkness in the room hit for 12 seconds. Has a 30% chance to cause breaches.</tooltip>
 	<damage>0</damage>
 	<sp>10</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>15</cooldown>
+	<cooldown>14</cooldown>
 	<spawnCrew>
         <race>darkgodtendrils</race>
 		<name>Hungering Shadow</name>
@@ -14646,7 +14646,7 @@
 	<type>LASER</type>
 	<title>Ecliptic Extinction Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 75] Releases a mass of unimaginable power, which will devastate the enemy ship if not outright obliterate it.</desc>
+	<desc>[Base cooldown: 70] Releases a mass of unimaginable power, which will devastate the enemy ship if not outright obliterate it.</desc>
 	<tooltip>Artillery: Fires a projectile that pierces all shields and deals 6 damage, as well as summoning a special Space Tear that will attempt to immediately close itself and call down several beams of darkness that cause further damage and chaos.</tooltip>
 	<accuracyMod>100</accuracyMod>
 	<damage>6</damage>
@@ -14656,7 +14656,7 @@
 	<stun>4</stun>
 	<fireChance>0</fireChance>
 	<breachChance>10</breachChance>
-	<cooldown>75</cooldown>
+	<cooldown>70</cooldown>
 	<spawnCrew>
         <race>ddeclipticextinctioncrew</race>
 		<name>Space Tear</name>
@@ -18059,7 +18059,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Extremely fast, powerful and immune to mind control but 3x weak to both suffocation and fire. It's incapable of moving while enemies are present in the same room, but said enemies are inflicted with Anxious, slowing their movement speed.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_cinderbark">
@@ -18073,7 +18073,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Cinderbark Mutagen: Immune to fire, ability's fog spawns a fire and strips enemy fire resistance while making them take extreme burn damage.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_frostwood">
@@ -18087,7 +18087,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Frostwood Mutagen: Phases through doors, ability's fog locks down rooms and nearly immobilizes enemies.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_ironbound">
@@ -18101,7 +18101,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Ironbound Mutagen: Immune to suffocation, ability's fog spawns a breach and causes ally Ill'drythk Statues to rapidly drain oxygen.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_leafhost">
@@ -18115,7 +18115,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Leafhost Mutagen: Heals and creates oxygen over time, ability's fog rapidly heals allies and doubles healing speed for ally Ill'drythk Statues.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_toxblood">
@@ -18129,7 +18129,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Toxblood Mutagen: Lowers nearby enemies' health, damage and heal speed; ability's fog further halves enemy health.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddilldrythk_statue_voidroot">
@@ -18143,7 +18143,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Voidroot Mutagen: Counts as a Hungering Shadow for the sake of buffing and being buffed by them. Ability's fog spawns two Hungering Shadows and inflicts enemies with Drowning in the Deep.</power>
-		<power>Active Ability: Fills a room with fog, temporarily blinding enemies and allowing all ally Ill'drythk Statues in the room to act.</power>
+		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddunique_theminister">
@@ -18659,7 +18659,7 @@
 				<number>-2</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="5" start="false" img="room_mind_11" />
+		<mind power="1" room="5" start="false" img="room_mind_12" />
 		<oxygen power="1" room="11" start="true" img="room_oxygen_5" />
 		<pilot power="1" room="0" start="true" img="room_pilot_2">
 			<slot>
@@ -18873,7 +18873,7 @@
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones max="8" power="2" room="6" start="true" img="room_drones_orchid_2" />
+		<drones max="8" power="2" room="6" start="true" img="ddroom_drones_tome_2" />
 		<engines power="1" room="9" start="true" img="room_engines_10">
 			<slot>
 				<direction>left</direction>
@@ -18987,7 +18987,7 @@
 		</shields>
 		<teleporter power="1" room="10" start="false" />
 		<dd_corruptor power="1" room="9" start="false" img="room_ddcorruptor_23" />
-		<weapons max="8" power="2" room="0" start="true" img="room_weapons_10">
+		<weapons max="8" power="2" room="0" start="true" img="room_ddweapons_tome">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -19384,7 +19384,7 @@
 		<weapon name="DDSHOTGUN_SOULPLAGUE" />
 	</weaponList>
 	<droneList drones="0" count="2" />
-	<health amount="15" />
+	<health amount="25" />
 	<maxPower amount="6" />
 	<crewCount amount="1" class="ddsoulplague_shellcultist" />
 	<aug name="DDSOULPLAGUE_GAS" />
@@ -19459,7 +19459,7 @@
 		<weapon name="DDMISSILES_SOULPLAGUE" />
 	</weaponList>
 	<droneList drones="0" count="2" />
-	<health amount="15" />
+	<health amount="25" />
 	<maxPower amount="7" />
 	<crewCount amount="1" class="ddsoulplague_shellcultist" />
 	<crewCount amount="1" class="shell_guardian" />
@@ -19535,7 +19535,7 @@
 		<weapon name="DDFOCUS_SOULPLAGUE" />
 	</weaponList>
 	<droneList drones="0" count="2" />
-	<health amount="15" />
+	<health amount="25" />
 	<maxPower amount="5" />
 	<crewCount amount="1" class="ddsoulplague_huskweaver" />
 	<crewCount amount="1" class="ddsoulplague_husk_ghost" />

@@ -8,7 +8,7 @@ This enemy has Deep One Lights installed. Equally resistant and blinding, they h
 		<mod-append:shipIcon>
 	        <name>icon_dread_lights</name>
             <tooltip>DREAD LIGHTS:
-This enemy has Dread Lights installed. Less resistant, they have a 20% chance to negate ion damage, but they exude an ominous energy that decreases boarders' movement speed by 50% and their sabotage speed by 15%, while also increasing ally (on this ship) movement speed by 15%.</tooltip>
+This enemy has Dread Lights installed. Less resistant than other Deep One Lights, they have a 20% chance to negate ion damage, but they exude an ominous energy that decreases boarders' movement speed by 50% and their sabotage speed by 15%, while also increasing enemy (on their ship) movement speed by 15%.</tooltip>
 		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 	        <name>icon_disparity_crystal_armor</name>
@@ -33,7 +33,7 @@ This enemy is blessed by the Tempest. They're protected by an otherworldly and e
 		<mod-append:shipIcon>
 	        <name>icon_ddoverwhelming_darkness</name>
             <tooltip>OVERWHELMING DARKNESS:
-This enemy is protected by an Overwhelming Darkness. This oppressive and eldritch force decreases boarders' movement speed by 50%, and their sabotage speed by 30%, but they're also inflicted with the Drowning in the Deep debuff, slowing their movement speed even further, silencing them, and preventing their abilities from regenerating. Additionally, their crew finds this darkness to be warm and soothing, providing a very slight heal of 1.8hp/s over time.</tooltip>
+This enemy is protected by an Overwhelming Darkness. This oppressive and eldritch force decreases boarders' movement speed by 50%, and their sabotage speed by 30%, but they're also inflicted with the Drowning in the Deep debuff, slowing their movement speed even further, silencing them, and preventing their abilities from regenerating. Additionally, enemies find this darkness to be warm and soothing, providing a very slight heal of 1.8hp/s over time.</tooltip>
 		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 	        <name>icon_ddsoulplague_gas</name>
@@ -64,48 +64,400 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DEEP_ONE_FIGHTER">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DEEP_ONE_SCOUT">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DEEP_ONE_DESTROYER">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDDEEP_ONE_SKIRMISHER">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDDEEP_ONE_BATTLESHIP">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDDEEP_ONE_DESTROYER_SOULPLAGUE">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DEEPONE_CARRIER_CULTIST">
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x3</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_4x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_4x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_4x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_4x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="8"/>
 			<deeponecultist_enemy room="9"/>
@@ -117,6 +469,44 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="3"/>
 			<deeponecultist_enemy room="4"/>
@@ -127,6 +517,40 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="3"/>
 			<deeponecultist_enemy room="5"/>
@@ -137,6 +561,44 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_5x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_5x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="4"/>
 		</crew>
@@ -146,6 +608,44 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="6"/>
 		</crew>
@@ -155,6 +655,52 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="0"/>
 			<deeponecultist_enemy room="9"/>
@@ -165,6 +711,64 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_dread_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x4</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x4</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x4</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x4</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x3</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="10"/>
 		</crew>
@@ -203,105 +807,105 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="14">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<noJump/>
@@ -317,77 +921,77 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -402,63 +1006,63 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -473,70 +1077,70 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -551,70 +1155,70 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -629,63 +1233,63 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -700,98 +1304,98 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -802,10 +1406,67 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_majorthreat</shipIcon>
 		</shipIcons>
 		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_7x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_7x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">resist_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
                 <roomAnim renderLayer="3">resist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
 			</room>
 		</rooms>
 		<crew>
@@ -1083,6 +1744,48 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 			<shipIcon>icon_ddtempest_blessing</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<ddtempest_stormborn_spawn_enemy room="2" name="Spawn"/>
 			<ddtempest_spawn_warden room="3" name="Warden"/>
@@ -2023,6 +2726,60 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_specialwep</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deepone room="0"/>
 			<deepone room="3"/>
@@ -2039,6 +2796,60 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_specialwep</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="0"/>
 			<deepone room="3"/>
@@ -2055,6 +2866,60 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_specialwep</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="0"/>
 			<deeponecultist_enemy room="3"/>
@@ -2071,6 +2936,60 @@ Nothing is immune.</tooltip>
 			<shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_specialwep_chaos</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<crew>
 			<deeponecultist_enemy room="0"/>
 			<deeponecultist_enemy room="3"/>
@@ -2343,12 +3262,108 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDMT_DEEP_ONE_2">
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="MU_SHELL_ABDUCTOR_DDSOULPLAGUE_CORRUPTION">
@@ -2477,6 +3492,56 @@ Nothing is immune.</tooltip>
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 		</shipIcons>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_3x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x3</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:ship name="PLAYER_DEEP_ONE" b="true" c="true" secret="true">
 		<unlock variant="a" silent="false">
@@ -2501,16 +3566,194 @@ Nothing is immune.</tooltip>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DEEP_ONE_2">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_4x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_4x1</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DEEP_ONE_3">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_purple_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:ship name="PLAYER_DEEP_ONE_CULTIST" b="true" c="true" secret="true">
 		<unlock variant="a" silent="false">
@@ -2535,16 +3778,202 @@ Nothing is immune.</tooltip>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x3</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x3</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_yellow_tileeffect_1x2</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DEEP_ONE_CULTIST_2">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_3x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_3x1</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_orange_tileeffect_2x1</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DEEP_ONE_CULTIST_3">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
 		<crewLimit>8</crewLimit>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_4x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_lightblue_tileeffect_4x1</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:ship name="PLAYER_DDDEEP_ONE_CHOSEN" b="true" c="true" secret="true">
 		<unlock variant="a" silent="false">
@@ -2568,357 +3997,366 @@ Nothing is immune.</tooltip>
 	<mod-append:customShip name="PLAYER_DDDEEP_ONE_CHOSEN">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
+		<systemLimit>10</systemLimit>
 		<crewLimit>8</crewLimit>
+		<customReactor maxLevel="30"/>
 		<rooms>
 			<room id="0">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="14">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="15">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DDDEEP_ONE_CHOSEN_2">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
+		<systemLimit>10</systemLimit>
 		<crewLimit>8</crewLimit>
+		<customReactor maxLevel="30"/>
 		<rooms>
 			<room id="0">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="14">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="15">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 		</rooms>
 	</mod-append:customShip>
 	<mod-append:customShip name="PLAYER_DDDEEP_ONE_CHOSEN_3">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DEEPONE</hiddenAug>
+		<systemLimit>10</systemLimit>
 		<crewLimit>8</crewLimit>
+		<customReactor maxLevel="30"/>
 		<rooms>
 			<room id="0">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="9">
-				<roomAnim renderLayer="0">
+				<roomAnim renderLayer="1">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="14">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="15">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 		</rooms>
 	</mod-append:customShip>
@@ -3172,133 +4610,133 @@ Nothing is immune.</tooltip>
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="1">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="2">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="3">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="4">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="5">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="6">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="7">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="8">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="9">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="11">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x2</roomAnim>
 			</room>
 			<room id="12">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="14">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="15">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="16">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 			<room id="17">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_2x1</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_2x1</roomAnim>
 			</room>
 			<room id="18">
 				<roomAnim renderLayer="0">
 					<anim>ddinvisible_effect</anim>
 					<tileAnim>ddoverwhelming_darkness_effect_underlayer</tileAnim>
 				</roomAnim>
-				<roomAnim renderLayer="2">ddoverwhelming_darkness_effect_1x2</roomAnim>
+				<roomAnim renderLayer="3">ddoverwhelming_darkness_effect_1x2</roomAnim>
 			</room>
 		</rooms>
 	</mod-append:customShip>
@@ -3405,6 +4843,68 @@ Nothing is immune.</tooltip>
 		<crew>
 			<ddunique_theheroine room="11" name="The Heroine"/>
 		</crew>
+		<rooms>
+			<room id="0">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="2">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="3">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="4">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="5">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="6">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="7">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="8">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="9">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="10">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_1x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_1x2</roomAnim>
+			</room>
+			<room id="11">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="12">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x1</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x1</roomAnim>
+			</room>
+			<room id="13">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x2</roomAnim>
+			</room>
+			<room id="14">
+				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="3">dddeepone_lights_white_tileeffect_2x2</roomAnim>
+			</room>
+		</rooms>
 	</mod-append:customShip>
 	<mod-append:ship name="PLAYER_DDSERAPH" b="true" c="false" secret="true">
 		<splitVictoryAchievement>true</splitVictoryAchievement>
@@ -23895,7 +25395,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULRUST</buttonText>
 			<tooltip>[COOLDOWN:14s DURATION:31s]
-				Takes 14 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship, other than Soulplague Cultists, drain oxygen over time. Additionally damages enemies in the same room over time.</tooltip>
+				Takes 14 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship, other than Children of the Stars, drain oxygen over time. Additionally damages enemies in the same room over time.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<temporaryEffect>
 				<duration>31</duration>
@@ -24614,7 +26114,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULRUST</buttonText>
 			<tooltip>[COOLDOWN:14s DURATION:31s]
-				Takes 14 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship, other than Soulplague Cultists, drain oxygen over time. Additionally damages enemies in the same room over time.</tooltip>
+				Takes 14 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship, other than Children of the Stars, drain oxygen over time. Additionally damages enemies in the same room over time.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<temporaryEffect>
 				<duration>31</duration>
@@ -32392,7 +33892,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULHEART</buttonText>
 			<tooltip>[CD:40s  DURATION:7s  -90HP]
-				Takes 90 damage and triggers a temporary effect that overwrites ally Soulplague Cultists' abilities, allowing them to rapid-fire summon Soulplague Husks at very little cost to themselves. Moves very slowly while active.</tooltip>
+				Takes 90 damage and triggers a temporary effect that overwrites ally Children of the Stars' abilities, allowing them to rapid-fire summon Soulplague Husks at very little cost to themselves. Moves very slowly while active.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
 			<selfHealth>-90</selfHealth>
@@ -32614,7 +34114,7 @@ Nothing is immune.</tooltip>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM"/>
 							<buttonText>SOULPUMP</buttonText>
 							<tooltip>[CD:3s  -4HP]
-								The Foolish channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
+								The Foolish channels its power through this Child of the Stars to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>
@@ -33122,7 +34622,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULHEART</buttonText>
 			<tooltip>[CD:40s  DURATION:7s  -90HP]
-				Takes 90 damage and triggers a temporary effect that overwrites ally Soulplague Cultists' abilities, allowing them to rapid-fire summon Soulplague Husks at very little cost to themselves. Moves very slowly while active.</tooltip>
+				Takes 90 damage and triggers a temporary effect that overwrites ally Children of the Stars' abilities, allowing them to rapid-fire summon Soulplague Husks at very little cost to themselves. Moves very slowly while active.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
 			<selfHealth>-90</selfHealth>
@@ -33345,7 +34845,7 @@ Nothing is immune.</tooltip>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_ENEMY"/>
 							<buttonText>SOULPUMP</buttonText>
 							<tooltip>[CD:3s  -4HP]
-								The Foolish channels its power through this Soulplague Cultist to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
+								The Foolish channels its power through this Child of the Stars to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>

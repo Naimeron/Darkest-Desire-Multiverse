@@ -14910,7 +14910,7 @@
 	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
 		<text>Investigate.</text>
 		<event>
-			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can kill its crew you may receive a special reward.</text>
+			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can destroy the ship you may receive a special reward.</text>
 			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
 			<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
 				<layer z="0">background</layer>
@@ -14927,7 +14927,7 @@
 	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
 		<text>Investigate.</text>
 		<event>
-			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can kill its crew you may receive a special reward.</text>
+			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can destroy the ship you may receive a special reward.</text>
 			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
 			<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
 				<layer z="0">background</layer>
@@ -15072,7 +15072,7 @@
 	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
 		<text>Investigate.</text>
 		<event>
-			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can kill its crew you may receive a special reward.</text>
+			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can destroy the ship you may receive a special reward.</text>
 			<changeBackground>BACKGROUND_DDTEMPESTVOID</changeBackground>
 			<ship load="DDRITUALS_QUESTS_LIST_SOULFIRING_TEMPEST_FIGHT" hostile="true"/>
 			<choice hidden="true">
@@ -15084,7 +15084,7 @@
 	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
 		<text>Investigate.</text>
 		<event>
-			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can kill its crew you may receive a special reward.</text>
+			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and whispers begin to fill your mind, "...plans change... kill these ones... death..." A wave of understanding washes over you: the Children of the Stars don't care for this ship's fate, but if you can destroy the ship you may receive a special reward.</text>
 			<changeBackground>BACKGROUND_DDTEMPESTVOID</changeBackground>
 			<ship load="DDRITUALS_QUESTS_LIST_SOULFIRING_TEMPEST_FIGHT" hostile="true"/>
 			<choice hidden="true">
@@ -15265,6 +15265,8 @@
 
 <event name="DDRITUALS_QUESTS_ULTIMACHALLENGE">
 	<preventQuest/>
+	<preventFleet/>
+	<preventBossFleet/>
 	<beaconType id="map_icon_ddultimaarmor" global="true">
   		<color r="171" g="175" b="180" a="1"/>
   	  <unvisitedTooltip>You found these coordinates after the Minister's armor vanished.</unvisitedTooltip>

@@ -17,6 +17,7 @@
 <text name="map_icon_ddcoremass_death">...death...</text>
 <text name="map_icon_ddcoremassheartloc">HEART [EXIT]</text>
 <text name="warning_ddsoulplague_mass_hazard_text">SOULPLAGUE ASSAULT\nIMMINENT</text>
+<text name="hack_dd_corruptor">Temporarily shut down the Corruptor's functionality, preventing additional Tides from spawning.</text>
 
 <text name="loot_disparity_1">DISPARITY LOOT
 +1 shield piercing

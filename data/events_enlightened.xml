@@ -3389,7 +3389,7 @@
 	<choice hidden="true">
 		<text>Accept the mysterious hail.</text>
 		<event>
-			<text>You accept the hail and... are bombarded by ads? "Ssssave 1.2% off on all Hektar™ productssss for the nexxxxt 0.3 sssseconds!" and "You won't BELIEVE the dealssss in your area! They likely won't exxxxpire for SSSSECONDSSSS! No guarantee." among many others. Why do Slugs slur the s's in their writing, too? After the barrage of ads calms down, you get to speak to an actual person... if you can consider Hektar employees people, "Ssssup. What're the Fedssss doing out here?"</text>
+			<text>You accept the hail and... are bombarded by ads? "Ssssave 1.2% off on all Hektar Industries(TM) productssss for the nexxxxt 0.3 sssseconds!" and "You won't BELIEVE the dealssss in your area! They likely won't exxxxpire for SSSSECONDSSSS! No guarantee." among many others. Why do Slugs slur the s's in their writing, too? After the barrage of ads calms down, you get to speak to an actual person... if you can consider Hektar employees people, "Ssssup. What're the Fedssss doing out here?"</text>
 			<choice hidden="true">
 				<text>What are YOU doing out here?</text>
 				<event>
@@ -3401,7 +3401,7 @@
 							<choice hidden="true">
 								<text>It's an infinite void of darkness perpetuated by a cruel, uncaring God for the sole purpose of our eternal torment.</text>
 								<event>
-									<text>It takes a few moments to process this, before eventually answering, "Sssso... issss that, like, outsssside Hektar™ jurissssdicttttion?"</text>
+									<text>It takes a few moments to process this, before eventually answering, "Sssso... issss that, like, outsssside Hektar Industries(TM) jurissssdicttttion?"</text>
 									<choice hidden="true">
 										<text>Uh, maybe?</text>
 										<event>

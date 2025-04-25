@@ -322,3 +322,7 @@
 <roomLayout name="weapons_8">
 	<computerGlow x="40" y="0" dir="UP" />
 </roomLayout>
+
+<roomLayout name="ddweapons_tome">
+	<computerGlow x="8" y="0" dir="UP" />
+</roomLayout>

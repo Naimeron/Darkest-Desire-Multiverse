@@ -846,6 +846,321 @@
 	<time>1.5</time>
 </anim>
 
+<animSheet name="dddeepone_lights_blue_tileeffect_1x1" w="175" h="35" fw="35" fh="35">effects/dddeepone_lights_blue_tileeffect_1x1.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_1x1">
+	<sheet>dddeepone_lights_blue_tileeffect_1x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_blue_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_1x2">
+	<sheet>dddeepone_lights_blue_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_yellow_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_1x2">
+	<sheet>dddeepone_lights_yellow_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_white_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_white_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_white_tileeffect_1x2">
+	<sheet>dddeepone_lights_white_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_purple_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_purple_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_purple_tileeffect_1x2">
+	<sheet>dddeepone_lights_purple_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_orange_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_orange_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_orange_tileeffect_1x2">
+	<sheet>dddeepone_lights_orange_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_lightblue_tileeffect_1x2" w="175" h="70" fw="35" fh="70">effects/dddeepone_lights_lightblue_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_lights_lightblue_tileeffect_1x2">
+	<sheet>dddeepone_lights_lightblue_tileeffect_1x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_blue_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_2x1">
+	<sheet>dddeepone_lights_blue_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_yellow_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_2x1">
+	<sheet>dddeepone_lights_yellow_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_white_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_white_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_white_tileeffect_2x1">
+	<sheet>dddeepone_lights_white_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_purple_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_purple_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_purple_tileeffect_2x1">
+	<sheet>dddeepone_lights_purple_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_orange_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_orange_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_orange_tileeffect_2x1">
+	<sheet>dddeepone_lights_orange_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_lightblue_tileeffect_2x1" w="350" h="35" fw="70" fh="35">effects/dddeepone_lights_lightblue_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_lights_lightblue_tileeffect_2x1">
+	<sheet>dddeepone_lights_lightblue_tileeffect_2x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_7x1" w="1225" h="35" fw="245" fh="35">effects/dddeepone_lights_blue_tileeffect_7x1.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_7x1">
+	<sheet>dddeepone_lights_blue_tileeffect_7x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_3x2" w="525" h="70" fw="105" fh="70">effects/dddeepone_lights_blue_tileeffect_3x2.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_3x2">
+	<sheet>dddeepone_lights_blue_tileeffect_3x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_3x2" w="525" h="70" fw="105" fh="70">effects/dddeepone_lights_yellow_tileeffect_3x2.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_3x2">
+	<sheet>dddeepone_lights_yellow_tileeffect_3x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_2x3" w="350" h="105" fw="70" fh="105">effects/dddeepone_lights_yellow_tileeffect_2x3.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_2x3">
+	<sheet>dddeepone_lights_yellow_tileeffect_2x3</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_lightblue_tileeffect_4x1" w="700" h="35" fw="140" fh="35">effects/dddeepone_lights_lightblue_tileeffect_4x1.png</animSheet>
+<anim name="dddeepone_lights_lightblue_tileeffect_4x1">
+	<sheet>dddeepone_lights_lightblue_tileeffect_4x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_4x1" w="700" h="35" fw="140" fh="35">effects/dddeepone_lights_yellow_tileeffect_4x1.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_4x1">
+	<sheet>dddeepone_lights_yellow_tileeffect_4x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_white_tileeffect_4x1" w="700" h="35" fw="140" fh="35">effects/dddeepone_lights_white_tileeffect_4x1.png</animSheet>
+<anim name="dddeepone_lights_white_tileeffect_4x1">
+	<sheet>dddeepone_lights_white_tileeffect_4x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_2x2" w="350" h="70" fw="70" fh="70">effects/dddeepone_lights_blue_tileeffect_2x2.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_2x2">
+	<sheet>dddeepone_lights_blue_tileeffect_2x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_white_tileeffect_2x2" w="350" h="70" fw="70" fh="70">effects/dddeepone_lights_white_tileeffect_2x2.png</animSheet>
+<anim name="dddeepone_lights_white_tileeffect_2x2">
+	<sheet>dddeepone_lights_white_tileeffect_2x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_2x2" w="350" h="70" fw="70" fh="70">effects/dddeepone_lights_yellow_tileeffect_2x2.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_2x2">
+	<sheet>dddeepone_lights_yellow_tileeffect_2x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_orange_tileeffect_2x2" w="350" h="70" fw="70" fh="70">effects/dddeepone_lights_orange_tileeffect_2x2.png</animSheet>
+<anim name="dddeepone_lights_orange_tileeffect_2x2">
+	<sheet>dddeepone_lights_orange_tileeffect_2x2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_2x4" w="350" h="140" fw="70" fh="140">effects/dddeepone_lights_yellow_tileeffect_2x4.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_2x4">
+	<sheet>dddeepone_lights_yellow_tileeffect_2x4</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_3x1" w="525" h="35" fw="105" fh="35">effects/dddeepone_lights_blue_tileeffect_3x1.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_3x1">
+	<sheet>dddeepone_lights_blue_tileeffect_3x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_3x1" w="525" h="35" fw="105" fh="35">effects/dddeepone_lights_yellow_tileeffect_3x1.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_3x1">
+	<sheet>dddeepone_lights_yellow_tileeffect_3x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_orange_tileeffect_3x1" w="525" h="35" fw="105" fh="35">effects/dddeepone_lights_orange_tileeffect_3x1.png</animSheet>
+<anim name="dddeepone_lights_orange_tileeffect_3x1">
+	<sheet>dddeepone_lights_orange_tileeffect_3x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_blue_tileeffect_1x3" w="175" h="105" fw="35" fh="105">effects/dddeepone_lights_blue_tileeffect_1x3.png</animSheet>
+<anim name="dddeepone_lights_blue_tileeffect_1x3">
+	<sheet>dddeepone_lights_blue_tileeffect_1x3</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_white_tileeffect_1x3" w="175" h="105" fw="35" fh="105">effects/dddeepone_lights_white_tileeffect_1x3.png</animSheet>
+<anim name="dddeepone_lights_white_tileeffect_1x3">
+	<sheet>dddeepone_lights_white_tileeffect_1x3</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_purple_tileeffect_1x3" w="175" h="105" fw="35" fh="105">effects/dddeepone_lights_purple_tileeffect_1x3.png</animSheet>
+<anim name="dddeepone_lights_purple_tileeffect_1x3">
+	<sheet>dddeepone_lights_purple_tileeffect_1x3</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_1x3" w="175" h="105" fw="35" fh="105">effects/dddeepone_lights_yellow_tileeffect_1x3.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_1x3">
+	<sheet>dddeepone_lights_yellow_tileeffect_1x3</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_lights_yellow_tileeffect_5x1" w="875" h="35" fw="175" fh="35">effects/dddeepone_lights_yellow_tileeffect_5x1.png</animSheet>
+<anim name="dddeepone_lights_yellow_tileeffect_5x1">
+	<sheet>dddeepone_lights_yellow_tileeffect_5x1</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.66</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_2x1" w="70" h="35" fw="70" fh="35">effects/dddeepone_floor_tileeffect_2x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_2x1">
+	<sheet>dddeepone_floor_tileeffect_2x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_1x2" w="35" h="70" fw="35" fh="70">effects/dddeepone_floor_tileeffect_1x2.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_1x2">
+	<sheet>dddeepone_floor_tileeffect_1x2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_2x2" w="70" h="70" fw="70" fh="70">effects/dddeepone_floor_tileeffect_2x2.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_2x2">
+	<sheet>dddeepone_floor_tileeffect_2x2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_1x3" w="35" h="105" fw="35" fh="105">effects/dddeepone_floor_tileeffect_1x3.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_1x3">
+	<sheet>dddeepone_floor_tileeffect_1x3</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_3x2" w="105" h="70" fw="105" fh="70">effects/dddeepone_floor_tileeffect_3x2.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_3x2">
+	<sheet>dddeepone_floor_tileeffect_3x2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_2x3" w="70" h="105" fw="70" fh="105">effects/dddeepone_floor_tileeffect_2x3.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_2x3">
+	<sheet>dddeepone_floor_tileeffect_2x3</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_4x1" w="140" h="35" fw="140" fh="35">effects/dddeepone_floor_tileeffect_4x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_4x1">
+	<sheet>dddeepone_floor_tileeffect_4x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_2x4" w="70" h="140" fw="70" fh="140">effects/dddeepone_floor_tileeffect_2x4.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_2x4">
+	<sheet>dddeepone_floor_tileeffect_2x4</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_1x1" w="35" h="35" fw="35" fh="35">effects/dddeepone_floor_tileeffect_1x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_1x1">
+	<sheet>dddeepone_floor_tileeffect_1x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_3x1" w="105" h="35" fw="105" fh="35">effects/dddeepone_floor_tileeffect_3x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_3x1">
+	<sheet>dddeepone_floor_tileeffect_3x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_5x1" w="175" h="35" fw="175" fh="35">effects/dddeepone_floor_tileeffect_5x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_5x1">
+	<sheet>dddeepone_floor_tileeffect_5x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_floor_tileeffect_7x1" w="245" h="35" fw="245" fh="35">effects/dddeepone_floor_tileeffect_7x1.png</animSheet>
+<anim name="dddeepone_floor_tileeffect_7x1">
+	<sheet>dddeepone_floor_tileeffect_7x1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
 <animSheet name="ddnightmare_erosion" w="175" h="35" fw="35" fh="35">effects/ddnightmare_erosion.png</animSheet>
 <anim name="ddnightmare_erosion">
 	<sheet>ddnightmare_erosion</sheet>

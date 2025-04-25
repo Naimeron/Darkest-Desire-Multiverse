@@ -2992,14 +2992,21 @@
 </ship>
 
 <event name="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_LOSS">
-	<text>With their ritual complete, a wave of destructive energy is sent out from the Union ship as it's torn apart, and a cloud of darkness fills the space outside. Some of this strange darkness manages to seep into the newly formed breaches in your ship, as you realize you've got unwanted company!</text>
-	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+	<text>The space outside warps as the civilians cry out one final, incomprehensible chant...</text>
+	<ship hostile="false"/>
 	<recallBoarders/>
-	<boarders min="3" max="6" class="darkgodtendrils"/>
-	<enemyDamage amount="999"/>
-	<damage amount="4"/>
-	<damage amount="1" system="random" effect="breach"/>
-	<damage amount="2" system="random" effect="breach"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and it is done. With their ritual complete, a wave of destructive energy is sent out from the Union ship as it's torn apart, and a cloud of darkness fills the space outside. Some of this strange darkness manages to seep into the newly formed breaches in your ship - and you realize you've got company!</text>
+			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+			<enemyDamage amount="999"/>
+			<damage amount="4"/>
+			<damage amount="1" system="random" effect="breach"/>
+			<damage amount="2" system="random" effect="breach"/>
+			<boarders min="3" max="6" class="darkgodtendrils"/>
+		</event>
+	</choice>
 </event>
 
 <event name="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT_WIN">
@@ -3012,15 +3019,162 @@
 
 <event name="NEUTRAL_DDDEEPONE_SHADOWCULT" unique="true">
 	<text>To your surprise, it's a Union ship that greets you here. Well, to call it a greeting would be a bit of an exaggeration... it's more like, they hail, threateningly, and say "Give us a human sacrifice or it's YOUR head that's rolling, Renegade!" Not exactly a warm welcome...</text>
+	<img planet="PLANET_INVISIBLE"/>
 	<ship load="NEUTRAL_DDDEEPONE_SHADOWCULT_FIGHT" hostile="false"/>
+	<choice hidden="true" req="DARKGOD_CURSED_BOOK">
+		<text>(Otherworldly Tome) I need them for my own purposes, you blabbering fool.</text>
+		<event>
+			<text>Picking up on the reasoning behind the citizen's demands, you brandish the Otherworldly Tome for them to see. Doing so quells their aggression slightly, as they stagger backwards at the sight of it, but then they step back forward, "You may possess THEIR teachings as well, but what makes you any more worthy of using these sacrifices than us? What makes YOU better?"</text>
+			<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS">
+				<text>(Lilith) I am greater, for I pursue the Ascension Rituals, simpleton.</text>
+				<event>
+					<text>The citizen gasps, "The crimson red texts?! I've caught myself staring at those hellish, incomprehensible diagrams more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DISPARITY">
+				<text>(Disparity Crew) I am greater, for I pursue the Crystalline Tales, moron.</text>
+				<event>
+					<text>The citizen gasps, "The vibrant purple texts?! I've caught myself staring at those beautiful, crystalline depictions more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="deeponecultist">
+				<text>(Enlightened Crew) I am greater, for I pursue the Prayers of Proving, idiot.</text>
+				<event>
+					<text>The citizen gasps, "The glistening yellow texts?! I've caught myself staring at their strange, dark imagery more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="dddeepone_chosen">
+				<text>(Chosen Crew) I am greater, for I pursue the Dark Callings, dumbass.</text>
+				<event>
+					<text>The citizen gasps, "The murky gray texts?! I've caught myself enamored by their hateful illustrations more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+				<text>(Ill'drythk Crew) I am greater, for I pursue the Hymns to Salvation, ignoramus.</text>
+				<event>
+					<text>The citizen gasps, "The fuzzy brown texts?! I've caught myself staring at those eldritch, plant-like caricatures more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
+				<text>(Tempest Crew) I am greater, for I pursue the Tidings of the Tempest, stupid.</text>
+				<event>
+					<text>The citizen gasps, "The electric blue texts?! I've caught myself lost in their pictures of vast, stormy clouds more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+				<text>(Ultima Armor) I am greater, for I pursue the Neoborn Edicts, imbecile.</text>
+				<event>
+					<text>The citizen gasps, "The blindingly white texts?! I've caught myself staring at the image of that strange, ominous armor more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+				<text>(Soulplague Crew) I am greater, for I pursue the Corrupting Whispers, dimwit.</text>
+				<event>
+					<text>The citizen gasps, "The iridescent rainbow texts?! I've caught myself fascinated by their portrayals of death and decay more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>I simply pursue the Beginner's Guide to the Occult.</text>
+				<event>
+					<text>"Is that all? Well, welcome to the club, Feddie; you're no better than us at all! If you think you can step all over us while standing here as our equals, then you've got another thing coming!" The citizen turns around, yelling off into the hallway, "PREPARE THE SACRIFICE! This beacon is being blown to HELL! IN THEIR NAME!" You're going to need to stop them before they do whatever it is they're doing, and fast!</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true">
 		<text>Woah, woah, woah. What the hell are you talking about?</text>
 		<event>
 			<text>They interrupt you, mid-sentence, "NO! No questions. Not unless you want us to drag this beacon to HELL! WE'VE SEEN HORRORS GREATER THAN DEATH! WE'RE NOT AFRAID OF YOU!" You're not even sure if you're the one they're shouting at... regardless, they've made their demands clear. What's your answer?</text>
+			<choice hidden="true" req="DARKGOD_CURSED_BOOK">
+				<text>(Otherworldly Tome) Fine, then. If playing stupid doesn't satisfy you... I need them for my own purposes, you blabbering fool.</text>
+				<event>
+					<text>Picking up on the reasoning behind the citizen's demands, you brandish the Otherworldly Tome for them to see. Doing so quells their aggression slightly, as they stagger backwards at the sight of it, but then they step back forward, "You may possess THEIR teachings as well, but what makes you any more worthy of using these sacrifices than us? What makes YOU better?"</text>
+					<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS">
+						<text>(Lilith) I am greater, for I pursue the Ascension Rituals, simpleton.</text>
+						<event>
+							<text>The citizen gasps, "The crimson red texts?! I've caught myself staring at those hellish, incomprehensible diagrams more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DISPARITY">
+						<text>(Disparity Crew) I am greater, for I pursue the Crystalline Tales, moron.</text>
+						<event>
+							<text>The citizen gasps, "The vibrant purple texts?! I've caught myself staring at those beautiful, crystalline depictions more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Enlightened Crew) I am greater, for I pursue the Prayers of Proving, idiot.</text>
+						<event>
+							<text>The citizen gasps, "The glistening yellow texts?! I've caught myself staring at their strange, dark imagery more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="dddeepone_chosen">
+						<text>(Chosen Crew) I am greater, for I pursue the Dark Callings, dumbass.</text>
+						<event>
+							<text>The citizen gasps, "The murky gray texts?! I've caught myself enamored by their hateful illustrations more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+						<text>(Ill'drythk Crew) I am greater, for I pursue the Hymns to Salvation, ignoramus.</text>
+						<event>
+							<text>The citizen gasps, "The fuzzy brown texts?! I've caught myself staring at those eldritch, plant-like caricatures more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
+						<text>(Tempest Crew) I am greater, for I pursue the Tidings of the Tempest, stupid.</text>
+						<event>
+							<text>The citizen gasps, "The electric blue texts?! I've caught myself lost in their pictures of vast, stormy clouds more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+						<text>(Ultima Armor) I am greater, for I pursue the Neoborn Edicts, imbecile.</text>
+						<event>
+							<text>The citizen gasps, "The blindingly white texts?! I've caught myself staring at the image of that strange, ominous armor more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+						<text>(Soulplague Crew) I am greater, for I pursue the Corrupting Whispers, dimwit.</text>
+						<event>
+							<text>The citizen gasps, "The iridescent rainbow texts?! I've caught myself fascinated by their portrayals of death and decay more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I simply pursue the Beginner's Guide to the Occult.</text>
+						<event>
+							<text>"Is that all? Well, welcome to the club, Feddie; you're no better than us at all! If you think you can step all over us while standing here as our equals, then you've got another thing coming!" The citizen turns around, yelling off into the hallway, "PREPARE THE SACRIFICE! This beacon is being blown to HELL! In THEIR name!" You're going to need to stop them before they do whatever it is they're doing, and fast!</text>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
 			<choice req="ddhuman_sacrifice">
 				<text>(Human Sacrifice) Yeah, alright. You can have it.</text>
 				<event>
-					<text>You beam your prepared human sacrifice over, and the citizen over the comms becomes ecstatic, "OH! You're familiar with the Dark One's ways...? A member of the Federation...? What are you, some kind of spy?" You shrug, and the citizen chuckles, "Well, thanks, Renegade! We're off to go spill some blood! Maybe a Ritual of Corruption, this time..." Their ship jumps out of the beacon, and you're left somewhat confused and considerably less sacrifice-ful.</text>
+					<text>You beam your prepared human sacrifice over, and the citizen over the comms becomes ecstatic, "OH! You're familiar with THEIR ways...? A member of the Federation...? What are you, some kind of spy?" You shrug, and the citizen chuckles, "Well, thanks, Renegade! We're off to go spill some blood! Maybe a Ritual of Corruption, this time..." Their ship jumps out of the beacon, and you're left somewhat confused and considerably less sacrifice-ful.</text>
 					<instantEscape/>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
