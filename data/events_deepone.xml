@@ -1514,7 +1514,7 @@
 				</event>
 			</choice>
 			<choice hidden="true" req="LIST_CREW_SLUG">
-				<text>(Slug Crew) Allow your Chosen to guide you through the darkness.</text>
+				<text>(Slug Crew) Allow your Slug to guide you through the darkness.</text>
 				<event>
 					<text>Capable of reading the minds of those nearby, your Slug is successfully able to catch a reading and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
 					<choice hidden="true">

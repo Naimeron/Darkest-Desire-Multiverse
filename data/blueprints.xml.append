@@ -148,7 +148,7 @@
 		<g>255</g>
 		<b>234</b>
 	</color>
-	<power>3</power>
+	<power>2</power>
 	<cost>80</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
@@ -167,7 +167,7 @@
 	<tip>tip_beams</tip>
 	<title>Elite Jellyfish Beam</title>
 	<short>€ Jellyfish</short>
-	<desc>A Deep One weapon modified by the Enlightened. Longer beam length and slower speed (lasts longer), stuns last slightly longer.</desc>
+	<desc>A Deep One weapon modified by the Enlightened. Longer beam length, slower speed (lasts longer) and slightly longer stun duration than the non-elite version, but also costs slightly more power.</desc>
 	<tooltip>Short beam, 2 ion damage, 15 sec guaranteed stun.</tooltip>
 	<damage>0</damage>
 	<ion>2</ion>
@@ -184,12 +184,12 @@
 		<g>230</g>
 		<b>193</b>
 	</color>
-	<power>4</power>
+	<power>3</power>
 	<cost>95</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<image>beam_contact</image>
-	<length>55</length>
+	<length>70</length>
 	<launchSounds>
 		<sound>beam1</sound>
 		<sound>beam1_2</sound>
@@ -17807,7 +17807,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Increased damage (1.3x) and damage resistance (0.7x), but lower movement (0.8x) and repair (0.8x) speed. Immune to suffocation and mind control, but weak to fire.</power>
-		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability temporarily heals all Soulplague-aligned allies on the same ship over time.</power>
+		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability temporarily heals all Soulplague-aligned allies in the same room over time.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddsoulplague_husk_shell_enemy">
@@ -17819,7 +17819,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Increased damage (1.3x) and damage resistance (0.7x), but lower movement (0.8x) and repair (0.8x) speed. Immune to suffocation and mind control, but weak to fire.</power>
-		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability temporarily heals all Soulplague-aligned allies on the same ship over time.</power>
+		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Ability temporarily heals all Soulplague-aligned allies in the same room over time.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddsoulplague_husk_lanius">
@@ -18006,7 +18006,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 25, crew/door damage and sabotage speed increased to 1.3x, 0.7x movement speed. Immune to suffocation and mind control, but weak to fire.</power>
+		<power>Max HP reduced to 25 and movement speed reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
 		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Heals ally Soulplague-aligned crew in the same room for 1HP/s.</power>
 	</powerList>
 </crewBlueprint>
@@ -18018,7 +18018,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 25, crew/door damage and sabotage speed increased to 1.3x, 0.7x movement speed. Immune to suffocation and mind control, but weak to fire.</power>
+		<power>Max HP reduced to 25 and movement speed reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
 		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Heals ally Soulplague-aligned crew in the same room for 1HP/s.</power>
 	</powerList>
 </crewBlueprint>
@@ -18620,11 +18620,11 @@
 	<maxPower>4</maxPower>
 	<rarity>1</rarity>
 	<upgradeCost>
-		<level>65</level> <!-- level 2 -->
+		<level>55</level> <!-- level 2 -->
 		<level>9999</level> <!-- level 3 -->
 		<level>9999</level> <!-- level 4 -->
 	</upgradeCost>
-	<cost>80</cost>
+	<cost>110</cost>
 </systemBlueprint>
 
 <shipBlueprint name="PLAYER_DEEP_ONE" layout="deeponeship" img="deeponeship">
@@ -18680,7 +18680,7 @@
 			</slot>
 		</shields>
 		<teleporter power="1" room="12" start="true" />
-		<weapons max="8" power="4" room="4" start="true" img="room_weapons_8">
+		<weapons max="8" power="3" room="4" start="true" img="room_weapons_8">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>

@@ -40,8 +40,8 @@
 	</nameList>
 	<trackList>
 		<track>ddhymntothedeep</track>
-		<track>voyager</track> 
-		<track>debris</track>
+		<track>debris</track> 
+		<track>voyager</track>
 		<track>lostship</track>
 	</trackList>
 	<rarityList>
@@ -109,8 +109,8 @@
 	<trackList>
 		<track>ddtracklightslament</track>
 		<track>debris</track>
-		<track>unexplored</track>
 		<track>ddhymntothedeep</track>
+		<track>unexplored</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="human" rarity="0"/>
@@ -181,8 +181,8 @@
 	<trackList>
 		<track>ddtracklightslament</track>
 		<track>debris</track>
-		<track>unexplored</track>
 		<track>ddhymntothedeep</track>
+		<track>unexplored</track>
 	</trackList>
 	<rarityList>
 		<blueprint name="human" rarity="5"/>

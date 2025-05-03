@@ -2335,11 +2335,11 @@
         <event load="OPTION_INVALID"/>
     </choice>
 	<choice req="dd_corruptor" lvl="2" max_group="0" blue="false" hidden="true">
-        <text>Level 3 Corruptor [Cost: 80~, 4{]</text>
+        <text>Level 3 Corruptor [Cost: 70~, 4{]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3"/>
     </choice>
     <choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
-        <text>Level 4 Corruptor [Cost: 110~, 6{, 3}]</text>
+        <text>Level 4 Corruptor [Cost: 100~, 6{, 3}]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4"/>
     </choice>
 	<choice req="dd_corruptor" lvl="4" max_group="0" blue="false" hidden="true">
@@ -2472,13 +2472,13 @@
 	<text>You are about to upgrade the Corruptor to level 3.
 	[Effects: 16s infection, 5s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 80~, 4{]</text>
+		<text>Perform the upgrade. [Cost: 70~, 4{]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
 			<item_modify>
 				<item type="fuel" min="-4" max="-4"/>
-				<item type="scrap" min="-80" max="-80"/>
+				<item type="scrap" min="-70" max="-70"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -2500,7 +2500,7 @@
 	<text>You are about to upgrade the Corruptor to level 4.
 	[Effects: 17s infection, 4s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 110~, 6{, 3}]</text>
+		<text>Perform the upgrade. [Cost: 100~, 6{, 3}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
@@ -2508,7 +2508,7 @@
 			<item_modify>
 				<item type="missiles" min="-3" max="-3"/>
 				<item type="fuel" min="-6" max="-6"/>
-				<item type="scrap" min="-110" max="-110"/>
+				<item type="scrap" min="-100" max="-100"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>

@@ -47,6 +47,11 @@ Drones and Soulplague-aligned crew are immune.</tooltip>
 This enemy ship is filled with a deadly, heavenly gas which will passively damage your crew over time for 2.3hp/s and inflict them with the effects of Divine Judgment. Additionally, fires on their ship will automatically be extinguished and their crew benefit from the positive effects of Divine Judgment while on their ship.
 Nothing is immune.</tooltip>
 		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+	        <name>icon_ddilldrythk_tree</name>
+            <tooltip>ILL'DRYTHK TREE:
+This enemy ship and its strange inhabitants emanate an ominous fog. Should your crew be caught in rooms filled with it, they'll be blinded and unable to stop enemy Ill'drythk Statues.</tooltip>
+		</mod-append:shipIcon>
 	</mod:findLike>
 	<mod:findLike type="shipOrder" limit="1">
         <mod-append:ship>PLAYER_DEEP_ONE</mod-append:ship>
@@ -775,12 +780,18 @@ Nothing is immune.</tooltip>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDILLDRYTHK_PUFFBALL">
+		<shipIcons>
+			<shipIcon>icon_ddilldrythk_tree</shipIcon>
+		</shipIcons>
 		<crew>
 			<ddilldrythk_caretaker room="0"/>
 		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDILLDRYTHK_NEST">
+		<shipIcons>
+			<shipIcon>icon_ddilldrythk_tree</shipIcon>
+		</shipIcons>
 		<crew>
 			<ddilldrythk_caretaker room="3"/>
 		</crew>
@@ -788,6 +799,7 @@ Nothing is immune.</tooltip>
 	</mod-append:customShip>
 	<mod-append:customShip name="DDILLDRYTHK_THE_PALE_HEART">
 		<shipIcons>
+			<shipIcon>icon_ddilldrythk_tree</shipIcon>
 			<shipIcon>icon_zoltan_shield</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
 		</shipIcons>
@@ -23978,7 +23990,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULMEND</buttonText>
 			<tooltip>[COOLDOWN:9s DURATION:15s]
-				Takes 20 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship heal over time.</tooltip>
+				Takes 20 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies in the same room heal over time.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<temporaryEffect>
 				<duration>15</duration>
@@ -24185,7 +24197,7 @@ Nothing is immune.</tooltip>
 					<statBoost name="healAmount">
 						<boostType>FLAT</boostType>
 						<amount>2</amount>
-						<shipTarget>CURRENT_ALL</shipTarget>
+						<shipTarget>CURRENT_ROOM</shipTarget>
 						<crewTarget>ALLIES</crewTarget>
 						<droneTarget>CREW</droneTarget>
 						<affectsSelf>true</affectsSelf>
@@ -24687,7 +24699,7 @@ Nothing is immune.</tooltip>
 			</powerSounds>
 			<buttonText>SOULMEND</buttonText>
 			<tooltip>[COOLDOWN:9s DURATION:15s]
-				Takes 20 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies on the same ship heal over time.</tooltip>
+				Takes 20 damage and triggers a temporary effect that makes itself and all Soulplague-aligned allies in the same room heal over time.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<temporaryEffect>
 				<duration>15</duration>
@@ -24894,7 +24906,7 @@ Nothing is immune.</tooltip>
 					<statBoost name="healAmount">
 						<boostType>FLAT</boostType>
 						<amount>2</amount>
-						<shipTarget>CURRENT_ALL</shipTarget>
+						<shipTarget>CURRENT_ROOM</shipTarget>
 						<crewTarget>ALLIES</crewTarget>
 						<droneTarget>CREW</droneTarget>
 						<affectsSelf>true</affectsSelf>
@@ -32410,11 +32422,8 @@ Nothing is immune.</tooltip>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
-		<damageMultiplier>1.3</damageMultiplier>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
-		<sabotageSpeedMultiplier>1.3</sabotageSpeedMultiplier>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
-		<doorDamageMultiplier>1.3</doorDamageMultiplier>
 		<controllable>false</controllable>
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
@@ -32912,11 +32921,8 @@ Nothing is immune.</tooltip>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
-		<damageMultiplier>1.3</damageMultiplier>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
-		<sabotageSpeedMultiplier>1.3</sabotageSpeedMultiplier>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
-		<doorDamageMultiplier>1.3</doorDamageMultiplier>
 		<controllable>false</controllable>
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
@@ -44811,69 +44817,57 @@ Nothing is immune.</tooltip>
 	<mod-append:page>
 		<section text="Darkest Desire Achievements" hidden="false">
 			<achievement name="ACH_BOON_DEEPONE">
-				<secretName>Boon of ???</secretName>
-				<secretDescription>Receive the Boon of ??? from Thest.</secretDescription>
 				<name>Boon of the Deep</name>
+				<secretDescription>Receive the Boon of the Deep from Thest.</secretDescription>
 				<description>Show a Deep One to Thest.
 				While in effect; enemies move 10% slower while on your ship.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_deepone</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_BOON_DDSOULPLAGUE_CREW">
-				<secretName>Boon of ???</secretName>
-				<secretDescription>Receive the Boon of ??? from Thest.</secretDescription>
 				<name>Boon of the Devourer</name>
+				<secretDescription>Receive the Boon of the Devourer from Thest.</secretDescription>
 				<description>Show a Soulplague-aligned crew member to Thest.
 				While in effect; Soulplague-aligned allies move 30% faster while on your ship.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_ddsoulplague_crew</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_BOON_DDCORRUPTOR">
-				<secretName>Grant of ???</secretName>
-				<secretDescription>Receive the Grant of ??? from Corby.</secretDescription>
 				<name>Grant of Corrupting</name>
+				<secretDescription>Receive the Grant of Corrupting from Corby.</secretDescription>
 				<description>Show a max-level Corruptor system to Corby.
 				While in effect; +5 max health for Soulplague Tides.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_ddcorruptor</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_BOON_DEEPONE_EQUIPMENT">
-				<secretName>Blessing of ???</secretName>
-				<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
 				<name>Blessing of Dread</name>
+				<secretDescription>Receive the Blessing of Dread from Wakeson.</secretDescription>
 				<description>Show any Deep One equipment to Wakeson.
 				While in effect; 20% chance to resist ion damage.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_deepone_equipment</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_BOON_DISPARITY_EQUIPMENT">
-				<secretName>Blessing of ???</secretName>
-				<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
 				<name>Blessing of Ravenous Darkness</name>
+				<secretDescription>Receive the Blessing of Ravenous Darkness from Wakeson.</secretDescription>
 				<description>Show any Disparity equipment to Wakeson.
 				While in effect; +10 max health for Hungering Shadows.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_disparity_equipment</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="ACH_BOON_DDSOULPLAGUE_EQUIPMENT">
-				<secretName>Blessing of ???</secretName>
-				<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
 				<name>Blessing of Iridescent Corruption</name>
+				<secretDescription>Receive the Blessing of Iridescent Corruption from Wakeson.</secretDescription>
 				<description>Show any Soulplague equipment to Wakeson.
 				While in effect; Husks take 0.25x damage from fire.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_ddsoulplague_equipment</icon>
-				<lockImage>ach_locked</lockImage>
 				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="MUSIC_DDTRACKHYMNTOTHEDEEP">

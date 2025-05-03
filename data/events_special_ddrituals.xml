@@ -14589,6 +14589,7 @@
 
 <event name="DDRITUALS_QUESTS_LIST_SOULFIRING_SHELL_FIGHT_WIN">
 	<text>The Shell ship begins to buckle, as Soulplague tendrils creep out of the darkness and infiltrate its weakened defenses... moments later, the ship goes still, and the reward for your efforts manifests beside you. You hear no further whispers, but you know the ritual to be complete.</text>
+	<ship hostile="false"/>
 	<autoReward level="MED">standard_no_item</autoReward>
 	<weapon name="GIFTLIST_DDSOULPLAGUE_WEAPONS"/>
 </event>
