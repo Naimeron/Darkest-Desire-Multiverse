@@ -265,11 +265,11 @@ end)
 
 --Utility function to see if the system is ready for use
 local function corruptor_ready(shipSystem)
-   return not shipSystem:GetLocked() and shipSystem:Functioning() and shipSystem.iHackEffect <= 1
+   return not (shipSystem:GetLocked() and shipSystem.iLockCount ~= -1) and shipSystem:Functioning() and shipSystem.iHackEffect <= 1
 end
 --Utility function to see if the system is ready for use
 local function corruptor_ready_enemy(shipSystem)
-   return not shipSystem:GetLocked() and shipSystem:Functioning() and shipSystem.iHackEffect <= 1 and Hyperspace.ships.enemy._targetable.hostile
+   return not (shipSystem:GetLocked() and shipSystem.iLockCount ~= -1) and shipSystem:Functioning() and shipSystem.iHackEffect <= 1 and Hyperspace.ships.enemy._targetable.hostile
 end
 --Initializes primitive for UI GetAllSegments()
 local buttonBase = {}
@@ -379,6 +379,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         if not corruptorSystem then return end
 
         if corruptor_targetRoomTemp and corruptor_ready(corruptorSystem) then
+            corruptorSystem:LockSystem(-1)
             local effectivePower = corruptorSystem:GetEffectivePower()
             corruptorSpawnTimerMax = 10 - effectivePower
             corruptorSpawnTimer = corruptorSpawnTimerMax
