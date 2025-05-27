@@ -420,6 +420,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         end
         if corruptorSystem then
             if corruptor_ready_enemy(corruptorSystem) and not corruptor_targetRoomEnemy then
+                corruptorSystem:LockSystem(-1)
                 local effectivePower = corruptorSystem:GetEffectivePower()
                 corruptorSpawnTimerMaxEnemy = 10 - effectivePower
                 corruptorSpawnTimerEnemy = corruptorSpawnTimerMax
