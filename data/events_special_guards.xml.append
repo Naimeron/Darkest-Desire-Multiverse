@@ -247,6 +247,7 @@
 	</beaconType>
 	<text>Before you can so much as blink upon entering the sector, a barrage of ion projectiles whizzes past your window... met by another coming from the opposite direction! You're in the middle of a battle between two forces! On one side, you recognize the Harmony, but on the other...</text>
 	<metaVariable name="juke_ddharmoniousdissonance" op="set" val="1"/>
+	<variable name="sec_unique_dddisparity" op="set" val="1"/>
 	<variable name="loc_unique_sectors" op="add" val="1"/>
 	<changeBackground>BACK_SECTOR_ENGI</changeBackground>
 	<playSound>lightspeed</playSound>
@@ -408,6 +409,7 @@
 	</beaconType>
 	<text>For all of the Atlas' talk of lifelessness and abandonment, this sector seems populated enough to you... at the very least, there's a ship here at its entrance. They don't really come off as any sort of guard, though, as their ship slowly drifts through the space outside...</text>
 	<metaVariable name="juke_dddemiurgicoblivion" op="set" val="1"/>
+	<variable name="sec_unique_ddsoulplague" op="set" val="1"/>
 	<variable name="loc_unique_sectors" op="add" val="1"/>
 	<ship load="SHIP_START_DDSOULPLAGUE_FIGHT" hostile="false"/>
 	<changeBackground>BACK_SECTOR_SHELL</changeBackground>
@@ -475,7 +477,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>As your mind races with questions, the darkness around you seems to... shift? Like it's revealing itself out from under a cloak, something simply appears to emerge from nothing in the space outside. It's a ship... of Deep One make, there's no doubt, but it's unlike any Deep One ship you've seen. It appears to be in almost complete disrepair and is sporting a brownish-yellow paintjob, unlike the selectively blue ships you've come across. It floats outside, unmoving.</text>
+					<text>As your mind races with questions, the darkness around you seems to... shift. Like it's revealing itself out from under a cloak, something simply appears to emerge from nothing in the space outside. It's a ship... of Deep One make, there's no doubt, but it's unlike any Deep One ship you've seen. It appears to be in almost complete disrepair and is sporting a brownish-yellow paintjob, unlike the selectively blue ships you've come across. It floats outside, unmoving.</text>
 					<choice hidden="true">
 						<text>Attempt to hail.</text>
 						<event>

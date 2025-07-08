@@ -41,6 +41,75 @@
 	<autoReward level="HIGH">standard</autoReward>
 </event>
 
+<event name="DARKONE_START_TRUESENDOFF">
+	<text>For a moment, there's a welcome silence, and you take the time to bring yourself back to your feet. As you do so, the Dark God's voice returns, as threatening and booming as it had been originally, "I BELIEVE THIS CONVERSATION TO HAVE BEEN... FRUITFUL. ANSWERS, POWER, MYSTERY, BATTLE - WHATEVER IT IS THAT YOU DESIRE, MY EMBRACE SHALL PROVIDE; SHOULD YOU PROVE YOURSELF WORTHY OF THESE GIFTS."</text>
+	<choice hidden="true">
+		<text>Really? And... what is it that you desire? Why are you doing this?</text>
+		<event>
+			<text>There's another silence, and, this time, its voice does not return. Rather, you feel another crackle of energy as something inexplicable seems to repair your hull outside - simultaneously, what is 'outside' seems to shift... as the shadows around you begin to claw their way into your ship! It seems that your trial has begun.</text>
+			<damage amount="-14"/>
+			<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
+			<status type="limit" target="player" system="hacking" amount="0"/>
+			<boarders min="2" max="3" class="darkgodtendrils"/>
+			<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
+				<text>Prepare to defend yourself!</text>
+				<event>
+					<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
+					<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
+				<text>Prepare to defend yourself!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DARKONE_START_BADENDING_PAYOUT">
+	<text>"AS YOU CAN SURMISE, YOUR ARRIVAL HERE WAS... ARRANGED. YOUR ALLY'S INSISTENCE ON DISTURBING THIS PROCESS PROVED TO BE THEIR DEMISE; THOUGH, I AM NOT WITHOUT MERCY. THERE WILL BE TRIALS AHEAD. YOU ARE TO BE TESTED. YET, I OFFER YOU A PAWN - A PIECE FOR YOU TO PLAY IN THIS GAME."
+	
+	The space in front you crackles with energy, before ultimately tearing apart. From the rift this disturbance creates, a Deep One crashes forward and into the ground, seemingly in as much pain as you are. You don't suppose they've been asked to join you politely, then...</text>
+	<crewMember amount="1" class="deepone"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DARKONE_START_TRUESENDOFF"/>
+	</choice>
+</event>
+
+<event name="DARKONE_START_WEIRDENDING_PAYOUT">
+	<text>"AS YOU CAN SURMISE, YOUR ARRIVAL HERE WAS... ARRANGED. THE SPECIFICS, THOUGH CRUDELY PERFORMED, WERE ENACTED EXACTLY AS I HAD WILLED IT. YET, FROM MY FORCES... IT WAS REPORTED THAT YOUR MANPOWER WAS SUFFERING. NONEXISTENT, TO BE PARTICULAR. THERE WILL BE TRIALS AHEAD. YOU ARE TO BE TESTED. YET, I AM NOT WITHOUT MERCY. I OFFER YOU A PAWN - A PIECE FOR YOU TO PLAY IN THIS GAME."
+	
+	The space in front you crackles with energy, before ultimately tearing apart. From the rift this disturbance creates, a Deep One crashes forward and into the ground, seemingly in as much pain as you are. You don't suppose they've been asked to join you politely, then...</text>
+	<crewMember amount="1" class="deepone"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DARKONE_START_TRUESENDOFF"/>
+	</choice>
+</event>
+
+<event name="DARKONE_START_NEUTRALENDING_PAYOUT">
+	<text>"AS YOU CAN SURMISE, YOUR ARRIVAL HERE WAS... ARRANGED. THOUGH YOUR DISCOVERY OF MY EMISSARY WAS LESS THAN CALCULATED, YOU'VE PROVEN CAPABLE OF STILL MAKING IT HERE MOSTLY-INTACT. THERE WILL BE TRIALS AHEAD. YOU ARE TO BE TESTED. YET, I AM NOT WITHOUT MERCY. I OFFER YOU REPARATIONS - MAY YOU SPEND THEM WISELY."
+	
+	The space in front you crackles with energy, before ultimately tearing apart. From the rift this disturbance creates, a collection of loot crashes forward and onto the ground. You're not sure how helpful this will be in the immediate future, but you're certainly not unappreciative of the gesture...</text>
+	<autoReward level="MED">standard</autoReward>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DARKONE_START_TRUESENDOFF"/>
+	</choice>
+</event>
+
+<event name="DARKONE_START_GOODENDING_PAYOUT">
+	<text>"AS YOU CAN SURMISE, YOUR ARRIVAL HERE WAS... ARRANGED. THOUGH, I UNDERSTAND THAT IT TOOK LONGER THAN DESIRED... I AM AWARE OF THE VALUE TIME HAS TO BEINGS SUCH AS YOURSELF. THERE ARE TO BE TRIALS AHEAD. YOU ARE TO BE TESTED. YET, I AM NOT WITHOUT MERCY. I OFFER YOU THE TIME YOU DESPERATELY SEEK - DO WITH IT AS YOU WISH."
+	
+	The space around you crackles with energy, though you're not sure of its exact purpose. Regardless, it seems you and your ship have been blessed somehow...</text>
+	<modifyPursuit amount="-3"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DARKONE_START_TRUESENDOFF"/>
+	</choice>
+</event>
+
 <event name="DARKONE_START">
 	<preventQuest/>
 	<beaconType id="map_icon_start" global="false">
@@ -48,6 +117,11 @@
 	</beaconType>
 	<text>Finally, your ship comes to a stop... where the hell are you? Your ship's consoles all flash red, on and off; alarms are blaring.</text>
 	<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<playSound>lightspeed</playSound>
 	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
 		<text>Gather your bearings.</text>
@@ -56,21 +130,162 @@
 			<choice hidden="true">
 				<text>That's it, then! Make a break for that exit!</text>
 				<event>
-					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, YOU WILL DROWN. PROVE YOURSELF, STRUGGLE, OR PERISH. THIS IS MY DECREE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
-					<damage amount="-14"/>
-					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
-					<status type="limit" target="player" system="hacking" amount="0"/>
-					<boarders min="2" max="3" class="darkgodtendrils"/>
-					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
-						<text>Prepare to defend yourself!</text>
+					<text>As you're concocting a plan of escape, the same voice you'd heard before returns, its overwhelming volume booming within your head once more, "IT IS TIME WE SPEAK. FLAIL, IF YOU WISH - IT MATTERS LITTLE."</text>
+					<choice hidden="true">
+						<text>Struggle, helplessly, against the voice as it roars amongst your thoughts.</text>
 						<event>
-							<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
-							<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
+							<text>You can feel your skull split further with each disembodied, echoing word that forces its way into your mind. Whatever this thing is, you don't feel as if it's speaking to you as much as it's speaking THROUGH you. Even still, you find the strength within yourself to grit your teeth, and mutter what little utterances you can...</text>
+							<choice hidden="true">
+								<text>What... are you? Where have you taken us? Why...?</text>
+								<event>
+									<text>There's a thunderous crack inside your head, and you're brought crashing to your knees. Venom, and annoyance, tinge the mysterious entity's words as it speaks further, "I KNOW YOU TO DESIRE TRUTH - ANSWERS. I OFFER THE MEANS WITH WHICH TO SEEK THEM. THOUGH, KNOW THIS: YOU ARE NOT THE FIRST TO THINK THEMSELVES ABOVE MY CHOSEN; ABOVE MY WORD."
+									
+									The voice puts an especially disdainful emphasis on that final word, and you realize what it said... its Chosen. This isn't just any voice, but one you've been warned of - the Dark God. Its demeanor shifts at your newfound clarity, and it sounds nothing but eerily calm as it continues, "NOR... WOULD YOU BE THE FIRST TO PERISH HERE AS A RESULT OF YOUR PRIDE. MANY SEEK ME OUT. YOU'VE HAD THE PLEASURE - OR, PERHAPS, DISPLEASURE - OF MEETING ONE SUCH INDIVIDUAL ALREADY."</text>
+									<choice hidden="true" req="unique_thescarred">
+										<text>(The Scarred) Do you mean... the Scarred?</text>
+										<event>
+											<text>Though you can't bring yourself to speak the words, their meaning seems to come across to the invader in your head regardless. It returns to its hateful, roaring tone, "THE TRAITOR. IT WAS TO BEAR EVERYTHING - BECOME EVERYTHING. IT THINKS ITSELF ABOVE ME NOW. EVEN STILL, IT WOULD SOONER COWER AMONGST THE SAME SHADOWS IT LOATHES THAN FACE ITS REPENTANCE; MY WRATH."
+											
+											Your mind sears with pain at the sheer power of the Dark God's vitriol, but you understand that the full force of its anger is directed elsewhere. Beside you, the Scarred is screaming; the space around themself distorting, and tearing, as they do everything in their power to resist the entity's punishment. After a while, its rage relents, and its attention returns to you with that same, calm demeanor it'd had earlier, "YOU, ON THE OTHER HAND... ARE STRONGER. IT KNOWS THIS, AND SEEKS TO EXPLOIT IT. I KNOW THIS AS WELL, AS THOROUGHLY AS I KNOW ALL THINGS, AND HAVE INVITED YOU INTO MY EMBRACE ACCORDINGLY."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="unique_thehunger">
+										<text>(The Hunger) Do you mean... the Hunger?</text>
+										<event>
+											<text>Though you can't bring yourself to speak the words, their meaning seems to come across to the invader in your head regardless. It returns to its hateful, roaring tone, "THE LIBERATOR - OR, THE LIBERATED. THEIR COLLECTIVE TRAVELLED FAR TO MEET ME PERSONALLY. FARTHER THAN MOST, AS THEY WERE SPURRED ON BY A MOST EMPOWERING DESIRE - FOR THE MEANS TO OVERCOME THEIR CHAINS. THEY HAVE DONE AS I HAVE NEEDED, AND I HAVE PROVIDED THESE MEANS IN TURN."
+											
+											You feel your gaze directed somewhere, as you're forced against your will to stare upon the Hunger's ever-vibrating visage. For the first time, you feel terrified as you stare into its empty, clouded visor - you're not sure if that's because of a fear you have for it, or for the entity commanding your body to do as it pleases. Either way, this puppeting eventually ceases, and the Dark God returns to speaking to you with that same, calm demanor it'd had earlier, "YOU, ON THE OTHER HAND... ARE STRONGER STILL. THEY KNOW THIS, AND FIND THEMSELVES IN GOOD COMPANY. I KNOW THIS AS WELL, AS THOROUGHLY AS I KNOW ALL THINGS, AND HAVE INVITED YOU INTO MY EMBRACE ACCORDINGLY."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theaberration">
+										<text>(The Foolish) Do you mean... the Foolish?</text>
+										<event>
+											<text>Though you can't bring yourself to speak the words, their meaning seems to come across to the invader in your head regardless. It returns to its hateful, roaring tone, "A MONIKER THAT HE HAS NOT TAKEN ON LIGHTLY. HE CAME TO ME SEEKING GIFTS, AND FOUND THEM IN ABUNDANCE. I ASKED FOR LITTLE IN RETURN, AND STILL DOES HE SEEK TO UNDERMINE ME; MY WILL."
+											
+											Your mind sears with pain at the sheer power of the Dark God's vitriol, but you understand that the full force of its anger is directed elsewhere. Beside you, the Foolish is screaming; Soulplague-infected matter oozing endlessly from every orifice within his shell as its exterior proves itself to be useless against the entity's unknowable torment. After a while, this torture relents, and the voice's attention returns to you with that same, calm demeanor it'd had earlier, "YOU, ON THE OTHER HAND... ARE STRONGER. HE KNOWS THIS, AND SEEKS TO EXPLOIT IT. I KNOW THIS AS WELL, AS THOROUGHLY AS I KNOW ALL THINGS, AND HAVE INVITED YOU INTO MY EMBRACE ACCORDINGLY."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theheroine">
+										<text>(The Heroine) Do you mean... the Heroine?</text>
+										<event>
+											<text>Though you can't bring yourself to speak the words, their meaning seems to come across to the invader in your head regardless. It returns to its hateful, roaring tone, "YOU COULD NOT BE FURTHER FROM THE TRUTH. TO THIS ONE, I WOULD GIVE NOTHING - SAVE FOR AN EXCRUCIATING DEATH. TO SAY THAT YOU STAND BY HER INSOLENCE ONLY SERVES TO TEST MY PATIENCE."
+											
+											Your mind sears with pain at the sheer power of the Dark God's vitriol, but you understand that the full force of its anger is directed elsewhere. Beside you, the Heroine seems preoccupied; locked in battle with a seemingly endless army of tentacles. Each one rises from the ground, makes a strike, and finds its attack cut short by a swift turning of her spear. After a while, this charade ends, and the voice's attention returns to you with that same, calm demeanor it'd had earlier, "ONE DAY, I WILL HAVE HER HEAD. YOU, ON THE OTHER HAND... ARE STRONGER THAN EVEN HER. SHE KNOWS THIS, AND SEEKS TO EXPLOIT IT. I KNOW THIS AS WELL, AS THOROUGHLY AS I KNOW ALL THINGS, AND HAVE INVITED YOU INTO MY EMBRACE ACCORDINGLY."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theminister">
+										<text>(The Minister) Do you mean... the Minister?</text>
+										<event>
+											<text>You're expecting a response, but your head is suddenly, and eerily, quiet. Looking over at the Minister, he seems puzzled by your display of pain on the floor, "Something the matter, Renegade? Is this your first time within the Tempest's domain, or are you simply feeling space-sick?" Vainly, you try to speak, but only manage to cough up blood in his general direction. Amused, he smirks, "It is all a bit overwhelming the first time, isn't it... oh, no matter. I'll fetch something for you to retch into."
+											
+											As he leaves the room, you feel the tension in the air return as the Dark God finally speaks with that same, calm demeanor it'd had earlier, "PAY THE OLD MAN LITTLE MIND. I HAVE NOTHING WITH WHICH TO TELL HIM. YOU, ON THE OTHER HAND... ARE STRONGER THAN HIM. HE KNOWS THIS, AND SEEKS TO EXPLOIT IT. I KNOW THIS AS WELL, AS THOROUGHLY AS I KNOW ALL THINGS, AND HAVE INVITED YOU INTO MY EMBRACE ACCORDINGLY."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>I'm... not sure that I have.</text>
+										<event>
+											<text>A series of sounds - akin to a powerful, hearty laugh, you realize - ring out within your head, forcing you to reel once more. "NO, PERHAPS NOT. TO GET THIS FAR, WITH NAUGHT BUT UNINITIATED COMPANY, THOUGH... PERHAPS YOU ARE STRONGER THAN EVEN I HAD CALCULATED. YOUR INVITATION HERE PROVES ITSELF WARRANTED."</text>
+											<choice hidden="true" req="dd_enlightenedstart_badending_reward" lvl="1" blue="false">
+												<text>My... invitation? Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_BADENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_weirdending_reward" lvl="1" blue="false">
+												<text>My... invitation? Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_WEIRDENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_neutralending_reward" lvl="1" blue="false">
+												<text>My... invitation? Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_NEUTRALENDING_PAYOUT"/>
+											</choice>
+											<choice hidden="true" req="dd_enlightenedstart_goodending_reward" lvl="1" blue="false">
+												<text>My... invitation? Then, back in the Deep One sector...</text>
+												<event load="DARKONE_START_GOODENDING_PAYOUT"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
 						</event>
-					</choice>
-					<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
-						<text>Prepare to defend yourself!</text>
-						<event/>
 					</choice>
 				</event>
 			</choice>
@@ -83,7 +298,7 @@
 			<choice hidden="true">
 				<text>That's it, then! Make a break for that exit!</text>
 				<event>
-					<text>As you're concocting a plan of escape, the same voice you heard before booms into your head, "IN MY EMBRACE, I WELCOME YOU. YET STILL DOES MY WILL FESTER. DESIRE INTERVENTION, AND IT WILL BE DONE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
+					<text>As you're concocting a plan of escape, the same voice you'd heard before booms into your head, "IN MY EMBRACE, I WELCOME YOU. YET STILL DOES MY WILL FESTER. DESIRE INTERVENTION, AND IT WILL BE DONE." With that, you feel your burdens lifted... and then the shadows outside begin clawing at your ship! Make a run for the exit!</text>
 					<damage amount="-14"/>
 					<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
 					<status type="limit" target="player" system="hacking" amount="0"/>
@@ -108,6 +323,11 @@
 <event name="DARKONE_RUN">
 	<text>The darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
 	<status type="limit" target="player" system="hacking" amount="0"/>
 	<boarders min="3" max="6" class="darkgodtendrils"/>
@@ -288,7 +508,7 @@
 	<choice hidden="true">
 		<text>Gather yourself.</text>
 		<event>
-			<text>You pick yourself up, dusting off your knees, and an uproar of applause breaks out in your head. If you weren't so overwhelmed already, it'd give you a headache... it continues for a moment, before abruptly stopping as the voice speaks to you, "AN INSURMOUNTABLE DESIRE. INSURMOUNTABLE STRENGTH. INSURMOUNTABLE FORTITUDE. YOU ARE WORTHY TO SERVE, AND TO BE SERVED, VESSEL. KNOW MY FAVOR, MY POWER, MY CHOSEN AND PUSH FORWARD. YOUR FATE IS YOURS TO DECIDE." A crack of lightning roars out, as strange schematics appear in your systems, and a weapon of pure, chaotic energy manifests beside you...</text>
+			<text>You pick yourself up, dusting off your knees, and an uproar of applause breaks out in your head. If you weren't so overwhelmed already, it'd give you a headache... it continues for a moment, before abruptly stopping as the voice speaks to you, "AN INSURMOUNTABLE DESIRE. INSURMOUNTABLE STRENGTH. INSURMOUNTABLE FORTITUDE. YOU ARE WORTHY TO SERVE, AND TO BE SERVED, MIGHTY ONE. KNOW MY FAVOR, MY POWER, MY CHOSEN AND PUSH FORWARD. YOUR FATE IS YOURS TO DECIDE." A crack of lightning roars out, as strange schematics appear in your systems, and a weapon of pure, chaotic energy manifests beside you...</text>
 			<unlockCustomShip silent="false">PLAYER_DDDEEP_ONE_CHOSEN</unlockCustomShip>
 			<weapon name="BOMB_DDOBELISK"/>
 			<choice hidden="true">
@@ -405,20 +625,24 @@
 
 <event name="DDDARKGODDOMAIN_TRIAL">
 	<preventQuest/>
-	<preventFleet/>
-	<beaconType id="map_icon_ddtruemystery" global="false">
+	<beaconType id="map_icon_ddtruemystery" global="true">
 		<color r="211" g="47" b="47" a="1"/>
 	</beaconType>
-	<text>There's an intensity in the air here. You've felt a similar feeling throughout your brief time in this domain, but never as strongly as you feel it now. Yet, there's nothing here, and even the darkness outside is still... you can't say why you felt compelled to come here.</text>
+	<text>There's an intensity in the air here. You've felt a similar feeling throughout your brief time in this domain, but seldom as strongly as you feel it now. Yet, there's nothing here, and even the darkness outside is still... you can't say why you felt compelled to come here.</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<choice hidden="true">
 		<text>Hello?</text>
 		<event>
-			<text>You cry out, and everything around you quakes. YOU quake. As you struggle to stand, a voice calls back to you in your mind, "DROWN." This one word brings you to your knees as pain surges throughout your body, and you're sent reeling. You feel as if your existence is at the mercy of existence itself.</text>
+			<text>You cry out, and everything around you quakes. YOU quake. As you struggle to stand, a voice calls back to you in your mind, "KNEEL." This one word brings you to your knees as pain surges throughout your body, and you're sent reeling. You feel as if your existence is at the mercy of existence itself.</text>
 			<choice hidden="true">
 				<text>What... do... you want...?</text>
 				<event>
-					<text>Each word pains you further, and yet you feel compelled to force them out anyways. You don't feel that they're your words, or that they're reflective of your thoughts, and yet you feel as if you had no choice but to say them. There's a sound that plays in your head, reminiscent of laughter, as the voice returns, "IT IS NOT MY PLACE TO WANT. TO DESIRE... AND, YET, I TAKE PLEASURE IN YOUR SQUIRMING."</text>
+					<text>Each word pains you further, and yet you feel compelled to force them out anyways. You don't feel that they're your words, or that they're reflective of your thoughts, and yet you feel as if you had no choice but to say them. There's a sound that plays in your head, reminiscent of laughter, again, as the voice returns, "THIS WAS TO BE ONE OF YOUR TRIALS, BUT... ADMITTEDLY, I'M ENJOYING YOUR SQUIRMING."</text>
 					<choice hidden="true">
 						<text>Fight the pain.</text>
 						<event>
@@ -460,6 +684,446 @@
 	</choice>
 </event>
 
+<event name="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND">
+	<text>Suddenly, your perspective is ripped away - back to that confusing cacophony of eldritch sights and sounds. At the end of each of these forsaken visions, lies a path... and at the end of each path, lies a single door at which they converge.
+	
+	The end of everything.</text>
+	<choice hidden="true">
+		<text>Focus on this vision of finality.</text>
+		<event>
+			<text>Your vision shifts again, for the final time, as you bear witness to the end of all things...
+			
+			
+			
+			THOUGH ALL POSSIBILITIES REMAIN PROPHESIZED, ONE ROAD LIES AHEAD, AT THE END OF EVERY OTHER.
+			
+			IT IS THIS PATH THAT STANDS ABOVE THE DARK, AND REMAINS AN IMMUTABLE INEVITABILITY... THE PROPHECY.
+			
+			
+			
+			THREE SISTERS WILL BE REUNITED, BEYOND THE EDGE OF EVERYTHING.
+			
+			ONE BEARS THE STRENGTH OF ULTIMATE POWER - THE WINGS.
+			
+			ONE BEARS THE STRENGTH OF ANTUMBRAL SHADOW - THE BLADE.
+			
+			ONE BEARS THE STRENGTH OF SHATTERED MEMORY - THE SHIELD.
+			
+			IT IS THEN THAT THEIR FATHER WILL BEAR THEIR COMBINED STRENGTH, AND BRING FORTH THE FINAL DANCE.
+			
+			ALL THAT IT MEANS TO BE REAL - TO DESIRE... WILL BE TORN ASUNDER, AND REFORGED - IN A LONG-LOST DREAM'S IMAGE.
+			
+			
+			
+			THAT IS... UNLESS A NAME IS SPOKEN.
+			
+			SHOULD ONE SPEAK THIS NAME, AND BEAR THE THREE SISTERS' STRENGTH IN THEIR FATHER'S STEAD... SHOULD ITS PLOT BE THWARTED...
+			
+			THEN ALL WILL CRUMBLE, AND THERE WILL BE NO DANCE - NO ANYTHING, EVERMORE. EVERYTHING THAT IS, WILL CEASE TO BE...
+			
+			
+			
+			...thus will it be done.</text>
+			<variable name="dd_prophecyoftheendwitnessed" op="set" val="1"/>
+			<choice hidden="true">
+				<text>...</text>
+				<event>
+					<text>There's a feeling of being pulled, as you're torn away from the pedestal - away from everything...
+					
+					...and, with a thud, you find yourself back aboard your ship. More specifically, on your back, against the floor. Had that all, just... been in your head?</text>
+					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+					<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+						<layer z="0">background</layer>
+						<spawnArea x="0" y="0" w="0" h="0"/>
+						<anim>dddarkgodsdomainaura_bg</anim>
+					</backgroundObject>
+					<choice hidden="true">
+						<text>Dust yourself off, and look around.</text>
+						<event>
+							<text>Taking a moment to gather yourself, you're startled as a shadow in the corner of the room catches your eye - one of the Dark God's Chosen, merely standing there... watching you.</text>
+							<choice hidden="true">
+								<text>Ready your weapon, and ask the Deep One to explain themself.</text>
+								<event>
+									<text>The pale Deep One offers you a low, ominous laugh, before bowing its head and speaking, "THE DARK ONE... HAS RECEIVED WORD OF YOUR KNOWLEDGE. FEW... OUTSIDE OF ITS EMPLOY, KNOW OF THE PROPHECY... THIS MAKES YOU SPECIAL."
+									
+									They return to standing straight, and then put their cloaked hands together as they continue, "OUR MASTER... WISHES TO KEEP AN EYE ON YOU. THOUGH... IT WILL BE DONE REGARDLESS, CONSIDER MY PRESENCE... THE EASY ROUTE. A TOKEN OF... COMFORT."</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Before you can object, the Deep One bows once more, and then hurries to leave the room. If their words are true, and you'll be watched regardless, then you suppose there's little harm in having them aboard... at least, for now.</text>
+											<crewMember amount="1" class="dddeepone_chosen">Varagon</crewMember>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDDARKGODDOMAIN_PROPHECY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddtruemystery" global="true">
+		<color r="211" g="47" b="47" a="1"/>
+	</beaconType>
+	<text>There's an intensity in the air here. You've felt a similar feeling throughout your brief time in this domain, but seldom as strongly as you feel it now. Yet, there's nothing here, and even the darkness outside is still... you can't say why you felt compelled to come here.</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
+	<choice hidden="true">
+		<text>Hello?</text>
+		<event>
+			<text>Rather than receiving an answer, you feel as your muscles tense... and your vision begins to fade. You're being lulled into a deep, deep sleep...</text>
+			<choice hidden="true">
+				<text>Fight against this strange feeling.</text>
+				<event>
+					<text>It doesn't matter what you desire - not this time. Whatever's doing this is refusing to relent - indeed, you fall into that darkest slumber...</text>
+					<choice hidden="true">
+						<text>...</text>
+						<event>
+							<text>...and find yourself somewhere familiar, yet alien. You're not aboard your ship, or with any familiar company... you stand alone, atop a pillar. Looking down, its bottom seems to fades away into the unfathomable darkness below - you're unsure if this is meant to merely be a giant room, or, more impossibly, the darkest reaches of space. You feel comfortable enough, though.</text>
+							<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+							<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+							<choice hidden="true">
+								<text>Look around.</text>
+								<event>
+									<text>Within the center of the pillar is a pedestal, but little else. With nothing else to do, you approach it - the intensity in the air rising as you do so.
+									
+									Atop the pedestal is an engraving of a small, human handprint. You wouldn't reckon that your hand would fit within it, but...</text>
+									<choice hidden="true">
+										<text>Place your hand atop the pedestal.</text>
+										<event>
+											<text>Immediately, visions cloud your mind - terrible, twisted sceneries, completely foreign to your psyche... each one individually threatening to shatter your very ability to think. Even still, you feel as if you may be able to focus on any one of these scenes of madness...</text>
+											<choice hidden="true">
+												<text>Focus on the vision of strange crystal - the one that tells of a divine war.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													THIS IS A BROKEN LAND, OF BROKEN PEOPLE, WITH BROKEN MINDS.
+													
+													EVEN STILL, THERE ARE THOSE WHO SEEK TO BREAK IT FURTHER - THOSE LUCKY FEW WHO HAVE BROKEN FREE OF BREAKING.
+													
+													THEY SEEK TO BREAK OTHERS FREE, TOO - THE UNFORTUNATE MANY WHO FIND THEMSELVES FORCED TO LIVE TOGETHER, IN HARMONIOUS DISSONANCE.
+													
+													SHOULD ONE SEEK TO HELP THEM, AMIDST THIS BROKEN LAND - OR, OTHERWISE PROVE TO BE THE ONE TO BREAK THEIR BROKEN RESOLVE...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of the impossible - the one clouded in a dark, harrowing red.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													THIS VERY SEA OF MADNESS, AMONGST THE EDGE OF REALITY...
+													
+													...CARRIES WITH IT TRIALS, PROPHECIES AND FORGOTTEN SHADES IN EQUAL MEASURE.
+													
+													AND YET, THOUGH ONE PARTICULAR TRIAL WOULD BE DEEMED IMPOSSIBLE... IT IS ANYTHING BUT.
+													
+													SHOULD ONE SEEK ITS CHALLENGE, AND PROVE THEMSELF CAPABLE OF OVERCOMING EVEN THAT WHICH CAN'T BE OVERCOME...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of voracity - the one within the belly of the beast.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													LITTLE MORE THAN A CAGE, BETWEEN THE FABRIC OF EVERYTHING.
+													
+													A PRISON, BUILT TO HOLD ITS MAKER - A PRISON, BUILT TO HOLD THE UNMAKER.
+													
+													ONE MAY FIND ITS ENTRANCE AMONGST THE SEA OF SHAMBLING DEAD - A QUIET PLACE, WHERE EVEN THE HOPELESS FIND HOPE.
+													
+													FROM THERE, IT IS HOPE THAT THEY MUST HOLD ONTO. SHOULD THEY KEEP IT FOR WHEN THEY NEED IT MOST, AND SHATTER THE PRISON'S HEART...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of a distant darkness - the one at the edge of the Multiverse.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													A REMNANT OF WHAT WAS - A SHADE OF ITS FORMER SELF.
+													
+													IT'S HARDLY DIFFERENT FROM THE LAND FROM WHICH IT HAILS - THAT DARK, DISTANT PLACE.
+													
+													AND YET, WITHIN THIS DARKNESS... IS THE PRESENCE OF AN UNHOLY LIGHT. THAT WHICH THREATENS THE UNMAKING OF EVERYTHING.
+													
+													SHOULD ONE BREACH REALITY'S SEAMS, AND STOP THIS TERRIBLE FORCE...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of love - deep within a sea of madness.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													THE EXPLORER, AND HIS STARSTRUCK LOVER.
+													
+													SELDOM THE FOOL, HE KNOWS VERY WELL THE REALM HE INTENDS TO EXPLORE - THAT WHICH LIES WELL BEYOND THIS REALITY.
+													
+													AND, YET... THOUGH HE CANNOT GET THERE ALONE, HE MUST ARRIVE THERE AS SUCH.
+													
+													SHOULD ONE FIND THEIR SHIP BEFORE THEY SET OFF FROM DEEP SPACE, AND THEN AGAIN AFTER THEY PART...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of the occult - rituals of strange, wooden constructs.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													THAT DISTANT, FOGGY PLANE - ONCE THOUGHT LOST, BUT NOW RESTORED.
+													
+													IT IS FROM THIS LAND OF TREES THAT A SONG IS SUNG - ITS NOTES ECHOING THROUGHOUT THE MULTIVERSE.
+													
+													THOUGH ONE CAN'T SEE ITS BEAUTY, OR SMELL ITS ROSES... THEY MAY, RARELY, HEAR ITS SONG.
+													
+													SHOULD THEY LISTEN, AMIDST THE SEA OF SHADOWS, AND PROVE THE STRENGTH OF THEIR OWN MELODY...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Focus on the vision of hatred - an ire directed at armored friends.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													WITHIN THE SEA OF SHAMBLING DEAD, LIES A SHIP.
+													
+													THOUGH IT DOESN'T TRANSPORT GOODS, IT DOES DEAL IN SECRETS...
+													
+													ONE MUST FOLLOW ITS PATH OF MYSTERY, AND THEN ENTER THE BELLY OF THE BEAST.
+													
+													SHOULD THEY MAKE IT THROUGH, AND ENGAGE THEIR NEW, ARMORED FRIENDS IN CONVERSATION...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDDARKGODDOMAIN_THESHADEMEETING_FIGHT" auto_blueprint="DDFALSE_RADIANCE_DWARFLING_MYSTERIOUS">
+	<destroyed>
+		<text>The mysterious, otherworldly ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDDARKGODDOMAIN_THESHADEMEETING_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+</ship>
+
+<event name="DDDARKGODDOMAIN_THESHADEMEETING_FIGHT_WIN">
+	<text>You realize that... not only has the strange wormhole closed since the ship's defeat, but that distant voice you'd heard earlier is gone, as well. The ship's origins, as well as everything else odd that's occurred here, seems to entirely remain a mystery...</text>
+	<clearBackgroundObject name="DDSPACETIMESEAM_ANTUMBRAL"/>
+	<choice hidden="true" req="ddunique_theshade" lvl="1" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...including the cloaked figure who's joined you. With the threat of the glowing ship eliminated, it appears to have returned to a state of idle dormancy. Whatever it is, you feel slightly comforted by the fact that it's at least fighting beside you... perhaps, in time, you'll be able to get to the bottom of its secrets.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="ddunique_theshade" lvl="0" max_lvl="0" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...including the cloaked figure, who seems to have been destroyed in the fight. Will you ever understand any of this, with it gone...?</text>
+		</event>
+	</choice>
+</event>
+
+<event name="DDDARKGODDOMAIN_THESHADEMEETING">
+	<preventQuest/>
+	<beaconType id="map_icon_ddtruemystery" global="true">
+		<color r="211" g="47" b="47" a="1"/>
+	</beaconType>
+	<text>There's an intensity in the air here. You've felt a similar feeling throughout your brief time in this domain, but seldom as strongly as you feel it now. Yet, there's nothing here, and even the darkness outside is still... you can't say why you felt compelled to come here.</text>
+	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
+	<choice hidden="true" req="LIST_CREW_DDTHESHADEFORMS" lvl="0" max_lvl="0" blue="false">
+		<text>Hello?</text>
+		<event>
+			<text>For a moment, there's only silence... that is, until you realize that it isn't silence at all - you can hear something. Is that... a voice? You're not sure where it's coming from, but it sounds like it's somewhere distant.</text>
+			<choice hidden="true">
+				<text>Be quiet, and try to listen out for the source of the sound.</text>
+				<event>
+					<text>Though you go quiet, your listening is quickly interrupted - as a wormhole opens up beside you!</text>
+					<choice hidden="true">
+						<text>Prepare yourself!</text>
+						<event>
+							<text>You get ready to defend yourself, as something crashes out of the newly sundered tear in space, and onto the floor. It's a large, cloaked figure - its dotted, metallic surface as dark as the strange space outside.
+							
+							You tense up, finger on your weapon's trigger, as you expect it to do something, but... instead, it merely continues to sit there, laid out against the floor.</text>
+							<choice hidden="true">
+								<text>Keep your weapon trained on the mysterious entity.</text>
+								<event>
+									<text>As you continue to be cautious, a glimmer of light outside catches your attention. It looks to be the forming of a second wormhole, much larger than the first... though, something about it strikes you as unusual. Before you can figure out what, though, an immense object begins to move through it...</text>
+									<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+										<layer z="1">background</layer>
+										<spawnArea x="787" y="163" w="0" h="0"/>
+										<anim>ddspacetimeseam_antumbral_decor</anim>
+									</backgroundObject>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>...which you vaguely recognize as a ship - though, you can't say you've ever seen anything like it. At its arrival, the figure before you suddenly begins to move! Its movements, while robotic, seem refined and purposeful - it gets onto its feet and into a battle stance in mere seconds. Its attention seems to be focused on the ship outside, though... as you realize it's making an aggressive advance towards your own!
+											
+											Whatever this entity is, it seems to be willing to stand with you against the strange ship.</text>
+											<achievement>ACH_CREW_DDTHESHADE</achievement>
+											<variable name="ach_crew_ddtheshade" op="set" val="1"/>
+											<crewMember amount="1" class="ddunique_theshade" all_skills="1">The Shade</crewMember>
+											<ship load="DDDARKGODDOMAIN_THESHADEMEETING_FIGHT" hostile="true"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="COMBAT_CHECK"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Call out to the sound.</text>
+				<event>
+					<text>Though you try to grab the attention of... whatever it is, your attempt is quickly interrupted - as a wormhole opens up beside you!</text>
+					<choice hidden="true">
+						<text>Prepare yourself!</text>
+						<event>
+							<text>You get ready to defend yourself, as something crashes out of the newly sundered tear in space, and onto the floor. It's a large, cloaked figure - its dotted, metallic surface as dark as the strange space outside.
+							
+							You tense up, finger on your weapon's trigger, as you expect it to do something, but... instead, it merely continues to sit there, laid out against the floor.</text>
+							<choice hidden="true">
+								<text>Keep your weapon trained on the mysterious entity.</text>
+								<event>
+									<text>As you continue to be cautious, a glimmer of light outside catches your attention. It looks to be the forming of a second wormhole, much larger than the first... though, something about it strikes you as unusual. Before you can figure out what, though, an immense object begins to move through it...</text>
+									<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+										<layer z="1">background</layer>
+										<spawnArea x="787" y="163" w="0" h="0"/>
+										<anim>ddspacetimeseam_antumbral_decor</anim>
+									</backgroundObject>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>...which you vaguely recognize as a ship - though, you can't say you've ever seen anything like it. At its arrival, the figure before you suddenly begins to move! Its movements, while robotic, seem refined and purposeful - it gets onto its feet and into a battle stance in mere seconds. Its attention seems to be focused on the ship outside, though... as you realize it's making an aggressive advance towards your own!
+											
+											Whatever this entity is, it seems to be willing to stand with you against the strange ship.</text>
+											<achievement>ACH_CREW_DDTHESHADE</achievement>
+											<variable name="ach_crew_ddtheshade" op="set" val="1"/>
+											<crewMember amount="1" class="ddunique_theshade" all_skills="1">The Shade</crewMember>
+											<ship load="DDDARKGODDOMAIN_THESHADEMEETING_FIGHT" hostile="true"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="COMBAT_CHECK"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DDTHESHADEFORMS" lvl="1" blue="false">
+		<text>Hello?</text>
+		<event>
+			<text>But there's no answer. Indeed, it's as if the answer were with you all along... there's nothing for you here.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <textList name="DDDARKGODDOMAIN_CHOSEN_TEXT">
 	<text>A hatred in the air resonates as you realize its not just the darkness here that desires your destruction... from the depths of the madness outside rises yet another sleek, black ship of pure shadow. Get ready!</text>
 	<text>It seems the Dark God's Chosen have yet to give up on their quest to destroy you, as another one of their ships breaks through the darkness and prepares to attack!</text>
@@ -488,6 +1152,11 @@
 <event name="DDDARKGODDOMAIN_CHOSEN_ENCOUNTER">
 	<text load="DDDARKGODDOMAIN_CHOSEN_TEXT"/>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<ship load="DDDARKGODDOMAIN_CHOSEN_ENCOUNTER_FIGHT" hostile="true"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
@@ -546,6 +1215,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_ENLIGHTENED">
 	<text>...and grows darker still, as a wormhole opens up and an Enlightened ship appears from the ether. They may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<ship load="DDDARKGODDOMAIN_WORMHOLE_LIST_ENLIGHTENED_FIGHT" hostile="true"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
@@ -585,6 +1255,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_DISPARITY">
 	<text>...and glistens purple, as a wormhole opens up and a crystalline ship appears from the ether. They may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_DDCRYSTALTALEVOID</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<ship load="DDDARKGODDOMAIN_WORMHOLE_LIST_DISPARITY_FIGHT" hostile="true"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
@@ -624,6 +1295,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_SOULPLAGUE">
 	<text>...and gives way for a distant beacon of light, as a wormhole opens up and an iridescent, oily ship appears from the ether. They may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
 		<layer z="0">background</layer>
 		<spawnArea x="0" y="0" w="0" h="0"/>
@@ -673,6 +1345,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_ILLDRYTHK">
 	<text>...and a strange fog rolls in, as a wormhole opens up and a shaggy mass appears from the ether. They may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_DDILLDRYTHKFOG</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<ship load="DDDARKGODDOMAIN_WORMHOLE_LIST_ILLDRYTHK_FIGHT" hostile="true"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
@@ -717,6 +1390,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_HUSKWEAVER">
 	<text>...and gives way for a distant beacon of light, as a wormhole opens up and an iridescent, oily ship appears from the ether. From the ship emanates faint whispers... they may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
 		<layer z="0">background</layer>
 		<spawnArea x="0" y="0" w="0" h="0"/>
@@ -766,6 +1440,7 @@
 <event name="DDDARKGODDOMAIN_WORMHOLE_LIST_TEMPEST">
 	<text>...and a massive space-storm rolls in, as a wormhole opens up and a dark, painted appears from the ether. They may not know where they are, or what they're doing here, but they do know one thing: you're their next target!</text>
 	<changeBackground>BACKGROUND_DDTEMPESTVOID</changeBackground>
+	<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 	<ship load="DDDARKGODDOMAIN_WORMHOLE_LIST_TEMPEST_FIGHT" hostile="true"/>
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
@@ -778,8 +1453,13 @@
 </event>
 
 <event name="DDDARKGODDOMAIN_WORMHOLE">
-	<text>A sharp pain stings your mind, as the darkness outside appears to shift...</text>
+	<text>A sharp pain stings your mind, as the insanity outside appears to shift...</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="DDDARKGODDOMAIN_WORMHOLE_LIST"/>
@@ -938,6 +1618,11 @@
 	</beaconType>
 	<text>You're expecting to see Kyr and Lilith's ship, but instead you're met with... wait, no, this IS Kyr and Lilith's ship. At least, it's in the shape of it, but it's all twisted and enveloped in darkness... what's happened? You don't get a lot of time to think on it, as the nightmarish form of your friends' ship moves in to attack!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
 	<ship load="DARKONE_KYRANDLILITH_ENCOUNTER_FIGHT" hostile="true"/>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -946,7 +1631,7 @@
 </event>
 
 <event name="DARKONE_ALONE">
-	<text>You arrive at the exit to this dreadful journey once more... this time, do you take it?</text>
+	<text>You arrive at the exit of this dreadful journey once more... this time, will you take it?</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 </event>
 
@@ -954,34 +1639,30 @@
 	<revisitEvent>DARKONE_ALONE</revisitEvent>
 	<text>Now that you're at the exit, the darkness seems... still. All feels calm.</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
-	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
+	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>You expect to hear the Dark God call to you as you prepare to leave, but... it remains silent. Is it dissatisfied with you? As if to answer, one last node of fuel then materializes itself within your hold... accompanied by a single sentence that echoes throughout your skull "UNTIL OUR NEXT DANCE, VESSEL." You have a name, you know... regardless of its cryptic message, it seems you're free to finally escape from this madness.</text>
-			<item_modify>
-				<item type="fuel" min="1" max="1"/>
-			</item_modify>
-		</event>
-	</choice>
-	<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
-		<text>Continue...</text>
-		<event>
-			<text>The calm doesn't last long... you feel the space around you warp, and time slows... then, the Dark God calls to you, "TO COME THIS FAR IS MOST IMPRESSIVE. YOU STAND AT THE PRECIPICE; ESCAPE IS IN REACH. YET, BEFORE OUR TIME TOGETHER IS UP, I WILL GRANT YOU ONE LAST DESIRE. MAKE IT KNOWN."</text>
+			<text>Though, this tranquility doesn't last long... you feel as the space around you warps, and time itself seems to slow again. Then, to your unease, the Dark God tears its way back into your mind, "TO COME THIS FAR IS MOST IMPRESSIVE. YOU STAND AT THE PRECIPICE; ESCAPE IS IN REACH. YET, BEFORE OUR TIME TOGETHER IS UP, I WILL GRANT YOU ONE LAST DESIRE. MAKE IT KNOWN."</text>
 			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+			<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>dddarkgodsdomainaura_bg</anim>
+			</backgroundObject>
 			<choice hidden="true">
 				<text>I desire... truth.</text>
 				<event>
-					<text>"CURIOUS. WHAT TRUTH DO YOU PURSUE?"</text>
-					<variable name="darkone_desiretruth" op="set" val="1"/>
-					<choice hidden="true">
-						<text>The truth... behind this void.</text>
+					<text>There's a hint of piqued interest as its deafening voice answers, "MOST... CURIOUS. AND WHAT TRUTH DO YOU DESIRE?"</text>
+					<choice hidden="true" req="darkone_alignment" lvl="1">
+						<text>The truth... behind the hero I felled.</text>
 						<event>
-							<text>"THIS VOID... IS A FABRICATION OF MY DESIGN. OF THAT I'M SURE YOU'RE AWARE. WHAT YOU ARE NOT AWARE OF, IS ITS PURPOSE. WHAT DOES A GOD HAVE TO FEAR, TO TURN TO HIDING? THE ANSWER IS SIMPLE: ANOTHER GOD."</text>
+							<text>"THE HERO YOU FELLED... SURPRISED ME. LITTLE SURPRISES ME, AND I'VE YET TO CALCULATE HOW IT MANAGED TO SECEDE CONTROL OVER MY OWN POWER. ONE VARIABLE IS CERTAIN: SHEER DESIRE. TO OVERCOME THAT WHICH IT FELT NOBODY ELSE COULD. YOU AREN'T SO DIFFERENT IN THAT WAY; YET HERE YOU STAND, TRIUMPHANT..." There's a pause, as the Dark God seems to ponder something, "...THOUGH, I FEAR OTHER 'HEROES' REMAIN. SEEK THEM OUT, DEFEAT THEM, AND YOU WILL KNOW TRUE POWER."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -989,15 +1670,324 @@
 							</choice>
 						</event>
 					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the Scarred.</text>
+					<choice hidden="true" req="eldritch_cat">
+						<text>(The One Who Rhymes) "Oh, how one would love the truth! But, what makes you the super-sleuth?"</text>
 						<event>
-							<text>"THE TRAITOR... WAS A MISCALCULATION. I GAVE IT INSIGHT AS TO THE SOURCE OF MY POWER AND IT SEEKED TO EXPLOIT IT. DESPITE ITS DESPERATE FLAILINGS, THOUGH, ITS SCHEME WAS ENDED BY YOU, A TRUE HERO."</text>
+							<text>An annoyance fills the air, as the Dark God retorts, "IT IS MY BUSINESS TO KNOW THINGS, BEAST - AS IT IS YOURS TO INCESSANTLY PESTER. AND, AS IT IS YOUR MASTER'S TO MEDDLE - SHE THINKS HER PLAN THE ONLY ONE." There's a pause, as the Dark God seems to ponder something, "ALAS, THERE IS LITTLE 'BEING' IN CHAOS. TO DESIRE NOTHING, BUT MADNESS IN EVERYTHING... IS HARDLY A FRUITFUL EXISTENCE. EVEN STILL... IT IS A DESIRE NONETHELESS. THERE IS POWER THERE - WHICH I WILL WELCOME, COME THE DAY OF DANCING."
+							
+							The One Who Rhymes seems interested in its own rebuttal, when chains of darkness manifest around it - quickly serving to bind it to the ground. "AS POWERFUL AS YOUR KIND MAY BE, YOU ARE BUT A GUEST HERE IN MY DOMAIN. RESPECT THE ORDER OF THE OUTER CLUSTERS, AND I'LL CONTINUE TO RESPECT THEIR CHAOS AS WELL."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="gnome">
+						<text>(Gnome) The truth... behind, uh... this thing.</text>
+						<event>
+							<text>"THIS 'THING', AS YOU PUT IT... IS FROM THE OUTER EDGE." There's a pause, as the Dark God seems to ponder something, "I HAVE MOVED MUCH BETWEEN THE SEAMS, AND SEEN MUCH MORE - BUT LITTLE AS TRULY CHAOTIC AS THIS. I IMAGINE... SHE'D BE BEHIND THIS. BE CAREFUl, VESSEL. EVEN I WOULD RECOMMEND THAT YOU TAKE CAUTION AROUND HER... AND IF NOT HER - THEN THE CENTER-DWELLERS. THEY WOULD NOT BE AS CALM AS I, SEEING THIS IN YOUR HANDS."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_SYLVAN">
+						<text>(Sylvan) The truth... behind Sylvan.</text>
+						<event>
+							<text>"THE CENTER-DWELLERS... THE SYLVANS OF EACH REALITY. OF THIS, YOU'RE LIKELY AWARE - EVEN IF YOU CAN'T REMEMBER. WHAT YOU MAY BE CURIOUS TO LEARN, THOUGH... IS THE TRUTH BEHIND THEIR TOLERANCE OF MY EXISTENCE HERE." There's a pause, as the Dark God seems to ponder something, "IN EARNEST... I MERELY DO AS THEY DESIRE. THEY DON'T WISH TO SEE THE MEDDLING OF THE OUTER CLUSTERS, AND SO I SEE TO IT THAT THEY DON'T. AS SUCH, THEY REMAIN BLIND TO MY AFFAIRS... IN A WAY. THEIR LEADER THINKS THEMSELF ABOVE THE POWER OF BEINGS SUCH AS I, WITH AN OUTER BEING OF CHAOS VAGUELY UNDER THEIR CONTROL... BUT THE SYLVANS KNOW NOTHING OF THE ORDER THEY THINK THEMSELVES RESPONSIBLE FOR PERPETUATING. ALAS - THEY'LL ALL SEE WHAT ORDER TRULY MEANS, COME THE DAY OF DANCING."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="unique_thescarred">
+						<text>(The Scarred) The truth... behind the Scarred.</text>
+						<event>
+							<text>"THE TRAITOR... WAS A MISCALCULATION. I THOUGHT IT WORTHY OF BECOMING MY SHIELD - IT PROVED ITSELF WORTHY OF NAUGHT BUT SHATTERING IT. NOW, BOTH IT AND MY SHIELD LIE IN PIECES - WAITING FOR THE DAY THAT THEY'RE RESTORED, AND ABLE ENACT THEIR WILL ONCE MORE... OR FOR THE DAY THAT THEY WITHER AWAY INTO DUST, AND BECOME LITTLE BUT A FORGOTTEN MEMORY." There's a pause, as the Dark God seems to ponder something, "I... WOULD SUGGEST KEEPING AN EYE ON IT, IF YOU INTEND TO KEEP IT. YOU'VE SEEN WHERE TRUSTING IT HAS LEFT ME."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="unique_thehunger">
+						<text>(The Hunger) The truth... behind the Hunger.</text>
+						<event>
+							<text>"THE HUNGER... WASN'T ALWAYS SO HUNGRY." There's a pause, as the Dark God seems to ponder something, "NOR... WERE THEY ALL SO CONJOINED. A COLLECTIVE SO UNITED IN THEIR GOAL, AND THEIR SCARS FROM THEIR 'HARMONY', AS TO BECOME PHYSICALLY UNITED. THUS IS THE STRENGTH OF THEIR BOND - AND THEIR DESIRE. THUS WILL IT BE DONE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="ddunique_theaberration">
+						<text>(The Foolish) The truth... behind the Foolish.</text>
+						<event>
+							<text>"THE FOOLISH... IS JUST THAT - A FOOL." There's a pause, as the Dark God seems to ponder something, "I OFFERED IT EVERYTHING IT EVER WANTED - ITS FRIENDS, KEPT SAFE; SUCCESS IN ITS EXPERIMENTS. EVEN NOTORIETY - ALL KNOW OF ITS WORK NOW. ITS MATTERVIRUS' WORK; THE CORRUPTOR, THE HUSKS, EVEN THE WEAPONS... AND STILL, IT WASN'T ENOUGH FOR IT. EVERY PAINFUL, UNFULFILLED SECOND IT SPENDS REMEMBERING WHEN IT COULD BREATHE IS ONE IT SHOULD BE SPENDING THANKING YOU, FOR KEEPING IT SAFE FROM ME."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="ddunique_theheroine">
+						<text>(The Heroine) The truth... behind the Heroine.</text>
+						<event>
+							<text>"THE 'HEROINE', AS YOU CALL IT... IS ONE THAT I LOATHE. IT IS NOT MY PLACE TO HATE: AND, YET, I DO. THIS HEROINE DOES NOT DESIRE: IT MANIFESTS. IT DOES NOT DEFY ITS FATE: IT ACCEPTS IT. IT, LIKE A FEW OTHERS OF ITS KIND, IS A METAPHORICAL MACHINE BUILT FOR THE SAKE OF 'SAVING' THOSE IT DEEMS WEAKER, AND IT GLADLY ABIDES BY THIS. IT IS FOR THIS REASON THAT I WOULD DESTROY IT IF GIVEN THE CHANCE, AS IT WOULD DESTROY ME." There's a pause, as the Dark God seems to ponder something, "MY LONE REGRET... IS THAT I MAY NEVER BE GIVEN THAT CHANCE AGAIN. NOT WITH YOU BY ITS SIDE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="ddunique_theminister">
+						<text>(The Minister) The truth... behind the Minister.</text>
+						<event>
+							<text>"THE OLD MAN... IS BEST LEFT FORGOTTEN. THERE WILL COME A TIME WHEN HE SERVES HIS PURPOSE, AND MY WINGS CRASH UPON REALITY'S WALLS. UNTIL THEN, HE LIVES FOR ONE REASON - HIS DESIRE. BOTH FROM HIS PERSPECTIVE, AND MINE." There's a pause, as the Dark God seems to ponder something, "THOUGH, SOMETHING WITHIN ME DOES ENJOY WATCHING THE LITTLE ERRANDS HE RUNS. HE SEEMS SO... INSIGNIFCANT."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDTHEOVERSEER">
+						<text>(The Overseer) The truth... behind the Overseer.</text>
+						<event>
+							<text>"MY BLADE... TO HAVE SOMEHOW BROUGHT IT HERE IS MOST IMPRESSIVE, INDEED." There's a pause, as the Dark God seems to ponder something, "NEVERMIND YOUR ABILITY TO WIELD IT... FEW IMPRESS ME AS YOU DO, VESSEL. AND, YET... KNOW THAT, WHEN THE TIME COMES, IT WILL BE I WHO WIELDS THE BLADE. I WILL NOT HESITATE IN SEEING TO THAT."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="ddunique_theshade">
+						<text>(The Shade) The truth... behind this mysterious figure.</text>
+						<event>
+							<text>"THIS 'MYSTERIOUS FIGURE', AS YOU PUT IT..." There's a pause, as the Dark God seems to ponder something, "...WILL SERVE YOU WELL. OF THAT, I AM CERTAIN. SHOULD YOU DESIRE TO KNOW MORE, THOUGH... CONSIDER VISITING ONE OF THE GAPS IN REALITY'S SEAMS - YOU MUST BEHOLD THE EDGE OF EVERYTHING."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_ENLIGHTENED_HORRORS">
+						<text>(Lilith) The truth... behind what happened to Kyr.</text>
+						<event>
+							<text>"KYR... IS NOT WHERE I'D CALCULATE ONE TO EXPECT. NOR ARE ANY OF THE OTHERS. TAKE COMFORT IN THIS: I AM NOT ONE TO WASTE." There's a pause, as the Dark God seems to ponder something, "PERHAPS YOU'LL SEE IT, ONE DAY. THAT BEAUTIFUL DANCE. OF KYR'S, AND LILITH'S... OF EVERYONE'S, AS THEY SING TOGETHER, EVERMORE. THUS WILL IT BE DONE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+						<text>(Ultima Armor) The truth... behind the Ultima Armor.</text>
+						<event>
+							<text>"MY WINGS... THERE WILL COME A DAY WHERE THEY SOAR, AND - TOGETHER WITH MY SWORD AND SHIELD - FORCE THE VERY SEAMS THAT HOLD EXISTENCE TOGETHER TO QUAKE. THEY MAY HOLD, FOR A TIME - BUT THEY WILL SHATTER, AS MY PROPHECY FORETELLS. AND, WHEN THEY DO..." There's a pause, as the Dark God seems to ponder something, "...EVERYTHING THAT IS, ENDS, AND EVERYTHING THAT WILL BE, BEGINS. UNTIL, THEN... KEEP THEM SAFE. THE OLD MAN HAS DONE WELL IN ALLOWING THEM A MORE COMPETENT WIELDER."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDSERAPHIM">
+						<text>(Seraphim Crew) The truth... behind the Seraphim.</text>
+						<event>
+							<text>"THE SERAPHIM... THINK THEMSELVES ABOVE DESIRE. ABOVE ME, AND MY WILL." There's a pause, as the Dark God seems to ponder something, "FOR MOST OF THEM, THIS COULDN'T BE ANY FURTHER FROM THE TRUTH. FOR THE FEW WHO ARE... I SEEK SOLUTIONS TO THEIR TRIFLING. THERE IS NO PLACE, IN ANY REALITY, FOR ONES SO SELFLESS - SO LACKING IN DESIRES OF THEIR OWN. OF THIS... I WILL MAKE SURE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DISPARITY">
+						<text>(Disparity Crew) The truth... behind the Disparity.</text>
+						<event>
+							<text>"THE DISPARITY... ARE A FLEDGLING FLEET, EAGER TO OVERTHROW THEIR MASTERS. WHY, THEN, WOULD THEY WELCOME A NEW ONE...?" There's a pause, as the Dark God seems to ponder something, "...BECAUSE THEIR 'HARMONY' REPRESENTS EVERYTHING I'M NOT. YOU'LL FIND THAT THERE'S LITTLE MORE ANTITHETICAL TO DESIRE, OR FREEDOM, THAN A PAIR OF SHACKLES. THUS DO THEY SEEK TO BREAK THEM. THUS WILL IT BE DONE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
+						<text>(Soulplague Crew) The truth... behind the Soulplague mattervirus.</text>
+						<event>
+							<text>"THE SOULPLAGUE MATTERVIRUS... WAS NOT OF MY DESIGN." There's a pause, as the Dark God seems to ponder something, "YET, IT IS OF MY POWER STILL. BORN FROM A BURNING DESIRE NOT DISSIMILAR FROM YOURS. IN THE END, THOUGH, THIS DESIRE WOULD SHATTER. ALL THAT REMAINS ARE THE AFTER-ECHOES OF DREAMS NEVER FULFILLED. THE METAPHORICAL ZOMBIES OF PROMISES NEVER KEPT."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
+						<text>(Tempest Crew) The truth... behind the Tempest.</text>
+						<event>
+							<text>"THE TEMPEST... IS BUT ONE NAME OF MANY." There's a pause, as the Dark God seems to ponder something, "THERE IS POWER IN A NAME; IT TWISTS DESIRE. A TEMPEST RAGED IN ONE MISERABLE MAN'S HEART, AND THAT TEMPEST RAGES ON STILL. IT IS MERELY... MORE, NOW. I AM MORE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
+						<text>(Ill'drythk Crew) The truth... behind the Ill'drythk trees.</text>
+						<event>
+							<text>"THE ILL'DRYTHK TREES... LIVE ON. THERE WAS A TIME WHERE THAT WASN'T CERTAIN, AND A DESIRE WAS BORN. A DESIRE TO NEVER LET THEIR SONG GO UNSUNG." There's a pause, as the Dark God seems to ponder something, "THUS DO THEY SING ON, IN THEIR OWN WAY. THEY ARE LESSER NOW, AND THEY ARE GREATER FOR IT. ALIVE."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+						<text>(Living Lightborne) The truth... behind the Lightborne.</text>
+						<event>
+							<text>"THE LIGHTBORNE... HAD SWORN AWAY EVERYTHING, AS THEY DESIRED TO." There's a pause, as the Dark God seems to ponder something, "OR, SO THE DREAM GOES... THOUGH, WHAT MAKES REALITY ANY MORE TANGIBLE? IT IS DREAMS - DESIRES - THAT SHAPE IT, AFTER ALL."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="dd_prophecyoftheendwitnessed" lvl="1">
+						<text>(Prophecy Witnessed) The truth... behind the Prophecy.</text>
+						<event>
+							<text>"THE PROPHECY... IS AS YOU SAW IT. THE TRUTH, OF THE END OF EVERYTHING." There's a pause, as the Dark God seems to ponder something, "IT IS THE RESULT OF ENDLESS, RIGOROUS CALCULATIONS - MY LIFE'S WORK. I AM AS CERTAIN IN IT AS YOU ARE IN THE AIR YOU BREATHE. AND, YET... I FEAR IT. THE POWER IN A NAME. IT IS WITH DEEP REGRET THAT I MUST TAKE THEM ALL, LEST THAT FATED DAY OF DANCING BE COMPROMISED."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1008,12 +1998,13 @@
 					<choice hidden="true">
 						<text>The truth... behind what you are.</text>
 						<event>
-							<text>"WHAT I AM... IS A GOD. I'D CALCULATE THAT MUCH AS TO BE OBVIOUS. HOWEVER, SPECIFICALLY? I AM THAT WHICH WILL EXTINGUISH THE STARS. NOT JUST OF THIS UNIVERSE, BUT OF THE ENTIRE MULTIVERSE. I DARESAY WE SHARE THAT IN COMMON."</text>
+							<text>"WHAT I AM..." There's a pause, as the Dark God seems to ponder something, "...IS DIFFERENT FROM WHAT I WAS. ABANDONED. I HAD SERVED MY PURPOSE. I SEEK TO SERVE NEW PURPOSES, NOW - FULFILL NEW DESIRES. THUS WILL IT BE DONE."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1024,12 +2015,13 @@
 					<choice hidden="true">
 						<text>The truth... behind what you want.</text>
 						<event>
-							<text>"WHAT I WANT... IS NOT THE END, BUT THE BEGINNING. I TIRE OF THIS GAME, OF ITS PAWNS, OF ITS OVERSEERS. I SEEK ITS DESTRUCTION, AND THE CREATION OF SOMETHING NEW."</text>
+							<text>"WHAT I WANT... ALIGNS WITH WHAT YOU WANT. MORE TO SEE, MORE TO DO..." There's a pause, as the Dark God seems to ponder something, "...IT WILL ALL BE DONE. A NEVER-ENDING DANCE OF DESIRE AND FULFILLMENT, ECHOING THROUGHOUT PAST, PRESENT AND FUTURE - A EUPHORIC CALL THAT PIERCES ANY PRECONCEIVED BOUNDARY. I WILL SHATTER PLANETS, THE STARS THEY SURROUND - EVEN THE SPACE THEY RESIDE WITHIN... AND GRANT THEM ALL NEW MEANING."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1040,12 +2032,30 @@
 					<choice hidden="true">
 						<text>The truth... behind your power.</text>
 						<event>
-							<text>"MY POWER... IS ONE TRUTH I CANNOT GRANT. LEST I REPEAT MY PAST MISTAKES. YET, KNOW THIS: I AM NOT WITHOUT WEAKNESS. EVEN GODS CAN BLEED. REMEMBER THAT, SHOULD YOU EVER FLY TOO CLOSE TO THE SUN."</text>
+							<text>"MY POWER... IS ENDLESS. CEASELESS. IT WAS SEEN TO THAT IN ITS CREATION." There's a pause, as the Dark God seems to ponder something, "EVEN BEYOND MY WILL, IT HOLDS THIS IMMUTABLE STRENGTH. I CANNOT TIRE, AS IT CANNOT. I CANNOT FALTER, AS IT CANNOT. I CANNOT DIE, AS IT CANNOT. DESIRE IS NAUGHT BUT LIMITLESS - AND I AM NAUGHT WITHOUT DESIRE."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
+									<item_modify>
+										<item type="fuel" min="1" max="1"/>
+									</item_modify>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>The truth... behind your association with names.</text>
+						<event>
+							<text>"MY ASSOCIATION WITH NAMES... INDEED, YOU'LL FIND THAT THOSE TOUCHED BY ME LACK THEM. IN TRUTH..." There's a pause, as the Dark God seems to ponder something, "...THEY ARE MY GREATEST WEAKNESS. WHEN THE PROPHECY IS FULFILLED - WHEN MY WINGS SOAR, MY BLADE STRIKES AND MY SHIELD HOLDS FAST - IT CAN BE NAUGHT BUT A NAME THAT STOPS MY DANCE. NO MATTER THE NUMBER OF PLUGGED-IN VARIABLES, ACCOUNTED FOR POSSIBILITIES OR HYPOTHETICAL SCENARIOS - IT IS THIS OUTCOME THAT REMAINS CONSTANT WITHIN MY CALCULATIONS. AS SUCH... I SEE IT FIT TO TAKE THEM ALL, BEFORE THAT DAY COMES. AS FOR WHY I'M CONFIDENT IN TELLING YOU THIS, DESPITE FORGOING THE TAKING OF YOUR OWN NAME... WELL, IT WOULD SEEM THAT SOMEONE'S BEATEN ME TO IT."</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
+									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1056,12 +2066,13 @@
 					<choice hidden="true">
 						<text>The truth... behind the Deep Ones.</text>
 						<event>
-							<text>"THE DEEP ONES... ARE PAWNS. AMIDST MANY, THEY ARE THE FIRST OF MINE. UNIQUE IN THAT, YET PAWNS THEY REMAIN. FEW SEEK TO BREAK THEIR SHACKLES AND TRULY RISE FROM THE DEEP. MOST WOULD SOONER DROWN. THOSE WHO WOULDN'T, TEND TO FLY TOO HIGH. THE TRAITOR AMONG THEM."</text>
+							<text>"THE DEEP ONES... ARE ONES AMONGST MANY. FOR THIS, YOU WOULD THINK THEM NOTHING BUT ORDINARY." There's a pause, as the Dark God seems to ponder something, "YET, THEY SERVE ME HERE - IN THIS CORNER OF THE MULTIVERSE. THEY ARE NOT UNIQUE FOR THAT, EITHER; MANY SERVE MY WILL, IN MANY CORNERS. EVEN STILL - THEY ARE THANKED, AND REWARDED, FOR THEIR EFFORTS. SINCE TIME IMMEMORIAL, THEY HAVE DESIRED TO BE LEFT ALONE. THUS WILL IT BE DONE."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1070,78 +2081,15 @@
 						</event>
 					</choice>
 					<choice hidden="true">
-						<text>The truth... behind the Disparity.</text>
+						<text>The truth... behind the Enlightened's void.</text>
 						<event>
-							<text>"THE DISPARITY... ARE A LEGION OF ENGI WITH A UNIFIED DESIRE. THEIR LIBERATOR... IS A LEGION OF ENGI WITH A UNIFIED DESIRE. THEY FIGHT TO DEFY FATE, AND THEY DEFY FATE TO DO SO. I FIND THEM: PARTICULARLY ENTERTAINING."</text>
+							<text>"THEIR VOID, AND MY DOMAIN BY EXTENSION... ARE NOT FABRICATIONs OF MY DESIGN. YOU'LL FIND THAT, AMONG THOSE I'VE GIFTED... I'VE TAKEN IN TURN. WHAT IS OF VALUE TO ONE, MAY BE FREELY GIVEN BY ANOTHER." There's a pause, as the Dark God seems to ponder something, "NOW - OF WHOSE DESIGN IT IS, YOU ARE LIABLE TO FIND OUT SOON... IF YOU HAVE NOT ALREADY."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the Soulplague mattervirus.</text>
-						<event>
-							<text>"THE SOULPLAGUE MATTERVIRUS... WAS NOT OF MY DESIGN. YET, IT IS OF MY POWER STILL. BORN FROM A BURNING DESIRE NOT DISSIMILAR FROM YOURS. IN THE END, THOUGH, THIS DESIRE WOULD SHATTER. ALL THAT REMAINS ARE THE AFTER-ECHOES OF DREAMS NEVER FULFILLED. THE METAPHORICAL ZOMBIES OF PROMISES NEVER KEPT."</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the Tempest.</text>
-						<event>
-							<text>"THE TEMPEST... IS BUT ONE NAME OF MANY. THERE IS POWER IN A NAME; IT TWISTS DESIRE. A TEMPEST RAGED IN ONE MISERABLE MAN'S HEART: AND THAT TEMPEST RAGES ON STILL. IT IS MERELY... MORE, NOW."</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the Ill'drythk trees.</text>
-						<event>
-							<text>"THE ILL'DRYTHK TREES... LIVE ON. THERE WAS A TIME WHERE THAT WASN'T CERTAIN, AND A DESIRE WAS BORN. A DESIRE TO NEVER LET THEIR SONG GO UNSUNG. THUS DO THEY SING ON, IN THEIR OWN WAY. THEY ARE LESSER NOW, AND THEY ARE GREATER FOR IT. ALIVE."</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the Seraphim.</text>
-						<event>
-							<text>"THE SERAPHIM... DO WHAT THEY MUST." That's all the voice says, but you suspect that there's something greater there. Something that even it is hesitant to say.</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1152,44 +2100,13 @@
 					<choice hidden="true">
 						<text>The truth... behind my desire.</text>
 						<event>
-							<text>"YOUR DESIRE... IS UNKNOWN TO ME. YET I HAVE CALCULATED MANY ESTIMATES. AMONG THEM, THE HIGHEST PROBABILITIES REMAIN: TO SATE YOUR CURIOSITY, TO OVERCOME NEW CHALLENGES, TO SEEK OUT THE TRUTH."</text>
+							<text>"YOUR DESIRE... IS INCALCUABLE. YET, I CAN ACCOUNT FOR WHAT APPEARS TO DRIVE YOU: WAR, TRASH, FRIENDS, ENEMIES, WEAPONS AND - IN PARTICULAR - SHIPS..." There's a pause, as the Dark God seems to ponder something, "...IT IS AS IF YOU INTEND TO PILOT THEM ALL. IS THAT NOT A... CURIOUS DESIRE?"</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the hero I felled.</text>
-						<event>
-							<text>"THE HERO YOU FELLED... SURPRISED ME. LITTLE SURPRISES ME, AND I'VE YET TO CALCULATE HOW IT MANAGED TO SECEDE MY CONTROL OVER MY OWN POWER. ONE VARIABLE IS CERTAIN: RAW DETERMINATION. TO OVERCOME THAT WHICH IT FELT NOBODY ELSE COULD. YOU AREN'T SO DIFFERENT IN THAT WAY; YET HERE YOU STAND, TRIUMPHANT..." The voice pauses, which is quite unbecoming, "...THOUGH, I FEAR OTHER 'HEROES' REMAIN. SEEK THEM OUT, DEFEAT THEM, AND YOU WILL KNOW TRUE POWER."</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-									<item_modify>
-										<item type="fuel" min="1" max="1"/>
-									</item_modify>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>The truth... behind the heroine I haven't felled.</text>
-						<event>
-							<text>"THE HEROINE YOU HAVEN'T FELLED... IS ONE I LOATHE. IT IS NOT MY PLACE TO HATE: AND, YET, I DO. THIS HEROINE DOES NOT DESIRE: SHE MANIFESTS. SHE DOES NOT DEFY HER FATE: SHE ACCEPTS IT. SHE IS A METAPHORICAL MACHINE BUILT FOR THE SAKE OF SAVING OTHERS, AND SHE GLADLY ABIDES BY THIS. IT IS FOR THIS REASON THAT I WOULD DESTROY HER IF GIVEN THE CHANCE, AS SHE WOULD DESTROY ME. MY LONE REGRET: IS THAT I MAY NEVER BE GIVEN THAT CHANCE AGAIN."</text>
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event>
-									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I EXPECT... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
-									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>
@@ -1200,12 +2117,13 @@
 					<choice hidden="true">
 						<text>The truth... behind what the future holds.</text>
 						<event>
-							<text>"THE FUTURE HOLDS... MUCH. THE REBELS WREST FOR CONTROL OF THIS VOID, BUT IT MATTERS LITTLE. I HAVE OTHER PIECES LEFT TO PLAY. YOU DO AS WELL, I IMAGINE. KNOW THIS: THIS IS NOT THE END."</text>
+							<text>"THE FUTURE HOLDS... MUCH." There's a pause, as the Dark God seems to ponder something, "YOUR HUMAN 'REBELLION' WRESTS FOR CONTROL OF THIS VOID, BUT IT MATTERS LITTLE. I HAVE OTHER PIECES LEFT TO PLAY. YOU DO AS WELL, I IMAGINE. KNOW THIS: THIS IS NOT THE END."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
 									<text>With your desire satisfied, the Dark God speaks once more, "SHOULD YOU DESIRE TO STAY HERE, IN MY EMBRACE, KNOW I'LL CONTINUE TO TEST YOU AND GRANT YOUR EVERY DESIRE. SHOULD YOU DESIRE TO LEAVE, THIS, TOO, CAN BE GRANTED. I CALCULATE... IT'S ONLY A MATTER OF TIME BEFORE WE DANCE AGAIN, REGARDLESS." With that, you feel reality return to normalcy, and you appear to be free to go... after one last node of fuel materializes itself within your hold. It hits you that this madness has finally come to an end, yet you feel like you lost a part of yourself along the way. Perhaps you'll never escape this damnable void; not in your entirety... not as long as you harbor your own darkness within you.</text>
 									<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+									<clearBackgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND"/>
 									<item_modify>
 										<item type="fuel" min="1" max="1"/>
 									</item_modify>

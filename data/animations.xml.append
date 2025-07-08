@@ -147,6 +147,13 @@
 	<time>0.75</time>
 </anim>
 
+<animSheet name="bomb_ddfalseradiance_puffcloud" w="576" h="64" fw="64" fh="64">effects/bomb_ddfalseradiance_puffcloud.png</animSheet>
+<anim name="bomb_ddfalseradiance_puffcloud">
+	<sheet>bomb_ddfalseradiance_puffcloud</sheet>
+	<desc length="9" x="0" y="0" />
+	<time>0.75</time>
+</anim>
+
 <animSheet name="invisible_anim_dd" w="320" h="32" fw="32" fh="32">effects/scan_explode.png</animSheet>
 <anim name="invisible_anim_dd">
 	<sheet>invisible_anim_dd</sheet>
@@ -383,6 +390,301 @@
 	<mountPoint x="6" y="94"/>
 </weaponAnim>
 
+<animSheet name="ddfalseradiance_starbringer_hullanim" w="5376" h="372" fw="336" fh="372">thrusters/ddfalseradiance_starbringer_hullanim.png</animSheet>
+<anim name="ddfalseradiance_starbringer_hullanim">
+    <sheet>ddfalseradiance_starbringer_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_illuminator_hullanim" w="6080" h="308" fw="380" fh="308">thrusters/ddfalseradiance_illuminator_hullanim.png</animSheet>
+<anim name="ddfalseradiance_illuminator_hullanim">
+    <sheet>ddfalseradiance_illuminator_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_consecrator_hullanim" w="6688" h="446" fw="418" fh="446">thrusters/ddfalseradiance_consecrator_hullanim.png</animSheet>
+<anim name="ddfalseradiance_consecrator_hullanim">
+    <sheet>ddfalseradiance_consecrator_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_dwarfling_hullanim" w="3072" h="271" fw="192" fh="271">thrusters/ddfalseradiance_dwarfling_hullanim.png</animSheet>
+<anim name="ddfalseradiance_dwarfling_hullanim">
+    <sheet>ddfalseradiance_dwarfling_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_comet_hullanim" w="4368" h="308" fw="273" fh="308">thrusters/ddfalseradiance_comet_hullanim.png</animSheet>
+<anim name="ddfalseradiance_comet_hullanim">
+    <sheet>ddfalseradiance_comet_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_transport_hullanim" w="4032" h="288" fw="252" fh="288">thrusters/ddfalseradiance_transport_hullanim.png</animSheet>
+<anim name="ddfalseradiance_transport_hullanim">
+    <sheet>ddfalseradiance_transport_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_apotheosis_engine_hullanim" w="6592" h="356" fw="412" fh="356">thrusters/ddfalseradiance_apotheosis_engine_hullanim.png</animSheet>
+<anim name="ddfalseradiance_apotheosis_engine_hullanim">
+    <sheet>ddfalseradiance_apotheosis_engine_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_archangel_gatekeeper_hullanim" w="8608" h="421" fw="538" fh="421">thrusters/ddfalseradiance_archangel_gatekeeper_hullanim.png</animSheet>
+<anim name="ddfalseradiance_archangel_gatekeeper_hullanim">
+    <sheet>ddfalseradiance_archangel_gatekeeper_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_archangel_gravedigger_hullanim" w="8608" h="415" fw="538" fh="415">thrusters/ddfalseradiance_archangel_gravedigger_hullanim.png</animSheet>
+<anim name="ddfalseradiance_archangel_gravedigger_hullanim">
+    <sheet>ddfalseradiance_archangel_gravedigger_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_archangel_godcore_hullanim" w="8608" h="435" fw="538" fh="435">thrusters/ddfalseradiance_archangel_godcore_hullanim.png</animSheet>
+<anim name="ddfalseradiance_archangel_godcore_hullanim">
+    <sheet>ddfalseradiance_archangel_godcore_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradianceship_hullanim" w="7136" h="418" fw="446" fh="418">thrusters/ddfalseradianceship_hullanim.png</animSheet>
+<anim name="ddfalseradianceship_hullanim">
+    <sheet>ddfalseradianceship_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradianceship_c_hullanim" w="7136" h="418" fw="446" fh="418">thrusters/ddfalseradianceship_c_hullanim.png</animSheet>
+<anim name="ddfalseradianceship_c_hullanim">
+    <sheet>ddfalseradianceship_c_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradianceoverseership_hullanim" w="5696" h="412" fw="356" fh="412">thrusters/ddfalseradianceoverseership_hullanim.png</animSheet>
+<anim name="ddfalseradianceoverseership_hullanim">
+    <sheet>ddfalseradianceoverseership_hullanim</sheet>
+    <desc length="16" x="0" y="0"/>
+    <time>2.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_missile" w="168" h="51" fw="24" fh="51">weapon_missile/ddfalseradiance_missile_base.png</animSheet>
+<weaponAnim name="ddfalseradiance_missile">
+	<sheet>ddfalseradiance_missile</sheet>
+	<desc length="7" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="11" y="8" charge="0"/>
+	<mountPoint x="6" y="36"/>
+	<boost>ddfalseradiance_missile_charge</boost>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_missile_charge" w="72" h="51" fw="24" fh="51">weapon_missile/ddfalseradiance_missile_charges.png</animSheet>
+<anim name="ddfalseradiance_missile_charge">
+	<sheet>ddfalseradiance_missile_charge</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_chainlaser" w="279" h="51" fw="31" fh="51">weapon_laser/ddfalseradiance_chainlaser_base.png</animSheet>
+<weaponAnim name="ddfalseradiance_chainlaser">
+	<sheet>ddfalseradiance_chainlaser</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="24" y="13"/>
+	<mountPoint x="6" y="38"/>
+	<boost>ddfalseradiance_chainlaser_charge</boost>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_chainlaser_charge" w="93" h="51" fw="31" fh="51">weapon_laser/ddfalseradiance_chainlaser_chargeglow.png</animSheet>
+<anim name="ddfalseradiance_chainlaser_charge">
+	<sheet>ddfalseradiance_chainlaser_charge</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_piercelaser" w="234" h="57" fw="26" fh="57">weapon_laser/ddfalseradiance_piercelaser.png</animSheet>
+<weaponAnim name="ddfalseradiance_piercelaser">
+	<sheet>ddfalseradiance_piercelaser</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="20" y="23"/>
+	<mountPoint x="6" y="43"/>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_focuschain" w="160" h="50" fw="20" fh="50">weapon_focus/ddfalseradiance_focuschain_base.png</animSheet>
+<weaponAnim name="ddfalseradiance_focuschain">
+	<sheet>ddfalseradiance_focuschain</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="14" y="35"/>
+	<mountPoint x="5" y="37"/>
+	<boost>ddfalseradiance_focuschain_charge</boost>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_focuschain_charge" w="60" h="50" fw="20" fh="50">weapon_focus/ddfalseradiance_focuschain_chargeglow.png</animSheet>
+<anim name="ddfalseradiance_focuschain_charge">
+	<sheet>ddfalseradiance_focuschain_charge</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_breachbeam" w="224" h="56" fw="28" fh="56">weapon_beams/ddfalseradiance_breachbeam.png</animSheet>
+<weaponAnim name="ddfalseradiance_breachbeam">
+	<sheet>ddfalseradiance_breachbeam</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="15" y="34"/>
+	<mountPoint x="6" y="44"/>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_ion" w="184" h="37" fw="23" fh="37">weapon_ion/ddfalseradiance_ion.png</animSheet>
+<weaponAnim name="ddfalseradiance_ion">
+	<sheet>ddfalseradiance_ion</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="10" y="9"/>
+	<mountPoint x="3" y="26"/>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_shotgun" w="363" h="41" fw="33" fh="41">weapon_flak/ddfalseradiance_shotgun.png</animSheet>
+<weaponAnim name="ddfalseradiance_shotgun">
+	<sheet>ddfalseradiance_shotgun</sheet>
+	<desc length="11" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="19" y="11"/>
+	<mountPoint x="7" y="27"/>
+</weaponAnim>
+
+<animSheet name="artillery_ddportal_of_apotheosis" w="7144" h="144" fw="152" fh="144">artillery_player/artillery_ddportal_of_apotheosis.png</animSheet>
+<weaponAnim name="artillery_ddportal_of_apotheosis">
+	<sheet>artillery_ddportal_of_apotheosis</sheet>
+	<desc length="47" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>27</fireFrame>
+	<firePoint  x="76" y="72"/>
+	<mountPoint x="0" y="0"/>
+</weaponAnim>
+
+<animSheet name="ddbeam_falseradiance_loot" w="392" h="90" fw="49" fh="90">weapon_beams/ddbeam_falseradiance_loot.png</animSheet>
+<weaponAnim name="ddbeam_falseradiance_loot">
+	<sheet>ddbeam_falseradiance_loot</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="29" y="45"/>
+	<mountPoint x="8" y="62"/>
+</weaponAnim>
+
+<animSheet name="ddfalseradiance_lost_godhood" w="468" h="38" fw="36" fh="38">weapon_bombs/ddfalseradiance_lost_godhood.png</animSheet>
+<weaponAnim name="ddfalseradiance_lost_godhood">
+	<sheet>ddfalseradiance_lost_godhood</sheet>
+	<desc length="13" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="18" y="19"/>
+	<mountPoint x="3" y="29"/>
+</weaponAnim>
+
+<animSheet name="ddportal_of_apotheosis_bomb" w="770" h="35" fw="35" fh="35">weapon_bombs/ddportal_of_apotheosis_bomb.png</animSheet>
+<anim name="ddportal_of_apotheosis_bomb">
+	<sheet>ddportal_of_apotheosis_bomb</sheet>
+	<desc length="22" x="0" y="0"/>
+	<time>0.35</time>
+</anim>
+
+<animSheet name="ddportal_of_apotheosis_detinate" w="1000" h="100" fw="100" fh="100">effects/ddportal_of_apotheosis_detinate.png</animSheet>
+<anim name="ddportal_of_apotheosis_detinate">
+	<sheet>ddportal_of_apotheosis_detinate</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddportal_of_apotheosis_bombdetinate" w="1600" h="100" fw="100" fh="100">effects/ddportal_of_apotheosis_bombdetinate.png</animSheet>
+<anim name="ddportal_of_apotheosis_bombdetinate">
+	<sheet>ddportal_of_apotheosis_bombdetinate</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>1.25</time>
+</anim>
+
+<animSheet name="dddebris_large_falseradiance" w="96" h="32" fw="32" fh="32">projectiles/dddebris_large_falseradiance.png</animSheet>
+<animSheet name="dddebris_med_falseradiance" w="120" h="24" fw="24" fh="24">projectiles/dddebris_med_falseradiance.png</animSheet>
+<animSheet name="dddebris_small_falseradiance" w="96" h="16" fw="16" fh="16">projectiles/dddebris_small_falseradiance.png</animSheet>
+<anim name="dddebris_large_falseradiance">
+	<sheet>dddebris_large_falseradiance</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddebris_med_falseradiance">
+	<sheet>dddebris_med_falseradiance</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddebris_small_falseradiance">
+	<sheet>dddebris_small_falseradiance</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="dddebris_large_apotheosis_starstorm" w="96" h="32" fw="32" fh="32">projectiles/dddebris_large_apotheosis_starstorm.png</animSheet>
+<animSheet name="dddebris_med_apotheosis_starshower" w="120" h="24" fw="24" fh="24">projectiles/dddebris_med_apotheosis_starshower.png</animSheet>
+<animSheet name="dddebris_small_apotheosis_starsprinkle" w="96" h="16" fw="16" fh="16">projectiles/dddebris_small_apotheosis_starsprinkle.png</animSheet>
+<anim name="dddebris_large_apotheosis_starstorm">
+	<sheet>dddebris_large_apotheosis_starstorm</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddebris_med_apotheosis_starshower">
+	<sheet>dddebris_med_apotheosis_starshower</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddebris_small_apotheosis_starsprinkle">
+	<sheet>dddebris_small_apotheosis_starsprinkle</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfalseradiance_missile_projectile" w="32" h="85" fw="32" fh="85">projectiles/ddfalseradiance_missile_projectile.png</animSheet>
+<anim name="ddfalseradiance_missile_projectile">
+	<sheet>ddfalseradiance_missile_projectile</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="laser_burst_ddfalseradiance" w="60" h="20" fw="60" fh="20">projectiles/laser_burst_ddfalseradiance.png</animSheet>
+<anim name="laser_burst_ddfalseradiance">
+	<sheet>laser_burst_ddfalseradiance</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<animSheet name="ddfalseradiance_ion_projectile" w="24" h="24" fw="24" fh="24">projectiles/ddfalseradiance_ion_projectile.png</animSheet>
+<anim name="ddfalseradiance_ion_projectile">
+	<sheet>ddfalseradiance_ion_projectile</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
 <animSheet name="ddsoulplague_ion_phase_projectile" w="24" h="24" fw="24" fh="24">projectiles/ddsoulplague_ion_phase_projectile.png</animSheet>
 <anim name="ddsoulplague_ion_phase_projectile">
 	<sheet>ddsoulplague_ion_phase_projectile</sheet>
@@ -539,6 +841,13 @@
 	<time>3</time>
 </anim>
 
+<animSheet name="dddarkgodsdomainaura_bg" w="15360" h="720" fw="1280" fh="720">customizeUI/dddarkgodsdomainaura_bg.png</animSheet>
+<anim name="dddarkgodsdomainaura_bg">
+	<sheet>dddarkgodsdomainaura_bg</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>3</time>
+</anim>
+
 <animSheet name="danger_ddsoulplague" w="60" h="58" fw="60" fh="58">warnings/danger_ddsoulplague.png</animSheet>
 <anim name="danger_ddsoulplague">
 	<sheet>danger_ddsoulplague</sheet>
@@ -622,6 +931,20 @@
 	<mountPoint x="0" y="0"/>
 </weaponAnim>
 
+<animSheet name="ddantumbra_power_radiates_buff" w="512" h="32" fw="32" fh="32">people/ddantumbra_power_radiates_buff.png</animSheet>
+<anim name="ddantumbra_power_radiates_buff">
+	<sheet>ddantumbra_power_radiates_buff</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>2.0</time>
+</anim>
+
+<animSheet name="ddantumbra_shadowlight_buff" w="512" h="32" fw="32" fh="32">people/ddantumbra_shadowlight_buff.png</animSheet>
+<anim name="ddantumbra_shadowlight_buff">
+	<sheet>ddantumbra_shadowlight_buff</sheet>
+	<desc length="16" x="0" y="0"/>
+	<time>2.0</time>
+</anim>
+
 <animSheet name="ddradiant_flames_burning" w="352" h="32" fw="32" fh="32">people/ddradiant_flames_burning.png</animSheet>
 <anim name="ddradiant_flames_burning">
 	<sheet>ddradiant_flames_burning</sheet>
@@ -653,6 +976,13 @@
 <animSheet name="ddsoulplague_infected_debuff" w="352" h="32" fw="32" fh="32">people/ddsoulplague_infected_debuff.png</animSheet>
 <anim name="ddsoulplague_infected_debuff">
 	<sheet>ddsoulplague_infected_debuff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddsoulplague_freshspawn_debuff" w="352" h="32" fw="32" fh="32">people/ddsoulplague_freshspawn_debuff.png</animSheet>
+<anim name="ddsoulplague_freshspawn_debuff">
+	<sheet>ddsoulplague_freshspawn_debuff</sheet>
 	<desc length="11" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
@@ -1182,6 +1512,13 @@
 	<time>1.33</time>
 </anim>
 
+<animSheet name="ddroom_radiantdesecration_effect" w="280" h="35" fw="35" fh="35">effects/ddroom_radiantdesecration_effect.png</animSheet>
+<anim name="ddroom_radiantdesecration_effect">
+	<sheet>ddroom_radiantdesecration_effect</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1.33</time>
+</anim>
+
 <animSheet name="ddroom_darktemplar_dawnblessing_effect" w="280" h="35" fw="35" fh="35">effects/ddroom_darktemplar_dawnblessing_effect.png</animSheet>
 <anim name="ddroom_darktemplar_dawnblessing_effect">
 	<sheet>ddroom_darktemplar_dawnblessing_effect</sheet>
@@ -1299,6 +1636,118 @@
 	<sheet>ddotherworldly_tome_decor_hover</sheet>
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
+</anim>
+
+<animSheet name="ddarchangel_genesis_decor" w="3200" h="150" fw="200" fh="150">decor/ddarchangel_genesis_decor.png</animSheet>
+<anim name="ddarchangel_genesis_decor">
+	<sheet>ddarchangel_genesis_decor</sheet>
+	<desc length="16" x="0" y="0" />
+	<time>2.0</time>
+</anim>
+
+<animSheet name="ddspacetimeseam_inactive_decor" w="424" h="377" fw="424" fh="377">decor/ddspacetimeseam_inactive_decor.png</animSheet>
+<anim name="ddspacetimeseam_inactive_decor">
+	<sheet>ddspacetimeseam_inactive_decor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddspacetimeseam_antumbral_decor" w="424" h="377" fw="424" fh="377">decor/ddspacetimeseam_antumbral_decor.png</animSheet>
+<anim name="ddspacetimeseam_antumbral_decor">
+	<sheet>ddspacetimeseam_antumbral_decor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddspacetimeseam_home_decor" w="424" h="377" fw="424" fh="377">decor/ddspacetimeseam_home_decor.png</animSheet>
+<anim name="ddspacetimeseam_home_decor">
+	<sheet>ddspacetimeseam_home_decor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddspacetimeseam_darkgod_decor" w="424" h="377" fw="424" fh="377">decor/ddspacetimeseam_darkgod_decor.png</animSheet>
+<anim name="ddspacetimeseam_darkgod_decor">
+	<sheet>ddspacetimeseam_darkgod_decor</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_1" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_1.png</animSheet>
+<anim name="ddslumberingcry_decor_1">
+	<sheet>ddslumberingcry_decor_1</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_2" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_2.png</animSheet>
+<anim name="ddslumberingcry_decor_2">
+	<sheet>ddslumberingcry_decor_2</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>1.90</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_3" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_3.png</animSheet>
+<anim name="ddslumberingcry_decor_3">
+	<sheet>ddslumberingcry_decor_3</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>1.80</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_4" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_4.png</animSheet>
+<anim name="ddslumberingcry_decor_4">
+	<sheet>ddslumberingcry_decor_4</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>1.70</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_5" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_5.png</animSheet>
+<anim name="ddslumberingcry_decor_5">
+	<sheet>ddslumberingcry_decor_5</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>1.60</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_6" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_6.png</animSheet>
+<anim name="ddslumberingcry_decor_6">
+	<sheet>ddslumberingcry_decor_6</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>1.50</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_7" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_7.png</animSheet>
+<anim name="ddslumberingcry_decor_7">
+	<sheet>ddslumberingcry_decor_7</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2.10</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_8" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_8.png</animSheet>
+<anim name="ddslumberingcry_decor_8">
+	<sheet>ddslumberingcry_decor_8</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2.20</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_9" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_9.png</animSheet>
+<anim name="ddslumberingcry_decor_9">
+	<sheet>ddslumberingcry_decor_9</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2.30</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_10" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_10.png</animSheet>
+<anim name="ddslumberingcry_decor_10">
+	<sheet>ddslumberingcry_decor_10</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2.40</time>
+</anim>
+
+<animSheet name="ddslumberingcry_decor_11" w="2800" h="100" fw="700" fh="100">decor/ddslumberingcry_decor_11.png</animSheet>
+<anim name="ddslumberingcry_decor_11">
+	<sheet>ddslumberingcry_decor_11</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>2.50</time>
 </anim>
 
 <animSheet name="deepone" w="315" h="455" fw="35" fh="35">people/deepone_base.png</animSheet>
@@ -3217,6 +3666,13 @@
 <animSheet name="disparity_thehunger_overclock" w="352" h="32" fw="32" fh="32">people/disparity_thehunger_overclock.png</animSheet>
 <anim name="disparity_thehunger_overclock">
 	<sheet>disparity_thehunger_overclock</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddradiantdesecration_debuff" w="352" h="32" fw="32" fh="32">people/ddradiantdesecration_debuff.png</animSheet>
+<anim name="ddradiantdesecration_debuff">
+	<sheet>ddradiantdesecration_debuff</sheet>
 	<desc length="11" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
@@ -7908,6 +8364,13 @@
 	<sheet>ddwarning_ultimapoweroverflowing</sheet>
 	<desc length="8" x="0" y="0"/>
 	<time>1</time>
+</anim>
+
+<animSheet name="ddwarning_antumbrapoweroverflowing" w="10240" h="720" fw="1280" fh="720">customizeUI/ddwarning_antumbrapoweroverflowing.png</animSheet>
+<anim name="ddwarning_antumbrapoweroverflowing">
+	<sheet>ddwarning_antumbrapoweroverflowing</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>0.5</time>
 </anim>
 
 <animSheet name="dddeepone_chosen" w="420" h="455" fw="35" fh="35">people/dddeepone_chosen_base.png</animSheet>
@@ -13704,5 +14167,2041 @@
 <anim name="ddilldrythk_caretaker_portrait">
 	<sheet>ddilldrythk_caretaker</sheet>
 	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunique_theshade" w="350" h="455" fw="35" fh="35">people/ddunique_theshade_base.png</animSheet>
+<anim name="ddunique_theshade_clone">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_death_right">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_death_left">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_walk_down">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_walk_right">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_walk_up">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_walk_left">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_shoot_down">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_shoot_right">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_shoot_up">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_shoot_left">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_fire_down">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_fire_right">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_fire_up">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_fire_left">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_repair">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_punch_up">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="7" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_punch_down">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="7" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theshade_teleport">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunique_theshade_type_right">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_type_left">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_type_up">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theshade_type_down">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunique_theshade_portrait">
+	<sheet>ddunique_theshade</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunique_theoverseer" w="350" h="455" fw="35" fh="35">people/ddunique_theoverseer_base.png</animSheet>
+<anim name="ddunique_theoverseer_clone">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_death_right">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_death_left">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_walk_down">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_walk_right">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_walk_up">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_walk_left">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_shoot_down">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_shoot_right">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_shoot_up">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_shoot_left">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_fire_down">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_fire_right">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_fire_up">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_fire_left">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_repair">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_punch_up">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="7" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_punch_down">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="7" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunique_theoverseer_teleport">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunique_theoverseer_type_right">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_type_left">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_type_up">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunique_theoverseer_type_down">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunique_theoverseer_portrait">
+	<sheet>ddunique_theoverseer</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddPOWEROFANTUMBRA" w="350" h="455" fw="35" fh="35">people/ddPOWEROFANTUMBRA_base.png</animSheet>
+<anim name="ddPOWEROFANTUMBRA_clone">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_death_right">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_death_left">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_walk_down">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_walk_right">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_walk_up">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_walk_left">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_shoot_down">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_shoot_right">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_shoot_up">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_shoot_left">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_fire_down">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_fire_right">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_fire_up">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_fire_left">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_repair">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_punch_up">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="7" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_punch_down">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="7" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_teleport">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_type_right">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_type_left">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_type_up">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_type_down">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddPOWEROFANTUMBRA_portrait">
+	<sheet>ddPOWEROFANTUMBRA</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_slayling" w="315" h="455" fw="35" fh="35">people/ddlightborne_slayling_base.png</animSheet>
+<anim name="ddlightborne_slayling_clone">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_death_right">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_death_left">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_walk_down">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_walk_right">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_walk_up">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_walk_left">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_shoot_down">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_shoot_right">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_shoot_up">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_shoot_left">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_fire_down">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_fire_right">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_fire_up">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_fire_left">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_repair">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_punch_up">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_punch_down">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_slayling_teleport">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_slayling_type_right">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_type_left">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_type_up">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_slayling_type_down">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_slayling_portrait">
+	<sheet>ddlightborne_slayling</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_prismling" w="315" h="455" fw="35" fh="35">people/ddlightborne_prismling_base.png</animSheet>
+<animSheet name="explosion_ddlightborne_prismling_death" w="576" h="64" fw="64" fh="64">effects/bomb_ddfalseradiance_puffcloud.png</animSheet>
+<anim name="ddlightborne_prismling_clone">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_death_right">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_death_left">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_walk_down">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_walk_right">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_walk_up">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_walk_left">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_shoot_down">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_shoot_right">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_shoot_up">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_shoot_left">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_fire_down">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_fire_right">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_fire_up">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_fire_left">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_repair">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_punch_up">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_punch_down">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_prismling_teleport">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_prismling_type_right">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_type_left">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_type_up">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_prismling_type_down">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_prismling_portrait">
+	<sheet>ddlightborne_prismling</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_cinderling" w="315" h="455" fw="35" fh="35">people/ddlightborne_cinderling_base.png</animSheet>
+<animSheet name="explosion_ddlightborne_cinderling_death" w="576" h="64" fw="64" fh="64">effects/bomb_ddfalseradiance_puffcloud.png</animSheet>
+<anim name="ddlightborne_cinderling_clone">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_death_right">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_death_left">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_walk_down">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_walk_right">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_walk_up">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_walk_left">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_shoot_down">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_shoot_right">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_shoot_up">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_shoot_left">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_fire_down">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_fire_right">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_fire_up">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_fire_left">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_repair">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_punch_up">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_punch_down">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cinderling_teleport">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_cinderling_type_right">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_type_left">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_type_up">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cinderling_type_down">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_cinderling_portrait">
+	<sheet>ddlightborne_cinderling</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_clusterular" w="315" h="455" fw="35" fh="35">people/ddlightborne_clusterular_base.png</animSheet>
+<animSheet name="explosion_ddlightborne_clusterular_death" w="576" h="64" fw="64" fh="64">effects/bomb_ddfalseradiance_puffcloud.png</animSheet>
+<anim name="ddlightborne_clusterular_clone">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_death_right">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_death_left">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_walk_down">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_walk_right">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_walk_up">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_walk_left">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_shoot_down">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_shoot_right">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_shoot_up">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_shoot_left">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_fire_down">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_fire_right">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_fire_up">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_fire_left">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_repair">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_punch_up">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_punch_down">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_clusterular_teleport">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_clusterular_type_right">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_type_left">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_type_up">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_clusterular_type_down">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_clusterular_portrait">
+	<sheet>ddlightborne_clusterular</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_cellular" w="630" h="455" fw="35" fh="35">people/ddlightborne_cellular_base.png</animSheet>
+<anim name="ddlightborne_cellular_clone">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_death_right">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_death_left">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_walk_down">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_walk_right">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="9" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_walk_up">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_walk_left">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="9" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_shoot_down">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_shoot_right">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_shoot_up">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_shoot_left">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_fire_down">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_fire_right">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="9" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_fire_up">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_fire_left">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="9" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_repair">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_punch_up">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_punch_down">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_cellular_teleport">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_cellular_type_right">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_type_left">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_type_up">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_cellular_type_down">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_cellular_portrait">
+	<sheet>ddlightborne_cellular</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_devourlux" w="315" h="455" fw="35" fh="35">people/ddlightborne_devourlux_base.png</animSheet>
+<anim name="ddlightborne_devourlux_clone">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_death_right">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_death_left">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_walk_down">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_walk_right">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_walk_up">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_walk_left">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_shoot_down">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_shoot_right">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_shoot_up">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_shoot_left">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_fire_down">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_fire_right">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_fire_up">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_fire_left">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_repair">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_punch_up">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_punch_down">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_devourlux_teleport">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_devourlux_type_right">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_type_left">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_type_up">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_devourlux_type_down">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_devourlux_portrait">
+	<sheet>ddlightborne_devourlux</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_spiritling" w="315" h="455" fw="35" fh="35">people/ddlightborne_spiritling_base.png</animSheet>
+<animSheet name="explosion_ddlightborne_spiritling_death" w="576" h="64" fw="64" fh="64">effects/bomb_ddfalseradiance_puffcloud.png</animSheet>
+<anim name="ddlightborne_spiritling_clone">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_death_right">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_death_left">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_walk_down">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_walk_right">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_walk_up">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_walk_left">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_shoot_down">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_shoot_right">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_shoot_up">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_shoot_left">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_fire_down">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_fire_right">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_fire_up">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_fire_left">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_repair">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_punch_up">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_punch_down">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_spiritling_teleport">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_spiritling_type_right">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_type_left">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_type_up">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_spiritling_type_down">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_spiritling_portrait">
+	<sheet>ddlightborne_spiritling</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_commandlux" w="315" h="455" fw="35" fh="35">people/ddlightborne_commandlux_base.png</animSheet>
+<anim name="ddlightborne_commandlux_clone">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_death_right">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_death_left">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_walk_down">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_walk_right">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_walk_up">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_walk_left">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_shoot_down">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_shoot_right">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_shoot_up">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_shoot_left">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_fire_down">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_fire_right">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_fire_up">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_fire_left">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_repair">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_punch_up">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_punch_down">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_commandlux_teleport">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_commandlux_type_right">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_type_left">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_type_up">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_commandlux_type_down">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_commandlux_portrait">
+	<sheet>ddlightborne_commandlux</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_timelux" w="315" h="455" fw="35" fh="35">people/ddlightborne_timelux_base.png</animSheet>
+<anim name="ddlightborne_timelux_clone">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_death_right">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_death_left">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_walk_down">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_walk_right">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_walk_up">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_walk_left">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_shoot_down">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_shoot_right">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_shoot_up">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_shoot_left">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_fire_down">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_fire_right">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_fire_up">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_fire_left">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_repair">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_punch_up">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_punch_down">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_timelux_teleport">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_timelux_type_right">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_type_left">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_type_up">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_timelux_type_down">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_timelux_portrait">
+	<sheet>ddlightborne_timelux</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_angelular" w="315" h="455" fw="35" fh="35">people/ddlightborne_angelular_base.png</animSheet>
+<anim name="ddlightborne_angelular_clone">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_death_right">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_death_left">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_walk_down">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_walk_right">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_walk_up">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_walk_left">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_shoot_down">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_shoot_right">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_shoot_up">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_shoot_left">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_fire_down">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_fire_right">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_fire_up">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_fire_left">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_repair">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_punch_up">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_punch_down">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_angelular_teleport">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_angelular_type_right">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_type_left">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_type_up">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_angelular_type_down">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_angelular_portrait">
+	<sheet>ddlightborne_angelular</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_warlockular" w="315" h="455" fw="35" fh="35">people/ddlightborne_warlockular_base.png</animSheet>
+<anim name="ddlightborne_warlockular_clone">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_death_right">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_death_left">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_walk_down">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_walk_right">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_walk_up">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_walk_left">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_shoot_down">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_shoot_right">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_shoot_up">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_shoot_left">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_fire_down">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_fire_right">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_fire_up">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_fire_left">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_repair">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_punch_up">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_punch_down">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_warlockular_teleport">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_warlockular_type_right">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_type_left">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_type_up">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_warlockular_type_down">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_warlockular_portrait">
+	<sheet>ddlightborne_warlockular</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_breakling" w="315" h="455" fw="35" fh="35">people/ddlightborne_breakling_base.png</animSheet>
+<anim name="ddlightborne_breakling_clone">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_death_right">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_death_left">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_walk_down">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_walk_right">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_walk_up">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_walk_left">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_shoot_down">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_shoot_right">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_shoot_up">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_shoot_left">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_fire_down">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_fire_right">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_fire_up">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_fire_left">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_repair">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_punch_up">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_punch_down">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_breakling_teleport">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_breakling_type_right">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_type_left">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_type_up">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_breakling_type_down">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_breakling_portrait">
+	<sheet>ddlightborne_breakling</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddlightborne_tormentular" w="315" h="455" fw="35" fh="35">people/ddlightborne_tormentular_base.png</animSheet>
+<anim name="ddlightborne_tormentular_clone">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_death_right">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_death_left">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_walk_down">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_walk_right">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_walk_up">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_walk_left">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_shoot_down">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_shoot_right">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_shoot_up">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_shoot_left">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_fire_down">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_fire_right">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_fire_up">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_fire_left">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_repair">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_punch_up">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_punch_down">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddlightborne_tormentular_teleport">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_tormentular_type_right">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_type_left">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_type_up">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddlightborne_tormentular_type_down">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddlightborne_tormentular_portrait">
+	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="1" x="0" y="0" />
 	<time>1</time>
 </anim>

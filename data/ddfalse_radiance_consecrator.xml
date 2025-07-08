@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-51" y="-76" w="418" h="446" />
+<offsets>
+	<floor x="209" y="223" />
+	<cloak x="209" y="223" />
+</offsets>
+<weaponMounts>
+	<mount x="143" y="162" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="275" y="162" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="323" y="176" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="95" y="176" rotate="false" mirror="true" gib="-1" slide="up" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradiance_consecrator_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

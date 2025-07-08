@@ -12,6 +12,31 @@
 			</choice>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice req="dddeepone_chosen" blue="false">
+		<text>Present a Deep One Chosen.</text>
+		<event>
+			<text>"These ones... understand the gravity of the pact they've made. Their dedication... to their cause, as ominous as it is... impresses me. Well done, traveler. Expect... rewards before your next journey."</text>
+			<achievement>ACH_BOON_DDDEEPONE_ELITE</achievement>
+			<metaVariable name="prof_z_boon_dddeepone_elite" op="set" val="1"/>
+			<variable name="ach_boon_dddeepone_elite" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="BLUELIST_CREW_DISPARITY_ELITE" blue="false">
+		<text>Present a Disparity Elite.</text>
+		<event>
+			<text>"The Separatists do not typically find themselves... so willing to shed blood. One must wonder, if their cause... is worth the rising death toll. Regardless... of the answer, this is most... impressive. Well done, traveler. Expect... rewards before your next journey."</text>
+			<achievement silent="false">ACH_BOON_ENGI</achievement>
+			<metaVariable name="prof_z_boon_engi" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 	<mod-append:choice req="LIST_DDSOULPLAGUE_ALIGNED" blue="false">
 		<text>Present your Soulplague-aligned crew.</text>
 		<event>
@@ -19,6 +44,19 @@
 			<achievement>ACH_BOON_DDSOULPLAGUE_CREW</achievement>
 			<metaVariable name="prof_z_boon_ddsoulplague" op="set" val="1"/>
 			<variable name="ach_boon_ddsoulplague_crew" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="LIST_CREW_DDSERAPHIM" blue="false">
+		<text>Present a Seraph.</text>
+		<event>
+			<text>"I... must wonder, if... the one in the suit is aware that... oh, no matter. To think that... one so resplendent, and otherworldly... has travelled all this way, just to ally with you... this is most impressive, indeed. Well done, traveler. Expect... rewards before your next journey."</text>
+			<achievement>ACH_BOON_DDSERAPHIM_CREW</achievement>
+			<metaVariable name="prof_z_boon_ddseraphim" op="set" val="1"/>
+			<variable name="ach_boon_ddseraphim_crew" op="set" val="1"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
@@ -83,15 +121,31 @@
 			</choice>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice req="ACH_BOON_DDFALSERADIANCE_GEAR" blue="false">
+		<text>Present False Radiance tech.</text>
+		<event>
+			<text>"What... IS this? Is it ALIVE? I can't say I've EVER seen anything like it... did THEST put you UP TO THIS?! HE would know! Did he FORGET to tell us? Is THIS his way of TELLING US? Well, NO MATTER! I shall BLESS you with the BLESSING OF FALLEN GRACE. But have PATIENCE. It is not for now, but for LATER!"</text>
+			<achievement>ACH_BOON_DDFALSERADIANCE_GEAR</achievement>
+			<metaVariable name="prof_r_boon_ddfalseradiance_gear" op="set" val="1"/>
+			<variable name="ach_boon_ddfalseradiance_gear" op="set" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="THE_JUDGES_ROCK_ADVICE"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="THE_JUDGES_VARIABLE_CLEAR">
     <mod-append:metaVariable name="prof_z_boon_deepone" op="set" val="0"/>
-	 <mod-append:metaVariable name="prof_z_boon_ddsoulplague" op="set" val="0"/>
-	  <mod-append:metaVariable name="prof_e_boon_ddcorruptor " op="set" val="0"/>
+	<mod-append:metaVariable name="prof_z_boon_ddsoulplague" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_z_boon_dddeepone_elite" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_z_boon_ddseraphim" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_e_boon_ddcorruptor " op="set" val="0"/>
     <mod-append:metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_r_boon_ddsoulplague_gear" op="set" val="0"/>
+	<mod-append:metaVariable name="prof_r_boon_ddfalseradiance_gear" op="set" val="0"/>
 </mod:findName>
 
 <mod:findName type="event" name="MV_TRAVELER_SECRET_NORMAL">

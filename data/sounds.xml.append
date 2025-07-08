@@ -25,6 +25,11 @@
 		<combat>dd_MUS_DemiurgicOblivionBATTLE.ogg</combat>
 	</track>
 	<track> <!--composed by Lizzard!! thank you Lizz!!-->
+		<name>ddedgeofeverything</name>
+		<explore>dd_MUS_EdgeofEverything_EXPLORE.ogg</explore>
+		<combat>dd_MUS_EdgeofEverything_BATTLE.ogg</combat>
+	</track>
+	<track> <!--composed by Lizzard!! thank you Lizz!!-->
 		<name>ddtodancewithdarkness</name>
 		<explore>dd_MUS_ToDancewithDarkness.ogg</explore>
 	</track>
@@ -75,3 +80,7 @@
 <dddarktemplarability volume="10">aliens/bp_sfx_dddarktemplarability.ogg</dddarktemplarability>
 <ddbook_turn_page volume="10">aliens/bp_sfx_ddbook_turn_page.ogg</ddbook_turn_page>
 <ddbook_scrap_clang volume="10">aliens/bp_sfx_ddbook_scrap_clang.ogg</ddbook_scrap_clang>
+<ddsnapofapotheosis volume="9">aliens/bp_sfx_ddsnapofapotheosis.ogg</ddsnapofapotheosis>
+<ddexplosionofapotheosis volume="6">aliens/bp_sfx_ddexplosionofapotheosis.ogg</ddexplosionofapotheosis>
+<ddoverseerswordslash volume="8">aliens/bp_sfx_theoverseer_swordslash.ogg</ddoverseerswordslash>
+<ddarchangelprotocol_arrival volume="8">aliens/bp_sfx_ddarchangelprotocol_arrival.ogg</ddarchangelprotocol_arrival>

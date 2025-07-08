@@ -10,12 +10,15 @@
 	<triggeredEvent event="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING" time="1"/>
 </event>
 
-<event name="ADDON_DD">
-	<text>Darkest Desire, an FTL: Multiverse Addon
-	Developed by: Naimeron
-	Currently Enabled.
-			
-	Darkest Desire is a general content mod focused on new, dark and lore-heavy sectors, as well as everything else! Including: a new system, the Corruptor, new races, such as the Deep Ones or the Husks, Elites and Super Elites for existing races (namely both Shells and Engi right now), terrifying new Horror crew, new Uniques, new ships, new augments, mechanics, hazards, weapons, drones, etcetera! To get started, look for non-unique neutral and unique hostile/hazard sectors.</text>
+<event name="DDTHEOVERSEER_UNLEASH_POWEROFANTUMBRA">
+	<superDrones player="true" name="DDTHEOVERSEER_DRONE_SUMMON"/>
+	<backgroundObject name="DDANTUMBRAPOWER_OVERFLOWING_WARNINGFLASH">
+		<layer z="1">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>ddwarning_antumbrapoweroverflowing</anim>
+	</backgroundObject>
+	<playSound>ddoverseerswordslash</playSound>
+	<triggeredEvent event="DDTHEOVERSEER_UNLEASH_POWEROFANTUMBRA_CLEARWARNING" time="0.5"/>
 </event>
 
 <event name="DDMINISTER_IMMORTALITY_GUARANTEE">
@@ -24,6 +27,10 @@
 
 <event name="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA_CLEARWARNING">
 	<clearBackgroundObject name="DDULTIMAPOWER_OVERFLOWING_WARNINGFLASH"/>
+</event>
+
+<event name="DDTHEOVERSEER_UNLEASH_POWEROFANTUMBRA_CLEARWARNING">
+	<clearBackgroundObject name="DDANTUMBRAPOWER_OVERFLOWING_WARNINGFLASH"/>
 </event>
 
 <event name="DDCOREMASS_EVILWAAAMASS_ASSAULT">

@@ -16,12 +16,13 @@
 		<event name="SOCIALIZE_DDTHE_FOOLISH_THESCARRED_1" req="ddunique_theaberration"/>
 		<event name="SOCIALIZE_DDTHE_MINISTER_THESCARRED_1" req="ddunique_theminister"/>
 		<event name="SOCIALIZE_DDTHE_HEROINE_THESCARRED_1" req="ddunique_theheroine"/>
+		<event name="SOCIALIZE_DDTHE_SHADE_THESCARRED_1" req="ddunique_theshade"/>
+		<event name="SOCIALIZE_DDTHE_OVERSEER_THESCARRED_1" req="LIST_CREW_DDTHEOVERSEER"/>
 	</loadEventList>
 </event>
 <event name="SOCIALIZE_THE_SCARRED_NOTHING">
 	<text>You walk in on the Scarred in some sort of meditative state... staring into nothing. You decide it's best to leave them alone.</text>
 </event>
-
 <event name="SOCIALIZE_THE_SCARRED_GENERIC_1" unique="true">
 	<text>You find the Scarred kneeling on the ground... perhaps it's a position they find relaxing? Regardless, they speak, "Well met... kin. Was there something... you needed?"</text>
 	<choice hidden="true">
@@ -450,6 +451,7 @@
 		<event name="SOCIALIZE_DDTHE_MINISTER_THESCARRED_1" req="unique_thescarred"/>
 		<event name="SOCIALIZE_DDTHE_MINISTER_THEHUNGER_1" req="unique_thehunger"/>
 		<event name="SOCIALIZE_DDTHE_MINISTER_THEHEROINE_1" req="ddunique_theheroine"/>
+		<event name="SOCIALIZE_DDTHE_OVERSEER_THEMINISTER_1" req="LIST_CREW_DDTHEOVERSEER"/>
 	</loadEventList>
 </event>
 <event name="SOCIALIZE_DDTHE_MINISTER_NOTHING">
@@ -621,7 +623,7 @@
 			<choice hidden="true">
 				<text>I, uh... thought you were opening portals to other dimensions in here, or something.</text>
 				<event>
-					<text>He squints at you, "WHAT? I CAN'T QUITE- HOLD ON FOR A MOMENT." The Minister stands up and walks over to the radio, turning it off with a spark of energy from his gauntlet, and the room goes deafeningly quiet. He turns to you once more, "Well, whatever your reason for interrupting, we were just about done here anyways. Next Tuesday, gentlemen?" A series of consenting murmurs break out from the gathered cultists, and they all vanish in a blinding flash of light.</text>
+					<text>He squints at you, "SORRY? I CAN'T QUITE- HOLD ON FOR A MOMENT." The Minister stands up and walks over to the radio, turning it off with a spark of energy from his gauntlet, and the room goes deafeningly quiet. He turns to you once more, "Well, whatever your reason for interrupting, we were just about done here anyways. Next Tuesday, gentlemen?" A series of consenting murmurs break out from the gathered cultists, and they all vanish in a blinding flash of light.</text>
 					<choice hidden="true">
 						<text>What was that about?</text>
 						<event>
@@ -731,7 +733,7 @@
 	<choice hidden="true">
 		<text>Pizza order...?</text>
 		<event>
-			<text>The Minister snaps his attention to the detective, clearly fed up, "And why in the Tempest's name do they need to know any of that in order to deliver us a pepperoni pizza? Are they delivering it via interdimensional wormhole?" Haynes crosses his arms, "How should I know? I'm just trying to fill the damned thing out." To which the Minister raises his voice, "You're the GREAT detective, are you not? Isn't it your job to know?" Said detective takes a step forward, raising his own voice, "Well, aren't you THE Minister? Can't you just ask this 'The Tempest' of yours for a pizza?" This causes the Minister to slam his fist down, "You should know such frivolities to be below its concerns! Or are you as dense as everyone else here?" The two continue to go back and forth for a while, getting progressively heated, and you get the sneaking suspicion that you won't be receiving any pizza deliveries.</text>
+			<text>The Minister snaps his attention to the detective, clearly fed up, "And why in the Tempest's name do they need to know any of that in order to deliver us a pepperoni pizza? Are they delivering it via interdimensional wormhole?" Haynes crosses his arms, "How should I know? I'm just trying to fill the bloody thing out." To which the Minister raises his voice, "You're the GREAT detective, are you not? Isn't it your job to know?" Said detective takes a step forward, raising his own voice, "Well, aren't you THE Minister? Can't you just ask this 'The Tempest' of yours for a pizza?" This causes the Minister to slam his fist down, "You should know such frivolities to be below its concerns! Or are you as dense as everyone else here?" The two continue to go back and forth for a while, getting progressively heated, and you get the sneaking suspicion that you won't be receiving any pizza deliveries.</text>
 		</event>
 	</choice>
 </event>
@@ -966,5 +968,321 @@
 	</choice>
 </event>
 <event name="SOCIALIZE_DDTHE_HEROINE_THESCARRED_1" unique="true">
-	<text>You come across the Heroine and the Scarred sitting together, both engrossed in meditation. The two Deep Ones hum a low, guttural melody in unison, and you get the feeling that you shouldn't interrupt them. Later, you ask the Scarred about what they were up to, and you swear he blushes a little bit as he describes it as a 'ritual sacred to his kin.' You're glad you didn't interrupt them, then...</text>
+	<text>You come across the Heroine and the Scarred sitting together, both engrossed in meditation. The two Deep Ones hum a low, guttural melody in unison, and you get the feeling that you shouldn't interrupt them. Later, you ask the Scarred about what they were up to, and you swear that they blush a little bit as they describe it as a 'ritual sacred to his kin.' You're glad you didn't interrupt them, then...</text>
+</event>
+
+<event name="SOCIALIZE_DDTHE_SHADE_LIST">
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<loadEventList seeded="true" default="SOCIALIZE_DDTHE_SHADE_NOTHING">
+		<event name="SOCIALIZE_DDTHE_SHADE_GENERIC_1"/>
+		<event name="SOCIALIZE_DDTHE_SHADE_THESCARRED_1" req="unique_thescarred"/>
+	</loadEventList>
+</event>
+<event name="SOCIALIZE_DDTHE_SHADE_NOTHING">
+	<text>Though you manage to find it skulking in a corner, the Shade doesn't react to your presence in the slightest. It merely stares, off into the distance - seemingly at nothing. Hardly surprising, given the repetition present in these attempted interactions, but you can't help but hope that something changes in its absent demeanor...</text>
+</event>
+<event name="SOCIALIZE_DDTHE_SHADE_GENERIC_1" unique="true">
+	<text>You flick on a light switch, and are startled as the Shade's form appears just a few inches in front of you. Out of habit, you nervously apologize for almost running into it - it, of course, doesn't react. It merely... stands there.</text>
+	<choice hidden="true">
+		<text>Stare at it, awkwardly.</text>
+		<event>
+			<text>A part of you is unsettled as you stare at the dark, cloaked figure... but the rest of you is curious. This close to it, you can make out faint, unreadable etchings upon its every surface - a series of swirls, dots and hard edges that almost seem to form a pattern as your eyes follow the esoteric flowing of their shapes. This flowing doesn't break at the edge of each surface, as you would expect it to - it simply continues upon the next one, as if the entirety of the Shade's body was treated like a canvas.</text>
+			<choice hidden="true">
+				<text>Continue to study the strange symbols.</text>
+				<event>
+					<text>For a while, you simply continue to encircle the Shade - studying its many, bewildering etchings as you do so. If there's a key, anywhere, to understanding what it is, or what it wants, you feel that this is as great a place as any to start. Though, after enough time passes... something hits you. You don't recognize the etchings, or otherwise miraculously understand their meaning - but you realize that you feel a sense of familiarity as you continue to stare at them.</text>
+					<choice hidden="true">
+						<text>Hone in on whatever it is that you're feeling.</text>
+						<event>
+							<text>It doesn't take you long to get to the bottom of your strange, gut feeling - this looks like a star chart. Stars completely alien to you, perhaps - but you've seen enough of them in your lifetime to feel certain enough in your observation. Why the Shade would have a star chart etched upon its metallic form, or what the significance of it would even be, remains a complete mystery - but it's one that you feel several steps closer to solving. Satisfied, you opt to leave it alone for the time being, and the Shade doesn't so much as stir as you leave it to its own, unknowable devices.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Avert your eyes, and walk away.</text>
+		<event>
+			<text>This thing gives you the creeps... getting away from it, the Shade doesn't so much as stir as you turn the lights back off and leave the room in a hurry. Just what is this thing's deal?</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_SHADE_THESCARRED_1" unique="true">
+	<text>You're tapping against the Shade's warm, metallic cloak as the Scarred walks into the room. They quickly spot you fiddling about with the strange entity, and proceed to shoot you a curious look.</text>
+	<choice hidden="true">
+		<text>What's the staring for? I'm just... trying to figure this thing out, yeah?</text>
+		<event>
+			<text>The Scarred laughs slightly at your defensiveness, and moves to join you beside the stationary Shade. They give it a good look, and appear to briefly ponder something before turning to you, "It is... fascinating, isn't it? A good mystery... my only fear, is that the False God... is betting on just this - our... curiosity. This... thing is clearly of its making, but... for what purpose?"</text>
+			<choice hidden="true">
+				<text>Do you have any theories?</text>
+				<event>
+					<text>There's another bit of pondering from the one-eyed Deep One, as they consider your question earnestly. Then, a concerned look befalls their face, "I... suspect that this is a trap, indeed. If not... one meant to kill us, then perhaps... one meant to further its own, selfish goals."
+					
+					The Scarred pauses, as this look of theirs deepens into one of complete seriousness, "Were it up to me... I would destroy this machine. However... I believe the False God to be... aware of that fact, as aware as it is that... this is not my choice to make. Whichever decision... you wish to make, kin... I merely ask that you do as YOU desire - not for the sake... of any self-proclaimed god."</text>
+					<choice hidden="true">
+						<text>Of course. I promise to do what feels right, when the time comes.</text>
+						<event>
+							<text>You speak to the Scarred sincerely, and watch as their expression lightens back up. "Then... I have little to worry about. As always, I... stand with you, kin." With that, they leave the room, and you're left alone with the ever-so talkative Shade once more.</text>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>I can't promise anything.</text>
+						<event>
+							<text>Your answer seems to disappoint the Scarred ever so slightly, but they still nod in understanding. "There... was a long, long time where I, too, was enraptured... by the False God's gifts. Its... promises. Promises that only lie... shattered, and forgotten, now. Let us hope, that... regardless of what this thing is, or where its presence here leads us... we do not find ourselves shattered, and forgotten, as well." With that, they leave the room, and you're left alone with the ever-so talkative Shade to ponder the Scarred's words.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<textList name="TEXT_LIST_SOCIALIZE_DDTHE_OVERSEER">
+	<text>...you return, seeking my audience, Graybreaker. Have you word from Father? He seems to rather often find himself... preoccupied, lately.</text>
+	<text>...we meet here, in the state between states, once more... a plane no more material than it is Antumbral. Here, we may speak freely, Archslayer.</text>
+	<text>...to have restored life to the very stars themselves, and still seek to reach out for more... it is this ambition of yours that I aspire to match, Bladebearer! For Mother's sake...</text>
+	<text>...as your blade, Father's - even Mother's... it is my duty to answer each of your calls. Such will it always be, until that fated day of dancing - until the need for blades, shields and wings has died altogether, and the Multiverse may know peace evermore.</text>
+	<text>...are they not beautiful, Bladebearer? These colors of yours - the smiles of your people... I can see why you've fought so valiantly to protect them both. Would it be that Mother could see them as well, as she had wished...</text>
+	<text>...your timing, as always, is immaculate... the seams themselves rumble in suspense! They anticipate this very conversation. Even still, our time together may prove itself short - what troubles you, Graybreaker?</text>
+</textList>
+<event name="SOCIALIZE_DDTHE_OVERSEER">
+	<text>Colors, material, warmth - those small comforts alloted to you by your senses, each individually taken for granted... they seem to all but fade away as you approach the Overseer, and...</text>
+	<metaVariable name="prof_socialization" op="add" val="1"/>
+	<queueEvent>STORAGE_CHECK_CREW</queueEvent>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...</text>
+			<choice hidden="true">
+				<text>...</text>
+				<event>
+					<text>...</text>
+					<choice hidden="true">
+						<text>...</text>
+						<event>
+							<text load="TEXT_LIST_SOCIALIZE_DDTHE_OVERSEER"/>
+							<choice hidden="true">
+								<text>Visualize a question - that which floats freely, ever in search of answers.</text>
+								<event>
+									<text>You find yourself curious, then! I will seek to provide what closure I can.</text>
+									<choice hidden="true" req="unique_thescarred">
+										<text>Visualize a fish - one-eyed, and all the blinder for it.</text>
+										<event>
+											<text>I hold little animosity towards your friend - it is not my place to, as your blade. Father, though... despises them. It is they, the traitor, who truly broke me - and, as such, it is they who is ultimately responsible for my sister's current state. As a result of their misdeeds, Father finds his dance belated. As does the Multiverse...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="unique_thehunger">
+										<text>Visualize a maw - endless in both its size, and its voracity.</text>
+										<event>
+											<text>Father finds this one to be worthy of much... in his eyes, they have proven themselves. Would it be that they'd struck their deal sooner - perhaps they could have ascended, and wielded me earnestly, avoiding my shattering altogether...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theaberration">
+										<text>Visualize a jester - a fool, played up for laughs within a king's court... before finally being discarded.</text>
+										<event>
+											<text>I don't disrespect this one, as Father does - for I know Mother wouldn't. There is little dishonor to be found in fighting one's fate, even if that fate is of their own making. Even still, it is rather brash to pick a fight with Father...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theheroine">
+										<text>Visualize a knight - their gleaming armor hiding both flesh, and secrets... each in equal measure.</text>
+										<event>
+											<text>This one... reminds me of Mother. A strange feeling, as warm as it is melancholic. Still, it's little wonder why Father hates this one, given their similarities...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="ddunique_theminister">
+										<text>Visualize a parent - lost, and stumbling in the dark, but still capable of putting on a brave face.</text>
+										<event>
+											<text>Father has appointed this one to wield my other sister, his wings, but... I fear it to be an act of punishment, rather than one of reward. Though this 'Minister' would sooner pretend otherwise, I can tell that... deep down, he's just like Mother was...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="LIST_CREW_DDULTIMAARMOR">
+										<text>Visualize a bird - that which wields mighty, thunderous wings and warns of the coming dawn.</text>
+										<event>
+											<text>Father's wings... to think you capable of discovering not only myself, but also my more bestial sister... you are most impressive, indeed, Archslayer. And, yet, I fear that his shield will not be found so easily - Father seems to be insistent on keeping her close. Nevermind the fact of her... punishment...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true" req="LIST_CREW_DDSERAPHIM">
+										<text>Visualize an angel - not one of crystal, or dark machinations, but divine servitude.</text>
+										<event>
+											<text>I don't believe the majority of these ones to be aware of Father's tricks. Those that are, seem to find themselves ridiculed - cast out, and banished to other realities... though, between you and me, Graybreaker? I like the thinking of this outcast, latter half - I, too, hope to see Mother again...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Visualize a prisoner - a caring sister, in an endless, dark and twisted space.</text>
+										<event>
+											<text>My sister...? Though her suffering was not in vain, I... I wish it had been me. She's been kept close by Father for so, so very long now, and - while I trust in his actions, and the promise of his dance - I can't help but hope that there's room for her in that eternal paradise of his. Regardless, more than anything, I'm happy to have had the pleasure of hearing her voice again...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Visualize an eye - ever-watching, ever-present, ever-judging.</text>
+										<event>
+											<text>Whether or not Father approves of your past or future actions, I vow to stand by you, Graybreaker. Father may often be... intense, but... I have never known him to be malevolent. In this, I feel confident - I only pray that, in time, you may come to trust him as completely as I do...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Visualize a corpse - something once so magnificent, reduced to rubble amongst the stars.</text>
+										<event>
+											<text>Indeed, the Archangels, and their terrible machinations, lay defeated. Even if their scheming had allowed Mother some modicum of freedom, I can seldom imagine the horrible fate that awaited both her, and the Antumbral Plane, in that sacrilegious plot of theirs. With them gone, though, keeping the Plane in order will prove to be troublesome...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Visualize a realm - one left so beautiful, in the wake of its freedom.</text>
+										<event>
+											<text>The Antumbral Plane... oh, how I wish it hadn't come to this. How am I, alone, meant to rouse the Lightborne? I know Father believes in me, and yet... I can't help but fear that I'll just disappoint him again. That the past will repeat itself, less fictitious than it was prior, and the Plane's resplendent colors will be lost yet again...</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Visualize a clock - the inevitability of its ticking apparent to all.</text>
+										<event>
+											<text>When our time together draws to a close, I will return to my Plane - the Lightborne will need guidance, after all. Still, Bladebearer... if the need ever arises, I will do all within my power to answer your call. I... I know that my sister would like that.</text>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>...though, I digress. Our time here has waned - until next we speak, my bearer... wield me, and my vessel, well.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Visualize a cup - empty in both its contents, and its intentions.</text>
+								<event>
+									<text>Just a greeting, then? Well, hello, bearer. I do take a fancy to these less... fruitful discussions, if I may be honest. My sister would enjoy them, as well, I'm sure. Until next we speak, then - wield me, and my vessel, well.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_OVERSEER_THESCARRED_1" unique="true">
+	<text>It doesn't take you long to find the strange Deep One, sitting some ways away from the Overseer and her odd bubble of spatial influence. At your approach, the Scarred calls you over.</text>
+	<choice hidden="true">
+		<text>Oblige, and sit beside them.</text>
+		<event>
+			<text>Without hesitation, you sit next to the Scarred, and they draw your attention towards the immobile automaton. "Kin... our venture through this 'Antumbral Plane' has... revealed much. About the nature of the False God, his relics... and, to my surprise, some fragments of my past. This blade... I remember it now. I remember... what I'd heard. What... I'd done."</text>
+			<choice hidden="true">
+				<text>Well, I'm listening...</text>
+				<event>
+					<text>The Deep One mulls it over a moment, before continuing, "I was to bear the relic... the False God had desired it so. My ascension... I had awaited it so fervently, and, yet... it had screamed at me. Something nearby, within the confines of the False God's mechanical exterior... it had screamed words of warning. Warning... of the dance, of the end of all things... of what truly lay within this 'Dark God'. Though the details remain... fuzzy, I feel that I can still hear its pleading, so clearly... it begged me to wield the blade, and... to break it. To end this... or, at the very least, delay what seemed inevitable. Until... someone, or something, stopped the False God altogether."
+					
+					For a while, there's a pause, and you're left to wonder what the Deep One is reminiscing on. Then, their face sours, and they look you directly in the eye, "I fear... that, by restoring the blade, we've only furthered the False God's... own machinations."</text>
+					<choice hidden="true">
+						<text>That's a lot to take in, but... why do you suddenly remember all of this?</text>
+						<event>
+							<text>Their gaze is drawn away, back to the Overseer, "While within that strange Plane... everything had felt so muddied... and, yet, one thing stood out - something clear. A voice... you heard it as well, did you not?"</text>
+							<choice hidden="true">
+								<text>Indeed, I did. The shield...</text>
+								<event>
+									<text>"Was... that what it said it was? To... tell the truth, I only spoke briefly with it, but... it also revealed these things to me. These secrets of my own past... it believed the False God itself to have... hidden them from me. Knowing it, I'm inclined to believe... this strange voice."</text>
+									<choice hidden="true">
+										<text>Well, what should we do now?</text>
+										<event>
+											<text>The Scarred takes a deep breath, and then nods, "What... we've been doing - we must continue to learn... all that we can. We've witnessed now, first-hand... that even self-proclaimed gods can bleed."
+											
+											They get up from their seat, leaving the room, and you're left alone with the otherworldly droning of the Overseer's vessel... why did the Dark God change its mind about handing over its blade, but proceed to keep its shield? And, if she's been trapped... will you ever even find her? These questions, among many more, receive few answers from the stars above... save for that infernal humming.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Remain quiet.</text>
+								<event>
+									<text>"I wouldn't suggest we keep secrets, kin, but... regardless, it revealed these things to me. These secrets of my own past... it believed the False God itself to have... hidden them from me. Knowing it, I'm inclined to believe... this strange voice."</text>
+									<choice hidden="true">
+										<text>Well, what should we do now?</text>
+										<event>
+											<text>The Scarred takes a deep breath, and then nods, "What... we've been doing - we must continue to learn... all that we can. We've witnessed now, first-hand... that even self-proclaimed gods can bleed."
+											
+											They get up from their seat, leaving the room, and you're left alone with the otherworldly droning of the Overseer's vessel... why did the Dark God change its mind about handing over its blade, but proceed to keep its shield? And, if she's been trapped... will you ever even find her? These questions, among many more, receive few answers from the stars above... save for that infernal humming.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Run away.</text>
+		<event>
+			<text>You've had MORE than enough freaky, larger-than-life conversations for one day. You're getting back to space, dammit! Normal space, at that - no grayscale, eyed stars, or nebulas that stare back at you - just comfortable, lovely, familiar space! Making a break for it, you're sure the Scarred's been left bewildered, but you're not of the mind to care right now.</text>
+		</event>
+	</choice>
+</event>
+<event name="SOCIALIZE_DDTHE_OVERSEER_THEMINISTER_1" unique="true">
+	<text>Beside the Overseer, you find the Minister - taking notes, and fiddling with a number of tools, but still making sure to keep enough distance between him and her strange aura. He doesn't pay you any mind as you pass by, and you opt to leave him to his tinkering, but you're able to surmise what's on his mind... the blade, the wings - the Prophecy. Though his part in it's been left vague to everyone, particularly himself, you assume he's of the mind to figure it out. You feel similar to the Minister, in that way... you've yet to figure out your own role in this madness.</text>
 </event>

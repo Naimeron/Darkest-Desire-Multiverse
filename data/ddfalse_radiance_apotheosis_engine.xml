@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-31" y="-38" w="412" h="356" />
+<offsets>
+	<floor x="206" y="178" />
+	<cloak x="206" y="178" />
+</offsets>
+<weaponMounts>
+	<mount x="316" y="191" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="96" y="43" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="214" y="57" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="148" y="80" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="130" y="106" rotate="false" mirror="false" gib="-1" slide="no" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradiance_apotheosis_engine_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

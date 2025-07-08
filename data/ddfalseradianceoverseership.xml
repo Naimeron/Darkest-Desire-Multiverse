@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-39" y="-14" w="356" h="412" />
+<offsets>
+	<floor x="33" y="8" />
+	<cloak x="0" y="0" />
+</offsets>
+<weaponMounts>
+	<mount x="292" y="107" rotate="true" mirror="true" gib="-1" slide="right" />
+	<mount x="307" y="238" rotate="true" mirror="false" gib="-1" slide="right" />
+	<mount x="314" y="189" rotate="true" mirror="false" gib="-1" slide="right" />
+	<mount x="315" y="154" rotate="true" mirror="true" gib="-1" slide="right" />
+	<mount x="250" y="130" rotate="true" mirror="false" gib="-1" slide="no" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradianceoverseership_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

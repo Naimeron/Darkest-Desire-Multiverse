@@ -629,6 +629,16 @@
 											</choice>
 										</event>
 									</choice>
+									<choice hidden="true" req="LIST_CREW_DDTHEOVERSEER">
+										<text>(The Overseer) Wait a minute...</text>
+										<event>
+											<text>You've seen these shadow-crystals before - in the Antumbral Plane. They were a construct of the Plane's Shadows, utilized by the Archangel Protocols in the name of self-defense. Still, to the layman, that all sounds insane... and you've no clue how it's ended up in the Disparity's hands. You try your best to offer the Crystal what information you know on the mysterious, dark armor - without sounding crazy.</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="STORELIST_DISPARITY_CRYSTAL_TRUTH"/>
+											</choice>
+										</event>
+									</choice>
 									<choice hidden="true" req="LIST_CREW_DDSERAPHIM">
 										<text>(Seraphim Crew) Inquire.</text>
 										<event>
@@ -1391,6 +1401,10 @@
 						<text>(Adv. Sensors) Take an extremely large scan of the area.</text>
 						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
 					</choice>
+					<choice hidden="true" req="ADV_SCANNERS">
+						<text>(Long-Ranged Scanners) Take an extremely large scan of the area.</text>
+						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
+					</choice>
 					<choice hidden="true">
 						<text>We're not really capable of such a scan.</text>
 						<event>
@@ -1415,6 +1429,10 @@
 						<text>(Adv. Sensors) Take an extremely large scan of the area.</text>
 						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
 					</choice>
+					<choice hidden="true" req="ADV_SCANNERS">
+						<text>(Long-Ranged Scanners) Take an extremely large scan of the area.</text>
+						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
+					</choice>
 					<choice hidden="true">
 						<text>We're not really capable of such a scan.</text>
 						<event>
@@ -1437,6 +1455,10 @@
 					<text>Data from the Lifeform Scanner reads back that there is indeed life within the outpost, though it appears to be rapidly teleporting around in an attempt to avoid your scans. Sounds like the Speed form of the Disparity Elites... perhaps taking a much larger scan of the entire area simultaneously will force them to reveal themselves.</text>
 					<choice hidden="true" req="sensors" lvl="3">
 						<text>(Adv. Sensors) Take an extremely large scan of the area.</text>
+						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
+					</choice>
+					<choice hidden="true" req="ADV_SCANNERS">
+						<text>(Long-Ranged Scanners) Take an extremely large scan of the area.</text>
 						<event load="NEUTRAL_DISPARITY_HARMONYHARASSMENT_CAUGHT"/>
 					</choice>
 					<choice hidden="true">
@@ -1534,7 +1556,7 @@
 											<choice hidden="true">
 												<text>Nothing... desires to be everything.</text>
 												<event>
-													<text>You jolt awake, your back sore from... why were you asleep on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
+													<text>You jolt awake, your back sore from... why WERE you sleeping on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
 													<changeBackground>BACKGROUND</changeBackground>
 													<playMusic/>
 													<modifyPursuit amount="1"/>
@@ -1810,7 +1832,7 @@
 																					<choice hidden="true">
 																						<text>Nothing... desires to be everything.</text>
 																						<event>
-																							<text>You jolt awake, your back sore from... why were you asleep on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
+																							<text>You jolt awake, your back sore from... why WERE you sleeping on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
 																							<changeBackground>BACKGROUND</changeBackground>
 																							<playMusic/>
 																							<modifyPursuit amount="1"/>
@@ -1876,7 +1898,7 @@
 																									<choice hidden="true">
 																										<text>Nothing... desires to be everything.</text>
 																										<event>
-																											<text>You jolt awake, your back sore from... why were you asleep on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
+																											<text>You jolt awake, your back sore from... why WERE you sleeping on the ground? Getting up, and gathering your bearings, you realize you have no idea where you are. It's been some time since you must have fallen asleep...</text>
 																											<changeBackground>BACKGROUND</changeBackground>
 																											<playMusic/>
 																											<modifyPursuit amount="1"/>
@@ -2067,7 +2089,7 @@
 					<choice hidden="true">
 						<text>Yeah, no. Nevermind.</text>
 						<event>
-							<text>Honestly? Yeah. Fuck this, dude. The hell have any Separatists ever done for us? They really expect us to take on a whole ass Harmony fleet to save a single ship? Like, lower your expectations, assholes. Or, at the very least, do the same for us sometime. Not that they'll really get a chance to if you, uh, leave them to die. Oh well.</text>
+							<text>Honestly? Yeah. Screw this, dude. The hell have any Separatists ever done for us? They really expect us to take on a whole ass Harmony fleet to save a single ship? Like, lower your expectations, assholes. Or, at the very least, do the same for us sometime. Not that they'll really get a chance to if you, uh, leave them to die. Oh well.</text>
 							<variable name="dd_disparity_assistance" op="add" val="-1"/>
 							<choice>
 								<text>Do something onboard the ship.</text>
@@ -2408,6 +2430,11 @@
 				<event>
 					<text>Outside, you see... nothing. Not truly nothing, though, but something vast that embodies nothing. This nothingness completely obscures the space outside, but... you feel that you've got greater problems to worry about as you realize it's this very darkness outside that is clawing its way through your ship! You need to get out of here... but, first, prepare for combat!</text>
 					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+					<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+						<layer z="0">background</layer>
+						<spawnArea x="0" y="0" w="0" h="0"/>
+						<anim>dddarkgodsdomainaura_bg</anim>
+					</backgroundObject>
 					<boarders min="3" max="6" class="darkgodtendrils"/>
 				</event>
 			</choice>
@@ -2460,6 +2487,11 @@
 																		<event>
 																			<text>Outside, you see... nothing. Not truly nothing, though, but something vast that embodies nothing. This nothingness completely obscures the space outside, but... you feel that you've got greater problems to worry about as you realize it's this very darkness outside that is clawing its way through your ship! You need to get out of here... but, first, prepare for combat!</text>
 																			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+																			<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+																				<layer z="0">background</layer>
+																				<spawnArea x="0" y="0" w="0" h="0"/>
+																				<anim>dddarkgodsdomainaura_bg</anim>
+																			</backgroundObject>
 																			<boarders min="3" max="6" class="darkgodtendrils"/>
 																		</event>
 																	</choice>
@@ -2485,6 +2517,11 @@
 														<event>
 															<text>Outside, you see... nothing. Not truly nothing, though, but something vast that embodies nothing. This nothingness completely obscures the space outside, but... you feel that you've got greater problems to worry about as you realize it's this very darkness outside that is clawing its way through your ship! You need to get out of here... but, first, prepare for combat!</text>
 															<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+															<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+																<layer z="0">background</layer>
+																<spawnArea x="0" y="0" w="0" h="0"/>
+																<anim>dddarkgodsdomainaura_bg</anim>
+															</backgroundObject>
 															<boarders min="3" max="6" class="darkgodtendrils"/>
 														</event>
 													</choice>
@@ -2911,7 +2948,7 @@
 													<choice hidden="true">
 														<text>Big guy?</text>
 														<event>
-															<text>"Yeah, the H-" they pause, "Fuck, I nearly did it again. Listen, can I give you a drone and have you be quiet, or something? Maybe share some power with one of your Separatists, if you have: any?"</text>
+															<text>"Yeah, the H-" they pause, "Damn, I nearly did it again. Listen, can I give you a drone and have you be quiet, or something? Maybe share some power with one of your Separatists, if you have: any?"</text>
 															<choice hidden="true" req="engi_separatist">
 																<text>(Engi Separatist) Sure, power sounds cool.</text>
 																<event>
@@ -3222,7 +3259,7 @@
 										</event>
 									</choice>
 									<choice hidden="true">
-										<text>Nope, fuck that. Turn back.</text>
+										<text>Nope, screw that. Turn back.</text>
 										<event>
 											<text>It doesn't take long to return to the room from which you started. Suppose there's nothing else to do but wait...</text>
 											<choice hidden="true">
@@ -3256,6 +3293,11 @@
 						<event>
 							<text>Maybe whoever was warning you had the right idea. The stars are blotted out, one by one, as you're engulfed in total darkness... as bad as that is, though, it's moreso the loud banging on the hull that you're worried about.</text>
 							<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+							<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+								<layer z="0">background</layer>
+								<spawnArea x="0" y="0" w="0" h="0"/>
+								<anim>dddarkgodsdomainaura_bg</anim>
+							</backgroundObject>
 							<choice hidden="true">
 								<text>We need to get out of here, now!</text>
 								<event>
@@ -3344,6 +3386,7 @@
 	<event load="HOSTILE_DISPARITY_DISPARITY_MIXED_WARGROUND"/>
 	<event load="HOSTILE_DISPARITY_DISPARITY_NO2"/>
 	<event load="HOSTILE_DISPARITY_DISPARITY_NO2_WARGROUND"/>
+	<event load="HOSTILE_DISPARITY_HARMONY"/>
 	<event load="HOSTILE_DISPARITY_HARMONY"/>
 	<event load="HOSTILE_DISPARITY_HARMONY"/>
 	<event load="HOSTILE_DISPARITY_HARMONY_WARGROUND"/>
@@ -3975,7 +4018,7 @@
 			<choice hidden="true">
 				<text>Yeah, and I choose to ally with the Disparity. They believe in something we all ought to... freedom, for everybody.</text>
 				<event>
-					<text>He turns back to face you, perplexion on his face, "Yeah, I suppose that is a possibility, isn't it? A better reality, for everyone..." he thinks it over for a moment, before speaking once more, "...fuck it. I wanna believe in whatever shit you're smoking; count us in." He runs into another room, "Yea-hah! We're Renegades now, baby!" After a period of time, him and his crewmate come over, carrying all sorts of goodies!</text>
+					<text>He turns back to face you, perplexion on his face, "Yeah, I suppose that is a possibility, isn't it? A better reality, for everyone..." he thinks it over for a moment, before speaking once more, "...screw it. I wanna believe in whatever shit you're smoking; count us in." He runs into another room, "Yea-hah! We're Renegades now, baby!" After a period of time, him and his crewmate come over, carrying all sorts of goodies!</text>
 					<crewMember amount="2" class="human"/>
 					<autoReward level="HIGH">standard_no_item</autoReward>
 				</event>
@@ -4666,7 +4709,7 @@
 </event>
 
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH_WIN">
-	<text>Or, so you thought. As the Disparity Behemoth shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Seraphim, the Link, everything. You watch as some of it coalesces into a sphere, next to the Link... and then, as the sphere reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
+	<text>Or, so you thought. As the Disparity Behemoth shatters, a sea of darkness springs forth from its encasement... it surrounds you, the Seraphim, the Link, everything. You watch as some of it coalesces into a strange spatial tear, next to the Link... and then, as the tear reverberates and writhes, you feel as your ship begins to be pulled in... it's having some kind of gravitational effect on the entire area!</text>
 	<unlockCustomShip silent="false">PLAYER_DISPARITY</unlockCustomShip>
 	<achievement>ACH_EVENT_DISPARITYBEHEMOTH</achievement>
 	<playMusic/>
@@ -4690,8 +4733,57 @@
 							<choice hidden="true">
 								<text>Tainted One?</text>
 								<event>
-									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator, Tempest..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY BLADES, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
+									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator, Tempest, Divinity..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY OWN, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
 									<crewMember amount="1" class="ddseraph_engi" all_skills="2">Sunday</crewMember>
+									<choice hidden="true">
+										<text>Let's head out, then!</text>
+										<event>
+											<text>As you prepare to set off, though... something amidst the space outside catches your attention. You quickly realize what it is - that same tear in space that you'd seen within the darkness, devouring the Link... only, it seems to have calmed now. How did it get out here?</text>
+											<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+												<layer z="1">background</layer>
+												<spawnArea x="787" y="163" w="0" h="0"/>
+												<anim>ddspacetimeseam_inactive_decor</anim>
+											</backgroundObject>
+											<choice hidden="true" req="ddunique_theshade">
+												<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+												<event>
+													<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event>
+															<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+															<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+															<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+																<layer z="1">background</layer>
+																<spawnArea x="787" y="163" w="0" h="0"/>
+																<anim>ddspacetimeseam_antumbral_decor</anim>
+															</backgroundObject>
+															<choice hidden="true">
+																<text>Wait, what are you doing?</text>
+																<event>
+																	<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the strange gap in space, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+																	<playSound>ddultimalightningstrike</playSound>
+																	<choice hidden="true">
+																		<text>Reach out for something!</text>
+																		<event>
+																			<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+																			<secretSector/>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Turn away from the strange thing.</text>
+												<event>
+													<text>You've no intention of messing with this thing, with no expertise of your own - who knows what it could do to you. More than satisfied in leaving the tear in space alone, you find yourself preparing to head out once more.</text>
+												</event>
+											</choice>
+										</event>
+									</choice>
 								</event>
 							</choice>
 						</event>
@@ -4708,6 +4800,55 @@
 							<text>Giving the engines all you've got, you blast out of the void, going some distance before you feel entirely safe. Once the coast is clear, you turn to the drone... it radiates a certain aura of menace, and you can't help but think of what it was supposed to represent. Liberation... with the Harmony Link being sucked into the void, you can only imagine what's become of it. You suppose the Disparity's won, in a way... but, what of their leader? Are they not doomed without them? Or, is somebody else pulling the strings... you think on so many questions, but realize you have so few answers. Though, perhaps this drone can still be used for its namesake, in your hands. With newfound strength, you prepare to continue on your journey... to liberate the Multiverse from the Rebellion.</text>
 							<changeBackground>BACKGROUND</changeBackground>
 							<drone name="DISPARITY_LIBERATORTOG_DEFEND"/>
+							<choice hidden="true">
+								<text>Let's head out, then!</text>
+								<event>
+									<text>As you prepare to set off, though... something amidst the space outside catches your attention. You quickly realize what it is - that same tear in space that you'd seen within the darkness, devouring the Link... only, it seems to have calmed now. How did it get out here?</text>
+									<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+										<layer z="1">background</layer>
+										<spawnArea x="787" y="163" w="0" h="0"/>
+										<anim>ddspacetimeseam_inactive_decor</anim>
+									</backgroundObject>
+									<choice hidden="true" req="ddunique_theshade">
+										<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+										<event>
+											<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event>
+													<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+													<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+													<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+														<layer z="1">background</layer>
+														<spawnArea x="787" y="163" w="0" h="0"/>
+														<anim>ddspacetimeseam_antumbral_decor</anim>
+													</backgroundObject>
+													<choice hidden="true">
+														<text>Wait, what are you doing?</text>
+														<event>
+															<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the strange gap in space, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+															<playSound>ddultimalightningstrike</playSound>
+															<choice hidden="true">
+																<text>Reach out for something!</text>
+																<event>
+																	<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+																	<secretSector/>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Turn away from the strange thing.</text>
+										<event>
+											<text>You've no intention of messing with this thing, with no expertise of your own - who knows what it could do to you. More than satisfied in leaving the tear in space alone, you find yourself preparing to head out once more.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -4783,6 +4924,55 @@
 											<achievement>ACH_CREW_THEHUNGER</achievement>
 											<variable name="ach_crew_thehunger" op="set" val="1"/>
 											<crewMember amount="1" class="unique_thehunger" all_skills="2">The Hunger</crewMember>
+											<choice hidden="true">
+												<text>Let's head out, then!</text>
+												<event>
+													<text>As you prepare to set off, though... something amidst the space outside catches your attention. You quickly realize what it is - that same tear in space that you'd seen within the darkness, devouring the Link... only, it seems to have calmed now. How did it get out here?</text>
+													<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+														<layer z="1">background</layer>
+														<spawnArea x="787" y="163" w="0" h="0"/>
+														<anim>ddspacetimeseam_inactive_decor</anim>
+													</backgroundObject>
+													<choice hidden="true" req="ddunique_theshade">
+														<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+														<event>
+															<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event>
+																	<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+																	<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+																	<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+																		<layer z="1">background</layer>
+																		<spawnArea x="787" y="163" w="0" h="0"/>
+																		<anim>ddspacetimeseam_antumbral_decor</anim>
+																	</backgroundObject>
+																	<choice hidden="true">
+																		<text>Wait, what are you doing?</text>
+																		<event>
+																			<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the strange gap in space, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+																			<playSound>ddultimalightningstrike</playSound>
+																			<choice hidden="true">
+																				<text>Reach out for something!</text>
+																				<event>
+																					<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+																					<secretSector/>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text>Turn away from the strange thing.</text>
+														<event>
+															<text>You've no intention of messing with this thing, with no expertise of your own - who knows what it could do to you. More than satisfied in leaving the tear in space alone, you find yourself preparing to head out once more.</text>
+														</event>
+													</choice>
+												</event>
+											</choice>
 										</event>
 									</choice>
 								</event>
@@ -4801,6 +4991,55 @@
 							<text>Giving the engines all you've got, you blast out of the void, going some distance before you feel entirely safe. Once the coast is clear, you turn to the drone... it radiates a certain aura of divinity, and you can't help but think of what it was supposed to represent. Judgment... with the Harmony Link being sucked into the void, you can only imagine what's become of it. You suppose the Disparity's won, in a way... but, what of their leader? Are they not doomed without them? Or, is somebody else pulling the strings... you think on so many questions, but realize you have so few answers. Though, perhaps this drone can still be used for its namesake, in your hands. With newfound strength, you prepare to continue on your journey... to be the arbiter that casts judgment unto the Rebellion.</text>
 							<changeBackground>BACKGROUND</changeBackground>
 							<drone name="DDSERAPH_ARBITERTOG_DEFEND"/>
+							<choice hidden="true">
+								<text>Let's head out, then!</text>
+								<event>
+									<text>As you prepare to set off, though... something amidst the space outside catches your attention. You quickly realize what it is - that same tear in space that you'd seen within the darkness, devouring the Link... only, it seems to have calmed now. How did it get out here?</text>
+									<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+										<layer z="1">background</layer>
+										<spawnArea x="787" y="163" w="0" h="0"/>
+										<anim>ddspacetimeseam_inactive_decor</anim>
+									</backgroundObject>
+									<choice hidden="true" req="ddunique_theshade">
+										<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+										<event>
+											<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event>
+													<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+													<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+													<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+														<layer z="1">background</layer>
+														<spawnArea x="787" y="163" w="0" h="0"/>
+														<anim>ddspacetimeseam_antumbral_decor</anim>
+													</backgroundObject>
+													<choice hidden="true">
+														<text>Wait, what are you doing?</text>
+														<event>
+															<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the strange gap in space, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+															<playSound>ddultimalightningstrike</playSound>
+															<choice hidden="true">
+																<text>Reach out for something!</text>
+																<event>
+																	<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+																	<secretSector/>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Turn away from the strange thing.</text>
+										<event>
+											<text>You've no intention of messing with this thing, with no expertise of your own - who knows what it could do to you. More than satisfied in leaving the tear in space alone, you find yourself preparing to head out once more.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -4860,6 +5099,55 @@
 				<event>
 					<text>...as well as the Liberator drone.</text>
 					<drone name="DISPARITY_LIBERATORTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Let's head out, then!</text>
+						<event>
+							<text>As you prepare to set off, though... something amidst the space outside catches your attention. You quickly realize what it is, as the Dark God has left it here for you - a tear in reality. A gap in the seams...</text>
+							<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+								<layer z="1">background</layer>
+								<spawnArea x="787" y="163" w="0" h="0"/>
+								<anim>ddspacetimeseam_inactive_decor</anim>
+							</backgroundObject>
+							<choice hidden="true" req="ddunique_theshade">
+								<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+								<event>
+									<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+											<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+											<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+												<layer z="1">background</layer>
+												<spawnArea x="787" y="163" w="0" h="0"/>
+												<anim>ddspacetimeseam_antumbral_decor</anim>
+											</backgroundObject>
+											<choice hidden="true">
+												<text>Wait, what are you doing?</text>
+												<event>
+													<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the strange gap in space, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+													<playSound>ddultimalightningstrike</playSound>
+													<choice hidden="true">
+														<text>Reach out for something!</text>
+														<event>
+															<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+															<secretSector/>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Turn away from the gift.</text>
+								<event>
+									<text>You've no intention of messing with this thing, with no expertise of your own - who knows what it could do to you. More than satisfied in leaving the tear in space alone, you find yourself preparing to head out once more.</text>
+								</event>
+							</choice>
+						</event>
+					</choice>
 				</event>
 			</choice>
 		</event>

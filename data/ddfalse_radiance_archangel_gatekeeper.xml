@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-59" y="-47" w="538" h="421" />
+<offsets>
+	<floor x="269" y="210" />
+	<cloak x="269" y="210" />
+</offsets>
+<weaponMounts>
+	<mount x="198" y="50" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="339" y="50" rotate="false" mirror="true" gib="-1" slide="up" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradiance_archangel_gatekeeper_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

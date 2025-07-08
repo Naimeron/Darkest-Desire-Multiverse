@@ -2216,7 +2216,7 @@
 </event>
 
 <event name="ITEMS_ENLIGHTENED_WRECKYARD" unique="true">
-	<text>The void, ever-present, greets you. Seems you're popular, because so does the voice, "A field... of wrecks appears to surround this beacon. Valuable resources... should you trade time, the most valuable resource... of all."</text>
+	<text>The void, ever-present, greets you. Seems you're popular, because so does the voice: "A field... of wrecks appears to surround this beacon. Valuable resources... should you trade time, the most valuable resource... of all."</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<choice hidden="true">
 		<text>Wrecks... resources... scrap! Let me at it!</text>
@@ -3642,6 +3642,7 @@
 </eventList>
 
 <event name="DISTRESS_ENLIGHTENED_SLUG_ASSAULT" unique="true">
+	<distressBeacon/>
 	<text>Arriving at the distress beacon, the voice calls to you, "Kin... require assistance, here; the hunters have become the... hunted. A Slug ship assaults them, abusing their ability... to see through this false darkness. Shall... you assist?"</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<choice hidden="true">
@@ -3690,6 +3691,7 @@
 </event>
 
 <event name="DISTRESS_ENLIGHTENED_TRAP" unique="true">
+	<distressBeacon/>
 	<text>Little time is given before the voice, panicked, speaks, "A hunter... lies here, this distress signal was a trap!" Rapidly, the void is pulled back, and it's just in time for you to dodge the incoming fire... prepare for battle!</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<ship load="SHIP_ENLIGHTENED_FIGHT" hostile="true"/>
@@ -3777,7 +3779,7 @@
 	<choice hidden="true">
 		<text>Wait.</text>
 		<event>
-			<text>Eventually, the Shell returns... alone. "I'll be blunt... complete fuck-up. Thhhey're dead. I am capable of compensating you, however; science is nothhhhing if not about being prepared." It turns to gather the compensation, and the voice calls to you, outraged, "This... this... MURDERER... has intruded on our lands. Led... my kin into its den of lies. Lines... their graves with silver. I... make few, requests, outsider... its damnation is one of them. Be the judge, jury... and executioner."</text>
+			<text>Eventually, the Shell returns... alone. "I'll be blunt... complete screw-up. Thhhey're dead. I am capable of compensating you, however; science is nothhhhing if not about being prepared." It turns to gather the compensation, and the voice calls to you, outraged, "This... this... MURDERER... has intruded on our lands. Led... my kin into its den of lies. Lines... their graves with silver. I... make few, requests, outsider... its damnation is one of them. Be the judge, jury... and executioner."</text>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
@@ -3854,6 +3856,7 @@
 </event>
 	
 <event name="DISTRESS_ENLIGHTENED_SHELL_RESEARCH" unique="true">
+	<distressBeacon/>
 	<text>You arrive at the distress beacon, and the voice, annoyed, speaks to you, "There... is no emergency here. One of the... science-things, Shells, you call them, seeks attention. Shall... you grant it?"</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<choice hidden="true">
@@ -4097,6 +4100,7 @@
 </event>
 
 <event name="DISTRESS_ENLIGHTENED_JUDGMENT" unique="true">
+	<distressBeacon/>
 	<text>You're at the distress beacon, but... the voice is silent.</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
 	<choice hidden="true">
@@ -4411,7 +4415,7 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word... "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
+							<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word... "ENOUGH." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 							<choice hidden="true">
 								<text>Hold on!</text>
 								<event>
@@ -4432,7 +4436,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
+					<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the Scarred had frozen you... this time, though, a different voice speaks, and it only says one word: "ENOUGH." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 					<choice hidden="true">
 						<text>Hold onto something!</text>
 						<event>
@@ -4456,7 +4460,7 @@
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the voice had frozen you... this time, though, a different voice speaks, and it only says one word: "DROWN." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
+			<text>You're about to leave when reality itself seems to come to a stop. It reminds you of when you first entered the sector and the voice had frozen you... this time, though, a different voice speaks, and it only says one word: "ENOUGH." You feel everything accelerate around you, and space itself warps outside... the void, somehow, glows brighter. You realize you're being pulled through it at lightspeed!</text>
 			<choice hidden="true">
 				<text>Hold onto something!</text>
 				<event>
@@ -4563,7 +4567,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="the_scarred_judgment" lvl="-15" max_lvl="-4" blue="false">
+	<choice hidden="true" req="the_scarred_judgment" lvl="-12" max_lvl="-4" blue="false">
 		<text>Ask the voice what happens now.</text>
 		<event>
 			<text>It doesn't respond, and you watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. The voice then speaks, "Now... we part ways. My people will need me... for the battles to come, should the world outside this false void... prove to be half as ruthless as you are. Still, I request... one last thing of you, outsider..." It pauses for an uncomfortably long while, "...don't come back." With that, the voice goes silent for the last time, and the ship retreats back into the darkness.</text>
@@ -4588,7 +4592,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-16" blue="false">
+	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-13" blue="false">
 		<text>It's about time.</text>
 		<event>
 			<text>You're ready to get out of this godforsaken void. Still, though, the silence has other plans. You watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. What does this tool want?</text>

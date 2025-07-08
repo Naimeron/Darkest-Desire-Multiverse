@@ -1,6 +1,8 @@
 <text name="map_icon_store_deepone">STORE [DEEP]</text>
 <text name="map_icon_store_disparity">STORE [DISP]</text>
 <text name="map_icon_store_ddsoulplague">STORE [SOUL]</text>
+<text name="map_icon_store_ddantumbra_lightborne">STORE [LIGHT]</text>
+<text name="map_icon_store_ddantumbra_shadows">STORE [SHADOW]</text>
 <text name="map_icon_ddkyrandlilith">KYR [!]</text>
 <text name="map_icon_ddritualreward">RITUAL</text>
 <text name="map_icon_dddisparity_battlefield">BATTLEFIELD [!]</text>
@@ -16,16 +18,28 @@
 <text name="map_icon_ddcoremass_sorrow">...sorrow...</text>
 <text name="map_icon_ddcoremass_death">...death...</text>
 <text name="map_icon_ddcoremassheartloc">HEART [EXIT]</text>
-<text name="warning_ddsoulplague_mass_hazard_text">SOULPLAGUE ASSAULT\nIMMINENT</text>
+<text name="map_icon_ddarchangel_gravedigger">GRAVEDIGGER [!]</text>
+<text name="map_icon_ddarchangel_godcore">GODCORE [!]</text>
+<text name="map_icon_ddarchangel_genesis">GENESIS [EXIT]</text>
 <text name="hack_dd_corruptor">Temporarily shut down the Corruptor's functionality, preventing additional Tides from spawning.</text>
+<text name="dd_corruptor">the Corruptor</text>
+<text name="tooltip_soulplague">You're being assaulted by a Soulplague mass. As long as it remains agitated, it will periodically assault your ship.</text>
+<text name="tooltip_soulplague_allies">You're within a Soulplague mass. It will periodically assault the enemy ship.</text>
+<text name="warning_ddsoulplague_mass_hazard_text">SOULPLAGUE ASSAULT\nIMMINENT</text>
 
 <text name="loot_disparity_1">DISPARITY LOOT
 +1 shield piercing
-+50% spawn chance, shots cause lockdown</text>
++40% spawn chance, shots cause lockdown</text>
 
 <text name="loot_ddsoulplague_1">SOULPLAGUE LOOT
 +8 drone speed, -2 beam speed, -10 beam length
 +Fire and Hull modes are now Plague and Mayhem modes</text>
 
+<text name="loot_ddfalseradiance_1">FALSE RADIANCE LOOT
++Inflicts rooms hit with erosion and the Radiant Desecration effect, +8 shots, -69 beam length
++Spawns random Lightborne instead of Hungering Shadows</text>
+
 <text name="tip_shadow_weapon">Tip: Shadow weapons spawn Hungering Shadows, which grow in strength when in rooms together. Use them to overwhelm your enemies!</text>
 <text name="tip_ddplagueridden_weapon">Tip: Plagueridden weapons deal no damage to Soulplague-aligned crew, and they inflict rooms hit with Plagueridden, which slows enemy repair speed and transforms them into an ally Soulplague Husk if they're killed within the effect!</text>
+<text name="tip_ddradiant_core">Tip: Radiant Cores inflict rooms hit with erosion and the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, which most Radiant Cores are capable of spawning.</text>
+<text name="tip_ddradiant_weapons">Tip: Lightborne weapons inflict rooms hit with the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, complementing their generation via Radiant Cores.</text>

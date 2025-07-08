@@ -344,7 +344,7 @@
 </event>
 
 <event name="ENLIGHTENED_QUEST_START_BAD_END">
-	<text>You wake up to the sound of one of your crew screaming. You rush to their room, along with your other crew, but none of you are prepared for the horrifying scene before you. They've been completely eviscerated, their blood sprayed along every crevice of the room and their face left so terribly disfigured you wouldn't know who you were looking at without their nametag. You're about to throw up when you notice a set of sector coordinates has been written on the wall in their blood... Whatever bastard did this clearly wants you to head here, and you don't plan on disappointing them. They won't get away with this.</text>
+	<text>You wake up to the sound of one of your crew members screaming. You rush to their room, along with your other crew, but none of you are prepared for the horrifying scene before you. They've been completely eviscerated, their blood sprayed along every crevice of the room and their face left so terribly disfigured you wouldn't know who you were looking at without their nametag. You're about to throw up when you notice a set of sector coordinates has been written on the wall in their blood... Whatever bastard did this clearly wants you to head here, and you don't plan on disappointing them. They won't get away with this.</text>
 	<changeBackground>BACKGROUND</changeBackground>
 	<playMusic/>
 	<removeCrew>
@@ -352,6 +352,7 @@
 		<text>Whatever did this was smart enough to disable your clone bay and destroy your DNA backups too. Dammit...</text>
 	</removeCrew>
 	<variable name="coords_enlightened" op="set" val="1"/>
+	<variable name="dd_enlightenedstart_badending_reward" op="set" val="1"/>
 </event>
 
 <event name="ENLIGHTENED_QUEST_START_BAD_END_NOCREW">
@@ -359,17 +360,20 @@
 	<changeBackground>BACKGROUND</changeBackground>
 	<playMusic/>
 	<variable name="coords_enlightened" op="set" val="1"/>
+	<variable name="dd_enlightenedstart_weirdending_reward" op="set" val="1"/>
 </event>
 
 <event name="ENLIGHTENED_QUEST_START_NEUTRAL_END">
 	<text>As soon as you approach the air vent, the power goes out! Whatever's in there makes the loudest getaway in history but there's nothing you can do without being able to see. Moments later, you begin to hear some sort of... tearing... something's ripping through the very hull of the ship! You yell to your crew to get their oxygen masks and, sure enough, the hole in the hull must've come from whatever was in the vent because all the oxygen in the ship is immediately vented out. The power swiftly returns in the nick of time and you're able to send some crew out to patch up the hole and restore the ship's oxygen, but that's not the end of it. Your crew claim that there's sector coordinates "written" on the hull, crudely cut into the ship. You surmise that it's most likely a trap seeing that whatever did this couldn't possibly have had good intentions, but you're intrigued nonetheless and log the coords down.</text>
 	<damage amount="6"/>
 	<variable name="coords_enlightened" op="set" val="1"/>
+	<variable name="dd_enlightenedstart_neutralending_reward" op="set" val="1"/>
 </event>
 
 <event name="ENLIGHTENED_QUEST_START_GOOD_END">
 	<text>You stay silent and, for a while, nothing happens. That is, until the power returns! Overwrought, you search around the room with an intense, paranoia-fueled fervour but nothing seems to be out of the ordinary. You're replaying the sound you heard whilst the lights were out in your head when one of your crew rushes into the room. Then another, and another. Apparently, everyone had similar experiences; an overwhelming sense of dread followed by waiting in the darkness and refusing to speak to whatever was there. One particularly flustered crew member, however, reports that the being in the darkness actually spoke to them... nonstop, in fact. They claim it kept repeating a string of numbers, over, and over, and over, and over... until the power returned and nothing was there. Familiar with the patterning, you recognize the string of numbers as a set of sector coordinates. Whatever mysterious entity, or group of entities, is behind this clearly wants you to go there; but who's to say what's waiting.</text>
 	<variable name="coords_enlightened" op="set" val="1"/>
+	<variable name="dd_enlightenedstart_goodending_reward" op="set" val="1"/>
 </event>
 
 <eventList name="STORELIST_DEEPONE">
@@ -1730,7 +1734,7 @@
 			
 			"40! 40!"
 			
-			"I'm almost out, but... fuck it, 50!"
+			"I'm almost out, but... screw it, 50!"
 			
 			"How about 60?!"
 			
@@ -1932,7 +1936,7 @@
 							
 			"I guess I can do 70..."
 			
-			"Fuck it, 100!"
+			"Screw it, 100!"
 			
 			"Are you mad?!"
 			

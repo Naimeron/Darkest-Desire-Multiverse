@@ -8,7 +8,7 @@
 	<event load="NEBULA_STORELIST_DDSOULPLAGUE_SLUGPARANOIA"/>
 </eventList>
 
-<ship name="NEBULA_STORELIST_DDSOULPLAGUE_CORRUPTEDDRONE_FIGHT" auto_blueprint="LIST_SHIPS_FED_AUTO">
+<ship name="NEBULA_STORELIST_DDSOULPLAGUE_CORRUPTEDDRONE_FIGHT" auto_blueprint="LIST_SHIPS_FED_AUTO_GENERIC">
 	<destroyed>
 		<text>The infected drone's hull shatters, and the only choice you're left with is to salvage what remains.</text>
 		<autoReward level="MED">standard</autoReward>
@@ -470,7 +470,7 @@
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Nah, fuck that. Kill this guy.</text>
+				<text>Nah, screw that. Kill this guy.</text>
 				<event>
 					<text>If they were so invested in their own survival they wouldn't be going around insulting good, hard-working people. You prepare to put in more of that hard work as you cut communications and ready your weapons, as the Dynasty ship does the same!</text>
 					<ship hostile="true"/>
@@ -844,7 +844,7 @@
 										<event>
 											<text>Their eyes light up as you point to your weapon of darkness, "You... would house one of our lord's gifts? You... truly are extraordinary. Yes, indeed... it is. Would you... be wiling to part with it? We... would reward you handsomely, with... everything we can spare."</text>
 											<choice hidden="true" req="SHOTGUN_DARKGOD">
-												<text>Give them your dark flak weapon.</text>
+												<text>Give them your dark Flak weapon.</text>
 												<event>
 													<text>You send the weapon over, and...</text>
 													<remove name="SHOTGUN_DARKGOD"/>
@@ -855,7 +855,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="LASER_DARKGOD">
-												<text>Give them your dark light-laser weapon.</text>
+												<text>Give them your dark Light Laser weapon.</text>
 												<event>
 													<text>You send the weapon over, and...</text>
 													<remove name="LASER_DARKGOD"/>
@@ -866,7 +866,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="BOMB_DARKGOD">
-												<text>Give them your dark bomb weapon.</text>
+												<text>Give them your dark Bomb weapon.</text>
 												<event>
 													<text>You send the weapon over, and...</text>
 													<remove name="BOMB_DARKGOD"/>
@@ -877,7 +877,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="DD_BEAM_INSTANT_DARKGOD">
-												<text>Give them your dark beam weapon.</text>
+												<text>Give them your dark Beam weapon.</text>
 												<event>
 													<text>You send the weapon over, and...</text>
 													<remove name="DD_BEAM_INSTANT_DARKGOD"/>
@@ -888,7 +888,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="DDLASER_CHARGE_DARKGOD">
-												<text>Give them your dark charge-laser weapon.</text>
+												<text>Give them your dark Charge Laser weapon.</text>
 												<event>
 													<text>You send the weapon over, and...</text>
 													<remove name="DDLASER_CHARGE_DARKGOD"/>
@@ -916,7 +916,7 @@
 										<event>
 											<text>Their eyes light up as you point to your weapon of darkness, "You... would house one of our lord's gifts? You... truly are extraordinary. Yes, indeed... it is. Would you... be wiling to part with it? We... would reward you handsomely, with... everything we can spare."</text>
 											<choice hidden="true" req="DRONE_MINISHROUD">
-												<text>Give them your dark combat drone.</text>
+												<text>Give them your dark Combat drone.</text>
 												<event>
 													<text>You send the drone over, and...</text>
 													<remove name="DRONE_MINISHROUD"/>
@@ -927,7 +927,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="LIST_CREW_MORPH_DISPARITYBROODMOTHER">
-												<text>Give them your dark anti-personnel drone.</text>
+												<text>Give them your dark Anti-Personnel drone.</text>
 												<event>
 													<text>You send the drone over, and...</text>
 													<remove name="LIST_CREW_MORPH_DISPARITYBROODMOTHER"/>
@@ -938,7 +938,7 @@
 												</event>
 											</choice>
 											<choice hidden="true" req="LIST_CREW_MORPH_DDDISPARITYADMINISTRATOR">
-												<text>Give them your dark utility drone.</text>
+												<text>Give them your dark Utility drone.</text>
 												<event>
 													<text>You send the drone over, and...</text>
 													<remove name="LIST_CREW_MORPH_DDDISPARITYADMINISTRATOR"/>
@@ -1267,7 +1267,7 @@
 									<text>They roll closer, perking up at that, "Are... you implying what I thhhhink you're implying?" You nod, and the Shell breathes a huge sigh of relief, "Thhhhat makes me Alkali's equal, right? While he's onboard, anyways. He'll HATE thhhhat." They snicker, reminiscent of Alkali's own just seconds prior, "Shows him. Douchebag. While I'm heading on over, thhhough, feel free to trade withhhh my associate!" The Shell rolls out of the room, appearing on your ship moments later...</text>
 									<crewMember amount="1" class="shell_scientist" all_skills="1"/>
 									<choice hidden="true">
-										<text>Yeah, fuck you Alkali! Store time!</text>
+										<text>Yeah, screw you Alkali! Store time!</text>
 										<event>
 											<text>...and a new one enters, a catalogue of offers in its hands.</text>
 											<store>STORE_SHELL</store>
@@ -1672,11 +1672,11 @@
 	<text>You catch a glimpse of something shimmering in the space outside, and you assume it to simply be yet another hunk of Soulplague-infected matter... but you realize it's so much more. There's an entire field of debris here!</text>
 	<environment type="nebula"/>
 	<choice hidden="true" req="SCRAP_COLLECTOR">
-        <text>(Scrap Arm) Oh, fuck yes. Let's REALLY collect some scrap!</text>
+        <text>(Scrap Arm) Oh, hell yes. Let's REALLY collect some scrap!</text>
 		<event load="NEBULA_ITEMS_DDSOULPLAGUE_RISKYSCRAP_FIRSTGAMBLE_SUCCESS"/>
 	</choice>
 	<choice hidden="true" req="MAGNET_ARM">
-        <text>(Magnetic Arm) Oh, fuck yes. Let's REALLY collect some scrap!</text>
+        <text>(Magnetic Arm) Oh, hell yes. Let's REALLY collect some scrap!</text>
 		<event load="NEBULA_ITEMS_DDSOULPLAGUE_RISKYSCRAP_FIRSTGAMBLE_SUCCESS"/>
 	</choice>
 	<choice hidden="true">
@@ -3344,7 +3344,7 @@
 	<event load="NEBULA_DISTRESS_DDSOULPLAGUE_NAIVEEXPLORER"/>
 	<event load="NEBULA_DISTRESS_DDSOULPLAGUE_STRANDEDGOOBERS"/>
 	<event load="NEBULA_DISTRESS_DDSOULPLAGUE_SMOLDERINGREMAINS"/>
-	<event load="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH"/>
+	<event load="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH"/>
 </eventList>
 
 <ship name="NEBULA_DISTRESS_DDSOULPLAGUE_CLAIRVOYANTGREED_HUSK_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_CORRUPTION">
@@ -4211,7 +4211,7 @@
 </event>
 
 <event name="NEBULA_DISTRESS_DDSOULPLAGUE_STRANDEDGOOBERS_SEARCHLIST_PIRATE">
-	<text>It doesn't take you very long to pinpoint the call's exact location: a pirate ship amongst the clouds. They hail as you come near, "A Renegade? What the hell are you doing out here in THIS shithole? Nevermind that; we just had a run-in with some freaky fuckers, and the bastards got away with the captain. I've a mind to blow them back to whatever hell-pit they crawled out of, but we ran out of missiles in the fight... give a bloke a hand?" Indeed, their weapons are uncharged... there's no telling how honest they're being with their intentions, though.</text>
+	<text>It doesn't take you very long to pinpoint the call's exact location: a pirate ship amongst the clouds. They hail as you come near, "A Renegade? What the hell are you doing out here in THIS shithole? Nevermind that; we just had a run-in with some freaky... THINGS, and the bastards got away with the captain. I've a mind to blow them back to whatever hell-pit they crawled out of, but we ran out of missiles in the fight... give a bloke a hand?" Indeed, their weapons are uncharged... there's no telling how honest they're being with their intentions, though.</text>
 	<ship load="SHIP_PIRATE_ALL" hostile="false"/>
 	<choice>
 		<text>Give the pirates some of your missiles.</text>
@@ -4224,7 +4224,7 @@
 			<choice hidden="true">
 				<text>Thank them for their help, and be on your way.</text>
 				<event>
-					<text>"Thank you, you glorious bastard! It's about time we give those rainbow fucks a piece of our mind." You leave the pirates to their own devices, and prepare to jump to the next beacon.</text>
+					<text>"Thank you, you glorious bastard! It's about time we give those rainbow weirdos a piece of our mind." You leave the pirates to their own devices, and prepare to jump to the next beacon.</text>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -4234,7 +4234,7 @@
 					<choice hidden="true">
 						<text>Interesting. Thank them for their help, and be on your way.</text>
 						<event>
-							<text>"Thank you, you glorious bastard! It's about time we give those rainbow fucks a piece of our mind." You leave the pirates to their own devices, and prepare to jump to the next beacon.</text>
+							<text>"Thank you, you glorious bastard! It's about time we give those rainbow weirdos a piece of our mind." You leave the pirates to their own devices, and prepare to jump to the next beacon.</text>
 						</event>
 					</choice>
 				</event>
@@ -4342,13 +4342,13 @@
 	</choice>
 </event>
 
-<ship name="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_CORRUPTION">
+<ship name="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_CORRUPTION">
 	<destroyed>
 		<text>The ship breaks apart and you quickly salvage what you can.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN"/>
+			<event load="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
@@ -4356,21 +4356,21 @@
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event load="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN"/>
+			<event load="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN"/>
 		</choice>
 	</deadCrew>
 </ship>
 
-<event name="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN">
+<event name="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT_WIN">
 	<text>Was this some kind of ambush by the Husks? You shiver at the possibility... still, there's little left to do but move on. At the very least, that's one less ship full of mindless zombies left to harass the galaxy.</text>
 </event>
 
-<event name="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH" unique="true">
+<event name="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH" unique="true">
 	<distressBeacon/>
 	<text>Within a clearing in the nebula, it doesn't take you very long to spot the ship emitting the distress call... unfortunately, nor does it take you very long to realize that it's being piloted by Husks! They're headed this way!</text>
-	<img back="BACK_EVENT_LIGHTNEBULA" planet="PLANET_INVISIBLE"/>
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_INVISIBLE"/>
     <status type="loss" target="player" system="sensors" amount="1"/>
-	<ship load="NEBULA_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT" hostile="true"/>
+	<ship load="NEBULA_LIGHT_DISTRESS_DDSOULPLAGUE_HUSKAMBUSH_FIGHT" hostile="true"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
@@ -4595,8 +4595,8 @@
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
-	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
-	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS"/>
+	<event load="NEBULA_LIGHT_HOSTILE_DDSOULPLAGUE_HUSKS"/>
+	<event load="NEBULA_LIGHT_HOSTILE_DDSOULPLAGUE_HUSKS"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_STORM"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_AUTO"/>
 	<event load="NEBULA_HOSTILE_DDSOULPLAGUE_SLUG"/>
@@ -4616,6 +4616,12 @@
 	<text>There's a sinking feeling in your stomach as the shadow of a ship looms within the storm outside. You catch its attention, and your worst fears are confirmed as it makes its unsteady approach!</text>
 	<text>For a moment, there's a glimmer of hope in your heart as you spot a ship amidst the storm... but it's extinguished in an instant when you notice the way they move. It's yet another Husk ship, and they're headed this way!</text>
 	<text>A ship roars past you as you enter the beacon, but you don't get a good look at it before it sinks deeper into the storm. Following it comes a second ship, much shakier in its approach... you quickly realize that they're Husks, and it seems you've pulled their attention!</text>
+</textList>
+
+<textList name="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_LIGHTNEBULA_TEXT">
+	<text>There's a sinking feeling in your stomach as the shadow of a ship looms within the clearing in the nebula outside. You catch its attention, and your worst fears are confirmed as it makes its unsteady approach!</text>
+	<text>For a moment, there's a glimmer of hope in your heart as you spot a ship amidst the thin nebula... but it's extinguished in an instant when you notice the way they move. It's yet another Husk ship, and they're headed this way!</text>
+	<text>A ship roars past you as you enter the beacon, but you don't get a good look at it before it retreats from the clearing and sinks back into the nebula. Following it comes a second ship, much shakier in its approach... you quickly realize that they're Husks, and it seems you've pulled their attention!</text>
 </textList>
 
 <event name="DESTROYED_DDSOULPLAGUE_HUSKCORRUPTION">
@@ -4649,6 +4655,17 @@
 <event name="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS">
 	<text load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_TEXT"/>
 	<environment type="nebula"/>
+	<ship load="SHIP_DDSOULPLAGUE_HUSKCORRUPTION" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="NEBULA_LIGHT_HOSTILE_DDSOULPLAGUE_HUSKS">
+	<img back="BACK_EVENT_STARS_SPARSE" planet="NONE"/>
+	<status type="loss" target="player" system="sensors" amount="1"/>
+	<text load="NEBULA_HOSTILE_DDSOULPLAGUE_HUSKS_LIGHTNEBULA_TEXT"/>
 	<ship load="SHIP_DDSOULPLAGUE_HUSKCORRUPTION" hostile="true"/>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -4741,6 +4758,55 @@
 			<achievement>ACH_CREW_DDTHEMINISTER</achievement>
 			<variable name="ach_crew_ddtheminister" op="set" val="1"/>
 			<crewMember amount="1" class="ddunique_theminister" all_skills="2">The Minister</crewMember>
+			<choice hidden="true">
+				<text>Let's head out, then!</text>
+				<event>
+					<text>As you prepare to set off, though... something amidst the nebula's clouds catches your attention. You quickly realize what it is - a gap in the seams that bind the Multiverse. This is what the Seraphim must've come here to protect...</text>
+					<backgroundObject name="DDSPACETIMESEAM_INACTIVE">
+						<layer z="1">background</layer>
+						<spawnArea x="787" y="163" w="0" h="0"/>
+						<anim>ddspacetimeseam_inactive_decor</anim>
+					</backgroundObject>
+					<choice hidden="true" req="ddunique_theshade">
+						<text>(The Shade) Behind you, the cloaked figure stirs...</text>
+						<event>
+							<text>For the first time ever, you spot the Shade moving in the presence of no enemies. You notice that its gaze seems fixated on the spacetime anomaly outside... and it hits you. You've seen one of these gaps in the seams before, when you first met the Shade - back in the domain of the Dark God...</text>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>Pondering this, you almost miss as something within the Shade's cloak glows... and the tear outside begins to resonate.</text>
+									<clearBackgroundObject name="DDSPACETIMESEAM_INACTIVE"/>
+									<backgroundObject name="DDSPACETIMESEAM_ANTUMBRAL">
+										<layer z="1">background</layer>
+										<spawnArea x="787" y="163" w="0" h="0"/>
+										<anim>ddspacetimeseam_antumbral_decor</anim>
+									</backgroundObject>
+									<choice hidden="true">
+										<text>Wait, what are you doing?</text>
+										<event>
+											<text>You don't get a verbal answer - rather, you receive a very, very physical one... as a shockwave roars out from the seams' gap, and you find your ship being pulled in at impossible speeds! There's no escaping this - you need to grab onto something, and fast!</text>
+											<playSound>ddultimalightningstrike</playSound>
+											<choice hidden="true">
+												<text>Reach out for something!</text>
+												<event>
+													<secretSectorWarp>SECRET_DDANTUMBRA</secretSectorWarp>
+													<secretSector/>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Turn away from the strange thing.</text>
+						<event>
+							<text>You've no intention of breaching this thing, with no expertise of your own - who knows what hellish reality you'd end up in! More than satisfied in leaving the seams' gap alone, you find yourself preparing to head out once more.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
 		</event>
 	</choice>
 </event>
@@ -4788,7 +4854,7 @@
 																				<event>
 																					<text>He scratches his chin, "If a dimension composed entirely of chocolate pudding sounds unfeasible, consider one composed ALMOST entirely of fire and brimstone. This is from where the Seraphim hail; a hell entirely alien to us, but the place they call home nonetheless. I've... been there, during a time where the Seraphim were less aggressive towards outsiders. Their reality remains the closest to the pocket dimension from which the Tempest sits, and so it acts as something of a direct gateway to it. The problem with this... are the Multiverse's seams. Regardless of whether or not one subscribes to Universal Cluster Theory, I have gathered enough evidence firsthand to prove that some realities are undoubtedly much more difficult to travel into than ones we'd consider familiar; crossing into the Seraphim's reality, for example, requires locating and precisely exploiting a gap in spacetime. The Seraphim called these gaps 'breaches in the seams', and I merely adopted the term after my brief incursion through their reality."</text>
 																					<choice hidden="true">
-																						<text>Fuck, alright... that's a lot to take in. You mentioned that the Seraphim used to be less aggressive. Did something happen?</text>
+																						<text>Damn, alright... that's a lot to take in. You mentioned that the Seraphim used to be less aggressive. Did something happen?</text>
 																						<event>
 																							<text>"I'm not privy to the details myself. From what little interaction I've had with them since, it seems they've turned to hating the Tempest and any who would seek to interact with it. Perhaps the nature of its location, and the fact that people must travel through their reality to reach it? It's hard for me to say, but the fact of the matter is that they defend these breaches in the seams with their lives, as you've seen here today."</text>
 																							<choice hidden="true">
@@ -5062,7 +5128,7 @@
 	</choice>
 </event>
 
-<event name="NEBULA_DDSOULPLAGUE_BEACONOFHOPE_QUEST">
+<event name="NEBULA_LIGHT_DDSOULPLAGUE_BEACONOFHOPE_QUEST">
 	<preventQuest/>
 	<preventFleet/>
 	<beaconType id="map_icon_ddhopesbeacon" global="true">
@@ -5070,7 +5136,7 @@
 	  <unvisitedTooltip>You noticed this location, and its corrupted data, as you entered the sector.</unvisitedTooltip>
 	</beaconType>
 	<text>The strange, marked beacon appears to have led you to a clearing in the nebula, but... is there nothing else here?</text>
-	<img back="BACKGROUND_DDSOULPLAGUETRICKHAHAUTHOUGHT" planet="PLANET_INVISIBLE"/>
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_INVISIBLE"/>
     <status type="loss" target="player" system="sensors" amount="1"/>
 	<choice hidden="true">
 		<text>I don't see anything.</text>
@@ -5140,7 +5206,7 @@
 																														<text>Continue...</text>
 																														<event>
 																															<text>...and, indeed, some sort sort of vast mass appears, in addition to the sporadic spawning of innumerable rainbow wormholes. It looks like this is it... having already made your decision, you move to fly into one of the wormholes. Brace yourself; you're entering lightspeed!</text>
-																															<changeBackground>BACKGROUND_DDSOULPLAGUELIGHTNEBULA</changeBackground>
+																															<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
 																															<choice hidden="true">
 																																<text>Hold onto something!</text>
 																																<event>
@@ -5159,7 +5225,7 @@
 																							<choice hidden="true">
 																								<text>I'll have to pass, sorry.</text>
 																								<event>
-																									<text>The energy in her movements fades, ever so slightly, as she nods her head once more, "Then... pay me no mind. It's my fault for assuming you were a hero in the first place... but fret not! One day, I'll find the help I need. Until then..." Another portal appears behind her as she speaks, and she walks towards it willingly, "...I wish you luck with your own struggles." The portal engulfs her, and promptly closes, leaving you in silence. A part of you feels guilty, but... you've your own struggles indeed. You'll have to press on.</text>
+																									<text>The energy in her movements fades, ever so slightly, as she nods her head once more, "Then... pay me no mind. It's my fault for assuming you were a hero in the first place... but, fret not! One day, I'll find the help I need. Until then..." Another portal appears behind her as she speaks, and she walks towards it willingly, "...I wish you luck with your own struggles." The portal engulfs her, and promptly closes, leaving you in silence. A part of you feels guilty, but... you've your own struggles indeed. You'll have to press on.</text>
 																								</event>
 																							</choice>
 																						</event>
@@ -5197,7 +5263,7 @@
 																		<text>Continue...</text>
 																		<event>
 																			<text>...and, indeed, some sort sort of vast mass appears, in addition to the sporadic spawning of innumerable rainbow wormholes. It looks like this is it... having already made your decision, you move to fly into one of the wormholes. Brace yourself; you're entering lightspeed!</text>
-																			<changeBackground>BACKGROUND_DDSOULPLAGUELIGHTNEBULA</changeBackground>
+																			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
 																			<choice hidden="true">
 																				<text>Hold onto something!</text>
 																				<event>
@@ -5216,7 +5282,7 @@
 											<choice hidden="true">
 												<text>I'll have to pass, sorry.</text>
 												<event>
-													<text>The energy in her movements fades, ever so slightly, as she nods her head once more, "Then... pay me no mind. It's my fault for assuming you were a hero in the first place... but fret not! One day, I'll find the help I need. Until then..." Another portal appears behind her as she speaks, and she walks towards it willingly, "...I wish you luck with your own struggles." The portal engulfs her, and promptly closes, leaving you in silence. A part of you feels guilty, but... you've your own struggles indeed. You'll have to press on.</text>
+													<text>The energy in her movements fades, ever so slightly, as she nods her head once more, "Then... pay me no mind. It's my fault for assuming you were a hero in the first place... but, fret not! One day, I'll find the help I need. Until then..." Another portal appears behind her as she speaks, and she walks towards it willingly, "...I wish you luck with your own struggles." The portal engulfs her, and promptly closes, leaving you in silence. A part of you feels guilty, but... you've your own struggles indeed. You'll have to press on.</text>
 												</event>
 											</choice>
 										</event>

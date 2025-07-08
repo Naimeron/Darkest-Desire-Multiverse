@@ -21,7 +21,6 @@
 
 <event name="START_DDCOREMASS_FIGHT_WIN">
 	<text>Now that the Children of the Stars have fallen, it seems that the mass outside has calmed down - its colossal tendrils have opted to leave your ship alone, and melt back into itself. You wonder how exactly the Children command it, or if that's how it works at all... regardless of the answer, you've managed to avoid using the flame's power. Hopefully, with it in hand, and maybe a little luck, you can accomplish your task of reaching the heart of this hellish place and destroying the mattervirus once and for all. Looking at your map, it would seem that the sector's strange readings are densest at its exit... that must be the heart's location. All that's left now, is to set off...</text>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
 	<choice hidden="true">
 		<text>Onwards, then - to the heart!</text>
 		<event/>
@@ -98,16 +97,9 @@
 														<event>
 															<text>The residual energy unleashed by the flame seems to coalesce, and then gather around your ship. As this power then fades away, you realize your hull's been miraculously repaired... just what is this thing, exactly? Regardless of the answer, you must remember the armored lady's words: its power is finite. Hopefully with it, and maybe a little luck, you can accomplish your task of reaching the heart of this hellish place and destroying the mattervirus once and for all. Looking at your map, it would seem that the sector's strange readings are densest at its exit... that must be the heart's location. All that's left now, is to set off...</text>
 															<damage amount="-14"/>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="0" blue="false">
+															<choice hidden="true">
 																<text>Onwards, then - to the heart!</text>
 																<event/>
-															</choice>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="1" blue="false">
-																<text>Onwards, then - to the heart!</text>
-																<event>
-																	<text>As you move to leave, you feel that something's missing... your connection to the Soulplague mass you've binded. It must be unable to reach you here, within the Coremass... you'll have to go without it until you've reached the heart.</text>
-																	<variable name="dd_soulplaguemassbindedcheck" op="set" val="2"/>
-																</event>
 															</choice>
 														</event>
 													</choice>
@@ -118,16 +110,9 @@
 															<item_modify>
 																<item type="fuel" min="10" max="10"/>
 															</item_modify>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="0" blue="false">
+															<choice hidden="true">
 																<text>Onwards, then - to the heart!</text>
 																<event/>
-															</choice>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="1" blue="false">
-																<text>Onwards, then - to the heart!</text>
-																<event>
-																	<text>As you move to leave, you feel that something's missing... your connection to the Soulplague mass you've binded. It must be unable to reach you here, within the Coremass... you'll have to go without it until you've reached the heart.</text>
-																	<variable name="dd_soulplaguemassbindedcheck" op="set" val="2"/>
-																</event>
 															</choice>
 														</event>
 													</choice>
@@ -138,16 +123,9 @@
 															<item_modify>
 																<item type="missiles" min="10" max="10"/>
 															</item_modify>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="0" blue="false">
+															<choice hidden="true">
 																<text>Onwards, then - to the heart!</text>
 																<event/>
-															</choice>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="1" blue="false">
-																<text>Onwards, then - to the heart!</text>
-																<event>
-																	<text>As you move to leave, you feel that something's missing... your connection to the Soulplague mass you've binded. It must be unable to reach you here, within the Coremass... you'll have to go without it until you've reached the heart.</text>
-																	<variable name="dd_soulplaguemassbindedcheck" op="set" val="2"/>
-																</event>
 															</choice>
 														</event>
 													</choice>
@@ -158,16 +136,9 @@
 															<item_modify>
 																<item type="drones" min="10" max="10"/>
 															</item_modify>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="0" blue="false">
+															<choice hidden="true">
 																<text>Onwards, then - to the heart!</text>
 																<event/>
-															</choice>
-															<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="1" blue="false">
-																<text>Onwards, then - to the heart!</text>
-																<event>
-																	<text>As you move to leave, you feel that something's missing... your connection to the Soulplague mass you've binded. It must be unable to reach you here, within the Coremass... you'll have to go without it until you've reached the heart.</text>
-																	<variable name="dd_soulplaguemassbindedcheck" op="set" val="2"/>
-																</event>
 															</choice>
 														</event>
 													</choice>
@@ -180,33 +151,12 @@
 										<event>
 											<text>Indeed, you recall the armored lady's warning that the flame's power is finite... you've no intention of using it this soon. As you stow the flame away, the immeasurable Soulplague mass outside seems to react. A part of it surges, rising to strike at your ship as it bellows, furiously, and the voices in your head scream... it seems that they know their ruse is up, and they're moving to attack in tandem with the mass around you!</text>
 											<ship hostile="true"/>
-											<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-												<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-												<triggeredEventBox load="DEFAULT_TIMER">
-													<warning time="5.0" flash="true"/>
-													<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-												</triggeredEventBox>
+											<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+												<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 											</triggeredEvent>
-											<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-												<layer z="2">background</layer>
-												<spawnArea x="660" y="127" w="0" h="0"/>
-												<anim>danger_ddsoulplague</anim>
-												<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-											</backgroundObject>
-											<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="0" blue="false">
+											<choice hidden="true">
 												<text>Continue...</text>
 												<event load="COMBAT_CHECK"/>
-											</choice>
-											<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="1" blue="false">
-												<text>Continue...</text>
-												<event>
-													<text>As you move to assume an offensive position, you feel that something's missing... your connection to the Soulplague mass you've binded. It must be unable to reach you here, within the Coremass... you'll have to go without it until you've reached the heart.</text>
-													<variable name="dd_soulplaguemassbindedcheck" op="set" val="2"/>
-													<choice hidden="true">
-														<text>Continue...</text>
-														<event load="COMBAT_CHECK"/>
-													</choice>
-												</event>
 											</choice>
 										</event>
 									</choice>
@@ -251,7 +201,6 @@
 
 <event name="DESTROYED_DDCOREMASS_CHILDRENOFTHESTARS">
 	<text load="TEXT_DESTROYED_DDCOREMASS_CHILDRENOFTHESTARS"/>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
 	<autoReward level="MED">standard</autoReward>
 </event>
 
@@ -266,7 +215,6 @@
 
 <event name="DEAD_CREW_DDCOREMASS_CHILDRENOFTHESTARS">
 	<text load="TEXT_DEAD_CREW_DDCOREMASS_CHILDRENOFTHESTARS"/>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
 	<autoReward level="HIGH">standard</autoReward>
 </event>
 
@@ -386,19 +334,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -411,7 +349,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -514,19 +452,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -539,7 +467,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -642,19 +570,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -667,7 +585,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -761,19 +679,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -786,7 +694,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -873,19 +781,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -898,7 +796,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1153,19 +1051,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1178,7 +1066,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1279,19 +1167,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1304,7 +1182,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1347,19 +1225,9 @@
 				<event>
 					<text>Whispers or not, you're here to be a hero, dammit, and letting these monsters do as they please is counterintuitive to that goal. The silence is broken as you approach the Children of the Stars, and their screams fill your mind!</text>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1386,7 +1254,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1423,19 +1291,9 @@
 				<event>
 					<text>Whispers or not, you're here to be a hero, dammit, and letting these monsters do as they please is counterintuitive to that goal. The silence is broken as you approach the Children of the Stars, and their screams fill your mind!</text>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1462,7 +1320,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1499,19 +1357,9 @@
 				<event>
 					<text>Whispers or not, you're here to be a hero, dammit, and letting these monsters do as they please is counterintuitive to that goal. The silence is broken as you approach the Children of the Stars, and their screams fill your mind!</text>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1538,7 +1386,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1575,19 +1423,9 @@
 					<text>Whispers or not, you're here to be a hero, dammit, and letting these monsters do as they please is counterintuitive to that goal. The silence is broken as you approach the Children of the Stars, and their screams fill your mind! Though the second mass is keeping the greater Coremass at bay and attacking your enemies simultaneously, it doesnt know friend from foe; some of its Husks are boarding!</text>
 					<ship hostile="true"/>
 					<boarders min="2" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
-					<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague_allies</anim>
-						<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1595,7 +1433,7 @@
 				</event>
 			</choice>
 			<choice hidden="true">
-				<text>Leave them to their asteroid-destroying.</text>
+				<text>Leave them to their infighting.</text>
 				<event>
 					<text>You've interest in recuperating yourself - it's rare to get a moment of reprieve in this hell. You ignore the Children of the Stars, and are given a few, relatively calm moments as the FTL drive charges.</text>
 					<choice>
@@ -1614,7 +1452,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1711,19 +1549,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1736,7 +1564,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1826,19 +1654,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1851,7 +1669,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -1941,19 +1759,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -1966,7 +1774,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2056,19 +1864,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2081,7 +1879,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2183,19 +1981,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2208,7 +1996,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2294,19 +2082,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2319,7 +2097,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2405,19 +2183,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2430,7 +2198,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2516,19 +2284,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2541,7 +2299,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2627,19 +2385,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2652,7 +2400,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2738,19 +2486,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2763,7 +2501,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2849,19 +2587,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2874,7 +2602,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -2960,19 +2688,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -2985,7 +2703,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3071,19 +2789,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3096,7 +2804,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3182,19 +2890,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3207,7 +2905,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3293,19 +2991,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3318,7 +3006,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3404,19 +3092,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3429,7 +3107,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3515,19 +3193,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3540,7 +3208,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3562,7 +3230,6 @@
 
 <event name="DDCOREMASS_ELITE_ENCOUNTER_FIGHT_WIN">
 	<text>The Huskweavers... their hateful, and loathsome, words still echo throughout your head. Yet, you have triumphed over them... and the spoils of their hatred are yours for the taking.</text>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
 	<autoReward level="HIGH">standard</autoReward>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -3681,19 +3348,9 @@
 					"...HATE! ...MURDER!"
 					"...JOIN! ...DEATH!"</text>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3706,7 +3363,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3801,19 +3458,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3826,7 +3473,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -3912,19 +3559,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -3937,7 +3574,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -4023,19 +3660,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -4048,7 +3675,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -4134,19 +3761,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -4159,7 +3776,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -4245,19 +3862,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -4270,7 +3877,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -4356,19 +3963,9 @@
 				<event>
 					<text load="TEXT_DDCOREMASS_HOSTILITIESBEGIN"/>
 					<ship hostile="true"/>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -4381,7 +3978,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...but the Soulplague Coremass crumbles away, for its heart has fallen. There's little left here.</text>
-			<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 			<clearBackgroundObject name="DDSOULPLAGUEAURA_BACKGROUND"/>
 			<playSound>ddsoulplague_assault</playSound>
 			<choice>
@@ -4425,25 +4022,16 @@
 	"...even if i... must die withhh it..."
 	
 	Outside, the Coremass' heart glows brighter, and its monstrous, innumerable tentacles are halted in their approach as they're wracked by violent spasms...</text>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>...before they seem to be possessed by a new conviction, focusing their ire upon the Soulplague Devourer!</text>
+			<variable name="loc_environment_soulplague" op="set" val="0"/>
 			<superBarrage player="true" name="DDSOULPLAGUE_HAZARD_STRIKE_ALLY"/>
-			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-				<triggeredEventBox load="DEFAULT_TIMER">
-					<warning time="5.0" flash="true"/>
-					<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-				</triggeredEventBox>
+			<clearTriggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY"/>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
-			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
-				<layer z="2">background</layer>
-				<spawnArea x="660" y="127" w="0" h="0"/>
-				<anim>danger_ddsoulplague_allies</anim>
-				<tooltip>You're not sure why, but the Coremass seems to have turned on the Soulplague Devourer and is periodically assaulting it!</tooltip>
-			</backgroundObject>
 			<choice>
 				<text>Everyone; keep up the pressure! We can do this!</text>
 				<event/>
@@ -4454,13 +4042,11 @@
 
 <event name="DDCOREMASS_EXIT_FIGHT_THEDEVOURER_WIN">
 	<text>With its guardian defeated, the heart lays exposed... all that's left is to finish this.</text>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY"/>
 	<playMusic/>
 	<achievement>ACH_EVENT_DDDEVOURER</achievement>
 	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
 	<variable name="ach_boss_ddsoulplague_devourer" op="set" val="1"/>
-	<choice hidden="true" req="ddunique_theheroine">
+	<choice hidden="true" req="ddunique_theheroine" lvl="1" blue="false">
 		<text>Search for the heroine who assisted you.</text>
 		<event>
 			<text>You find her in the hold, stabbing into what remains of a Husk. As you approach, she turns to face you, "Comrade! Is it over? Is the heart exposed?"</text>
@@ -4498,8 +4084,8 @@
 													<choice hidden="true">
 														<text>Continue...</text>
 														<event>
-															<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
-															<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+															<text>...revealing the familiar sight of the underlying stars, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
+															<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 															<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 															<choice hidden="true">
 																<text>Look to the armored figure, and the strange Shell.</text>
@@ -4615,8 +4201,8 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
-					<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+					<text>...revealing the familiar sight of the underlying stars, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
+					<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 					<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 					<choice hidden="true">
 						<text>Hell yeah!</text>
@@ -4634,17 +4220,10 @@
 												<text>Right... and, who are your people exactly?</text>
 												<event>
 													<text>She drops the pose, and tilts her head, "Are you not familiar with the Deep Ones? Or, is it the uh... armor? I guess it WOULD be hard to tell, now that I think about it... well, whatever! Point being - we are COMRADES now! ONWARDS!"</text>
-													<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="1" blue="false">
+													<choice hidden="true">
 														<text>Onwards! For the Multiverse!</text>
 														<event>
 															<text>The two of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-														</event>
-													</choice>
-													<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="2" blue="false">
-														<text>Onwards! For the Multiverse!</text>
-														<event>
-															<text>The two of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-															<variable name="dd_soulplaguemassbindedcheck" op="set" val="1"/>
 														</event>
 													</choice>
 												</event>
@@ -4693,8 +4272,8 @@
 									<choice hidden="true">
 										<text>Continue...</text>
 										<event>
-											<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
-											<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+											<text>...revealing the familiar sight of the underlying stars, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
+											<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 											<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 											<choice hidden="true">
 												<text>Tend to the strange Shell.</text>
@@ -4790,20 +4369,13 @@
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
-									<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+									<text>...revealing the familiar sight of the underlying stars, as space-time shatters, and the Coremass' extra dimension is ripped apart. You've... done it! You've destroyed the Coremass!</text>
+									<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 									<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
-									<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="1" blue="false">
+									<choice hidden="true">
 										<text>What... now?</text>
 										<event>
 											<text>Though you've won, and possibly saved reality from the wrath of the mattervirus, you can't help but not feel like much of a victor... was there something you could've done differently? You're not sure, but you do know this: there's nothing left here. It's time to move on.</text>
-										</event>
-									</choice>
-									<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="2" blue="false">
-										<text>What... now?</text>
-										<event>
-											<text>Though you've won, and possibly saved reality from the wrath of the mattervirus, you can't help but not feel like much of a victor... was there something you could've done differently? You're not sure, but you do know this: there's nothing left here. It's time to move on.</text>
-											<variable name="dd_soulplaguemassbindedcheck" op="set" val="1"/>
 										</event>
 									</choice>
 								</event>
@@ -4825,17 +4397,10 @@
 			<achievement>ACH_CREW_DDTHEFOOLISH</achievement>
 			<variable name="ach_crew_ddthefoolish" op="set" val="1"/>
 			<crewMember amount="1" class="ddunique_theaberration" all_skills="2">The Foolish</crewMember>
-			<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="1" blue="false">
+			<choice hidden="true">
 				<text>Hell yeah!</text>
 				<event>
 					<text>The two of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-				</event>
-			</choice>
-			<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="2" blue="false">
-				<text>Hell yeah!</text>
-				<event>
-					<text>The two of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-					<variable name="dd_soulplaguemassbindedcheck" op="set" val="1"/>
 				</event>
 			</choice>
 		</event>
@@ -4871,17 +4436,10 @@
 												<text>Right... and, who are your people exactly?</text>
 												<event>
 													<text>She drops the pose, and tilts her head, "Are you not familiar with the Deep Ones? Or, is it the uh... armor? I guess it WOULD be hard to tell, now that I think about it... well, whatever! Point being - we are COMRADES now! ONWARDS!" The Foolish, though somewhat overwhelmed by her energy, does his best to join in her excitement, "Yes, uhhh... Onwards! For, um... thhhhe Multiverse??"</text>
-													<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="1" blue="false">
+													<choice hidden="true">
 														<text>Onwards! For the Multiverse!</text>
 														<event>
 															<text>The three of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-														</event>
-													</choice>
-													<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="2" blue="false">
-														<text>Onwards! For the Multiverse!</text>
-														<event>
-															<text>The three of you celebrate, briefly, before things quiet down and it inevitably becomes time to jump away. Such is the end of your journey, here in this hell... but new journeys, and experiences, await you yet. Which ones, exactly... who's to say?</text>
-															<variable name="dd_soulplaguemassbindedcheck" op="set" val="1"/>
 														</event>
 													</choice>
 												</event>
@@ -4927,8 +4485,7 @@
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN">
-	<text>As you stand victorious over yet another so-called hero, the Dark God speaks to you, "EVEN I... STRUGGLED TO QUELL THAT ONE. AN UNIMAGINABLE DESIRE INDEED. I ENVY YOU." A blinding light manifests in the room, and as it fades... you see a weapon before you, unlike any you've ever seen before. "THIS HEROINE... I HAVE CLAIMED HER. FOR ONE SUCH AS YOURSELF, I WOULD REFORGE HER IN YOUR HONOR. GO FORTH, AND DO AS YOU SEE FIT." Indeed, you shall. That's all you've ever done, for as long as you can remember.</text>
-	<clearBackgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY"/>
+	<text>As you stand victorious over yet another so-called hero, the Dark God speaks to you, "EVEN I STRUGGLED TO QUELL THAT ONE. AN UNIMAGINABLE DESIRE, INDEED... I ENVY YOU." A blinding light manifests in the room, and as it fades... you see a weapon before you, unlike any you've ever seen before. "THIS HEROINE... I HAVE CLAIMED HER. FOR ONE SUCH AS YOURSELF, I WOULD REFORGE HER IN YOUR HONOR. GO FORTH, AND DO AS YOU SEE FIT." Indeed, you shall. That's all you've ever done, for as long as you can remember.</text>
 	<achievement>ACH_EVENT_DDTHIRDTRUEHEROSLAIN</achievement>
 	<playMusic/>
 	<metaVariable name="juke_ddtodancewithdarkness" op="set" val="1"/>
@@ -4951,20 +4508,11 @@
 						<event>
 							<text>You snap your fingers, and the Coremass' heart violently detonates. Serves him right. The Coremass around you screams, and begins to crumble...</text>
 							<playSound>ddsoulplague_assault</playSound>
-							<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="0" max_lvl="1" blue="false">
+							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. What a pitiful thing.</text>
-									<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
-									<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
-								</event>
-							</choice>
-							<choice hidden="true" req="dd_soulplaguemassbindedcheck" lvl="2" blue="false">
-								<text>Continue...</text>
-								<event>
-									<text>...revealing the familiar sight of the underlying nebula, as space-time shatters, and the Coremass' extra dimension is ripped apart. What a pitiful thing.</text>
-									<variable name="dd_soulplaguemassbindedcheck" op="set" val="1"/>
-									<changeBackground>BACK_EVENT_LIGHTNEBULA</changeBackground>
+									<text>...revealing the familiar sight of the underlying stars, as space-time shatters, and the Coremass' extra dimension is ripped apart. What a pitiful thing.</text>
+									<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
 									<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 								</event>
 							</choice>
@@ -4976,6 +4524,11 @@
 	</choice>
 </event>
 
+<event name="DDCOREMASS_EXIT_ALONE">
+	<text>You arrive at the exit of this harrowing journey once more... this time, will you take it?</text>
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_INVISIBLE"/>
+</event>
+
 <event name="DDCOREMASS_EXIT">
 	<preventQuest/>
 	<beaconType id="map_icon_ddcoremassheartloc" global="true">
@@ -4983,6 +4536,7 @@
 		<unvisitedTooltip>The center of the Coremass, and the location of its heart.</unvisitedTooltip>
 		<visitedTooltip>Visited location.</visitedTooltip>
 	</beaconType>
+	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>This is it; the center of the Soulplague Coremass. The faint light you've been seeing throughout your journey here doesn't seem so distant anymore... this must be the location of the heart.</text>
 	<img back="BACKGROUND_DDCOREMASSCENTER" planet="PLANET_INVISIBLE"/>
 	<backgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND">
@@ -5014,19 +4568,9 @@
 							
 							Your death... is this the end?</text>
 							<ship load="DDCOREMASS_EXIT_FIGHT_THEDEVOURER" hostile="true"/>
-							<triggeredEvent event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" thisFight="true" minTime="14.0" maxTime="14.0">
-								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-								<triggeredEventBox load="DEFAULT_TIMER">
-									<warning time="5.0" flash="true"/>
-									<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-								</triggeredEventBox>
+							<triggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY" event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 							</triggeredEvent>
-							<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-								<layer z="2">background</layer>
-								<spawnArea x="660" y="127" w="0" h="0"/>
-								<anim>danger_ddsoulplague</anim>
-								<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-							</backgroundObject>
 							<playSound>ddsoulplague_assault</playSound>
 							<choice hidden="true" req="pilot" lvl="1">
 								<text color="dd_hopeyellow">No, it's not... a Renegade makes their own fate.</text>
@@ -5071,19 +4615,9 @@
 				<text>And, you're what? Here to lecture me?</text>
 				<event>
 					<text>She growls, "I am here to stop you, fiend! Even the Coremass fears you... it would work with me, allow me the freedom to come here and fight you, all for the sake of its own well-being. I am willing to be a pawn to its schemes if it means you and your reign of terror die right here, right now."</text>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-						<triggeredEventBox load="DEFAULT_TIMER">
-							<warning time="5.0" flash="true"/>
-							<tooltip>The Soulplague Coremass will attack after this countdown.</tooltip>
-						</triggeredEventBox>
+					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 					</triggeredEvent>
-					<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ENEMY">
-						<layer z="2">background</layer>
-						<spawnArea x="660" y="127" w="0" h="0"/>
-						<anim>danger_ddsoulplague</anim>
-						<tooltip>You're within the Soulplague Coremass. As long as it remains agitated, it will periodically assault your ship.</tooltip>
-					</backgroundObject>
 					<choice hidden="true">
 						<text>So be it, then, but... I think you'll find that your efforts are for naught.</text>
 						<event>
