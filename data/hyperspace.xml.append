@@ -5513,7 +5513,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 		<weapon name="DDBOMB_SOULPLAGUEHAZARDSCARY_ENEMY" count="3"/>
 	</mod-append:surgeBarrage>
 	<mod-append:surgeBarrage name="DDSOULPLAGUE_HAZARD_STRIKE_ALLY">
-		<weapon name="DDBOMB_SOULPLAGUEHAZARDSCARY" count="5"/>
+		<weapon name="DDBOMB_SOULPLAGUEHAZARDSCARY" count="3"/>
 	</mod-append:surgeBarrage>
 	<mod-append:surgeBarrage name="DDECLIPTIC_EXTINCTION_BEAMS_STRIKE">
 		<weapon name="DDBOMB_ECLIPTIC_EXTINCTION_FOLLOWUP" count="7"/>

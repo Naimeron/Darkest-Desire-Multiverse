@@ -1,5 +1,6 @@
 -- this Lua was done by Chrono!! ty Chrono!!
 
+local vter = mods.multiverse.vter
 local register_environment = mods.multiverse.register_environment
 
 -- Register the hazard

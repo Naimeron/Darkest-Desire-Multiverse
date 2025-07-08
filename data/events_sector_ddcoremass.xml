@@ -4026,6 +4026,7 @@
 		<text>Continue...</text>
 		<event>
 			<text>...before they seem to be possessed by a new conviction, focusing their ire upon the Soulplague Devourer!</text>
+			<variable name="loc_environment_soulplague" op="set" val="0"/>
 			<superBarrage player="true" name="DDSOULPLAGUE_HAZARD_STRIKE_ALLY"/>
 			<clearTriggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY"/>
 			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
