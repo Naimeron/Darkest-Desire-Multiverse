@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-62" y="-104" w="336" h="372" />
+<offsets>
+	<floor x="168" y="186" />
+	<cloak x="0" y="0" />
+</offsets>
+<weaponMounts>
+	<mount x="210" y="122" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="126" y="122" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="63" y="231" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="273" y="231" rotate="false" mirror="false" gib="-1" slide="up" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradiance_starbringer_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

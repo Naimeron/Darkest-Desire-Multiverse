@@ -96,7 +96,7 @@
 	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
 </roomLayout>
 <roomLayout name="shields_10">
-	<computerGlow x="35" y="53" dir="DOWN" />
+	<computerGlow x="41" y="53" dir="DOWN" />
 </roomLayout>
 <roomLayout name="weapons_3">
 	<computerGlow x="40" y="0" dir="UP" />
@@ -174,7 +174,7 @@
 	<computerGlow name="glow_pilot" x="54" y="8" dir="RIGHT" />
 </roomLayout>
 <roomLayout name="shields_13">
-	<computerGlow x="36" y="53" dir="DOWN" />
+	<computerGlow x="41" y="53" dir="DOWN" />
 </roomLayout>
 <roomLayout name="ddweapons_1">
 	<computerGlow x="0" y="8" dir="LEFT" />
@@ -252,7 +252,7 @@
 	<computerGlow name="glow_pilot" x="89" y="8" dir="RIGHT" />
 </roomLayout>
 <roomLayout name="shields_10">
-	<computerGlow x="35" y="53" dir="DOWN" />
+	<computerGlow x="41" y="53" dir="DOWN" />
 </roomLayout>
 <roomLayout name="weapons_10">
 	<computerGlow x="8" y="0" dir="UP" />
@@ -325,4 +325,7 @@
 
 <roomLayout name="ddweapons_tome">
 	<computerGlow x="8" y="0" dir="UP" />
+</roomLayout>
+<roomLayout name="ddengines_tome">
+	<computerGlow x="43" y="53" dir="DOWN" />
 </roomLayout>

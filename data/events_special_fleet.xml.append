@@ -29,6 +29,12 @@
 	<revisitEvent>FLEET_ACE_DARKONE</revisitEvent>
 	<text>The Rebellion should be here, but... instead, the darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
+	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+		<layer z="0">background</layer>
+		<spawnArea x="0" y="0" w="0" h="0"/>
+		<anim>dddarkgodsdomainaura_bg</anim>
+	</backgroundObject>
+	<variable name="loc_dives" op="add" val="1"/>
 	<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
 	<status type="limit" target="player" system="hacking" amount="0"/>
 	<boarders min="3" max="6" class="darkgodtendrils"/>
@@ -66,6 +72,57 @@
 		<event>
 			<text load="TEXT_ENCOUNTER_REBEL_JERRY_HELLO"/>
 			<ship hostile="false"/> 
+		</event>
+	</choice>
+</event>
+
+<ship name="FLEET_ACE_DDANTUMBRA_FIGHT" auto_blueprint="LIST_SHIPS_DDFALSE_RADIANCE">
+	<destroyed>
+		<text>I wish that there was time to loot more than a single fuel cell, but... there REALLY isn't, with the fleet bearing down on you! P-please, get moving!</text>
+		<item_modify>
+			<item type="fuel" min="1" max="1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text>Visualize compliance - an acceptance of the danger present here.</text>
+			<event/>
+		</choice>
+	</destroyed>
+</ship>
+
+<event name="FLEET_ACE_DDANTUMBRA_REAL">
+	<customFleet right="false" firing="true" autoDarkening="false">CUSTOM_FLEET_DDFALSERADIANCE</customFleet>
+	<text>...oh no. The False Radiance's main force has caught up to you... you, ah... you need to get out of there, quickly! This isn't a battle worth fighting - you need to get to GENESIS!</text>
+	<variable name="loc_dives" op="add" val="1"/>
+	<ship load="FLEET_ACE_DDANTUMBRA_FIGHT" hostile="true"/>
+	<environment type="PDS" target="player"/>
+	<noASBPlanet/>
+	<choice hidden="true">
+		<text>Visualize combat - an act to be prepared for.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="FLEET_ACE_DDANTUMBRA">
+	<revisitEvent>FLEET_ACE_DDANTUMBRA</revisitEvent>
+	<text>...</text>
+	<img back="BACKGROUND_DDANTUMBRALPLANE" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_antumbra_genesisdefeated" lvl="0" max_lvl="0" blue="false">
+		<text>...</text>
+		<event load="FLEET_ACE_DDANTUMBRA_REAL"/>
+	</choice>
+	<choice hidden="true" req="dd_antumbra_genesisdefeated" lvl="1" blue="false">
+		<text>...</text>
+		<event>
+			<text>Though the now-restored colors of the Antumbral Plane come flooding in, with their serene beauty... for some reason, you can't help but find yourself disturbed by the silence left in their wake. There's nothing left for you here, it would seem.</text>
+			<changeBackground>BACKGROUND_DDRESTOREDANTUMBRALPLANE</changeBackground>
+			<variable name="loc_dives" op="add" val="1"/>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
 		</event>
 	</choice>
 </event>

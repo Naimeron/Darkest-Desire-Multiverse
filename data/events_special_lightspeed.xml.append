@@ -19,6 +19,10 @@
 		<text>Proceed to ???.</text>
 		<event load="DDDARKONE_WARP"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECRET_DDANTUMBRA" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDANTUMBRA_WARP"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
@@ -41,6 +45,10 @@
 	<mod-append:choice hidden="true" req="SEC DARKONE_DOMAIN" blue="false">
 		<text>Proceed to ???.</text>
 		<event load="DDDARKONE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECRET_DDANTUMBRA" blue="false">
+		<text>Proceed to ???.</text>
+		<event load="DDANTUMBRA_WARP"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -83,6 +91,16 @@
 <event name="ENTER_DDDARKONE">
 	<text load="TEXT_LIGHTSPEED"/>
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_DDANTUMBRA">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<achievement>ACH_EVENT_DDTHEANTUMBRALPLANE</achievement>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="LOAD_ATLAS_MARKER"/>
@@ -185,10 +203,35 @@
 	</choice>
 </event>
 
+<event name="DDANTUMBRA_WARP">
+	<text>Name: ???
+	Type: ???
+	Dominant Faction: ???
+	Rebel Threat Level: ???
+
+	It's not stars that fly past you, as your vessel continues to be dragged through the wormhole - but entire realities. You're being pulled, and pulled, and pulled further still towards what your ship's now-fading readings indicate to be the edge of the Multiverse. The edge of everything, as you know it...</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DDANTUMBRA"/>
+	</choice>
+	<choice hidden="true" req="loc_task_accepted" blue="false">
+		<text>Your connection with C.U.R.A. is currently unavailable.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>You cannot reroute during this jump.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event>
+
 <mod:findName type="event" name="REROUTE_MENU">
 	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
 		<text>Proceed to the unknown sector.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="coords_dddeepone" blue="false">
+		<text>Proceed to the Deep One Sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_DDDEEPONE"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -207,7 +250,7 @@
 </mod:findName>
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL">
-	<text>You ready yourself at the Otherworldly Tome as an infinite amount of stars fly past you just outside.</text>
+	<text>You ready yourself at the Otherworldly Tome, as an infinite amount of stars fly past you just outside.</text>
 	<choice hidden="true">
 		<text>Prepare a sacrifice.</text>
 		<event>
@@ -259,13 +302,25 @@
 			<choice hidden="true">
 				<text>Nevermind, cancel the ritual.</text>
 				<event>
-					<text>You're having second thoughts. Surely this isn't worth it... you leave the room, and the Otherworldly Tome.</text>
+					<text>You're having second thoughts. Surely, this isn't worth it... you leave the room, and the Otherworldly Tome, behind - regret still tinging on your mind.</text>
 					<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LOAD_ATLAS"/>
 					</choice>
 				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_DIVINEGIMMICK">
+		<text>(Divine Lifeform) Perform the Ritual of Divine Remnants, at no cost.</text>
+		<event>
+			<text>Your ship is divinity, and you will swear on nothing but. Within the recesses of your mind, chords begin to ring out... until, eventually, on the seventh and final note, you feel as if you simply understand where you're wanted. Where your ship's heritage lies - where your blade must strike. Go forth, then... and retrieve your ship's birthright.</text>
+			<quest event="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS"/>
+			<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="LOAD_ATLAS"/>
 			</choice>
 		</event>
 	</choice>
@@ -278,6 +333,10 @@
 				<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_THEHUNTPERFORMED"/>
 			</choice>
 		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DDHUMANSACRIFICE" lvl="8" blue="false">
+		<text>You can't perform the Ritual of the Hunt while already housing so many sacrifices.</text>
+		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice hidden="true">
 		<text>Nevermind, there will be no ritual.</text>
@@ -308,7 +367,7 @@
 </textList>
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY">
-	<text>With the sacrifice made, you're ready to perform a ritual... though you know there is little time to hesitate as your destination approaches.</text>
+	<text>With the sacrifice made, you're ready to perform a ritual... though you know there to be little time to hesitate, as your destination approaches.</text>
 	<variable name="dd_ritual_side_effect_triggered" op="set" val="0"/>
 	<choice hidden="true">
 		<text>Perform a basic ritual.</text>
@@ -365,12 +424,36 @@
 				</event>
 			</choice>
 			<choice hidden="true">
+				<text>Perform the Ritual of Terrible Sights.</text>
+				<event>
+					<text>As the ritual commands, you close your eyes and recite an incantation. Horrific visions begin to cloud your mind... monstrous creatures beyond description, together with twisted realities borne of shadow and cinder - if you were not under the watchful gaze of the Dark God, you may very well have gone insane. With its attention on you, though, you know that you must steel your mind to these nightmares, and realize your desire...</text>
+					<choice hidden="true">
+						<text>I desire... terrible sights.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_TERRIBLESIGHTSPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_ritualofeerieinaugurationcompleted" lvl="0" max_lvl="0" blue="false">
+				<text>Perform the Ritual of Eerie Inauguration.</text>
+				<event>
+					<text>With a pen, you draw a crude illustration of a Deep One upon the floor. With a knife, you let your own blood and allow it to flow unto it. Finally, with a prayer... you demand an audience with the Dark God. It hears this, and you know that you must realize your desire...</text>
+					<choice hidden="true">
+						<text>I desire... inauguration.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_EERIEINAUGURATIONPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
 				<text>Perform the Ritual of Resolution.</text>
 				<event>
 					<text>You close your eyes, and think of your mission... to save this reality from the Rebellion. You don't wish to sacrifice another soul for the sake of the Dark God's twisted game. It accepts this, ever eager to please, and wishes to hear your desire...</text>
 					<choice hidden="true">
 						<text>I desire... resolution.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESOLUTIONPERFORMED"/>
+					</choice>
+					<choice hidden="true">
+						<text>No... wait, I desire to continue my devotion.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESOLUTIONTAKEBACKSIESPERFORMED"/>
 					</choice>
 				</event>
 			</choice>
@@ -1074,11 +1157,47 @@
 			<choice hidden="true" req="DD_SOULPLAGUESOULBINDINGRITUALCHECK" blue="false">
 				<text>Perform the Ritual of Soul Binding.</text>
 				<event>
-					<text>Your Soulplague crew members stand around the Otherworldly Tome, ready to function as conduits for the ritual. Their bodies begin to contort as Soulplague tentacles burst forth from them, writhing for a moment before inevitably withering, and the rainbow text within the Otherworldly Tome twists and shifts...</text>
+					<text>Your Soulplague crew members stand around the Otherworldly Tome, ready to function as conduits for the ritual. Their bodies begin to contort as Soulplague-infected tentacles burst forth from them, writhing for a moment before inevitably withering, and the rainbow text within the Otherworldly Tome twists and shifts...</text>
 					<variable name="dd_soulplaguesoulbindingritualcompleted" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Read the text.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SOULBINDINGPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+		<text>(Living Lightborne) Perform a Lightborne ritual.</text>
+		<event>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an aged, faded color. In it, several procedures for collecting powerful Lightborne and further empowering them are described.</text>
+			<choice hidden="true">
+				<text>Perform the Ritual of Newborn Stars.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, the faded text within the Otherworldly Tome twists and shifts...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_NEWBORNSTARSPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Bathing Light.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, you feel an inexplicable intensity in the air...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BATHINGLIGHTPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Divine Remnants.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, a chord strikes out within your mind...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED"/>
 					</choice>
 				</event>
 			</choice>
@@ -1199,14 +1318,55 @@
 	<secretSector>SECRET_ENLIGHTENED</secretSector>
 </event>
 
+<event name="LIGHTSPEED_SECTOR_WARP_DDDEEPONE">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Deep One Territory
+	Type: Neutral
+	Unique: False
+	Dominant Faction: The Deep Ones
+	Rebel Threat Level: Medium-Low
+	
+	Not much is known about the secretive Deep Ones, they simply one day arose from Old Earth's oceans within a fleet of spaceships and took to the stars; their existence prior allegedly unknown to the humans who dwelled on the surface. They're a hot-headed race that often suffers when it comes to communicating to outsiders, but there's no bad blood between them and the Federation. The same can't be said about the Theocracy, however, who finds the Deep One's religious beliefs to be heinously blasphemous.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_dddeepone" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_DDDEEPONE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_DDDEEPONE">
+	<secretSector>SECTOR_DEEPONE</secretSector>
+</event>
+
 <mod:findName type="event" name="REROUTE_MENU_HAT">
-	<mod-append:choice hidden="true">
+	<mod-append:choice hidden="true" req="sec_unique_dddisparity" lvl="0" max_lvl="0" blue="false">
 		<text>Go to the Disparity Assault.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_DISPARITY"/>
 	</mod-append:choice>
-	<mod-append:choice hidden="true">
+	<mod-append:choice hidden="true" req="sec_unique_dddisparity" lvl="1" blue="false">
+		<text>The Disparity Assault is behind you.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="sec_unique_ddsoulplague" lvl="0" max_lvl="0" blue="false">
 		<text>Go to the Nebulous Dead Zone.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_DDSOULPLAGUE"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="sec_unique_ddsoulplague" lvl="1" blue="false">
+		<text>The Nebulous Dead Zone is behind you.</text>
+		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
 </mod:findName>
 

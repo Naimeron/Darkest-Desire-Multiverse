@@ -88,7 +88,7 @@
     <startEvent>ENTER_DEEPONE</startEvent>
 	<removeFirstBeaconNebula/>
 	<exitBeacon event="FINISH_BEACON_DEEPONE" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
-	<rebelBeacon event="FLEET_THREAT_MLOW" nebulaEvent="FLEET_THREAT_MLOW_NEBULA"/>
+	<rebelBeacon event="FLEET_THREAT_MLOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_MLOW"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
 	<event name="MV_TRAVELER" min="1" max="1"/>
 	<priorityEvent name="NEMESIS_ENCOUNTER" min="0" max="1" req="prof_finalsector" lvl="1"/>
@@ -235,12 +235,15 @@
 		<blueprint name="DDFOCUS_SOULPLAGUE" rarity="1"/>
 		<blueprint name="DDPHASE_SOULPLAGUE" rarity="1"/>
 		<blueprint name="DDMISSILES_SOULPLAGUE" rarity="1"/>
+		<blueprint name="DDLASER_HEAVY_SOULPLAGUE" rarity="1"/>
 	</rarityList>
 	<startEvent>ENTER_DDDARKONE</startEvent>
 	<exitBeacon event="DARKONE_FINISH" rebelEvent="DARKONE_FINISH"/>
 	<rebelBeacon event="FLEET_ACE_DARKONE" nebulaEvent="FLEET_ACE_DARKONE"/>
 	<removeFirstBeaconNebula/>
-	<event name="DDDARKGODDOMAIN_TRIAL" min="1" max="1"/>
+	<priorityEvent name="DDDARKGODDOMAIN_TRIAL" min="1" max="1" priority="1"/>
+	<priorityEvent name="DDDARKGODDOMAIN_THESHADEMEETING" min="1" max="1" priority="1"/>
+	<priorityEvent name="DDDARKGODDOMAIN_PROPHECY" min="1" max="1" priority="1"/>
 	<event name="DDDARKGODDOMAIN_CHOSEN_ENCOUNTER" min="4" max="7"/>
 	<event name="DDDARKGODDOMAIN_WORMHOLE" min="5" max="8"/>
 	<event name="DDDARKGODDOMAIN_BLESSING" min="1" max="2"/>
@@ -301,10 +304,10 @@
 	<startEvent>ENTER_DISPARITY_UNIQUE</startEvent>
 	<removeFirstBeaconNebula/>
 	<exitBeacon event="FINISH_BEACON" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>
-	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="FLEET_THREAT_LOW_NEBULA"/>
+	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="NEBULA_LIGHT_FLEET_THREAT_LOW"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
 	<event name="TRANSPORT_DISPARITY_LOOT" min="1" max="1"/>
-	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="2"/>
 	<event name="STORELIST_DISPARITY" min="2" max="3"/>
 	<event name="NEUTRAL_DISPARITY" min="6" max="8"/>
 	<event name="ITEMS_DISPARITY" min="1" max="2"/>
@@ -365,12 +368,13 @@
 	</rarityList>
 	<startEvent>ENTER_DDSOULPLAGUE_UNIQUE</startEvent>
 	<removeFirstBeaconNebula/>
+	<priorityNebulaFix/>
 	<nebulaSector>true</nebulaSector>
 	<exitBeacon event="FINISH_BEACON_SHELL" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_AUTO"/>
-	<rebelBeacon event="FLEET_AUTO" nebulaEvent="FLEET_AUTO_NEBULA"/>
+	<rebelBeacon event="FLEET_AUTO" nebulaEvent="NEBULA_LIGHT_FLEET_AUTO"/>
 	<priorityEvent name="ANOMALY_SPAWNER" min="1" max="1" priority="1" req="ANOMALY_SPAWN_CHECK" lvl="1"/>
 	<priorityEvent name="NEBULA_SYLVAN" min="1" max="1" priority="1"/>
-	<priorityEvent name="NEBULA_DDSOULPLAGUE_BEACONOFHOPE_QUEST" min="1" max="1" priority="1"/>
+	<priorityEvent name="NEBULA_LIGHT_DDSOULPLAGUE_BEACONOFHOPE_QUEST" min="1" max="1" priority="1"/>
 	<priorityEvent name="NEBULA_DDSOULPLAGUE_TEMPEST_TRANSPORT" min="1" max="1" priority="1"/>
 	<event name="NEBULA_STORELIST_DDSOULPLAGUE" min="1" max="2"/>
 	<priorityEvent name="STORELIST_DDSOULPLAGUE" min="0" max="1" priority="0"/>
@@ -447,6 +451,7 @@
 		<blueprint name="DDFOCUS_SOULPLAGUE" rarity="2"/>
 		<blueprint name="DDSHOTGUN_SOULPLAGUE" rarity="1"/>
 		<blueprint name="DDMISSILES_SOULPLAGUE" rarity="2"/>
+		<blueprint name="DDLASER_HEAVY_SOULPLAGUE" rarity="3"/>
 	</rarityList>
 	<startEvent>ENTER_DDCOREMASS</startEvent>
 	<removeFirstBeaconNebula/>
@@ -460,4 +465,87 @@
 	<event name="DISTRESS_DDCOREMASS" min="7" max="10"/>
 	<event name="DDCOREMASS_ELITE_ENCOUNTER" min="1" max="1"/>
 	<event name="HOSTILE_DDCOREMASS" min="999" max="999"/>
+</sectorDescription>
+
+<sectorDescription name="SECRET_DDANTUMBRA" unique="false"> 
+	<nameList>
+		<name>Antumbral Plane</name>
+	</nameList>
+	<trackList>
+		<track>ddedgeofeverything</track>
+		<track>void</track>
+		<track>ddtracklightslament</track>
+		<track>debris</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="human_medic" rarity="0"/>
+		<blueprint name="human_engineer" rarity="0"/>
+		<blueprint name="human_soldier" rarity="0"/>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="engi_separatist" rarity="0"/>
+		<blueprint name="engi_defender" rarity="0"/>
+		<blueprint name="zoltan" rarity="0"/>
+		<blueprint name="zoltan_monk" rarity="0"/>
+		<blueprint name="zoltan_devotee" rarity="0"/>
+		<blueprint name="zoltan_peace" rarity="0"/>
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="rock_outcast" rarity="0"/>
+		<blueprint name="rock_commando" rarity="0"/>
+		<blueprint name="rock_crusader" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="mantis_free" rarity="0"/>
+		<blueprint name="mantis_suzerain" rarity="0"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="slug_saboteur" rarity="0"/>
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="crystal_liberator" rarity="0"/>
+		<blueprint name="crystal_sentinel" rarity="0"/>
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid_vampweed" rarity="0"/>
+		<blueprint name="shell" rarity="0"/>
+		<blueprint name="shell_scientist" rarity="0"/>
+		<blueprint name="shell_mechanic" rarity="0"/>
+		<blueprint name="shell_guardian" rarity="0"/>
+		<blueprint name="leech" rarity="0"/>
+		<blueprint name="lanius" rarity="0"/>
+		<blueprint name="lanius_welder" rarity="0"/>
+		<blueprint name="phantom" rarity="0"/>
+		<blueprint name="phantom_goul" rarity="0"/>
+		<blueprint name="phantom_mare" rarity="0"/>
+		<blueprint name="phantom_wraith" rarity="0"/>
+		<blueprint name="DDFALSERADIANCE_HEAVYSHOTGUN" rarity="2"/>
+		<blueprint name="DDFALSERADIANCE_HEAVYION" rarity="3"/>
+		<blueprint name="DDFALSERADIANCE_BREACHBEAM" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_CHAINFOCUS" rarity="3"/>
+		<blueprint name="DDFALSERADIANCE_PIERCELASER" rarity="2"/>
+		<blueprint name="DDFALSERADIANCE_CHAINLASER" rarity="3"/>
+		<blueprint name="DDFALSERADIANCE_BURSTMISSILE" rarity="2"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR" rarity="1"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX" rarity="2"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX" rarity="2"/>
+		<blueprint name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX" rarity="2"/>
+	</rarityList>
+	<startEvent>ENTER_DDANTUMBRA</startEvent>
+	<removeFirstBeaconNebula/>
+	<exitBeacon event="DDANTUMBRA_EXIT" rebelEvent="DDANTUMBRA_EXIT"/>
+	<rebelBeacon event="FLEET_ACE_DDANTUMBRA" nebulaEvent="FLEET_ACE_DDANTUMBRA"/>
+	<priorityEvent name="DDANTUMBRA_GODCORELOCATION" min="1" max="1" priority="1"/>
+	<priorityEvent name="DDANTUMBRA_GRAVEDIGGERLOCATION" min="1" max="1" priority="1"/>
+	<priorityEvent name="DDANTUMBRA_SHATTEREDMEMORY" min="1" max="1" priority="1"/>
+	<event name="TRANSPORT_DDANTUMBRA_LOOT" min="1" max="1"/>
+	<event name="STORE_DDANTUMBRA" min="2" max="2"/>
+	<event name="NEUTRAL_DDANTUMBRA" min="4" max="5"/>
+	<event name="ITEMS_DDANTUMBRA" min="3" max="4"/>
+	<event name="CREWPORTAL_DDANTUMBRA" min="2" max="2"/>
+	<event name="QUIET_DDANTUMBRA" min="1" max="2"/>
+	<event name="HOSTILE_DDANTUMBRA" min="999" max="999"/>
 </sectorDescription>

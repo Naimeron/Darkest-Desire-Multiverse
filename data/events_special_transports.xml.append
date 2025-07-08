@@ -263,3 +263,78 @@
 	<drone name="DDHELLRAISER_FIRE_LOOT"/>
 	<variable name="ach_trans_ddcoremass" op="set" val="1"/>
 </event>
+
+<ship name="SHIP_DDFALSE_RADIANCE_TRANSPORT_LOOT" auto_blueprint="DDFALSE_RADIANCE_TRANSPORT">
+	<escape timer="30" min="999" max="999" >
+		<text>Hey, wait - it's trying to get away! You have to, um... you have to beat it up FASTER, I guess?!</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="TRANSPORT_CAPTURE_DDFALSE_RADIANCE"/>
+</ship>
+
+<event name="TRANSPORT_DDANTUMBRA_LOOT" unique="true">
+	<preventQuest/>
+	<beaconType id="map_icon_transport" global="true" req="LOOT_COMPASS">
+		<color r="255" g="186" b="0" a="1"/>
+		<unvisitedTooltip>An unvisited location.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+		<undiscoveredTooltip>An unvisited location.</undiscoveredTooltip>
+	</beaconType>
+	<text>...</text>
+	<img back="BACKGROUND_DDANTUMBRALPLANE" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_antumbra_genesisdefeated" lvl="0" max_lvl="0" blue="false">
+		<text>...</text>
+		<event>
+			<text>...hey, wait a minute - this isn't just any member of the False Radiance. This one's protecting something valuable! They don't seem to be itching for a fight, though... it's, um... it's up to you, what you want to do.</text>
+			<ship load="SHIP_DDFALSE_RADIANCE_TRANSPORT_LOOT" hostile="false"/>
+			<choice hidden="true">
+				<text>Visualize loot - something valuable, meant to be taken by force.</text>
+				<event>
+					<text>Yeah, show 'em who's boss! It's, um... it's you, in case you were wondering...?</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Visualize combat - an act to be prepared for.</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Visualize mercy - an act alien to monsters such as these.</text>
+				<event>
+					<text>I can respect it. Who knows what would happen, if you took this fight... it could be a trap, for all we know!</text>
+					<choice>
+						<text>Visualize a menial task - one to be done during one's spare time.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Visualize nothing - that which will one day come to encompass everything.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_antumbra_genesisdefeated" lvl="1" blue="false">
+		<text>...</text>
+		<event>
+			<text>Though the now-restored colors of the Antumbral Plane come flooding in, with their serene beauty... for some reason, you can't help but find yourself disturbed by the silence left in their wake. There's nothing left for you here, it would seem.</text>
+			<changeBackground>BACKGROUND_DDRESTOREDANTUMBRALPLANE</changeBackground>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="TRANSPORT_CAPTURE_DDFALSE_RADIANCE" unique="true">
+	<text>Oh, yeah... that's the good stuff! I think it is, anyways. I don't, ah... really know anything about weapons, or ships, or, um... most things, but... regardless, you got something special!</text>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<achievement>ACH_TRANS_DDFALSE_RADIANCE</achievement>
+	<weapon name="DDFALSERADIANCE_LOOT"/>
+	<variable name="ach_trans_ddfalseradiance" op="set" val="1"/>
+</event>

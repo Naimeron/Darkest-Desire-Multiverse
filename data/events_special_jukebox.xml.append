@@ -1,8 +1,15 @@
 <mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
-	<mod-append:choice hidden="true" req="juke_ddhymntothedeep">
-		<text>DD: Hymn to the Deep</text>
+	<mod-append:choice hidden="true" req="juke_dddemiurgicoblivion">
+		<text>DD: Demiurgic Oblivion</text>
 		<event>
-			<playMusic>ddhymntothedeep</playMusic>
+			<playMusic>dddemiurgicoblivion</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddedgeofeeverything">
+		<text>DD: Edge of Everything</text>
+		<event>
+			<playMusic>ddedgeofeverything</playMusic>
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>
@@ -13,17 +20,17 @@
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>
-	<mod-append:choice hidden="true" req="juke_dddemiurgicoblivion">
-		<text>DD: Demiurgic Oblivion</text>
-		<event>
-			<playMusic>dddemiurgicoblivion</playMusic>
-			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
-		</event>
-	</mod-append:choice>
 	<mod-append:choice hidden="true" req="juke_ddheartofshatteredpromises">
 		<text>DD: Heart of Shattered Promises</text>
 		<event>
 			<playMusic>ddheartofshatteredpromises</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="juke_ddhymntothedeep">
+		<text>DD: Hymn to the Deep</text>
+		<event>
+			<playMusic>ddhymntothedeep</playMusic>
 			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
 		</event>
 	</mod-append:choice>

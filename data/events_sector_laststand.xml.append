@@ -24,7 +24,7 @@
 			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDSERAPH" blue="false">
 				<text>Contact Federation command.</text>
 				<event>
-					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully scratches his head, "A... flaming ship? I can't say I'm familiar with such a design..." He turns to his fellow officers, but they too shake their heads, "Hmm. No matter. You're here to help, and we need all the help we can get right now."</text>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully scratches his head, "A... flaming ship? I can't say I'm familiar with such a design..." He turns to his fellow officers, but they too shake their heads, "Hmm... well, no matter. You're here to help, and we need all the help we can get right now."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>
@@ -34,7 +34,7 @@
 			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDHORROR" blue="false">
 				<text>Contact Federation command.</text>
 				<event>
-					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He gazes at the oddity that is your ship, eyeing it up and down before eventually speaking, "You're... something strange, aren't you?" Tully sighs and stares off at nothing, "We really are desperate... alright, welcome aboard."</text>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He gazes at the oddity that is your ship, eyeing it up and down before eventually speaking, "You're... something strange, aren't you?" Tully sighs, and stares off at nothing, "We really are desperate... alright, welcome aboard."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>
@@ -45,6 +45,16 @@
 				<text>Contact Federation command.</text>
 				<event>
 					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. There's a concerned look on his face as he speaks, "I've heard tell from the droppoint that there's been some... complications, as a result of your ship? You seem fine enough yourself, though... I can only hope you know what you're doing. We need you in the fights ahead."</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+            </mod-append:choice>
+			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDFALSERADIANCE" blue="false">
+				<text>Contact Federation command.</text>
+				<event>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He opens his mouth to speak, but then hesitates slightly as he gets a good look at your ship. After a few moments of eyeing it over and exchanging bewildered looks with his fellow officers, he shrugs, and returns his attention towards the vidscreen, "Those... ARE eyes, aren't they? Oh, forget it - it doesn't matter. We're more than grateful for your assistance, regardless of how odd your taste in ships may be."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="LAST_STAND_START_2"/>

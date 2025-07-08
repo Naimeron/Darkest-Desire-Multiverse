@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-9" y="-54" w="192" h="271" />
+<offsets>
+	<floor x="96" y="135" />
+	<cloak x="96" y="135" />
+</offsets>
+<weaponMounts>
+	<mount x="133" y="86" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="59" y="86" rotate="false" mirror="true" gib="-1" slide="up" />
+</weaponMounts>
+<mv-hullAnims>
+    <hullAnim x="0" y="0">ddfalseradiance_dwarfling_hullanim</hullAnim>
+</mv-hullAnims>
+<explosion />
+

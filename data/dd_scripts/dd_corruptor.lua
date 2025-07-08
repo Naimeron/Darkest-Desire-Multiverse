@@ -1,4 +1,5 @@
 -- this lua was done by Arc!! thank you Arc!!
+-- some of it was tweaked by Silly as well!! thank you Silly!!
 
 local function get_room_at_location(shipManager, location, includeWalls)
     return Hyperspace.ShipGraph.GetShipInfo(shipManager.iShipId):GetSelectedRoom(location.x, location.y, includeWalls)
@@ -49,8 +50,6 @@ end
 --Offsets of the button
 local corruptorButtonOffset_x = 37
 local corruptorButtonOffset_y = -50
-
-local systemActive = false
 
 --Handles initialization of custom system box
 local function corruptor_construct_system_box(systemBox)
@@ -180,7 +179,11 @@ local function corruptor_spawn(roomId, shipId, originId, amount, player)
     Hyperspace.Sounds:PlaySoundMix("ddsoulplaguecorruptorflood", -1, false)
     corruptor_explosion(originId, shipId, roomId)
 end
-
+---@param shipManager Hyperspace.ShipManager The ship to check for super shield.
+---@return boolean hasSuperShield If the ship has any super shield layers up.
+local function has_super_shield(shipManager)
+   return shipManager.shieldSystem ~= nil and shipManager.shieldSystem.shields.power.super.first > 0
+end
 --Handles click events 
 local function corruptor_click(systemBox, shift)
     if is_corruptor(systemBox) then
@@ -197,11 +200,15 @@ local function corruptor_click(systemBox, shift)
             corruptor_targetting = true --Indicate that we are now targetting the system
         elseif Hyperspace.Global.GetInstance():GetCApp().world.bStartedGame and corruptor_targetting == true then 
             corruptor_targetting = false 
-            if combatControl.selectedSelfRoom < 0 and combatControl.selectedRoom < 0 then return end
+            if combatControl.selectedSelfRoom < 0 and combatControl.selectedRoom < 0 then return Defines.Chain.CONTINUE end
             if combatControl.selectedSelfRoom >= 0 then
                 corruptor_targetRoomTemp = combatControl.selectedSelfRoom
                 corruptor_targetShipTemp = 0
             elseif combatControl.selectedRoom >= 0 then
+                if has_super_shield(Hyperspace.ships.enemy) and Hyperspace.ships.player:HasAugmentation("ZOLTAN_BYPASS") <= 0 then
+                    Hyperspace.Sounds:PlaySoundMix("powerUpFail", -1, false)
+                    return Defines.Chain.CONTINUE
+                end
                 corruptor_targetRoomTemp = combatControl.selectedRoom
                 corruptor_targetShipTemp = 1
             end
@@ -265,11 +272,12 @@ end)
 
 --Utility function to see if the system is ready for use
 local function corruptor_ready(shipSystem)
-   return not shipSystem:GetLocked() and shipSystem:Functioning() and shipSystem.iHackEffect <= 1
+   return not (shipSystem:GetLocked() and shipSystem.iLockCount ~= -1) and shipSystem:Functioning() and shipSystem.iHackEffect <= 1
 end
 --Utility function to see if the system is ready for use
 local function corruptor_ready_enemy(shipSystem)
-   return not shipSystem:GetLocked() and shipSystem:Functioning() and shipSystem.iHackEffect <= 1 and Hyperspace.ships.enemy._targetable.hostile
+   local shield_blocking = has_super_shield(Hyperspace.ships.player) and shipSystem._shipObj:HasAugmentation("ZOLTAN_BYPASS") <= 0
+   return not (shipSystem:GetLocked() and shipSystem.iLockCount ~= -1) and shipSystem:Functioning() and shipSystem.iHackEffect <= 1 and Hyperspace.ships.enemy._targetable.hostile and not shield_blocking
 end
 --Initializes primitive for UI GetAllSegments()
 local buttonBase = {}
@@ -355,7 +363,11 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
     end
 end)
 
-
+---@param room Hyperspace.Room The room to get the time dilation factor for.
+---@return number dilation multipier to the rate that time passes within the room.
+local function get_time_dilation(room)
+    return Hyperspace.TemporalSystemParser.GetDilationStrength(room.extend.timeDilation)
+end
 -- handle enemies using the system
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
     if puffAnimations[shipManager.iShipId].anim then
@@ -379,6 +391,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         if not corruptorSystem then return end
 
         if corruptor_targetRoomTemp and corruptor_ready(corruptorSystem) then
+            corruptorSystem:LockSystem(-1)
             local effectivePower = corruptorSystem:GetEffectivePower()
             corruptorSpawnTimerMax = 10 - effectivePower
             corruptorSpawnTimer = corruptorSpawnTimerMax
@@ -392,7 +405,8 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         end
 
         if corruptor_targetRoom and corruptor_ready(corruptorSystem) then
-            corruptorSpawnTimer = corruptorSpawnTimer - Hyperspace.FPS.SpeedFactor/16
+            local timeDilation = get_time_dilation(Hyperspace.ships(corruptor_targetShip).ship.vRoomList[corruptor_targetRoom])
+            corruptorSpawnTimer = corruptorSpawnTimer - (Hyperspace.FPS.SpeedFactor/16) * timeDilation
             if corruptorSpawnTimer <= 0 then
                 corruptorSpawnTimer = corruptorSpawnTimerMax
                 corruptor_spawn(corruptor_targetRoom, corruptor_targetShip, corruptorSystem._shipObj.iShipId, 1, true)
@@ -409,6 +423,13 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
             corruptor_targetShip = nil
             corruptorSystem:LockSystem(corruptorSystem.iLockCount + 4)
         end
+
+        if corruptorSystem.iLockCount == -1 and corruptor_targetShip == 1 and Hyperspace.ships.enemy.bDestroyed then
+            corruptorDuration = 0
+            corruptor_targetRoom = nil
+            corruptor_targetShip = nil
+            corruptorSystem:LockSystem(4)
+        end
     else
         local corruptorSystem = nil
         for system in vter(shipManager.vSystemList) do
@@ -419,6 +440,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         end
         if corruptorSystem then
             if corruptor_ready_enemy(corruptorSystem) and not corruptor_targetRoomEnemy then
+                corruptorSystem:LockSystem(-1)
                 local effectivePower = corruptorSystem:GetEffectivePower()
                 corruptorSpawnTimerMaxEnemy = 10 - effectivePower
                 corruptorSpawnTimerEnemy = corruptorSpawnTimerMax
@@ -427,6 +449,8 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
                 corruptor_spawn(corruptor_targetRoomEnemy, 0, corruptorSystem._shipObj.iShipId, 1, false)
                 --corruptor_explosion(corruptorSystem._shipObj.iShipId, corruptor_targetShipEnemy, corruptor_targetRoomEnemy)
             elseif corruptor_ready_enemy(corruptorSystem) and corruptor_targetRoomEnemy then
+                local timeDilation = get_time_dilation(Hyperspace.ships.player.ship.vRoomList[corruptor_targetRoomEnemy])
+                corruptorSpawnTimer = corruptorSpawnTimer - (Hyperspace.FPS.SpeedFactor/16) * timeDilation
                 corruptorSpawnTimerEnemy = corruptorSpawnTimerEnemy - Hyperspace.FPS.SpeedFactor/16
                 if corruptorSpawnTimerEnemy <= 0 then
                     corruptorSpawnTimerEnemy = corruptorSpawnTimerMaxEnemy
@@ -468,59 +492,16 @@ end)
 script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function(shipManager)
     if shipManager.iShipId == 0 and shipManager:HasSystem(Hyperspace.ShipSystem.NameToSystemId("dd_corruptor")) then
         local system = shipManager:GetSystem(Hyperspace.ShipSystem.NameToSystemId("dd_corruptor"))
-        local gui = Hyperspace.App.gui
-        if system:GetLocked() and (gui.upgradeButton.bActive and not gui.event_pause) then
+        if system.iLockCount == -1 then
             system:LockSystem(0)
         end
+        corruptorDuration = 0
+        corruptor_targetRoom = nil
+        corruptor_targetShip = nil
     end
 end)
 
-local systemIcons = {}
-local function system_icon(name)
-    local tex = Hyperspace.Resources:GetImageId("icons/s_"..name.."_overlay.png")
-    return Graphics.CSurface.GL_CreateImagePrimitive(tex, 0, 0, 32, 32, 0, Graphics.GL_Color(1, 1, 1, 0.5))
-end
-systemIcons[Hyperspace.ShipSystem.NameToSystemId(systemIdName)] = system_icon(systemIdName)
-
--- Render icons
-local function render_icon(sysId, ship, sysInfo)
-    -- Special logic for medbay and clonebay
-    local skipBackground = false
-    
-    -- Render logic
-    if not ship:HasSystem(sysId) and sysInfo:has_key(sysId) then
-        local sysRoomShape = Hyperspace.ShipGraph.GetShipInfo(ship.iShipId):GetRoomShape(sysInfo[sysId].location[0])
-        local iconRenderX = sysRoomShape.x + sysRoomShape.w//2 - 16
-        local iconRenderY = sysRoomShape.y + sysRoomShape.h//2 - 16
-        if not skipBackground then
-            local outlineSize = 2
-            Graphics.CSurface.GL_DrawRect(
-                sysRoomShape.x,
-                sysRoomShape.y,
-                sysRoomShape.w,
-                sysRoomShape.h,
-                Graphics.GL_Color(0, 0, 0, 0.3))
-            Graphics.CSurface.GL_DrawRectOutline(
-                sysRoomShape.x + outlineSize,
-                sysRoomShape.y + outlineSize,
-                sysRoomShape.w - 2*outlineSize,
-                sysRoomShape.h - 2*outlineSize,
-                Graphics.GL_Color(0.8, 0, 0, 0.5), outlineSize)
-        end
-        Graphics.CSurface.GL_PushMatrix()
-        Graphics.CSurface.GL_Translate(iconRenderX, iconRenderY)
-        Graphics.CSurface.GL_RenderPrimitive(systemIcons[sysId])
-        Graphics.CSurface.GL_PopMatrix()
-    end
-end
-script.on_render_event(Defines.RenderEvents.SHIP_SPARKS, function() end, function(ship)
-    if not Hyperspace.App.world.bStartedGame then
-        local shipManager = Hyperspace.ships(ship.iShipId)
-        local sysInfo = shipManager.myBlueprint.systemInfo
-        render_icon(Hyperspace.ShipSystem.NameToSystemId(systemIdName), shipManager, sysInfo)
-    end
-    return Defines.Chain.CONTINUE
-end)
+mods.multiverse.systemIcons[Hyperspace.ShipSystem.NameToSystemId("dd_corruptor")] = mods.multiverse.register_system_icon("dd_corruptor")
 
 local huskList = {}
 huskList["ddsoulplague_husk_human"] = true

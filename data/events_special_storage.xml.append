@@ -11,7 +11,7 @@
             <mod-append:choice hidden="true" req="deepone" blue="false">
 				<text>Upload your Deep One.</text>
 				<event>
-					<text>Are you sure? You will not be able to retrieve them without a Clone Bay, and all skills will be lost.</text>
+					<text id="clone_cannon_load"/>
 					<choice hidden="true">
 						<text>Yes.</text>
 						<event>
@@ -39,7 +39,7 @@
 			<mod-append:choice hidden="true" req="unique_thescarred" blue="false">
 			<text>Upload the Scarred.</text>
 				<event>
-					<text>Are you sure? You will not be able to retrieve them without a Clone Bay, and all skills will be lost.</text>
+					<text id="clone_cannon_load"/>
 					<choice hidden="true">
 						<text>Yes.</text>
 						<event>
@@ -74,19 +74,9 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>You finish resetting the weapon.</text>
+					<text id="clone_cannon_unload"/>
+					<crewMember amount="1" class="deepone">Projectile</crewMember>
 					<weapon name="CLONE_CANNON"/>
-					<choice hidden="true" req="clonebay">
-						<text>(Clone Bay) Revive your crew.</text>
-						<event>
-							<text>Though your crew's memories have been almost completely erased, they remember enough to at least remain loyal to the Federation.</text>
-							<crewMember amount="1" class="deepone">Projectile</crewMember>
-							<choice>
-								<text>Continue...</text>
-								<event load="STORAGE_CHECK"/>
-							</choice>
-						</event>
-					</choice>
 					<choice>
 						<text>Continue...</text>
 						<event load="STORAGE_CHECK"/>
@@ -103,19 +93,9 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>You finish resetting the weapon.</text>
+					<text>The Scarred seems shaken for a moment, before closing his eye and... doing some sort of... breathing exercise? Meditation? You're not sure. Whatever he's doing, it's working, because he immediately goes back to being his older self.</text>
+					<crewMember amount="1" class="unique_thescarred">The Scarred</crewMember>
 					<weapon name="CLONE_CANNON"/>
-					<choice hidden="true" req="clonebay">
-						<text>(Clone Bay) Revive your crew.</text>
-						<event>
-							<text>The Scarred seems shaken for a moment, before closing his eye and... doing some sort of... breathing exercise? Meditation? You're not sure. Whatever he's doing, it's working, because he immediately goes back to being his older self.</text>
-							<crewMember amount="1" class="unique_thescarred">The Scarred</crewMember>
-							<choice>
-								<text>Continue...</text>
-								<event load="STORAGE_CHECK"/>
-							</choice>
-						</event>
-					</choice>
 					<choice>
 						<text>Continue...</text>
 						<event load="STORAGE_CHECK"/>
@@ -291,7 +271,73 @@
 		<text>(Pale Heart) Investigate the Pale Heart and prepare Ill'drythk Mutagens.</text>
 		<event load="STORAGE_CHECK_AUG_DDPALEHEARTINVESTIGATION"/>
 	</mod-append:choice>
+	<mod-append:choice req="MVBOSS_SPAWNER">
+        <text>(Drive Hacker) Summon a Darkest Desire MV vessel.</text>
+        <event load="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_LIST" />
+    </mod-append:choice>
 </mod:findName>
+
+<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_LIST">
+	<loadEventList seeded="true" first="false" generate="true">
+		<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_1" />
+		<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_2" />
+		<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_3" />
+	</loadEventList>
+</event>
+
+<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_1">
+	<text>You check what ships are available to be summoned currently. Summoning an MV boss will take 7{.</text>
+	<choice hidden="true">
+		<text>Soulplague Devourer? - Drops Heaven-sent Hell</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7" />
+			</item_modify>
+			<quest event="DDMV_TRAVELER_BOSS_SERAPHIM_CHALLENGE" />
+		</event>
+	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_2">
+	<text>You check what ships are available to be summoned currently. Summoning an MV boss will take 7{.</text>
+	<choice hidden="true">
+		<text>Dreadnought of Darkness? - Drops Charybdis</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7" />
+			</item_modify>
+			<quest event="DDMV_TRAVELER_BOSS_DEEP_ONE_CHALLENGE" />
+		</event>
+	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_AUG_DD_BOSS_SPAWNER_3">
+	<text>You check what ships are available to be summoned currently. Summoning an MV boss will take 7{.</text>
+	<choice hidden="true">
+		<text>Seraphim Judicator? - Drops Mors</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7" />
+			</item_modify>
+			<quest event="DDMV_TRAVELER_BOSS_SOULPLAGUE_CHALLENGE" />
+		</event>
+	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK" />
+	</choice>
+</event>
 
 <mod:findName type="event" name="STORAGE_CHECK_JOB">
 	<mod-append:choice hidden="true" req="dd_corruptor">
@@ -305,24 +351,156 @@
 </mod:findName>
 
 <event name="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION">
-	<text>Are you sure you want to do this? Preparing one of your crew members as a human sacrifice renders them useless for most tasks and strips away their sense of self, but allows them to not take up crew slots (making them useful for future sacrifices required by the Otherworldly Tome). You cannot prepare any additional sacrifices if you already have eight or more prepared.</text>
+	<text>Are you sure you want to do this? Preparing one of your crew members as a human sacrifice renders them useless for most tasks and strips away their cognitive abilities, but allows them to survive without oxygen and not take up crew slots (making them useful for future sacrifices required by the Otherworldly Tome). Additionally, preparing sacrifices has the advantage of allowing you to choose the type of human that you're sacrificing. You cannot prepare any additional sacrifices if you already have eight or more prepared.</text>
 	<choice req="DD_PREPARINGHUMANSACRIFICEINSTORAGECHECK">
 		<text>(Human Crew) Prepare a human sacrifice.</text>
 		<event>
-			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens and their eyes cloud over...</text>
-			<removeCrew class="LIST_CREW_HUMAN">
-				<clone>false</clone>
-				<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
-			</removeCrew>
-			<choice hidden="true">
-				<text>Continue...</text>
+			<text>Which type of human are you interested in preparing as a sacrifice?</text>
+			<choice req="human">
+				<text>(Human) Prepare a generic human as a sacrifice.</text>
 				<event>
-					<text>...and just like that, the deed is done.</text>
-					<achievement>ACH_EVENT_DDSACRIFICE</achievement>
-					<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="human">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
 				</event>
 			</choice>
+			<choice req="human_medic">
+				<text>(Human Medic) Prepare a human medic as a sacrifice.</text>
+				<event>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="human_medic">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice req="human_engineer">
+				<text>(Human Engineer) Prepare a human engineer as a sacrifice.</text>
+				<event>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="human_engineer">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice req="human_soldier">
+				<text>(Human Soldier) Prepare a human soldier as a sacrifice.</text>
+				<event>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="human_soldier">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice req="human_technician">
+				<text>(Wentworth Technician) Prepare a Wentworth Technician as a sacrifice.</text>
+				<event>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="human_technician">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice req="LIST_CREW_HUMAN">
+				<text>(Human Crew) Prepare a random human as a sacrifice.</text>
+				<event>
+					<text>You perform a rite, and, as instructed by the Otherworldly Tome, close your eyes...
+					
+					...there's a visceral, meaty crunching sound - after which, you feel as your crew member desperately attempts to hold onto you.
+					
+					It's not long before their grip is torn away, and, for a moment, you're left with naught but the sounds of their screams.</text>
+					<removeCrew class="LIST_CREW_HUMAN">
+						<clone>false</clone>
+						<text>You cannot clone your lobotomized human, as they are not truly dead... merely braindead.</text>
+					</removeCrew>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
+							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
+							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>On second thought, nevermind. Do something else.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_HUMAN" lvl="0" max_lvl="0" blue="false">
+		<text>You don't have any humans available to prepare as sacrifices.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_DDHUMANSACRIFICE" lvl="8" blue="false">
+		<text>You can't prepare any additional sacrifices while already housing so many.</text>
+		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice>
 		<text>Nevermind, do something else.</text>
@@ -369,7 +547,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Voidroot Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_voidroot" op="add" val="1"/>
@@ -388,7 +566,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Ironbound Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_ironbound" op="add" val="1"/>
@@ -407,7 +585,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Toxblood Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_toxblood" op="add" val="1"/>
@@ -426,7 +604,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Leafhost Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_leafhost" op="add" val="1"/>
@@ -445,7 +623,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Frostwood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Cinderbark Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_cinderbark" op="add" val="1"/>
@@ -529,7 +707,7 @@
 		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERONE_ABYSS_BOARDER"/>
 	</mod-append:choice>
 	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND" blue="false">
-		<text>(Abyss II Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<text>(Abyss II Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
 		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BATTLE"/>
 	</mod-append:choice>
 	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER" blue="false">
@@ -537,7 +715,7 @@
 		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
 	</mod-append:choice>
 	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND" blue="false">
-		<text>(Abyss III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<text>(Abyss III Templar Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
 		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_ABYSS_BATTLE"/>
 	</mod-append:choice>
 	<mod-append:choice req="DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_BOARDER" blue="false">
@@ -623,9 +801,17 @@
 		<text>Change your Disparity Elite's form.</text>
 		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
 	</mod-append:choice>
-	<mod-append:choice req="dd_soulplaguemassbindedcheck" lvl="1" max_lvl="1" max_group="405" hidden="true">
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_VALID" max_group="405" hidden="true">
 		<text>Call upon your binded Soulplague mass.</text>
 		<event load="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON"/>
+	</mod-append:choice>
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALID" max_group="405" hidden="true">
+		<text>You cannot call upon your binded Soulplague mass while actively threatened by another.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALIDBECAUSEFRIENDLY" max_group="405" hidden="true">
+		<text>You cannot call upon your binded Soulplague mass while actively being assisted by another.</text>
+		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -937,22 +1123,12 @@
 		<anim>ddsoulplagueaura_bg</anim>
 	</backgroundObject>
 	<choice hidden="true">
-		<text>Offer no sacrifice, but command the Soulplague mass to attack your enemy. [28s cooldown]</text>
+		<text>Offer no sacrifice, but command the Soulplague mass to attack your enemy. [28-34s cooldown]</text>
 		<event>
 			<text>The Soulplague mass will strike somewhat sluggishly without a sacrifice to fuel it, but it will obey your command nevertheless and prepare to assault the opposing ship.</text>
-			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="28.0" maxTime="28.0">
-				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-				<triggeredEventBox load="DEFAULT_TIMER">
-					<warning time="5.0" flash="true"/>
-					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
-				</triggeredEventBox>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="28.0" maxTime="34.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
-			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
-				<layer z="2">background</layer>
-				<spawnArea x="660" y="127" w="0" h="0"/>
-				<anim>danger_ddsoulplague_allies</anim>
-				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
-			</backgroundObject>
 			<choice>
 				<text>Continue to the fight!</text>
 				<event/>
@@ -960,22 +1136,16 @@
 		</event>
 	</choice>
 	<choice req="ddhuman_sacrifice" blue="false">
-		<text>(Human Sacrifice) Offer a prepared human sacrifice and command the Soulplague mass to attack your enemy. [14s cooldown]</text>
+		<text>(Human Sacrifice) Offer a prepared human sacrifice and command the Soulplague mass to attack your enemy. [14-20s cooldown]</text>
 		<event>
 			<text>You quickly throw your sacrifice out of the airlock, and they're ravenously torn apart by the waiting Soulplague tendrils. Heightened by your tribute, the Soulplague mass obeys your command and prepares to assault the opposing ship more fervently.</text>
-			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-				<triggeredEventBox load="DEFAULT_TIMER">
-					<warning time="5.0" flash="true"/>
-					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
-				</triggeredEventBox>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
-			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
-				<layer z="2">background</layer>
-				<spawnArea x="660" y="127" w="0" h="0"/>
-				<anim>danger_ddsoulplague_allies</anim>
-				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
-			</backgroundObject>
+			<removeCrew class="ddhuman_sacrifice">
+				<clone>false</clone>
+				<text>You cannot clone someone whose soul has been stripped from their body.</text>
+			</removeCrew>
 			<choice>
 				<text>Continue to the fight!</text>
 				<event/>
@@ -983,22 +1153,16 @@
 		</event>
 	</choice>
 	<choice req="LIST_CREW_HUMAN" blue="false">
-		<text>(Human Crew) Offer one of your human crew members as a sacrifice and command the Soulplague mass to attack your enemy. [14s cooldown]</text>
+		<text>(Human Crew) Offer one of your human crew members as a sacrifice and command the Soulplague mass to attack your enemy. [14-20s cooldown]</text>
 		<event>
 			<text>You quickly throw your crew member out of the airlock, before they can even realize your intentions, and they're ravenously torn apart by the waiting Soulplague tendrils. Heightened by your tribute, the Soulplague mass obeys your command and prepares to assault the opposing ship more fervently.</text>
-			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" loops="999999999" thisFight="true" minTime="14.0" maxTime="14.0">
-				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="444" y="46" time="5.0" r="86" g="51" b="107" centerText="true" flash="true" useWarningLine="true"/>
-				<triggeredEventBox load="DEFAULT_TIMER">
-					<warning time="5.0" flash="true"/>
-					<tooltip>The Soulplague mass will attack after this countdown.</tooltip>
-				</triggeredEventBox>
+			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
-			<backgroundObject name="DDSOULPLAGUE_WARNING_SPRITE_ALLY">
-				<layer z="2">background</layer>
-				<spawnArea x="660" y="127" w="0" h="0"/>
-				<anim>danger_ddsoulplague_allies</anim>
-				<tooltip>You're within a Soulplague mass. It will periodically assault the enemy ship.</tooltip>
-			</backgroundObject>
+			<removeCrew class="LIST_CREW_HUMAN">
+				<clone>false</clone>
+				<text>You cannot clone someone whose soul has been stripped from their body.</text>
+			</removeCrew>
 			<choice>
 				<text>Continue to the fight!</text>
 				<event/>
@@ -1747,12 +1911,12 @@
 		<text>Set the drone to Defensive Mode.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
+			<remove name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_BOARDER"/>
+					<drone name="DDENLIGHTENED_DARKTEMPLAR_TIERTWO_ABYSS_DEFEND"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
@@ -2335,11 +2499,11 @@
         <event load="OPTION_INVALID"/>
     </choice>
 	<choice req="dd_corruptor" lvl="2" max_group="0" blue="false" hidden="true">
-        <text>Level 3 Corruptor [Cost: 70~, 4{]</text>
+        <text>Level 3 Corruptor [Cost: 85~, 4{]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3"/>
     </choice>
     <choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
-        <text>Level 4 Corruptor [Cost: 100~, 6{, 3}]</text>
+        <text>Level 4 Corruptor [Cost: 120~, 6{, 3}]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4"/>
     </choice>
 	<choice req="dd_corruptor" lvl="4" max_group="0" blue="false" hidden="true">
@@ -2351,7 +2515,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT1" lvl="0" max_group="1" blue="false" hidden="true">
-		<text>Matter Disperser. [Cost: 40~, 3{]</text>
+		<text>Matter Disperser. [Cost: 45~, 3{]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_MATTERDISPERSER"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT2" lvl="1" max_group="2" blue="false" hidden="true">
@@ -2359,7 +2523,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT2" lvl="0" max_group="2" blue="false" hidden="true">
-		<text>Psychic Emanator. [Cost: 50~, 1|]</text>
+		<text>Psychic Emanator. [Cost: 65~, 1|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_PSYCHICEMANATOR"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="1" max_group="3" blue="false" hidden="true">
@@ -2367,7 +2531,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="3" blue="false" hidden="true">
-		<text>Density Amplifier. [Cost: 35~, 2{, 2}]</text>
+		<text>Density Amplifier. [Cost: 40~, 2{, 2}]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_DENSITYAMPLIFIER"/>
 	</choice>
 	<choice>
@@ -2380,12 +2544,12 @@
 	<text>You are about to install the Matter Disperser upgrade.
 	[Effects: Corruptor system heals all Soulplague-aligned crew in the target room for 8 HP each time it spawns a Soulplague Tide.]</text>
 	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 40~, 3{]</text>
+		<text>Perform the upgrade. [Cost: 45~, 3{]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
 				<item type="fuel" min="-3" max="-3"/>
-				<item type="scrap" min="-40" max="-40"/>
+				<item type="scrap" min="-45" max="-45"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2409,12 +2573,12 @@
 	<text>You are about to install the Psychic Emanator upgrade.
 	[Effects: Corruptor system stuns all non-Soulplague-aligned crew in the room for 2 seconds each time it spawns a Soulplague Tide.]</text>
 	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 50~, 1|]</text>
+		<text>Perform the upgrade. [Cost: 65~, 1|]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
 				<item type="drones" min="-1" max="-1"/>
-				<item type="scrap" min="-50" max="-50"/>
+				<item type="scrap" min="-65" max="-65"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2438,13 +2602,13 @@
 	<text>You are about to install the Density Amplifier upgrade.
 	[Effects: Soulplague Tides spawned by the Corruptor system have +10 max HP and take 0.25x damage from fire, is not compatible with Corruptor lvl 3]</text>
 	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 35~, 2{, 2}]</text>
+		<text>Perform the upgrade. [Cost: 40~, 2{, 2}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
 				<item type="fuel" min="-2" max="-2"/>
-				<item type="scrap" min="-35" max="-35"/>
+				<item type="scrap" min="-40" max="-40"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2472,13 +2636,13 @@
 	<text>You are about to upgrade the Corruptor to level 3.
 	[Effects: 16s infection, 5s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 70~, 4{]</text>
+		<text>Perform the upgrade. [Cost: 85~, 4{]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
 			<item_modify>
 				<item type="fuel" min="-4" max="-4"/>
-				<item type="scrap" min="-70" max="-70"/>
+				<item type="scrap" min="-85" max="-85"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -2500,7 +2664,7 @@
 	<text>You are about to upgrade the Corruptor to level 4.
 	[Effects: 17s infection, 4s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 100~, 6{, 3}]</text>
+		<text>Perform the upgrade. [Cost: 120~, 6{, 3}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
@@ -2508,7 +2672,7 @@
 			<item_modify>
 				<item type="missiles" min="-3" max="-3"/>
 				<item type="fuel" min="-6" max="-6"/>
-				<item type="scrap" min="-100" max="-100"/>
+				<item type="scrap" min="-120" max="-120"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -2539,6 +2703,14 @@
 		<text>(Ill'drythk Mutagen) Mutate an Ill'drythk Statue.</text>
 		<event load="STORAGE_CHECK_DDILLDRYTHKMUTAGEN_USAGE"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DDFALSERADIANCE_DIVINEGIMMICK_SPARK" blue="false">
+		<text>(Spark of Divinity) Consume your Spark of Divinity, and receive a Mote of Divinity.</text>
+		<event load="STORAGE_CHECK_DDDIVINEGIMMICK_SPARK"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="dd_motesofdivinity" lvl="1" blue="false">
+		<text>(Mote of Divinity) Infuse your ship with a Mote of Divinity.</text>
+		<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE"/>
+	</mod-append:choice>
 	<mod-append:choice hidden="true" req="DD_BRINGTHEMINISTERBACKFROMTHEDEADCHECK" blue="false">
 		<text>(The Minister) Revive the Minister.</text>
 		<event load="STORAGE_CHECK_DDMINISTER_RESURRECTION"/>
@@ -2546,7 +2718,7 @@
 </mod:findName>
 
 <event name="STORAGE_CHECK_DARKGOD_CURSED_BOOK">
-	<text>Opening the book, its contents are separated into different colors. Rituals can only be performed while you're traveling at lightspeed, as they require a certain attunement to the Multiverse's dark energies. Here, though, you may investigate the rituals and figure out what they do.</text>
+	<text>Opening the book, its contents are separated into different colors. Rituals can only be performed while you're traveling at lightspeed, as they require a certain attunement to the Multiverse's dark energies. Here, though, you may investigate the available rituals and figure out what they do.</text>
 	<playSound>ddbook_turn_page</playSound>
 	<choice hidden="true">
 		<text>Investigate the crimson red text, the Ascension Rituals.</text>
@@ -2731,7 +2903,7 @@
 						<text>Investigate the Crystal of Handiness.</text>
 						<event>
 							<text>CRYSTAL OF HANDINESS:
-							This strange crystal empowers your Disparity beacons, granting them the ability to repair and +0.8 base speed. Your Disparity Elites lose their own memory of how to repair in return, and repair 0.67x slower.</text>
+							This strange crystal empowers your Disparity beacons, granting them the ability to repair and +0.8 base speed. Your Disparity Elites lose their own memory of how to repair in return, and repair 33% slower.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -2848,7 +3020,7 @@
 						<text>Investigate the Ritual of Lightbreaking.</text>
 						<event>
 							<text>RITUAL OF LIGHTBREAKING:
-							This ritual gives you the location of a ship belonging to a random enemy of the Dark God. Defeating them grants you its favor, in the form of two random rewards from the basic ritual pool (you may receive the same reward twice, rewards from the Rituals of Corruption, True Devotion and Resolution will not appear). In addition, you will receive an extra reward depending on the enemy that appears, but this ritual is guaranteed to incur a random side effect.</text>
+							This ritual gives you the location of a ship belonging to a random enemy of the Dark God. Defeating them grants you its favor, in the form of two random rewards from the basic ritual pool (you may receive the same reward twice, rewards from the Rituals of Corruption, True Devotion, Terrible Sights, Eerie Inauguration and Resolution will not appear). In addition, you will receive an extra reward depending on the enemy that appears, but this ritual is guaranteed to incur a random side effect.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -3005,7 +3177,7 @@
 						<text>Investigate the Ritual of Soul Weaving.</text>
 						<event>
 							<text>RITUAL OF SOUL WEAVING:
-							This ritual allows you to feed a blob of the Soulplague mattervirus in order to empower it and allow it to become a Huskweaver. Doing so requires the souls of 1-2 additional human sacrifices. Failing to properly empower the blob results in it becoming hostile and merely mutating into a Soulplague Husk.</text>
+							This ritual allows you to summon and feed a blob of the Soulplague mattervirus in order to empower it and allow it to become a Huskweaver. Doing so requires the souls of 1-2 additional human sacrifices. Failing to properly empower the blob results in it becoming hostile and merely mutating into a Soulplague Husk.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -3047,6 +3219,127 @@
 		</event>
 	</choice>
 	<choice hidden="true">
+		<text>Investigate the aged, faded text, the Odes to Light and Dark.</text>
+		<event>
+			<text>Though you can't read the text, you recognize that, even if you could, it seems to have been eroded away by the sands of time. From what little remains, you're able to make out vague depictions of eyes - many, many eyes, all staring back at you... but little more. You'll need to find somebody capable of both restoring and understanding the text to perform its rituals.</text>
+			<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+				<text>(Living Lightborne) Have your nearby Lightborne transcribe the text.</text>
+				<event>
+					<text>You feel an intense heat, as your Lightborne radiates an eldritch power nearby - suddenly, the relevant pages' text becomes legible, and their age is seemingly reversed. You're able to understand the pages' contents: several rituals describing the acclimation of powerful Lightborne, and the methods of potentially empowering those you already possess.</text>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Newborn Stars.</text>
+						<event>
+							<text>RITUAL OF NEWBORN STARS:
+							This ritual gives you the location of a Radiant Core - the Core will start at Tier Zero, and need to be empowered by other means. Its location will be random.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the Ritual of Bathing Light.</text>
+						<event>
+							<text>RITUAL OF BATHING LIGHT:
+							This ritual allows you to perform as many sacrifices as you desire, each one allowing you to upgrade the Tiers of your possessed Radiant Cores and lock them into sub-Tiers. Upgrading Tiers and locking in sub-Tiers are not part of the same action - you'll need a new sacrifice for each action. Upgrading Radiant Cores and locking them into sub-Tiers cannot be undone.
+							
+							Radiant Cores start out at Tier Zero, and can be upgraded to Tiers One, Two and Three. Each Tier after Zero possesses available sub-Tiers - each sub-Tier capable of generating a different Lightborne.</text>
+							<choice hidden="true">
+								<text>Further investigate Radiant Core sub-Tiers.</text>
+								<event>
+									<text>Scouring the text, you're able to find brief descriptions of each sub-Tier and their generated Lightborne:
+									
+									TIER ONE SUB-TIERS
+									
+									Lightborne Breakling: A weak, fragile crew capable of ignoring enemies in combat and sabotaging systems quickly.
+									Lightborne Cinderling: A weak, fragile crew capable of igniting a fire upon death.
+									Lightborne Prismling: A weak, fragile crew capable of inflicting the current room with Radiant Desecration upon death.
+									Lightborne Slayling: A relatively formidable crew capable of dealing considerable damage in combat.
+									Lightborne Spiritling: A weak, fragile crew capable of healing nearby allies and semi-permanently empowering nearby ally Lightborne upon death.
+									
+									TIER TWO SUB-TIERS
+									
+									Lightborne Angelular: A relatively formidable crew capable of passively healing all ally Lightborne on the same ship.
+									Lightborne Clusterular: A relatively formidable crew capable of both cross-ship teleporation and breaking apart into several Lightborne Cellulars upon death. Lightborne Cellulars are uniquely capable of repairing systems.
+									Lightborne Tormentular: A relatively formidable crew capable of rapidly breaking down doors and micro-stunning enemies.
+									Lightborne Warlockular: A weak, fragile crew capable of repeatedly dealing hull/system damage and creating hazards if it's kept alive long enough.
+									
+									TIER THREE SUB-TIERS
+									
+									Lightborne Commandlux: A tanky crew capable of empowering nearby ally Tier One Lightborne, giving each one a unique ability based on their individual powers.
+									Lightborne Devourlux: A tanky crew capable of rapidly draining the health from nearby ally Lightborne and converting it into ability energy, allowing it to regenerate and semi-permanently empower itself.
+									Lightborne Timelux: A relatively formidable crew capable of periodically completely freezing nearby enemies, rendering them incapable of movement or action.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="dd_spookydivineremnantoooougotspooked" lvl="0" max_lvl="0" blue="false">
+						<text>Investigate the Ritual of Divine Remnants.</text>
+						<event>
+							<text>RITUAL OF DIVINE REMNANTS:
+							7777777777777777777777777777777777777777777777777777777777777777
+							
+							77777777777 On the first day, they swore away Truth. 77777777777
+							
+							77777777777777777 On the second, the Calendar. 77777777777777777
+							
+							777777777 From there, Words, Values, Rules, Meaning... 777777777
+							
+							777777 ...until, finally, on the seventh day... Dignity. 7777777
+							
+							777777777 Nothing remains of the Lightborne that were. 777777777
+							
+							777 And of the divinities, who stole away their principles... 77
+							
+							77 ...nothing ought to remain, but distant echoes of the past. 7
+							
+							7777777777777777777777777777777777777777777777777777777777777777</text>
+							<variable name="dd_spookydivineremnantoooougotspooked" op="set" val="1"/>
+							<choice hidden="true">
+								<text>...</text>
+								<event>
+									<text>RITUAL OF DIVINE REMNANTS:
+									This ritual allows you to pursue Echoes of the Archangel Protocols' powers, which you may defeat in combat to choose from a selection of random Radiant weapons - from which, you may only choose one. This ritual is incredibly costly, requiring 7 total sacrifices to be made at once, and the battle with the Echo will not be easy. The specific Echo you fight will be random, and you will not be allowed to jump away once you engage it in combat.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="dd_spookydivineremnantoooougotspooked" lvl="1" blue="false">
+						<text>Investigate the Ritual of Divine Remnants.</text>
+						<event>
+							<text>RITUAL OF DIVINE REMNANTS:
+							This ritual allows you to pursue Echoes of the Archangel Protocols' powers, which you may defeat in combat to choose from a selection of random Radiant weapons - from which, you may only choose one. This ritual is incredibly costly, requiring 7 total sacrifices to be made at once, and the battle with the Echo will not be easy. The specific Echo you fight will be random, and you will not be allowed to jump away once you engage it in combat.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Nevermind. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Close the book.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
 		<text>Investigate the inky black text, the Beginner's Guide to the Occult.</text>
 		<event>
 			<text>You realize you actually CAN read this section... it appears to outline several basic rituals, and goes into detail about the requirements and rules for rituals in general.</text>
@@ -3057,7 +3350,7 @@
 					
 					RULE 1: RITUALS MUST BE PERFORMED WHILST AT LIGHTSPEED.
 					RULE 2: RITUALS, SAVE FOR THE RITUAL OF THE HUNT, REQUIRE A HUMAN SACRIFICE.
-					RULE 3: A SUBSTITUTE OF IMMENSE AMOUNTS OF GARBAGE (100 SCRAP) MAY BE SACRIFICED SHOULD A HUMAN SACRIFICE NOT BE AVAILABLE.
+					RULE 3: FOR AN INITIAL SACRIFICE, A SUBSTITUTE OF IMMENSE AMOUNTS OF GARBAGE (100 SCRAP) MAY BE SACRIFICED SHOULD A HUMAN SACRIFICE NOT BE AVAILABLE.
 					RULE 4: CERTAIN RITUALS REQUIRE CERTAIN FOLLOWERS AND UNDERSTANDINGS OF THE DARK ONE'S WAYS.
 					RULE 5: THERE ARE TYPICALLY NO PENALTIES FOR FAILING TO COMPLETE A RITUAL, BUT YOUR SACRIFICE WILL NOT BE RETURNED.</text>
 					<choice hidden="true">
@@ -3067,7 +3360,7 @@
 							RULE 7: IF YOU PERFORM A RITUAL AND THEN REROUTE, ANY RESULTING QUEST WILL BE LOST.
 							RULE 8: SHOULD YOU DESIRE TO BOTH PERFORM A RITUAL AND SPEAK WITH A CERTAIN CURATOR, YOU MUST DECIDE TO VIEW THEIR TASKS AND USE A JUMPSPEED AUGMENT.
 							RULE 9: THERE IS A CHANCE THAT CERTAIN RITUALS MAY INCUR UNWANTED SIDE EFFECTS; THESE WILL NOT PREVENT THE COMPLETION OF THE RITUAL.
-							RULE 10: CERTAIN RITUALS MAY RARELY ALLOW SPECIAL FOLLOWERS OF THE DARK GOD TO GRACE YOUR PRESENCE. DEFEATING THEM MAY GRANT ADDITIONAL REWARDS.</text>
+							RULE 10: CERTAIN RITUALS MAY RARELY ALLOW THOSE WITH A SPECIAL RELATION TO THE DARK ONE TO GRACE YOUR PRESENCE. DEFEATING THEM MAY GRANT ADDITIONAL REWARDS.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
@@ -3143,6 +3436,28 @@
 				</event>
 			</choice>
 			<choice hidden="true">
+				<text>Investigate the Ritual of Terrible Sights.</text>
+				<event>
+					<text>RITUAL OF TERRIBLE SIGHTS:
+					This ritual gives you the location of a rare and powerful enemy ship belonging to a faction of special relation to the Dark God. Depending on its type, you will be required to either specifically destroy the ship, or specifically kill its crew onboard; doing so will grant a unique reward based on the ship's type. The ship's type, and its location, are random. Performing this ritual costs 1-2 additional human sacrifices. Failure to meet the required amount of sacrifices will result in the ritual failing, and nothing happening.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Eerie Inauguration.</text>
+				<event>
+					<text>RITUAL OF EERIE INAUGURATION:
+					This ritual gives you forbidden knowledge, in the form of coordinates to the generic Deep One sector. From here, you may seek the Dark God out... but there are no promises that it will seek you out in turn. This forbidden knowledge is granted instantly, allowing you to reroute within the same lightspeed jump. This ritual can only be performed once, and you will not be able to reroute to these coordinates during the jump to the final sector.</text>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
 				<text>Investigate the Ritual of Resolution.</text>
 				<event>
 					<text>RITUAL OF RESOLUTION:
@@ -3196,6 +3511,891 @@
 	<choice req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Close the book.</text>
 		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDDIVINEGIMMICK_SPARK">
+	<text>You grab the Spark of Divinity, and hold it in the palm of your hand... the power it emanates feels almost intoxicating. Steeling yourself to its allure, you crush it, and your ship hums in delight. You've been granted a Mote of Divinity - you may infuse your ship with it in the storage menu.</text>
+	<variable name="dd_motesofdivinity" op="add" val="1"/>
+	<remove name="DDFALSERADIANCE_DIVINEGIMMICK_SPARK"/>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Continue...</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE">
+	<text>From the depths of your being, a power rings out...</text>
+	<variable name="dd_motesofdivinity" op="add" val="-1"/>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. But, that's not all...</text>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...as your ship absorbs it, and...</text>
+			<remove name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...finds itself empowered. Having consumed seven Motes of Divinity, your ship has come to rival even the fallen Archangels in terms of sheer vow-count. How impressive! And, yet, that's not all...</text>
+					<achievement>ACH_EVENT_DDTODESIREDIVINITY</achievement>
+					<augment name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER8"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER8" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>...but your ship struggles to absorb it. Though its Energy Shield can't grow any stronger, the rest of it can...</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_SYSTEMPART">
+	<text>...your ship radiates with potential, ready to be shaped as you desire it.</text>
+	<choice req="cloaking" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Cloaking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="cloaking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="cloaking" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Cloaking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="cloaking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="cloaking" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Cloaking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="cloaking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="cloaking" lvl="3" hidden="true">
+		<text>You cannot upgrade your Cloaking any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="dd_corruptor" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... a Corruptor.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="dd_corruptor"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="dd_corruptor" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Corruptor.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="dd_corruptor"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="dd_corruptor" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Corruptor.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="dd_corruptor"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="dd_corruptor" lvl="3" max_lvl="3" blue="false">
+		<text>I desire... to upgrade my Corruptor.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="dd_corruptor"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="dd_corruptor" lvl="4" hidden="true">
+		<text>You cannot upgrade your Corruptor any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="drones" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="3" max_lvl="3" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="4" max_lvl="4" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="5" max_lvl="5" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="6" max_lvl="6" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="7" max_lvl="7" blue="false">
+		<text>I desire... to upgrade my Drone Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="drones"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="drones" lvl="8" hidden="true">
+		<text>You cannot upgrade your Drone Control any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="engines" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="3" max_lvl="3" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="4" max_lvl="4" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="5" max_lvl="5" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="6" max_lvl="6" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="7" max_lvl="7" blue="false">
+		<text>I desire... to upgrade my Engines.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="engines"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="engines" lvl="8" hidden="true">
+		<text>You cannot upgrade your Engines any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="hacking" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Hacking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="hacking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="hacking" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Hacking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="hacking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="hacking" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Hacking.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="hacking"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="hacking" lvl="3" hidden="true">
+		<text>You cannot upgrade your Hacking any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="mind" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Mind Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="mind"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="mind" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Mind Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="mind"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="mind" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Mind Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="mind"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="mind" lvl="3" hidden="true">
+		<text>You cannot upgrade your Mind Control any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="oxygen" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Life Support.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="teleporter"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="oxygen" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Life Support.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="oxygen"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="oxygen" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Life Support.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="oxygen"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="oxygen" lvl="3" hidden="true">
+		<text>You cannot upgrade your Life Support any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="shields" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="3" max_lvl="3" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="4" max_lvl="4" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="5" max_lvl="5" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="6" max_lvl="6" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="7" max_lvl="7" blue="false">
+		<text>I desire... to upgrade my Shields.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="shields"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shields" lvl="8" hidden="true">
+		<text>You cannot upgrade your Shields any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="teleporter" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... a Teleporter.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="teleporter"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="teleporter" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Teleporter.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="teleporter"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="teleporter" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Teleporter.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="teleporter"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="teleporter" lvl="3" hidden="true">
+		<text>You cannot upgrade your Teleporter any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="temporal" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... a Temporal Manipulator.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="temporal"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="temporal" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Temporal Manipulator.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="temporal"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="temporal" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Temporal Manipulator.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="temporal"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="temporal" lvl="3" hidden="true">
+		<text>You cannot upgrade your Temporal Manipulator any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="weapons" lvl="0" max_lvl="0" blue="false">
+		<text>I desire... Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<system name="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="1" max_lvl="1" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="2" max_lvl="2" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="3" max_lvl="3" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="4" max_lvl="4" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="5" max_lvl="5" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="6" max_lvl="6" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="7" max_lvl="7" blue="false">
+		<text>I desire... to upgrade my Weapon Control.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<upgrade amount="1" system="weapons"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="8" hidden="true">
+		<text>You cannot upgrade your Weapon Control any further.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>I desire... no change.</text>
+		<event>
+			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART">
+	<text>...as you understand that you may manifest a Radiant weapon of your choice. Though... which one would that be?</text>
+	<choice>
+		<text>I desire... truth.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_BURSTMISSILE"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... the calendar.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_CHAINLASER"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... words.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_PIERCELASER"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... values.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_CHAINFOCUS"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... rules.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_BREACHBEAM"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... meaning.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_HEAVYION"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>I desire... dignity.</text>
+		<event>
+			<text>With the last of the Mote of Divinity's power drained, and your weapon in hand... you leave the ship to its resplendent radiating, satisfied.</text>
+			<weapon name="DDFALSERADIANCE_HEAVYSHOTGUN"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
 	</choice>
 </event>
 
@@ -3763,7 +4963,7 @@
 						<event>
 							<text>...until, eventually, the process is complete. Your Husk has been subsumed.
 							
-							DEEP ONE SUBSUMATION: The Corruptor's Soulplague Tides take 0.8x damage from crew.</text>
+							DEEP ONE SUBSUMATION: The Corruptor's Soulplague Tides are now manually controlled.</text>
 							<hiddenAug>DDSOULPLAGUE_CORRUPTOR_SUBSUMATION_DEEPONE</hiddenAug>
 						</event>
 					</choice>
@@ -3854,84 +5054,84 @@
 
 <event name="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM">
 	<text>You may force one of your Human Husks to mutate into another variety of Husk by connecting to the whispers within their mind, and focusing on the instability within their DNA... assuming you desire to do so, of course.</text>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Crystal Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_crystal</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into an Engi Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_engi</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Zoltan Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_zoltan</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into an Orchid Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_orchid</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Mantis Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_mantis</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Rockman Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_rockman</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Slug Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_slug</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Shell Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_shell</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Lanius Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_lanius</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Deep One Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_deepone</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Ghost Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_ghost</transformRace>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<choice>
 		<text>Transform your Human Husk into a Leech Husk.</text>
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
@@ -3975,6 +5175,14 @@
 		<text>Look for the Heroine.</text>
 		<event load="SOCIALIZE_DDTHE_HEROINE_LIST"/>
 	</mod-append:choice>
+	<mod-append:choice req="ddunique_theshade" blue="false" hidden="true">
+		<text>Look for the Shade.</text>
+		<event load="SOCIALIZE_DDTHE_SHADE_LIST"/>
+	</mod-append:choice>
+	<mod-append:choice req="LIST_CREW_DDTHEOVERSEER" blue="false" hidden="true">
+		<text>Commune with the Overseer.</text>
+		<event load="SOCIALIZE_DDTHE_OVERSEER"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_BOSS">
@@ -3996,6 +5204,22 @@
 	</mod-append:choice>
 	<mod-append:choice req="ach_boss_ddsoulplague_devourer" lvl="1" blue="false" hidden="true">
 		<text>Soulplague Devourer [Soulplague Coremass]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddarchangelprotocol_gatekeeper" lvl="1" blue="false" hidden="true">
+		<text>Archangel Protocol: GATEKEEPER [Antumbral Plane]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddarchangelprotocol_gravedigger" lvl="1" blue="false" hidden="true">
+		<text>Archangel Protocol: GRAVEDIGGER [Antumbral Plane]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddarchangelprotocol_godcore" lvl="1" blue="false" hidden="true">
+		<text>Archangel Protocol: GODCORE [Antumbral Plane]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_boss_ddapotheosis_engine" lvl="1" blue="false" hidden="true">
+		<text>Apotheosis Engine [Antumbral Plane]</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
 	<mod-append:choice req="ach_boss_ddlilith" lvl="1" blue="false" hidden="true">
@@ -4031,7 +5255,7 @@
 			<text>CLASS: Soulplague(?) Cruiser
 			FACTION: Soulplague-aligned
 			
-			Though not resembling any Soulplague ship anybody else has ever seen, this ship is undoubtedly completely corrupted by the Soulplague mattervirus. There's little else you could possibly know about it... but the memory of its whispers have yet to leave your mind.</text>
+			Though not resembling any Soulplague ship anybody else has ever seen, this ship has undoubtedly been completely corrupted by the Soulplague mattervirus. There's little else you could possibly know about it... but the memory of its whispers have yet to leave your mind.</text>
 			<choice>
 				<text>Continue...</text>
 				<event load="STORAGE_CHECK_STATUS"/>
@@ -4137,6 +5361,34 @@
 			</choice>
 		</event>
 	</mod-append:choice>
+	<mod-append:choice req="ach_crew_ddtheshade" lvl="1" blue="false" hidden="true">
+		<text>The Shade</text>
+		<event>
+			<text>PROFILE: The Shade
+			Titles: ???
+			Species: ??? - Age: ??? - Gender: ???
+			
+			The Shade, as it's come to be called, is an entirely mysterious construct that simply appeared one day. Having emerged from a strange wormhole, with an even stranger threat in tow, one can only guess as to its origins...</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+	<mod-append:choice req="ach_crew_ddtheoverseer" lvl="1" blue="false" hidden="true">
+		<text>The Overseer</text>
+		<event>
+			<text>PROFILE: The Overseer
+			Titles: Vessel, Dark Blade, Overseer of the Antumbral Plane
+			Species: ??? - Age: ??? - Gender: Female
+			
+			Though practically synonymous in the minds of those few who know of her, the Overseer's vessel, and itself, the otherworldly blade, were, at one point, entirely separate entities. Having been the blade's vessel for so long has led to a fusion of the two concepts: the blade is now one with the vessel, and vice versa. Together, with the Archangels defeated, she seeks to strike balance between the Shadows and Lightborne of the Antumbral Plane, and restore the Dark God's hold over the realm.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_STATUS"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_LOOT">
@@ -4150,6 +5402,10 @@
 	</mod-append:choice>
 	<mod-append:choice req="ach_trans_ddsoulplague" lvl="1" blue="false" hidden="true">
 		<text>(Soulplague Coremass)</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice req="ach_trans_ddfalseradiance" lvl="1" blue="false" hidden="true">
+		<text>(Antumbral Plane)</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
 </mod:findName>

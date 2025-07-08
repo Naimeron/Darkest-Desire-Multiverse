@@ -2,10 +2,13 @@
     <mod:findLike type="loadEventList">
         <mod-append:event name="BOON_SELECT_DEEPONE" req="prof_z_boon_deepone"/>
 		<mod-append:event name="BOON_SELECT_DDSOULPLAGUE_CREW" req="prof_z_boon_ddsoulplague"/>
+		<mod-append:event name="BOON_SELECT_DDDEEPONE_ELITE" req="prof_z_boon_dddeepone_elite"/>
+		<mod-append:event name="BOON_SELECT_DDSERAPHIM_CREW" req="prof_z_boon_ddseraphim"/>
 		<mod-append:event name="BOON_SELECT_DDCORRUPTOR" req="prof_e_boon_ddcorruptor "/>
         <mod-append:event name="BOON_SELECT_DEEPONE_EQUIPMENT" req="prof_r_boon_deepone_gear"/>
 		<mod-append:event name="BOON_SELECT_DISPARITY_EQUIPMENT" req="prof_r_boon_disparity_gear"/>
 		<mod-append:event name="BOON_SELECT_DDSOULPLAGUE_EQUIPMENT" req="prof_r_boon_ddsoulplague_gear"/>
+		<mod-append:event name="BOON_SELECT_DDFALSERADIANCE_EQUIPMENT" req="prof_r_boon_ddfalseradiance_gear"/>
     </mod:findLike>
 </mod:findName>
 
@@ -39,7 +42,7 @@
 	<choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
 		<text>Continue...</text>
 		<event>
-			<text>Bringing it with you to the ship, you realize there's an identical book here already. As you scratch your head at that, a wormhole opens over your hand; it then closes just as suddenly as it came, and you realize that the second book's been taken from you! Before you can object to the whims of this unknowable tome-snatcher, a second wormhole opens up. From it stumbles a human, their body cloaked in tattered rags and their face devoid of any expression whatsoever. Indeed, their eyes are practically glazed over... this'll have to do, you suppose.</text>
+			<text>Bringing it with you to the ship, you realize there's an identical book here already. As you scratch your head at that, a wormhole opens over your hand - it closes just as suddenly as it came, and you realize that the second book's been taken from you! Before you can object to the whims of this unknowable tome-snatcher, a second wormhole opens up. From it stumbles a human, their body cloaked in tattered rags and their face devoid of any expression whatsoever. Indeed, their eyes are practically glazed over... this'll have to do, you suppose.</text>
 			<achievement silent="false">ACH_EVENT_DDCONSOLATIONSACRIFICE</achievement>
 			<playSound>ddilldrythkfog1</playSound>
 			<crewMember amount="1" class="ddhuman_sacrifice">Consolation</crewMember>

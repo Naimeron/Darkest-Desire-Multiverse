@@ -20,6 +20,28 @@
 	</choice>
 </event>
 
+<event name="BOON_SELECT_DDDEEPONE_ELITE">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of the Trenches. Your Deep Ones... will reduce nearby enemy ability charge rate... by 50% each. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_DDDEEPONE_ELITE</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_DDSERAPHIM_CREW">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of the Heavens. Your crew will... increase nearby enemy fire damage taken... by 20% each. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_DDSERAPHIM_CREW</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
 <event name="BOON_SELECT_DDCORRUPTOR">
 	<text>From nowhere, you hear a voice speaking to you. "Grant of [Corrupting] i-i-installed. Installed! Grant provides: Soulplague Tides with +5 health. If -you- witness p-p-previous challenger; provide thanks. I advise you -visit- me as well."</text>
 	<hiddenAug>JUDGE_BOON_DDCORRUPTOR</hiddenAug>
@@ -56,6 +78,17 @@
 <event name="BOON_SELECT_DDSOULPLAGUE_EQUIPMENT">
 	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF IRIDESCENT CORRUPTION! Your Soulplague Husks will take 0.25x damage from FIRE, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
 	<hiddenAug>JUDGE_BOON_DDSOULPLAGUE_EQUIPMENT</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_DDFALSERADIANCE_EQUIPMENT">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF FALLEN GRACE! Your Lightborne will break down doors TWICE as quickly, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_DDLIGHTBORNE_EQUIPMENT</hiddenAug>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>

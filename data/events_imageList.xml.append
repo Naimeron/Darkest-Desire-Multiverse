@@ -22,14 +22,14 @@
 	<img w="1280" h="720">stars_sectors/bg_ddcoremasscenter.png</img>
 </imageList>
 
-<imageList name="BACKGROUND_DDSOULPLAGUELIGHTNEBULA">
-	<img w="1280" h="720">stars_sectors/bg_ddsoulplaguelightnebula.png</img>
-</imageList>
-
-<imageList name="BACKGROUND_DDSOULPLAGUETRICKHAHAUTHOUGHT">
-	<img w="1280" h="720">stars_hazard/bg_lightnebula3_nohazard.png</img>
-</imageList>
-
 <imageList name="BACKGROUND_DDILLDRYTHKFOG">
 	<img w="1280" h="720">stars_sectors/bg_ddilldrythkfog.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDANTUMBRALPLANE">
+	<img w="1280" h="720">stars_sectors/bg_ddantumbralplane.png</img>
+</imageList>
+
+<imageList name="BACKGROUND_DDRESTOREDANTUMBRALPLANE">
+	<img w="1280" h="720">stars_sectors/bg_ddrestoredantumbralplane.png</img>
 </imageList>

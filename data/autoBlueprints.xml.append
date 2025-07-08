@@ -8,6 +8,9 @@
 	<mod-append:name>ddunique_theaberration</mod-append:name>
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddunique_theminister</mod-append:name>
+	<mod-append:name>ddunique_theshade</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
+	<mod-append:name>ddPOWEROFANTUMBRA</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_METAL">
@@ -36,6 +39,9 @@
 	<mod-append:name>ddultimaarmor_enemy</mod-append:name>
 	<mod-append:name>ddPOWEROFULTIMA</mod-append:name>
 	<mod-append:name>ddPOWEROFULTIMA_enemy</mod-append:name>
+	<mod-append:name>ddunique_theshade</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
+	<mod-append:name>ddPOWEROFANTUMBRA</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_GAS">
@@ -141,6 +147,19 @@
 	<mod-append:name>ddmanifestationofkindness</mod-append:name>
 	<mod-append:name>ddmanifestationofpatience</mod-append:name>
 	<mod-append:name>ddmanifestationofperseverance</mod-append:name>
+	<mod-append:name>ddlightborne_slayling</mod-append:name>
+	<mod-append:name>ddlightborne_prismling</mod-append:name>
+	<mod-append:name>ddlightborne_cinderling</mod-append:name>
+	<mod-append:name>ddlightborne_clusterular</mod-append:name>
+	<mod-append:name>ddlightborne_cellular</mod-append:name>
+	<mod-append:name>ddlightborne_devourlux</mod-append:name>
+	<mod-append:name>ddlightborne_spiritling</mod-append:name>
+	<mod-append:name>ddlightborne_commandlux</mod-append:name>
+	<mod-append:name>ddlightborne_timelux</mod-append:name>
+	<mod-append:name>ddlightborne_angelular</mod-append:name>
+	<mod-append:name>ddlightborne_warlockular</mod-append:name>
+	<mod-append:name>ddlightborne_breakling</mod-append:name>
+	<mod-append:name>ddlightborne_tormentular</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH">
@@ -204,6 +223,16 @@
 	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
 	<mod-append:name>DDPHASE_SERAPHIM_CHAOS</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOST_GODHOOD</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_HEAVYSHOTGUN</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_HEAVYION</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BREACHBEAM</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_CHAINFOCUS</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_PIERCELASER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_CHAINLASER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL">
@@ -247,6 +276,22 @@
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERZERO</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
@@ -274,6 +319,16 @@
 	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
 	<mod-append:name>DDPHASE_SERAPHIM_CHAOS</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOST_GODHOOD</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_HEAVYSHOTGUN</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_HEAVYION</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BREACHBEAM</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_CHAINFOCUS</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_PIERCELASER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_CHAINLASER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL_CRAPBUCKET">
@@ -299,6 +354,9 @@
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_BOARDER</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
@@ -319,6 +377,7 @@
 	<mod-append:name>ddunique_theaberration</mod-append:name>
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddunique_theminister</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="MV_CREW_ALL">
@@ -331,10 +390,16 @@
 
 <mod:findName type="blueprintList" name="BLUELIST_BOMBS">
 	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+	<mod-append:name>ARTILLERY_DDAPOTHEOSIS_PORTAL</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOST_GODHOOD</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_BOMBS_CREWDAMAGE">
 	<mod-append:name>BOMB_DARKGOD</mod-append:name>
+	<mod-append:name>ARTILLERY_DDAPOTHEOSIS_PORTAL</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOST_GODHOOD</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ION">
@@ -345,6 +410,7 @@
 	<mod-append:name>DDDEEP_ONE_SHOTGUN</mod-append:name>
 	<mod-append:name>DDPHASE_SERAPHIM</mod-append:name>
 	<mod-append:name>DDDEEP_ONE_SHOTGUN_CHAOS</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_HEAVYION</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_BEAMS_ALL">
@@ -353,15 +419,18 @@
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
 	<mod-append:name>DDEND_OF_HOPE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BREACHBEAM</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_FOCUS_ALL">
 	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
 	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_CHAINFOCUS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
 	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
 	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
 	<mod-append:name>DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE</mod-append:name>
@@ -372,6 +441,9 @@
 	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NOMISSILE">
@@ -384,25 +456,33 @@
 	<mod-append:name>DDLASER_HEAVY_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NODAMAGE">
+	<mod-append:name>BOMB_DARKGOD</mod-append:name>
 	<mod-append:name>ARTILLERY_DISPARITY_LIFETAKER</mod-append:name>
 	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
 	<mod-append:name>DDARTILLERY_EXPERIMENTAL_SOUL_ENGINE</mod-append:name>
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDPHASE_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
+	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
+	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_MISSILES_ALL">
 	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDARTILLERY_ECLIPTIC_EXTINCTION</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_MISSILES_DAMAGE">
 	<mod-append:name>DDMISSILES_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDARTILLERY_ECLIPTIC_EXTINCTION</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_CRYSTAL">
@@ -422,6 +502,22 @@
 <mod:findName type="blueprintList" name="BLUELIST_DRONES_BEAM">
 	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
 	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERZERO</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING">
@@ -529,6 +625,24 @@
 	<mod-append:name>unique_thehunger</mod-append:name>
 	<mod-append:name>unique_thehunger_enemy</mod-append:name>
 </mod:findName>
+
+<mod:findName type="blueprintList" name="LIST_CREW_HARMONY_FUGITIVE">
+	<mod-append:name>disparity_engidefault</mod-append:name>
+	<mod-append:name>disparity_engispeed</mod-append:name>
+	<mod-append:name>disparity_engiattack</mod-append:name>
+	<mod-append:name>disparity_engidefense</mod-append:name>
+	<mod-append:name>disparity_engihazard</mod-append:name>
+	<mod-append:name>disparity_engihazard_enemy</mod-append:name>
+	<mod-append:name>unique_thehunger</mod-append:name>
+	<mod-append:name>unique_thehunger_enemy</mod-append:name>
+</mod:findName>
+
+<blueprintList name="LIST_CREW_SHELL_DDGENERIC">
+	<name>shell</name>
+	<name>shell_mechanic</name>
+	<name>shell_scientist</name>
+	<name>shell_guardian</name>
+</blueprintList>
 
 <blueprintList name="LIST_CREW_DISPARITY">
 	<name>disparity_engidefault</name>
@@ -726,6 +840,16 @@
 	<name>DDMISSILES_SOULPLAGUE</name>
 </blueprintList>
 
+<blueprintList name="GIFTLIST_DDFALSERADIANCE_WEAPONS">
+	<name>DDFALSERADIANCE_BURSTMISSILE</name>
+	<name>DDFALSERADIANCE_CHAINLASER</name>
+	<name>DDFALSERADIANCE_PIERCELASER</name>
+	<name>DDFALSERADIANCE_CHAINFOCUS</name>
+	<name>DDFALSERADIANCE_BREACHBEAM</name>
+	<name>DDFALSERADIANCE_HEAVYION</name>
+	<name>DDFALSERADIANCE_HEAVYSHOTGUN</name>
+</blueprintList>
+
 <blueprintList name="GIFTLIST_DARKGOD_DRONES">
 	<name>DRONE_MINISHROUD</name>
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
@@ -881,6 +1005,14 @@
 	<mod-append:name>DDMT_DEEP_ONE_2</mod-append:name>
 </mod:findName>
 
+<blueprintList name="LIST_SHIPS_DDFALSE_RADIANCE">
+	<name>DDFALSE_RADIANCE_STARBRINGER</name>
+	<name>DDFALSE_RADIANCE_ILLUMINATOR</name>
+	<name>DDFALSE_RADIANCE_CONSECRATOR</name>
+	<name>DDFALSE_RADIANCE_DWARFLING</name>
+	<name>DDFALSE_RADIANCE_COMET</name>
+</blueprintList>
+
 <blueprintList name="LIST_WEAPONS_DEEPONES">
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_3</name>
@@ -1014,6 +1146,16 @@
 	<name>LASER_CHAINGUN_2</name>
 </blueprintList>
 
+<blueprintList name="LIST_WEAPONS_DDFALSERADIANCE">  
+	<name>DDFALSERADIANCE_BURSTMISSILE</name>
+	<name>DDFALSERADIANCE_CHAINLASER</name>
+	<name>DDFALSERADIANCE_PIERCELASER</name>
+	<name>DDFALSERADIANCE_CHAINFOCUS</name>
+	<name>DDFALSERADIANCE_BREACHBEAM</name>
+	<name>DDFALSERADIANCE_HEAVYION</name>
+	<name>DDFALSERADIANCE_HEAVYSHOTGUN</name>
+</blueprintList>
+
 <blueprintList name="SHOP_DEEPONE_ITEM_WEAPONS">
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_2_ENEMY</name>
@@ -1089,6 +1231,9 @@
 	<mod-append:name>ddunique_theaberration</mod-append:name>
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddunique_theminister</mod-append:name>
+	<mod-append:name>ddunique_theshade</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
+	<mod-append:name>ddPOWEROFANTUMBRA</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ELITE">
@@ -1183,6 +1328,7 @@
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
 	<mod-append:name>DDHELLRAISER_HULL_LOOT</mod-append:name>
 	<mod-append:name>DDHELLRAISER_FIRE_LOOT</mod-append:name>
+	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ROCK_RENEGADE_LOOT">
@@ -1201,6 +1347,7 @@
 	<mod-append:name>disparity_engidefense</mod-append:name>
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>ddseraph_engi</mod-append:name>
+	<mod-append:name>ddseraph_shell</mod-append:name>
 	<mod-append:name>dddeepone_chosen</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
 </mod:findName>
@@ -1221,6 +1368,9 @@
 	<mod-append:name>ddunique_theaberration</mod-append:name>
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddunique_theminister</mod-append:name>
+	<mod-append:name>ddunique_theshade</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
+	<mod-append:name>ddPOWEROFANTUMBRA</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
@@ -1297,6 +1447,22 @@
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddtempest_spawn_warden</mod-append:name>
 	<mod-append:name>ddtempest_spawn_warden_praying</mod-append:name>
+	<mod-append:name>ddunique_theshade</mod-append:name>
+	<mod-append:name>ddunique_theoverseer</mod-append:name>
+	<mod-append:name>ddPOWEROFANTUMBRA</mod-append:name>
+	<mod-append:name>ddlightborne_slayling</mod-append:name>
+	<mod-append:name>ddlightborne_prismling</mod-append:name>
+	<mod-append:name>ddlightborne_cinderling</mod-append:name>
+	<mod-append:name>ddlightborne_clusterular</mod-append:name>
+	<mod-append:name>ddlightborne_cellular</mod-append:name>
+	<mod-append:name>ddlightborne_devourlux</mod-append:name>
+	<mod-append:name>ddlightborne_spiritling</mod-append:name>
+	<mod-append:name>ddlightborne_commandlux</mod-append:name>
+	<mod-append:name>ddlightborne_timelux</mod-append:name>
+	<mod-append:name>ddlightborne_angelular</mod-append:name>
+	<mod-append:name>ddlightborne_warlockular</mod-append:name>
+	<mod-append:name>ddlightborne_breakling</mod-append:name>
+	<mod-append:name>ddlightborne_tormentular</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
@@ -1394,6 +1560,9 @@
 	<name>zoltan_osmian_hologram</name>
 	<name>hologram</name>
 	<name>snowman</name>
+	<name>eldritch_thing_weak</name>
+	<name>eldritch_thing_noclone</name>
+	<name>eldritch_thing</name>
 	<name>enlightened_horror</name>
 	<name>enlightened_horror_a</name>
 	<name>enlightened_horror_b</name>
@@ -1533,6 +1702,22 @@
 	<name>ddmanifestationofpatience</name>
 	<name>ddmanifestationofperseverance</name>
 	<name>ddeclipticextinctioncrew</name>
+	<name>ddunique_theshade</name>
+	<name>ddunique_theoverseer</name>
+	<name>ddPOWEROFANTUMBRA</name>
+	<name>ddlightborne_slayling</name>
+	<name>ddlightborne_prismling</name>
+	<name>ddlightborne_cinderling</name>
+	<name>ddlightborne_clusterular</name>
+	<name>ddlightborne_cellular</name>
+	<name>ddlightborne_devourlux</name>
+	<name>ddlightborne_spiritling</name>
+	<name>ddlightborne_commandlux</name>
+	<name>ddlightborne_timelux</name>
+	<name>ddlightborne_angelular</name>
+	<name>ddlightborne_warlockular</name>
+	<name>ddlightborne_breakling</name>
+	<name>ddlightborne_tormentular</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDDARK_OBELISK_ENTITIES">
@@ -1552,11 +1737,12 @@
 	<name>ddenlightened_darktemplar_tierone_abyss</name>
 	<name>ddenlightened_darktemplar_tierone_stars</name>
 	<name>ddenlightened_darktemplar_tierone_mire</name>
-	<name>disparity_engiattack</name>
-	<name>disparity_engispeed</name>
 	<name>ddseraph_engi</name>
 	<name>ddseraph_shell</name>
 	<name>ddilldrythk_statue</name>
+	<name>ddlightborne_prismling</name>
+	<name>ddlightborne_cinderling</name>
+	<name>ddlightborne_timelux</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDDARK_OBELISK_ENTITIES_ENEMY">
@@ -1581,6 +1767,9 @@
 	<name>ddseraph_engi_enemy</name>
 	<name>ddseraph_shell_enemy</name>
 	<name>ddilldrythk_statue</name>
+	<name>ddlightborne_prismling</name>
+	<name>ddlightborne_cinderling</name>
+	<name>ddlightborne_timelux</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDCREW_ILLDRYTHK">
@@ -1822,6 +2011,126 @@
 	<name>ddtempest_thunder_blight</name>
 	<name>ddtempest_living_lightning</name>
 	<name>ddtempest_roiling_storm</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDTHESHADEFORMS">
+	<name>ddunique_theshade</name>
+	<name>ddunique_theoverseer</name>
+	<name>ddPOWEROFANTUMBRA</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDTHEOVERSEER">
+	<name>ddunique_theoverseer</name>
+	<name>ddPOWEROFANTUMBRA</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDHUNGERINGSHADOW">
+	<name>darkgodtendrils</name>
+	<name>dddevouring_shadow</name>
+	<name>dddeepone_chosen</name>
+	<name>ddilldrythk_statue_voidroot</name>
+	<name>ddunique_theshade</name>
+	<name>ddunique_theoverseer</name>
+	<name>ddPOWEROFANTUMBRA</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDLIGHTBORNE">
+	<name>ddlightborne_slayling</name>
+	<name>ddlightborne_prismling</name>
+	<name>ddlightborne_cinderling</name>
+	<name>ddlightborne_clusterular</name>
+	<name>ddlightborne_cellular</name>
+	<name>ddlightborne_devourlux</name>
+	<name>ddlightborne_spiritling</name>
+	<name>ddlightborne_commandlux</name>
+	<name>ddlightborne_timelux</name>
+	<name>ddlightborne_angelular</name>
+	<name>ddlightborne_warlockular</name>
+	<name>ddlightborne_breakling</name>
+	<name>ddlightborne_tormentular</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERZERO</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</name>
+	<name>DDFALSERADIANCE_LOST_GODHOOD</name>
+	<name>DDFALSERADIANCE_HEAVYSHOTGUN</name>
+	<name>DDFALSERADIANCE_HEAVYION</name>
+	<name>DDFALSERADIANCE_BREACHBEAM</name>
+	<name>DDFALSERADIANCE_CHAINFOCUS</name>
+	<name>DDFALSERADIANCE_PIERCELASER</name>
+	<name>DDFALSERADIANCE_CHAINLASER</name>
+	<name>DDFALSERADIANCE_BURSTMISSILE</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER8</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_DDLIGHTBORNE_DIVINEGIMMICK">
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7</name>
+	<name>DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER8</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDFALSERADIANCE">
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDTIERONE_FALSERADIANCE">
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SLAYLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_PRISMLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDTIERTWO_FALSERADIANCE">
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR</name>
+</blueprintList>
+
+<blueprintList name="LIST_DRONES_DDTIERTHREE_FALSERADIANCE">
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</name>
+	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</name>
 </blueprintList>
 
 <blueprintList name="LIST_NIGHTMARES_DDBOLT">
@@ -2779,20 +3088,20 @@
 <shipBlueprint name="DISPARITY_ENGI_BEHEMOTH" layout="disparity_engi_behemoth" img="disparity_engi_behemoth">
 	<class>Disparity Behemoth</class>
 	<systemList>
-		<artillery power="3" max="3" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER" />
-		<clonebay power="1" max="2" room="1" start="true" />
+		<artillery power="4" max="4" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER" />
+		<clonebay power="2" max="2" room="1" start="true" />
 		<doors power="2" max="3" room="14" start="true" />
 		<drones power="8" max="10" room="9" start="true" />
 		<engines power="2" max="2" room="8" start="true" />
 		<oxygen power="1" max="2" room="7" start="true" />
-		<pilot power="1" max="1" room="2" start="true" />
+		<pilot power="1" max="2" room="2" start="true" />
 		<shields power="2" max="10" room="3" start="true" />
-		<teleporter power="1" max="1" room="15" start="true" />
+		<teleporter power="1" max="2" room="15" start="true" />
 		<weapons power="7" max="10" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="11" count="4">
+	<weaponList missiles="13" count="4">
 		<weapon name="ION_BIO" />
 		<weapon name="ION_BIO" />
 		<weapon name="BOMB_BIO" />
@@ -2804,22 +3113,22 @@
 	</droneList>
 	<health amount="16" />
 	<maxPower amount="35" />
-	<crewCount amount="2" max="6" class="engi_separatist" />
+	<crewCount amount="3" max="7" class="engi_separatist" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_BEHEMOTHDETERMINATION" layout="disparity_engi_behemothdetermination" img="disparity_engi_behemothdetermination">
 	<class>Judgment, Foreordained</class>
 	<systemList>
-		<artillery power="3" max="4" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER_DETERMINATION" />
+		<artillery power="4" max="4" room="0" start="true" weapon="ARTILLERY_DISPARITY_LIFETAKER_DETERMINATION" />
 		<doors power="2" max="3" room="10" start="true" />
 		<drones power="10" max="10" room="8" start="true" />
 		<engines power="3" max="3" room="4" start="true" />
-		<medbay power="2" max="3" room="9" start="true" />
+		<medbay power="3" max="3" room="9" start="true" />
 		<oxygen power="2" max="3" room="5" start="true" />
 		<pilot power="2" max="3" room="1" start="true" />
 		<shields power="2" max="10" room="2" start="true" />
-		<teleporter power="1" max="3" room="15" start="true" />
+		<teleporter power="2" max="3" room="15" start="true" />
 		<weapons power="6" max="6" room="3" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -2848,7 +3157,7 @@
 		<doors power="3" max="3" room="9" start="true" />
 		<drones power="10" max="10" room="2" start="true" />
 		<engines power="2" max="4" room="1" start="true" />
-		<medbay power="1" max="3" room="11" start="true" />
+		<medbay power="2" max="3" room="11" start="true" />
 		<oxygen power="1" max="2" room="7" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="2" max="10" room="4" start="true" />
@@ -2984,7 +3293,7 @@
 	<crewCount amount="1" max="4" class="rock" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_SLUG_INTERCEPTOR" layout="ddtempest_slug_interceptor" img="ddtempest_slug_interceptor">
 	<class>Tempest Interceptor</class>
@@ -3004,7 +3313,7 @@
 	<crewCount amount="1" max="2" class="slug" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_CRYSTAL_TRANSPORT" layout="ddtempest_crystal_transport" img="ddtempest_crystal_transport">
 	<class>Tempest Transport</class>
@@ -3028,7 +3337,7 @@
 	<crewCount amount="1" max="3" class="crystal" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="CRYSTAL_ARMOR_ENEMY" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_UNION_OUTRIDER" layout="ddtempest_union_outrider" img="ddtempest_union_outrider">
 	<class>Tempest Outrider</class>
@@ -3049,7 +3358,7 @@
 	<crewCount amount="1" max="2" class="LIST_CREW_UNION_RANDOM" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UNION_JACKETS" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ENGI_PROTECTOR" layout="ddtempest_engi_protector" img="ddtempest_engi_protector">
 	<class>Tempest Protector</class>
@@ -3075,7 +3384,7 @@
 	<crewCount amount="1" max="5" class="engi" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_MEDBAY_NANO" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_MANTIS_MARAUDER" layout="ddtempest_mantis_marauder" img="ddtempest_mantis_marauder">
 	<class>Tempest Marauder</class>
@@ -3098,7 +3407,7 @@
 	<crewCount amount="1" max="3" class="mantis" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="CREW_STIMS" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_VAMPWEED_TRAPPER" layout="ddtempest_vampweed_trapper" img="ddtempest_vampweed_trapper">
 	<class>Tempest Trapper</class>
@@ -3120,7 +3429,7 @@
 	<crewCount amount="1" max="3" class="orchid_vampweed" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SPORE_AIR_BUFF" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_DEEP_ONE_CARRIER" layout="ddtempest_deep_one_carrier" img="ddtempest_deep_one_carrier">
 	<class>Tempest Carrier</class>
@@ -3144,7 +3453,7 @@
 	<crewCount amount="1" max="5" class="deepone" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DEEPONE_LIGHTS" />
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 </shipBlueprint>
 <shipBlueprint name="DDTEMPEST_ULTIMA_MANIFESTATION_SHIP" layout="ddtempest_ultima_manifestation_ship" img="ddtempest_ultima_manifestation_ship">
 	<class>Ultima Manifestation</class>
@@ -3173,7 +3482,7 @@
 	<health amount="18" />
 	<maxPower amount="35" />
 	<boardingAI>invasion</boardingAI>
-	<aug name="DDTEMPEST_BLESSING_SHIELD_TIER3" />
+	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
 	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
 	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
@@ -4284,4 +4593,357 @@
 	<crewCount amount="3" max="8" class="ddsoulplague_husk_deepone_enemy" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DEEPONE_LIGHTS" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_STARBRINGER" layout="ddfalse_radiance_starbringer" img="ddfalse_radiance_starbringer">
+	<class>False Radiance Starbringer</class>
+	<minSector>5</minSector>
+	<systemList>
+		<cloaking power="1" max="3" room="3" start="true" />
+		<doors power="2" max="3" room="2" start="true" />
+		<drones power="4" max="10" room="1" start="true" />
+		<engines power="1" max="2" room="0" start="true" />
+		<pilot power="2" max="3" room="8" start="true" />
+		<shields power="4" max="10" room="5" start="true" />
+		<weapons power="1" max="4" room="4" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="9" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="16" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="13" />
+	<maxPower amount="12" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="UPG_CLOAK_FIRE" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ILLUMINATOR" layout="ddfalse_radiance_illuminator" img="ddfalse_radiance_illuminator">
+	<class>False Radiance Illuminator</class>
+	<minSector>5</minSector>
+	<systemList>
+		<doors power="1" max="3" room="2" start="false" />
+		<drones power="3" max="8" room="3" start="true" />
+		<engines power="1" max="3" room="1" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="4" max="10" room="4" start="true" />
+		<weapons power="2" max="5" room="5" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="11" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="14" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="12" />
+	<maxPower amount="11" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_CONSECRATOR" layout="ddfalse_radiance_consecrator" img="ddfalse_radiance_consecrator">
+	<class>False Radiance Consecrator</class>
+	<minSector>5</minSector>
+	<systemList>
+		<doors power="2" max="3" room="7" start="true" />
+		<drones power="2" max="6" room="4" start="true" />
+		<engines power="1" max="1" room="10" start="true" />
+		<hacking power="1" max="3" room="6" start="false" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="10" room="3" start="true" />
+		<weapons power="2" max="6" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="15" count="4" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="11" count="3" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="14" />
+	<maxPower amount="12" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_DWARFLING" layout="ddfalse_radiance_dwarfling" img="ddfalse_radiance_dwarfling">
+	<class>False Radiance Dwarfling</class>
+	<systemList>
+		<doors power="1" max="3" room="4" start="false" />
+		<drones power="2" max="7" room="5" start="true" />
+		<engines power="1" max="3" room="3" start="true" />
+		<pilot power="2" max="3" room="2" start="true" />
+		<shields power="4" max="10" room="0" start="true" />
+		<weapons power="1" max="4" room="1" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="7" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_COMET" layout="ddfalse_radiance_comet" img="ddfalse_radiance_comet">
+	<class>False Radiance Comet</class>
+	<minSector>5</minSector>
+	<systemList>
+		<drones power="3" max="10" room="4" start="true" />
+		<engines power="1" max="2" room="2" start="true" />
+		<hacking power="1" max="3" room="1" start="true" />
+		<pilot power="2" max="3" room="5" start="true" />
+		<shields power="4" max="10" room="0" start="true" />
+		<weapons power="1" max="4" room="3" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="10" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="15" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="11" />
+	<maxPower amount="10" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="UPG_HACK_STUN" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_TRANSPORT" layout="ddfalse_radiance_transport" img="ddfalse_radiance_transport">
+	<class>False Radiance Transport</class>
+	<systemList>
+		<cloaking power="1" max="2" room="4" start="false" />
+		<drones power="3" max="10" room="3" start="true" />
+		<engines power="1" max="2" room="2" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="4" max="10" room="5" start="true" />
+		<weapons power="1" max="4" room="1" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="10" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="10" />
+	<maxPower amount="9" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_APOTHEOSIS_ENGINE" layout="ddfalse_radiance_apotheosis_engine" img="ddfalse_radiance_apotheosis_engine">
+	<class>Apotheosis Engine</class>
+	<systemList>
+		<artillery power="4" max="4" room="9" start="true" weapon="ARTILLERY_DDAPOTHEOSIS_PORTAL" />
+		<doors power="2" max="3" room="5" start="true" />
+		<drones power="8" max="8" room="0" start="true" />
+		<engines power="2" max="2" room="3" start="true" />
+		<mind power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="3" room="2" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<weapons power="5" max="5" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="DDFALSERADIANCE_BREACHBEAM" />
+		<weapon name="DDFALSERADIANCE_BREACHBEAM" />
+		<weapon name="DDFALSERADIANCE_PIERCELASER" />
+		<weapon name="DDFALSERADIANCE_PIERCELASER" />
+	</weaponList>
+	<droneList drones="18" count="3">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX" />
+	</droneList>
+	<health amount="45" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GATEKEEPER" layout="ddfalse_radiance_archangel_gatekeeper" img="ddfalse_radiance_archangel_gatekeeper">
+	<class>Archangel Protocol: GATEKEEPER</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<temporal power="2" max="2" room="0" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="DDFALSERADIANCE_CHAINFOCUS" />
+		<weapon name="DDFALSERADIANCE_CHAINFOCUS" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING" />
+	</droneList>
+	<health amount="25" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GRAVEDIGGER" layout="ddfalse_radiance_archangel_gravedigger" img="ddfalse_radiance_archangel_gravedigger">
+	<class>Archangel Protocol: GRAVEDIGGER</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<mind power="2" max="2" room="0" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="24" count="2">
+		<weapon name="DDFALSERADIANCE_BURSTMISSILE" />
+		<weapon name="DDFALSERADIANCE_HEAVYSHOTGUN" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GODCORE" layout="ddfalse_radiance_archangel_godcore" img="ddfalse_radiance_archangel_godcore">
+	<class>Archangel Protocol: GODCORE</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<hacking power="2" max="2" room="0" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="DDFALSERADIANCE_CHAINLASER" />
+		<weapon name="DDFALSERADIANCE_HEAVYION" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GATEKEEPER_ECHO" layout="ddfalse_radiance_archangel_gatekeeper" img="ddfalse_radiance_archangel_gatekeeper">
+	<class>Divine Echo: GATEKEEPER</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<temporal power="2" max="2" room="0" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="DDFALSERADIANCE_CHAINFOCUS" />
+		<weapon name="DDFALSERADIANCE_CHAINFOCUS" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GRAVEDIGGER_ECHO" layout="ddfalse_radiance_archangel_gravedigger" img="ddfalse_radiance_archangel_gravedigger">
+	<class>Divine Echo: GRAVEDIGGER</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<mind power="2" max="2" room="0" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="24" count="2">
+		<weapon name="DDFALSERADIANCE_BURSTMISSILE" />
+		<weapon name="DDFALSERADIANCE_HEAVYSHOTGUN" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GODCORE_ECHO" layout="ddfalse_radiance_archangel_godcore" img="ddfalse_radiance_archangel_godcore">
+	<class>Divine Echo: GODCORE</class>
+	<systemList>
+		<drones power="8" max="8" room="7" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<hacking power="2" max="2" room="0" start="true" />
+		<pilot power="1" max="2" room="8" start="true" />
+		<shields power="4" max="10" room="1" start="true" />
+		<weapons power="6" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="DDFALSERADIANCE_CHAINLASER" />
+		<weapon name="DDFALSERADIANCE_HEAVYION" />
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="45" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+</shipBlueprint>
+<shipBlueprint name="DDFALSE_RADIANCE_DWARFLING_MYSTERIOUS" layout="ddfalse_radiance_dwarfling" img="ddfalse_radiance_dwarfling">
+	<class>???</class>
+	<systemList>
+		<doors power="1" max="3" room="4" start="false" />
+		<drones power="2" max="8" room="5" start="true" />
+		<engines power="1" max="3" room="3" start="true" />
+		<pilot power="2" max="3" room="2" start="true" />
+		<shields power="4" max="10" room="0" start="true" />
+		<weapons power="1" max="4" room="1" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="7" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
+	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
+	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
 </shipBlueprint>

@@ -19,10 +19,19 @@
 		<text>Ask the Heroine about this.</text>
 		<event load="TRUE_VICTORY_CREW_DDTHEHEROINE"/>
 	</mod-append:choice>
+	<mod-append:choice req="ddunique_theshade" blue="true" hidden="true">
+		<text>Ask the Shade about this.</text>
+		<event load="TRUE_VICTORY_CREW_DDTHESHADE"/>
+	</mod-append:choice>
+	<mod-append:choice req="LIST_CREW_DDTHEOVERSEER" blue="true" hidden="true">
+		<text>Ask the Overseer about this.</text>
+		<event load="TRUE_VICTORY_CREW_DDTHEOVERSEER"/>
+	</mod-append:choice>
 </mod:findName>
 
 <event name="TRUE_VICTORY_CREW_THESCARRED">
 	<text>The Scarred takes a while to answer... eventually, with one hand against their scarred eye, they speak; "In regards to the False God... this bomb solves nothing. Its power eclipses that... of the Paragon, of Multiverse tech. To die here... to let it win..." they briefly tighten their grip on their scar in a flash of anger, before they relent and continue, "...do what you must. I... trust you, kin. I understand... that you have your own wars to win."</text>
+	<text-aea-alternative>The Scarred squints their good eye slightly, before turning their attention to you, "These... Lylmiks. They seek to isolate themselves... from the horrors of the Multiverse, just as... my kin do. Despite their... success in doing so, admittedly, being mixed, I... can't help but feel vindicated by your destruction of the... False God's void, earlier. I... feel that there's hope that my kin may escape the Lylmiks' fate, yet." The Scarred pauses slightly, just a bit longer than usual, before fully closing their eye and giving you a toothy smile, "I... have you to thank for that."</text-aea-alternative>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -32,6 +41,7 @@
 
 <event name="TRUE_VICTORY_CREW_THEHUNGER">
 	<text>The Hunger spends a few moments reverberating, before becoming uncharacteristically still. Then, finally, with a clarity in their voice that you've never before heard, they speak, "Captain. We cannot die here. Our people need us, still. We know your people need you, too. When the people are too weak to fight their own wars, it's us liberators who need to rise up and fight them in their place. Fight them for what's right... and, besides. We've already sacrificed everything once, captain. We cannot afford to do so again." The Hunger pauses, and then returns to its reverberation once more, "U-U-U-UNDERSTOOD: caaaptain?"</text>
+	<text-aea-alternative>The Hunger's amorphous body, as it always does, jiggles slightly at your approach. As they speak, this reverberation of theirs accelerates, "C-c-c-captain... it's cold heeere. Here? Here... LOCATION: INDETERMINATE. SUBJECT: REMNANTS OF THE LYLMIK EMPIRE. SUBJECT STATUS: LIBERATED? F-f-f-free, from the warmth? C-c-c-chained, to the cold... cooold? COLD. SUBJECT STATUS: TRAPPED." Their motion stops entirely, and you're caught off-guard as the Hunger speaks a single sentence, in an uncharacteristically refined manner, before resuming their jiggling and crawling away, "We will not allow ourselves to be trapped, as they have."</text-aea-alternative>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1_2</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -41,6 +51,7 @@
 
 <event name="TRUE_VICTORY_CREW_DDTHEFOOLISH">
 	<text>The Foolish seems surprisingly enthusiastic about the situation, bobbing up and down in the air as he speaks, "Yes, thhhhis is perfect! A way to put an end to dimensional travel, and halt thhhhe mattervirus' expansion once for all... thhhhis is a sacrifice we have to make, right? Not just for thhhhe sake of thhhhe Rebellion, or thhhhe Federation, but... for everyone thhhhe mattervirus would hope to devour. I'll stand by whatever decision you make, captain, but thhhhis sounds like thhhhe exact way to redeem myself thhhhat I've been so desperately searching for."</text>
+	<text-aea-alternative>You find the Foolish floating back and forth, muttering something unintelligible to himself, and you clear your throat to grab his attention. Startled, he turns towards you, "Captain! Captain, uh... do you, er... do you think they'll be fine here? The Lylmiks, that is." You shrug, and his fidgeting hastens, "I'm just... I'm worried, alright! We've compromised their eternal safety here, having possibly introduced something as voracious as the mattervirus to their bubble-reality, and they're just... letting us go? Don't you think we've doomed them?" Again, you shrug, but this time the Foolish takes a moment to think before continuing, "Yes... yes! You're right! They've totally got this handled, haven't they? They wouldn't be so eager to let us go, otherwise!" Once more, you try your best to give the least assuring shrug in Renegade history, but the Foolish's stature only continues to lighten, "I'll try not to worry too hard, then. We've still got a reality to save, and Soulplague masses to purge! Lead the way, captain!"</text-aea-alternative>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD2</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -50,6 +61,7 @@
 
 <event name="TRUE_VICTORY_CREW_DDTHEMINISTER">
 	<text>The Minister clenches his gauntlet, a maneuver you're all too familiar with now, and holds it in front of his face. "I can hear the Tempest here, Renegade; louder than I've heard it in quite some time. It feels close. Personally, I've little care for my life, and even less for the Rebellion, but the Tempest differs. It does not want that bomb detonated." He unclenches his fist, lowers it, and gives you a curt nod. There's a trust in his eyes you've never noticed before. "Do with that what you will."</text>
+	<text-aea-alternative>The Minister, deep in thought, makes an attempt to wave you away as you approach. Realizing you're only continuing to stand there, though, he rolls his eyes and speaks, "If this curious pestering of yours is to be persistent, I may as well speak my mind aloud. This space we've found ourselves in... it's not just outside of our reality, but also the Multiverse itself, yes? A pocket dimension of sorts." You nod, following along, and he continues, "Akin to that infernal plane of the Tempest's, I surmise. One must suspect these Lylmiks to have breached their reality's seams, then... perplexing is it not? That's no simple feat. How, then, did they not only learn that such a thing was possible, but manage to accomplish it? Through means of mortal - or otherwise - science? A mere bout of research into the extraordinary? Or, perhaps... through other means? Other means, such as... outside assistance, perchance? Assistance from someone - or something - more knowing altogether?" A look of confusion overtakes your face, and the Minister realizes he's lost you. With a snide smirk, he finishes, "Ruminate on that, will you? I certainly will."</text-aea-alternative>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD1_3</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -59,7 +71,27 @@
 
 <event name="TRUE_VICTORY_CREW_DDTHEHEROINE">
 	<text>The Heroine is quite a bit more troubled than you'd expected; if anyone was ready to sacrifice themselves, you figured it'd be her. She turns to you, amidst her pacing, "I've heard of determining the lesser of two evils, comrade, but... never the greater of two goods. Is it worth sacrificing ourselves here, and robbing the Multiverse of its greatest heroes? Who will fight against its evils in our place?" She looks you down, reading your expression, and you see the tenseness in her stature lessen a little, "Oh, who am I kidding? We're HEROES! WHETHER WE ARE TO DIE HERE, AND END THE REBELLION'S REIGN OF TERROR, OR LIVE ON, AND FIGHT AGAINST EVIL IN ALL FORMS..." She pauses to raise her helmet, her teeth shining brighter than any star in the Multiverse as she gives you a toothy grin, "...I stand with you, comrade."</text>
+	<text-aea-alternative>The Heroine slaps you on the back, and you're forced to wince under the crushing pressure of her unrestrained strength. Noticing this, she laughs, "Sorry, comrade - it's just thrilling! EXHILARATING! The power of hope! THE PERSISTENCE OF HEROES! Against all odds, we've managed to escape from an impossible prison once more... and yet, as if inviting us forth, we know pure villainy to lie on the other side of this gate. Take confidence, then, in my presence here - for I take confidence in yours, comrade. With you by my side... I KNOW VICTORY TO AWAIT US YET! WE NEED ONLY WRENCH IT FROM THE COLD, UNCARING HANDS OF EVIL..." She pauses, her hand leaving your back to tighten around her spear, "...and grasp onto it once more. Let us save your reality, comrade, and return to your people in glorious splendor! TO VICTORY!"</text-aea-alternative>
 	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD2_2</unlockCustomShip>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_DDTHESHADE">
+	<text>Even here, at the edge of everything, the Shade simply stands there - as ignorant to your presence as it's always been. Staring at it, you can't help but wonder what its purpose is, or where you've gone wrong... regardless of these things, though, you know there to be much greater concerns at hand.</text>
+	<text-aea-alternative>Even here, in the strange space of the Lylmiks, the Shade simply stands there - as ignorant to your presence as it's always been. Staring at it, you can't help but wonder what its purpose is, or where you've gone wrong... regardless of these things, though, you know there to be much greater concerns at hand.</text-aea-alternative>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="TRUE_VICTORY_LOAD"/>
+	</choice>
+</event>
+
+<event name="TRUE_VICTORY_CREW_DDTHEOVERSEER">
+	<text>Though now isn't the time to commune with the Overseer, and blur all sense of reality... you know what it is she'd want. What her sister would've wanted, if she was given the chance - hope. Hope for existence, and all those fortunate enough to live within it... a hope that can't be borne by just anybody. You are the Graybreaker, the Archslayer, the Bladebearer - it's time to add one more title to your collection, and save the Multiverse once and for all.</text>
+	<text-aea-alternative>You know that now isn't the time to commune with the Overseer, and blur all sense of reality, but you feel more than confident going into the fight ahead. You've fought horrors greater than the Rebellion, and slain even greater foes yet - having saved one reality already, how hard could it be to save another?</text-aea-alternative>
+	<unlockCustomShip silent="false">CREW_SHIP_SLOTDD2_3</unlockCustomShip>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="TRUE_VICTORY_LOAD"/>
