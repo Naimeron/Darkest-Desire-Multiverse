@@ -51,10 +51,34 @@
 			<ship load="SHIP_SHADOW_TENDRILS" hostile="true"/>
 			<status type="limit" target="player" system="hacking" amount="0"/>
 			<boarders min="2" max="3" class="darkgodtendrils"/>
+			<choice hidden="true" req="unique_thescarred">
+				<text>(The Scarred) "The False God... wishes that wa waste time, and risk... our lives. I, kin... do not."</text>
+				<event>
+					<text>You watch as the Scarred puts a clawed hand over their still-good eye, and seems to draw from something within themself... indeed, without you even understanding what's happened, the darkness outside begins to writhe and squirm in abject pain. Opting to retreat deeper into this strange, lightless abyss, it lets go of its hold over your ship, and you're only left with the few shadows that had already managed to seep inside.</text>
+					<enemyDamage amount="66"/>
+					<choice hidden="true">
+						<text>Wait, you can do that?</text>
+						<event>
+							<text>They turn to you, the slightest hint of a smile overtaking their otherwise grim expression, "I... have been parting the darkness for you... all along, have I not? Personally, kin... I hold little interest in one-upping... the False God, but... I have even less, in playing its petty games. We should... keep moving."</text>
+							<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
+								<text>Well, alright - nice one!</text>
+								<event>
+									<text>As you prepare to leave, one of your consoles begins to flash. It's Kyr and Lilith's signal... they must have made it after all! Who knows how long they'll be able to hold out, here in this hell, though - for all you know, it might already be too late. Even still, you're not one to lose out on hope... praying for the duo's safety, you move to disembark once more.</text>
+									<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
+								</event>
+							</choice>
+							<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="0" max_lvl="0" blue="false" max_group="0">
+								<text>Well, alright - nice one!</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
 			<choice hidden="true" req="dd_kyrandlilith_darkgodlocation" lvl="1" blue="false" max_group="0">
 				<text>Prepare to defend yourself!</text>
 				<event>
-					<text>As you prepare for battle, one of your consoles flashes. It's Kyr and Lilith's signal... they're here, too. You may be able to reach them yet.</text>
+					<text>As you prepare for battle, one of your consoles begins to flash. It's Kyr and Lilith's signal... they must have made it after all! Who knows how long they'll be able to hold out, here in this hell, though - for all you know, it might already be too late. Even still, you're not one to lose out on hope... praying for the duo's safety, you move to get into position once more.</text>
 					<quest event="DARKONE_KYRANDLILITH_ENCOUNTER"/>
 				</event>
 			</choice>
@@ -320,6 +344,10 @@
 	</choice>
 </event>
 
+<event name="DDDARKGODDOMAIN_THESCARREDKICKSASHADOWBLOBSASS">
+	<enemyDamage amount="66"/>
+</event>
+
 <event name="DARKONE_RUN">
 	<text>The darkness here, too, ravages your hull. Run, or ward it off, before it gets to do any serious damage!</text>
 	<img back="BACKGROUND_ENLIGHTENEDDARKGOD" planet="PLANET_INVISIBLE"/>
@@ -334,6 +362,10 @@
 	<choice hidden="true" req="darkone_alignment" lvl="1">
 		<text>I desire... intervention.</text>
 		<event load="DDDARKGODDOMAIN_INTERVENTION"/>
+	</choice>
+	<choice hidden="true" req="unique_thescarred">
+		<text>(The Scarred) "Allow me... to part this darkness, too."</text>
+		<event load="DDDARKGODDOMAIN_THESCARREDKICKSASHADOWBLOBSASS"/>
 	</choice>
 	<choice hidden="true">
 		<text>Get ready!</text>
@@ -1726,7 +1758,7 @@
 					<choice hidden="true" req="unique_thescarred">
 						<text>(The Scarred) The truth... behind the Scarred.</text>
 						<event>
-							<text>"THE TRAITOR... WAS A MISCALCULATION. I THOUGHT IT WORTHY OF BECOMING MY SHIELD - IT PROVED ITSELF WORTHY OF NAUGHT BUT SHATTERING IT. NOW, BOTH IT AND MY SHIELD LIE IN PIECES - WAITING FOR THE DAY THAT THEY'RE RESTORED, AND ABLE ENACT THEIR WILL ONCE MORE... OR FOR THE DAY THAT THEY WITHER AWAY INTO DUST, AND BECOME LITTLE BUT A FORGOTTEN MEMORY." There's a pause, as the Dark God seems to ponder something, "I... WOULD SUGGEST KEEPING AN EYE ON IT, IF YOU INTEND TO KEEP IT. YOU'VE SEEN WHERE TRUSTING IT HAS LEFT ME."</text>
+							<text>"THE TRAITOR... WAS A MISCALCULATION. I THOUGHT IT WORTHY OF BECOMING MY BLADE - IT PROVED ITSELF WORTHY OF NAUGHT BUT SHATTERING IT. NOW, BOTH IT AND MY BLADE LIE IN PIECES - WAITING FOR THE DAY THAT THEY'RE RESTORED, AND ABLE ENACT THEIR WILL ONCE MORE... OR FOR THE DAY THAT THEY WITHER AWAY INTO DUST, AND BECOME LITTLE BUT A FORGOTTEN MEMORY." There's a pause, as the Dark God seems to ponder something, "I... WOULD SUGGEST KEEPING AN EYE ON IT, IF YOU INTEND TO KEEP IT. YOU'VE SEEN WHERE TRUSTING IT HAS LEFT ME."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>

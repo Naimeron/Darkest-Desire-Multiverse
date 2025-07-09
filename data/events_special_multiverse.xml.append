@@ -121,8 +121,8 @@
 			</choice>
 		</event>
 	</mod-append:choice>
-	<mod-append:choice req="ACH_BOON_DDFALSERADIANCE_GEAR" blue="false">
-		<text>Present False Radiance tech.</text>
+	<mod-append:choice req="BLUELIST_DDLIGHTBORNE_EQUIPMENT" blue="false">
+		<text>Present a Living Lightborne.</text>
 		<event>
 			<text>"What... IS this? Is it ALIVE? I can't say I've EVER seen anything like it... did THEST put you UP TO THIS?! HE would know! Did he FORGET to tell us? Is THIS his way of TELLING US? Well, NO MATTER! I shall BLESS you with the BLESSING OF FALLEN GRACE. But have PATIENCE. It is not for now, but for LATER!"</text>
 			<achievement>ACH_BOON_DDFALSERADIANCE_GEAR</achievement>

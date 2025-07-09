@@ -57,6 +57,11 @@ This enemy ship and its strange inhabitants emanate an ominous fog. Should your 
             <tooltip>RESPLENDENT LIFEFORM:
 This enemy ship is a strange, living creature. It will repair its wounds, in the form of sealing breaches, and its rooms are under the effects of Radiant Desecration. This effect damages your crew for 1hp/s, hinders their combat damage/movement speed/sabotage speed by 20% and allows their strange, summoned entities to exist unimpeded. Lastly, your crew aboard this ship threaten to unmake each other - each one passively damaging their nearby allies for 6hp/s.</tooltip>
 		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+	        <name>icon_ddsuper_scrambler</name>
+            <tooltip>HORRIFIC SCRAMBLER:
+This enemy will jam your Defense Drones, making them incapable of firing. Unlike your average Defense Scrambler, this one seems to be powered by an eldritch force - it cannot be turned off by any means.</tooltip>
+		</mod-append:shipIcon>
 	</mod:findLike>
 	<mod:findLike type="shipOrder" limit="1">
         <mod-append:ship>PLAYER_DEEP_ONE</mod-append:ship>
@@ -6275,6 +6280,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<mod:findName type="req" name="CURA_TASK_CHECK">
 		<mod:findLike type="req" start="0" limit="1">
 			<mod-append:name>SEC SECRET_DDSOULPLAGUE</mod-append:name>
+			<mod-append:name>SEC SECRET_DDANTUMBRA</mod-append:name>
 			<mod-append:name>SEC DARKONE_DOMAIN</mod-append:name>
 		</mod:findLike>
 		<mod:findLike type="req" start="1" limit="1">
@@ -6284,6 +6290,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<mod:findName type="req" name="CURA_TASK_AND_LIGHTSPEED">
 		<mod:findLike type="req" start="0" limit="1">
 			<mod-append:name>SEC SECRET_DDSOULPLAGUE</mod-append:name>
+			<mod-append:name>SEC SECRET_DDANTUMBRA</mod-append:name>
 			<mod-append:name>SEC DARKONE_DOMAIN</mod-append:name>
 		</mod:findLike>
 		<mod:findLike type="req" start="1" limit="1">
@@ -47921,6 +47928,10 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 			</statBoost>
 		</statBoosts>
 	</aug>
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING">
+    	<function name="DEFENSE_SCRAMBLER" value="0" useForReqs="true"/>
+		<icon>icon_ddsuper_scrambler</icon>
+    </aug>
 </augments>
 
 <mod:findLike type="augments" limit="1">

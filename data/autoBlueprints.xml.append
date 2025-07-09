@@ -3148,7 +3148,7 @@
 	<crewCount amount="1" max="1" class="disparity_engidefault" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSERAPH_RADIANT_FLAMES" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_ENGI_JUDICATOR" layout="ddseraph_engi_judicator" img="ddseraph_engi_judicator">
@@ -3483,7 +3483,7 @@
 	<maxPower amount="35" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSOULPLAGUE_HUNTER" layout="ddsoulplague_hunter" img="ddsoulplague_hunter">
@@ -3851,7 +3851,7 @@
 	<crewCount amount="1" max="1" class="ddsoulplague_husk_deepone_enemy" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 	<aug name="UPG_TECH_BYPASS" />
 </shipBlueprint>
 <shipBlueprint name="DDSERAPH_SHELL_PROPHET" layout="ddseraph_shell_prophet" img="ddseraph_shell_prophet">
@@ -4614,7 +4614,7 @@
 	<maxPower amount="12" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 	<aug name="UPG_CLOAK_FIRE" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ILLUMINATOR" layout="ddfalse_radiance_illuminator" img="ddfalse_radiance_illuminator">
@@ -4636,7 +4636,7 @@
 	<maxPower amount="11" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_CONSECRATOR" layout="ddfalse_radiance_consecrator" img="ddfalse_radiance_consecrator">
 	<class>False Radiance Consecrator</class>
@@ -4658,7 +4658,7 @@
 	<maxPower amount="12" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_DWARFLING" layout="ddfalse_radiance_dwarfling" img="ddfalse_radiance_dwarfling">
 	<class>False Radiance Dwarfling</class>
@@ -4678,7 +4678,7 @@
 	<maxPower amount="8" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_COMET" layout="ddfalse_radiance_comet" img="ddfalse_radiance_comet">
 	<class>False Radiance Comet</class>
@@ -4699,7 +4699,7 @@
 	<maxPower amount="10" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 	<aug name="UPG_HACK_STUN" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_TRANSPORT" layout="ddfalse_radiance_transport" img="ddfalse_radiance_transport">
@@ -4720,7 +4720,7 @@
 	<maxPower amount="9" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_APOTHEOSIS_ENGINE" layout="ddfalse_radiance_apotheosis_engine" img="ddfalse_radiance_apotheosis_engine">
 	<class>Apotheosis Engine</class>
@@ -4751,7 +4751,7 @@
 	<maxPower amount="45" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GATEKEEPER" layout="ddfalse_radiance_archangel_gatekeeper" img="ddfalse_radiance_archangel_gatekeeper">
 	<class>Archangel Protocol: GATEKEEPER</class>
@@ -4780,7 +4780,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GRAVEDIGGER" layout="ddfalse_radiance_archangel_gravedigger" img="ddfalse_radiance_archangel_gravedigger">
 	<class>Archangel Protocol: GRAVEDIGGER</class>
@@ -4809,7 +4809,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GODCORE" layout="ddfalse_radiance_archangel_godcore" img="ddfalse_radiance_archangel_godcore">
 	<class>Archangel Protocol: GODCORE</class>
@@ -4838,7 +4838,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GATEKEEPER_ECHO" layout="ddfalse_radiance_archangel_gatekeeper" img="ddfalse_radiance_archangel_gatekeeper">
 	<class>Divine Echo: GATEKEEPER</class>
@@ -4867,7 +4867,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GRAVEDIGGER_ECHO" layout="ddfalse_radiance_archangel_gravedigger" img="ddfalse_radiance_archangel_gravedigger">
 	<class>Divine Echo: GRAVEDIGGER</class>
@@ -4896,7 +4896,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_ARCHANGEL_GODCORE_ECHO" layout="ddfalse_radiance_archangel_godcore" img="ddfalse_radiance_archangel_godcore">
 	<class>Divine Echo: GODCORE</class>
@@ -4925,7 +4925,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
 <shipBlueprint name="DDFALSE_RADIANCE_DWARFLING_MYSTERIOUS" layout="ddfalse_radiance_dwarfling" img="ddfalse_radiance_dwarfling">
 	<class>???</class>
@@ -4945,5 +4945,5 @@
 	<maxPower amount="8" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
-	<aug name="UPG_TECH_SCRAMBLER_ENEMY" />
+	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
 </shipBlueprint>
