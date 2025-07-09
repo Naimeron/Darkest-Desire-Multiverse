@@ -46802,7 +46802,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>5</value>
+			<value>4</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -46905,7 +46905,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER2">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>10</value>
+			<value>8</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47008,7 +47008,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER3">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>15</value>
+			<value>12</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47111,7 +47111,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER4">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>20</value>
+			<value>16</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47214,7 +47214,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER5">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>25</value>
+			<value>20</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47317,7 +47317,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER6">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>30</value>
+			<value>24</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47420,7 +47420,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER7">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>35</value>
+			<value>28</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>
@@ -47523,7 +47523,7 @@ This enemy ship is a strange, living creature. It will repair its wounds, in the
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER8">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
-			<value>40</value>
+			<value>32</value>
 			<color r="255" g="255" b="255" a="1"/>
 			<shieldImage>ship/ddenemy_shields_rainbow.png</shieldImage>
 		</superShield>

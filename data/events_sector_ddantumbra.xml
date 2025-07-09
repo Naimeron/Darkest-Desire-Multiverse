@@ -59,6 +59,7 @@
 		<event>
 			<text>Oh, Father... it's here, isn't it? GATEKEEPER? If it's already found you, I don't think there's any use in running... I... I, ah... I don't know how I can help...</text>
 			<ship load="START_DDANTUMBRA_THEGATEKEEPER_FIGHT" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Visualize hope - that which doesn't dwindle in the face of anything.</text>
@@ -3213,6 +3214,7 @@
 				<event>
 					<text>Archangel Protocol: GRAVEDIGGER... its entourage of Lightborne and key-system both rely on the manipulation of life - it will try to overwhelm you with powerful, self-sustaining Lightborne while simultaneously overcoming your defenses with formidable weapons-fire. If you can prevent anything, it should be the propagation of its Devourluxes - the longer they're allowed to live and eat other Lightborne, the stronger they'll get!</text>
 					<ship load="DDANTUMBRA_GRAVEDIGGERLOCATION_FIGHT" hostile="true"/>
+					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
 					<playSound>ddarchangelprotocol_arrival</playSound>
 					<choice hidden="true">
 						<text>Visualize combat - an act to be prepared for.</text>
@@ -3311,6 +3313,7 @@
 				<event>
 					<text>Archangel Protocol: GODCORE... its entourage of Lightborne and key-system both rely on creating chaos and causing havoc - it will try to prevent you from putting out the fires it starts with excessive distractions, while simultaneously beating down your Shields and letting its powerful Laser weapon chain. If you can prevent anything, it should be that - do not let your Shields fall, and stop its Laser weapon if they do!</text>
 					<ship load="DDANTUMBRA_GODCORELOCATION_FIGHT" hostile="true"/>
+					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
 					<playSound>ddarchangelprotocol_arrival</playSound>
 					<choice hidden="true">
 						<text>Visualize combat - an act to be prepared for.</text>
@@ -4724,9 +4727,10 @@
 																											O F
 																											E V E R Y T H I N G ?</text>
 																											<ship load="DDANTUMBRA_EXIT_FIGHT_APOTHEOSISENGINE" hostile="true"/>
-																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_1" minTime="3" maxTime="6" thisFight="true" loops="999999"/>
-																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_2" minTime="3" maxTime="6" thisFight="true" loops="999999"/>
-																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_3" minTime="3" maxTime="6" thisFight="true" loops="999999"/>
+																											<deathEvent thisFight="true">DDDEATH_APOTHEOSISENGINE</deathEvent>
+																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_1" minTime="4" maxTime="5" thisFight="true" loops="999999"/>
+																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_2" minTime="2" maxTime="3" thisFight="true" loops="999999"/>
+																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_3" minTime="6" maxTime="7" thisFight="true" loops="999999"/>
 																											<triggeredEvent event="DDANTUMBRA_EXIT_GENESISPOWER_LIST" minTime="20" maxTime="20" thisFight="true" loops="999999">
 																												<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
 																													<warning time="2.5" flash="true"/>

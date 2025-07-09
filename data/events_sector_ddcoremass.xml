@@ -4568,6 +4568,7 @@
 							
 							Your death... is this the end?</text>
 							<ship load="DDCOREMASS_EXIT_FIGHT_THEDEVOURER" hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_THEDEVOURER</deathEvent>
 							<triggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY" event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
 								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 							</triggeredEvent>
@@ -4611,6 +4612,7 @@
 			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 			<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 			<ship load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_THEHEROINE</deathEvent>
 			<choice hidden="true">
 				<text>And, you're what? Here to lecture me?</text>
 				<event>

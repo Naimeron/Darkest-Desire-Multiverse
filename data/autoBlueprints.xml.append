@@ -2664,9 +2664,9 @@
 		<weapon name="LASER_DARKGOD" />
 	</weaponList>
 	<droneList drones="0" count="0" />
-	<health amount="15" />
+	<health amount="17" />
 	<maxPower amount="35" />
-	<crewCount amount="3" max="8" class="dddeepone_chosen" />
+	<crewCount amount="4" max="9" class="dddeepone_chosen" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDOVERWHELMING_DARKNESS" />
 </shipBlueprint>
@@ -2696,7 +2696,7 @@
 		<drone name="ENERGY_1_AMP2_ENEMY" />
 		<drone name="REPAIR" />
 	</droneList>
-	<health amount="27" />
+	<health amount="34" />
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="deepone" />
 	<boardingAI>sabotage</boardingAI>
@@ -2889,7 +2889,7 @@
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="5" count="3" load="LIST_DRONES_DISPARITY" />
-	<health amount="11" />
+	<health amount="12" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="6" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
@@ -2913,7 +2913,7 @@
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="5" count="3" load="LIST_DRONES_DISPARITY" />
-	<health amount="11" />
+	<health amount="12" />
 	<maxPower amount="8" />
 	<crewCount amount="1" max="6" class="engi_separatist_nano" />
 	<boardingAI>sabotage</boardingAI>
@@ -2936,7 +2936,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
-	<health amount="10" />
+	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="1" max="5" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
@@ -2959,7 +2959,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
-	<health amount="10" />
+	<health amount="11" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="5" class="engi_separatist_nano" />
 	<boardingAI>sabotage</boardingAI>
@@ -2982,7 +2982,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="0" count="2" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="8" count="4" load="LIST_DRONES_DISPARITY" />
-	<health amount="10" />
+	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="2" max="4" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
@@ -3005,7 +3005,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="0" count="2" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="8" count="4" load="LIST_DRONES_DISPARITY" />
-	<health amount="10" />
+	<health amount="11" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="4" class="engi_separatist_nano" />
 	<boardingAI>sabotage</boardingAI>
@@ -3028,7 +3028,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="3" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="3" count="2" load="LIST_DRONES_DISPARITY" />
-	<health amount="9" />
+	<health amount="10" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="3" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
@@ -3050,7 +3050,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="3" load="LIST_WEAPONS_ENGI" />
 	<droneList drones="3" count="2" load="LIST_DRONES_DISPARITY" />
-	<health amount="9" />
+	<health amount="10" />
 	<maxPower amount="8" />
 	<crewCount amount="1" max="3" class="engi_separatist_nano" />
 	<boardingAI>sabotage</boardingAI>
@@ -3078,7 +3078,7 @@
 		<drone name="DISPARITY_BROODMOTHERTOG_DEFEND" />
 		<drone name="REPAIR" />
 	</droneList>
-	<health amount="12" />
+	<health amount="13" />
 	<maxPower amount="8" />
 	<crewCount amount="2" max="5" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
@@ -3111,9 +3111,9 @@
 		<drone name="DISPARITY_LIBERATORTOG_BOARDER" />
 		<drone name="DRONE_MINISHROUD" />
 	</droneList>
-	<health amount="16" />
+	<health amount="18" />
 	<maxPower amount="35" />
-	<crewCount amount="3" max="7" class="engi_separatist" />
+	<crewCount amount="4" max="7" class="engi_separatist" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 </shipBlueprint>
@@ -3143,7 +3143,7 @@
 		<drone name="DISPARITY_LIBERATORTOG_BOARDER" />
 		<drone name="DDSERAPH_ARBITERTOG_BOARDER" />
 	</droneList>
-	<health amount="27" />
+	<health amount="34" />
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="disparity_engidefault" />
 	<boardingAI>sabotage</boardingAI>
@@ -3174,7 +3174,7 @@
 		<drone name="COMBAT_1_LASER" />
 		<drone name="BATTLETOG2_DEFEND" />
 	</droneList>
-	<health amount="11" />
+	<health amount="12" />
 	<maxPower amount="35" />
 	<crewCount amount="1" max="1" class="ddseraph_engi_enemy" />
 	<boardingAI>sabotage</boardingAI>
@@ -3479,7 +3479,7 @@
 		<drone name="REPAIR" />
 		<drone name="ENERGY_1_AMP2_ENEMY" />
 	</droneList>
-	<health amount="18" />
+	<health amount="19" />
 	<maxPower amount="35" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDTEMPEST_BLESSING_SHIELD_ENEMY" />
@@ -3502,7 +3502,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3527,7 +3527,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="10" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="4" count="0" />
-	<health amount="11" />
+	<health amount="13" />
 	<maxPower amount="10" />
 	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3551,7 +3551,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="9" />
+	<health amount="10" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3573,7 +3573,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="2" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
@@ -3596,7 +3596,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="3" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="3" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3620,7 +3620,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="6" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="5" count="2" load="LIST_DRONES_SHELL_SCIENCE" />
-	<health amount="10" />
+	<health amount="12" />
 	<maxPower amount="10" />
 	<crewCount amount="1" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
@@ -3642,7 +3642,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3666,7 +3666,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="10" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="4" count="0" />
-	<health amount="11" />
+	<health amount="13" />
 	<maxPower amount="10" />
 	<crewCount amount="3" max="7" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3689,7 +3689,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="9" />
+	<health amount="10" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="5" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3710,7 +3710,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="3" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
@@ -3732,7 +3732,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="3" count="0" />
-	<health amount="8" />
+	<health amount="9" />
 	<maxPower amount="9" />
 	<crewCount amount="2" max="4" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3755,7 +3755,7 @@
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="6" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="5" count="2" load="LIST_DRONES_SHELL_SCIENCE" />
-	<health amount="10" />
+	<health amount="12" />
 	<maxPower amount="10" />
 	<crewCount amount="3" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>sabotage</boardingAI>
@@ -3779,7 +3779,7 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="8" count="4" load="LIST_WEAPONS_DDSOULPLAGUE" />
 	<droneList drones="0" count="0" />
-	<health amount="10" />
+	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="2" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
@@ -3809,9 +3809,9 @@
 		<weapon name="DDSHOTGUN_SOULPLAGUE_ENEMY" />
 	</weaponList>
 	<droneList drones="6" count="0" />
-	<health amount="21" />
+	<health amount="26" />
 	<maxPower amount="35" />
-	<crewCount amount="4" max="8" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<crewCount amount="6" max="10" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
 	<aug name="UPG_TECH_BYPASS" />
@@ -3846,7 +3846,7 @@
 		<drone name="REPAIR" />
 		<drone name="DEFENSE_3_ENEMY" />
 	</droneList>
-	<health amount="27" />
+	<health amount="34" />
 	<maxPower amount="45" />
 	<crewCount amount="1" max="1" class="ddsoulplague_husk_deepone_enemy" />
 	<boardingAI>sabotage</boardingAI>
@@ -3876,7 +3876,7 @@
 		<weapon name="BOMB_FIRE_ENEMY" />
 	</weaponList>
 	<droneList drones="0" count="0" />
-	<health amount="14" />
+	<health amount="16" />
 	<maxPower amount="35" />
 	<crewCount amount="1" max="1" class="ddseraph_shell_enemy" />
 	<boardingAI>sabotage</boardingAI>
@@ -4610,7 +4610,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="9" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
 	<droneList drones="16" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="13" />
+	<health amount="14" />
 	<maxPower amount="12" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4632,7 +4632,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="11" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
 	<droneList drones="14" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="12" />
+	<health amount="13" />
 	<maxPower amount="11" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4654,7 +4654,7 @@
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="15" count="4" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
 	<droneList drones="11" count="3" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="14" />
+	<health amount="16" />
 	<maxPower amount="12" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4664,17 +4664,17 @@
 	<class>False Radiance Dwarfling</class>
 	<systemList>
 		<doors power="1" max="3" room="4" start="false" />
-		<drones power="2" max="7" room="5" start="true" />
+		<drones power="2" max="6" room="5" start="true" />
 		<engines power="1" max="3" room="3" start="true" />
 		<pilot power="2" max="3" room="2" start="true" />
 		<shields power="4" max="10" room="0" start="true" />
-		<weapons power="1" max="4" room="1" start="true" />
+		<weapons power="1" max="3" room="1" start="true" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
-	<droneSlots>4</droneSlots>
+	<droneSlots>3</droneSlots>
 	<weaponList missiles="7" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
-	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="10" />
+	<droneList drones="13" count="3" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="11" />
 	<maxPower amount="8" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4695,7 +4695,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="10" count="3" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
 	<droneList drones="15" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="11" />
+	<health amount="13" />
 	<maxPower amount="10" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4716,7 +4716,7 @@
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="10" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
 	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="10" />
+	<health amount="12" />
 	<maxPower amount="9" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4862,7 +4862,7 @@
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_TORMENTULAR" />
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_BREAKLING" />
 	</droneList>
-	<health amount="18" />
+	<health amount="21" />
 	<maxPower amount="45" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4891,7 +4891,7 @@
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_ANGELULAR" />
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_SPIRITLING" />
 	</droneList>
-	<health amount="18" />
+	<health amount="21" />
 	<maxPower amount="45" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4920,7 +4920,7 @@
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_CLUSTERULAR" />
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE_CINDERLING" />
 	</droneList>
-	<health amount="18" />
+	<health amount="21" />
 	<maxPower amount="45" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
@@ -4931,17 +4931,17 @@
 	<class>???</class>
 	<systemList>
 		<doors power="1" max="3" room="4" start="false" />
-		<drones power="2" max="8" room="5" start="true" />
+		<drones power="2" max="6" room="5" start="true" />
 		<engines power="1" max="3" room="3" start="true" />
 		<pilot power="2" max="3" room="2" start="true" />
 		<shields power="4" max="10" room="0" start="true" />
-		<weapons power="1" max="4" room="1" start="true" />
+		<weapons power="1" max="3" room="1" start="true" />
 	</systemList>
 	<weaponSlots>2</weaponSlots>
-	<droneSlots>4</droneSlots>
+	<droneSlots>3</droneSlots>
 	<weaponList missiles="7" count="2" load="GIFTLIST_DDFALSERADIANCE_WEAPONS" />
-	<droneList drones="13" count="4" load="LIST_DRONES_DDFALSERADIANCE" />
-	<health amount="10" />
+	<droneList drones="13" count="3" load="LIST_DRONES_DDFALSERADIANCE" />
+	<health amount="11" />
 	<maxPower amount="8" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
