@@ -4518,6 +4518,7 @@
 												<event>
 													<text>You watch as the Scarred waves its hand, and the shadows outside are pushed back; in their place, a new shadow takes hold... a tremendous ship, of Deep One design, approaches. Though the design is familar, the lack of lights feels unsettling... as does the lack of color.</text>
 													<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD" hostile="false"/>
+													<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 													<choice hidden="true">
 														<text>Brace yourself.</text>
 														<event>
@@ -4557,6 +4558,7 @@
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4582,6 +4584,7 @@
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4615,6 +4618,7 @@
 										<anim>infinite_hyperdeath_the_scarred</anim>
 									</backgroundObject>
 									<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO" hostile="true"/>
+									<deathEvent thisFight="true">DDDEATH_THESCARRED</deathEvent>
 									<choice hidden="true">
 										<text>Continue...</text>
 										<event load="COMBAT_CHECK"/>
@@ -4664,6 +4668,7 @@
 															<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU HARBOR... THE TRAITOR. YOU INTEND TO FIGHT. OUR LORD... INTENDS TO WIN." They end communications, and their weapons come online... all ones of dark design. The Scarred meets your gaze, and speaks, "We would do well... to not allow their weapons of evil to overwhelm our ranks. Prepare yourself, kin... and fight! For the Enlightened!" With that, it leaves the room and prepares for battle. The dreadnought approaches, and you realize it's time to do the same... to be a beacon, where the darkness festers greatest.</text>
 															<playMusic>ddtodancewithdarkness</playMusic>
 															<ship hostile="true"/>
+															<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 															<choice hidden="true">
 																<text>Continue...</text>
 																<event load="COMBAT_CHECK"/>
@@ -4697,6 +4702,7 @@
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4722,6 +4728,7 @@
 							<text>The dreadnought hails, "OUTSIDER. TRIBUTE. YOU CONVENE... WITH THE TRAITOR. YOU PLOT... OUR LORD'S UNDOING. YET, TAKE COMFORT, FOR OUR LORD... DEMANDS YOUR DEATH BE MERCIFUL." They end communications, and their weapons come online... you realize one of them is of a design unknown to you, but there's little time to ponder. The dreadnought prepares to begin its assault, and you prepare for the end.</text>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<ship hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_DREADNOUGHTOFDARKNESS</deathEvent>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>
@@ -4755,6 +4762,7 @@
 										<anim>infinite_hyperdeath_the_scarred</anim>
 									</backgroundObject>
 									<ship load="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO" hostile="true"/>
+									<deathEvent thisFight="true">DDDEATH_THESCARRED</deathEvent>
 									<choice hidden="true">
 										<text>Continue...</text>
 										<event load="COMBAT_CHECK"/>

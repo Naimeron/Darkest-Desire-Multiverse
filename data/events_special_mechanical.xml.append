@@ -21,6 +21,50 @@
 	<triggeredEvent event="DDTHEOVERSEER_UNLEASH_POWEROFANTUMBRA_CLEARWARNING" time="0.5"/>
 </event>
 
+<event name="DDDEATH_DREADNOUGHTOFDARKNESS">
+    <lose text="Tendrils wrap around what remains of your ship, and, once more... your vision fades to a sinewy black."/>
+</event>
+
+<event name="DDDEATH_THEBEHEMOTH">
+    <lose text="Your vision blurs, as the ship outside prepares to assault the Link... this is the end for you."/>
+</event>
+
+<event name="DDDEATH_SERAPHIMBOSS">
+    <lose text="As the Seraphim bear down on you, and your ship is engulfed in flames... somehow, you feel at peace."/>
+</event>
+
+<event name="DDDEATH_THEWINGS">
+    <lose text="With a burning hatred, the air around you begins to crackle... eventually, choking you out altogether."/>
+</event>
+
+<event name="DDDEATH_THEDEVOURER">
+    <lose text="You swear that you can hear a screaming in your mind... but, that doesn't matter now. Nothing does."/>
+</event>
+
+<event name="DDDEATH_ARCHANGELPROTOCOL">
+    <lose text="Here, at the end of this senseless dream... you feel that someone, somewhere, is crying out for you."/>
+</event>
+
+<event name="DDDEATH_APOTHEOSISENGINE">
+   <lose text="You hear a final, heartbroken sob as someone, somewhere, cries out for you from the dark..."/>
+</event>
+
+<event name="DDDEATH_DIVINEECHO">
+   <lose text="Such is the true price of divinity, it would seem."/>
+</event>
+
+<event name="DDDEATH_THESCARRED">
+    <lose text="Whatever... you are, I can only hope that this defeat... discourages you."/>
+</event>
+
+<event name="DDDEATH_THEHUNGERSERAPH">
+    <lose text="Did that h-h-hurt, c-caaaaptain? PROTOCOL ERROR: IT DID NOT HURT ENOUGH."/>
+</event>
+
+<event name="DDDEATH_THEHEROINE">
+    <lose text="DO YOU HEAR THAT, KIN...? THAT... is the sound of hope, triumphant."/>
+</event>
+
 <event name="DDMINISTER_IMMORTALITY_GUARANTEE">
 	<variable name="dd_minister_immortal_check" op="set" val="1"/>
 </event>

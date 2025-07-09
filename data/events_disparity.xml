@@ -5180,6 +5180,7 @@
 						<event>
 							<text>While the two of you are speaking, the colossal Disparity ship notices your arrival and hails as well. The Engi you're speaking to is... strange, and sort of... blobby. Their speech is erratic, "F-F-F-Federation, hates: hates? [LIBERATION.] Hates, hates, hates... us? SUBJECT: HINDRANCE. H-h-hindraaaance... hindrances will be-be-beee [DEVOURED.] Devoured! And we... ewweewwe WE: will be [LIBERATED.] For... for: WE: ARE THE [HUNGER.] WE: ARE THE [LIBERATOR.] SUBJECT STATUS: Dying! Dying dying d-d-dying...? Dying... dying dy-" Communications are cut, and the hulking behemoth of a ship lurches its way to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
 							<ship load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH" hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_THEBEHEMOTH</deathEvent>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -5199,6 +5200,7 @@
 						<event>
 							<text>While the two of you are speaking, the flaming ship notices your arrival and hails as well. The Engi you're speaking to is wreathed in flame, held afloat by the beating of angelic wings... they speak, "Subject: Federation. Subject status: tainted. Tainted subject protocol: purification required. Awaiting purification command." A moment passes, and they speak again; this time with much more volume and a hint of anger, "PURIFICATION: UNDERWAY. INITIATING: SCORCHED SPACE OPERATIONS." Communications are cut, and the ethereal wisp of a ship darts its way over to face you... this is it. Show them the strength of your convictions, and know you don't stand alone on the path you've chosen!</text>
 							<ship load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM" hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_SERAPHIMBOSS</deathEvent>
 							<playMusic>ddtodancewithdarkness</playMusic>
 							<choice hidden="true">
 								<text>Continue...</text>
@@ -5231,6 +5233,7 @@
 								<anim>infinite_hyperdeath_the_scarred</anim>
 							</backgroundObject>
 							<ship hostile="true"/>
+							<deathEvent thisFight="true">DDDEATH_THEHUNGERSERAPH</deathEvent>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="COMBAT_CHECK"/>

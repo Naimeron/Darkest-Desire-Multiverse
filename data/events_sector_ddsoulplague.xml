@@ -5084,6 +5084,7 @@
 														<event>
 															<text>The man ends the call, as the Shells hail you themselves, and you realize that they aren't just any Shells... massive, blazing wings sprout forth from their backs, curling around them to form what almost resembles a secondary shell. One of them speaks as you're lost in their collective magnificence, "So it is a Renegade, of thhhe Federation, thhhhat would seek to exploit thhhis fault in thhhhe seams... thhhhus is it our duty to punish thhhis insolence, and ensure thhhhat thhhis fault is closed. Burn before thhhhe light, and repent; so thhhhat thhhe taint withhhin you may be purged, and we may know peace once more!" You imagine that that'll be a stern 'no' in regards to negotiation, then... what exactly have you gotten yourself into, though? Seams? Taint? Burning? You don't like the sound of that last one in particular...</text>
 															<ship hostile="true"/>
+															<deathEvent thisFight="true">DDDEATH_SERAPHIMBOSS</deathEvent>
 															<choice hidden="true">
 																<text>Continue...</text>
 																<event>

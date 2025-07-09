@@ -18553,6 +18553,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGATEKEEPER" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18569,6 +18570,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGATEKEEPER" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18606,6 +18608,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGODCORE" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18622,6 +18625,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGODCORE" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18659,6 +18663,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGRAVEDIGGER" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18675,6 +18680,7 @@
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<playMusic>ddtodancewithdarkness</playMusic>
 			<ship load="DDRITUALS_QUESTS_LIST_DIVINEREMNANTS_FIGHT_THEGRAVEDIGGER" hostile="true"/>
+			<deathEvent thisFight="true">DDDEATH_DIVINEECHO</deathEvent>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -18789,6 +18795,7 @@
 								<event>
 									<text>Lightning arcs from the ship and only barely misses yours as you realize this strange ship is made of pure electricity... or, at least, some sort of otherworldly energy. It approaches, and another bolt of lightning streaks past your ship. Get ready!</text>
 									<ship hostile="true"/>
+									<deathEvent thisFight="true">DDDEATH_THEWINGS</deathEvent>
 									<choice hidden="true">
 										<text>Continue...</text>
 										<event load="COMBAT_CHECK"/>

@@ -208,8 +208,8 @@
 	<damage>0</damage>
 	<sp>10</sp>
 	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>18</cooldown>
+	<breachChance>10</breachChance>
+	<cooldown>21.5</cooldown>
 	<spawnCrew>
         <race>spacetear</race>
 		<name>Space Tear</name>
@@ -228,10 +228,10 @@
     </spawnCrew>
 	<crewSpawnChance>10</crewSpawnChance>
 	<erosion>                                                 
-		<speed>2</speed>
-		<maxSpeed>2</maxSpeed>
-		<time>10</time>
-		<maxTime>20</maxTime>
+		<speed>2.2</speed>
+		<maxSpeed>2.2</maxSpeed>
+		<time>5</time>
+		<maxTime>15</maxTime>
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
 		<erodeShields>false</erodeShields>
 		<roomAnim renderLayer="3">                                                    
@@ -252,9 +252,8 @@
 	<image>beam_contact</image>
 	<length>1</length>
 	<launchSounds>
-		<sound>beam1</sound>
-		<sound>beam1_2</sound>
-	</launchSounds>
+        <sound>focus_strong</sound>
+    </launchSounds>
 	<weaponArt>twilight_inexorable</weaponArt>
 	<iconImage>beam</iconImage>
 </weaponBlueprint>
@@ -6092,8 +6091,8 @@
 	<shots>2</shots>
 	<sp>2</sp>
 	<fireChance>0</fireChance>
-	<breachChance>4</breachChance>
-	<cooldown>6</cooldown>
+	<breachChance>2</breachChance>
+	<cooldown>7.5</cooldown>
 	<power>1</power>
 	<cost>110</cost>
 	<bp>2</bp>
@@ -6303,8 +6302,8 @@
 		<count>3</count>
 	</boost>
     <length>1</length>
-    <launchSounds>
-        <sound>focus_weak</sound>
+	<launchSounds>
+        <sound>focus_strong</sound>
     </launchSounds>
     <weaponArt>ddfalseradiance_focuschain</weaponArt>
     <iconImage>beam</iconImage>
@@ -6487,7 +6486,7 @@
 		<g>244</g>
 		<b>244</b>
 	</color>
-	<length>65</length>
+	<length>75</length>
 	<image>beam_contact</image>
 	<launchSounds>
 		<sound>beam2</sound>
@@ -7351,10 +7350,10 @@
 
 <weaponBlueprint name="ARTILLERY_DDAPOTHEOSIS_PORTAL_STARSPRINKLE">
 	<type>LASER</type>
-	<title>Apotheosis Star Shower</title>
-	<short>Star Shower</short>
-	<desc>A shower of stars, amongst this dreary dream... indeed, you feel your head spinning.</desc>
-	<tooltip>A shower of stars, amongst this dreary dream... indeed, you feel your head spinning.</tooltip>
+	<title>Apotheosis Star Sprinkle</title>
+	<short>Star Sprinkle</short>
+	<desc>A sprinkle of stars, amongst this dreary dream... indeed, you feel your head spinning.</desc>
+	<tooltip>A sprinkle of stars, amongst this dreary dream... indeed, you feel your head spinning.</tooltip>
 	<damage>0</damage>
 	<sysDamage>2</sysDamage>
 	<spin>720</spin>
@@ -7560,8 +7559,8 @@
 	<tooltip>Beam weapon that pierces all shields and charges quickly, but can only be fired once per combat. Has a 100% chance to spawn a Hungering Shadow for 42 seconds in every tile hit.</tooltip>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -17068,7 +17067,7 @@
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
-	<speed>8</speed>
+	<speed>20</speed>
 	<cost>65</cost>
 	<bp>3</bp>
 	<droneImage>dddrone_radiantcore_tierzero</droneImage>
@@ -17083,8 +17082,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -17273,7 +17272,7 @@
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
-	<speed>8</speed>
+	<speed>30</speed>
 	<cost>70</cost>
 	<bp>3</bp>
 	<droneImage>dddrone_radiantcore_tierone</droneImage>
@@ -17288,8 +17287,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -17478,7 +17477,7 @@
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
-	<speed>6</speed>
+	<speed>40</speed>
 	<cost>75</cost>
 	<bp>3</bp>
 	<droneImage>dddrone_radiantcore_tiertwo</droneImage>
@@ -17493,8 +17492,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -17683,7 +17682,7 @@
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
-	<speed>4</speed>
+	<speed>50</speed>
 	<cost>80</cost>
 	<bp>3</bp>
 	<droneImage>dddrone_radiantcore_tierthree</droneImage>
@@ -17698,8 +17697,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -17903,8 +17902,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -18125,8 +18124,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -18347,8 +18346,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -18569,8 +18568,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -18791,8 +18790,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -19013,8 +19012,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -19235,8 +19234,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -19457,8 +19456,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -19679,8 +19678,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -19901,8 +19900,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -20123,8 +20122,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -20345,8 +20344,8 @@
 	<short>Radiant Core Beam</short>
 	<damage>0</damage>
 	<erosion>
-		<speed>0.2</speed>
-		<maxSpeed>0.2</maxSpeed>
+		<speed>0.3</speed>
+		<maxSpeed>0.3</maxSpeed>
 		<time>25</time>
 		<maxTime>25</maxTime>
 		<systemRepairMultiplier>0.75</systemRepairMultiplier>
@@ -24704,7 +24703,7 @@
 			</slot>
 		</shields>
 		<teleporter power="1" room="7" start="true" />
-		<weapons max="8" power="1" room="12" start="false" img="room_ddweapons_1">
+		<weapons max="8" power="2" room="12" start="false" img="room_ddweapons_1">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -24823,7 +24822,7 @@
 			</slot>
 		</doors>
 		<drones max="8" power="2" room="2" start="true" img="room_drones_14" />
-		<engines power="1" room="2" start="true" img="room_engines_10">
+		<engines power="1" room="1" start="true" img="room_engines_10">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -24857,7 +24856,7 @@
 		</shields>
 		<teleporter power="1" room="3" start="false" />
 		<dd_corruptor power="1" room="15" start="true" img="room_ddcorruptor_23" />
-		<weapons max="8" power="1" room="13" start="false" img="room_weapons_8">
+		<weapons max="8" power="2" room="13" start="false" img="room_weapons_8">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -25154,7 +25153,7 @@
 				<number>-2</number>
 			</slot>
 		</sensors>
-		<shields power="1" max="8" room="8" start="false" img="room_shields_4">
+		<shields power="2" max="8" room="8" start="false" img="room_shields_4">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -25231,7 +25230,7 @@
 				<number>-2</number>
 			</slot>
 		</sensors>
-		<shields power="1" max="8" room="14" start="false" img="room_shields_11">
+		<shields power="2" max="8" room="14" start="false" img="room_shields_11">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
@@ -25248,11 +25247,11 @@
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>3</droneSlots>
-	<weaponList missiles="8" count="3">
+	<weaponList missiles="11" count="3">
 		<weapon name="DDFALSERADIANCE_BREACHBEAM" />
-		<weapon name="BOMB_HEAL_SYSTEM" />
+		<weapon name="BOMB_HEAL_SYSTEM_STRONG" />
 	</weaponList>
-	<droneList drones="11" count="3">
+	<droneList drones="13" count="3">
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERTWO_WARLOCKULAR" />
 	</droneList>
 	<health amount="15" />
@@ -25284,7 +25283,7 @@
 			</slot>
 		</doors>
 		<drones power="2" max="8" room="10" start="false" img="room_drones_14" />
-		<engines power="3" room="1" start="true" img="room_ddengines_tome">
+		<engines power="2" room="1" start="true" img="room_ddengines_tome">
 			<slot>
 				<direction>down</direction>
 				<number>3</number>
@@ -25310,7 +25309,7 @@
 				<number>-2</number>
 			</slot>
 		</sensors>
-		<shields power="1" max="8" room="2" start="false" img="room_shields_3">
+		<shields power="2" max="8" room="2" start="false" img="room_shields_3">
 			<slot>
 				<direction>left</direction>
 				<number>2</number>
@@ -25331,7 +25330,7 @@
 	<weaponList missiles="12" count="4" />
 	<droneList drones="12" count="2" />
 	<health amount="10" />
-	<maxPower amount="5" />
+	<maxPower amount="4" />
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1" />
 	<aug name="DARKGOD_CURSED_BOOK" />
 	<aug name="DDFALSERADIANCE_DIVINEGIMMICK_SPARK" />
@@ -25544,7 +25543,7 @@
 		</shields>
 		<teleporter power="1" room="13" start="false" />
 		<dd_corruptor power="1" room="10" start="false" img="room_ddcorruptor_7" />
-		<weapons max="8" power="1" room="15" start="false" img="room_weapons_11">
+		<weapons max="8" power="2" room="15" start="false" img="room_weapons_11">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -25991,7 +25990,7 @@
 		</shields>
 		<teleporter power="1" room="1" start="true" />
 		<dd_corruptor power="1" room="15" start="false" img="room_ddcorruptor_25" />
-		<weapons power="1" max="8" room="0" start="false" img="room_weapons_11">
+		<weapons power="2" max="8" room="0" start="false" img="room_weapons_11">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -26064,7 +26063,7 @@
 		</shields>
 		<teleporter power="1" room="13" start="false" />
 		<dd_corruptor power="1" room="12" start="false" img="room_ddcorruptor_12" />
-		<weapons max="8" power="1" room="11" start="false" img="room_weapons_11">
+		<weapons max="8" power="2" room="11" start="false" img="room_weapons_11">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
@@ -26205,7 +26204,7 @@
 				<number>0</number>
 			</slot>
 		</sensors>
-		<shields max="4" power="1" room="11" start="false" img="room_shields_ddhorror_1">
+		<shields max="4" power="2" room="11" start="false" img="room_shields_ddhorror_1">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
@@ -26278,7 +26277,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields max="4" power="1" room="4" start="false" img="room_shields_11">
+		<shields max="4" power="2" room="4" start="false" img="room_shields_11">
 			<slot>
 				<direction>down</direction>
 				<number>1</number>
@@ -26349,7 +26348,7 @@
 				<number>1</number>
 			</slot>
 		</sensors>
-		<shields max="4" power="1" room="5" start="false" img="room_shields">
+		<shields max="4" power="2" room="5" start="false" img="room_shields">
 			<slot>
 				<direction>left</direction>
 				<number>0</number>
@@ -26357,7 +26356,7 @@
 		</shields>
 		<teleporter power="1" room="4" start="true" />
 		<dd_corruptor power="1" room="16" start="false" img="room_ddcorruptor_14" />
-		<weapons max="8" power="1" room="1" start="false" img="room_weapons_8">
+		<weapons max="8" power="2" room="1" start="false" img="room_weapons_8">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
