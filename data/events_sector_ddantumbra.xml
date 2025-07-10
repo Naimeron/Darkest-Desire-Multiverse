@@ -3570,7 +3570,7 @@
 <event name="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_3_1">
 	<backgroundObject name="DDANTUMBRA_EXIT_THETHIRD_SLUMBERINGCRY">
 		<layer z="0">front</layer>
-		<spawnArea x="9" y="500" w="0" h="0"/>
+		<spawnArea x="21" y="294" w="0" h="0"/>
 		<anim>ddslumberingcry_decor_1</anim>
 	</backgroundObject>
 </event>
@@ -3655,11 +3655,13 @@
 	</backgroundObject>
 </event>
 
-<eventList name="DDANTUMBRA_EXIT_GENESISPOWER_LIST">
-	<event load="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GATEKEEPER"/>
-	<event load="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GRAVEDIGGER"/>
-	<event load="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GODCORE"/>
-</eventList>
+<event name="DDANTUMBRA_EXIT_GENESISPOWER_LIST">
+	<loadEventList seeded="false">
+		<event name="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GATEKEEPER"/>
+		<event name="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GRAVEDIGGER"/>
+		<event name="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GODCORE"/>
+	</loadEventList>
+</event>
 
 <event name="DDANTUMBRA_EXIT_GENESISPOWER_LIST_CALLTOTHE_GATEKEEPER">
 	<text>W E
@@ -4733,7 +4735,7 @@
 																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_3" minTime="6" maxTime="7" thisFight="true" loops="999999"/>
 																											<triggeredEvent event="DDANTUMBRA_EXIT_GENESISPOWER_LIST" minTime="20" maxTime="20" thisFight="true" loops="999999">
 																												<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
-																													<warning time="2.5" flash="true"/>
+																													<warning time="2" flash="true"/>
 																													<tooltip>Archangel Protocol: GENESIS seems to be preparing something...</tooltip>
 																												</triggeredEventBox>
 																												<timerSounds load="DEFAULT_TIMER_SOUNDS"/>

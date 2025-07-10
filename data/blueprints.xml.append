@@ -21717,7 +21717,7 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="unique_thescarred">
-	<desc>This Deep One has been forsaken by his kind and their Dark God, yet he's taken the power to resist both for himself.
+	<desc>This Deep One has been forsaken by both their kind and their Dark God, and yet... it seems that, somehow, they've taken the power to resist both for themself.
 	
 	Inherited Deep One stats: 140 health, 40% slower movement, 60% suffocation resistance and 1.4x fire weakness</desc>
 	<title>Forsaken</title>
@@ -21730,7 +21730,7 @@
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="unique_thescarredascended">
-	<desc>This Deep One has been FOR-SA-K-EN by his kind and their FA-LS-E God, yet he's taken the power to ASCE-ND for himself.
+	<desc>This Deep One has been FOR-SA-K-EN by both their kind and their FA-LS-E God, and yet... it seems that, somehow, they've taken the power to ASCE-ND for themself.
 	
 	Inherited Deep One stats: I A-M SO MU-C-H M-ORE NO-W</desc>
 	<title>ASCENDED</title>
@@ -27285,6 +27285,13 @@
 <augBlueprint name="DDLIGHTBORNE_ANTUMBRALMIRROR">
 	<title>Antumbral Mirror</title>
 	<desc>A seemingly ordinary, fogged mirror found within the possession of Archangel Protocol: GENESIS. The reasoning behind the Archangel's obsession with it remains a mystery...</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING">
+	<title>Super Defense Scrambler RAGHHH</title>
+	<desc>I am, genuinely, STILL so in shock that MV's enemy Defense Scrambler relies on hacking.</desc>
 	<cost>10</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
