@@ -4733,7 +4733,7 @@
 							<choice hidden="true">
 								<text>Tainted One?</text>
 								<event>
-									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator, Tempest, Divinity..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY OWN, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
+									<text>They continue, "Tainted One's names: innumerous... relevant database results: Tainted One, Dark One, Dark God, Liberator, Tempest, Divinity, Father..." it pauses, "...subsequent database entries: corrupted. Source of corruption: unknown; deemed irrelevant. Seraphim directive updated: bide time. Federation: aligned with Seraphim directive." Before it can continue, the flames wreathing the Seraph intensify, and an unfamiliar and ethereal voice speaks from it, "YOU HAVE ONE OF MY OWN, RENEGADE. WIELD IT WELL. I WILL BE WATCHING OVER BOTH OF YOU." The voice's divine embrace fades, and the Seraph's flames calm once more. You're not privy to the implications, but... you suppose, at least for now, that everything is over. Even though the Link is lost, the Seraph appears to hold out hope for something... you decide you'll hold out hope, too.</text>
 									<crewMember amount="1" class="ddseraph_engi" all_skills="2">Sunday</crewMember>
 									<choice hidden="true">
 										<text>Let's head out, then!</text>
@@ -5049,35 +5049,39 @@
 </event>
 
 <ship name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO" auto_blueprint="DISPARITY_ENGI_BEHEMOTHDETERMINATION">
-	<triggeredEvent event="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_SETTHESEASABLAZE" enemyHull="13" thisFight="true" clearOnJump="true"/>
+	<triggeredEvent event="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_SETTHESEASABLAZE" enemyHull="8" thisFight="true" clearOnJump="true"/>
 	<destroyed>
-		<text>Even after all of that, they still fall. Can anything stop you?</text>
+		<text>Even after all of that, they STILL fall. Hah, haha! Oh, can anything stop you...?</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_WIN"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
-		<text>Even after all of that, they still fall. Can anything stop you?</text>
-		<autoReward level="HIGH">standard</autoReward>
-		<recallBoarders/>
-		<enemyDamage amount="999"/>
-		<choice hidden="true">
-			<text>Continue...</text>
-			<event load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_WIN"/>
-		</choice>
-	</deadCrew>
+	<deadCrew load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_CREWKILL"/>
 </ship>
+
+<event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_CREWKILL">
+	<text>Thinking the two Engi dead, a part of you feels the urge to maniacally laugh... but you've chosen to celebrate too soon. From their remains, the amorphous one regenerates...</text>
+	<boarders min="1" max="1" class="unique_thehunger_enemy"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and, from their own ashes, the angelic one simply reappears. Hah... haha! Oh, how that truly freeing laugh will have to wait...</text>
+			<boarders min="1" max="1" class="ddseraph_engi_enemy"/>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
 
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_SETTHESEASABLAZE">
 	<text>You pick up chatter on the comms as the two Engi speak in sync again, "LIKE MOTHS TO A FLAME, LIFE BEGETS DEATH..." they pause, "...UNTIL EVERYTHING BURNS TO [ASHES!]" A flaming shockwave bursts forth from the ship, restoring their hull and setting your systems ablaze... just what the hell are they?</text>
-	<enemyDamage amount="-7"/>
+	<enemyDamage amount="-12"/>
 	<damage amount="0" effect="fire" system="random" damageHull="false"/>
-	<damage amount="0" effect="fire" system="random" damageHull="false"/>
+	<damage amount="0" effect="breach" system="random" damageHull="false"/>
 	<damage amount="0" effect="fire" system="room" damageHull="false"/>
-	<damage amount="0" effect="fire" system="room" damageHull="false"/>
-	<damage amount="0" effect="fire" system="room" damageHull="false"/>
+	<damage amount="0" effect="breach" system="room" damageHull="false"/>
+	<damage amount="0" effect="breach" system="room" damageHull="false"/>
 </event>
 
 <event name="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_WIN">

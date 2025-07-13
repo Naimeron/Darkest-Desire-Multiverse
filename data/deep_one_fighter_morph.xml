@@ -7,10 +7,10 @@
 	<cloak x="0" y="0" />
 </offsets>
 <weaponMounts>
-	<mount x="386" y="72" rotate="false" mirror="false" gib="-1" slide="up" />
-	<mount x="337" y="57" rotate="false" mirror="false" gib="-1" slide="up" />
-	<mount x="108" y="57" rotate="false" mirror="true" gib="-1" slide="up" />
-	<mount x="63" y="71" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="386" y="72" rotate="false" mirror="false" gib="-1" slide="right" />
+	<mount x="337" y="57" rotate="false" mirror="false" gib="-1" slide="right" />
+	<mount x="108" y="57" rotate="false" mirror="true" gib="-1" slide="left" />
+	<mount x="63" y="71" rotate="false" mirror="true" gib="-1" slide="left" />
 </weaponMounts>
 <explosion />
 

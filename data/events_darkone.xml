@@ -763,6 +763,7 @@
 					<text>There's a feeling of being pulled, as you're torn away from the pedestal - away from everything...
 					
 					...and, with a thud, you find yourself back aboard your ship. More specifically, on your back, against the floor. Had that all, just... been in your head?</text>
+					<achievement>ACH_EVENT_DDTHEPROPHECY</achievement>
 					<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
 					<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
 						<layer z="0">background</layer>

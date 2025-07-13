@@ -71,6 +71,13 @@
 					However, it's also worth noting two things about the Archangels... firstly, their crystalline armor - if you try to break it too fast, you're just going to be swarmed by their enslaved Shadows. Unless you have the means to take on a small army, I'd be tactical with your strikes. Secondly, something that applies to all members of the False Radiance - it is NOT safe to board them with several people at once. Something about that... weird, ethereal glow of theirs makes things destabilize rapidly when sharing a room with each other.
 					
 					Well, that's everything I can think to share - I believe in you! Give it hell for me, won't you?!</text>
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
+							<warning time="5.0" flash="true"/>
+							<tooltip>The Archangel is channeling divine, defensive energy - you have this long until it protects itself with a powerful Energy Shield.</tooltip>
+						</triggeredEventBox>
+					</triggeredEvent>
 					<choice hidden="true">
 						<text>Visualize combat - an act to be prepared for.</text>
 						<event load="COMBAT_CHECK"/>
@@ -3215,6 +3222,13 @@
 					<text>Archangel Protocol: GRAVEDIGGER... its entourage of Lightborne and key-system both rely on the manipulation of life - it will try to overwhelm you with powerful, self-sustaining Lightborne while simultaneously overcoming your defenses with formidable weapons-fire. If you can prevent anything, it should be the propagation of its Devourluxes - the longer they're allowed to live and eat other Lightborne, the stronger they'll get!</text>
 					<ship load="DDANTUMBRA_GRAVEDIGGERLOCATION_FIGHT" hostile="true"/>
 					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
+							<warning time="5.0" flash="true"/>
+							<tooltip>The Archangel is channeling divine, defensive energy - you have this long until it protects itself with a powerful Energy Shield.</tooltip>
+						</triggeredEventBox>
+					</triggeredEvent>
 					<playSound>ddarchangelprotocol_arrival</playSound>
 					<choice hidden="true">
 						<text>Visualize combat - an act to be prepared for.</text>
@@ -3314,6 +3328,13 @@
 					<text>Archangel Protocol: GODCORE... its entourage of Lightborne and key-system both rely on creating chaos and causing havoc - it will try to prevent you from putting out the fires it starts with excessive distractions, while simultaneously beating down your Shields and letting its powerful Laser weapon chain. If you can prevent anything, it should be that - do not let your Shields fall, and stop its Laser weapon if they do!</text>
 					<ship load="DDANTUMBRA_GODCORELOCATION_FIGHT" hostile="true"/>
 					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
+							<warning time="5.0" flash="true"/>
+							<tooltip>The Archangel is channeling divine, defensive energy - you have this long until it protects itself with a powerful Energy Shield.</tooltip>
+						</triggeredEventBox>
+					</triggeredEvent>
 					<playSound>ddarchangelprotocol_arrival</playSound>
 					<choice hidden="true">
 						<text>Visualize combat - an act to be prepared for.</text>
@@ -3691,6 +3712,7 @@
 			I L L U S I O N !</text>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<superDrones name="DDANTUMBRA_GENESIS_GATEKEEPER_TEAMUP"/>
+			<superShields player="false" amount="12"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="ach_boss_ddarchangelprotocol_gatekeeper" lvl="1" blue="false">
@@ -3737,6 +3759,7 @@
 			I L L U S I O N !</text>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<superDrones name="DDANTUMBRA_GENESIS_GRAVEDIGGER_TEAMUP"/>
+			<superShields player="false" amount="12"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="ach_boss_ddarchangelprotocol_gravedigger" lvl="1" blue="false">
@@ -3783,6 +3806,7 @@
 			I L L U S I O N !</text>
 			<playSound>ddarchangelprotocol_arrival</playSound>
 			<superDrones name="DDANTUMBRA_GENESIS_GODCORE_TEAMUP"/>
+			<superShields player="false" amount="12"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="ach_boss_ddarchangelprotocol_godcore" lvl="1" blue="false">
@@ -4137,7 +4161,7 @@
 				<text>Visualize a move - that which must be made next, if one is to preserve this fantasy.</text>
 				<event>
 					<text>Indeed, the Lightborne need their overseer now more than ever... they vowed everything away, only for it to forcefully given back. Oh, that heinous GENESIS! It's lucky that I find the new colors here so, ah... glorious, truly. Otherwise, I'd have Father do something about it! Though, speaking of Father... he seemed to have some intentions, Archslayer.</text>
-					<choice hidden="true" req="LIST_CREW_DDTHESHADEFORMS" lvl="1" blue="false">
+					<choice hidden="true">
 						<text>Visualize an intention - left mysterious, and up for interpretation.</text>
 						<event>
 							<text>While I can't say to understand his motives myself, he seemed to take a spontaneous liking to you... as anyone should, in your presence! Truly, I see no greater path forward than by your side - after all, you are now the Bladebearer. For the timing being, we can attend to matters in other clusters. Understand, though, that I will have to return here, to guide the Lightborne forward in this time of turmoil... t-temporarily, of course! I could never dream of abandoning your side.</text>
@@ -4734,7 +4758,7 @@
 																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_2" minTime="2" maxTime="3" thisFight="true" loops="999999"/>
 																											<triggeredEvent event="DDANTUMBRA_EXIT_SLUMBERINGCRIES_LIST_3" minTime="6" maxTime="7" thisFight="true" loops="999999"/>
 																											<triggeredEvent event="DDANTUMBRA_EXIT_GENESISPOWER_LIST" minTime="20" maxTime="20" thisFight="true" loops="999999">
-																												<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+																												<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
 																													<warning time="2" flash="true"/>
 																													<tooltip>Archangel Protocol: GENESIS seems to be preparing something...</tooltip>
 																												</triggeredEventBox>

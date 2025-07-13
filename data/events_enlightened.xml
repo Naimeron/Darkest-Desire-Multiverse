@@ -4369,30 +4369,35 @@
 </ship>
 
 <ship name="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO" auto_blueprint="DREADNOUGHT_OF_HOPESANDDREAMS">
-	<triggeredEvent event="DDTRUEHERO_LASTSTAND" enemyHull="6" thisFight="true" clearOnJump="true"/>
+	<triggeredEvent event="DDTRUEHERO_LASTSTAND" enemyHull="8" thisFight="true" clearOnJump="true"/>
 	<destroyed>
-		<text>Despite its determination, the hero falls... were its efforts all for naught?</text>
+		<text>It falls, it falls, and it falls again... and yet, here you stand - alive! Aren't you something special...?</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO_WIN"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
-		<text>Despite its determination, the hero falls... were its efforts all for naught?</text>
-		<autoReward level="HIGH">standard</autoReward>
-		<recallBoarders/>
-		<choice hidden="true">
-			<text>Continue...</text>
-			<event load="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO_WIN"/>
-		</choice>
-	</deadCrew>
+	<deadCrew load="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO_CREWKILL"/>
 </ship>
+
+<event name="ENLIGHTENED_EXIT_DREADNOUGHT_TRUEHERO_CREWKILL">
+	<text>You think you've finally claimed victory, when a surge of energy bursts forth from what remains of the hero - somehow, it's only standing back up...</text>
+	<boarders min="1" max="1" class="unique_thescarred"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...along with a portion of its hopeful entourage. This feeling, coursing through your veins... now THIS is what it feels like to fight to the death!</text>
+			<boarders min="2" max="3" class="deepone"/>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
 
 <event name="DDTRUEHERO_LASTSTAND">
 	<text>As the hero falters, it steadies itself, "N-not... so fast! I refuse... to DIE, to let... the UNIVERSE DIE!" You watch as Deep Ones materialize from the darkness itself, and the enemy ship has its wounds mended...</text>
-	<enemyDamage amount="-5"/>
-	<boarders min="2" max="2" class="deepone"/>
+	<enemyDamage amount="-12"/>
+	<boarders min="2" max="3" class="deepone"/>
 </event>
 
 <event name="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD_WIN">

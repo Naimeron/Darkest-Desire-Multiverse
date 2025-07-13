@@ -23,6 +23,7 @@
 <text name="map_icon_ddarchangel_genesis">GENESIS [EXIT]</text>
 <text name="hack_dd_corruptor">Temporarily shut down the Corruptor's functionality, preventing additional Tides from spawning.</text>
 <text name="dd_corruptor">the Corruptor</text>
+<text name="dd_corruptor_installed">Corruptor System installed</text>
 <text name="tooltip_soulplague">You're being assaulted by a Soulplague mass. As long as it remains agitated, it will periodically assault your ship.</text>
 <text name="tooltip_soulplague_allies">You're within a Soulplague mass. It will periodically assault the enemy ship.</text>
 <text name="warning_ddsoulplague_mass_hazard_text">SOULPLAGUE ASSAULT\nIMMINENT</text>

@@ -3085,6 +3085,13 @@
 					<crewMember amount="1" class="ddhuman_sacrifice"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+				<text>(Living Lightborne) I am greater, for I pursue the Odes to Light and Dark, dolt.</text>
+				<event>
+					<text>The citizen gasps, "The aged, faded texts?! I've caught myself futilely trying to make sense of what little remains of their ink myself... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+					<crewMember amount="1" class="ddhuman_sacrifice"/>
+				</event>
+			</choice>
 			<choice hidden="true">
 				<text>I simply pursue the Beginner's Guide to the Occult.</text>
 				<event>
