@@ -55,7 +55,7 @@ This enemy ship and its strange inhabitants emanate an ominous fog. Should your 
 		<mod-append:shipIcon>
 	        <name>icon_ddresplendent_lifeform</name>
             <tooltip>RESPLENDENT LIFEFORM:
-This enemy ship is a strange, living creature. It will repair its wounds, in the form of sealing breaches, and its rooms are under the effects of Radiant Desecration. This effect damages your crew for 1hp/s, hinders their combat damage/movement speed/sabotage speed by 20% and allows their strange, summoned entities to exist unimpeded. Lastly, your crew aboard this ship threaten to unmake each other - each one passively damaging their nearby allies for 6hp/s.</tooltip>
+This enemy ship is a strange, living creature. It will repair its wounds 5x faster than other Auto-ships, in addition to sealing breaches, and its rooms are under the effects of Radiant Desecration. This effect damages your crew for 1hp/s, hinders their combat damage/movement speed/sabotage speed by 20% and allows their bizarre, summoned entities to exist unimpeded. Lastly, your crew aboard this ship threaten to unmake each other - each one passively damaging their nearby allies for 6hp/s.</tooltip>
 		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 	        <name>icon_ddsuper_scrambler</name>
@@ -1430,6 +1430,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<shipIcons>
 			<shipIcon>icon_deep_one_lights</shipIcon>
 			<shipIcon>icon_majorthreat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 		</shipIcons>
 		<rooms>
 			<room id="0">
@@ -1483,8 +1484,10 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_1x2</roomAnim>
 			</room>
 			<room id="12">
-				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
+				<roomAnim renderLayer="0">resist_2x2</roomAnim>
 				<roomAnim renderLayer="3">dddeepone_lights_blue_tileeffect_2x2</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 			<room id="13">
 				<roomAnim renderLayer="0">dddeepone_floor_tileeffect_2x2</roomAnim>
@@ -1621,6 +1624,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<shipIcons>
 			<shipIcon>icon_radiant_flames</shipIcon>
 			<shipIcon>icon_majorthreat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 		</shipIcons>
 		<rooms>
 			<room id="0">
@@ -2485,6 +2489,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2493,6 +2498,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
                 <roomAnim renderLayer="3">ionresist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -2505,6 +2515,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2513,6 +2524,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
                 <roomAnim renderLayer="3">ionresist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -2525,6 +2541,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2533,6 +2550,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
                 <roomAnim renderLayer="3">ionresist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -2544,6 +2566,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_auto</shipIcon>
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2552,6 +2575,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
                 <roomAnim renderLayer="3">ionresist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -2563,6 +2591,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_auto</shipIcon>
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2571,6 +2600,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
                 <roomAnim renderLayer="3">ionresist_icon</roomAnim>
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
 		<noFuelStalemate/>
@@ -2582,6 +2616,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<shipIcon>icon_auto</shipIcon>
 			<shipIcon>icon_ddresplendent_lifeform</shipIcon>
 			<shipIcon>icon_disparity_crystal_armor</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 			<shipIcon>icon_ionresist</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2591,6 +2626,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<sysDamageResistChance>100</sysDamageResistChance>
 				<ionDamageResistChance>100</ionDamageResistChance>
 			</room>
+			<room id="1">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
 		</rooms>
 		<noFuelStalemate/>
 		<noJump/>
@@ -2599,6 +2639,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<shipIcons>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 			<shipIcon>icon_majorthreat</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
 		</shipIcons>
 		<rooms>
 			<room id="0">
@@ -2626,10 +2667,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<roomAnim renderLayer="0">ddsoulplague_gas_effect_2x1</roomAnim>
 			</room>
 			<room id="8">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
 				<roomAnim renderLayer="0">ddsoulplague_gas_effect_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 			<room id="9">
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
 				<roomAnim renderLayer="0">ddsoulplague_gas_effect_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 			<room id="10">
 				<roomAnim renderLayer="0">ddsoulplague_gas_effect_2x2</roomAnim>
@@ -6758,6 +6805,32 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<deathSounds>
 			<deathSound>ancientDeath</deathSound>
 		</deathSounds>
+		<passiveStatBoosts>  
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<spacetear/>
+				</whiteList>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<spacetear/>
+				</whiteList>
+			</statBoost>
+		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>3</cooldown>
 			<powerSounds>
@@ -6860,7 +6933,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</req>
 			<buttonText>ASCEND</buttonText>
 			<tooltip>[COOLDOWN:120s  DURATION:21s]
-			Tricks the Dark God into tearing their soul asunder, sending it on a rampage as a tear in space-time with hull/system damage, ion damage, stuns, breaches, ship-wide debuffs, and an explosion on death.
+			Tricks the Dark God into tearing their soul asunder, sending it on a rampage as a tear in space-time with hull/system damage, ion damage, stuns, breaches, ship-wide debuffs, and an explosion on death. Will deal friendly fire to ally crew, but not to your ship itself.
 			Whilst rampaging, their physical form is immobile and defenseless.
 			The strain on space-time disallows teleportation until the split ends.</tooltip>
 			<cooldownColor r="169" g="255" b="254"/>
@@ -6939,6 +7012,30 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>true</affectsSelf>
 				<priority>1000</priority>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<unique_thescarredascended/>
+				</whiteList>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<unique_thescarredascended/>
+				</whiteList>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>3</cooldown>
@@ -6946,7 +7043,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>smallExplosion</powerSound>
 			</powerSounds>
 			<friendlyFire>true</friendlyFire>
-			<shipFriendlyFire>true</shipFriendlyFire>
+			<shipFriendlyFire>false</shipFriendlyFire>
 			<damage>1</damage>
 			<ion>2</ion>
 			<stun>10</stun>
@@ -6968,11 +7065,12 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<sysDamage>2</sysDamage>
 			<fireChance>10</fireChance>
 			<friendlyFire>true</friendlyFire>
-			<shipFriendlyFire>true</shipFriendlyFire>
+			<shipFriendlyFire>false</shipFriendlyFire>
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="blobdeepone">
 		<maxHealth>105</maxHealth>
+		<crewSlots>0.5</crewSlots>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
 		<canSuffocate>false</canSuffocate>
@@ -34538,7 +34636,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							<cooldown>3</cooldown>
 							<jumpCooldown>reset</jumpCooldown>
 							<req>
-								<minHealth>5</minHealth>
+								<minHealth>35</minHealth>
 								<inCombat/>
 							</req>
 							<powerSounds>
@@ -35269,7 +35367,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							<cooldown>3</cooldown>
 							<jumpCooldown>reset</jumpCooldown>
 							<req>
-								<minHealth>5</minHealth>
+								<minHealth>35</minHealth>
 								<inCombat/>
 							</req>
 							<powerSounds>
@@ -38350,7 +38448,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</skills>
 	</mod-append:race>
 	<mod-append:race name="dddark_obelisk">
-		<maxHealth>800</maxHealth>
+		<maxHealth>900</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
@@ -38429,16 +38527,40 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<dddark_obelisk/>
 				</whiteList>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<dddark_obelisk/>
+				</whiteList>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<dddark_obelisk/>
+				</whiteList>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>9</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>vanceShoot</powerSound>
 			</powerSounds>
 			<event load="DDDARK_OBELISK_LIST"/>
 			<buttonText>CHANNEL</buttonText>
-			<tooltip>[COOLDOWN:9s  DURATION: 3s]
+			<tooltip>[COOLDOWN:8s  DURATION: 3s]
 				Acts as a conduit for the Dark God's twisted energy, manifesting a bolt of random chaos and placing a healing/vulnerability aura in the current room.</tooltip>
 			<cooldownColor r="44" g="7" b="21"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -38464,7 +38586,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
-					<affectsSelf>false</affectsSelf>
+					<affectsSelf>true</affectsSelf>
 					<priority>10002</priority>
 					<duration>3</duration>
 					<maxStacks>1</maxStacks>
@@ -38474,7 +38596,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="dddark_obelisk_enemy">
-		<maxHealth>800</maxHealth>
+		<maxHealth>900</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
@@ -38540,16 +38662,40 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<dddark_obelisk_enemy/>
 				</whiteList>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<dddark_obelisk_enemy/>
+				</whiteList>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList>
+					<dddark_obelisk_enemy/>
+				</whiteList>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>9</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>vanceShoot</powerSound>
 			</powerSounds>
 			<event load="DDDARK_OBELISK_LIST_ENEMY"/>
 			<buttonText>CHANNEL</buttonText>
-			<tooltip>[COOLDOWN:9s  DURATION: 3s]
+			<tooltip>[COOLDOWN:8s  DURATION: 3s]
 				Acts as a conduit for the Dark God's twisted energy, manifesting a bolt of random chaos and placing a healing/vulnerability aura in the current room.</tooltip>
 			<cooldownColor r="44" g="7" b="21"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -38575,7 +38721,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
-					<affectsSelf>false</affectsSelf>
+					<affectsSelf>true</affectsSelf>
 					<priority>10002</priority>
 					<duration>3</duration>
 					<maxStacks>1</maxStacks>
@@ -46806,6 +46952,109 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</statBoosts>
 		<locked/>
 	</aug>
+	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_ENEMYDIVINITY">
+		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
+		<superShield>
+			<value>0</value>
+			<color r="241" g="241" b="241" a="0.5"/>
+			<shieldImage>ship/enemy_shields_white.png</shieldImage>
+		</superShield>
+		<statBoosts>
+			<statBoost name="statBoost">
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-6.0</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<boostAnim>ddstorm_omen_debuff</boostAnim>
+				</statBoost>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks>1</maxStacks>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>4.0</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationHealingBuff">1</maxStacks>
+				<priority>10001</priority>
+				<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
+			</statBoost>
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>4</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationDamageBuff">1</maxStacks>
+				<priority>-99999</priority>
+				<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
+			</statBoost>
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>4</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationSabotageBuff">1</maxStacks>
+				<priority>-99999</priority>
+				<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>4</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationSpeedBuff">1</maxStacks>
+				<priority>-99999</priority>
+				<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-1.0</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationDOTDebuff">1</maxStacks>
+				<priority>10001</priority>
+				<boostAnim>ddradiantdesecration_debuff</boostAnim>
+			</statBoost>
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.8</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationDamageDebuff">1</maxStacks>
+				<priority>10001</priority>
+			</statBoost>
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.8</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationSabotageDebuff">1</maxStacks>
+				<priority>10001</priority>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.8</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<maxStacks id="ddRadiantDesecrationSpeedDebuff">1</maxStacks>
+				<priority>10001</priority>
+			</statBoost>
+		</statBoosts>
+		<locked/>
+	</aug>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM_DIVINEGIMMICK_TIER1">
 		<function name="SLUG_GEL" value="0.25" useForReqs="false"/>
 		<superShield>
@@ -48358,6 +48607,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<icon>ach_event_ddotherworldlytomegrabbed</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
+			<achievement name="ACH_EVENT_DDTHEPROPHECY">
+				<secretName>???</secretName>
+				<secretDescription>Receive the grim visage of an inevitable future.</secretDescription>
+				<name>That Fated Day</name>
+				<description>Gaze upon the Dark God's Prophecy - its foretelling of everything's end.</description>
+				<icon>ach_event_ddtheprophecy</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
 			<achievement name="ACH_EVENT_DDTHEANTUMBRALPLANE">
 				<secretName>???</secretName>
 				<secretDescription>Escape the confines of reality, and reach somewhere new altogether.</secretDescription>
@@ -48406,6 +48663,10 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<icon>ach_event_ddtodesiredivinity</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
+		</section>
+	</mod-append:page>
+	<mod-append:page>
+		<section text="Darkest Achievements (Cont.)" hidden="false">
 			<achievement name="ACH_EVENT_DDCORRUPTORMAX">
 				<secretName>???</secretName>
 				<secretDescription>Increase the Corruptor system's level to its maximum.</secretDescription>
@@ -48414,10 +48675,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<icon>ach_event_ddcorruptormax</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>
-		</section>
-	</mod-append:page>
-	<mod-append:page>
-		<section text="Darkest Achievements (Cont.)" hidden="false">
 			<achievement name="ACH_EVENT_DISPARITYBEHEMOTH">
 				<secretName>???</secretName>
 				<secretDescription>Side with an angel, and quell the darkness.</secretDescription>

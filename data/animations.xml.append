@@ -13670,7 +13670,7 @@
 	<time>1.0</time>
 </anim>
 
-<animSheet name="ddobelisk_aura" w="210" h="35" fw="35" fh="35">people/ddobelisk_aura.png</animSheet>
+<animSheet name="ddobelisk_aura" w="245" h="35" fw="35" fh="35">people/ddobelisk_aura.png</animSheet>
 <anim name="ddobelisk_aura">
 	<sheet>ddobelisk_aura</sheet>
 	<desc length="7" x="0" y="0"/>

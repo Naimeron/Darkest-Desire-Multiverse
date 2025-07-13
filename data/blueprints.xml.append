@@ -228,8 +228,8 @@
     </spawnCrew>
 	<crewSpawnChance>10</crewSpawnChance>
 	<erosion>                                                 
-		<speed>2.2</speed>
-		<maxSpeed>2.2</maxSpeed>
+		<speed>2.8</speed>
+		<maxSpeed>2.8</maxSpeed>
 		<time>5</time>
 		<maxTime>15</maxTime>
 		<systemRepairMultiplier>0.5</systemRepairMultiplier>
@@ -710,11 +710,11 @@
 	<title>Runed Madness</title>
 	<short>R. Madness</short>
 	<locked>1</locked>
-	<desc>A special Pre-emptive Bomb weapon capable of drawing on the power of the Dark God's mad domain. Summons a Dark Obelisk, which manipulates crew damage-taken multipliers and periodically summons random chaos.</desc>
-	<tooltip>Bomb weapon; doesn't cost missiles and charges instantly, but can only be fired once per combat. Deals 2 system damage and has a 100% chance to spawn a Dark Obelisk, which manipulates damage multipliers and periodically summons random chaos.</tooltip>
-	<damage>0</damage>
-	<sysDamage>2</sysDamage>
-	<persDamage>0</persDamage>
+	<desc>A special Pre-emptive Bomb weapon capable of drawing on the power of the Dark God's mad domain, at the price of several missiles. Summons a Dark Obelisk, which manipulates crew damage-taken multipliers and periodically summons random chaos.</desc>
+	<tooltip>Bomb weapon; costs 4 missiles and charges instantly, but can only be fired once per combat. Deals 2 hull damage and has a 100% chance to spawn a Dark Obelisk, which manipulates damage multipliers and periodically summons random chaos.</tooltip>
+	<damage>2</damage>
+	<sysDamage>-2</sysDamage>
+	<persDamage>-2</persDamage>
 	<accuracyMod>30</accuracyMod>
 	<shotLimit>1</shotLimit>
 	<spawnCrew>
@@ -734,6 +734,7 @@
         </statBoosts>
     </spawnCrew>
 	<crewSpawnChance>10</crewSpawnChance>
+	<missiles>4</missiles>
 	<shots>1</shots>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
@@ -7745,7 +7746,7 @@
 	<power>0</power>
 	<mv-conservative/>
 	<cost>110</cost>
-	<shotLimit>9</shotLimit>
+	<shotLimit>7</shotLimit>
 	<bp>6</bp>
 	<rarity>0</rarity>
 	<speed>1</speed>
@@ -7778,7 +7779,7 @@
 	<spawnCrew>
         <race>LIST_CREW_DDLIGHTBORNE</race>
 		<name>Lightborne</name>
-        <number>1</number>
+        <number>2</number>
         <noSlot>true</noSlot>
 		<lifetime>120</lifetime>
         <statBoosts>
@@ -25174,7 +25175,7 @@
 		<weapon name="DDFALSERADIANCE_PIERCELASER" />
 	</weaponList>
 	<droneList drones="8" count="4">
-		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERZERO" />
+		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERONE" />
 		<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERZERO" />
 	</droneList>
 	<health amount="15" />
@@ -26487,7 +26488,7 @@
 	<stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="JUDGE_BOON_DDCORRUPTOR">
-	<title>Boon of the Deep</title>
+	<title>Grant of Corrupting</title>
 	<desc>Your Soulplague Tides have +5 HP.</desc>
 	<cost>0</cost>
 	<rarity>0</rarity>
@@ -27081,7 +27082,7 @@
 </augBlueprint>
 <augBlueprint name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM">
 	<title>Resplendent Lifeform</title>
-	<desc>Your ship is a large, living Lightborne. It gains the benefits of effectively being an Auto-ship, and will also repair its own breaches. Its rooms are permanently under the effects of Radiant Desecration - helping ally Lightborne, damaging enemies overtime for 1hp/s and hindering their combat damage and movement/sabotage speed by 20%. Lastly, enemies onboard threaten to unmake each other - each one passively damaging their nearby allies for 6hp/s.</desc>
+	<desc>Your ship is a large, living Lightborne. It gains the benefits of effectively being an Auto-ship with 5x repair speed, and will also seal its own breaches. Its rooms are permanently under the effects of Radiant Desecration - helping ally Lightborne, damaging enemies overtime for 1hp/s and hindering their combat damage and movement/sabotage speed by 20%. Lastly, enemies onboard threaten to unmake each other - each one passively damaging their nearby allies for 6hp/s.</desc>
 	<cost>90</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>

@@ -2431,6 +2431,54 @@
     </choice>
 </event>
 
+<mod:findName type="event" name="STORAGE_CHECK_INVENTORY">
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DEEPONE" blue="false">
+		<text>Currently active boon: Boon of the Deep
+		Enemies move 10% slower on your ship.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDSOULPLAGUE_CREW" blue="false">
+		<text>Currently active boon: Boon of the Devourer
+		Ally Soulplague-aligned crew move 30% faster while on your ship.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDDEEPONE_ELITE" blue="false">
+		<text>Currently active boon: Boon of the Trenches
+		Ally Deep Ones reduce enemy ability recharge rate by 50% each.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDSERAPHIM_CREW" blue="false">
+		<text>Currently active boon: Boon of the Heavens
+		Ally crew increase nearby enemy fire damage taken by 20% each.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDCORRUPTOR" blue="false">
+		<text>Currently active grant: Grant of Corrupting
+		Your Soulplague Tides have +5 HP.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DEEPONE_EQUIPMENT" blue="false">
+		<text>Currently active blessing: Blessing of Dread
+		20% chance to resist ion damage.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DISPARITY_EQUIPMENT" blue="false">
+		<text>Currently active blessing: Blessing of Ravenous Darkness
+		Your Hungering Shadows have +10 max health.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDSOULPLAGUE_EQUIPMENT" blue="false">
+		<text>Currently active blessing: Blessing of Iridescent Corruption
+		Your Soulplague Husks take 0.25x damage from fire.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="JUDGE_BOON_DDLIGHTBORNE_EQUIPMENT" blue="false">
+		<text>Currently active blessing: Blessing of Fallen Grace
+		Your Lightborne break down doors twice as quickly.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>
+
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_UPGRADES">
 	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT1" lvl="1" blue="false">
 		<text>Matter Disperser [Installed]</text>

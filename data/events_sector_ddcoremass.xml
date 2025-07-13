@@ -4457,31 +4457,35 @@
 </event>
 
 <ship name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER" auto_blueprint="DDHEROINE_VILLAINSLAYER">
-	<triggeredEvent event="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_DEATHTOEVIL" enemyHull="13" thisFight="true" clearOnJump="true"/>
+	<triggeredEvent event="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_DEATHTOEVIL" enemyHull="8" thisFight="true" clearOnJump="true"/>
 	<destroyed>
-		<text>Even after all of that, they still fall. Can anything stop you?</text>
+		<text>It seems that not even she can stop you! Do you think that HE could, if you REALLY tried?</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
-		<text>Even after all of that, they still fall. Can anything stop you?</text>
-		<autoReward level="HIGH">standard</autoReward>
-		<recallBoarders/>
-		<enemyDamage amount="999"/>
-		<choice hidden="true">
-			<text>Continue...</text>
-			<event load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN"/>
-		</choice>
-	</deadCrew>
+	<deadCrew load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_CREWKILL"/>
 </ship>
 
+<event name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_CREWKILL">
+	<text>A burning hatred tears at your heart, as you watch undying flames burst forth from beneath the Heroine's armor...</text>
+	<boarders min="1" max="1" class="ddunique_theheroine_enemy"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and, with them, her fallen comrades rise with her. You dispel the feeling within yourself, and counter it with one of your own - the burning desire to kill them all again, over, and over, and over... until NOTHING remains.</text>
+			<boarders min="4" max="5" class="ddsoulplague_husk_deepone_enemy"/>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+
 <event name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_DEATHTOEVIL">
-	<text>As the battle draws on, you feel as the Heroine screams within your mind again, "FEEL THEIR PAIN - DROWN IN THEIR ANGUISH, AND DIE, DAMN YOU!" Her ship miraculously begins to regenerate, as the souls of ones you've damned seem to rise around you... here come more Husks!</text>
+	<text>As the battle draws on, you feel as the Heroine screams within your mind again, "FEEL THEIR PAIN - DROWN IN THEIR ANGUISH... AND DIE, DAMN YOU!" Her ship miraculously begins to regenerate, as the souls of ones you've damned seem to rise around you... indeed, you feel that you welcome their angered clawing.</text>
 	<boarders min="4" max="6" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY"/>
-	<enemyDamage amount="-7"/>
+	<enemyDamage amount="-12"/>
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN">
