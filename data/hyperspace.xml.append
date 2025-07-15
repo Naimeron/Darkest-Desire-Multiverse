@@ -819,6 +819,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</shipIcons>
 		<crew>
 			<ddilldrythk_caretaker room="1"/>
+			<ddilldrythk_caretaker room="7"/>
+			<ddilldrythk_caretaker room="3"/>
 		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
@@ -7324,7 +7326,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<controllable>true</controllable>
 		<powerEffect>
-			<cooldown>6</cooldown>
+			<cooldown>4</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>shell_death</powerSound>
@@ -7365,17 +7367,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ancient_ion</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<req type="enemy">
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 				<enemyInRoom/>
 			</req>
 			<buttonText>OVERCLOCK</buttonText>
 			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: SPEED]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) heal speed to all allied Engi on either ship. Switch forms.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) heal speed to all allied Engi on either ship. Switch forms.</tooltip>
 			<cooldownColor r="219" g="68" b="250"/>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -7482,16 +7484,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ancient_ion</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<req type="enemy">
 				<minHealth>35</minHealth>
 			</req>
 			<buttonText>OVERCLOCK</buttonText>
 			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: ATTACK]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) movement speed to all allied Engi on either ship. Switch forms.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) movement speed to all allied Engi on either ship. Switch forms.</tooltip>
 			<cooldownColor r="110" g="255" b="34"/>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -7598,7 +7600,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ancient_ion</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<req type="enemy">
 				<maxHealth>40</maxHealth>
@@ -7606,9 +7608,9 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</req>
 			<buttonText>OVERCLOCK</buttonText>
 			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFENSE]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 30% (of default) damage and sabotage speed to all allied Engi on either ship. Switch forms.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 30% (of default) damage and sabotage speed to all allied Engi on either ship. Switch forms.</tooltip>
 			<cooldownColor r="250" g="68" b="68"/>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -7736,16 +7738,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ancient_ion</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<req type="enemy">
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<buttonText>OVERCLOCK</buttonText>
 			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: HAZARD]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Engi on either ship. Switch forms.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Engi on either ship. Switch forms.</tooltip>
 			<cooldownColor r="68" g="242" b="250"/>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -7875,16 +7877,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ancient_ion</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<req type="enemy">
 				<minHealth>70</minHealth>
 			</req>
 			<buttonText>OVERCLOCK</buttonText>
 			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFAULT]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding a multiplicative 0.5x hazard (fire/suffocation) resistance to all allied Engi on either ship and healing them for 1hp/s. Switch forms.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding a multiplicative 0.5x hazard (fire/suffocation) resistance to all allied Engi on either ship and healing them for 1hp/s. Switch forms.</tooltip>
 			<cooldownColor r="250" g="225" b="68"/>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -8734,6 +8736,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -8866,6 +8888,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -8995,6 +9037,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -9143,6 +9205,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -9272,6 +9354,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -9421,6 +9523,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -9550,6 +9672,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -9683,6 +9825,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -9812,6 +9974,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -9976,6 +10158,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -10120,6 +10322,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -10268,6 +10490,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -10412,6 +10654,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -10561,6 +10823,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -10690,6 +10972,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -10823,6 +11125,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -10952,6 +11274,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -11101,6 +11443,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -11230,6 +11592,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -11363,6 +11745,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -11492,6 +11894,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -11656,6 +12078,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -11800,6 +12242,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -11948,6 +12410,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -12092,6 +12574,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -12241,6 +12743,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -12370,6 +12892,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -12503,6 +13045,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>7</cooldown>
@@ -12632,6 +13194,26 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<whiteList load="LIST_DDRIFTS"/>
+			</statBoost>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>SET</boostType>
+				<amount>1</amount>
+				<affectsSelf>true</affectsSelf>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
 				<whiteList load="LIST_DDRIFTS"/>
 			</statBoost>
 		</passiveStatBoosts>
@@ -16590,14 +17172,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>blobDeath</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 			</req>
 			<buttonText>OVERSOUL</buttonText>
 			<tooltip>[COOLDOWN:21s  DURATION:VARIABLE]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Soulplague-aligned crew on either ship.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Soulplague-aligned crew on either ship.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -17099,16 +17681,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>blobDeath</powerSound>
 			</powerSounds>
 			<req>
-				<minHealth>11</minHealth>
+				<minHealth>9</minHealth>
 				<inCombat/>
 			</req>
 			<buttonText>OVERSOUL</buttonText>
 			<tooltip>[COOLDOWN:21s  DURATION:VARIABLE]
-				Take 10 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Soulplague-aligned crew on either ship.</tooltip>
+				Take 8 damage and spawn a beacon that emits an overclock command, adding an additive 50% (of default) repair speed and a multiplicative 0.77x damage resistance to all allied Soulplague-aligned crew on either ship.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<effectAnim>bomb_ddsoulplague_puffcloud</effectAnim>
 			<activateWhenReady>true</activateWhenReady>
-			<selfHealth>-10</selfHealth>
+			<selfHealth>-8</selfHealth>
 			<friendlyFire>true</friendlyFire>
 			<spawnCrew>
 				<number>1</number>
@@ -35444,6 +36026,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -35456,6 +36057,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -35476,7 +36096,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -35496,14 +36170,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -35653,6 +36330,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -35665,6 +36361,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -35685,7 +36400,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -35705,14 +36474,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -35887,6 +36659,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -35899,6 +36690,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -35919,7 +36729,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -35939,14 +36803,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36091,7 +36958,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		  <repairSound>shrikeRepair</repairSound>
 		</repairSounds>
 		<passiveStatBoosts>
-				<statBoost name="statBoost">
+			<statBoost name="statBoost">
 				<statBoost name="canMan">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36104,6 +36971,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36124,6 +37010,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canFight">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36136,6 +37041,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36156,6 +37080,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36168,6 +37111,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36332,6 +37294,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36344,6 +37325,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36364,7 +37364,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -36384,14 +37438,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36589,6 +37646,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36601,6 +37677,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36621,7 +37716,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -36641,14 +37790,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36836,6 +37988,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canMan">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canRepair">
 					<boostType>SET</boostType>
 					<value>false</value>
@@ -36848,6 +38019,25 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canRepair">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -36868,7 +38058,61 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
 			<statBoost name="statBoost">
+				<statBoost name="canFight">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
 				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canSabotage">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>100</priority>
+					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
+				</statBoost>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
+				<maxStacks>1</maxStacks>
+				<droneTarget>ALL</droneTarget>
+			</statBoost>
+			<statBoost name="statBoost">
+				<statBoost name="canMove">
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
@@ -36888,14 +38132,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>100</priority>
 					<whiteList load="LIST_DDCREW_ILLDRYTHK"/>
 				</statBoost>
 				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<extraConditions type="and">
+                    <mindControlled>true</mindControlled>
+	            </extraConditions>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
 			</statBoost>
@@ -38582,7 +39829,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<amount>10.0</amount>
+					<amount>5.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
@@ -38717,7 +39964,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<amount>10.0</amount>
+					<amount>5.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
@@ -42735,17 +43982,17 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 						<inCombat/>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: SPEED]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="219" g="68" b="250"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -42779,16 +44026,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>35</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: ATTACK]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="110" g="255" b="34"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -42822,7 +44069,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>22</minHealth>
@@ -42830,9 +44077,9 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFENSE]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="250" g="68" b="68"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -42866,16 +44113,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: HAZARD]
-						Take 20 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="68" g="242" b="250"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -42909,16 +44156,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>60</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFAULT]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="250" g="225" b="68"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -43559,7 +44806,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>17</minHealth>
@@ -43567,9 +44814,9 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: SPEED]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="219" g="68" b="250"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -43603,16 +44850,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>45</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: ATTACK]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="110" g="255" b="34"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -43646,7 +44893,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>32</minHealth>
@@ -43654,9 +44901,9 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFENSE]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="250" g="68" b="68"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -43693,13 +44940,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<minHealth>21</minHealth>
 					</req>
 					<req type="enemy">
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: HAZARD]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="68" g="242" b="250"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
@@ -43733,16 +44980,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<powerSound>ancient_ion</powerSound>
 					</powerSounds>
 					<req>
-						<minHealth>11</minHealth>
+						<minHealth>9</minHealth>
 					</req>
 					<req type="enemy">
 						<minHealth>60</minHealth>
 					</req>
 					<buttonText>OVERCLOCK</buttonText>
 					<tooltip>[COOLDOWN:2s  DURATION: VARIABLE  NEXT FORM: DEFAULT]
-						Take 10 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
+						Take 8 damage and spawn a rainbow beacon that emits an overclock command, adding the effect of every beacon combined to all allied Engi on either ship. Switch forms.</tooltip>
 					<cooldownColor r="250" g="225" b="68"/>
-					<selfHealth>-10</selfHealth>
+					<selfHealth>-8</selfHealth>
 					<friendlyFire>true</friendlyFire>
 					<spawnCrew>
 						<number>1</number>
