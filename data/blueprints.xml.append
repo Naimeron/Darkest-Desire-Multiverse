@@ -258,6 +258,66 @@
 	<iconImage>beam</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="TWILIGHT_INEXORABLE_PLAYER">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Twilight Inexorable†</title>
+	<short>T. Inexorable†</short>
+	<desc>A weapon of mass destruction that seems to harness the power of the Dark God itself. Fires a Pinpoint beam that pierces most shields, deals rapid erosion damage and generates volatile tears in space that ravage the target room.</desc>
+	<tooltip>Generates volatile tears in space that ravage the target room. Pierces shields.</tooltip>
+	<damage>0</damage>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<cooldown>21.5</cooldown>
+	<spawnCrew>
+        <race>spacetear</race>
+		<name>Space Tear</name>
+        <number>1</number>
+        <noSlot>true</noSlot>
+		<lifetime>16</lifetime>
+        <statBoosts>
+            <statBoost name="noClone">
+                <boostType>SET</boostType>
+                <value>true</value>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+        </statBoosts>
+    </spawnCrew>
+	<crewSpawnChance>10</crewSpawnChance>
+	<erosion>                                                 
+		<speed>2.8</speed>
+		<maxSpeed>2.8</maxSpeed>
+		<time>5</time>
+		<maxTime>15</maxTime>
+		<systemRepairMultiplier>0.5</systemRepairMultiplier>
+		<erodeShields>false</erodeShields>
+		<roomAnim renderLayer="3">                                                    
+			<anim animType="default" animBorder="2">ddinvisible_effect</anim>
+				<wallAnim>ddnightmare_erosion</wallAnim>
+		</roomAnim>
+	</erosion>
+	<speed>1</speed>
+	<color>
+		<r>213</r>
+		<g>213</g>
+		<b>213</b>
+	</color>
+	<power>3</power>
+	<cost>130</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>1</length>
+	<launchSounds>
+        <sound>focus_strong</sound>
+    </launchSounds>
+	<weaponArt>twilight_inexorable</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="DDDIVINE_DUALITY">
 	<type>BURST</type>
 	<drone_targetable>0</drone_targetable>
@@ -16996,7 +17056,7 @@
 	<damage>0</damage>
 	<radius>43</radius>
 	<damage>1</damage>
-	<speed>33</speed>
+	<speed>27</speed>
 	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>0</fireChance>
@@ -17050,8 +17110,8 @@
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
-	<speed>7</speed>
-	<cost>75</cost>
+	<speed>15</speed>
+	<cost>90</cost>
 	<bp>3</bp>
 	<droneImage>drone_minishroud</droneImage>
 	<weaponBlueprint>DRONE_FLAK_DARKGOD</weaponBlueprint>
@@ -17064,7 +17124,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Zero-Nil]</title>
 	<short>R. Core [0-N/A]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect - but you get the feeling that it's capable of being empowered, somehow...</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect - though, you get the feeling that it's capable of being empowered, somehow...</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -17269,7 +17329,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Nil]</title>
 	<short>R. Core [1-N/A]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Capable of either being locked into Tier One Lightborne sub-Tiers, or being upgraded to a higher tier.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Capable of either being locked into Tier One Lightborne sub-Tiers, or being upgraded to a higher tier.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -17474,7 +17534,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Two-Nil]</title>
 	<short>R. Core [2-N/A]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Capable of either being locked into Tier Two Lightborne sub-Tiers, or being upgraded to a higher tier.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Capable of either being locked into Tier Two Lightborne sub-Tiers, or being upgraded to a higher tier.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -17679,7 +17739,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Three-Nil]</title>
 	<short>R. Core [3-N/A]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Capable of being locked into Tier Three Lightborne sub-Tiers.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Capable of being locked into Tier Three Lightborne sub-Tiers.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -17884,7 +17944,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Slayling]</title>
 	<short>R. Core [1-Slay]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Slaylings - a crew with unremarkable abilities but high combat stats relative to other Tier One Lightborne.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Slaylings - a crew with unremarkable abilities but high combat stats relative to other Tier One Lightborne.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -18106,7 +18166,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Prismling]</title>
 	<short>R. Core [1-Prism]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Prismlings - a weak crew that inflicts an additional instance of the Radiant Desecration effect upon death.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Prismlings - a weak crew that inflicts an additional instance of the Radiant Desecration effect upon death.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -18328,7 +18388,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Cinderling]</title>
 	<short>R. Core [1-Cinder]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Cinderlings - a weak crew that ignites fires upon death.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Cinderlings - a weak crew that ignites fires upon death.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -18550,7 +18610,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Breakling]</title>
 	<short>R. Core [1-Break]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Breaklings - a weak crew that ignores enemies and sabotages quickly.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Breaklings - a weak crew that ignores enemies and sabotages quickly.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -18772,7 +18832,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [One-Spiritling]</title>
 	<short>R. Core [1-Spirit]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Spiritlings - a weak crew that heals allies and semi-permanently empowers nearby ally Lightborne upon death.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Spiritlings - a weak crew that heals allies and semi-permanently empowers nearby ally Lightborne upon death.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -18994,7 +19054,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Two-Clusterular]</title>
 	<short>R. Core [2-Clust]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Clusterulars - a middling crew capable of cross-ship teleporation that splits into several Cellulars upon death; each one capable of repairing systems and sustaining itself.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Clusterulars - a middling crew capable of cross-ship teleporation that splits into several Cellulars upon death; each one capable of repairing systems and sustaining itself.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -19216,7 +19276,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Two-Angelular]</title>
 	<short>R. Core [2-Angel]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Angelulars - a middling crew capable of passively healing ally Lightborne on the same ship.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Angelulars - a middling crew capable of passively healing ally Lightborne on the same ship.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -19438,7 +19498,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Two-Tormentular]</title>
 	<short>R. Core [2-Torm]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Tormentulars - a formidable crew capable of rapidly micro-stunning enemies and quickly breaking down doors.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Tormentulars - a formidable crew capable of rapidly micro-stunning enemies and quickly breaking down doors.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -19660,7 +19720,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Two-Warlockular]</title>
 	<short>R. Core [2-Warl]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Warlockulars - a weak crew capable of dealing hull/system damage and stunning enemies if it's kept alive long enough.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Warlockulars - a weak crew capable of dealing hull/system damage and stunning enemies if it's kept alive long enough.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -19882,7 +19942,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Three-Timelux]</title>
 	<short>R. Core [3-Time]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Timeluxes - a formidable crew capable of periodically freezing nearby enemies and rendering them incapable of action.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Timeluxes - a formidable crew capable of periodically freezing nearby enemies and rendering them incapable of action.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -20104,7 +20164,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Three-Devourlux]</title>
 	<short>R. Core [3-Devour]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Devourluxes - a formidable crew that passively eats the HP of nearby ally Lightborne and converts it into strength for itself.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Devourluxes - a formidable crew that passively eats the HP of nearby ally Lightborne and converts it into strength for itself.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -20326,7 +20386,7 @@
 	<tip>tip_ddradiant_core</tip>
 	<title>Radiant Core [Three-Commandlux]</title>
 	<short>R. Core [3-Comm]</short>
-	<desc>A living Lightborne, able to feed off of a Drone Control system. Fires a pinpoint beam that pierces most shields, deals erosion damage and inflicts rooms hit with the Radiant Desecration effect. Additionally capable of generating Commandluxes - a formidable crew that passively grants nearby Tier One Lightborne allies unique abilities based on their inherent powers.</desc>
+	<desc>A living Lightborne, able to feed off of a Drone Control system. Pierces shields and inflicts rooms hit with erosion and the Radiant Desecration effect. Also creates Commandluxes - a formidable crew that passively grants nearby Tier One Lightborne allies unique abilities based on their inherent powers.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -20981,7 +21041,7 @@
     
 -175 HP, can't attack or sabotage
 -0.8x movement speed
--Every 6 seconds, it spawns a Hungering Shadow that lasts 21 seconds.</desc>
+-Every 4 seconds, it spawns a Hungering Shadow that lasts 21 seconds.</desc>
 	<power>3</power>
 	<cost>80</cost>
 	<bp>3</bp>
@@ -20998,7 +21058,7 @@
     
 -175 HP, can't attack or sabotage
 -0.8x movement speed
--Every 6 seconds, it spawns a Hungering Shadow that lasts 21 seconds.</desc>
+-Every 4 seconds, it spawns a Hungering Shadow that lasts 21 seconds.</desc>
 	<power>3</power>
 	<speed>18</speed>
 	<cost>80</cost>
@@ -25356,7 +25416,7 @@
 				<number>0</number>
 			</slot>
 		</doors>
-		<drones max="8" power="3" room="11" start="true" img="room_drones_8" />
+		<drones max="8" power="4" room="11" start="true" img="room_drones_8" />
 		<engines power="1" room="5" start="true" img="room_engines_10">
 			<slot>
 				<direction>left</direction>
@@ -25403,12 +25463,12 @@
 	<weaponList missiles="0" count="3">
 		<weapon name="ION_2" />
 	</weaponList>
-	<droneList drones="5" count="3">
+	<droneList drones="7" count="3">
 		<drone name="DRONE_MINISHROUD" />
 		<drone name="DDDISPARITY_ADMINISTRATOR_DEFAULT" />
 	</droneList>
 	<health amount="30" />
-	<maxPower amount="8" />
+	<maxPower amount="9" />
 	<crewCount amount="1" class="disparity_engidefault" />
 	<crewCount amount="1" class="engi_separatist" />
 	<crewCount amount="1" class="engi_separatist" />
@@ -25621,7 +25681,7 @@
 		</shields>
 		<teleporter power="1" room="4" start="true" />
 		<dd_corruptor power="1" room="14" start="false" img="room_ddcorruptor_24" />
-		<weapons max="8" power="5" room="11" start="true" img="room_weapons_10">
+		<weapons max="8" power="3" room="11" start="true" img="room_weapons_10">
 			<slot>
 				<direction>up</direction>
 				<number>0</number>
@@ -25631,7 +25691,7 @@
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="0" count="3">
-		<weapon name="TWILIGHT_INEXORABLE" />
+		<weapon name="TWILIGHT_INEXORABLE_PLAYER" />
 	</weaponList>
 	<droneList drones="0" count="2" />
 	<health amount="30" />

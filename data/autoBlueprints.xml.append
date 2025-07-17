@@ -204,6 +204,7 @@
 	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
 	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE_PLAYER</mod-append:name>
 	<mod-append:name>SHOTGUN_DARKGOD</mod-append:name>
 	<mod-append:name>LASER_DARKGOD</mod-append:name>
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
@@ -300,6 +301,7 @@
 	<mod-append:name>DEEPONE_JELLYFISH</mod-append:name>
 	<mod-append:name>DEEPONE_JELLYFISH_ELITE</mod-append:name>
 	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE_PLAYER</mod-append:name>
 	<mod-append:name>SHOTGUN_DARKGOD</mod-append:name>
 	<mod-append:name>LASER_DARKGOD</mod-append:name>
 	<mod-append:name>LASER_DISPARITY_LOOT</mod-append:name>
@@ -425,6 +427,7 @@
 <mod:findName type="blueprintList" name="BLUELIST_FOCUS_ALL">
 	<mod-append:name>DDARTILLERY_DARK_METAMORPHOSIS</mod-append:name>
 	<mod-append:name>TWILIGHT_INEXORABLE</mod-append:name>
+	<mod-append:name>TWILIGHT_INEXORABLE_PLAYER</mod-append:name>
 	<mod-append:name>DDFOCUS_SOULPLAGUE</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_CHAINFOCUS</mod-append:name>
 </mod:findName>
@@ -1244,6 +1247,7 @@
 	<name>DEEPONE_JELLYFISH</name>
 	<name>DEEPONE_JELLYFISH_ELITE</name>
 	<name>TWILIGHT_INEXORABLE</name>
+	<name>TWILIGHT_INEXORABLE_PLAYER</name>
 	<name>SHOTGUN_DARKGOD</name>
 	<name>LASER_DARKGOD</name>
 	<name>BOMB_DARKGOD</name>
@@ -3228,6 +3232,7 @@
 	<systemList>
 		<clonebay power="1" max="1" room="2" start="true" />
 		<oxygen power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
 		<teleporter power="1" max="1" room="3" start="true" />
 	</systemList>
 	<weaponSlots>0</weaponSlots>
@@ -3245,6 +3250,7 @@
 	<systemList>
 		<clonebay power="1" max="1" room="0" start="true" />
 		<oxygen power="1" max="1" room="3" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
 		<teleporter power="1" max="1" room="1" start="true" />
 	</systemList>
 	<weaponSlots>0</weaponSlots>

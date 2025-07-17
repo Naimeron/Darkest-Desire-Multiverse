@@ -2034,15 +2034,15 @@
 
 <ship name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
 	<destroyed>
-		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<text>The ship breaks apart, and you find that the cage has managed to survive its destruction its destruction, seemingly unscathed... indeed, whatever's inside is still making those same, wet noises.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
-			<text>Continue...</text>
+			<text>Examine the cage closer.</text>
 			<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN"/>
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>With the crew dead you quickly salvage what you can.</text>
+		<text>With their otherworldly crew defeated, you're free to steal the cage back from within their ship... inndeed, whatever's inside is still making those same, wet noises.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2076,8 +2076,7 @@
 </event>
 
 <event name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN">
-	<text>With the ship and its otherworldly inhabitants defeated, you turn to the cage you'd brought onboard and realize you recognize the noises coming from it. It's the same ones that one of the monsters you just defeated had been making...</text>
-	<status type="clear" target="player" system="engines" amount="100"/>
+	<text>Nervously, you realize that you can actually recognize the noises that this thing is making now. It's reminiscent, if not outright identical, to the nasty gurgling sounds that one of the monsters you'd just defeated had been making...</text>
 	<choice hidden="true">
 		<text>Swallow your fear, and remove the cage's cover.</text>
 		<event load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT_WIN_MONSTERGAMBLE"/>
@@ -2095,9 +2094,8 @@
 	<choice hidden="true">
 		<text>Punch the man while he's distracted.</text>
 		<event>
-			<text>You clock him straight in the head, and he crashes to the floor... he's out cold. On the clock now, you rush out of the room with the cage in hand, but you don't get very far before a similarly robed man spots you, surmises what happened, and yells out, "STOP! THIEF!" The crowd looks over, shock on their faces, and you sprint towards the ship as fast as your legs can carry you. It's good that this cage came on wheels, as you're able to get it onboard before anyone can catch up to you, but you're not out of the woods yet... as you lift off, one of the odd ships you'd spotted before gives chase! A streak of lightning bolts from their ship, striking yours, and you realize they've managed to disable your engines... get ready!</text>
+			<text>You clock him straight in the head, and he crashes to the floor... he's out cold. On the clock now, you rush out of the room with the cage in hand, but you don't get very far before a similarly robed man spots you, surmises what happened, and yells out, "STOP! THIEF!" The crowd looks over, shock on their faces, and you sprint towards the ship as fast as your legs can carry you. It's good that this cage came on wheels, as you're able to get it onboard before anyone can catch up to you, but you're not out of the woods yet... as you lift off, one of the odd ships you'd spotted before gives chase! A streak of lightning bolts from their ship, striking yours, and you realize they've somehow managed to teleport the cage back onboard their own ship - if you want it, you're gonna have to fight for it!</text>
 			<ship load="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT" hostile="true"/>
-			<status type="limit" target="player" system="engines" amount="0"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
