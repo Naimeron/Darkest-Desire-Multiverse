@@ -52,7 +52,7 @@
 			<status type="limit" target="player" system="hacking" amount="0"/>
 			<boarders min="2" max="3" class="darkgodtendrils"/>
 			<choice hidden="true" req="unique_thescarred">
-				<text>(The Scarred) "The False God... wishes that wa waste time, and risk... our lives. I, kin... do not."</text>
+				<text>(The Scarred) "The False God... wishes that we waste time, and risk... our lives. I, kin... do not."</text>
 				<event>
 					<text>You watch as the Scarred puts a clawed hand over their still-good eye, and seems to draw from something within themself... indeed, without you even understanding what's happened, the darkness outside begins to writhe and squirm in abject pain. Opting to retreat deeper into this strange, lightless abyss, it lets go of its hold over your ship, and you're only left with the few shadows that had already managed to seep inside.</text>
 					<enemyDamage amount="66"/>

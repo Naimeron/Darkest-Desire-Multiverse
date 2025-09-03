@@ -1041,6 +1041,19 @@
 	</choice>
 </event>
 
+<event name="STORE_LOAD_AUTO_DDCUSTOMGODTHISISSTUPID">
+	<store>STORE_AUTO</store>
+	<text>Before you shop, you still have some time to do something else aboard the ship.</text>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
 <event name="STORELIST_DDSOULPLAGUE_SHELLOUTPOST_ANSWER">
 	<text>This time, the next message comes back quickly:
 	
@@ -1079,7 +1092,7 @@
 					<text>You send the message, and a moment passes before another message pops up... this one's a catalogue of wares. Perplexingly, though, they don't seem intent on selling any crew...</text>
 					<choice hidden="true">
 						<text>Huh. Weird. Let's trade, then! No questions asked!</text>
-						<event load="STORE_LOAD_AUTO"/>
+						<event load="STORE_LOAD_AUTO_DDCUSTOMGODTHISISSTUPID"/>
 					</choice>
 					<choice hidden="true">
 						<text>Nope. Don't trust that. Get out of here.</text>

@@ -37,10 +37,11 @@
 +Fire and Hull modes are now Plague and Mayhem modes</text>
 
 <text name="loot_ddfalseradiance_1">FALSE RADIANCE LOOT
-+Inflicts rooms hit with erosion and the Radiant Desecration effect, +8 shots, -69 beam length
++Inflicts rooms hit with erosion and the Radiant Desecration effect, +6 shots, -69 beam length
 +Spawns random Lightborne instead of Hungering Shadows</text>
 
 <text name="tip_shadow_weapon">Tip: Shadow weapons spawn Hungering Shadows, which grow in strength when in rooms together. Use them to overwhelm your enemies!</text>
 <text name="tip_ddplagueridden_weapon">Tip: Plagueridden weapons deal no damage to Soulplague-aligned crew, and they inflict rooms hit with Plagueridden, which slows enemy repair speed and transforms them into an ally Soulplague Husk if they're killed within the effect!</text>
 <text name="tip_ddradiant_core">Tip: Radiant Cores inflict rooms hit with erosion and the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, which most Radiant Cores are capable of spawning.</text>
 <text name="tip_ddradiant_weapons">Tip: Lightborne weapons inflict rooms hit with the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, complementing their generation via Radiant Cores.</text>
+<text name="tip_ddtear_weapon">Tip: This weapons generates volatile space tears - invulnerable pseudo-crew that deal system/hull/crew damage, briefly stun and have a good chance to create a fire every 3 seconds.</text>

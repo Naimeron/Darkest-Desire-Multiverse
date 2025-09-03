@@ -4192,6 +4192,7 @@
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_THEDEVOURER_WIN_HEROINEENDING">
+	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>The clones all strike at the heart, and it shatters - its splinters flying off in every direction. As it's obliterated, the Coremass outside begins to scream, and shake - this place is breaking apart!</text>
 	<playSound>ddsoulplague_assault</playSound>
 	<choice hidden="true">
@@ -4241,6 +4242,7 @@
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_THEDEVOURER_WIN_FOOLISHENDING">
+	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>Unfortunately, it seems that she died in the fight... but at least you'll be able to finish what she started. It's what she would have wanted, you feel...</text>
 	<variable name="dd_soulplague_coremass_heartdefeated" op="set" val="1"/>
 	<choice hidden="true">
@@ -4408,6 +4410,7 @@
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_THEDEVOURER_WIN_GREATESTENDING">
+	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>As you try to find the right words, the armored figure stands up, her gauntlet to her heart once more as she points to the Shell with her other one, "You, alone, stand to remember your kin - what they've sacrificed. Though you may feel this to be a curse, it is an honor. You blame yourself for their deaths, but it is not you who perverted this work of yours - it was the doing of something ancient, evil and beyond your comprehension." She drops her hand, and places it against her spear, "If you are to give in to woe, here, and give up... who will carry on your fallen friends' legacy? Who will avenge their deaths, and live to remember their names?"</text>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -4489,6 +4492,7 @@
 </event>
 
 <event name="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN">
+	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>As you stand victorious over yet another so-called hero, the Dark God speaks to you, "EVEN I STRUGGLED TO QUELL THAT ONE. AN UNIMAGINABLE DESIRE, INDEED... I ENVY YOU." A blinding light manifests in the room, and as it fades... you see a weapon before you, unlike any you've ever seen before. "THIS HEROINE... I HAVE CLAIMED HER. FOR ONE SUCH AS YOURSELF, I WOULD REFORGE HER IN YOUR HONOR. GO FORTH, AND DO AS YOU SEE FIT." Indeed, you shall. That's all you've ever done, for as long as you can remember.</text>
 	<achievement>ACH_EVENT_DDTHIRDTRUEHEROSLAIN</achievement>
 	<playMusic/>
@@ -4540,7 +4544,6 @@
 		<unvisitedTooltip>The center of the Coremass, and the location of its heart.</unvisitedTooltip>
 		<visitedTooltip>Visited location.</visitedTooltip>
 	</beaconType>
-	<revisitEvent>DDCOREMASS_EXIT_ALONE</revisitEvent>
 	<text>This is it; the center of the Soulplague Coremass. The faint light you've been seeing throughout your journey here doesn't seem so distant anymore... this must be the location of the heart.</text>
 	<img back="BACKGROUND_DDCOREMASSCENTER" planet="PLANET_INVISIBLE"/>
 	<backgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND">

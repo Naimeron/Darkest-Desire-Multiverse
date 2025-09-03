@@ -3184,9 +3184,26 @@
 						<event>
 							<text>RITUAL OF TEMPESTUOUS EXPANSION:
 							This ritual gives you a location of interest, at which you can call in a ship belonging to the Cult of the Tempest. From there, they seek to spread their influence, but they'll need supplies to do so. Grant them this, and the Tempest will grant you a random boon and strengthen its blessing on your ship. Offering larger amounts of supplies increases your odds of receiving a higher quality boon. Received boons are separated into three qualities: minor, major and cosmic.</text>
-							<choice req="pilot" lvl="1" max_group="1" blue="false">
-								<text>Interesting. Close the book.</text>
-								<event load="STORAGE_CHECK"/>
+							<choice hidden="true">
+								<text>Investigate the benefits of the Tempest's Blessing.</text>
+								<event>
+									<text>TEMPEST'S BLESSING BENEFITS:
+									Level 1: 6 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 1 power as well as gaining 1.2x movement/repair speed and 1.1x combat/sabotage damage.
+									
+									Level 2: 9 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 1 power as well as gaining 1.4x movement/repair speed and 1.2x combat/sabotage damage.
+									
+									Level 3: 12 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 1 power as well as gaining 1.6x movement/repair speed and 1.3x combat/sabotage damage.
+									
+									Level 4: 15 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 2 power as well as gaining 1.8x movement/repair speed and 1.4x combat/sabotage damage.
+									
+									Level 5: 18 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 2 power as well as gaining 2.0x movement/repair speed and 1.5x combat/sabotage damage.
+									
+									Level 6: 21 HP Energy Shield, affected drones and Tempest-aligned crew provide and drain 2 power as well as gaining 2.2x movement/repair speed, 1.6x combat/sabotage damage and the ability to phase through doors.</text>
+									<choice req="pilot" lvl="1" max_group="1" blue="false">
+										<text>Interesting. Close the book.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+								</event>
 							</choice>
 						</event>
 					</choice>

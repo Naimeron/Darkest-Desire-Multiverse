@@ -27,7 +27,7 @@ This enemy is capable of opening a rift into the Dark God's domain. The rift wil
 		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 	        <name>icon_ddtempest_blessing</name>
-            <tooltip>TEMPEST BLESSING:
+            <tooltip>TEMPEST'S BLESSING:
 This enemy is blessed by the Tempest. They're protected by an otherworldly and electrical power, providing a thin supershield and buffs to their drones and Tempest-aligned crew. Such drones and crew provide 1 power to systems on their ship and drain 1 power from systems on yours, and they receive the following stat boosts: 1.6x movement/repair speed and 1.3x combat/sabotage damage. Additionally, some of their crew may be capable of periodically summoning bolts of lightning that ion systems and spew forth monsters.</tooltip>
 		</mod-append:shipIcon>
 		<mod-append:shipIcon>
@@ -5419,7 +5419,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:customShip name="PLAYER_DDHORROR_SHIP_2">
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<hiddenAug>MV_SHIP_DDHORROR</hiddenAug>
-		<crewLimit>12</crewLimit>
+		<crewLimit>10</crewLimit>
 		<crew>
 			<ddilldrythk_statue room="12"/>
 			<ddilldrythk_caretaker room="1"/>
@@ -13991,7 +13991,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					</req>
 				</powerEffect>
 				<affectsSelf>false</affectsSelf>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
@@ -14102,7 +14102,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					</req>
 				</powerEffect>
 				<affectsSelf>false</affectsSelf>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<maxStacks>1</maxStacks>
 				<droneTarget>ALL</droneTarget>
@@ -30929,7 +30929,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<powerSounds>
 				<powerSound>blobDeath</powerSound>
 			</powerSounds>
-			<stun>2</stun>
+			<stun>1</stun>
 			<buttonText>SOULSTUN</buttonText>
 			<tooltip>[COOLDOWN:4s]
 				Takes 4 damage and briefly stuns all entities in the room. Will automatically be used while enemies are in the room.</tooltip>
@@ -41081,6 +41081,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddilldrythk_caretaker">
 		<maxHealth>70</maxHealth>
+		<crewSlots>0.5</crewSlots>
 		<noWarning>true</noWarning>
 		<repairSpeed>1.5</repairSpeed>
 		<fireRepairMultiplier>2</fireRepairMultiplier>
@@ -41271,7 +41272,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="statBoost">
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
-					<amount>0.2</amount>
+					<amount>0.3</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
@@ -41438,7 +41439,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
 				<amount>1.46</amount>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
@@ -41450,7 +41451,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>1.46</amount>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
@@ -41462,7 +41463,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.07</amount>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<priority>0</priority>
@@ -41484,7 +41485,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<blueprintList load="LIST_CREW_DDLIGHTBORNE"/>
 					</whiteList>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>
@@ -41505,7 +41506,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<blueprintList load="LIST_CREW_DDLIGHTBORNE"/>
 					</whiteList>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>
@@ -41526,7 +41527,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<blueprintList load="LIST_CREW_DDLIGHTBORNE"/>
 					</whiteList>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>
@@ -41544,7 +41545,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<priority>0</priority>
 					<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>
@@ -41562,7 +41563,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<priority>0</priority>
 					<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>
@@ -41580,7 +41581,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<priority>0</priority>
 					<whiteList load="LIST_CREW_DDLIGHTBORNE"/>
 				</statBoost>
-				<shipTarget>CURRENT_ALL</shipTarget>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
 				<droneTarget>ALL</droneTarget>

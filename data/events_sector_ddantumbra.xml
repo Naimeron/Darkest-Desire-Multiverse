@@ -71,7 +71,7 @@
 					However, it's also worth noting two things about the Archangels... firstly, their crystalline armor - if you try to break it too fast, you're just going to be swarmed by their enslaved Shadows. Unless you have the means to take on a small army, I'd be tactical with your strikes. Secondly, something that applies to all members of the False Radiance - it is NOT safe to board them with several people at once. Something about that... weird, ethereal glow of theirs makes things destabilize rapidly when sharing a room with each other.
 					
 					Well, that's everything I can think to share - I believe in you! Give it hell for me, won't you?!</text>
-					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="60.0" maxTime="60.0">
 						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
 						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
 							<warning time="5.0" flash="true"/>
@@ -3222,7 +3222,7 @@
 					<text>Archangel Protocol: GRAVEDIGGER... its entourage of Lightborne and key-system both rely on the manipulation of life - it will try to overwhelm you with powerful, self-sustaining Lightborne while simultaneously overcoming your defenses with formidable weapons-fire. If you can prevent anything, it should be the propagation of its Devourluxes - the longer they're allowed to live and eat other Lightborne, the stronger they'll get!</text>
 					<ship load="DDANTUMBRA_GRAVEDIGGERLOCATION_FIGHT" hostile="true"/>
 					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
-					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="60.0" maxTime="60.0">
 						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
 						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
 							<warning time="5.0" flash="true"/>
@@ -3328,7 +3328,7 @@
 					<text>Archangel Protocol: GODCORE... its entourage of Lightborne and key-system both rely on creating chaos and causing havoc - it will try to prevent you from putting out the fires it starts with excessive distractions, while simultaneously beating down your Shields and letting its powerful Laser weapon chain. If you can prevent anything, it should be that - do not let your Shields fall, and stop its Laser weapon if they do!</text>
 					<ship load="DDANTUMBRA_GODCORELOCATION_FIGHT" hostile="true"/>
 					<deathEvent thisFight="true">DDDEATH_ARCHANGELPROTOCOL</deathEvent>
-					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="45.0" maxTime="45.0">
+					<triggeredEvent event="DDSHIELD_SURGE_ARCHANGEL" seeded="false" loops="999999999" thisFight="true" minTime="60.0" maxTime="60.0">
 						<warningMessage id="warning_shield_surge_player" x="692" y="84" time="3.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
 						<triggeredEventBox load="DEFAULT_SMALL" pos="combat">
 							<warning time="5.0" flash="true"/>

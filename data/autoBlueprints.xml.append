@@ -1061,7 +1061,7 @@
 	<name>DEEPONE_JELLYFISH</name>
 	<name>SHOTGUN_DARKGOD</name>
 	<name>LASER_DARKGOD</name>
-	<name>BOMB_DARKGOD</name>
+	<name>BOMB_DARKGOD_ENEMY</name>
 	<name>DDLASER_CHARGE_DARKGOD</name>
 	<name>ION_1</name>
 	<name>ION_2</name>
@@ -2664,13 +2664,13 @@
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="9" count="3">
 		<weapon name="DDLASER_CHARGE_DARKGOD" />
-		<weapon name="BOMB_DARKGOD" />
+		<weapon name="BOMB_DARKGOD_ENEMY" />
 		<weapon name="LASER_DARKGOD" />
 	</weaponList>
 	<droneList drones="0" count="0" />
 	<health amount="17" />
 	<maxPower amount="35" />
-	<crewCount amount="4" max="9" class="dddeepone_chosen" />
+	<crewCount amount="3" max="8" class="dddeepone_chosen" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDOVERWHELMING_DARKNESS" />
 </shipBlueprint>
