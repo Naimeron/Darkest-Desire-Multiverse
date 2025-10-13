@@ -61,6 +61,16 @@
 					</choice>
 				</event>
             </mod-append:choice>
+			<mod-append:choice hidden="true" max_group="1" req="MV_SHIP_DDECHOEDDREAM" blue="false">
+				<text>Contact Federation command.</text>
+				<event>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He seems to scan the hull of your ship for a moment, before offering you a fond smile. "I can tell when a ship is special to its captain, you know? There's a certain level of love and care put into its upkeep. Let's make sure you can get this beauty - and, the rest of our forces here - out of this in one piece, yeah?"</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+            </mod-append:choice>
 		</mod:findLike>
     </mod:findLike>
 </mod:findName>

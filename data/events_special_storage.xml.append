@@ -236,6 +236,18 @@
 					</choice>
 				</event>
 			</mod-append:choice>
+			<mod-append:choice hidden="true" req="LIST_CREW_DEEPONES">
+				<text>(Deep One Crew) Take the form of an Enlightened Tributeshaper.</text>
+				<event>
+					<text>Your Morph tries to take the Tributeshaper's shape, but something is stopping it... perhaps they utilize some unknowable power that even the Morphs can't mimic.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<loadEvent>STORAGE_CHECK_MORPH_TRANSFORM</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
 			<mod-append:choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
 				<text>(Soulplague Crew) Take the form of a Soulplague Huskweaver.</text>
 				<event>
@@ -263,10 +275,6 @@
 </mod:findName>
 
 <mod:findName type="event" name="STORAGE_CHECK_AUG">
-	<mod-append:choice req="DARKGOD_CURSED_BOOK">
-		<text>(Otherworldly Tome) Brand one of your human crew members as a future human sacrifice.</text>
-		<event load="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION"/>
-	</mod-append:choice>
 	<mod-append:choice req="DDPALE_HEART">
 		<text>(Pale Heart) Investigate the Pale Heart and prepare Ill'drythk Mutagens.</text>
 		<event load="STORAGE_CHECK_AUG_DDPALEHEARTINVESTIGATION"/>
@@ -344,10 +352,6 @@
 		<text>(Corruptor) Investigate the Corruptor System.</text>
 		<event load="STORAGE_CHECK_DDCORRUPTOR_SUBSUMATIONS"/>
 	</mod-append:choice>
-	<mod-append:choice hidden="true" req="ddsoulplague_husk_human">
-		<text>(Human Husk) Mutate your Human Husk into another type of Husk.</text>
-		<event load="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM"/>
-	</mod-append:choice>
 </mod:findName>
 
 <event name="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION">
@@ -374,6 +378,10 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -396,6 +404,10 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -418,6 +430,10 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -440,6 +456,10 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -462,6 +482,10 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
@@ -484,11 +508,15 @@
 							<text>Eventually, silence takes over, and you open your eyes - knowing the enigmatic deed to be done.</text>
 							<achievement>ACH_EVENT_DDSACRIFICE</achievement>
 							<crewMember amount="1" class="ddhuman_sacrifice">Sacrifice</crewMember>
+							<choice req="pilot" lvl="1" blue="false">
+								<text>Thus was it done.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
 						</event>
 					</choice>
 				</event>
 			</choice>
-			<choice>
+			<choice req="pilot" lvl="1" blue="false">
 				<text>On second thought, nevermind. Do something else.</text>
 				<event load="STORAGE_CHECK"/>
 			</choice>
@@ -502,7 +530,7 @@
 		<text>You can't prepare any additional sacrifices while already housing so many.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice>
+	<choice req="pilot" lvl="1" blue="false">
 		<text>Nevermind, do something else.</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
@@ -516,7 +544,8 @@
 	LANIUS: IRONBOUND MUTAGEN
 	LEECH: TOXBLOOD MUTAGEN
 	ORCHID: LEAFHOST MUTAGEN
-	ROCKMAN: CINDERBARK MUTAGEN</text>
+	ROCKMAN: CINDERBARK MUTAGEN
+	SHELL: SOULSHELL MUTAGEN</text>
 	<choice req="LIST_CREW_CRYSTAL">
 		<text>(Crystal Crew) Prepare a vial of Frostwood Mutagen.</text>
 		<event>
@@ -547,7 +576,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Voidroot Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a black ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Voidroot Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_voidroot" op="add" val="1"/>
@@ -566,7 +595,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Ironbound Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a tan ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Ironbound Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_ironbound" op="add" val="1"/>
@@ -585,7 +614,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Toxblood Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a purple ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Toxblood Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_toxblood" op="add" val="1"/>
@@ -604,7 +633,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Leafhost Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a green ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Leafhost Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_leafhost" op="add" val="1"/>
@@ -623,10 +652,29 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a blue ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Cinderbark Mutagen you sacrificed your crew member for.
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a red ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Cinderbark Mutagen you sacrificed your crew member for.
 					
 					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
 					<variable name="dd_illdrythkmutagen_cinderbark" op="add" val="1"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="LIST_CREW_SHELL">
+		<text>(Shell Crew) Prepare a vial of Soulshell Mutagen.</text>
+		<event>
+			<text>You perform a rite, and tap your hand against your crew member's head. Before they can even react, their stance slackens...</text>
+			<removeCrew class="LIST_CREW_SHELL">
+				<clone>false</clone>
+				<text>You cannot clone your crew member, as their soul sings a hymn somewhere else...</text>
+			</removeCrew>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and just like that, the deed is done. You throw them into the Pale Heart, and watch as they slowly sink into its writhing vines. Some time later, a rainbow ooze begins to secrete from a gland attached to the Heart; you collect it into a vial, understanding it to be the Soulshell Mutagen you sacrificed your crew member for.
+					
+					Acquired Mutagen may be applied to unmutated Ill'drythk Statues at any point via the ship's storage button.</text>
+					<variable name="dd_illdrythkmutagen_soulshell" op="add" val="1"/>
 				</event>
 			</choice>
 		</event>
@@ -794,6 +842,22 @@
 		<text>(Dawn III Templar Drone) Set the state of the drone. [Current mode: Boarder]</text>
 		<event load="COMBAT_CHECK_DDDARKTEMPLAR_TIERTHREE_DAWN_BOARDER"/>
 	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND" blue="false">
+		<text>(Crystalline Liberator Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDCRYSTALLINELIBERATOR_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER" blue="false">
+		<text>(Crystalline Liberator Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDCRYSTALLINELIBERATOR_BOARDER"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND" blue="false">
+		<text>(Crystalline Broodmother Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
+		<event load="COMBAT_CHECK_DDCRYSTALLINEBROODMOTHER_BATTLE"/>
+	</mod-append:choice>
+	<mod-append:choice req="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER" blue="false">
+		<text>(Crystalline Broodmother Drone) Set the state of the drone. [Current mode: Boarder]</text>
+		<event load="COMBAT_CHECK_DDCRYSTALLINEBROODMOTHER_BOARDER"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="COMBAT_CHECK_REAL">
@@ -801,15 +865,19 @@
 		<text>Change your Disparity Elite's form.</text>
 		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
 	</mod-append:choice>
-	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_VALID" max_group="405" hidden="true">
+	<mod-append:choice req="BLUELIST_CREW_DDTRIBUTESHAPER" max_group="405" hidden="true">
+		<text>Change your Tributeshaper's mask.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</mod-append:choice>
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_VALID" max_group="406" hidden="true">
 		<text>Call upon your binded Soulplague mass.</text>
 		<event load="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON"/>
 	</mod-append:choice>
-	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALID" max_group="405" hidden="true">
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALID" max_group="406" hidden="true">
 		<text>You cannot call upon your binded Soulplague mass while actively threatened by another.</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
-	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALIDBECAUSEFRIENDLY" max_group="405" hidden="true">
+	<mod-append:choice req="DD_SOULPLAGUEMASS_SUMMON_OTHERMASSCHECK_NOTVALIDBECAUSEFRIENDLY" max_group="406" hidden="true">
 		<text>You cannot call upon your binded Soulplague mass while actively being assisted by another.</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
@@ -1110,6 +1178,546 @@
 	<choice hidden="true">
 		<text>Do something else instead.</text>
 		<event load="COMBAT_CHECK_DISPARITYFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD">
+	<loadEvent>COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_REAL</loadEvent>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_REAL">
+	<text>Which Tributeshaper do you want to switch the mask of?</text>
+	<choice hidden="true" req="dddeepone_tributeshaper_cage">
+		<text>(Caged Mask) Switch the mask of your Caged Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_CAGETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_cloud">
+		<text>(Clouded Mask) Switch the mask of your Clouded Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_CLOUDTO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_dark">
+		<text>(Darkened Mask) Switch the mask of your Darkened Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_DARKTO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_judge">
+		<text>(Judged Mask) Switch the mask of your Judged Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_JUDGETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_plague">
+		<text>(Plagued Mask) Switch the mask of your Plagued Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_PLAGUETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_shatter">
+		<text>(Shattered Mask) Switch the mask of your Shattered Tributeshaper.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_SHATTERTO"/>
+	</choice>
+	<choice>
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice>
+		<text>Nevermind, let's fight!</text>
+		<event>
+			<text>You decide not to do anything and prepare to fight.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_CAGETO">
+	<text>Which mask would you like to switch to from the Caged Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_CLOUDTO">
+	<text>Which mask would you like to switch to from the Clouded Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_DARKTO">
+	<text>Which mask would you like to switch to from the Darkened Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_JUDGETO">
+	<text>Which mask would you like to switch to from the Judged Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_PLAGUETO">
+	<text>Which mask would you like to switch to from the Plagued Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_SHATTERTO">
+	<text>Which mask would you like to switch to from the Shattered Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
 	</choice>
 </event>
 
@@ -2430,6 +3038,106 @@
         <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
     </choice>
 </event>
+<event name="COMBAT_CHECK_DDCRYSTALLINELIBERATOR_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDCRYSTALLINELIBERATOR_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="COMBAT_CHECK_DDCRYSTALLINEBROODMOTHER_BATTLE">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Boarding Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+</event>
+<event name="COMBAT_CHECK_DDCRYSTALLINEBROODMOTHER_BOARDER">
+	<text>Are you sure you want to change the drone's settings?</text>
+	<choice hidden="true">
+		<text>Set the drone to Defensive Mode.</text>
+		<event>
+			<text>You start calibrating the drone...</text>
+			<remove name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>You finish calibrating the drone successfully.</text>
+					<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+    <choice hidden="true">
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
 
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY">
 	<mod-append:choice hidden="true" req="JUDGE_BOON_DEEPONE" blue="false">
@@ -2509,7 +3217,7 @@
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_LAB">
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_FORTITUDE" lvl="1" blue="false">
 		<text>Fishy Fortitude [Installed]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+		<event load="STORAGE_CHECK_LAB_DEEPONES"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_FORTITUDE" lvl="0" max_lvl="0" blue="false">
 		<text>Fishy Fortitude [Not Installed]</text>
@@ -2517,7 +3225,7 @@
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_RAGE" lvl="1" blue="false">
 		<text>Reckless Rage [Installed]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+		<event load="STORAGE_CHECK_LAB_DEEPONES"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_RAGE" lvl="0" max_lvl="0" blue="false">
 		<text>Reckless Rage [Not Installed]</text>
@@ -2525,7 +3233,7 @@
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_DEEPBREATH" lvl="1" blue="false">
 		<text>Deep Breath [Installed]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
+		<event load="STORAGE_CHECK_LAB_DEEPONES"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="LAB_DEEPONE_DEEPBREATH" lvl="0" max_lvl="0" blue="false">
 		<text>Deep Breath [Not Installed]</text>
@@ -2743,6 +3451,14 @@
 		<text>(Otherworldly Tome) Investigate the Otherworldly Tome's rituals.</text>
 		<event load="STORAGE_CHECK_DARKGOD_CURSED_BOOK"/>
 	</mod-append:choice>
+	<mod-append:choice req="DARKGOD_CURSED_BOOK">
+		<text>(Otherworldly Tome) Brand one of your human crew members as a future human sacrifice.</text>
+		<event load="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="BLUELIST_DDETHEREAL_FRAGMENTS" lvl="1" blue="false">
+		<text>(Ethereal Fragment) Manifest a promised dream.</text>
+		<event load="STORAGE_CHECK_DDETHEREAL_FRAGMENT"/>
+	</mod-append:choice>
 	<mod-append:choice hidden="true" req="DDILLDRYTHK_RAINBOW_MUTAGEN" blue="false">
 		<text>(Rainbow Mutagen) Mutate an Ill'drythk Statue.</text>
 		<event load="STORAGE_CHECK_DDILLDRYTHK_RAINBOWMUTAGEN_USAGE"/>
@@ -2762,6 +3478,14 @@
 	<mod-append:choice hidden="true" req="DD_BRINGTHEMINISTERBACKFROMTHEDEADCHECK" blue="false">
 		<text>(The Minister) Revive the Minister.</text>
 		<event load="STORAGE_CHECK_DDMINISTER_RESURRECTION"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="ddsoulplague_husk_human" blue="false">
+		<text>(Human Husk) Mutate your Human Husk into another type of Husk.</text>
+		<event load="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM"/>
+	</mod-append:choice>
+	<mod-append:choice req="BLUELIST_CREW_DDTRIBUTESHAPER" hidden="true" blue="false">
+		<text>Change your Tributeshaper's mask.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
 	</mod-append:choice>
 </mod:findName>
 
@@ -2935,7 +3659,9 @@
 			<choice hidden="true" req="LIST_CREW_DISPARITY">
 				<text>(Disparity Crew) Have your Disparity crew member transcribe the text.</text>
 				<event>
-					<text>Your Disparity crew member writes you a cipher. Using it, you're able to understand these sets of texts to be stories detailing the myths and legends of Disparity Crystals, fabled pieces of power said to be capable of increasing the capabilities of the Disparity's beacons. Indeed, there are even rituals described that claim to allow one to locate said Crystals... and, if you collect all five, something amazing is said to happen.</text>
+					<text>Your Disparity crew member writes you a cipher. Using it, you're able to understand these sets of texts to be stories detailing the myths and legends of Disparity Crystals, fabled pieces of power said to be capable of increasing the capabilities of the Disparity's beacons. Indeed, there are even rituals described that claim to allow one to locate said Crystals... and, if you collect all five, something amazing is said to happen.
+					
+					Towards the end of these stories lies a loose page - its own text scribbled much more messily than the rest. Indeed, its penmanship seems to differ entirely, and it describes a separate ritual of its own...</text>
 					<choice hidden="true">
 						<text>Investigate the Crystal of Potency.</text>
 						<event>
@@ -2995,9 +3721,25 @@
 						<text>Investigate the Legendary Crystal.</text>
 						<event>
 							<text>LEGENDARY CRYSTAL:
-							It's said that if you collect all five Disparity Crystals, the path to the Legendary Crystal will be made available through a ritual...</text>
+							It's said that if you collect all five Disparity Crystals, the path to the flawless Legendary Crystal will be made available through a ritual. Its perfection is claimed to be so complete, in fact, that it's alleged to be capable of removing the negative effects of every other Disparity Crystal...</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the loose page.</text>
+						<event>
+							<text>Rather than describing the nature and process of the ritual, in typical fashion, this page reads more like a monologue, or torn excerpt. Its contents read as follows:
+							
+							"Ya know, Ev... ya ain't ever said nothin' to me 'bout these purple blokes of yours, but Two's always gushin' 'bout the stories you've told 'em. Can't reckon they'd be pleased, seein' 'em at each other's throats like this. 'Course, a promise is a promise, n'we ain't the types to break our word, are we? Just hope ya don't regret it, s'all."
+							
+							"Well, if anyone's readin' this, then somethin' must've worked right, at least. May s'well trust in that, even if artsin' ain't my strongsuit."
+							
+							The text ends there, and what follows are several crudely drawn diagrams depicting vague ritual steps, as well as doodles resembling the strange, shadowy drones that the Disparity are known to use. Emphasized in their amateurish depictions here, though, are unfamiliar spikes, and jagged edges... you can only surmise that, whatever this ritual is, it results in the potential altering of your Disparity drones' appearances, if you have any.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Strange. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
 							</choice>
 						</event>
@@ -3018,10 +3760,12 @@
 		<text>Investigate the glistening yellow text, the Prayers of Proving.</text>
 		<event>
 			<text>Though you can't read the text, this section's diagrams showcase depictions of wispy, shadowy darkness and ritualistic devotion. You'll need to find somebody who understands the text to perform its rituals.</text>
-			<choice hidden="true" req="deeponecultist">
+			<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 				<text>(Enlightened Crew) Have your Enlightened crew member transcribe the text.</text>
 				<event>
-					<text>Your Enlightened crew member writes you a cipher. Using it, you're able to understand what the text describes: a couple rituals; one that allows Enlightened to ascend from their position as mere cultists, and become one of the Dark God's Chosen, and a second that allows you to collect a form of robotic gifts unique to the Enlightened.</text>
+					<text>Your Enlightened crew member writes you a cipher. Using it, you're able to understand what the text describes: a couple rituals; one that allows Enlightened to ascend from their position as mere cultists, and become one of the Dark God's Chosen, and a second that allows you to collect a form of robotic gift unique to the Enlightened.
+					
+					Towards the end of these rituals lies a loose page - its own text scribbled much more messily than the rest. Indeed, its penmanship seems to differ entirely, and it describes a separate ritual of its own...</text>
 					<choice hidden="true">
 						<text>Investigate the Ritual of Divine Devotion.</text>
 						<event>
@@ -3040,6 +3784,22 @@
 							This ritual allows you to offer tribute to the Dark God, in the form of as many human sacrifices as you desire. Each human sacrifice made in the name of the ritual, including the first one made to initiate it (regardless of whether or not this first one was a human sacrifice), will grant you a choice between an Unseen Templar drone, Blessings for any aforementioned drones you may already own and the ability to strengthen any Blessings they may already possess.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the loose page.</text>
+						<event>
+							<text>Rather than describing the nature and process of the ritual, in typical fashion, this page reads more like a monologue, or torn excerpt. Its contents read as follows:
+							
+							"Hah! Ya never were subtle, were ya? Six'll be livid when she finds out, ya know. Fightin' souls for all eternity's one thing, but usin' 'em? Makin' 'em all 'splosive, n'whatnot? THAT'LL piss 'er right off. Knowin' Six, she'd probably 'preciate the anger, though. Always did keep 'er sharp."
+							
+							"N'she ain't completely stubborn, a'least. Even if she wouldn't admit it, she'd know that we needed every advantage we could get out 'ere. Big guy ain't messin' 'round, no more. But, hey - not like ya need ME to tell ya that. S'pose I'm just ramblin' to the wind, ain't I?"
+							
+							The text ends there, and what follows are several crudely drawn diagrams depicting vague ritual steps, as well as doodles resembling the Enlightened - eyelessness and all. Emphasized in their amateurish depictions here, though, are strange masks, and ghostly emanations... you can only surmise that, whatever this ritual is, it results in the potential altering of your Enlightened Cultists, if you have any.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Strange. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
 							</choice>
 						</event>
@@ -3147,7 +3907,9 @@
 			<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
 				<text>(Tempest Crew) Have your Tempest-aligned crew member transcribe the text.</text>
 				<event>
-					<text>Your Tempest-aligned crew member touches the page, and it suddenly becomes legible. You're able to understand that the Cult of the Tempest uses these rituals to prove their devotion to the Tempest and receive its spawn in turn.</text>
+					<text>Your Tempest-aligned crew member touches the tome, and the relevant text suddenly becomes legible. You're able to understand that the Cult of the Tempest uses these rituals to prove their devotion to the Tempest and receive its spawn in turn.
+					
+					Towards the end of these rituals lies a loose page - its own text scribbled much more messily than the rest. Indeed, its penmanship seems to differ entirely, and it describes a separate ritual of its own...</text>
 					<choice hidden="true">
 						<text>Investigate the Ritual of Stormcalling.</text>
 						<event>
@@ -3155,6 +3917,22 @@
 							This ritual summons either a Stormborn Spawn or a Spawn Warden into the room with you, depending on which you desire. A Spawn Warden may merely be enthralled for no additional cost, but a Stormborn Spawn will require 1-2 additional human sacrifices to properly enthrall it. If its demands for flesh aren't met, the ritual will fail and the spawn will turn hostile.</text>
 							<choice req="pilot" lvl="1" max_group="1" blue="false">
 								<text>Interesting. Close the book.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Investigate the loose page.</text>
+						<event>
+							<text>Rather than describing the nature and process of the ritual, in typical fashion, this page reads more like a monologue, or torn excerpt. Its contents read as follows:
+							
+							"Now we're talkin' wonders! Reckon it's pretty, prose-ey stories like these that got the big guy so attached to ya in the first place, Ev. Or, ah... shucks. I... forget I mentioned it, 'kay? I know ya ain't readin' these, anyhow, but I know yer plenty sensitive 'bout your past self."
+							
+							"Look, I ain't good with words. Or with this picture stuff, really, but... I told ya I would, so I will. Yer countin' on me, as much as I'm countin' on ya, n'if drawin' weird, romantic plants is what it takes, I reckon it's what I'll do!"
+							
+							The text ends there, and what follows are several crudely drawn diagrams depicting vague ritual steps, as well as doodles resembling some sort of stringy, plant-like creature. Emphasized alongside its amateurish depiction here, though, are a dozen or so daggers, and other cutting implements... you can only surmise that, whatever this ritual is, it involves being prepared for a fight, somehow.</text>
+							<choice req="pilot" lvl="1" max_group="1" blue="false">
+								<text>Strange. Close the book.</text>
 								<event load="STORAGE_CHECK"/>
 							</choice>
 						</event>
@@ -3407,7 +4185,9 @@
 	<choice hidden="true">
 		<text>Investigate the inky black text, the Beginner's Guide to the Occult.</text>
 		<event>
-			<text>You realize you actually CAN read this section... it appears to outline several basic rituals, and goes into detail about the requirements and rules for rituals in general.</text>
+			<text>You realize that you actually CAN read this section... it appears to outline several basic rituals, and goes into detail about the requirements and rules for rituals in general.
+			
+			Towards the end of these rituals and rules lies a loose page - its own text scribbled much more messily than the rest. Indeed, its penmanship seems to differ entirely...</text>
 			<choice hidden="true">
 				<text>Investigate the Ritual Requirements and Rules.</text>
 				<event>
@@ -3438,7 +4218,7 @@
 				<text>Investigate the Ritual of Dark Weaponry.</text>
 				<event>
 					<text>RITUAL OF DARK WEAPONRY:
-					This ritual gives you the location of one of the Dark One's gifts, a weapon empowered by raw darkness. The weapon, and its location, are random.</text>
+					This ritual gives you the location of one of the Dark One's gifts: a weapon empowered by raw darkness. The weapon, and its location, are random.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
@@ -3449,8 +4229,19 @@
 				<text>Investigate the Ritual of Shadow Drones.</text>
 				<event>
 					<text>RITUAL OF SHADOW DRONES:
-					This ritual gives you the location of one of the Dark One's gifts, a drone empowered by raw darkness. The drone, and its location, are random.</text>
+					This ritual gives you the location of one of the Dark One's gifts: a drone empowered by raw darkness. The drone, and its location, are random.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Interesting. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Investigate the Ritual of Restless Spirits.</text>
+				<event>
+					<text>RITUAL OF RESTLESS SPIRITS:
+					This ritual gives you the location of two Unstable Souls - teleporting crew with special, explosive effects dependent on their type. The Unstable Souls' types, and their location, are random.</text>
+					<choice req="pilot" lvl="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
 					</choice>
@@ -3460,7 +4251,7 @@
 				<text>Investigate the Ritual of Corruption.</text>
 				<event>
 					<text>RITUAL OF CORRUPTION:
-					This ritual gives you the location of a strange fountain, from which one of your crew members can drink to embrace the Dark God's gifts. The fountain's location is random.</text>
+					This ritual gives you the location of a strange fountain, from which one of your crew members can drink to embrace the Dark One's gifts. The fountain's location is random.</text>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Interesting. Close the book.</text>
 						<event load="STORAGE_CHECK"/>
@@ -3533,6 +4324,50 @@
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true">
+				<text>Investigate the loose page.</text>
+				<event>
+					<text>Rather than describing any rules, or the nature and process of a ritual, this page reads more like a monologue, or torn excerpt. Its contents read as follows:
+					
+					"There ain't much time left, now. Wishin' I could be there with ya, showin' the big guy what's what, but... I reckon I'd only get in the way, anyhow. N'hell - I'm needed here, ain't I? Pavin' the path for tomorrow, even as the curtains close on today! Pardon me, for, uh... stealin' your own words, 'course. They just always were, so... poetic, n'the like."
+					
+					"Just one more batch of pictures, then, ain't it? 'Member you sayin' these were the important ones. Can't be affordin' to muck it up now, can I? Wouldn't wanna be givin' the others somethin' worth pushin' me 'round over, next time we're seein' each other! N'I know we'll be seein' each other again, Ev. I'm... holdin' ya to that promise."
+					
+					The text ends there, and what follows are several crudely drawn, differently colored sigils, each depicting a unique symbol. Even at a cursory glance, something about them strikes you as being important, but you don't manage to grasp much more with a closer inspection.</text>
+					<choice hidden="true" req="dd_purplesigil_obtained" lvl="1" blue="false">
+						<text>The purple sigil, emblazoned with a large eye, glows with a radiant, dream-like light.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="dd_purplesigil_obtained" lvl="0" max_lvl="0" blue="false">
+						<text>The purple sigil, emblazoned with a large eye, remains dull and unnoteworthy.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="dd_bluesigil_obtained" lvl="1" blue="false">
+						<text>The blue sigil, emblazoned with a lightning bolt, glows with a radiant, dream-like light.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="dd_bluesigil_obtained" lvl="0" max_lvl="0" blue="false">
+						<text>The blue sigil, emblazoned with a lightning bolt, remains dull and unnoteworthy.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="dd_yellowsigil_obtained" lvl="1" blue="false">
+						<text>The yellow sigil, emblazoned with a ghastly face, glows with a radiant, dream-like light.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="dd_yellowsigil_obtained" lvl="0" max_lvl="0" blue="false">
+						<text>The yellow sigil, emblazoned with a ghastly face, remains dull and unnoteworthy.</text>
+						<event load="OPTION_INVALID"/>
+					</choice>
+					<choice hidden="true" req="DD_SIGILCOLLECTION_COMPLETE" lvl="1">
+						<text>The ethereal light of the three sigils, now fully restored, warms the very air around you.</text>
+						<event load="DD_ECHOEDDREAM_QUEST_FINALE"/>
+					</choice>
+					<choice req="DD_SIGILCOLLECTION_COMPLETE" lvl="0" max_lvl="0" blue="false">
+						<text>Strange. Close the book.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
 			<choice req="pilot" lvl="1" max_group="1" blue="false">
 				<text>Close the book.</text>
 				<event load="STORAGE_CHECK"/>
@@ -3575,6 +4410,381 @@
 	</choice>
 	<choice req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Close the book.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="DD_ECHOEDDREAM_QUEST_FINALE">
+	<text>The light of the three sigils seems to only intensify as you look upon them, and you realize the nature of their power - the strange, ethereal crystals... they've led you here, to this moment.
+	
+	Though, this time, you don't feel yourself falling, helplessly, into their allure - you feel as if, somehow, their resplendent glow now dances to your own tune.</text>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>I... want to see some answers, then. Take me to them.</text>
+		<event>
+			<text>You stare into the sigils' wonderful, combined glow, before closing your eyes of your own volition. For perhaps the final time, you feel as everything else seems to fade away around you...</text>
+			<choice hidden="true">
+				<text>...</text>
+				<event>
+					<text>...</text>
+					<playMusic>paragon</playMusic>
+					<choice hidden="true">
+						<text>...</text>
+						<event>
+							<text>Ya weren't thinkin' of leavin' to see the big guy, without sayin' a word, were ya?</text>
+							<choice hidden="true">
+								<text>Four? I... I didn't want to worry you.</text>
+								<event>
+									<text>Hah! S'if up'n leavin' without a trace wouldn't leave me worryin' to death, Ev.</text>
+									<choice hidden="true">
+										<text>I'm... I'm sorry. I just... never wanted to say goodbye, like this.</text>
+										<event>
+											<text>S'only goodbye for now, ain't it? Keep your chin up, dreamer. All 'em wonderful ideas of yours may come leakin' outta ya ears, otherwise.</text>
+											<choice hidden="true">
+												<text>Mmm... you know I don't have ears, Four.</text>
+												<event>
+													<text>As if that would stop ya! Ya'd dream up a pair if ya wanted 'em, I'm sure. Ya've... never let anythin' hold ya down for long, ya know?</text>
+													<choice hidden="true">
+														<text>...You don't have to pretend that this is easy on you, you know. I know I'm asking much of everyone, but... especially of you, with the way she...</text>
+														<event>
+															<text>Hey! Hey, hey, hey - ya ain't gotta worry about me, ya know? Or the others. Won't be easy explainin' it to 'em, but... I know we all trust in ya, Ev. N'that ain't because of any which way I was created to feel, neither!</text>
+															<choice hidden="true">
+																<text>But... you do feel that way, no? Is this not... heartbreaking?</text>
+																<event>
+																	<text>'Course I do. N'course it is! D'ya think that's because of any way I was CREATED to feel, though? I love ya, Evelyn. N'it really ain't 'cause your other self dreamed of a damned thing, neither, ya hear? Yer... a wonderful gal, inside and out.</text>
+																	<choice hidden="true">
+																		<text>Four, I...</text>
+																		<event>
+																			<text>Ya ain't have to say nothin' 'bout it, neither. Last thing I'd be wantin' to do right now is have ya second-guessin' nonsense, right before ya handle the big guy. I just want ya to know... we'll be seein' each other again, ya hear? I trust in your dreams more than anythin', Ev.</text>
+																			<choice hidden="true">
+																				<text>We will, Four. I... I promise you that, okay? No matter what happens, or what that infernal machine says... we will see each other again. All of us.</text>
+																				<event>
+																					<text>N'ain't that the truth! Now, get on out there, n'show... that...</text>
+																					<choice hidden="true">
+																						<text>...</text>
+																						<event>
+																							<text>...</text>
+																							<choice hidden="true">
+																								<text>...</text>
+																								<event>
+																									<text>In an instant, your mind is torn away from this unfamiliar conversation, and a slow series of visions warmly comes to greet you.
+																					
+																									You see a golden Crystal. The priest. The first to languish.
+																											
+																									You see a golden Engi. The journeyman. The second to perish.
+																									
+																									You see a golden Shell. The inventor. The third to suffer.
+																									
+																									You see a golden human. The sharpshooter. The fourth to grieve.
+																									
+																									You see a golden Mantis. The strategist. The fifth to break.
+																									
+																									You see a golden Deep One. The warrior. The sixth to bleed.
+																									
+																									You see a dark, metallic form. The dreamer. The seventh, and last, to live.
+																											
+																									And, finally... a ship. Its hull black, and energized with dreams of gold - marked with a single, gilded eye. Aboard it, what remains of the sharpshooter wanders throughout a cold void... forever alone, in this vast Multiverse.</text>
+																									<metaVariable name="dd_purplesigil_obtained" op="set" val="0"/>
+																									<metaVariable name="dd_bluesigil_obtained" op="set" val="0"/>
+																									<metaVariable name="dd_yellowsigil_obtained" op="set" val="0"/>
+																									<choice hidden="true">
+																										<text>Cherish this final vision.</text>
+																										<event>
+																											<text>You burn the dreamed visage of this vessel into your mind, and hold onto its memory dearly. You don't want to forget what you've seen here.</text>
+																											<unlockCustomShip silent="false">PLAYER_DDECHOEDDREAM</unlockCustomShip>
+																											<achievement>ACH_EVENT_DDECHOEDDREAMQUESTCOMPLETE</achievement>
+																											<variable name="ach_event_ddechoeddreamquestcomplete" op="set" val="1"/>
+																											<choice hidden="true">
+																												<text>Return to normalcy, with this memory in tow.</text>
+																												<event>
+																													<text>Not so suddenly this time, your vision returns to normal, and you see that the sigils upon the Otherworldly Tome's strange, loose page have returned to being dull and unnoteworthy once more. Laying atop them, though... is another one of those ethereal, dream-like shards. Again, its pull is not so overwhelming anymore.</text>
+																													<playMusic/>
+																													<choice hidden="true">
+																														<text>Grab the shard, carefully.</text>
+																														<event>
+																															<text>Your senses dull, as you grasp the inexplicable, resplendent thing... but they never fade away entirely. It's yours now, to do with as you wish. You need merely hold onto your dreams.</text>
+																															<augment name="DDETHEREAL_FRAGMENT"/>
+																															<choice req="pilot" lvl="1" max_group="1" blue="false">
+																																<text>I'll hold onto them, then. I promise.</text>
+																																<event load="STORAGE_CHECK"/>
+																															</choice>
+																														</event>
+																													</choice>
+																												</event>
+																											</choice>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDETHEREAL_FRAGMENT">
+	<text>Your senses dull, as you bask in the shard's resplendent light once more. What is it that you would dream of, if given the opportunity to?
+	
+	[Sacrifices - human or scrap - made over the course of the run are counted up and treated as a form of currency, called Soul-Coins, used to manifest dreams within this menu. Tracks sacrifices made to initially start rituals, as well as any that may be required to further particular rituals.]</text>
+	<choice hidden="true" req="dd_dddream_coins" lvl="1" blue="false">
+		<text>[1 SOUL-COIN] Dream of a lost soul, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-1"/>
+			<crewMember amount="1" class="ddunstable_soul_spent">Dreamer</crewMember>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="0" blue="false">
+		<text>[1 SOUL-COIN] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="2" blue="false">
+		<text>[2 SOUL-COINS] Dream of a lowly friend, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-2"/>
+			<crewMember amount="1" class="LIST_DDETHEREALSTORE_CREW_NONELITE">Dreamer</crewMember>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="1" blue="false">
+		<text>[2 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="3" blue="false">
+		<text>[3 SOUL-COINS] Dream of a sickly weapon, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-3"/>
+			<weapon name="GIFTLIST_DDSOULPLAGUE_WEAPONS"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="2" blue="false">
+		<text>[3 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="4" blue="false">
+		<text>[4 SOUL-COINS] Dream of a mighty friend, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-4"/>
+			<crewMember amount="1" class="LIST_DDETHEREALSTORE_CREW_ELITE">Dreamer</crewMember>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="3" blue="false">
+		<text>[4 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="5" blue="false">
+		<text>[5 SOUL-COINS] Dream of a dark drone, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-5"/>
+			<drone name="GIFTLIST_DARKGOD_DRONES"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="4" blue="false">
+		<text>[5 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="6" blue="false">
+		<text>[6 SOUL-COINS] Dream of a dark weapon, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-6"/>
+			<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="5" blue="false">
+		<text>[6 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="7" blue="false">
+		<text>[7 SOUL-COINS] Dream of a living drone, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-7"/>
+			<drone name="LIST_DRONES_DDFALSERADIANCE"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="6" blue="false">
+		<text>[7 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="8" blue="false">
+		<text>[8 SOUL-COINS] Dream of an all-powerful friend, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-8"/>
+			<crewMember amount="1" class="LIST_DDETHEREALSTORE_CREW_SUPERELITE">Dreamer</crewMember>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="7" blue="false">
+		<text>[8 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="9" blue="false">
+		<text>[9 SOUL-COINS] Dream of a special loot, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-9"/>
+			<weapon name="LIST_DDETHEREALSTORE_GEAR_LOOT"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="8" blue="false">
+		<text>[9 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="10" blue="false">
+		<text>[10 SOUL-COINS] Dream of a living weapon, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-10"/>
+			<weapon name="GIFTLIST_DDFALSERADIANCE_WEAPONS"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="9" blue="false">
+		<text>[10 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="11" blue="false">
+		<text>[11 SOUL-COINS] Dream of a powerful drone, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-11"/>
+			<drone name="LIST_DDETHEREALSTORE_GEAR_SUPERDRONE"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="10" blue="false">
+		<text>[11 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="12" blue="false">
+		<text>[12 SOUL-COINS] Dream of a legendary friend, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-12"/>
+			<crewMember amount="1" class="ddtempest_blight_guardian_seed">Dreamer</crewMember>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="11" blue="false">
+		<text>[12 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="13" blue="false">
+		<text>[13 SOUL-COINS] Dream of a powerful loot weapon, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-13"/>
+			<weapon name="LIST_DDETHEREALSTORE_GEAR_SUPERLOOT"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="12" blue="false">
+		<text>[13 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="14" blue="false">
+		<text>[14 SOUL-COINS] Dream of a legendary drone, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-14"/>
+			<drone name="LIST_DDETHEREALSTORE_GEAR_GODDRONE"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="13" blue="false">
+		<text>[14 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="15" blue="false">
+		<text>[15 SOUL-COINS] Dream of a legendary weapon, in need of guidance.</text>
+		<event>
+			<text>The residual power of your past sacrifices manifests itself before you, in the form of the dream you desired.</text>
+			<variable name="dd_dddream_coins" op="add" val="-15"/>
+			<weapon name="LIST_DDETHEREALSTORE_GEAR_GODLOOT"/>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_dddream_coins" lvl="0" max_lvl="14" blue="false">
+		<text>[15 SOUL-COINS] You don't have enough power stored up to manifest this dream.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Nevermind - I'll dream another day.</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
 </event>
@@ -4080,7 +5290,7 @@
 		<text>I desire... Life Support.</text>
 		<event>
 			<text>Thus was it done, and yet... your ship's power seems to radiate further, still...</text>
-			<system name="teleporter"/>
+			<system name="oxygen"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="STORAGE_CHECK_DDDIVINEGIMMICK_EATMOTE_WEAPONPART"/>
@@ -4542,6 +5752,18 @@
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true">
+				<text>A Soulshell mutation.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a dark, purple hue, and its arms elongate into more tentacle-like, multicolored appendages. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_soulshell</transformRace>
+					<remove name="DDILLDRYTHK_RAINBOW_MUTAGEN"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
 			<choice req="pilot" lvl="1" max_group="1" blue="false">
 				<text>Nevermind.</text>
 				<event load="STORAGE_CHECK"/>
@@ -4626,6 +5848,18 @@
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an orangeish-red hue, and flames begin to spew from its neck. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
 					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_cinderbark</transformRace>
 					<variable name="dd_illdrythkmutagen_cinderbark" op="add" val="-1"/>
+					<choice req="pilot" lvl="1" max_group="1" blue="false">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_illdrythkmutagen_cinderbark" lvl="1">
+				<text>(Soulshell Mutagen) Apply a vial of Soulshell Mutagen.</text>
+				<event>
+					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a dark, purple hue, and its arms elongate into more tentacle-like, multicolored appendages. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
+					<transformRace class="ddilldrythk_statue">ddilldrythk_statue_soulshell</transformRace>
+					<variable name="dd_illdrythkmutagen_soulshell" op="add" val="-1"/>
 					<choice req="pilot" lvl="1" max_group="1" blue="false">
 						<text>Continue...</text>
 						<event load="STORAGE_CHECK"/>
@@ -5117,6 +6351,550 @@
 	</choice>
 </event>
 
+<event name="STORAGE_CHECK_DDMINISTER_RESURRECTION">
+	<text>It doesn't take you long to find the Minister's lifeless body - giving it a good kick, a flash of light bursts forth from it... and he's alive once more. He stands up, cracks his back, and then walks away without a word.</text>
+	<variable name="dd_minister_immortal_check" op="set" val="0"/>
+	<crewMember amount="1" class="ddunique_theminister" all_skills="2">The Minister</crewMember>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Continue...</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD">
+	<loadEvent>STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_REAL</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_REAL">
+	<text>Which Tributeshaper do you want to switch the mask of?</text>
+	<choice hidden="true" req="dddeepone_tributeshaper_cage">
+		<text>(Caged Mask) Switch the mask of your Caged Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_CAGETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_cloud">
+		<text>(Clouded Mask) Switch the mask of your Clouded Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_CLOUDTO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_dark">
+		<text>(Darkened Mask) Switch the mask of your Darkened Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_DARKTO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_judge">
+		<text>(Judged Mask) Switch the mask of your Judged Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_JUDGETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_plague">
+		<text>(Plagued Mask) Switch the mask of your Plagued Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_PLAGUETO"/>
+	</choice>
+	<choice hidden="true" req="dddeepone_tributeshaper_shatter">
+		<text>(Shattered Mask) Switch the mask of your Shattered Tributeshaper.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_SHATTERTO"/>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_CAGETO">
+	<text>Which mask would you like to switch to from the Caged Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cage">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_CLOUDTO">
+	<text>Which mask would you like to switch to from the Clouded Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_cloud">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_DARKTO">
+	<text>Which mask would you like to switch to from the Darkened Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_dark">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_JUDGETO">
+	<text>Which mask would you like to switch to from the Judged Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_judge">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_PLAGUETO">
+	<text>Which mask would you like to switch to from the Plagued Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" blue="false">
+		<text>Switch to the Shattered Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Shattered Mask, and finds itself reflective of its ruinous energies...</text>
+			<transformRace class="dddeepone_tributeshaper_plague">dddeepone_tributeshaper_shatter</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Shattered Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_SHATTERTO">
+	<text>Which mask would you like to switch to from the Shattered Mask?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" blue="false">
+		<text>Switch to the Caged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Caged Mask, and finds itself reflective of its chilling energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_cage</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Caged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" blue="false">
+		<text>Switch to the Clouded Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Clouded Mask, and finds itself reflective of its electrifying energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_cloud</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Clouded Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" blue="false">
+		<text>Switch to the Darkened Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Darkened Mask, and finds itself reflective of its chaotic energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_dark</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Darkened Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" blue="false">
+		<text>Switch to the Judged Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Judged Mask, and finds itself reflective of its radiant energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_judge</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Judged Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" blue="false">
+		<text>Switch to the Plagued Mask.</text>
+		<event>
+			<text>Your Tributeshaper draws on the power of the Plagued Mask, and finds itself reflective of its sickly energies...</text>
+			<transformRace class="dddeepone_tributeshaper_shatter">dddeepone_tributeshaper_plague</transformRace>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>You do not possess the Plagued Mask.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK_DDTRIBUTESHAPERFORMSWITCH_LOAD"/>
+	</choice>
+</event>
+
 <event name="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM">
 	<text>You may force one of your Human Husks to mutate into another variety of Husk by connecting to the whispers within their mind, and focusing on the instability within their DNA... assuming you desire to do so, of course.</text>
 	<choice>
@@ -5124,6 +6902,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_crystal</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5131,6 +6913,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_engi</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5138,6 +6924,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_zoltan</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5145,6 +6935,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_orchid</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5152,6 +6946,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_mantis</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5159,6 +6957,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_rockman</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5166,6 +6968,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_slug</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5173,6 +6979,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_shell</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5180,6 +6990,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_lanius</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5187,6 +7001,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_deepone</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5194,6 +7012,10 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_ghost</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice>
@@ -5201,20 +7023,14 @@
 		<event>
 			<text>Your Husk's face twists, and changes, as you force upon them the whim of your desire and they mutate to your will.</text>
 			<transformRace class="ddsoulplague_husk_human">ddsoulplague_husk_leech</transformRace>
+			<choice req="pilot" lvl="1" max_group="1" blue="false">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
 		</event>
 	</choice>
 	<choice req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Nevermind, do something else.</text>
-		<event load="STORAGE_CHECK"/>
-	</choice>
-</event>
-
-<event name="STORAGE_CHECK_DDMINISTER_RESURRECTION">
-	<text>It doesn't take you long to find the Minister's lifeless body - giving it a good kick, a flash of light bursts forth from it... and he's alive once more. He stands up, cracks his back, and then walks away without a word.</text>
-	<variable name="dd_minister_immortal_check" op="set" val="0"/>
-	<crewMember amount="1" class="ddunique_theminister" all_skills="2">The Minister</crewMember>
-	<choice req="pilot" lvl="1" max_group="1" blue="false">
-		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
 </event>
@@ -5592,7 +7408,7 @@
 	[Effects: Deep Ones no longer need oxygen, and they're given 1.2x sabotage speed.]
 	
 	[Warning: After installing this, you will not be able to install any more primary upgrades for Deep One crew. You will not be able to deactivate this mod either.]</text>
-	<choice hidden="true">
+	<choice hidden="true" req="EX_LAB_DEEPONE_DEEPBREATH" lvl="0" max_lvl="0" blue="false" max_group="0">
 		<text>Install the modification. [Cost: 50~, 2{]</text>
 		<event>
 			<text>You install the modification.</text>
@@ -5605,6 +7421,10 @@
 				<event load="INSTALL_LAB_DEEPONES_DEEPBREATH"/>
 			</choice>
 		</event>
+	</choice>
+	<choice hidden="true" req="EX_LAB_DEEPONE_DEEPBREATH" lvl="1" blue="false" max_group="0">
+		<text>You cannot install this lab modification, as you still have the external version.</text>
+		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
 		<text>Nevermind.</text>

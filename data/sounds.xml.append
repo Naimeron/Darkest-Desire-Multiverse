@@ -47,7 +47,7 @@
 <dgtendrilSplat2 volume="8">aliens/bp_sfx_darkgodtendrilsplat_2.ogg</dgtendrilSplat2>
 <dgtendrilSplat3 volume="7">aliens/bp_sfx_darkgodtendrilsplat_3.ogg</dgtendrilSplat3>
 <dgtendrilDeath volume="10">aliens/bp_sfx_darkgodtendrildeath.ogg</dgtendrilDeath>
-<thehungerroar volume="10">aliens/bp_sfx_thehungerroar.ogg</thehungerroar>
+<thehungerroar volume="7">aliens/bp_sfx_thehungerroar.ogg</thehungerroar>
 <ddultimalightningstrike volume="10">aliens/bp_sfx_ddultimalightningstrike.ogg</ddultimalightningstrike>
 <ddstormbornspawngrowl volume="10">aliens/bp_sfx_ddstormbornspawngrowl.ogg</ddstormbornspawngrowl>
 <dddeepone_growl volume="6">aliens/bp_sfx_dddeepone_growl.ogg</dddeepone_growl>

@@ -12,8 +12,8 @@
 			</choice>
 		</event>
 	</mod-append:choice>
-	<mod-append:choice req="dddeepone_chosen" blue="false">
-		<text>Present a Deep One Chosen.</text>
+	<mod-append:choice req="BLUELIST_CREW_DDELITEDEEPONE" blue="false">
+		<text>Present your Elite Deep One crew.</text>
 		<event>
 			<text>"These ones... understand the gravity of the pact they've made. Their dedication... to their cause, as ominous as it is... impresses me. Well done, traveler. Expect... rewards before your next journey."</text>
 			<achievement>ACH_BOON_DDDEEPONE_ELITE</achievement>
@@ -798,4 +798,408 @@
 	<achievement silent="false">ACH_DDREN_SERAPHIM</achievement>
 	<autoReward level="LOW">stuff</autoReward>
 	<weapon name="DDPHASE_SERAPHIM_CHAOS"/>
+</event>
+
+<mod:findName type="event" name="SYLVAN_STANDARD">
+	<mod-append:choice hidden="true" req="SYLVAN_DDSHATTEREDPROMISE_STORY_CHECK" lvl="1" max_group="3" blue="true">
+		<text>Sylvan has a story he wants to tell.</text>
+		<event load="SYLVAN_DDSOULPLAGUE_STORY"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="SYLVAN_DDSOULPLAGUE_STORY">
+	<text>"Alright ssstranger! Have you ever heard the tale... of the Corruptor sssysssstem? No? Well, that'sss becaussse there ain't one, asss far asss I can tell. Not a sssoul ssseems to be able to ansssswer me on the matter. Not the other merchantsss, who peddle the cursssed thing, OR the poor ssssapsss they sssucker into buying it."
+	
+	Sylvan tilts his eyestalks slightly, seemingly deep in thought. "Now, unlessss everyone in the Multiverssse hasss come to sssome kind of agreement to play a prank on your ol' pal Sssylvan, I think ssssomething... ssstrange is at work here, ssstranger.
+	
+	That'sss why I came here - to the beating heart, sssso to ssspeak, of all this mattervirusss nonssenssse. Leassst... that'sss what I wasss exxxpecting it to be, following the breadcrumb trail, but I ain't ssseen a thing out of the ordinary. Jussst nebula, nebula, and... more nebula, frankly.
+	
+	And don't that just make the whole thing ssstranger, ssstranger? I can tell by that look on your faccce - you've sseen sssomething here. You ain't the only one, neither - another ssstranger came rolling through here jussst a bit ago. Wasss ranting and raving - real crazzzy-like - 'bout sseeing dozensss of ssshipsss full of thosse Ssssoulplague Husssk thingsss.
+	
+	Meanwhile, me? Nada. Ain't a thing ssstirring in the empty ssspace out here. It all feelsss ssso... intentttional, ssssomehow. Like the truth itssself iss hiding from me. That other ssstranger ssseemed to feel the sssame way, too - tried asssking me to follow her to ssssomething weird ssshe'd sseen.
+	
+	Now, believe me - I'd love to blindly trussst every which perssson who rollsss on out here, deep into the depthsss of interssstellar sspace. There wasss ssssomething in her eyesss, though, ssstranger... sssomething real dark. Wasssn't 'bout to find myssself backssstabbed in the alley of ssssome backwater nebula, you know?
+	
+	Though, you on the other hand... I know you're the real daring type, ssstranger. If you wanted, I can tell you where the weirdo went. Maybe ssshe really doesss have ssssome ansswersss, and you could get to the bottom of thisss whole Corruptor bussinessss in my placcce, eh? What do you ssssay, ssstranger?"</text>
+	<choice hidden="true">
+		<text>Sure, sounds interesting enough.</text>
+		<event>
+			<text>"I knew you were made of tougher ssstuff! In that cassse, here'sss where ssshe went - but, how about a bit of trading firssst, eh, sssstranger? Can't sssay I've ssseen a lot of bussinessss, all the way out here! Or, ah... any, you know?"</text>
+			<achievement>ACH_SYLVAN_STORY</achievement>
+			<quest event="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST"/>
+			<variable name="loc_ddshatteredpromise_quest" op="set" val="1"/>
+			<choice>
+				<text>Continue...</text>
+				<event>
+					<loadEvent>SYLVAN_STANDARD</loadEvent>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I'll pass, thanks.</text>
+		<event>
+			<text>"That'ssss alright, ssstranger. No hard feelingssss."</text>
+			<choice>
+				<text>Continue...</text>
+				<event>
+					<loadEvent>SYLVAN_STANDARD</loadEvent>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT" auto_blueprint="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER">
+	<destroyed>
+		<text>The strange, Soulplague-infected mass is broken apart ceremoniously - its remnants splintering, and sinking away, deeper, and deeper, into the nebula...</text>
+		<autoReward level="HIGH">standard_no_item</autoReward>
+		<choice hidden="true" req="mantis_bishop" lvl="1" blue="false">
+			<text>Continue...</text>
+			<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_LIVINGMANTIS"/>
+		</choice>
+		<choice hidden="true" req="mantis_bishop" lvl="0" max_lvl="0" blue="false">
+			<text>Continue...</text>
+			<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_DEADMANTIS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>As the last of the strange entities perishes, the Soulplague-infected mass is broken apart ceremoniously - its remnants splintering, and sinking away, deeper, and deeper, into the nebula...</text>
+		<autoReward level="HIGH">standard_no_item</autoReward>
+		<choice hidden="true" req="mantis_bishop" lvl="1" blue="false">
+			<text>Continue...</text>
+			<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_LIVINGMANTIS"/>
+		</choice>
+		<choice hidden="true" req="mantis_bishop" lvl="0" max_lvl="0" blue="false">
+			<text>Continue...</text>
+			<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_DEADMANTIS"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_LIVINGMANTIS">
+	<text>Before you can really get a moment to catch your breath, though, you find a now-familiar pressure back against the front of your throat. "We may have survived, mercenary - but you are to explain your utter INSOLENCE at once. In your rash, unthinking foolishness, you put not only lives in jeopardy, but a mission declared to be of the utmost importance by none other than Queen Leikonpliiinakra herself. Have you any clue how serious your transgressions here have been?"</text>
+	<choice hidden="true">
+		<text>My transgressions? If I'm being honest, I... I don't really remember what happened. It's like I was possessed, by that strange shard...</text>
+		<event>
+			<text>To your relief, the pressure from the Bishop's claw is eased... if only slightly. "You WERE out of it, weren't you...? I suppose that there are stranger forces at play here than the concept of mere mind control. This shard, though... do you speak of the prototype? I do commend you for grabbing it, even if you had done so whilst under the influence of an unknowable assailant."</text>
+			<choice hidden="true">
+				<text>The... prototype?</text>
+				<event>
+					<text>The Mantis pulls her claw away from your throat entirely, pointing it an object you'd failed to notice in the corner of the room. Some sort of... weapon, you think. "Indeed. I would've thought you'd needed more encouragement to grab it in my stead, but... well, all's well that ends well, is it not? I suppose I shall be taking it, and returning home victorious, if you don't mind." She says that in a specific manner - one very much suggesting that she doesn't care for whether or not you mind.</text>
+					<choice hidden="true">
+						<text>Oh, no, you don't! I need some answers, dammit!</text>
+						<event>
+							<text>Your training kicks in, and you manage to get the Bishop in a chokehold of your own as she reaches for the prototype she speaks of. Though, even with your gun at her head, her first instinct is merely to laugh. "Oh, are you truly a fellow fighter, after all? Do you realize how effortless it would be for me to lop off that arm of yours, before you could think to pull the trigger - even in a position as theoretically vicarious as this one?"
+
+							You tighten your grip around her, and the Mantis rolls her eyes again. "The fact that I am merely describing the action to you - rather than rendering you hopelessly, and pathetically, limbless - is, perhaps, a show of growing trust. You HAVE proven a measure of your worth here today... even if only somewhat. Fine, then, mercenary. Let us... talk."</text>
+							<choice hidden="true">
+								<text>How did you get on my ship? Where's yours? Why are you here, and what happened to your fellow Hive?</text>
+								<event>
+									<text>"Hmm... well, one: personal teleporter. You heard the telltale sound, no? It's not my fault you non-Mantis are often times too slow to effectively react. Two: my ship WAS nearby... until it drifted off course, and I found myself alone, stranded and out of fuel. It is no short wonder that that slimy merchant had sent you my way, even if I would curse his name. Three, to circle back: me and my shipmates had received a missive from none other than our mighty, most honorable, Queen Leikonpliiinakra - blessed be her name. It was by royal decree that we were to investigate the matters of the Corruptor system, the Soulplague mattervirus, and their sudden, seemingly inexplicable proliferation throughout the galaxy at large."
+									
+									The Bishop repeatedly taps at her armor with a pointed claw, and you're not sure if it's because she's thinking, or because she's challenging your control of the situation. Regardless of the case, she continues, "We... followed a ship - a desecrated one, full of those reproachable Husks - and it naturally made its way to this sector after a journey of several weeks. Only then did its movements become wholly erratic. That led me to believe that this place was important, somehow... and, so, we continued our search."
+									
+									"I can't say it took terribly long to find what we were looking for, even amidst this accursed nebula. The Shell scientists who were occupying this space prior seem to have left evidence of their existence all over - slowly, but surely, we made our way to their source... the Epsilon Lab. That... is where we saw it. The prototype."</text>
+									<choice hidden="true">
+										<text>You HAVE gone to great lengths to retrieve it, whatever it is. Go on...</text>
+										<event>
+											<text>The Bishop laughs again, but this time, with a hint of despair tinging it. "That... we have, mercenary. The prototype - as I was able to understand it, through documents throughout the facility - was but one of several experiments conducted by the Epsilon Lab's scientists as part of their greater, overarching topic of research. As far as I can tell... IT is what would ultimately become the Corruptor system, seen within marketplaces far and wide, with seldom a trace towards its origins."
+
+											"The matter of the prototype's perversion, though - as the Lab's scientists had no mention of this 'mattervirus' anywhere within their documents - AND of its seemingly anomalous proliferation throughout space, both remain complete mysteries. That's why... we were hoping that, in obtaining the Corruptor system's alleged prototype, we could come to understand it, somehow. Earlier, you'd asked what happened to my fellow Mantis. Well... you saw the results of our attempts, mercenary."</text>
+											<choice hidden="true">
+												<text>You mean that... back at the Lab, those Mantis, in the walls...</text>
+												<event>
+													<text>You lower your gun as the horror of the situation dawns on you, and the Bishop only uses the opportunity to offer a sad nod. "I watched as, one by one, my shipmates were devoured by the horrors of the mattervirus. I've never felt so helpless in my life, mercenary. So... truly, and utterly, weak. It had felt like the only option left to me was to flee, and search for help - but who could I turn to? That blasted merchant brushed me off, without a second thought, and I'd found nary a soul throughout the rest of my desperate search. That's... when I returned here, defeated, and out of fuel. This would be how I died, and proved myself a disappoinment to our greatest of Queens."</text>
+													<choice hidden="true">
+														<text>Until, I...</text>
+														<event>
+															<text>The Bishop pokes you... playfully, you think, but it causes a substantial amount of pain regardless. "Yes, mercenary - until you brazenly stumbled into my reach, and I found it convenient to use you. I thought, that... that if you sacrificed yourself, grabbing the prototype, that I could commandeer control of your ship, and finish my mission. But... somehow, you waded through the mattervirus without even the slightest modicum of it sticking to you. Allegedly, in a daze, even! You grabbed the prototype, stumbled towards me in a stupor, and collapsed - it was all that I could do to carry the both of you back, as the mattervirus' agitation grew."
+															
+															"And, its agitation... I have seen much, in my years, mercenary. But a station, devouring those under my command, and then coming to life to chase me aboard a ship? That certainly - and horrifyingly - tops the list."</text>
+															<choice hidden="true">
+																<text>It's definitely up there for me, too. Though... if you just wanted my ship, why did you spend the effort in carrying me back, too? That prototype of yours doesn't look light.</text>
+																<event>
+																	<text>There's a brief silence, as the Mantis looks away from you, and towards the now vacant nebula outside. "Truthfully, I... am not quite so sure, myself. Even just a moment ago, I was ready to leave. I may have, mmm..." She pauses, opening a pocket within her armor, and a few cells of fuel slip out, and onto the floor. Your fuel. "...you know, for the ride home. Who knows. Perhaps I have grown soft, as a result of what I've witnessed and endured here. Perhaps... I hope to uncover more of the mattervirus' mysteries, and return to my Queen in even greater triumph. I could hardly do that, alone, mercenary."</text>
+																	<choice hidden="true">
+																		<text>Well, I GUESS you're welcome to stay if it means we get to share the shiny, new toy.</text>
+																		<event>
+																			<text>She giggles, sharply, "Indeed, yes. I hope to witness its effects in battle, myself - though, I suspect it to truly not differ too greatly from the Corruptor's own functions. Still, having our hands on it... perhaps, one day, we can figure out its inner workings a little greater, hmm?" The Bishop bows, leaving the room, and you collapse on the floor, beside the prototype. That... was an exhausting venture. There's always the bright side, though - you've come out not only having made a powerful ally, and gathered some information, but with a one-of-a-kind weapon in tow!
+																			
+																			There's something that's still bothering you, though... those visions you had seen. Presumably a result of that mysterious, ethereal shard, that the Bishop claims hadn't existed at all. You can still feel the visage of that strange, amethyst sigil, burned into your mind...</text>
+																			<weapon name="DDSOULPLAGUE_SHATTEREDPROMISE"/>
+																			<choice hidden="true">
+																				<text>As mysterious as things have been, there's no rest for a Renegade... we'll have to find our answers elsewhere.</text>
+																				<event/>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_DEADMANTIS">
+	<text>Unfortunately, or, perhaps rather fortunately, it seems that the Bishop succumbed to her wounds during the battle. You hope that her soul can rest, at least - unplagued by the horrors of the mattervirus.
+	
+	Looking into the space outside, though, it seems like there truly isn't anything left of the station. You're not sure you understand what exactly occurred, whilst you suffering from your strange visions, but... you're not sure you'll find any answers here, either. It's time to move on.</text>
+	<choice hidden="true">
+		<text>Leave, with your mysteries in tow.</text>
+		<event>
+			<text>As you prepare to activate the FTL drive, though, something in the corner of the room catches your eye. It... looks like some sort of weapon, perhaps? Upon closer inspection, you're able to make out some small, faded text alongside its base:
+			
+			"MIMICK-07 EPSILON PROTOTYPE
+			PROPERTY OF THE GENIOCRACY SCIENCE DISTRICT"
+			
+			Is this... perhaps what the Bishop was after? She seemed dead set on something within the facility, at least. Perhaps you'll never know, now, but... that's hardly the greatest mystery plaguing you, either. You can still feel the visage of that strange, amethyst sigil, burned into your mind...</text>
+			<weapon name="DDSOULPLAGUE_SHATTEREDPROMISE"/>
+			<choice hidden="true">
+				<text>As mysterious as things have been, there's no rest for a Renegade... we'll have to find our answers elsewhere.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST" unique="true">
+	<preventQuest/>
+	<quest>
+		<nextSector>false</nextSector>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_quest" global="true">
+		<color r="155" g="90" b="205" a="1.0"/>
+		<unvisitedTooltip>This is the location of a quest from the Traveling Merchant.</unvisitedTooltip>
+		<visitedTooltip>Explored location. Nothing left of interest.</visitedTooltip>
+	</beaconType>
+	<text>You've arrived at the coordinates Sylvan gave you. Though, there isn't anything here at an apparent glance... you're about to move to check some readings, when you hear a sound behind you, and a sharp, thin pressure is suddenly pressed against the front of your throat.</text>
+	<choice hidden="true">
+		<text>Don't move a muscle.</text>
+		<event>
+			<text>The edge of whatever it is feels so fine, that you imagine the mere act of breathing would cause it to puncture your flesh. You're frantically pondering your options, when an angered voice whispers into your ear:
+			
+			"How did YOU - of all people - find this place, mercenary? Answer, succinctly, NOW." The pressure against your throat is alleviated, ever so slightly, and you feel able to barely speak without meeting its edge.</text>
+			<choice hidden="true">
+				<text>S-Sylvan, the merchant. He... he sent me here.</text>
+				<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE"/>
+			</choice>
+			<choice hidden="true">
+				<text>Stay silent.</text>
+				<event>
+					<text>The feeling against your neck is lowered, towards your chest, and then slashed across it accordingly - the resulting pain is truly excruciating. Whoever this is, is not messing around.</text>
+					<choice hidden="true">
+						<text>Okay, okay! I'll talk! It was Sylvan - he sent me here.</text>
+						<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE">
+	<text>The prior pressure is reapplied, and you can't help but widen your eyes in fearful anticipation. "The audacity of that... that traitorous SLIMEBALL. To think, that the Queen would EVER put her trust in a Slug. She must see something behind their thin veneer of charisma, and sludge, that I simply don't."
+	
+	For a moment, the voice pauses, and you feel the faintest hint of something wet dribbling its way down your throat. "Though, it's no matter, truthfully. YOU will have to suffice in his own - insufferable - place, mercenary. Drive."</text>
+	<choice hidden="true">
+		<text>Wh... what?</text>
+		<event>
+			<text>"Your ship, you imbecile - drive it. Straight. NOW." The edge against your throat is pulled away, just enough to give you room to reach for the ship's controls, and you're able to make out its visage - a Mantis' claw, sharper than any blade you've ever seen, and decorated in royal insignia. You haven't just been kidnapped by a Mantis... you're at the mercy of one of the Hive's Bishops, and she doesn't seem too pleased with you.</text>
+			<choice hidden="true">
+				<text>What have I gotten myself into...?</text>
+				<event>
+					<text>It would have been pertinent for Sylvan to mention that the "weirdo" he was referring to was, in fact, a Bishop, you feel. Though, it's too late for regrets, now... given no other choice, and with so little room for error, you do as your intimidating captor asks and simply fly the ship straight ahead - deeper, and deeper, into the nebula.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>You aren't driving for long, though, before a large mass comes into view within the nebulous gas outside. Some sort of decrepit, Shell station by the looks of it.
+							
+							You're looking for any kind of stronger identifier amongst its outer structure, when the Bishop puts her razor-sharp claw back against your throat. "We're here. Put this on - slowly. When we're inside, you are to do precisely as I say. If I sense the slightest hint of treachery - or you likewise attempt to alarm anyone - I will not hesitate to cut you down, mercenary. Have I made myself clear?"</text>
+							<choice hidden="true">
+								<text>Crystal.</text>
+								<event>
+									<text>"As is ideal. Then you are to lead ahead of me, into the facility." The Bishop hands you a set of expensive-looking respiratory equipment, likely for the purpose of breathing within space, but you give her a puzzled look at the lack of further protection.
+									
+									With a focusing of her beady eyes, she gives you a stern look of her own, "You need not fear the elements, here. There is something... beyond explanation at play, within this accursed space. We are to understand its nature, and extract from the lab when I deem it appropriate. And ONLY when I deem it appropriate, mercenary."</text>
+									<choice hidden="true">
+										<text>Equip the breathing gear, and enter the facility.</text>
+										<event>
+											<text>Together with the Bishop, you leave your ship, discreetly, and enter the mysterious structure through the battered remnants of what used to be its docking station. Now within the vacuum of space, it would seem that the Mantis wasn't mistaken - you don't feel a thing. Other than a slight warmth, seeming to radiate from deeper within the ruined station...
+											
+											The inside of this section of the facility looks about as you'd expect - a large, empty space, suited for allowing a single ship to dock within the greater structure of the station. A set of notices on one of the nearby walls catches your attention, but the Bishop - close behind you - ushers you forward, preventing you from getting a better look. Even with only a brief glimpse, though, you're able to make out a single header: "ATTENTION, MEMBERS OF THE EPSILON RESEARCH TEAM."</text>
+											<choice hidden="true">
+												<text>Gulp.</text>
+												<event>
+													<text>Heading deeper within, the rooms you pass through seem to only showcase greater, and greater displays of decay overtime. Even still, it's only when you pass by a hallway entirely caked in Soulplague-infected matter that your worry transitions towards panic.
+													
+													Eventually, the Bishop stops prodding at you, indicating that you've reached your destination - a steel door, itself partially Soulplague-infected and already having been cut through, it would seem.</text>
+													<choice hidden="true">
+														<text>Continue to lead the way - entering through the hole first.</text>
+														<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE_TWO"/>
+													</choice>
+													<choice hidden="true">
+														<text>Look at the Bishop, expectantly.</text>
+														<event>
+															<text>Though the two of you can't exactly verbally communicate whilst wearing such rudimentary equipment, she's plenty capable of rolling her eyes at you. Brushing you aside, the Bishop takes the lead in squeezing through the jagged hole, and you're forced to hesitantly follow close behind her.</text>
+															<choice hidden="true">
+																<text>Here goes...</text>
+																<event load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE_TWO"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE_TWO">
+	<text>Past the door, you're immediately frozen in place, horrified, by the grisly sight laid out before you: dozens of Mantis, each cold and lifeless, have found their bodies melded into the iridescent walls of the room - all grasped within outstretched tendrils of Soulplague-infected matter. This... isn't just a mass grave, but an entire feeding ground for the mattervirus.
+	
+	You notice that the Bishop herself doesn't seem phased, though. She's simply eyeing something, in the middle of the room... some of sort of shard of glass, or crystal, by the looks of it. Whatever it is, it's beautiful - painting the rest of the room around in it an ethereal glow.</text>
+	<choice hidden="true">
+		<text>Approach the strange crystal.</text>
+		<event>
+			<text>You step forward, without a further care for the corpses or Soulplague-infected matter laid out before you, and the Bishop outstretches a claw - as if to try to stop you. But, she doesn't matter now. Not anymore. Not when you're enraptured by such... divine beauty. It's right in front of you, now. Calling to you. Beckoning you forth, into its embrace.</text>
+			<choice hidden="true">
+				<text>Yes, I've... I've never needed anything else.</text>
+				<event>
+					<text>You stare into the shard's ethereal center, losing yourself entirely to its overwhelming splendor, and everything else seems to fade away around you...</text>
+					<choice hidden="true">
+						<text>...</text>
+						<event>
+							<text>...</text>
+							<playMusic>paragon</playMusic>
+							<choice hidden="true">
+								<text>...</text>
+								<event>
+									<text>...and, you're telling me you didn't stop her?! That was your one job, Four - that was what you were CREATED for!</text>
+									<choice hidden="true">
+										<text>I ain't created for squat. 'Cept for livin', maybe - same as you. Same as her, too, One. Ya couldn't've kept her cooped up 'round here forever, clearly.</text>
+										<event>
+											<text>I very much can, and I very much would've, if you had just... done. Your. PART. FOUR! Now it's up to His Holiness to forgive us, and absolve her of her sins... and where do you think that will get us, hmm? Where did it get Six?!</text>
+											<choice hidden="true">
+												<text>Don't get your Crystalline panties in a twist, kiss-ass. I done did my part - Ev ain't rushin' into the big guy, blindly. Even if... even if she can't convince him, she sure as hell ain't losin' nothin' by tryin'.</text>
+												<event>
+													<text>Seven serves to lose EVERYTHING, Four - and not just HER everything, either. What will become of us, when the greatest of our selves proves herself impotent? Where will we be, without our dearest dreamer? What of the rest of the Seraphim, Four - who will guide them through the dark, flameless days to come, in our absence?!</text>
+													<choice hidden="true">
+														<text>It's as I said, One - she ain't goin' into this blindly. Heh... she ain't called the dreamer for nothin', ya know? I couldn't have stopped her, even if I cried my damn heart out.</text>
+														<event>
+															<text>Pray tell, then, o' sharpshooter. What exactly is Seven's plan, in charging towards her grave? Her literal. GRAVE. FOUR! It couldn't be any more poetically tragic - or hopeless - if one tried!</text>
+															<choice hidden="true">
+																<text>The big guy can't kill Ev. She knows it. It knows it. And if it can't kill her, it sure as hell can't kill the same shit it's been prattlin' on about since the damned day it was built.</text>
+																<event>
+																	<text>What, her dreams? Her HOPES, Four? You would speak to ME of hope, after Six threw her life away in its blasted name? Hope does not define reality, Four - ACTIONS do. Perhaps... these make-believe fantasies of our beloved leader's have poisoned her ability to realize that.</text>
+																	<choice hidden="true">
+																		<text>The hell do ya know about hope? Ya hopin' to wake up here, smellin' the brimstone, 'til the day the godsdamned stars give out? Yer scared, One - and ya'd sit here, doin' jackshit about it for ALL eternity if it meant livin' another day. But this... this ain't livin'. Ev helped me see that. So, ya wanna talk about ACTIONS, One? How about ya open your damned eyes, n'see some sense for once in your "make-believe" life?</text>
+																		<event>
+																			<text>You... are little but stubborn, as always. Let us put the squabbling aside, then - what of this plan of hers? What does Seven HOPE to accomplish, in challenging His Holiness' divine authority?</text>
+																			<choice hidden="true">
+																				<text>Ev... just wants a better life, One. For all'a us. If not in this life, then...</text>
+																				<event>
+																					<text>...then? You... you don't mean to say that she would dare to dream again, do you? His Holiness' hands may be tied, and her own safety secured by birthright, but... what of us? Where would WE end up, should she slumber once more?</text>
+																					<choice hidden="true">
+																						<text>...Hah. Hell if I know, compadre. It's sure as shit to beat THIS hellhole, though, ain't it? N'she'd sacrifice her own self, just to do it. Ain't ya able to see that? How much she's givin', all for us to get a chance to live our damned lives?</text>
+																						<event>
+																							<text>I... I can't say that the concept doesn't scare me, Four. To think, that... we...</text>
+																							<choice hidden="true">
+																								<text>...</text>
+																								<event>
+																									<text>...</text>
+																									<choice hidden="true">
+																										<text>...</text>
+																										<event>
+																											<text>In an instant, your mind is torn away from this unfamiliar conversation, and a flashing series of visions overwhelms you.
+																							
+																											You see a Shell, crying out for salvation - trapped within his own heart's prison.
+																													
+																											Then, a human, wandering throughout the vastness of space with naught but his golden eyes for company.
+																													
+																											And, finally... an amethyst sigil. One adorned with a bulbous eye, which burns its way into your mind - imprinting itself into your very vision.</text>
+																											<achievement>ACH_EVENT_DDPURPLESIGILOBTAINED</achievement>
+																											<variable name="ach_event_ddpurplesigilobtained" op="set" val="1"/>
+																											<metaVariable name="dd_purplesigil_obtained" op="set" val="1"/>
+																											<choice hidden="true">
+																												<text>Suffer in the agony of the moment.</text>
+																												<event>
+																													<text>"GET UP, DAMMIT! What blasted degree of insanity has to have overcome you, for you to try and pull THAT out of THERE? Without even the slightest modicum of hesitation, either!"
+																													
+																													You open your eyes, screaming, and the Bishop standing over you doesn't flinch in the slightest. "Have you... truly gone mad? Was it a waste of my precious time, pulling you out of that infernal mess?"</text>
+																													<playMusic/>
+																													<choice hidden="true">
+																														<text>What... what WAS that? Where... where did that shard go? The...</text>
+																														<event>
+																															<text>The Bishop smacks you - hard - with the dull side of her blade-claw, sending your vision blurring once more. "NOW is not the time to be talking crazy, mercenary. Your thoughtless frolicking through rainbow roses and fairy dust has brought upon us a VERY REAL set of consequences!"</text>
+																															<choice hidden="true">
+																																<text>Huh? What do you...</text>
+																																<event>
+																																	<text>You manage to gather enough focus to turn your head, and look out your ship's window... she's right. Whatever the hell you're looking at is very real, and very... iridescent. Is that... what remains of the station? What happened to it?
+																																	
+																																	You're almost lost staring in awe again, when the Bishop smacks you once more. "GET UP, ALREADY! Or are we to die, as you gawk at each and every thing we come across? You are to be better than this, as captain of this ship, no? Does your Federation not depend on you? Are the hopes of their people not placed wholly in your competence?"</text>
+																																	<ship load="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT" hostile="false"/>
+																																	<choice hidden="true">
+																																		<text>I... I don't know what we're dealing with, but... yes, you're right! To your battle stations, everyone! And you, er...?</text>
+																																		<event>
+																																			<text>The mighty Mantis makes a note of exaggeratingly rolling her beady eyes. "Obviously, I am to assist! I did not pull you out of that Soulplague sludge in order to fight off these nightmarish terrors alone. To arms, then, strangest of mercenaries - may word of our exploits live to grace the Queen's hallowed halls!" The Bishop takes off, and, together, you prepare to face off against the mobile, Soulplague-infected mass headed straight your way!</text>
+																																			<crewMember amount="1" class="mantis_bishop" all_skills="1">Nithuukepk</crewMember>
+																																			<ship hostile="true"/>
+																																			<choice hidden="true">
+																																				<text>To arms, then!</text>
+																																				<event load="COMBAT_CHECK"/>
+																																			</choice>
+																																		</event>
+																																	</choice>
+																																</event>
+																															</choice>
+																														</event>
+																													</choice>
+																												</event>
+																											</choice>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
 </event>

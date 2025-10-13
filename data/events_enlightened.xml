@@ -420,7 +420,7 @@
 							<variable name="the_scarred_judgment" op="add" val="1"/>
 						</event>
 					</choice>
-					<choice hidden="true" req="deeponecultist">
+					<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 						<text>(Deep One Cultist) Your Enlightened Cultist seems to have something to say.</text>
 						<event>
 							<text>You give it the floor, and it prepares a most eloquent speech... entirely composed of grunts, growls and screams. Though you don't understand an ounce of it, it seems to have rallied the prisoners; they leave their cell and begin to revolt against their captors! Outnumbered, and with you standing there, menacingly, the prison guards have no choice but to give up control of the ship to the former prisoners. Let's see how they like being caged... Now free, the Deep Ones you've saved muster up what few resources they can to thank you, and one of them asks to join you! The voice speaks, approvingly, "To... see them rise up, against their captors..." it pauses, "...it fills me with hope. Hope for my people... and their future." It ends on that, and you're left with the spoils of heroism.</text>
@@ -508,7 +508,7 @@
 											<instantEscape/>
 										</event>
 									</choice>
-									<choice hidden="true" req="deeponecultist">
+									<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 										<text>(Deep One Cultist) Yep. Got my own cult and everything.</text>
 										<event>
 											<text>"Your own... cult?" one of them asks, before briefly thinking on it and continuing, "Can... I join it?"</text>
@@ -619,7 +619,7 @@
 											<instantEscape/>
 										</event>
 									</choice>
-									<choice hidden="true" req="deeponecultist">
+									<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 										<text>(Deep One Cultist) Yep. Got my own cult and everything.</text>
 										<event>
 											<text>"Your own... cult?" one of them asks, before briefly thinking on it and continuing, "Can... I join it?"</text>
@@ -832,7 +832,7 @@
 											<crewMember amount="1" class="rock_cultist">Gorthocc</crewMember>
 										</event>
 									</choice>
-									<choice hidden="true" req="deeponecultist">
+									<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 										<text>(Deep One Cultist) I'm friends with so many cultists.</text>
 										<event>
 											<text>He spends a while squinting at your Deep One, before saying "Is that, like... a suit?" He then takes a look at his own robes. "Kinda wish I had something like that, actually. Wardrobe's really lacking in the 'anything-but-blue-robes' department, and a fish suit could work." He blinks, "What were we, uh, talking about?"</text>
@@ -912,7 +912,7 @@
 											<crewMember amount="1" class="rock_cultist">Gorthocc</crewMember>
 										</event>
 									</choice>
-									<choice hidden="true" req="deeponecultist">
+									<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 										<text>(Deep One Cultist) I'm friends with so many cultists.</text>
 										<event>
 											<text>He spends a while squinting at your Deep One, before saying "Is that, like... a suit?" He then takes a look at his own robes. "Kinda wish I had something like that, actually. Wardrobe's really lacking in the 'anything-but-blue-robes' department, and a fish suit could work." He blinks, "What were we, uh, talking about?"</text>
@@ -3159,7 +3159,7 @@
 						<text>Run a scan.</text>
 						<event load="ITEMS_ENLIGHTENED_EXILE_SCAN_HIGH"/>
 					</choice>
-					<choice req="deeponecultist" hidden="true">
+					<choice req="BLUELIST_CREW_DDENLIGHTENED" hidden="true">
 						<text>(Deep One Cultist) "Granted... sight, by the Dark One..."</text>
 						<event load="ITEMS_ENLIGHTENED_EXILE_SCAN_HIGH"/>
 					</choice>
@@ -4139,7 +4139,7 @@
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="shields" lvl="6">
-												<text>(Adv. Shields) We will stand; a bulwark against the weathering of the storm...</text>
+												<text>(Adv. Shields) Stand tall - we are a bulwark, ready to weather this storm.</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="PALADIN_ARMOR_PLAYER">
@@ -4151,18 +4151,18 @@
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="DEEPONE_LIGHTS">
-												<text>(Deep One Lights) When dawn breaks, dusk falls; become that which the shadows fear.</text>
+												<text>(Deep One Lights) When dawn breaks, dusk falls - become that which the shadows fear.</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="DREAD_LIGHTS">
-												<text>(Dread Lights) When dawn breaks, dusk falls; become that which the shadows fear.</text>
+												<text>(Dread Lights) When dawn breaks, dusk falls - become that which the shadows fear.</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
 											<choice hidden="true" req="dddeepone_chosen">
 												<text>(Chosen Crew) "ALLOW US... PASSAGE, O' DARK ONE."</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
-											<choice hidden="true" req="deeponecultist">
+											<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 												<text>(Deep One Cultist) "Dark One, be with us..."</text>
 												<event load="DISTRESS_ENLIGHTENED_JUDGMENT_RETRIBUTION"/>
 											</choice>
@@ -4307,6 +4307,437 @@
 	</choice>
 </event>
 
+<ship name="DDENLIGHTENED_ECHOEDDREAM_QUEST_FIGHT" auto_blueprint="DDFED_BATTLESHIP_ELITE_ECHOEDDREAMQUEST">
+	<destroyed>
+		<text>The Elite Federation ship crumbles, and you're lefting praying that the horrors left onboard have died with it...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Elite Federation ship lies empty - of horrors, and people alike - and you're left praying that that's truly the end of them...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDENLIGHTENED_ECHOEDDREAM_QUEST_FIGHT_WIN">
+	<text>You're hardly given any time to reflect on what you just witnessed, though, before something within the Federation ship's wreckage catches your eye. No, it doesn't just merely catch your attention - you feel completely enraptured by the resplendent glow of whatever this thing is. Its allure draws you to focus your gaze, and make out its form...</text>
+	<choice hidden="true">
+		<text>It's... beautiful.</text>
+		<event>
+			<text>That wonderful, crystalline shard, from within the officer's coat... it's there, amongst the rubble. Calling to you. Beckoning you forth, into its embrace.</text>
+			<choice hidden="true">
+				<text>Yes, I've... I've never needed anything else.</text>
+				<event>
+					<text>You stare into the shard's ethereal center, losing yourself entirely to its overwhelming splendor, and everything else seems to fade away around you...</text>
+					<choice hidden="true">
+						<text>...</text>
+						<event>
+							<text>...</text>
+							<changeBackground>VICTORY_TRUE</changeBackground>
+							<playMusic>paragon</playMusic>
+							<choice hidden="true">
+								<text>...</text>
+								<event>
+									<text>The air smells of ash, and sulfur.</text>
+									<choice hidden="true">
+										<text>Hah! Ain't it always? Ya used to hidin' roses in that armor of yours, or somethin'?</text>
+										<event>
+											<text>Hardly. It's just... it doesn't have to be this way, you know? It's certainly not the way I would've envisioned things.</text>
+											<choice hidden="true">
+												<text>Well, it's the way these things played out, ain't it? No use in cursin' the past. Or in cursin' past lives, to be frank.</text>
+												<event>
+													<text>And, you're... what? Happy? Satisfied with the "way these things played out?" This doesn't just FEEL like hell, to me, Four - it IS my hell. And it'd be yours too, if she hadn't...
+													
+													...ugh, I'm sorry. I know you don't want this life any more than I do. I... I just wish we didn't feel so helpless, here.</text>
+													<choice hidden="true">
+														<text>Who's sayin' we're helpless? What's the big guy gonna do, kill us? Bastard thing already knows it can't. S'only a matter of time before ya figure somethin' out, Ev.</text>
+														<event>
+															<text>Obviously it can't kill us, but... there are worse hells than this one, Four. I mean, look at Six - she may enjoy fighting, but for all eternity? Because she felt discontent, and dared to do something about it? Even if her willpower never gives out, what about her armor? Or her body?</text>
+															<choice hidden="true">
+																<text>She's a tough'un, Ev. Ya know that, don'tcha? N'it's not like we're sittin' here, twiddlin' our thumbs, waitin' for the day she kicks the bucket. We'll make it outta here, n'get Six outta her own mess. S'all the same, ain't it?</text>
+																<event>
+																	<text>Right. It's all the same. I'll... I'll figure something out, and... we'll...</text>
+																	<choice hidden="true">
+																		<text>...</text>
+																		<event>
+																			<text>...</text>
+																			<choice hidden="true">
+																				<text>...</text>
+																				<event>
+																					<text>In an instant, your mind is torn away from this unfamiliar conversation, and a flashing series of visions overwhelms you.
+																					
+																					You see a Crystal, commanding some unseen force from within a sea of frozen flames.
+																					
+																					Then, an Engi, tearing itself apart - searching for an unfound peace, deep within itself.
+																					
+																					And, finally... a golden sigil. One adorned with a ghastly visage, which burns its way into your mind - imprinting itself into your very vision.</text>
+																					<achievement>ACH_EVENT_DDYELLOWSIGILOBTAINED</achievement>
+																					<variable name="ach_event_ddyellowsigilobtained" op="set" val="1"/>
+																					<metaVariable name="dd_yellowsigil_obtained" op="set" val="1"/>
+																					<choice hidden="true">
+																						<text>Suffer in the agony of the moment.</text>
+																						<event>
+																							<text>"Oh... did you hit your head, funny one?"
+																							
+																							You open your eyes, screaming, and the masked Deep One standing over you flinches slightly. "Then, the Dark One... did not get your tongue. You'd be... less funny without it, you know?"</text>
+																							<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																							<playMusic/>
+																							<choice hidden="true">
+																								<text>What the hell was that? Who the HELL are you?</text>
+																								<event>
+																									<text>A familiar laughter reverberates throughout the room, and your heart skips a beat. This must be the voice you've been talking to. The one who led you here, to this ship... to that shard of agony and lies.</text>
+																									<choice hidden="true">
+																										<text>Did you... did you know that that would happen? With that damned shard? Where even is it?</text>
+																										<event>
+																											<text>Though you can't read their expression from behind their mask, the Deep One tilts their head in an exaggerated fashion. "Oh... no, really. I can't say I... know what you're talking about, either. Maybe you... did hit your head, after all? THAT... would be funny, I feel."
+																											
+																											Indeed, you look past the Deep One and towards the wreckage of the Federation ship outside, and the strange, resplendent light is gone. The void outside has gone entirely dark, once more.</text>
+																											<choice hidden="true">
+																												<text>I... I see. Maybe I'm just going a little stir-crazy, out here.</text>
+																												<event>
+																													<text>"Oh... well, you'd better not get TOO crazy, on me... funny one. Being funny is one thing, but... crazy? I could never... work for a crazy one. THAT... would not be funny, would it?"</text>
+																													<choice hidden="true">
+																														<text>Yeah, that makes sense... wait, what?</text>
+																														<event>
+																															<text>The laughter around you turns uproarious, and the masked Deep One bows, "Oh... don't let me forget to introduce myself. An... Elder of the Enlightened, humbly at... your service, o' funniest one. I... am a Tributeshaper, as my people call it. You helped me... retrieve my beloved mask back from that crazed, thieving loon, and... well, I'm not one to leave my debts unpaid."</text>
+																															<crewMember amount="1" class="dddeepone_tributeshaper_shatter" all_skills="1">Jester</crewMember>
+																															<choice hidden="true" req="BLUELIST_DDTRIBUTE_MASKS" lvl="0" max_lvl="0" blue="false">
+																																<text>Then, that mask... THAT'S what we came here for? What even is it?</text>
+																																<event>
+																																	<text>The Tributeshaper puts a hand to their chin, charading deep thought, before pointing a single, clawed finger in the air. "Oh... I know just how to explain this. Imagine being... a good person, funny one. And when you were... good enough, your deity of wonderful things, and joyfulness... rewards you, with an object made of pure, happy thoughts."
+																																	
+																																	You nod your head, following along, and the patronizing Deep One moves its finger to point at its mask, "Now, imagine that... but for whatever the hell the Dark One is. It... gives us, the Elders of our kind, these masks - Tribute Masks... as they're called. Most of the Enlightened... would find its bestowment to be the greatest honor imaginable, but... I'm a bit more cynical. Things... are funnier, that way."</text>
+																																	<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_SHATTER</hiddenAug>
+																																	<choice hidden="true">
+																																		<text>Alright, I guess. Why's it so important to you, if you aren't particularly into the whole all-powerful deity thing?</text>
+																																		<event>
+																																			<text>There's a slight giggling from around the room, as the Tributeshaper rolls their head back, "Oh... well, it's not just a badge of honor. It also... acts as a focus, for the manipulation of human souls."</text>
+																																			<choice hidden="true">
+																																				<text>What?</text>
+																																				<event>
+																																					<text>With a snap from their fingers, a floating, ephemeral figure appears beside you...</text>
+																																					<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																					<choice hidden="true">
+																																						<text>Scream in abject terror.</text>
+																																						<event>
+																																							<text>...and then, with another snap, a second, similar figure. You fall backwards, startled and screaming, and the giggling around you quickly devolves into a mocking cacophony once more. "Oh... don't act too surprised, funny one. Unless you're... trying to be funny? Oh, that's... clever. You're a clever one, funny one." You give a look of confusion - and annoyance - and the Tributeshaper merely walks out of the room, whilst cackling... their entourage of souls floating just behind them.</text>
+																																							<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																							<choice hidden="true">
+																																								<text>I... need a drink, sometime.</text>
+																																								<event>
+																																									<text>You really do, you figure. This has been... quite the mess. From the mockery of the Tributeshaper, to the horrors aboard the Federation ship, and then the visions from that mysterious shard... you feel like you can still see that golden sigil, plain as day. Though, there is a silver lining - things are calm now, and you've made a powerful ally.</text>
+																																									<choice hidden="true">
+																																										<text>Enjoy the peace and quiet.</text>
+																																										<event>
+																																											<text>Your relaxation is immediately cut short by the sounds of yelling, as the - much less grating - voice that's accompanied you since the start of the sector butts in, "Outsider! Outsider! Are... you okay? What happened? I... I could not see you, for quite some time. I've been fearing... the worst."</text>
+																																											<choice hidden="true">
+																																												<text>Just some asshole, honestly. Real annoying guy - has an entire psychic laugh track, and everything. Though, the soul stuff is cool.</text>
+																																												<event>
+																																													<text>"Psychic... soul stuff? That... sounds like one of the Enlightened's Elders. They're powerful... in their own right, but not quite... the threat that I was expecting. I'd thought that... the False One had gotten to you, and..."
+																																													
+																																													The voice goes on for a while, and you spend quite some time reassuring it that you really are okay, and that no purportedly-evil machine gods have sucked up your soul. Things quiet down eventually, and, by the time that they do, you're more than ready to kick the FTL drive into high gear.</text>
+																																												</event>
+																																											</choice>
+																																										</event>
+																																									</choice>
+																																								</event>
+																																							</choice>
+																																						</event>
+																																					</choice>
+																																				</event>
+																																			</choice>
+																																		</event>
+																																	</choice>
+																																</event>
+																															</choice>
+																															<choice hidden="true" req="BLUELIST_DDTRIBUTE_MASKS" lvl="1" blue="false">
+																																<text>Yeah, that's cute. I like my mask better, though.</text>
+																																<event>
+																																	<text>You show off a Tribute Mask of yours, and the laughter in the room goes silent. "Oh... you're an impressive one, too, funny one. I don't suppose... you have one of the Shattered Masks, in particular?"</text>
+																																	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+																																		<text>Nope, thankfully.</text>
+																																		<event>
+																																			<text>"Oh... then, it's all the same, isn't it? Allow me to... gather my souls, and we can head off." The Tributeshaper snaps its fingers, and an Unstable Soul appears...</text>
+																																			<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																			<choice hidden="true">
+																																				<text>Continue...</text>
+																																				<event>
+																																					<text>...followed by a second one. The Tributeshaper bows, respecting your familiarity with their ways, and leaves the room - their entourage of souls in tow.</text>
+																																					<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																					<choice hidden="true">
+																																						<text>I... need a drink, sometime.</text>
+																																						<event>
+																																							<text>You really do, you figure. This has been... quite the mess. From the mockery of the Tributeshaper, to the horrors aboard the Federation ship, and then the visions from that mysterious shard... you feel like you can still see that golden sigil, plain as day. Though, there is a silver lining - things are calm now, and you've made a powerful ally.</text>
+																																							<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_SHATTER</hiddenAug>
+																																							<choice hidden="true">
+																																								<text>Enjoy the peace and quiet.</text>
+																																								<event>
+																																									<text>Your relaxation is immediately cut short by the sounds of yelling, as the - much less grating - voice that's accompanied you since the start of the sector butts in, "Outsider! Outsider! Are... you okay? What happened? I... I could not see you, for quite some time. I've been fearing... the worst."</text>
+																																									<choice hidden="true">
+																																										<text>Just some asshole, honestly. Real annoying guy - has an entire psychic laugh track, and everything. Though, the soul stuff is cool.</text>
+																																										<event>
+																																											<text>"Psychic... soul stuff? That... sounds like one of the Enlightened's Elders. They're powerful... in their own right, but not quite... the threat that I was expecting. I'd thought that... the False One had gotten to you, and..."
+																																											
+																																											The voice goes on for a while, and you spend quite some time reassuring it that you really are okay, and that no purportedly-evil machine gods have sucked up your soul. Things quiet down eventually, and, by the time that they do, you're more than ready to kick the FTL drive into high gear.</text>
+																																										</event>
+																																									</choice>
+																																								</event>
+																																							</choice>
+																																						</event>
+																																					</choice>
+																																				</event>
+																																			</choice>
+																																		</event>
+																																	</choice>
+																																	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="1" blue="false">
+																																		<text>I do, actually.</text>
+																																		<event>
+																																			<text>"Oh... that's a pity, then. Hopefully I can still be of some... service to you, funny one. Allow me to at least... gather my souls, and we can head off." The Tributeshaper snaps its fingers, and an Unstable Soul appears...</text>
+																																			<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																			<choice hidden="true">
+																																				<text>Continue...</text>
+																																				<event>
+																																					<text>...followed by a second one. The Tributeshaper bows, respecting your familiarity with their ways, and leaves the room - their entourage of souls in tow.</text>
+																																					<crewMember amount="1" class="LIST_CREW_DDUNSTABLESOULS_EMPOWERED"/>
+																																					<choice hidden="true">
+																																						<text>I... need a drink, sometime.</text>
+																																						<event>
+																																							<text>You really do, you figure. This has been... quite the mess. From the mockery of the Tributeshaper, to the horrors aboard the Federation ship, and then the visions from that mysterious shard... you feel like you can still see that golden sigil, plain as day. Though, there is a silver lining - things are calm now, and you've made a powerful ally.</text>
+																																							<choice hidden="true">
+																																								<text>Enjoy the peace and quiet.</text>
+																																								<event>
+																																									<text>Your relaxation is immediately cut short by the sounds of yelling, as the - much less grating - voice that's accompanied you since the start of the sector butts in, "Outsider! Outsider! Are... you okay? What happened? I... I could not see you, for quite some time. I've been fearing... the worst."</text>
+																																									<choice hidden="true">
+																																										<text>Just some asshole, honestly. Real annoying guy - has an entire psychic laugh track, and everything. Though, the soul stuff is cool.</text>
+																																										<event>
+																																											<text>"Psychic... soul stuff? That... sounds like one of the Enlightened's Elders. They're powerful... in their own right, but not quite... the threat that I was expecting. I'd thought that... the False One had gotten to you, and..."
+																																											
+																																											The voice goes on for a while, and you spend quite some time reassuring it that you really are okay, and that no purportedly-evil machine gods have sucked up your soul. Things quiet down eventually, and, by the time that they do, you're more than ready to kick the FTL drive into high gear.</text>
+																																										</event>
+																																									</choice>
+																																								</event>
+																																							</choice>
+																																						</event>
+																																					</choice>
+																																				</event>
+																																			</choice>
+																																		</event>
+																																	</choice>
+																																</event>
+																															</choice>
+																														</event>
+																													</choice>
+																												</event>
+																											</choice>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDENLIGHTENED_ECHOEDDREAM_QUEST" unique="true">
+	<preventQuest/>
+	<text>An unease, only made somewhat more bearable by your newfound familiarity with it, sits in the air as you wait for the voice to guide you. To your dismay, though... it never comes. There must be nothing of note here.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Do something onboard the ship.</text>
+		<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Do nothing.</text>
+		<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE"/>
+	</choice>
+</event>
+
+<event name="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE">
+	<text>You barely move an inch, before a shrill cackling breaks out around you, out of nowhere. You turn around, expecting to find its source, but there's nothing there, either. The laughter then grows louder, and louder, as if amused by the attempt - before, finally, quieting. You're left standing there, anxious and on your guard, when a new, unfamiliar voice makes its presence known to you:
+	
+	"Oh... YOU'RE a funny one, aren't you? Turn... around again, it'll work this time! I swear it... I swear!"
+	
+	This is definitely a different voice than the one you've been talking to. It's much more high-pitched - almost annoyingly so - and clearly taking pleasure in your confusion.</text>
+	<choice hidden="true">
+		<text>Remain stalwart.</text>
+		<event>
+			<text>There's an audible growling echoing around the room, now - you realize that the laughter hadn't come from within your head, either. Whatever the source of these sounds is, they're different from the voices - now plural - that have been speaking to you.
+			
+			With a sense of disappointment seeming to tinge its words, the shrill voice returns to its rambling within your mind, "Oh... perhaps I was mistaken. Perhaps you're just like... the rest of them. Is joy... lost, on you lost souls?"</text>
+			<choice hidden="true">
+				<text>I'm... not lost, really. I have a guide.</text>
+				<event>
+					<text>"Oh... really? The one they brand... a traitor, you mean? Hmmm... I can't say I see them around here, anywhere. Do you... think they got bored? Left you to... die, maybe?" There's a pause, as the growling around you shifts back to its prior, roaring laughter, and then the voice continues, "THAT... would be funny, no? Maybe... you're not so boring, after all."</text>
+					<choice hidden="true">
+						<text>Listen - I'm dealing with a lot right now. Speak clearly, or I'm taking my ship and jumping out of here.</text>
+						<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE_CONTINUE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Turn around again.</text>
+		<event>
+			<text>You do so, and find nothing once more. The laughter then - agonizingly - grows in volume, as if in response, and you realize that it's not coming from inside your head at all. Whatever the source of it IS, it's different from the voices - now plural - that have been speaking to you.
+			
+			With complete glee coating its words, the shrill voice returns to its rambling within your mind, "Oh... wow, you ARE a funny one! You aren't like... the other lost souls, at all. I... like that."</text>
+			<choice hidden="true">
+				<text>I'm... not lost, really. I have a guide.</text>
+				<event>
+					<text>"Oh... really? The one they brand... a traitor, you mean? Hmmm... I can't say I see them around here, anywhere. Do you... think they got bored? Left you to... die, maybe?" There's a pause, as the already roaring laughter becomes just shy of being deafening, and then the voice continues, "THAT... would be funny, no? Oh... I knew I liked you."</text>
+					<choice hidden="true">
+						<text>Listen - I'm dealing with a lot right now. Speak clearly, or I'm taking my ship and jumping out of here.</text>
+						<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE_CONTINUE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<event name="DDENLIGHTENED_ECHOEDDREAM_QUEST_SURPRISE_CONTINUE">
+	<text>The laughter goes silent. "Oh... do you think you could? You're welcome... to try, you know." You eye your ship's controls in response, but something inside you causes you to then hesitate. Anxiety? Fear? Something... more foreign, entirely?
+	
+	Whatever the case is, it feels beyond your control, and the cackling returns - alongside the voice. "Oh, tribute-thing... if I had intended to kill you, you would've been... helpless to stop me, don't you know? You're... defenseless, without your guide. Without your... eyes, hah! Hahah! Hah... but, no. Your death... would not be funny. More like... pathetic, and sad. Unfair, really."</text>
+	<choice hidden="true">
+		<text>Okay, but... why do YOU care about how I die? Aren't you meant to kill me, for this deity of yours?</text>
+		<event>
+			<text>"Oh... you're a presumptuous one, as well, are you? So many... silly little thoughts, going on inside that silly little head. I can't imagine... seeing all this, and thinking you've got it all... figured out. That's why I like you, though. You're... funny."
+			
+			A silence rings throughout the room once more, and you can't help but be thankful for it. "That, and... you funny types are useful. More useful than... dead types, anyways. The Dark One... understands, I'm sure. And if it doesn't, then... it's free to smite me down, where I stand! THAT... would be funny, wouldn't it?"</text>
+			<choice hidden="true">
+				<text>Silently pray that this weirdo really IS smitten down.</text>
+				<event>
+					<text>Unfortunately, rather than the sound of blessed thunder, you're merely graced with more of that grating giggling. "Oh... that's funny, too. I must be right, then. You're... not here as tribute. Hah! I'm old enough to always... be able to tell, you know? The ones it wants here. The ones... it doesn't want dead. You're... something special, AND something funny."
+					
+					The obnoxious voice tests your patience by then pausing briefly, before continuing again in a more serious tone, "If that's... the case, then... what do you say about helping me with something? It'd... take a minute, so... I won't bite if you say no. Unless... biting you would be funny, that is."</text>
+					<choice hidden="true">
+						<text>Hesitantly agree. You've got time to spare.</text>
+						<event>
+							<text>There's an uproar amongst the laughter around you, as the voice itself gets giddy, "Oh... wonderful. Funny, special... AND wonderful! The Dark One really... knows how to pick them, doesn't it? In that case, then... shift your course a little to the left, and just... fly that way, for a while. Don't worry about... bumping into anything. I'll be... watching closely! Wouldn't want you... crashing into something, and dying horribly. THAT would be funny, but... if I've learned anything over the years, it's that... it's not always about being funny. It usually is, but... not always." The voice, along with the now maddening laughter, both vanish - leaving you with naught but eerie silence once more.</text>
+							<choice hidden="true">
+								<text>Here we go, then...</text>
+								<event>
+									<text>You follow the voice's vague instructions to the best of your ability, and simply fly straight ahead in one direction. It's rather uneventful, for a while - until, at one point, it randomly screams within your mind for you to steer hard to the left. You jump to do so, and the echoing laughter roars back to life around you for a miserable, few seconds. You... aren't particularly enjoying this ride.</text>
+									<modifyPursuit amount="1"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event>
+											<text>Eventually, though... the darkness around you seems to part itself, and you're face to face with none other than an Elite Federation ship. What are they doing here? No, more importantly - what are YOU doing here...? What's being expected of you, exactly? You hadn't really thought about asking that until now.</text>
+											<ship load="DDENLIGHTENED_ECHOEDDREAM_QUEST_FIGHT" hostile="false"/>
+											<choice hidden="true">
+												<text>Hey, uh... voice guy? Care to explain?</text>
+												<event>
+													<text>It seems startled that you asked, almost as if it were expecting you to blindly act. "Oh... well, of course. I mentioned other lost souls... earlier, yes? This ones seems special, too. Though... not quite as funny. He thought it... prudent to steal something valuable from me. I... want it back."</text>
+													<choice hidden="true">
+														<text>If you can destroy me so easily, then why can't you just destroy them? Aren't they "eyeless" out here, too?</text>
+														<event>
+															<text>"Oh... you ask a lot of questions. Questions aren't so... funny, but... truthfully, this one scares me. Somewhat. Something... is, in fact, guiding him - though, I can't tell what. I tried asking, but... well, he wasn't as open as I'm being, was he?"
+															
+															You glance at the Federation ship outside, and then back to your ship's console, and realize that they've sent a request to hail while you've been chatting it up. The voice briefly interjects, before bowing out again, "I... just want what's mine. I don't care... how you get it. Unless it's funny. THAT... would be fun, yes?"</text>
+															<choice hidden="true">
+																<text>Take a deep breath, and answer the Federation ship's hail.</text>
+																<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_TALKTOFED"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text>Well, whatever. I'll figure it out. Hail the Federation ship.</text>
+												<event load="DDENLIGHTENED_ECHOEDDREAM_QUEST_TALKTOFED"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Decline. You've had enough of this.</text>
+						<event>
+							<text>There's a booing in the air around you, as the voice doesn't hesitate to express its disappointment, "Oh... suppose you weren't funny, after all. Maybe I'm... the real clown, here. Well, whatever. Have... your time with the traitor, and whatnot." The room goes silent, and you've never been more appreciative of the fact in your life.</text>
+							<choice hidden="true">
+								<text>Finally, some peace and quiet...</text>
+								<event>
+									<text>Your relaxation is cut short by the sounds of yelling, as the - much less grating - voice that's accompanied you since the start of the sector butts in, "Outsider! Outsider! Are... you okay? What happened? I... I could not see you, for quite some time. I've been fearing... the worst."</text>
+									<choice hidden="true">
+										<text>Just some asshole, honestly. Real annoying guy - had an entire psychic laugh track, and everything.</text>
+										<event>
+											<text>"Psychic...? That... sounds like one of the Enlightened's Elders. They're powerful... in their own right, but not quite... the threat that I was expecting. I'd thought that... the False One had gotten to you, and..."
+											
+											The voice goes on for a while, and you spend quite some time reassuring it that you really are okay, and that no purportedly-evil machine gods have sucked up your soul. Things quiet down eventually, and, by the time that they do, you're more than ready to kick the FTL drive into high gear.</text>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDENLIGHTENED_ECHOEDDREAM_QUEST_TALKTOFED">
+	<text>A Federation officer appears on screen, as expected, but you're immediately taken aback by his appearance. He doesn't just look like he's seen better days - he looks like he hasn't had a chance to sleep IN days. If he pays your staring any mind, though, he doesn't make it apparent. "It's a relief seeing a friendly face out here, you know. Did you do that? With the, um... the shadows? I've never seen them disappear like that. I've... I've never seen them do much of anything, really. It's just been... darkness, and more darkness, and... more..." The officer stares off into the space outside, and you get the feeling that he's definitely been here for a while.</text>
+	<choice hidden="true">
+		<text>Something like that, I guess. Could I... ask what you're doing here? You look like you're an inch away from death.</text>
+		<event>
+			<text>His eyes frantically meet yours. "Me? I... no, I'm sorry. I can't tell you. I... I promised her I wouldn't. Surely you understand, if you're here, right? You... you do understand, don't you?"
+			
+			You give him a puzzled look, and his tired expression becomes one of desperation. "Tell me I'm... I'm not crazy, right? You can hear them too? You can see them, can't you? The voices?! The... the visions?! They won't leave me alone! They won't... stop..."</text>
+			<choice hidden="true">
+				<text>Hey! It's alright, really. I've heard voices out here, too - one of them brought me here, in fact!</text>
+				<event>
+					<text>You say that, expecting it to be of some comfort to him, but his eyes instead grow wide in terror. "They...? Has she...? No, I kept my promise! I did, I swear! I got the mask, just like that damned page told me to, and, and... no, no, no - please, I SWEAR! I'll get more! I just need more time! I just... need..."
+					
+					The officer halts his mad ramblings to focus his attention back towards you, as a cold expression befalls his face. "I just need to sacrifice more. More than I... Gods, I'm sorry, everyone. I..." He slowly moves to reach for something, inside of his coat's pocket...</text>
+					<choice hidden="true">
+						<text>Wait, what are you doing? You know I'm your friend here, right?</text>
+						<event>
+							<text>That seems to reach him, if only for a moment. "My... friend? No, I... I don't have friends. Not anymore. Not after... I..." The officer winces, and then finally pulls out the thing he'd been reaching for - some sort of shard of glass, or crystal. It's... beautiful, whatever it is. As he grasps onto it, tighter and tighter, an inexplicable energy begins to radiate outwards from him, and communications are abruptly cut - just as his ship's weapons come online!</text>
+							<ship hostile="true"/>
+							<choice hidden="true">
+								<text>I guess we have to do this the hard way, then!</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <event name="HOSTILE_ENLIGHTENED">
 	<text load="HOSTILE_ENLIGHTENED_TEXT"/>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
@@ -4323,7 +4754,7 @@
 	<text>Though the voice doesn't speak, it forces the shadows to abate all the same; an Enlightened ship emerges from the void with its weapons readied.</text>
 	<text>For a second, all is quiet... then, the voice shouts, "Outsider, ambush!" You narrowly dodge an incoming shot as the darkness wanes... here they come!</text>
 	<text>Something feels... off, at this beacon. Sure enough, moments later, the void is pushed away... and you're face to face with an Enlightened ship! Way to jinx it.</text>
-	<text>Arriving at the beacon, you receive a hail from a nearby Enlightened ship, "Die... outsider! Tribute for the Dark One!" Subtle... the void recedes, and you prepare to fight.</text>
+	<text>Arriving at the beacon, you receive a hail from a nearby Enlightened ship, "Die... outsider! Tribute for the Dark One! Tribute for the Elders!" Subtle... the void recedes, and you prepare to fight.</text>
 </textList>
 
 <ship name="ENLIGHTENED_EXIT_DREADNOUGHT_GOOD" auto_blueprint="DREADNOUGHT_OF_DARKNESS">
@@ -4808,6 +5239,7 @@
 	<text>"The... Dark One proposes a truce." Why, pray tell, does it continue to torment you then?</text>
 	<text>As the opposing Enlightened ship buckles and begins to collapse, you receive a desperate hail for surrender.</text>
 	<text>The Enlightened pray to their Dark God as they beg for its mercy... they beg for yours, as well.</text>
+	<text>"The Elders... would think it wise, that we make amends." They started this fight, didn't they? How wise of a decision was that?</text>
 </textList>
 
 <event name="ENLIGHTENED_ESCAPE">

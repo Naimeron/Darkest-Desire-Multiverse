@@ -30,7 +30,7 @@
 
 <text name="loot_disparity_1">DISPARITY LOOT
 +1 shield piercing
-+40% spawn chance, shots cause lockdown</text>
++40% spawn chance, shots cause Shadow-Crystal lockdown</text>
 
 <text name="loot_ddsoulplague_1">SOULPLAGUE LOOT
 +8 drone speed, -2 beam speed, -10 beam length
@@ -45,3 +45,4 @@
 <text name="tip_ddradiant_core">Tip: Radiant Cores inflict rooms hit with erosion and the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, which most Radiant Cores are capable of spawning.</text>
 <text name="tip_ddradiant_weapons">Tip: Lightborne weapons inflict rooms hit with the Radiant Desecration effect, which slightly damages enemies overtime and hinders their combat damage and movement/sabotage speed. Additionally, the effect allows Lightborne to fully function, complementing their generation via Radiant Cores.</text>
 <text name="tip_ddtear_weapon">Tip: This weapons generates volatile space tears - invulnerable pseudo-crew that deal system/hull/crew damage, briefly stun and have a good chance to create a fire every 3 seconds.</text>
+<text name="tip_ddshadowcrystal_weapon">Tip: This drone frequently causes Shadow-Crystal lockdowns - a special variety of lockdown that lasts much longer than others, but is incredibly fragile and easy to break through.</text>

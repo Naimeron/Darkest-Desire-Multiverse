@@ -140,6 +140,48 @@
 	<time>0.75</time>
 </anim>
 
+<animSheet name="ddunstablesoul_plague_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_plague_explosion.png</animSheet>
+<anim name="ddunstablesoul_plague_explosion">
+	<sheet>ddunstablesoul_plague_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddunstablesoul_shatter_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_shatter_explosion.png</animSheet>
+<anim name="ddunstablesoul_shatter_explosion">
+	<sheet>ddunstablesoul_shatter_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddunstablesoul_cloud_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_cloud_explosion.png</animSheet>
+<anim name="ddunstablesoul_cloud_explosion">
+	<sheet>ddunstablesoul_cloud_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddunstablesoul_judge_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_judge_explosion.png</animSheet>
+<anim name="ddunstablesoul_judge_explosion">
+	<sheet>ddunstablesoul_judge_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddunstablesoul_cage_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_cage_explosion.png</animSheet>
+<anim name="ddunstablesoul_cage_explosion">
+	<sheet>ddunstablesoul_cage_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
+<animSheet name="ddunstablesoul_dark_explosion" w="1000" h="100" fw="100" fh="100">effects/ddunstablesoul_dark_explosion.png</animSheet>
+<anim name="ddunstablesoul_dark_explosion">
+	<sheet>ddunstablesoul_dark_explosion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>0.75</time>
+</anim>
+
 <animSheet name="bomb_ddsoulplague_puffcloud" w="576" h="64" fw="64" fh="64">effects/bomb_ddsoulplague_puffcloud.png</animSheet>
 <anim name="bomb_ddsoulplague_puffcloud">
 	<sheet>bomb_ddsoulplague_puffcloud</sheet>
@@ -308,6 +350,24 @@
 	<firePoint  x="39" y="8" charge="6"/>
 	<mountPoint x="5" y="36"/>
 	<boost>ddlaser_charger_darkgod_charge</boost>
+</weaponAnim>
+
+<animSheet name="ddsoulplague_shattered_promise_charge" w="312" h="62" fw="39" fh="62">weapon_laser/ddsoulplague_shattered_promise_charges.png</animSheet>
+<anim name="ddsoulplague_shattered_promise_charge">
+	<sheet>ddsoulplague_shattered_promise_charge</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddsoulplague_shattered_promise" w="390" h="62" fw="39" fh="62">weapon_laser/ddsoulplague_shattered_promise_base.png</animSheet>
+<weaponAnim name="ddsoulplague_shattered_promise">
+	<sheet>ddsoulplague_shattered_promise</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="21" y="4" charge="0"/>
+	<mountPoint x="3" y="39"/>
+	<boost>ddsoulplague_shattered_promise_charge</boost>
 </weaponAnim>
 
 <animSheet name="ddrenegade_boss_loot_soulplague_chainlaser" w="320" h="67" fw="32" fh="67">weapon_laser/ddrenegade_boss_loot_soulplague_chainlaser.png</animSheet>
@@ -809,6 +869,13 @@
 <animSheet name="thescarredproj" w="27" h="24" fw="27" fh="24">crewprojectiles/thescarredproj.png</animSheet>
 <anim name="thescarredproj">
 	<sheet>thescarredproj</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtideproj" w="32" h="29" fw="32" fh="29">crewprojectiles/ddtideproj.png</animSheet>
+<anim name="ddtideproj">
+	<sheet>ddtideproj</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
@@ -3708,6 +3775,48 @@
 <animSheet name="ddenlightened_darktemplar_mire_buff" w="352" h="32" fw="32" fh="32">people/ddenlightened_darktemplar_mire_buff.png</animSheet>
 <anim name="ddenlightened_darktemplar_mire_buff">
 	<sheet>ddenlightened_darktemplar_mire_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_shattershape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_shattershape_buff.png</animSheet>
+<anim name="ddtributeshaper_shattershape_buff">
+	<sheet>ddtributeshaper_shattershape_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_plagueshape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_plagueshape_buff.png</animSheet>
+<anim name="ddtributeshaper_plagueshape_buff">
+	<sheet>ddtributeshaper_plagueshape_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_cloudshape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_cloudshape_buff.png</animSheet>
+<anim name="ddtributeshaper_cloudshape_buff">
+	<sheet>ddtributeshaper_cloudshape_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_cageshape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_cageshape_buff.png</animSheet>
+<anim name="ddtributeshaper_cageshape_buff">
+	<sheet>ddtributeshaper_cageshape_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_judgeshape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_judgeshape_buff.png</animSheet>
+<anim name="ddtributeshaper_judgeshape_buff">
+	<sheet>ddtributeshaper_judgeshape_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddtributeshaper_darkshape_buff" w="352" h="32" fw="32" fh="32">people/ddtributeshaper_darkshape_buff.png</animSheet>
+<anim name="ddtributeshaper_darkshape_buff">
+	<sheet>ddtributeshaper_darkshape_buff</sheet>
 	<desc length="11" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
@@ -13677,6 +13786,76 @@
 	<time>1.0</time>
 </anim>
 
+<animSheet name="dddisparity_lockdown_effect_1" w="108" h="19" fw="18" fh="19">effects/dddisparity_lockdown_effect_1.png</animSheet>
+<anim name="dddisparity_lockdown_effect_1">
+	<sheet>dddisparity_lockdown_effect_1</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>30.0</time>
+</anim>
+
+<animSheet name="dddisparity_lockdown_effect_2" w="90" h="19" fw="18" fh="19">effects/dddisparity_lockdown_effect_2.png</animSheet>
+<anim name="dddisparity_lockdown_effect_2">
+	<sheet>dddisparity_lockdown_effect_2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>30.0</time>
+</anim>
+
+<animSheet name="ddsuction_spacetear_effect" w="385" h="35" fw="35" fh="35">people/ddobelisk_aura.png</animSheet>
+<anim name="ddsuction_spacetear_effect">
+	<sheet>ddsuction_spacetear_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_dark_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_dark_effect.png</animSheet>
+<anim name="ddsuction_dark_effect">
+	<sheet>ddsuction_dark_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_plague_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_plague_effect.png</animSheet>
+<anim name="ddsuction_plague_effect">
+	<sheet>ddsuction_plague_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_cage_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_cage_effect.png</animSheet>
+<anim name="ddsuction_cage_effect">
+	<sheet>ddsuction_cage_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_cloud_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_cloud_effect.png</animSheet>
+<anim name="ddsuction_cloud_effect">
+	<sheet>ddsuction_cloud_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_judge_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_judge_effect.png</animSheet>
+<anim name="ddsuction_judge_effect">
+	<sheet>ddsuction_judge_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_nightmarerift_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_nightmarerift_effect.png</animSheet>
+<anim name="ddsuction_nightmarerift_effect">
+	<sheet>ddsuction_nightmarerift_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
+<animSheet name="ddsuction_shatter_effect" w="385" h="35" fw="35" fh="35">people/ddsuction_shatter_effect.png</animSheet>
+<anim name="ddsuction_shatter_effect">
+	<sheet>ddsuction_shatter_effect</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>0.65</time>
+</anim>
+
 <animSheet name="ddhuman_sacrifice" w="315" h="455" fw="35" fh="35">people/ddhuman_sacrifice_base.png</animSheet>
 <anim name="ddhuman_sacrifice_clone">
 	<sheet>ddhuman_sacrifice</sheet>
@@ -16202,6 +16381,3032 @@
 </anim>
 <anim name="ddlightborne_tormentular_portrait">
 	<sheet>ddlightborne_tormentular</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_cage" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_cage_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_cage_clone">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_death_right">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_death_left">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_walk_down">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_walk_right">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_walk_up">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_walk_left">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_shoot_down">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_shoot_right">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_shoot_up">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_shoot_left">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_fire_down">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_fire_right">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_fire_up">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_fire_left">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_repair">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_punch_up">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_punch_down">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_teleport">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_type_right">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_type_left">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_type_up">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_type_down">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cage_portrait">
+	<sheet>dddeepone_tributeshaper_cage</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_judge" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_judge_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_judge_clone">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_death_right">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_death_left">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_walk_down">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_walk_right">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_walk_up">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_walk_left">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_shoot_down">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_shoot_right">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_shoot_up">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_shoot_left">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_fire_down">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_fire_right">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_fire_up">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_fire_left">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_repair">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_punch_up">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_punch_down">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_teleport">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_type_right">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_type_left">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_type_up">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_type_down">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_judge_portrait">
+	<sheet>dddeepone_tributeshaper_judge</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_cloud" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_cloud_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_cloud_clone">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_death_right">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_death_left">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_walk_down">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_walk_right">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_walk_up">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_walk_left">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_shoot_down">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_shoot_right">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_shoot_up">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_shoot_left">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_fire_down">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_fire_right">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_fire_up">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_fire_left">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_repair">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_punch_up">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_punch_down">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_teleport">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_type_right">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_type_left">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_type_up">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_type_down">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_cloud_portrait">
+	<sheet>dddeepone_tributeshaper_cloud</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_dark" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_dark_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_dark_clone">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_death_right">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_death_left">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_walk_down">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_walk_right">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_walk_up">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_walk_left">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_shoot_down">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_shoot_right">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_shoot_up">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_shoot_left">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_fire_down">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_fire_right">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_fire_up">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_fire_left">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_repair">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_punch_up">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_punch_down">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_teleport">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_type_right">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_type_left">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_type_up">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_type_down">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_dark_portrait">
+	<sheet>dddeepone_tributeshaper_dark</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_plague" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_plague_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_plague_clone">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_death_right">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_death_left">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_walk_down">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_walk_right">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_walk_up">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_walk_left">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_shoot_down">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_shoot_right">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_shoot_up">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_shoot_left">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_fire_down">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_fire_right">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_fire_up">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_fire_left">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_repair">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_punch_up">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_punch_down">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_teleport">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_type_right">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_type_left">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_type_up">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_type_down">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_plague_portrait">
+	<sheet>dddeepone_tributeshaper_plague</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="dddeepone_tributeshaper_shatter" w="420" h="455" fw="35" fh="35">people/dddeepone_tributeshaper_shatter_base.png</animSheet>
+<anim name="dddeepone_tributeshaper_shatter_clone">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_death_right">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_death_left">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="9" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_walk_down">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_walk_right">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_walk_up">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_walk_left">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_shoot_down">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_shoot_right">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_shoot_up">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_shoot_left">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_fire_down">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_fire_right">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_fire_up">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_fire_left">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_repair">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_punch_up">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_punch_down">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_teleport">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_type_right">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_type_left">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_type_up">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_type_down">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="dddeepone_tributeshaper_shatter_portrait">
+	<sheet>dddeepone_tributeshaper_shatter</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_dark" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_dark_base.png</animSheet>
+<anim name="ddunstable_soul_dark_clone">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_death_right">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_death_left">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_walk_down">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_walk_right">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_walk_up">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_walk_left">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_shoot_down">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_shoot_right">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_shoot_up">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_shoot_left">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_fire_down">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_fire_right">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_fire_up">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_fire_left">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_repair">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_punch_up">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_punch_down">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_dark_teleport">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_dark_type_right">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_type_left">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_type_up">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_dark_type_down">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_dark_portrait">
+	<sheet>ddunstable_soul_dark</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_plague" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_plague_base.png</animSheet>
+<anim name="ddunstable_soul_plague_clone">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_death_right">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_death_left">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_walk_down">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_walk_right">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_walk_up">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_walk_left">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_shoot_down">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_shoot_right">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_shoot_up">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_shoot_left">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_fire_down">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_fire_right">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_fire_up">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_fire_left">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_repair">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_punch_up">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_punch_down">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_plague_teleport">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_plague_type_right">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_type_left">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_type_up">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_plague_type_down">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_plague_portrait">
+	<sheet>ddunstable_soul_plague</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_shatter" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_shatter_base.png</animSheet>
+<anim name="ddunstable_soul_shatter_clone">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_death_right">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_death_left">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_walk_down">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_walk_right">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_walk_up">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_walk_left">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_shoot_down">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_shoot_right">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_shoot_up">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_shoot_left">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_fire_down">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_fire_right">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_fire_up">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_fire_left">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_repair">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_punch_up">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_punch_down">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_shatter_teleport">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_shatter_type_right">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_type_left">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_type_up">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_shatter_type_down">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_shatter_portrait">
+	<sheet>ddunstable_soul_shatter</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_judge" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_judge_base.png</animSheet>
+<anim name="ddunstable_soul_judge_clone">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_death_right">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_death_left">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_walk_down">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_walk_right">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_walk_up">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_walk_left">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_shoot_down">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_shoot_right">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_shoot_up">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_shoot_left">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_fire_down">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_fire_right">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_fire_up">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_fire_left">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_repair">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_punch_up">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_punch_down">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_judge_teleport">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_judge_type_right">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_type_left">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_type_up">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_judge_type_down">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_judge_portrait">
+	<sheet>ddunstable_soul_judge</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_cloud" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_cloud_base.png</animSheet>
+<anim name="ddunstable_soul_cloud_clone">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_death_right">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_death_left">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_walk_down">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_walk_right">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_walk_up">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_walk_left">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_shoot_down">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_shoot_right">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_shoot_up">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_shoot_left">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_fire_down">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_fire_right">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_fire_up">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_fire_left">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_repair">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_punch_up">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_punch_down">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cloud_teleport">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_cloud_type_right">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_type_left">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_type_up">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cloud_type_down">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_cloud_portrait">
+	<sheet>ddunstable_soul_cloud</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_cage" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_cage_base.png</animSheet>
+<anim name="ddunstable_soul_cage_clone">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_death_right">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_death_left">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_walk_down">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_walk_right">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_walk_up">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_walk_left">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_shoot_down">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_shoot_right">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_shoot_up">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_shoot_left">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_fire_down">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_fire_right">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_fire_up">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_fire_left">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_repair">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_punch_up">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_punch_down">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_cage_teleport">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_cage_type_right">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_type_left">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_type_up">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_cage_type_down">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_cage_portrait">
+	<sheet>ddunstable_soul_cage</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddunstable_soul_spent" w="455" h="455" fw="35" fh="35">people/ddunstable_soul_spent_base.png</animSheet>
+<anim name="ddunstable_soul_spent_clone">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_death_right">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_death_left">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="10" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_walk_down">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_walk_right">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_walk_up">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_walk_left">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_shoot_down">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="3" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_shoot_right">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="3" x="3" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_shoot_up">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="3" x="6" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_shoot_left">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="3" x="0" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_fire_down">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_fire_right">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="9" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_fire_up">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_fire_left">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="8" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_repair">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="9" x="0" y="7" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_punch_up">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="6" x="3" y="1" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_punch_down">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>1.0</time>
+</anim>
+<anim name="ddunstable_soul_spent_teleport">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="10" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_spent_type_right">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_type_left">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_type_up">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddunstable_soul_spent_type_down">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddunstable_soul_spent_portrait">
+	<sheet>ddunstable_soul_spent</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_mature" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_mature_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_mature_clone">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_death_right">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_death_left">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_walk_down">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_walk_right">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_walk_up">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_walk_left">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_shoot_down">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_shoot_right">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_shoot_up">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_shoot_left">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_fire_down">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_fire_right">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_fire_up">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_fire_left">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_repair">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_punch_up">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_punch_down">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_teleport">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_type_right">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_type_left">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_type_up">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_type_down">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_mature_portrait">
+	<sheet>ddtempest_blight_guardian_mature</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_outgrowth" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_outgrowth_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_outgrowth_clone">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_death_right">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_death_left">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_walk_down">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_walk_right">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_walk_up">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_walk_left">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_shoot_down">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_shoot_right">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_shoot_up">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_shoot_left">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_fire_down">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_fire_right">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_fire_up">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_fire_left">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_repair">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_punch_up">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_punch_down">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_teleport">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_type_right">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_type_left">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_type_up">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_type_down">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_outgrowth_portrait">
+	<sheet>ddtempest_blight_guardian_outgrowth</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_seed" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_seed_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_seed_clone">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_death_right">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_death_left">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_walk_down">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_walk_right">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_walk_up">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_walk_left">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_shoot_down">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_shoot_right">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_shoot_up">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_shoot_left">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_fire_down">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_fire_right">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_fire_up">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_fire_left">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_repair">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_punch_up">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_punch_down">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_teleport">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_type_right">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_type_left">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_type_up">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_type_down">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_seed_portrait">
+	<sheet>ddtempest_blight_guardian_seed</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_planted1" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_planted1_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_planted1_clone">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_death_right">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_death_left">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_walk_down">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_walk_right">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_walk_up">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_walk_left">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_shoot_down">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_shoot_right">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_shoot_up">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_shoot_left">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_fire_down">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_fire_right">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_fire_up">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_fire_left">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_repair">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_punch_up">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_punch_down">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_teleport">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_type_right">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_type_left">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_type_up">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_type_down">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted1_portrait">
+	<sheet>ddtempest_blight_guardian_planted1</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_planted2" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_planted2_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_planted2_clone">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_death_right">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_death_left">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_walk_down">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_walk_right">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_walk_up">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_walk_left">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_shoot_down">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_shoot_right">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_shoot_up">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_shoot_left">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_fire_down">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_fire_right">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_fire_up">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_fire_left">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_repair">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_punch_up">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_punch_down">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_teleport">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_type_right">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_type_left">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_type_up">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_type_down">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted2_portrait">
+	<sheet>ddtempest_blight_guardian_planted2</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_planted3" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_planted3_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_planted3_clone">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_death_right">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_death_left">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_walk_down">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_walk_right">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_walk_up">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_walk_left">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_shoot_down">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_shoot_right">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_shoot_up">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_shoot_left">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_fire_down">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_fire_right">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_fire_up">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_fire_left">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_repair">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_punch_up">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_punch_down">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_teleport">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_type_right">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_type_left">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_type_up">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_type_down">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted3_portrait">
+	<sheet>ddtempest_blight_guardian_planted3</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_planted4" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_planted4_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_planted4_clone">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_death_right">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_death_left">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_walk_down">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_walk_right">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_walk_up">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_walk_left">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_shoot_down">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_shoot_right">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_shoot_up">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_shoot_left">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_fire_down">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_fire_right">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_fire_up">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_fire_left">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_repair">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_punch_up">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_punch_down">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_teleport">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_type_right">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_type_left">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_type_up">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_type_down">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted4_portrait">
+	<sheet>ddtempest_blight_guardian_planted4</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddtempest_blight_guardian_planted5" w="315" h="455" fw="35" fh="35">people/ddtempest_blight_guardian_planted5_base.png</animSheet>
+<anim name="ddtempest_blight_guardian_planted5_clone">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_death_right">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_death_left">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_walk_down">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_walk_right">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_walk_up">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_walk_left">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_shoot_down">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_shoot_right">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_shoot_up">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_shoot_left">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_fire_down">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_fire_right">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_fire_up">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_fire_left">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_repair">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_punch_up">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_punch_down">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_teleport">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_type_right">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_type_left">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_type_up">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_type_down">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddtempest_blight_guardian_planted5_portrait">
+	<sheet>ddtempest_blight_guardian_planted5</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddisparity_administrator_crystalline" w="350" h="210" fw="35" fh="35">people/dddisparity_administrator_crystalline_base.png</animSheet>
+<animSheet name="dddisparity_administrator_crystalline_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
+<anim name="dddisparity_administrator_crystalline_death_right">
+	<sheet>dddisparity_administrator_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_death_left">
+	<sheet>dddisparity_administrator_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_walk_down">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_walk_right">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_walk_up">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="3" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_walk_left">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="3" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_shoot_down">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_shoot_right">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="6" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_shoot_up">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_shoot_left">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="3" x="6" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_power_down">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_power_up">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_fly">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="1" x="5" y="2"/>
+	<time>1</time>
+</anim>
+<anim name="dddisparity_administrator_crystalline_portrait">
+	<sheet>dddisparity_administrator_crystalline</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddisparity_broodmother_crystalline" w="280" h="210" fw="35" fh="35">people/dddisparity_broodmother_crystalline_base.png</animSheet>
+<animSheet name="dddisparity_broodmother_crystalline_death" w="576" h="64" fw="64" fh="64">effects/explosion_darkgod.png</animSheet>
+<anim name="dddisparity_broodmother_crystalline_death_right">
+	<sheet>dddisparity_broodmother_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_death_left">
+	<sheet>dddisparity_broodmother_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_walk_down">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_walk_right">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_walk_up">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_walk_left">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_shoot_down">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_shoot_right">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_shoot_up">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_shoot_left">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_power_down">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_power_up">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_fly">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="dddisparity_broodmother_crystalline_portrait">
+	<sheet>dddisparity_broodmother_crystalline</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddisparity_liberator_crystalline" w="280" h="210" fw="35" fh="35">people/dddisparity_liberator_crystalline_base.png</animSheet>
+<animSheet name="dddisparity_liberator_crystalline_death" w="576" h="64" fw="64" fh="64">effects/explosion_darkgod.png</animSheet>
+<anim name="dddisparity_liberator_crystalline_death_right">
+	<sheet>dddisparity_liberator_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_death_left">
+	<sheet>dddisparity_liberator_crystalline_death</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_walk_down">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_walk_right">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_walk_up">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_walk_left">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_shoot_down">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="3" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_shoot_right">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="3" x="3" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_shoot_up">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="3" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_shoot_left">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="3" x="5" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_power_down">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="7" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_power_up">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_fly">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="dddisparity_liberator_crystalline_portrait">
+	<sheet>dddisparity_liberator_crystalline</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="dddisparity_crystal_shot_big" w="80" h="32" fw="80" fh="32">projectiles/dddisparity_crystal_shot_big.png</animSheet>
+<anim name="dddisparity_crystal_shot_big">
+	<sheet>dddisparity_crystal_shot_big</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="dddisparity_crystal_shot_small" w="32" h="80" fw="32" fh="80">projectiles/dddisparity_crystal_shot_small.png</animSheet>
+<anim name="dddisparity_crystal_shot_small">
+	<sheet>dddisparity_crystal_shot_small</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ddilldrythk_statue_soulshell" w="490" h="455" fw="35" fh="35">people/ddilldrythk_statue_soulshell_base.png</animSheet>
+<anim name="ddilldrythk_statue_soulshell_clone">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_death_right">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_death_left">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="5" x="3" y="0" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_walk_down">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_walk_right">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_walk_up">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_walk_left">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_shoot_down">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="10" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_shoot_right">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="4" y="10" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_shoot_up">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="8" y="10" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_shoot_left">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="1" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_fire_down">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>2.0</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_fire_right">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>2.0</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_fire_up">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>2.0</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_fire_left">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="8" x="0" y="9" />
+	<time>2.0</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_repair">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="14" x="0" y="8" />
+	<time>4.0</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_punch_up">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="6" x="0" y="6" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_punch_down">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="6" x="0" y="7" />
+	<time>0.2</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_teleport">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_type_right">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_type_left">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_type_up">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_type_down">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddilldrythk_statue_soulshell_portrait">
+	<sheet>ddilldrythk_statue_soulshell</sheet>
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
 </anim>

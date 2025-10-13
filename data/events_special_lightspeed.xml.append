@@ -369,6 +369,7 @@
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RITUALREADY">
 	<text>With the sacrifice made, you're ready to perform a ritual... though you know there to be little time to hesitate, as your destination approaches.</text>
 	<variable name="dd_ritual_side_effect_triggered" op="set" val="0"/>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Perform a basic ritual.</text>
 		<event>
@@ -390,6 +391,16 @@
 					<choice hidden="true">
 						<text>I desire... drones.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_SHADOWDRONESPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Perform the Ritual of Restless Spirits.</text>
+				<event>
+					<text>As is asked of you by the Otherworldly Tome, you procure a piece of small, sharp metal. You then perform a brief incantation, and in an instant, the metal leaps out of your hands - plunging itself into your skull, as if it had a mind of its own. It's not pain that you feel, though, as it burrows itself deeper, and deeper, and blood begins to spill forth from the resulting wound... but a sense of total understanding. You are okay, as long as you merely reaize your desire...</text>
+					<choice hidden="true">
+						<text>I desire... souls.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESTLESSSPIRITSPERFORMED"/>
 					</choice>
 				</event>
 			</choice>
@@ -940,9 +951,9 @@
 		</event>
 	</choice>
 	<choice hidden="true" req="DD_CRYSTALHUNTSCOMPLETEDCHECKANDBEGINNING">
-		<text>(Disparity Crew) Perform a crystal-locating ritual.</text>
+		<text>(Disparity Crew) Perform a Disparity ritual.</text>
 		<event>
-			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a vibrant purple. In it, the procedures for locating the fabled Disparity Crystals are described.</text>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a vibrant purple. In it, the procedures for locating the fabled Disparity Crystals are described, in addition to a more vague ritual - courtesy of one of the Tome's strange, loose pages.</text>
 			<choice hidden="true" req="DISPARITY_CRYSTAL_OF_POTENCY" lvl="0" max_lvl="0" blue="false">
 				<text>Perform a ritual to locate the Crystal of Potency.</text>
 				<event>
@@ -1003,12 +1014,22 @@
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true" blue="false">
+				<text>Perform the ritual described by the loose page.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, a vibrant light begins to overtake your vision...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALLINECOMBATPERFORMED"/>
+					</choice>
+				</event>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true" req="deeponecultist">
 		<text>(Enlightened Crew) Perform an Enlightened ritual.</text>
 		<event>
-			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedures for proving oneself to the Dark God and reaping its gifts are described.</text>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedures for proving oneself to the Dark God and reaping its gifts are described, in addition to a more vague ritual - courtesy of one of the Tome's strange, loose pages.</text>
 			<choice hidden="true" blue="false">
 				<text>Perform the Ritual of Divine Devotion.</text>
 				<event>
@@ -1026,6 +1047,16 @@
 					<choice hidden="true">
 						<text>Focus on that heat.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_BLESSEDGIFTSPERFORMED_LOAD"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" blue="false">
+				<text>Perform the ritual described by the loose page.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, an uncomfortable, disembodied laughter fills the air around you...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_AGEDFISHPERFORMED"/>
 					</choice>
 				</event>
 			</choice>
@@ -1087,7 +1118,7 @@
 	<choice hidden="true" req="LIST_CREW_DDTEMPEST_ALIGNED">
 		<text>(Tempest Crew) Perform a spawn-summoning ritual.</text>
 		<event>
-			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an electric blue. In it, the procedures for summoning the Tempest's spawn and enthralling them are described.</text>
+			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in an electric blue. In it, the procedures for summoning the Tempest's spawn and enthralling them are described, in addition to a more vague ritual - courtesy of one of the Tome's strange, loose pages.</text>
 			<choice hidden="true">
 				<text>Perform the Ritual of Stormcalling.</text>
 				<event>
@@ -1099,6 +1130,16 @@
 					<choice hidden="true">
 						<text>I desire... a Spawn Warden.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_STORMCALLINGPERFORMED_WARDEN"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" blue="false">
+				<text>Perform the ritual described by the loose page.</text>
+				<event>
+					<text>With the sacrifice having been made, and with your desire known, an electrostatic current pulses throughout the room...</text>
+					<choice hidden="true">
+						<text>Read the text.</text>
+						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_PLANTSHOWDOWNPERFORMED"/>
 					</choice>
 				</event>
 			</choice>

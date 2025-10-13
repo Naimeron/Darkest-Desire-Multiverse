@@ -914,7 +914,7 @@
 									<choice hidden="true" req="LIST_DDDARKGOD_DRONES">
 										<text>(Darkness Drone) Is this what you're looking for?</text>
 										<event>
-											<text>Their eyes light up as you point to your weapon of darkness, "You... would house one of our lord's gifts? You... truly are extraordinary. Yes, indeed... it is. Would you... be wiling to part with it? We... would reward you handsomely, with... everything we can spare."</text>
+											<text>Their eyes light up as you point to your drone of darkness, "You... would house one of our lord's gifts? You... truly are extraordinary. Yes, indeed... it is. Would you... be wiling to part with it? We... would reward you handsomely, with... everything we can spare."</text>
 											<choice hidden="true" req="DRONE_MINISHROUD">
 												<text>Give them your dark Combat drone.</text>
 												<event>
@@ -1297,7 +1297,7 @@
 					<choice hidden="true">
 						<text>This Epsilon... you mentioned they'd went off the grid prior.</text>
 						<event>
-							<text>"Yeah... it's a real mystery, even among thhhhe bigger eggheads. Thhhhe Epsilon lab and its members splintered from thhhhe rest of thhhhe District in thhhhe wake of its lead having a falling-out withhhh thhhhe Chhhhief, and thhhhey came all thhhhe way out here to carry out thhhheir research in secret. It wasn't long before they went radio-silent, thhhough... thhhhat was years ago, and thhhhe rest is as you see it. Thhhhey've simply vanishhhed."</text>
+							<text>"Yeah... it's a real mystery, even among thhhhe bigger eggheads. Thhhhe Epsilon lab and its members splintered from thhhhe rest of thhhhe District in thhhhe wake of its lead having a falling-out withhhh thhhhe Chhhhief, and thhhhey came all thhhhe way out here to carry out thhhheir research in secret. It wasn't long before they went radio-silent, thhhough... thhhhat was years ago, and thhhhe rest is as you see it. Thhhhey've simply vanished."</text>
 							<choice hidden="true">
 								<text>What was it that they were researching, exactly?</text>
 								<event>

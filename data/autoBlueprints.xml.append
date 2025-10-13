@@ -160,6 +160,13 @@
 	<mod-append:name>ddlightborne_warlockular</mod-append:name>
 	<mod-append:name>ddlightborne_breakling</mod-append:name>
 	<mod-append:name>ddlightborne_tormentular</mod-append:name>
+	<mod-append:name>ddunstable_soul_spent</mod-append:name>
+	<mod-append:name>ddunstable_soul_cage</mod-append:name>
+	<mod-append:name>ddunstable_soul_cloud</mod-append:name>
+	<mod-append:name>ddunstable_soul_judge</mod-append:name>
+	<mod-append:name>ddunstable_soul_shatter</mod-append:name>
+	<mod-append:name>ddunstable_soul_plague</mod-append:name>
+	<mod-append:name>ddunstable_soul_dark</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH">
@@ -234,6 +241,7 @@
 	<mod-append:name>DDFALSERADIANCE_CHAINLASER</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
 	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
+	<mod-append:name>DDSOULPLAGUE_SHATTEREDPROMISE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL">
@@ -293,6 +301,12 @@
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</mod-append:name>
+	<mod-append:name>DDDRONE_MINISHROUD_CRYSTALLINE</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
@@ -331,6 +345,7 @@
 	<mod-append:name>DDFALSERADIANCE_CHAINLASER</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_BURSTMISSILE</mod-append:name>
 	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
+	<mod-append:name>DDSOULPLAGUE_SHATTEREDPROMISE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_DRONES_ALL_CRAPBUCKET">
@@ -359,6 +374,12 @@
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</mod-append:name>
+	<mod-append:name>DDDRONE_MINISHROUD_CRYSTALLINE</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
@@ -371,6 +392,7 @@
 	<mod-append:name>ddsoulplague_husk_human</mod-append:name>
 	<mod-append:name>ddsoulplague_shellcultist</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_seed</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE_CRAPBUCKET">
@@ -447,6 +469,7 @@
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
 	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
+	<mod-append:name>DDSOULPLAGUE_SHATTEREDPROMISE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NOMISSILE">
@@ -461,6 +484,7 @@
 	<mod-append:name>DDCHAINLASER_SOULPLAGUE_CHAOS</mod-append:name>
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
+	<mod-append:name>DDSOULPLAGUE_SHATTEREDPROMISE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NODAMAGE">
@@ -474,6 +498,7 @@
 	<mod-append:name>DD_BEAM_INSTANT_DARKGOD</mod-append:name>
 	<mod-append:name>DDFALSERADIANCE_LOOT</mod-append:name>
 	<mod-append:name>BOMB_DDOBELISK</mod-append:name>
+	<mod-append:name>DDSOULPLAGUE_SHATTEREDPROMISE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_MISSILES_ALL">
@@ -556,6 +581,10 @@
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_DRONES_BOARDING_DAMAGE">
@@ -589,6 +618,10 @@
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTWO_DAWN_BOARDER</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</mod-append:name>
 	<mod-append:name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</mod-append:name>
+	<mod-append:name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_SHELL">
@@ -667,17 +700,54 @@
 	<name>disparity_engihazard_enemy</name>
 </blueprintList>
 
+<blueprintList name="BLUELIST_CREW_DDTRIBUTESHAPER">
+	<name>dddeepone_tributeshaper_shatter</name>
+	<name>dddeepone_tributeshaper_plague</name>
+	<name>dddeepone_tributeshaper_dark</name>
+	<name>dddeepone_tributeshaper_cloud</name>
+	<name>dddeepone_tributeshaper_judge</name>
+	<name>dddeepone_tributeshaper_cage</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_CREW_DDENLIGHTENED">
+	<name>deeponecultist</name>
+	<name>dddeepone_tributeshaper_shatter</name>
+	<name>dddeepone_tributeshaper_plague</name>
+	<name>dddeepone_tributeshaper_dark</name>
+	<name>dddeepone_tributeshaper_cloud</name>
+	<name>dddeepone_tributeshaper_judge</name>
+	<name>dddeepone_tributeshaper_cage</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_CREW_DDELITEDEEPONE">
+	<name>dddeepone_chosen</name>
+	<name>dddeepone_tributeshaper_shatter</name>
+	<name>dddeepone_tributeshaper_plague</name>
+	<name>dddeepone_tributeshaper_dark</name>
+	<name>dddeepone_tributeshaper_cloud</name>
+	<name>dddeepone_tributeshaper_judge</name>
+	<name>dddeepone_tributeshaper_cage</name>
+</blueprintList>
+
 <blueprintList name="LIST_CREW_MORPH_DEEPONE">
 	<name>deepone</name>
 	<name>deeponecultist</name>
 	<name>dddeepone_chosen</name>
 	<name>ddunique_theheroine</name>
 	<name>unique_thescarred</name>
+	<name>dddeepone_tributeshaper_shatter</name>
+	<name>dddeepone_tributeshaper_plague</name>
+	<name>dddeepone_tributeshaper_dark</name>
+	<name>dddeepone_tributeshaper_cloud</name>
+	<name>dddeepone_tributeshaper_judge</name>
+	<name>dddeepone_tributeshaper_cage</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_MORPH_DISPARITYBROODMOTHER">
 	<name>DISPARITY_BROODMOTHERTOG_DEFEND</name>
 	<name>DISPARITY_BROODMOTHERTOG_BOARDER</name>
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_MORPH_DDSERAPHARBITER">
@@ -688,6 +758,8 @@
 <blueprintList name="LIST_CREW_MORPH_DISPARITYLIBERATOR">
 	<name>DISPARITY_LIBERATORTOG_DEFEND</name>
 	<name>DISPARITY_LIBERATORTOG_BOARDER</name>
+	<name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_MORPH_DDDARKTEMPLAR">
@@ -741,6 +813,7 @@
 	<name>DDDISPARITY_ADMINISTRATOR_ATTACK</name>
 	<name>DDDISPARITY_ADMINISTRATOR_DEFENSE</name>
 	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
+	<name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</name>
 </blueprintList>
 
 <blueprintList name="LIST_EVENT_DDDARKTEMPLAR_ATTACKS">
@@ -884,6 +957,12 @@
 	<name>ddunique_theheroine</name>
 	<name>ddunique_theheroine_enemy</name>
 	<name>unique_thescarred</name>
+	<name>dddeepone_tributeshaper_shatter</name>
+	<name>dddeepone_tributeshaper_plague</name>
+	<name>dddeepone_tributeshaper_dark</name>
+	<name>dddeepone_tributeshaper_cloud</name>
+	<name>dddeepone_tributeshaper_judge</name>
+	<name>dddeepone_tributeshaper_cage</name>
 </blueprintList>
 
 <blueprintList name="LIST_CREW_DDSERAPHIM">
@@ -990,6 +1069,13 @@
 	<name>DISPARITY_ENGI_OUTRIDER_NO2</name>
 	<name>DISPARITY_ENGI_RIGGER_NO2</name>
 	<name>DISPARITY_ENGI_SCOUT_NO2</name>
+</blueprintList>
+
+<blueprintList name="LIST_SHIPS_DDDISPARITY_CRYSTALLINE">
+	<name>DDDISPARITY_ENGI_ASSAULT_CRYSTALLINE</name>
+	<name>DDDISPARITY_ENGI_OUTRIDER_CRYSTALLINE</name>
+	<name>DDDISPARITY_ENGI_RIGGER_CRYSTALLINE</name>
+	<name>DDDISPARITY_ENGI_SCOUT_CRYSTALLINE</name>
 </blueprintList>
 
 <blueprintList name="LIST_SHIPS_DISPARITY_MIXED">
@@ -1218,6 +1304,12 @@
 	<name>DDDISPARITY_ADMINISTRATOR_HAZARD</name>
 </blueprintList>
 
+<blueprintList name="LIST_DRONES_DDDISPARITY_CRYSTALLINE"> 
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</name>
+	<name>DDDRONE_MINISHROUD_CRYSTALLINE</name>
+	<name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</name>
+</blueprintList>
+
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE_RHYME">
 	<mod-append:name>disparity_engidefault</mod-append:name>
 	<mod-append:name>disparity_engispeed</mod-append:name>
@@ -1226,6 +1318,12 @@
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>dddeepone_chosen</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_shatter</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_plague</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_dark</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cloud</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_judge</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cage</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_UNIQUE">
@@ -1300,6 +1398,12 @@
 	<name>LASER_DISPARITY_LOOT</name>
 	<name>DISPARITY_CRYSTAL_ARMOR</name>
 	<name>DISPARITY_CRYSTAL_ARMOR_LOCKED</name>
+	<name>DDDRONE_MINISHROUD_CRYSTALLINE</name>
+	<name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER</name>
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER</name>
+	<name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</name>
 </blueprintList>
 
 <blueprintList name="JUDGELIST_ROCK_DDSOULPLAGUE_GEAR">
@@ -1310,6 +1414,7 @@
 	<name>DDMISSILES_SOULPLAGUE</name>
 	<name>DDHELLRAISER_HULL_LOOT</name>
 	<name>DDHELLRAISER_FIRE_LOOT</name>
+	<name>DDSOULPLAGUE_SHATTEREDPROMISE</name>
 </blueprintList>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_RAREELITE">
@@ -1320,6 +1425,12 @@
 	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>dddeepone_chosen</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_shatter</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_plague</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_dark</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cloud</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_judge</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cage</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_SELITE">
@@ -1354,6 +1465,12 @@
 	<mod-append:name>ddseraph_shell</mod-append:name>
 	<mod-append:name>dddeepone_chosen</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_shatter</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_plague</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_dark</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cloud</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_judge</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cage</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE_FIRE">
@@ -1448,6 +1565,8 @@
 	<mod-append:name>ddilldrythk_statue_leafhost</mod-append:name>
 	<mod-append:name>ddilldrythk_statue_toxblood</mod-append:name>
 	<mod-append:name>ddilldrythk_statue_voidroot</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_soulshell</mod-append:name>
+	<mod-append:name>ddilldrythk_statue_soulshell_enemy</mod-append:name>
 	<mod-append:name>ddunique_theheroine</mod-append:name>
 	<mod-append:name>ddtempest_spawn_warden</mod-append:name>
 	<mod-append:name>ddtempest_spawn_warden_praying</mod-append:name>
@@ -1467,6 +1586,21 @@
 	<mod-append:name>ddlightborne_warlockular</mod-append:name>
 	<mod-append:name>ddlightborne_breakling</mod-append:name>
 	<mod-append:name>ddlightborne_tormentular</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_shatter</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_plague</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_dark</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cloud</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_judge</mod-append:name>
+	<mod-append:name>dddeepone_tributeshaper_cage</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_mature</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_seed</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_seed_outgrowthing</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_planted1</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_planted2</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_planted3</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_planted4</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_planted5</mod-append:name>
+	<mod-append:name>ddtempest_blight_guardian_outgrowth</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
@@ -1722,6 +1856,24 @@
 	<name>ddlightborne_warlockular</name>
 	<name>ddlightborne_breakling</name>
 	<name>ddlightborne_tormentular</name>
+	<name>ddunstable_soul_spent</name>
+	<name>ddunstable_soul_cage</name>
+	<name>ddunstable_soul_cloud</name>
+	<name>ddunstable_soul_judge</name>
+	<name>ddunstable_soul_shatter</name>
+	<name>ddunstable_soul_plague</name>
+	<name>ddunstable_soul_dark</name>
+	<name>ddtempest_blight_guardian_planted5</name>
+	<name>ddtempest_blight_guardian_planted4</name>
+	<name>ddtempest_blight_guardian_planted3</name>
+	<name>ddtempest_blight_guardian_planted2</name>
+	<name>ddtempest_blight_guardian_planted1</name>
+	<name>ddtempest_blight_guardian_seed</name>
+	<name>ddtempest_blight_guardian_seed_outgrowthing</name>
+	<name>ddtempest_blight_guardian_mature</name>
+	<name>ddtempest_blight_guardian_outgrowth</name>
+	<name>ddilldrythk_statue_soulshell</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDDARK_OBELISK_ENTITIES">
@@ -1784,6 +1936,19 @@
 	<name>ddilldrythk_statue_leafhost</name>
 	<name>ddilldrythk_statue_toxblood</name>
 	<name>ddilldrythk_statue_voidroot</name>
+	<name>ddilldrythk_statue_soulshell</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDCREW_ILLDRYTHK_ENEMYLIST">
+	<name>ddilldrythk_statue</name>
+	<name>ddilldrythk_statue_cinderbark</name>
+	<name>ddilldrythk_statue_frostwood</name>
+	<name>ddilldrythk_statue_ironbound</name>
+	<name>ddilldrythk_statue_leafhost</name>
+	<name>ddilldrythk_statue_toxblood</name>
+	<name>ddilldrythk_statue_voidroot</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDCREW_ILLDRYTHK_ALLGOOBERS">
@@ -1795,6 +1960,8 @@
 	<name>ddilldrythk_statue_toxblood</name>
 	<name>ddilldrythk_statue_voidroot</name>
 	<name>ddilldrythk_caretaker</name>
+	<name>ddilldrythk_statue_soulshell</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDSOULPLAGUE_HUSKS_ALL">
@@ -1881,6 +2048,8 @@
 	<name>ddunique_theaberration_enemy</name>
 	<name>ddsoulplague_shellcultist</name>
 	<name>ddsoulplague_shellcultist_enemy</name>
+	<name>ddilldrythk_statue_soulshell</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDSOULPLAGUE_ALIGNED_NOSHELL">
@@ -1918,6 +2087,8 @@
 	<name>ddsoulplague_corruptor_tide_enemy</name>
 	<name>ddunique_theaberration</name>
 	<name>ddunique_theaberration_enemy</name>
+	<name>ddilldrythk_statue_soulshell</name>
+	<name>ddilldrythk_statue_soulshell_enemy</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDSOULPLAGUERANDOM_SUMMON">
@@ -1997,6 +2168,15 @@
 	<name>ddtempest_roiling_remnant</name>
 	<name>ddtempest_spawn_warden</name>
 	<name>ddtempest_spawn_warden_praying</name>
+	<name>ddtempest_blight_guardian_planted5</name>
+	<name>ddtempest_blight_guardian_planted4</name>
+	<name>ddtempest_blight_guardian_planted3</name>
+	<name>ddtempest_blight_guardian_planted2</name>
+	<name>ddtempest_blight_guardian_planted1</name>
+	<name>ddtempest_blight_guardian_seed</name>
+	<name>ddtempest_blight_guardian_seed_outgrowthing</name>
+	<name>ddtempest_blight_guardian_mature</name>
+	<name>ddtempest_blight_guardian_outgrowth</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDTEMPEST_STORMOMEN">
@@ -2009,6 +2189,15 @@
 	<name>ddtempest_living_lightning</name>
 	<name>ddtempest_roiling_storm</name>
 	<name>ddtempest_roiling_remnant</name>
+	<name>ddtempest_blight_guardian_planted5</name>
+	<name>ddtempest_blight_guardian_planted4</name>
+	<name>ddtempest_blight_guardian_planted3</name>
+	<name>ddtempest_blight_guardian_planted2</name>
+	<name>ddtempest_blight_guardian_planted1</name>
+	<name>ddtempest_blight_guardian_seed</name>
+	<name>ddtempest_blight_guardian_seed_outgrowthing</name>
+	<name>ddtempest_blight_guardian_mature</name>
+	<name>ddtempest_blight_guardian_outgrowth</name>
 </blueprintList>
 
 <blueprintList name="LIST_DDTEMPEST_LIGHTNING_SUMMON">
@@ -2135,6 +2324,20 @@
 	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_TIMELUX</name>
 	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_DEVOURLUX</name>
 	<name>DDFALSERADIANCE_RADIANT_CORE_TIERTHREE_COMMANDLUX</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_DDETHEREAL_FRAGMENTS">
+	<name>DDETHEREAL_FRAGMENT</name>
+	<name>DDETHEREAL_FRAGMENT_LOCKED</name>
+</blueprintList>
+
+<blueprintList name="BLUELIST_DDTRIBUTE_MASKS">
+	<name>DDHIDDENAUG_TRIBUTEMASK_SHATTER</name>
+	<name>DDHIDDENAUG_TRIBUTEMASK_CLOUD</name>
+	<name>DDHIDDENAUG_TRIBUTEMASK_PLAGUE</name>
+	<name>DDHIDDENAUG_TRIBUTEMASK_DARK</name>
+	<name>DDHIDDENAUG_TRIBUTEMASK_CAGE</name>
+	<name>DDHIDDENAUG_TRIBUTEMASK_JUDGE</name>
 </blueprintList>
 
 <blueprintList name="LIST_NIGHTMARES_DDBOLT">
@@ -2296,6 +2499,85 @@
 	<name>nightmarish_martyr</name>
 	<name>nightmarish_terror</name>
 	<name>nightmarish_stalker</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDUNSTABLESOULS_EMPOWERED">
+	<name>ddunstable_soul_cage</name>
+	<name>ddunstable_soul_cloud</name>
+	<name>ddunstable_soul_judge</name>
+	<name>ddunstable_soul_shatter</name>
+	<name>ddunstable_soul_plague</name>
+	<name>ddunstable_soul_dark</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_DDUNSTABLESOULS_ALL">
+	<name>ddunstable_soul_spent</name>
+	<name>ddunstable_soul_cage</name>
+	<name>ddunstable_soul_cloud</name>
+	<name>ddunstable_soul_judge</name>
+	<name>ddunstable_soul_shatter</name>
+	<name>ddunstable_soul_plague</name>
+	<name>ddunstable_soul_dark</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_CREW_NONELITE">
+	<name>deepone</name>
+	<name>deeponecultist</name>
+	<name>ddsoulplague_husk_human</name>
+	<name>ddsoulplague_shellcultist</name>
+	<name>ddtempest_spawn_warden</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_CREW_ELITE">
+	<name>disparity_engidefault</name>
+	<name>dddeepone_chosen</name>
+	<name>ddsoulplague_huskweaver</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_CREW_SUPERELITE">
+	<name>ddilldrythk_statue</name>
+	<name>ddtempest_stormborn_spawn</name>
+	<name>ddseraph_engi</name>
+	<name>ddseraph_shell</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_GEAR_LOOT">
+	<name>LASER_DISPARITY_LOOT</name>
+	<name>DDFALSERADIANCE_LOOT</name>
+	<name>DDDEEP_ONE_SHOTGUN</name>
+	<name>DDPHASE_SERAPHIM</name>
+	<name>DDCHAINLASER_SOULPLAGUE</name>
+	<name>BOMB_DDOBELISK</name>
+	<name>DDSOULPLAGUE_SHATTEREDPROMISE</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_GEAR_SUPERLOOT">
+	<name>TWILIGHT_INEXORABLE_PLAYER</name>
+	<name>DDDEEP_ONE_SHOTGUN_CHAOS</name>
+	<name>DDPHASE_SERAPHIM_CHAOS</name>
+	<name>DDCHAINLASER_SOULPLAGUE_CHAOS</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_GEAR_GODLOOT">
+	<name>DDFALSERADIANCE_LOST_GODHOOD</name>
+	<name>DDDIVINE_DUALITY</name>
+	<name>DDEND_OF_HOPE</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_GEAR_SUPERDRONE">
+	<name>DDDRONE_MINISHROUD_CRYSTALLINE</name>
+	<name>DDHELLRAISER_FIRE_LOOT</name>
+	<name>DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINEADMINISTRATOR</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_DAWN_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_MIRE_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_STARS_DEFEND</name>
+	<name>DDENLIGHTENED_DARKTEMPLAR_TIERTHREE_ABYSS_DEFEND</name>
+</blueprintList>
+
+<blueprintList name="LIST_DDETHEREALSTORE_GEAR_GODDRONE">
+	<name>DDSERAPH_ARBITERTOG_DEFEND</name>
+	<name>DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND</name>
 </blueprintList>
 
 <shipBlueprint name="DEEPONE_CARRIER" layout="deep_one_carrier" img="deep_one_carrier">
@@ -2925,6 +3207,31 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 </shipBlueprint>
+<shipBlueprint name="DDDISPARITY_ENGI_ASSAULT_CRYSTALLINE" layout="disparity_engi_assault" img="disparity_engi_assault">
+	<class>Bloodied Disparity Assault</class>
+	<systemList>
+		<doors power="1" max="2" room="11" start="false" />
+		<drones power="4" max="7" room="9" start="true" />
+		<engines power="1" max="2" room="6" start="true" />
+		<hacking power="1" max="1" room="0" start="false" />
+		<medbay power="1" max="2" room="3" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="2" room="4" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="1" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="10" count="3" load="LIST_DRONES_DDDISPARITY_CRYSTALLINE" />
+	<health amount="14" />
+	<maxPower amount="10" />
+	<crewCount amount="4" max="6" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_MEDBAY_NANO" />
+</shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_OUTRIDER" layout="disparity_engi_outrider" img="disparity_engi_outrider">
 	<class>Disparity Outrider</class>
 	<systemList>
@@ -2941,7 +3248,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
-	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
+	<droneList drones="4" count="2" load="LIST_DRONES_DISPARITY" />
 	<health amount="11" />
 	<maxPower amount="10" />
 	<crewCount amount="1" max="5" class="engi_separatist" />
@@ -2964,12 +3271,36 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
-	<droneList drones="0" count="0" load="LIST_DRONES_DISPARITY" />
+	<droneList drones="4" count="2" load="LIST_DRONES_DISPARITY" />
 	<health amount="11" />
 	<maxPower amount="9" />
 	<crewCount amount="1" max="5" class="engi_separatist_nano" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+</shipBlueprint>
+<shipBlueprint name="DDDISPARITY_ENGI_OUTRIDER_CRYSTALLINE" layout="disparity_engi_outrider" img="disparity_engi_outrider">
+	<class>Bloodied Disparity Outrider</class>
+	<systemList>
+		<cloaking power="1" max="1" room="5" start="false" />
+		<doors power="1" max="2" room="7" start="false" />
+		<drones power="3" max="6" room="9" start="true" />
+		<engines power="2" max="2" room="4" start="true" />
+		<medbay power="1" max="2" room="8" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="0" count="2" load="LIST_DRONES_DDDISPARITY_CRYSTALLINE" />
+	<health amount="13" />
+	<maxPower amount="12" />
+	<crewCount amount="3" max="5" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_MEDBAY_NANO" />
 </shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_RIGGER" layout="disparity_engi_rigger" img="disparity_engi_rigger">
 	<class>Disparity Rigger</class>
@@ -3018,6 +3349,30 @@
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 	<aug name="UPG_DRONE_SPEED" />
 </shipBlueprint>
+<shipBlueprint name="DDDISPARITY_ENGI_RIGGER_CRYSTALLINE" layout="disparity_engi_rigger" img="disparity_engi_rigger">
+	<class>Bloodied Disparity Rigger</class>
+	<systemList>
+		<doors power="1" max="2" room="8" start="false" />
+		<drones power="5" max="10" room="1" start="true" />
+		<engines power="1" max="2" room="10" start="true" />
+		<hacking power="1" max="2" room="2" start="false" />
+		<medbay power="1" max="2" room="9" start="true" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="1" max="4" room="6" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="12" count="4" load="LIST_DRONES_DDDISPARITY_CRYSTALLINE" />
+	<health amount="13" />
+	<maxPower amount="12" />
+	<crewCount amount="3" max="4" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
 <shipBlueprint name="DISPARITY_ENGI_SCOUT" layout="disparity_engi_scout" img="disparity_engi_scout">
 	<class>Disparity Scout</class>
 	<systemList>
@@ -3059,6 +3414,29 @@
 	<health amount="10" />
 	<maxPower amount="8" />
 	<crewCount amount="1" max="3" class="engi_separatist_nano" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="DISPARITY_CRYSTAL_ARMOR" />
+	<aug name="UPG_CLOAK_FIRE" />
+</shipBlueprint>
+<shipBlueprint name="DDDISPARITY_ENGI_SCOUT_CRYSTALLINE" layout="disparity_engi_scout" img="disparity_engi_scout">
+	<class>Bloodied Disparity Scout</class>
+	<systemList>
+		<cloaking power="1" max="3" room="8" start="true" />
+		<drones power="2" max="5" room="4" start="false" />
+		<engines power="2" max="3" room="0" start="true" />
+		<medbay power="1" max="2" room="1" start="false" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="3" room="7" start="true" />
+		<shields power="2" max="10" room="3" start="true" />
+		<weapons power="2" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="3" load="LIST_WEAPONS_ENGI" />
+	<droneList drones="6" count="2" load="LIST_DRONES_DDDISPARITY_CRYSTALLINE" />
+	<health amount="12" />
+	<maxPower amount="11" />
+	<crewCount amount="2" max="3" class="engi_separatist" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 	<aug name="UPG_CLOAK_FIRE" />
@@ -3119,7 +3497,7 @@
 	</droneList>
 	<health amount="18" />
 	<maxPower amount="35" />
-	<crewCount amount="4" max="7" class="engi_separatist" />
+	<crewCount amount="5" max="8" class="engi_separatist" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DISPARITY_CRYSTAL_ARMOR" />
 </shipBlueprint>
@@ -3278,7 +3656,7 @@
 	<droneList drones="0" count="0" />
 	<health amount="15" />
 	<maxPower amount="12" />
-	<crewCount amount="4" max="5" class="LIST_DDCREW_ILLDRYTHK" />
+	<crewCount amount="5" max="6" class="LIST_DDCREW_ILLDRYTHK_ENEMYLIST" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDPALE_HEART" />
 	<aug name="UPG_TECH_BYPASS" />
@@ -3821,7 +4199,7 @@
 	<droneList drones="6" count="0" />
 	<health amount="26" />
 	<maxPower amount="35" />
-	<crewCount amount="6" max="10" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
+	<crewCount amount="7" max="11" class="LIST_DDSOULPLAGUERANDOM_SUMMON_ENEMY" />
 	<boardingAI>invasion</boardingAI>
 	<aug name="DDSOULPLAGUE_GAS_ENEMY" />
 	<aug name="UPG_TECH_BYPASS" />
@@ -4957,4 +5335,26 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="DDFALSERADIANCE_RESPLENDENT_LIFEFORM" />
 	<aug name="DDDEFENSE_SCRAMBLER_ENEMY_NOHACKING" />
+</shipBlueprint>
+<shipBlueprint name="DDFED_BATTLESHIP_ELITE_ECHOEDDREAMQUEST" layout="mu_fed_battleship" img="mu_fed_battleship">
+	<class>Unity Battleship</class>
+	<systemList>
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="1" max="2" room="8" start="true" />
+		<medbay power="1" max="2" room="10" start="false" />
+		<oxygen power="1" max="2" room="16" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="10" room="12" start="true" />
+		<teleporter power="1" max="3" room="14" start="true" />
+		<weapons power="4" max="10" room="7" start="true" />
+	</systemList>
+	<weaponSlots>6</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="6" load="LIST_WEAPONS_FED" />
+	<droneList drones="0" count="0" />
+	<health amount="13" />
+	<maxPower amount="10" />
+	<crewCount amount="1" max="1" class="human_soldier" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ENERGY_SHIELD" />
 </shipBlueprint>

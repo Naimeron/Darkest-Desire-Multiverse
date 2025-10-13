@@ -930,6 +930,30 @@
 												</event>
 											</choice>
 											<choice hidden="true">
+												<text>Focus on the vision of forgotten memories - those tied to an ethereal power.</text>
+												<event>
+													<text>You focus on this particular vision, and your perspective begins to shift...
+													
+													
+													
+													THE DREAMER, AND THE SHARPSHOOTER.
+													
+													A DREAM, UNDREAMT - A SHOT, SHOT DOWN. THEY WOULD NEVER MEET AGAIN. AND, YET... 
+													
+													THROUGH HOPE, THEY BORE THREE SIGILS - AMONGST THE RESTLESS DEAD, THE DEEPEST DARK, AND THE LOOSEST PARCHMENT.
+													
+													SHOULD ONE GAZE UPON THEIR VISAGES, AND BASK IN THEIR RESTORED WARMTH...
+													
+													
+													
+													...then they would surely be rewarded. Thus would it be done.</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DDDARKGODDOMAIN_PROPHECY_VISIONOFTHEEND"/>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
 												<text>Focus on the vision of love - deep within a sea of madness.</text>
 												<event>
 													<text>You focus on this particular vision, and your perspective begins to shift...
@@ -1525,6 +1549,20 @@
 				<item type="missiles" min="6" max="6"/>
 				<item type="drones" min="6" max="6"/>
 			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>I am burdened by my lack of power.</text>
+		<event>
+			<text>You close your eyes, and that warmth inside you blossoms into something greater. Something tangible. A portal opens up beside you, and out of it floats a lost, human soul...</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and then another. Though their visages are ghastly, the potential power they radiate is undeniable. Comforting, even. You feel optimistic about the journey ahead... this realm of madness will not claim you.</text>
+					<crewMember amount="1" class="ddunstable_soul_spent"/>
+				</event>
+			</choice>
 		</event>
 	</choice>
 </event>

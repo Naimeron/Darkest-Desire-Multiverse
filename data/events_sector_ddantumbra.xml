@@ -105,7 +105,7 @@
 						<event>
 							<text>No, you've got it wrong. There's nothing welcoming about the Lightborne... well, at least the majority of them, right now - nor are the Shadows the bad guys here! My sister's quite a bit more knowledgeable on the subject than I, but, essentially... they're sort of, like, tyrants?</text>
 							<choice hidden="true">
-								<text>Visualize a Rebel - tyrrany, made manifest.</text>
+								<text>Visualize a Rebel - tyranny, made manifest.</text>
 								<event>
 									<text>M-maybe, based on what little my sister's overheard on the subject. Though, it's less to do with, like, super-space-fascism and more, ah... blindness. What you're feeling right now, this senseless nothingness - it's not just an infliction upon yourself, but this entire reality. The Lightborne, they... they sought something from Father. In exchange, they were asked to swear away everything - everything, but their trust in him. In divinity.</text>
 									<choice hidden="true">
@@ -2693,7 +2693,7 @@
 			<choice hidden="true">
 				<text>Visualize an ear - ready to listen.</text>
 				<event>
-					<text>I... I don't know why, but... I feel like I can remember something. Or, ah... someone? Their skin was... pale, but not abnormally so, and they kept all but their hands obscured in long, flowing robes. And, those robes... there was something about their reflective, golden sheen that made being in their presence so comforting. I... I don't remember who it was though, or when I ever met them. I was just wondering if you, um... maybe had any idea? I f-figure you've seen a lot, and, you know, ah, might have, um... met them yourself, at some point.</text>
+					<text>I... I don't know why, but... I feel like I can remember something. Or, ah... someone? Their skin was... pale, but not abnormally so, and they always kept a smile up, even when the rain was out. And, that smile... there was something about its reflective, golden sheen that made being in their presence so comforting. I... I don't remember who it was though, or when I ever met them. I was just wondering if you, um... maybe had any idea? I f-figure you've seen a lot, and, you know, ah, might have, um... met them yourself, at some point.</text>
 					<choice hidden="true">
 						<text>Visualize a description - that of a human.</text>
 						<event>

@@ -1058,7 +1058,7 @@
 	<choice hidden="true">
 		<text>Inspect the inside of the ship.</text>
 		<event>
-			<text>You send a team to explore the inside of a ship, though upon entering you can immediately tell that this place won't hold together much longer. With the time limit in mind, your team embarks; requesting your instructions in exploring the labyrinth.</text>
+			<text>You send a team to explore the inside of the ship, though upon entering you can immediately tell that this place won't hold together much longer. With that time limit in mind, your team embarks - requesting your instructions in exploring the labyrinth.</text>
 			<choice hidden="true">
 				<text>Go... right.</text>
 				<event>
@@ -1095,7 +1095,7 @@
 			<choice hidden="true">
 				<text>Go... left.</text>
 				<event>
-					<text>Your team copies and heads left. After a few minutes of silently wandering through the iridescent halls, they come across a couple rooms labeled in an alien tongue you don't recognize. You hear the ship begin to buckle, and it becomes apparent that you don't have time to explore both rooms.</text>
+					<text>Your team copies and heads left. After a few minutes of silently wandering through the iridescent halls, they come across a couple rooms labeled in an alien tongue that your translators can't recognize. You hear the ship begin to buckle, and it quickly becomes apparent that you don't have time to explore both rooms.</text>
 					<choice hidden="true">
 						<text>Enter the dark room.</text>
 						<event>
@@ -1487,7 +1487,7 @@
 			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
 			<playSound>explosion_heavy</playSound>
 			<instantEscape/>
-			<choice hidden="true" req="deeponecultist">
+			<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 				<text>(Enlightened Crew) Allow your Enlightened Cultist to guide you through the darkness.</text>
 				<event>
 					<text>Familiar with the darkness that surrounds you, your Enlightened Cultist is successfully able to peer through it and see exactly where the strange ship is located. Once there, you're able to make its shape out enough to dock, but you're also able to recognize that the damage to its hull is truly severe. If anyone alive's left onboard, odds are that you don't have much time to save them.</text>
@@ -2034,7 +2034,7 @@
 
 <ship name="ITEMS_DDDEEPONE_TEMPESTAUCTION_FAILINGS_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
 	<destroyed>
-		<text>The ship breaks apart, and you find that the cage has managed to survive its destruction its destruction, seemingly unscathed... indeed, whatever's inside is still making those same, wet noises.</text>
+		<text>The ship breaks apart, and you find that the cage has managed to survive its destruction, seemingly unscathed... indeed, whatever's inside is still making those same, wet noises.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Examine the cage closer.</text>
@@ -3041,7 +3041,7 @@
 					<crewMember amount="1" class="ddhuman_sacrifice"/>
 				</event>
 			</choice>
-			<choice hidden="true" req="deeponecultist">
+			<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 				<text>(Enlightened Crew) I am greater, for I pursue the Prayers of Proving, idiot.</text>
 				<event>
 					<text>The citizen gasps, "The glistening yellow texts?! I've caught myself staring at their strange, dark imagery more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
@@ -3125,7 +3125,7 @@
 							<crewMember amount="1" class="ddhuman_sacrifice"/>
 						</event>
 					</choice>
-					<choice hidden="true" req="deeponecultist">
+					<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 						<text>(Enlightened Crew) I am greater, for I pursue the Prayers of Proving, idiot.</text>
 						<event>
 							<text>The citizen gasps, "The glistening yellow texts?! I've caught myself staring at their strange, dark imagery more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
@@ -3164,6 +3164,13 @@
 						<text>(Soulplague Crew) I am greater, for I pursue the Corrupting Whispers, dimwit.</text>
 						<event>
 							<text>The citizen gasps, "The iridescent rainbow texts?! I've caught myself fascinated by their portrayals of death and decay more than once... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
+							<crewMember amount="1" class="ddhuman_sacrifice"/>
+						</event>
+					</choice>
+					<choice hidden="true" req="BLUELIST_DDLIGHTBORNE_EQUIPMENT">
+						<text>(Living Lightborne) I am greater, for I pursue the Odes to Light and Dark, dolt.</text>
+						<event>
+							<text>The citizen gasps, "The aged, faded texts?! I've caught myself futilely trying to make sense of what little remains of their ink myself... truly, your cause to THEM is greater than ours. In that case, allow us to serve THEM through serving you; pray be that an ounce of your greatness may rub off on us, o' Feddie one." For a moment, you can't tell if they're completely enthralled by you, or if they're making fun of you, but then a human sacrifice is beamed over from their ship and offered to you in the name of tribute. Being an evil, murderous cultist has its social perks as well, you suppose... assuming you associate yourself with like-minded sickos, that is.</text>
 							<crewMember amount="1" class="ddhuman_sacrifice"/>
 						</event>
 					</choice>
@@ -3959,7 +3966,7 @@
 <textList name="HOSTILE_DEEPONE_PIRATE_TEXT">
 	<text>Thriving in the unruly conditions, pirate ships aren't uncommon in the vaguely controlled territory that is Deep One space. One comes at you now, weapons hot!</text>
 	<text>There's a few pirate vessels gathered here. It's unclear what they're up to, and most of them flee at your sudden appearance, but one in particular seems confident in its ability to take you on; it approaches, ready to attack.</text>
-	<text>In Deep One territory, it always pays to be wary, and you get the feeling that something's not quite right at this beacon... Whether it's preternatural instincts or blind luck, seconds later, a pirate ship reveals itself from behind a nearby satellite and moves in to attack!</text>
+	<text>In Deep One territory, it always pays to be wary, and you get the feeling that something's not quite right at this beacon. Whether it's preternatural instincts, or simply blind luck, seconds later, a pirate ship reveals itself from behind a nearby satellite and moves in to attack!</text>
 </textList>
 
 <event name="HOSTILE_DEEPONE_REBEL">

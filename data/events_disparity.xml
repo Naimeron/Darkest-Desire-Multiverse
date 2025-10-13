@@ -589,7 +589,7 @@
 											</choice>
 										</event>
 									</choice>
-									<choice hidden="true" req="deeponecultist">
+									<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 										<text>(Deep One Cultist) Inquire.</text>
 										<event>
 											<text>Though initially hesitant to share, your Enlightened Cultist appears fervent in their explanation of the matter. They claim the Dark One to have blessed this tech, Crystalline or not, and recognize the writhing mass within to be the very same as the darkness that makes up the Enlightened's grand void. Even still, the Enlightened have never received any such crystals. It seems that even they don't know the truth behind this dark technology...</text>
@@ -2780,7 +2780,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="deeponecultist">
+	<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 		<text>(Deep One Cultist) "Dodge... left."</text>
 		<event>
 			<text>Following your Enlightened Cultist's command, you have the ship dodge to the left. They speak again, "Right... quickly!" You dodge once more, and this continues to go on for some time... that is, until you receive a hail from the darkness. Accepting it, you're face to face with another Enlightened Cultist, "You... our kin stands with you. No wonder... you evade us, effortlessly. Our... apologies. Can we... make this up to you, somehow, kin?"</text>

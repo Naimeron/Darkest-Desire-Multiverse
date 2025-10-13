@@ -30,6 +30,16 @@
 	</choice>
 </event>
 
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESTLESSSPIRITSPERFORMED">
+	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
+	<quest event="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST"/>
+	</choice>
+</event>
+
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CORRUPTIONPERFORMED">
 	<text>You feel a warmth, and you know the ritual to be complete. Now, you must seek out your reward...</text>
 	<quest event="DDRITUALS_QUESTS_LIST_CORRUPTION"/>
@@ -67,6 +77,7 @@
 		<text>(Human Sacrifice) Further the ritual with a human sacrifice.</text>
 		<event>
 			<text>Your blade strikes true, and the sacrifice slumps, wetly and pathetically, against the floor. As its blood spills out, you feel the Dark God's stare intensify...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -82,6 +93,7 @@
 		<text>(Human Crew) Further the ritual with the sacrifice of one of your human crew members.</text>
 		<event>
 			<text>You catch them off-guard, and your blade strikes true. They slump, wetly and pathetically, against the floor... thankfully, in your heart, you know yourself to only be doing what must be done. As their blood spills out, you feel the Dark God's stare intensify...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -297,6 +309,7 @@
 		<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 		<event>
 			<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -312,6 +325,7 @@
 		<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 		<event>
 			<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -348,6 +362,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -363,6 +378,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -396,6 +412,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -411,6 +428,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -444,6 +462,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -459,6 +478,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -497,6 +517,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -512,6 +533,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -550,6 +572,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -565,6 +588,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -603,6 +627,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -618,6 +643,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -656,6 +682,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -671,6 +698,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -709,6 +737,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -724,6 +753,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -762,6 +792,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -777,6 +808,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -815,6 +847,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -830,6 +863,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -868,6 +902,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -883,6 +918,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -921,6 +957,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -936,6 +973,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -969,6 +1007,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -984,6 +1023,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1017,6 +1057,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1032,6 +1073,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1070,6 +1112,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1085,6 +1128,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1123,6 +1167,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1138,6 +1183,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1176,6 +1222,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1191,6 +1238,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1229,6 +1277,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1244,6 +1293,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1282,6 +1332,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1297,6 +1348,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1335,6 +1387,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1350,6 +1403,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1388,6 +1442,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1403,6 +1458,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1441,6 +1497,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1456,6 +1513,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the fire in your chest returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1543,6 +1601,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the horror's many gaping maws, and watch as it tears them apart...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -1558,6 +1617,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the horror's many gaping maws, their screams echoing throughout the room as you do so, and watch as it tears them apart...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -1626,6 +1686,7 @@
 		<event>
 			<text>You throw your human sacrifice into the Soulplague blob, and watch as it slowly consumes them...</text>
 			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -1642,6 +1703,7 @@
 		<event>
 			<text>You throw your human crew member into the Soulplague blob, their screams echoing throughout the room as you do so, and watch as it slowly consumes them...</text>
 			<variable name="dd_soulplagueritualscompleted" op="add" val="1"/>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -1755,6 +1817,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1770,6 +1833,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1808,6 +1872,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1823,6 +1888,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1861,6 +1927,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1876,6 +1943,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1914,6 +1982,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1929,6 +1998,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -1962,6 +2032,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -1977,6 +2048,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2010,6 +2082,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2025,6 +2098,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2058,6 +2132,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2073,6 +2148,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2106,6 +2182,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2121,6 +2198,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2170,6 +2248,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2185,6 +2264,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2218,6 +2298,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2233,6 +2314,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2266,6 +2348,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2281,6 +2364,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2314,6 +2398,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2329,6 +2414,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2378,6 +2464,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2393,6 +2480,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2426,6 +2514,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2441,6 +2530,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2474,6 +2564,7 @@
 				<text>(Human Sacrifice) Make an additional human sacrifice.</text>
 				<event>
 					<text>You plunge a knife into their chest, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -2489,6 +2580,7 @@
 				<text>(Human Crew) Make an additional human sacrifice using one of your crew members.</text>
 				<event>
 					<text>They don't even see it coming as you plunge a knife into their back, and their body falls lifelessly to the floor. With another offering having been made, the intensity in the air returns...</text>
+					<variable name="dd_dddream_coins" op="add" val="1"/>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="LIST_CREW_HUMAN">
 						<clone>false</clone>
@@ -2544,6 +2636,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTTWO_SACRIFICE">
 	<text>Another chord strikes - that's two. The Calendar... while order may be found in most things, few constructs of it remain as arbitrarily powerful as the means to structure time itself.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2565,6 +2658,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTTWO_HUMAN">
 	<text>Another chord strikes - that's two. The Calendar... while order may be found in most things, few constructs of it remain as arbitrarily powerful as the means to structure time itself.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2586,6 +2680,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTTHREE_SACRIFICE">
 	<text>Another chord strikes - that's three. Words... where pen and paper meet, music is born, and all things are understood - a truly magical melody written just as eloquently with the clicking of one's tongue.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2607,6 +2702,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTTHREE_HUMAN">
 	<text>Another chord strikes - that's three. Words... where pen and paper meet, music is born, and all things are understood - a truly magical melody written just as eloquently with the clicking of one's tongue.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2628,6 +2724,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTFOUR_SACRIFICE">
 	<text>Another chord strikes - that's four. Values... borne by others, and yet scorned by others yet. Seldom is one's self self-produced.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2649,6 +2746,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTFOUR_HUMAN">
 	<text>Another chord strikes - that's four. Values... borne by others, and yet scorned by others yet. Seldom is one's self self-produced.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2670,6 +2768,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTFIVE_SACRIFICE">
 	<text>Another chord strikes - that's five. Rules... that which binds the masses, and keeps the likes of chaos at bay.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2691,6 +2790,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTFIVE_HUMAN">
 	<text>Another chord strikes - that's five. Rules... that which binds the masses, and keeps the likes of chaos at bay.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2712,6 +2812,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTSIX_SACRIFICE">
 	<text>Another chord strikes - that's six. Meaning... found in all things, in spite of their intentionless creation - soothing both soul and mind alike.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2733,6 +2834,7 @@
 
 <event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_DIVINEREMNANTSPERFORMED_PARTSIX_HUMAN">
 	<text>Another chord strikes - that's six. Meaning... found in all things, in spite of their intentionless creation - soothing both soul and mind alike.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2770,6 +2872,7 @@
 	And, finally... to discard the Truth, disregard the Calendar, hold back Words, forsake one's Values, break the Rules and refuse to accept the Meaning of all things...
 	
 	...that, is what it means to discard one's sense of 'Dignity'.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="ddhuman_sacrifice">
 		<clone>false</clone>
@@ -2799,6 +2902,7 @@
 	And, finally... to discard the Truth, disregard the Calendar, hold back Words, forsake one's Values, break the Rules and refuse to accept the Meaning of all things...
 	
 	...that, is what it means to discard one's sense of 'Dignity'.</text>
+	<variable name="dd_dddream_coins" op="add" val="1"/>
 	<playSound>kaz_swipe</playSound>
 	<removeCrew class="LIST_CREW_HUMAN">
 		<clone>false</clone>
@@ -2836,6 +2940,383 @@
 	<quest event="DDRITUALS_QUESTS_ULTIMACHALLENGE"/>
 </event>
 
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_CRYSTALLINECOMBATPERFORMED">
+	<text>...ultimately fading away to naught but a dull shine, emanating from the loose page within the Tome. It seems to have had some sort of map etched into its backside, revealing a location relatively nearby... there's no telling what awaits you there, if anything, but there's only one way to find out.</text>
+	<quest event="DDRITUALS_QUESTS_CRYSTALLINECOMBAT"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST"/>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_AGEDFISHPERFORMED">
+	<text>...ultimately growing into a deafening cacophony, that which forces you to your knees in pain. You can't hear anything but that overwhelming laughter. You can't FEEL anything but its mocking tone. That is, save for a new, budding feeling, deep within yourself... but, what is this feeling, exactly? Can you even pinpoint it, struggling and helpless as you are?</text>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is isolation. I am cold, alone and forever caged.</text>
+		<event>
+			<text>You hone in on this feeling - this isolated chill - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are alone. If not literally, then in spirit - you will never know true companionship, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, hopeless feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a pink mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Caged Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected misery again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_CAGE</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_cage</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a pink mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_CAGE</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_cage</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CAGE" lvl="1" blue="false">
+		<text>You will never lose yourself to isolation again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is bliss. I am dying, and ecstatic for it.</text>
+		<event>
+			<text>You hone in on this feeling - this weightless bliss - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are dying. If not literally, then in spirit - you may have never truly lived, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, delightful feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a cerulean mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Clouded Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected joy again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_CLOUD</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_cloud</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a cerulean mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_CLOUD</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_cloud</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_CLOUD" lvl="1" blue="false">
+		<text>You will never lose yourself to bliss again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is dread. I am blind, and stumbling throughout the dark.</text>
+		<event>
+			<text>You hone in on this feeling - this dreadful anticipation - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are stumbling. If not literally, then in spirit - you will never find your way through this life, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, anxious feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a grayscale mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Darkened Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected anxiety again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_DARK</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_dark</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a grayscale mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_DARK</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_dark</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_DARK" lvl="1" blue="false">
+		<text>You will never lose yourself to dread again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is scorn. I am hated, and hateful for the fact.</text>
+		<event>
+			<text>You hone in on this feeling - this deep-seated resentment - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are hated. If not literally, then in spirit - you will never truly be accepted, or understood, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, hateful feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a brown mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Judged Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected hatred again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_JUDGE</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_judge</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a brown mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_JUDGE</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_judge</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_JUDGE" lvl="1" blue="false">
+		<text>You will never lose yourself to hatred again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is decay. I am rotting, if not already rotten to the core.</text>
+		<event>
+			<text>You hone in on this feeling - this decaying rot - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are rotting. If not literally, then in spirit - you will never amount to anything of note, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, rotten feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a green mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Plagued Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected rot again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_PLAGUE</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_plague</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a green mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_PLAGUE</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_plague</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_PLAGUE" lvl="1" blue="false">
+		<text>You will never lose yourself to decay again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="0" max_lvl="0" blue="false">
+		<text>This feeling... is ruin. I am a weapon, built for naught but war.</text>
+		<event>
+			<text>You hone in on this feeling - this ruinous acceptance - and do everything in your limited power to drown out the thunderous cackling around you. Indeed, you are ruined. If not literally, then in spirit - you will forever be a weapon, pointed at another's enemies, fleetingly existent as you are. It's this acceptance of yourself, as you truly are, that compels you to put a hand to your face...
+			
+			...only, it's not your face that you feel. You merely feel more of that same, shattered feeling. Perhaps that's all that you are now. You certainly can't hear that laughter anymore, anyways.</text>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Tributeshaper, inspecting a red mask in their hands - did that loose page's ritual conjure this Tribute Mask, and force you to don it, then? Or... was that your own decision? Regardless, it seems that this Tribute Mask - the Shattered Mask - is now yours to keep... just don't let you, or your crew, get lost in its projected ruin again.</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_SHATTER</hiddenAug>
+					<choice hidden="true" req="deeponecultist">
+						<text>(Deep One Cultist) Have another member of the Enlightened don the mask, and become a Tributeshaper.</text>
+						<event>
+							<text>The mask is handed over by your Tributeshaper, and you watch as your second Deep One's skin grows ashen beneath it. This dark coloration then stretches outward, coming to encompass the majority of their body, until they're, eventually, a perfect reflection of your Tributeshaper. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_shatter</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>That's that, then.</text>
+						<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+						<event load="LOAD_ATLAS"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="BLUELIST_CREW_DDTRIBUTESHAPER" lvl="0" max_lvl="0" blue="false">
+				<text>Yes... this is all that I ever was, deep down.</text>
+				<event>
+					<text>In an instant, the strange feeling that's overwhelmed you is torn away, and the rest of your senses come rushing back to you. Standing over you is your Enlightened Cultist, inspecting a red mask in their hands. You grunt in pain, and their attention turns towards you. "Captain, this... is a Tribute Mask. Utilized by our Elders, as a gift... from the Dark One. If you were given this, then... you must be considered very special, indeed."
+					
+					The Deep One hands you back the mask, and quickly drops to the floor in a form of prayer. "O' Dark One... praise be, to your generous name! Praise be... to our blessed captain, accepting of your many, wonderful gifts!"</text>
+					<hiddenAug>DDHIDDENAUG_TRIBUTEMASK_SHATTER</hiddenAug>
+					<choice hidden="true">
+						<text>I, uh... yeah. Why don't you keep it, actually?</text>
+						<event>
+							<text>You hand the mask over to your Enlightened Cultist once more, and they don't hesitate to follow your command... donning it in your stead. You watch as their skin begins to grow ashen beneath it - this dark coloration then stretches outward, rapidly coming to encompass the majority of their body, until they're, eventually, wholly unrecognizable. You're not sure if becoming an Elder of the Enlightened is truly that simple, or if something else is at play with these masks, but you do know one thing: the ritual is now complete.</text>
+							<transformRace class="deeponecultist">dddeepone_tributeshaper_shatter</transformRace>
+							<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="LOAD_ATLAS"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="DDHIDDENAUG_TRIBUTEMASK_SHATTER" lvl="1" blue="false">
+		<text>You will never lose yourself to ruin again.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="BLUELIST_DDTRIBUTE_MASKS" lvl="6" blue="false">
+		<text>You've felt all that there is to feel.</text>
+		<event>
+			<text>In an instant, the laughter stops - indeed, nothing happens at all. You must have collected all of the Tribute Masks, you figure. It's unfortunate, but that means that there was no point in performing the loose page's ritual - you'll have to move on.</text>
+			<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="LOAD_ATLAS"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_PLANTSHOWDOWNPERFORMED">
+	<text>...ultimately fading away to naught but a faint energy in the air, emanating from the loose page within the Tome. It seems to have had some sort of map etched into its backside, revealing a location relatively nearby... there's no telling what awaits you there, if anything, but there's only one way to find out.</text>
+	<quest event="DDRITUALS_QUESTS_PLANTSHOWDOWN"/>
+	<eventAlias name="ATLAS_MENU" jumpClear="true">ATLAS_MENU_NOEQUIPMENT</eventAlias>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+
 <eventList name="DDRITUALS_SIDE_EFFECT_ROLL_LIST">
 	<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST_SAFE"/>
 	<event load="DDRITUALS_SIDE_EFFECT_ROLL_LIST_SAFE"/>
@@ -2865,6 +3346,7 @@
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_DEATH_BY_GRAVITY"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_ASH_AND_CINDER"/>
 	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_PRISMATIC_BARRAGE"/>
+	<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_SHIMMERING_SWARM"/>
 </eventList>
 
 <eventList name="DDRITUALS_QUESTS_LIST_THEHUNT">
@@ -2880,7 +3362,7 @@
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS"/>
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_TWOHUMANS"/>
-	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN"/>
+	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN_ANDUNSTABLESOULS"/>
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_THREEHUMANS"/>
 	<event load="DDRITUALS_QUESTS_LIST_THEHUNT_SEVENHUMANSOULS"/>
 </eventList>
@@ -2931,6 +3413,30 @@
 	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_TEMPEST"/>
 	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_HUSKWEAVER"/>
 	<event load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_FALSERADIANCE"/>
+</eventList>
+
+<eventList name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS">
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER"/>
+	<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE"/>
 </eventList>
 
 <eventList name="DDRITUALS_QUESTS_LIST_CORRUPTION">
@@ -3042,6 +3548,7 @@
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_SHADOWDRONES"/>
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_OCCULTRECRUITMENT"/>
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_HUNT"/>
+	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_RESTLESSSPIRITS"/>
 </eventList>
 
 <eventList name="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_OCCULTRECRUITMENT">
@@ -3074,6 +3581,7 @@
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_SHADOWDRONES"/>
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_OCCULTRECRUITMENT"/>
 	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_HUNT"/>
+	<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_RESTLESSSPIRITS"/>
 </eventList>
 
 <eventList name="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_OCCULTRECRUITMENT">
@@ -3231,9 +3739,22 @@
 	A rift into the Dark God's realm has torn itself open, and nightmarish entities are spilling out of it!</text>
 	<playSound>thehungerroar</playSound>
 	<boarders min="1" max="1" class="ddnightmare_rift_enemy"/>
-	<choice hidden="true">
+	<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>As the realization dawns on you that you have no method of effectively handling the Nightmare Rift or its horde, a rift in space opens up beside you. Out of it steps out none other than a mutated Ill'drythk Statue!
+			
+			Its hollow stare unsettles you, somewhat, but you understand its purpose for being here - the Dark God is trusting that you can prove yourself worthy of having received its mercy. Don't disappoint it.</text>
+			<crewMember amount="1" class="ddilldrythk_statue_ironbound">Sinvidre</crewMember>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
 	</choice>
 </event>
 
@@ -3244,9 +3765,22 @@
 	A strange, runed obelisk appears within your ship... it must be destroyed, before the ceaseless power it channels overwhelms you!</text>
 	<playSound>vanceShoot</playSound>
 	<boarders min="1" max="1" class="dddark_obelisk_enemy"/>
-	<choice hidden="true">
+	<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="1" blue="false">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
+	</choice>
+	<choice hidden="true" req="LIST_CHECK_ANY_CREW" lvl="0" max_lvl="0" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>As the realization dawns on you that you have no method of effectively outpacing the Dark Obelisk's regeneration, a rift in space opens up beside you. Out of it steps out none other than a mutated Ill'drythk Statue!
+			
+			Though its hollow stare unsettles you, somewhat, you understand its purpose for being here - the Dark God is trusting that you can prove yourself worthy of having received its mercy. Don't disappoint it.</text>
+			<crewMember amount="1" class="ddilldrythk_statue_ironbound">Sinvidre</crewMember>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
 	</choice>
 </event>
 
@@ -3476,6 +4010,19 @@
 	</choice>
 </event>
 
+<event name="DDRITUALS_SIDE_EFFECT_STRIKES_LIST_SHIMMERING_SWARM">
+	<text>As you're preparing for battle, alarms begin to blare throughout the ship... things just got more complicated.
+	
+	RITUAL SIDE EFFECT: SHIMMERING SWARM
+	A series of wet, skittering sounds and clangorous chimes work in tandem to transform the entire soundscape into a dissonant mess, as you realize a Crystalline Broodmother and its ravenous horde are upon you!</text>
+	<playSound>lockdown1</playSound>
+	<boarders min="1" max="1" class="dddisparity_broodmother_crystalline"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
 <event name="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN">
 	<preventQuest/>
 	<beaconType id="map_icon_ddritualreward" global="true">
@@ -3489,6 +4036,60 @@
 		<event>
 			<text>A Deep One ship appears in your view, and they don't hesitate to get close and dock next to your ship. One of them hails, "The Dark One... has dictated that we deliver you this... gift, of tribute." A band of Deep Ones boards, a human in hand, and throws them to the ground at your feet. Just as quickly, they leave both your ship and the system. The Dark God works in mysterious ways...</text>
 			<crewMember amount="1" class="ddhuman_sacrifice"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_THEHUNT_ONEHUMAN_ANDUNSTABLESOULS">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true">
+		<text>Investigate.</text>
+		<event>
+			<text>A sound startles you from behind, causing you to jump - turning around, you're met with the visage of none other than a single human sacrifice. You're about to write it off as one of the Dark God's mysterious ways, when an unfamiliar voice snickers within your mind:
+			
+			"Oh... down on your luck, odd one? Looking for... a little more?"</text>
+			<crewMember amount="1" class="ddhuman_sacrifice"/>
+			<choice hidden="true">
+				<text>I'm listening...</text>
+				<event>
+					<text>"Oh... that you are, aren't you? Just... put a little something together for me, then... how's that sound, hmm, listening one?" The voice continues to snicker, as you ponder its blind deal...</text>
+					<choice>
+						<text>Put a "little something" together, as the strange voice asks.</text>
+						<event>
+							<text>An ominous laughter rings out, throughout the room around you...</text>
+							<item_modify>
+								<item type="scrap" min="-25" max="-35"/>
+							</item_modify>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event>
+									<text>...followed by a thunderous crack, as your scrap vanishes, and an Unstable Soul pops into existence - right beside your new sacrifice.</text>
+									<crewMember amount="1" class="ddunstable_soul_spent"/>
+									<choice hidden="true">
+										<text>Wow, uh... thanks?</text>
+										<event>
+											<text>"Oh... generous one. It is you, who I... should be thanking." The laughter around you turns uproarious for a brief moment, as a second Unstable Soul appears, before spontaneously cutting out. The voice is gone, it would seem... but you've reaped the rewards of its deal.</text>
+											<crewMember amount="1" class="ddunstable_soul_spent"/>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Refuse its deal.</text>
+						<event>
+							<text>Rather than offering any words, there's merely further snickering from the unsettling voice... eventually, it dies down, and the rest of your wait for the FTL drive to charge proves - perhaps, thankfully - uneventful.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
 		</event>
 	</choice>
 </event>
@@ -5019,6 +5620,709 @@
 			<text>A strange sensation envelops you, as the blackness outside gives way. In its place, a new, alien darkness takes hold - one dotted with the hateful ire of a thousand watchful stars. The False Radiance is here. Spotting them, a wave of understanding washes over you: if you destroy their ship, you may receive a special reward.</text>
 			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
 			<ship load="DDRITUALS_QUESTS_LIST_SHADOWDRONES_FALSERADIANCE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT" auto_blueprint="LIST_SHIPS_DEEPONES">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DEEPONEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DEEPONE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT" auto_blueprint="LIST_SHIPS_ENLIGHTENED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_ENLIGHTENEDINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ENLIGHTENED_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT" auto_blueprint="LIST_SHIPS_DISPARITY_MIXED">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID"  planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_DISPARITYINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_DISPARITY_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_NORMAL">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_SOULPLAGUEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text load="DDRITUALS_QUESTS_LIST_SOULPLAGUEINTERACTIONTEXT"/>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_SOULPLAGUE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT" auto_blueprint="LIST_SHIPS_DDILLDRYTHK">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT_WIN_BONUS"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Unfortunately, you've lost out on the special reward by destroying the Ill'drythk tree, but you've got what you came here for.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT_WIN_BONUS">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>As well, you hear a humming in your head... somehow, it still manages to feel distant. A new Ill'drythk Statue sprouts from the remains of the fallen; this one, you understand, is for you. You've proven your might, and the Ill'drythk tree has thus imparted some of its power unto you. Such is the Ill'drythk way.</text>
+					<crewMember amount="1" class="ddilldrythk_statue"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A fog rolls in, obscuring your vision even more as a shaggy mass crawls into view... an Ill'drythk tree approaches. A wave of understanding washes over you: if you can kill its crew, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDILLDRYTHKFOG</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A fog rolls in, obscuring your vision even more as a shaggy mass crawls into view... an Ill'drythk tree approaches. A wave of understanding washes over you: if you can kill its crew, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDILLDRYTHKFOG</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_ILLDRYTHK_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT" auto_blueprint="LIST_SHIPS_DDSOULPLAGUE_HUSKWEAVER">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT_WIN_BONUS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Unfortunately, you've lost out on the special reward by killing all of the Soulplague ship's crew, but you've got what you came here for.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT_WIN_BONUS">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold... it seems you've won its favor through your victory here.</text>
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>As well, as a result of destroying their ship, the remaining Soulplague-infected matter coalesces into what little form they can muster up: a single Soulplague Husk. In need of a new host, it seems to have bonded to your ship somewhat... it's willing to follow your commands, as long as you keep it fed.</text>
+					<crewMember amount="1" class="LIST_DDSOULPLAGUERANDOM_SUMMON"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and a wave of understanding washes over you: if you destroy its ship, you may receive a special reward.</text>
+			<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
+			</triggeredEvent>
+			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+			<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>ddsoulplagueaura_bg</anim>
+			</backgroundObject>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>Tendrils wrap around your ship, as you realize that this isn't just any abnormal darkness... this is a Soulplague mass! A Huskweaver approaches to defend it, and a wave of understanding washes over you: if you destroy its ship, you may receive a special reward.</text>
+			<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
+			</triggeredEvent>
+			<changeBackground>BACKGROUND_DDSOULPLAGUEHEART</changeBackground>
+			<backgroundObject name="DDSOULPLAGUEAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>ddsoulplagueaura_bg</anim>
+			</backgroundObject>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_HUSKWEAVER_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT" auto_blueprint="LIST_SHIPS_DDCHOSEN">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT_WIN_BONUS"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Unfortunately, you've lost out on the special reward by destroying the Chosen's ship, but you've got what you came here for.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT_WIN_BONUS">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>As well, exploring the now-empty Chosen ship allows you to recover a weapon of theirs... one of pure darkness. You assume the Dark God probably doesn't mind you looting its gifts. Hopefully.</text>
+					<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>Hatred resonates from the space outside as a grim realization dawns on you... you've been marked for death. Its reaper, a ship belonging to the Dark God's Chosen, looms into view. A wave of understanding washes over you: if you can kill its crew, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+			<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>dddarkgodsdomainaura_bg</anim>
+			</backgroundObject>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>Hatred resonates from the space outside as a grim realization dawns on you... you've been marked for death. Its reaper, a ship belonging to the Dark God's Chosen, looms into view. A wave of understanding washes over you: if you can kill its crew, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
+			<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
+				<layer z="0">background</layer>
+				<spawnArea x="0" y="0" w="0" h="0"/>
+				<anim>dddarkgodsdomainaura_bg</anim>
+			</backgroundObject>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_CHOSEN_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT" auto_blueprint="LIST_SHIPS_DDTEMPEST">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT_WIN_BONUS"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT_WIN">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Unfortunately, you've lost out on the special reward by killing the Cult of the Tempest's crew, but you've got what you came here for.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT_WIN_BONUS">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>From the ship's remains, a bolt of lightning shoots out and strikes your ship. As opposed to any physical damage, though, it seems to have instead manifested one of the Cult's Spawn Wardens... you realize it's following your commands, and assume this to be some gift from the Tempest.</text>
+					<crewMember amount="1" class="ddtempest_spawn_warden"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and a wave of understanding washes over you: if you destroy the ship, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDTEMPESTVOID</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A flash of light momentarily blinds you, and by the time your vision recovers the space outside has been completely transformed... you're in some sort of space-storm. A ship belonging to the Cult of the Tempest breaches the clouds, and a wave of understanding washes over you: if you destroy the ship, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDTEMPESTVOID</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_TEMPEST_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE_FIGHT" auto_blueprint="LIST_SHIPS_DDFALSE_RADIANCE">
+	<destroyed>
+		<text>The ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE_FIGHT_WIN_BONUS"/>
+		</choice>
+	</destroyed>
+</ship>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE_FIGHT_WIN_BONUS">
+	<text>With the ship defeated, your reward from the Dark God materializes in your hold - taking the form of a lifeless, floating figure, with an almost transparent body...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...and then another. The Tome describes these ghastly entities as being the remnants of long-since-sacrificed human souls, granted enigmatic power by the Dark God itself. They're spent, right now, but you understand that they'll be granted said power once you make an FTL jump.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>As well, as a result of destroying their ship, something's ejected from what little remains of the large Lightborne - what would seem to be a smaller one, taking the form of a Radiant Core. As it's blind to the world, you figure that you'll be able to bend it to your will... but it'll need further empowerment if it's to serve you appropriately.</text>
+					<drone name="DDFALSERADIANCE_RADIANT_CORE_TIERZERO"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A strange sensation envelops you, as the blackness outside gives way. In its place, a new, alien darkness takes hold - one dotted with the hateful ire of a thousand watchful stars. The False Radiance is here. Spotting them, a wave of understanding washes over you: if you destroy their ship, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE_FIGHT" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+		<text>Investigate.</text>
+		<event>
+			<text>A strange sensation envelops you, as the blackness outside gives way. In its place, a new, alien darkness takes hold - one dotted with the hateful ire of a thousand watchful stars. The False Radiance is here. Spotting them, a wave of understanding washes over you: if you destroy their ship, you may receive a special reward.</text>
+			<changeBackground>BACKGROUND_DDANTUMBRALPLANE</changeBackground>
+			<ship load="DDRITUALS_QUESTS_LIST_RESTLESSSPIRITS_FALSERADIANCE_FIGHT" hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
@@ -10932,6 +12236,22 @@
 	</choice>
 </event>
 
+<event name="DDRITUALS_QUESTS_LIST_DARKCALLING_FIRST_REWARD_LIST_RESTLESSSPIRITS">
+	<text>...a ghastly figure, writhing with potential, and...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...another, and...</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <event name="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_DARKWEAPONRY">
 	<text>...a weapon of pure darkness.</text>
 	<weapon name="GIFTLIST_DARKGOD_WEAPONS"/>
@@ -11036,6 +12356,18 @@
 					</choice>
 				</event>
 			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_LIST_DARKCALLING_SECOND_REWARD_LIST_RESTLESSSPIRITS">
+	<text>...a ghastly figure, writhing with potential, and...</text>
+	<crewMember amount="1" class="ddunstable_soul_spent"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...another.</text>
+			<crewMember amount="1" class="ddunstable_soul_spent"/>
 		</event>
 	</choice>
 </event>
@@ -11771,6 +13103,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the horror's many gaping maws, and watch as it tears them apart...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -11786,6 +13119,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the horror's many gaping maws, their screams echoing throughout the room as you do so, and watch as it tears them apart...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -16753,6 +18087,7 @@
 		<text>(Human Sacrifice) Allow it to feast on a human sacrifice.</text>
 		<event>
 			<text>You throw your human sacrifice into the Soulplague blob, and watch as it slowly consumes them...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -16768,6 +18103,7 @@
 		<text>(Human Crew) Allow it to feast on one of your human crew members.</text>
 		<event>
 			<text>You throw your human crew member into the Soulplague blob, their screams echoing throughout the room as you do so, and watch as it slowly consumes them...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -17518,6 +18854,7 @@
 		<text>(Human Sacrifice) Further the ritual with a human sacrifice.</text>
 		<event>
 			<text>Your blade strikes true, and yet another sacrifice slumps, wetly and pathetically, against the floor. As its blood, too, spills out, you feel the Dark God's stare intensify...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
@@ -17533,6 +18870,7 @@
 		<text>(Human Crew) Further the ritual with the sacrifice of one of your human crew members.</text>
 		<event>
 			<text>You catch them off-guard, and your blade strikes true. They slump, wetly and pathetically, against the floor... thankfully, in your heart, you know yourself to only be doing what must be done. As their blood, too, spills out, you feel the Dark God's stare intensify...</text>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<playSound>kaz_swipe</playSound>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
@@ -18685,6 +20023,483 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<ship name="DDRITUALS_QUESTS_CRYSTALLINECOMBAT_FIGHT" auto_blueprint="LIST_SHIPS_DDDISPARITY_CRYSTALLINE">
+	<destroyed>
+		<text>The Disparity ship crumbles, and you can't help but feel a sense of loss...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_CRYSTALLINECOMBAT_FIGHT_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Disparity ship lies empty, and you can't help but feel a sense of loss...</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="DDRITUALS_QUESTS_CRYSTALLINECOMBAT_FIGHT_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="DDRITUALS_QUESTS_CRYSTALLINECOMBAT_FIGHT_WIN">
+	<text>With a chance to catch your breath, though, it's a different sense overtakes you - confusion. The drones that these Disparity Elites had been using were atypical from their usual fare... as opposed to merely being dark and metallic, these ones had been entirely encased in the same Shadow-Crystals that make up the Disparity's mysterious hull armor.</text>
+	<choice hidden="true">
+		<text>Inspect what remains of the strange drones.</text>
+		<event>
+			<text>Luckily, enough of the drones survived amongst the wreckage to get a better look...
+			
+			...is what you were thinking, before you touched one, and it instantly shattered - its shimmering carapace along with it. One of the resulting, flying shards of Shadow-Crystal grazes your arm, and you watch as a similar, crystalline structure forms against your skin... precisely where it'd made contact. It's relatively harmless, and easy enough to peel off with some non-contact tools, but it also gives you an idea: what if you could use them to encase your own Disparity drones?</text>
+			<choice hidden="true" req="DISPARITY_LIBERATORTOG_DEFEND">
+				<text>(Liberator Drone) Attempt to encase your Liberator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DISPARITY_LIBERATORTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_LIBERATORTOG_BOARDER">
+				<text>(Liberator Drone) Attempt to encase your Liberator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DISPARITY_LIBERATORTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_BROODMOTHERTOG_DEFEND">
+				<text>(Broodmother Drone) Attempt to encase your Broodmother in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DISPARITY_BROODMOTHERTOG_DEFEND"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DISPARITY_BROODMOTHERTOG_BOARDER">
+				<text>(Broodmother Drone) Attempt to encase your Broodmother in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DISPARITY_BROODMOTHERTOG_BOARDER"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDDISPARITY_ADMINISTRATOR_DEFAULT">
+				<text>(Administrator Drone) Attempt to encase your Administrator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDDISPARITY_ADMINISTRATOR_SPEED">
+				<text>(Administrator Drone) Attempt to encase your Administrator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDDISPARITY_ADMINISTRATOR_ATTACK">
+				<text>(Administrator Drone) Attempt to encase your Administrator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDDISPARITY_ADMINISTRATOR_DEFENSE">
+				<text>(Administrator Drone) Attempt to encase your Administrator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DDDISPARITY_ADMINISTRATOR_HAZARD">
+				<text>(Administrator Drone) Attempt to encase your Administrator in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DRONE_MINISHROUD">
+				<text>(Looming Shadow Drone) Attempt to encase your Looming Shadow in the Shadow-Crystals.</text>
+				<event>
+					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
+					<remove name="DRONE_MINISHROUD"/>
+					<choice hidden="true">
+						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+						<drone name="DDDRONE_MINISHROUD_CRYSTALLINE"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Leave the Shadow-Crystal rubble alone.</text>
+				<event>
+					<text>Whether you're not interested in the potential that these shards offer, or more simply don't have anything to safely test them on, you decide it's best to leave them alone. This mystery of this ritual's results will have to wait for another day.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_CRYSTALLINECOMBAT">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival. Though, it seems like someone else has been expecting you as well - there's a Disparity ship here, idle in the darkness outside, that's not alarmed by your sudden appearance in any way that it makes apparent.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<ship load="DDRITUALS_QUESTS_CRYSTALLINECOMBAT_FIGHT" hostile="false"/>
+	<choice hidden="true">
+		<text>Maybe they're friendly...? The Disparity ARE all brothers-in-arms, aren't they?</text>
+		<event>
+			<text>Your logical line of thinking is briefly emboldened, and then just as quickly snuffed out, as the Disparity ship hails you and confirms your worst fear: "Brothers? The -Liberator- tests: us both. We do not intend: to disappoint."</text>
+			<choice hidden="true" req="DD_CRYSTALLINECOMBAT_HUNGERNOSIDEEFFECT">
+				<text>(The Hunger) "T-t-teeest...? Caaaaptain, we [HATE] t-t-t-tests!"</text>
+				<event>
+					<text>Seemingly undeterred by the disapproval of their leader, the shadowy Engi's purple modifications shift to green, and then red. "You may rest: now, Liberator. A -new- Liberator pushes: us forth. Pushes: us to evolve. To survive. We cannot say: the -same- for you."
+					
+					Something has poisoned the typical, hopeful camaraderie of these Disparity Elites, and twisted it into something else altogether. Something more... nefarious. Regardless, though, you don't intend to disappoint the Dark God either - if it's a fight they want, then it's a fight they'll get! Brothers, or otherwise...</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Our liberation awaits us, then - to arms, men!</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="DD_CRYSTALLINECOMBAT_HUNGERYESSIDEEFFECT">
+				<text>(The Hunger) "T-t-teeest...? Caaaaptain, we [HATE] t-t-t-tests!"</text>
+				<event>
+					<text>Seemingly undeterred by the disapproval of their leader, the shadowy Engi's purple modifications shift to green, and then red. "You may rest: now, Liberator. A -new- Liberator pushes: us forth. Pushes: us to evolve. To survive. We cannot say: the -same- for you."
+					
+					Something has poisoned the typical, hopeful camaraderie of these Disparity Elites, and twisted it into something else altogether. Something more... nefarious. Regardless, though, you don't intend to disappoint the Dark God either - if it's a fight they want, then it's a fight they'll get! Brothers, or otherwise...</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Our liberation awaits us, then - to arms, men!</text>
+						<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="0" max_lvl="0" blue="false">
+				<text>Are you sure? Maybe this is, like... a team-up ritual?</text>
+				<event>
+					<text>The shadowy Engi's purple modifications shift to green, and then red. "I fear: not. It is not through -communion- that liberation is earned: but action. Action, -and- strength. Forgive: us, brothers - for a chance at freedom remains: for only one of us."
+					
+					Something has poisoned the typical, hopeful camaraderie of these Disparity Elites, and twisted it into something else altogether. Something more... nefarious. Regardless, though, you don't intend to disappoint the Dark God either - if it's a fight they want, then it's a fight they'll get! Brothers, or otherwise...</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Our liberation awaits us, then - to arms, men!</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="dd_ritual_side_effect_triggered" lvl="1" blue="false">
+				<text>Are you sure? Maybe this is, like... a team-up ritual?</text>
+				<event>
+					<text>The shadowy Engi's purple modifications shift to green, and then red. "I fear: not. It is not through -communion- that liberation is earned: but action. Action, -and- strength. Forgive: us, brothers - for a chance at freedom remains: for only one of us."
+					
+					Something has poisoned the typical, hopeful camaraderie of these Disparity Elites, and twisted it into something else altogether. Something more... nefarious. Regardless, though, you don't intend to disappoint the Dark God either - if it's a fight they want, then it's a fight they'll get! Brothers, or otherwise...</text>
+					<ship hostile="true"/>
+					<choice hidden="true">
+						<text>Our liberation awaits us, then - to arms!</text>
+						<event load="DDRITUALS_SIDE_EFFECT_STRIKES_LIST"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_PLANTSHOWDOWN">
+	<preventQuest/>
+	<beaconType id="map_icon_ddritualreward" global="true">
+  		<color r="129" g="37" b="37" a="1"/>
+  	  <unvisitedTooltip>Your ritual has led you to this location.</unvisitedTooltip>
+	</beaconType>
+	<text>Arriving at the beacon, you find yourself in a pocket of shadow... the Dark God has been expecting your arrival. You're not given a moment to spare, though, before your ship nearly crashes into something in the space outside - some sort of impossibly large, tree-like structure that encompasses this entire side of the beacon. Its hundreds of branches, if you can call them that, stretch out far beyond what you can make out through the darkness here.</text>
+	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
+	<choice hidden="true" req="dd_greattreedefeated" lvl="0" max_lvl="0" blue="false">
+		<text>Stare at the tree-thing in awe.</text>
+		<event>
+			<text>You behold the mighty structure, and realize - with a startled jump out of your chair - that it's beholding you in turn. At least, you THINK it is. From a little ways above your ship, you can make out what you can only assume is a massive eye protruding from the main trunk of the tree. It isn't long after this discovery that you hear a deep, feminine voice, from within the confines of your own head:
+			
+			"What... brings you here, traveller?"</text>
+			<choice hidden="true">
+				<text>I, uh... well, I... I followed a map to this place, searching for some kind of reward.</text>
+				<event>
+					<text>The colossal eye's pupil shrinks slightly, and the voice booms again:
+					
+					"So... you have. As... they all do. Does... she send you all here? Who... else would?"</text>
+					<choice hidden="true">
+						<text>She...? I don't think so, no - I just followed some weird, loose page in my, uh... otherwise perfectly normal book.</text>
+						<event>
+							<text>Now dilating, you watch as the eye turns away from your ship, finding itself staring off into the shadowy abyss around you. A moment passes, and you again hear what you presume to be the tree's thoughts:
+							
+							"I... miss her. She... rarely visits anymore. The... last time she did, though... she told me that I could trust you. I'd... like to trust her judgment. Even... if I can't trust your words."</text>
+							<choice hidden="true">
+								<text>Me? I mean, yes! Of course.</text>
+								<event>
+									<text>There's a very long pause, as the tree makes an incredible effort to roll its massive eye:
+									
+									"Yes... you. All... of you. The... ones who come here. The... ones she trusts. The... ones she dreamed of. Do... you really not remember her?"</text>
+									<choice hidden="true">
+										<text>I can't say that I know who you're talking about, unfortunately.</text>
+										<event>
+											<text>You feel uneasy, as a silence hangs in the air once more... but, then, the eye refocuses its attention on your ship, and the voice speaks to you in a much more soothing tone:
+											
+											"It's... no matter. I'll... never forget her. Even... if you do. Even... if she forgets me. I... remember her promise. I... remember mine. Traveller... you claim to seek a reward, yes?"</text>
+											<choice hidden="true">
+												<text>Yeah. Big fan of those.</text>
+												<event>
+													<text>Rather than responding with words, a resplendent, blue aura begins to dance across the tree's immense surface, and you find your ship's hull glowing in turn. It seems to have fully restored your hull, somehow!</text>
+													<damage amount="-44"/>
+													<choice hidden="true">
+														<text>Wow, uh... thanks, tree-lady!</text>
+														<event>
+															<text>The aura fades, and the great tree's pupil sharpens again:
+															
+															"That... was not a kindness. Merely... a precaution. I... would not want to unfairly slaughter one of her own. She... wouldn't like that. Neither... would I."</text>
+															<choice hidden="true">
+																<text>Oh, alright. Wait - did you say slaughter?</text>
+																<event>
+																	<text>The mighty eye closes, and a protrusion many times the size of your ship juts out of its trunk in one, impossibly fast motion - striking at you, and coiling its way around your hull before you can even get a chance to react. You then hear an uncomfortable crunching sound, as something digs its way through the internals of your ship... the voice, finally, roars throughout your mind, makings its intentions clear:
+																	
+																	"Prove... that you are worthy of the promise that she made. Prove... that you are deserving of my favor."
+																	
+																	It then goes silent again, and you're left with naught but the sounds of your ship being torn apart - you need to deal with whatever this thing is doing, and quickly!</text>
+																	<damage amount="1" system="random" effect="breach"/>
+																	<boarders min="1" max="1" class="ddtempest_blight_guardian_mature"/>
+																	<playMusic>ddtrialbyire</playMusic>
+																	<triggeredEvent event="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK" time="2" thisFight="false" clearOnJump="true">
+																		<triggeredEventBox load="DEFAULT_SMALL">
+																			<tooltip>Something's rumbling from within the walls of your ship...</tooltip>
+																		</triggeredEventBox>
+																		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+																	</triggeredEvent>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_greattreedefeated" lvl="1" blue="false">
+		<text>Try to grab the tree's attention again.</text>
+		<event>
+			<text>Despite your best efforts to focus your mind on it, or blast into the side of its trunk, the massive tree does not stir. You're still not sure if it's dead, or just capable of ignoring your trivial attempts at provoking it, but the fact of the matter is that coming here again seems to have been nothing but a waste of precious time.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK">
+	<text>You try your best to react to the situation, as it becomes increasingly dire...</text>
+	<triggeredEvent event="DDRITUALS_QUESTS_PLANTSHOWDOWN_WIN" thisFight="false" clearOnJump="true">
+		<enemyCrew amount="0" includeClonebay="false"/>
+	</triggeredEvent>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>...but you don't get to make it very far, before a colossal series of vine-like roots tears their way through the inside of your ship. If you can't figure out a way to stop this madness, then you're inevitably going to be ripped to shreds!</text>
+			<damage amount="1" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="breach"/>
+			<boarders min="19" max="23" class="ddtempest_blight_guardian_outgrowth"/>
+			<triggeredEvent name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_THEYRECOMINGOUTOFTHEWALLLLLS" event="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_ITGETSEVENWORSE" minTime="12" maxTime="12" thisFight="false" clearOnJump="true" loops="999999">
+				<triggeredEventBox load="DEFAULT_SMALL">
+					<tooltip>Something's rumbling from within the walls of your ship...</tooltip>
+				</triggeredEventBox>
+				<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+			</triggeredEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_ITGETSEVENWORSE">
+	<text>The screeching cacophony of noise around you manages to somehow louden, as the situation worsens further still... you have to hurry!</text>
+	<damage amount="1" system="random" effect="breach"/>
+	<damage amount="0" system="random" effect="breach"/>
+	<boarders min="2" max="3" class="ddtempest_blight_guardian_outgrowth"/>
+	<choice>
+		<text>Hurry.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="DDRITUALS_QUESTS_PLANTSHOWDOWN_WIN">
+	<text>The main body of the root-like infestation dies, and the rest of its outgrowths soon follow suit - as does the immense, crushing pressure from outside. You've... survived, against all odds. Now what?</text>
+	<clearTriggeredEvent name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_THEYRECOMINGOUTOFTHEWALLLLLS"/>
+	<playMusic/>
+	<variable name="dd_greattreedefeated" op="set" val="1"/>
+	<metaVariable name="juke_ddtrialbyire" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Heave a heavy sigh of relief. That... was something, alright.</text>
+		<event>
+			<text>You're still exhausted, and catching your breath, when the eye outside opens up again. You give it an angry look, and the tree's voice forces its way back into your mind:
+			
+			"You... are worthy. You... are deserving. She... would be proud, knowing this. Though... I suspect she's always known it, deep down."</text>
+			<choice hidden="true">
+				<text>Yeah, alright, sure - what am I deserving of, exactly? You just put me through hell!</text>
+				<event>
+					<text>As if to answer, something sprouts from what remains of the vegetation beneath your feet... some sort of shard of glass, or crystal. It's... beautiful, whatever it is. Its resplendence paints the room around you in an ethereal glow - one shifting through every, wonderful color on the spectrum. This thing... is pure magnificence, itself.</text>
+					<choice hidden="true">
+						<text>It... really is beautiful.</text>
+						<event>
+							<text>That wonderful, crystalline shard... it's there, beneath your feet. Calling to you. Beckoning you forth, into its embrace. You need merely grab it...</text>
+							<choice hidden="true">
+								<text>Yes, I've... I've never needed anything else.</text>
+								<event>
+									<text>You stare into the shard's ethereal center, losing yourself entirely to its overwhelming splendor, and everything else seems to fade away around you...</text>
+									<choice hidden="true">
+										<text>...</text>
+										<event>
+											<text>...</text>
+											<changeBackground>VICTORY_TRUE</changeBackground>
+											<playMusic>paragon</playMusic>
+											<choice hidden="true">
+												<text>...</text>
+												<event>
+													<text>Is she truly gone, Four? Do you think our time here... to be fleeting, then?</text>
+													<choice hidden="true">
+														<text>S'only a matter of time 'fore Ev gets back to doin' what she always did best. A dreamer's gonna dream, Five.</text>
+														<event>
+															<text>Perhaps, but... does the matter of our fate not concern you? What if we are to never see each other again? I can't imagine Seven to be allowed to roam as she pleases - His Holiness must be inconsolable.</text>
+															<choice hidden="true">
+																<text>S'pose there ain't much harm in spillin' the plan, now, is there? Ev's been... havin' me write these weird, instruction-ey things. Ain't got a clue what for, but... she seemed plenty confident that they'd reach someone real important. Someone who could help us all outta this damned mess, for good.</text>
+																<event>
+																	<text>These... are amateurish sketches indeed, sharpshooter! Even my claws would not dance one's pencil across the page so... brutishly!</text>
+																	<choice hidden="true">
+																		<text>Hah! Hey, if it got you laughin' - it ain't even need to reach no-one. S'already puttin' in work, ain't it?</text>
+																		<event>
+																			<text>Indeed, hmm? I hope this plan of Seven's proves to be one of her more... productive schemes, then. This raucous place may be no heavenly sanctuary, but we've always suffered through its plights together. To think, that we must start anew, all wholly separated...</text>
+																			<choice hidden="true">
+																				<text>S'not like we'd remember a damn thing, ain't it? Least, I... I'd hope not. That'd sound real lonely, I gotta figure.</text>
+																				<event>
+																					<text>Then who IS to remember, dearest Four? Would our reunion not be... impossible, should our selves be lost? Would its meaning still hold the same value?</text>
+																					<choice hidden="true">
+																						<text>I... ain't sure, Five. Ev sure seemed to have it all figured out, though. Figure I gotta put my trust in her, no matter what. 'Cause, if I can't be trustin' her, what CAN I trust?</text>
+																						<event>
+																							<text>Trust in her, Four. Live in defense of Seven's dreams - and pursue your own, yes? As long as... you...</text>
+																							<choice hidden="true">
+																								<text>...</text>
+																								<event>
+																									<text>...</text>
+																									<choice hidden="true">
+																										<text>...</text>
+																										<event>
+																											<text>In an instant, your mind is torn away from this unfamiliar conversation, and a flashing series of visions overwhelms you.
+																											
+																											You see a Mantis, dancing to the thoughtless whims of cold, iron strings.
+																											
+																											Then, a Deep One, in a fight for her life - remaining hopeful 'til eternity's end.
+																											
+																											And, finally... a cerulean sigil. One adorned with a lightning bolt, which burns its way into your mind - imprinting itself into your very vision.</text>
+																											<achievement>ACH_EVENT_DDBLUESIGILOBTAINED</achievement>
+																											<variable name="ach_event_ddbluesigilobtained" op="set" val="1"/>
+																											<metaVariable name="dd_bluesigil_obtained" op="set" val="1"/>
+																											<choice hidden="true">
+																												<text>Suffer in the agony of the moment.</text>
+																												<event>
+																													<text>"Did... you see her, worthy one? Was... it worth it?"
+																													
+																													You open your eyes, screaming, and the colossal eye outside merely stares, unblinking. "Then... I have kept my promise, have I not? She... must merely keep hers."</text>
+																													<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+																													<playMusic/>
+																													<choice hidden="true">
+																														<text>What the hell was that? What are hell are YOU talking about?</text>
+																														<event>
+																															<text>Rather than being offered words, something small sprouts from beneath your feet, once more... a seed, by the looks of it. You stare at it in confusion, for a moment, before looking back to the eye outside for answers - but it seems to have already returned to being closed.</text>
+																															<crewMember amount="1" class="ddtempest_blight_guardian_seed"/>
+																															<choice hidden="true">
+																																<text>Hey, wait! I'm not done talking with you!</text>
+																																<event>
+																																	<text>Despite your best efforts, the entity outside does not react to any of your attempts to communicate with it in the slightest. Even prodding at it with your weapons proves to be entirely futile. You're not sure if it's gone, or merely ignoring you, but... you feel that it hardly matters. You've gotten what you came here for, as mysterious and feeble as it presently is...
+																																	
+																																	Though, you feel that the seed itself is hardly the greatest mystery plaguing you. Where did that alluring, dream-like shard go? And, the visions it forced upon you... you can still feel the visage of that strange, cerulean sigil, burned into your mind...</text>
+																																	<choice hidden="true">
+																																		<text>One day... I'll have my answers. Mark my words, Dark God.</text>
+																																		<event/>
+																																	</choice>
+																																</event>
+																															</choice>
+																														</event>
+																													</choice>
+																												</event>
+																											</choice>
+																										</event>
+																									</choice>
+																								</event>
+																							</choice>
+																						</event>
+																					</choice>
+																				</event>
+																			</choice>
+																		</event>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
 			</choice>
 		</event>
 	</choice>
