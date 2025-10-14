@@ -20061,8 +20061,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DISPARITY_LIBERATORTOG_DEFEND"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_DEFEND"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20072,8 +20075,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DISPARITY_LIBERATORTOG_BOARDER"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINELIBERATORTOG_BOARDER"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20083,8 +20089,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DISPARITY_BROODMOTHERTOG_DEFEND"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_DEFEND"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20094,8 +20103,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DISPARITY_BROODMOTHERTOG_BOARDER"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEBROODMOTHERTOG_BOARDER"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20105,8 +20117,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DDDISPARITY_ADMINISTRATOR_DEFAULT"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20116,8 +20131,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DDDISPARITY_ADMINISTRATOR_SPEED"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20127,8 +20145,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DDDISPARITY_ADMINISTRATOR_ATTACK"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20138,8 +20159,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DDDISPARITY_ADMINISTRATOR_DEFENSE"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20149,8 +20173,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DDDISPARITY_ADMINISTRATOR_HAZARD"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDISPARITY_CRYSTALLINEADMINISTRATOR"/>
+						</event>
 					</choice>
 				</event>
 			</choice>
@@ -20160,8 +20187,11 @@
 					<text>With some work, you grab your drone, and bring it up against the pile of shattered Shadow-Crystals...</text>
 					<remove name="DRONE_MINISHROUD"/>
 					<choice hidden="true">
-						<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
-						<drone name="DDDRONE_MINISHROUD_CRYSTALLINE"/>
+						<text>Continue...</text>
+						<event>
+							<text>...and they don't simply latch on, or grow against its surface, but instead seem to be absorbed into its being entirely. A mere moment later, you're left to watch in awe as pink, crystalline growths from within your drone pierce straight through its outer shell, and quickly come to envelop it entirely. It would appear that THIS was the point of the ritual, after all... your drone has been infused with the enigmatic power of Shadow-Crystals.</text>
+							<drone name="DDDRONE_MINISHROUD_CRYSTALLINE"/>
+						</event>
 					</choice>
 				</event>
 			</choice>

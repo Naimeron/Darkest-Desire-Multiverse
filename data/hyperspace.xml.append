@@ -76,6 +76,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<mod-append:ship>PLAYER_DDHORROR_SHIP</mod-append:ship>
 		<mod-append:ship>CREW_SHIP_SLOTDD1</mod-append:ship>
 		<mod-append:ship>CREW_SHIP_SLOTDD2</mod-append:ship>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
+		<mod-append:empty/>
 	</mod:findLike>
 	<mod-append:customShip name="DEEPONE_CARRIER">
 		<shipIcons>
@@ -6709,9 +6717,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<mod-append:req type="any" load="LIST_CREW_DDHUMANSACRIFICE"/>
 	</mod:findName>
 	<mod:findName type="req" name="LIST_CHECK_AUGMENTS">
-		<mod-append:name>DARKGOD_CURSED_BOOK</mod-append:name>
-		<mod-append:name>DDETHEREAL_FRAGMENT</mod-append:name>
-		<mod-append:name>DDETHEREAL_FRAGMENT_LOCKED</mod-append:name>
 		<mod-append:name>DDPALE_HEART</mod-append:name>
 	</mod:findName>
 	<mod:findName type="req" name="LIST_CHECK_ENERGY_SHIELD">

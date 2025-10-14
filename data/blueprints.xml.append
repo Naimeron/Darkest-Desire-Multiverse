@@ -26720,9 +26720,9 @@
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="2" />
-	<crewCount amount="1" class="ddtempest_blight_guardian_seed" />
 	<crewCount amount="1" class="orchid_caretaker" />
 	<crewCount amount="1" class="zoltan" />
+	<crewCount amount="1" class="ddtempest_blight_guardian_seed" />
 	<aug name="DDETHEREAL_FRAGMENT_LOCKED" />
 	<aug name="DARKGOD_CURSED_BOOK" />
 	<mv-mapImage>map_icon_ddechoeddream</mv-mapImage>
