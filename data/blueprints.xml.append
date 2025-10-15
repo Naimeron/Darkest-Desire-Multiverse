@@ -26513,7 +26513,7 @@
 				<number>0</number>
 			</slot>
 		</doors>
-		<drones max="8" power="4" room="0" start="true" img="ddroom_drones_tome" />
+		<drones max="8" power="5" room="0" start="true" img="ddroom_drones_tome" />
 		<engines power="1" room="14" start="true" img="room_engines_3">
 			<slot>
 				<direction>right</direction>

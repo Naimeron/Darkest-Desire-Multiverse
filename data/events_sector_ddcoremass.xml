@@ -4544,61 +4544,67 @@
 		<unvisitedTooltip>The center of the Coremass, and the location of its heart.</unvisitedTooltip>
 		<visitedTooltip>Visited location.</visitedTooltip>
 	</beaconType>
-	<text>This is it; the center of the Soulplague Coremass. The faint light you've been seeing throughout your journey here doesn't seem so distant anymore... this must be the location of the heart.</text>
+	<text>This is it - the center of the Soulplague Coremass. The faint light you've been seeing throughout your journey here doesn't seem so distant anymore... this must be the location of the heart.</text>
 	<img back="BACKGROUND_DDCOREMASSCENTER" planet="PLANET_INVISIBLE"/>
 	<backgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND">
 		<layer z="0">background</layer>
 		<spawnArea x="0" y="0" w="0" h="0"/>
 		<anim>ddcoremasscenteraura_bg</anim>
 	</backgroundObject>
-	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
-		<text>Head deeper.</text>
+	<choice hidden="true" req="dd_soulplague_coremass_heartdefeated" lvl="0" max_lvl="0" blue="false">
+		<text>I can't believe we made it...</text>
 		<event>
-			<text>You travel a bit further, in search of the heart, and then notice something far off in the distance - the source of the Coremass' light, a beacon of multi-colored splendor most resplendent. Its visage is beautiful, almost ethereal, and you find yourself lost in awe as it whispers to you:
-			
-			"...this place... isn't safe..."
-			"...it's... hunting for you..."
-			"...you must... leave, before it's too late!"</text>
-			<playSound>ddaberrationheartbeat</playSound>
-			<choice hidden="true">
-				<text>Huh?</text>
+			<text>You feel thoroughly exhausted, having made the grueling, fight-filled trek all the way here... but there's only one thing left to do. You know what you came here for.</text>
+			<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
+				<text>Head deeper.</text>
 				<event>
-					<text>These whispers are unlike any you've heard along the way here; they feel less hushed, and more... strained. Before you can think to act on these words of warning, though, a massive shadow looms into view...</text>
+					<text>You travel a bit further, in search of the heart, and then notice something far off in the distance - the source of the Coremass' light, a beacon of multi-colored splendor most resplendent. Its visage is beautiful, almost ethereal, and you find yourself lost in awe as it whispers to you:
+					
+					"...this place... isn't safe..."
+					"...it's... hunting for you..."
+					"...you must... leave, before it's too late!"</text>
+					<playSound>ddaberrationheartbeat</playSound>
 					<choice hidden="true">
-						<text>Continue...</text>
+						<text>Huh?</text>
 						<event>
-							<text>...revealing itself to be a Soulplague-infected ship, the size of which alone strikes fear into your heart. That's to speak nothing of its gargantuan eyes, which pierce your soul and seem to stare right through you, or its innumerable, writhing tentacles. An icon of voracity... as you stare at it in horror, new whispers worm their way into your mind:
-							
-							"...drown... in our love..."
-							"...sink... in our embrace..."
-							"...we take sorrow... in your death..."
-							
-							Your death... is this the end?</text>
-							<ship load="DDCOREMASS_EXIT_FIGHT_THEDEVOURER" hostile="true"/>
-							<deathEvent thisFight="true">DDDEATH_THEDEVOURER</deathEvent>
-							<triggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY" event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
-								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
-							</triggeredEvent>
-							<playSound>ddsoulplague_assault</playSound>
-							<choice hidden="true" req="pilot" lvl="1">
-								<text color="dd_hopeyellow">No, it's not... a Renegade makes their own fate.</text>
+							<text>These whispers are unlike any you've heard along the way here; they feel less hushed, and more... strained. Before you can think to act on these words of warning, though, a massive shadow looms into view...</text>
+							<choice hidden="true">
+								<text>Continue...</text>
 								<event>
-									<text>Rather than a flame, or a weapon, you find yourself clutching onto something else entirely... your hope. Your hope for existence; for life, and a brighter tomorrow - these ideals burn inside you, and you feel a kindred soul reach out to you from the vast sea of light and madness outside...</text>
+									<text>...revealing itself to be a Soulplague-infected ship, the size of which alone strikes fear into your heart. That's to speak nothing of its gargantuan eyes, which pierce your soul and seem to stare right through you, or its innumerable, writhing tentacles. An icon of voracity... as you stare at it in horror, new whispers worm their way into your mind:
+									
+									"...drown... in our love..."
+									"...sink... in our embrace..."
+									"...we take sorrow... in your death..."
+									
+									Your death... is this the end?</text>
+									<ship load="DDCOREMASS_EXIT_FIGHT_THEDEVOURER" hostile="true"/>
+									<deathEvent thisFight="true">DDDEATH_THEDEVOURER</deathEvent>
+									<triggeredEvent name="DDCOREMASS_EXIT_FAKEOUTTHINGY" event="DDCOREMASS_EXIT_NOTALLHOPEISLOST" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+										<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
+									</triggeredEvent>
+									<playSound>ddsoulplague_assault</playSound>
 									<choice hidden="true" req="pilot" lvl="1">
-										<text color="dd_hopeyellow">Reach a hand out to it.</text>
+										<text color="dd_hopeyellow">No, it's not... a Renegade makes their own fate.</text>
 										<event>
-											<text>You can't explain it, but you reach your hand out... and something unseen grabs ahold of it. Pulling back with all your strength, you watch as a tear in space forms around your hand, and grows, as a familiar figure reveals themself to be the one holding on... the armored woman you'd met earlier! You continue to pull, until she's free from the wormhole, and she crashes against the ground. Bringing herself to her feet, and brushing away some Soulplague-infected matter, she looks to you, her gauntlet over her heart, and speaks with resounding energy, "A HERO, INDEED, COMRADE! I knew my faith in you wasn't ill-placed..." she pauses to look outside, towards the horrific ship, and then back at you, "...and it seems I'm not too late. The heart's guardian awaits; are you ready, comrade?"</text>
-											<choice hidden="true">
-												<text>Of course. I stand with you.</text>
+											<text>Rather than a flame, or a weapon, you find yourself clutching onto something else entirely... your hope. Your hope for existence; for life, and a brighter tomorrow - these ideals burn inside you, and you feel a kindred soul reach out to you from the vast sea of light and madness outside...</text>
+											<choice hidden="true" req="pilot" lvl="1">
+												<text color="dd_hopeyellow">Reach a hand out to it.</text>
 												<event>
-													<text>She nods, and brandishes her spear, "And I, with you! FORWARD, NOW - GLORY AWAITS! FOR HOPE, AND FOR THE MULTIVERSE!!!" She runs off, deeper into the ship, and you prepare yourself... this is it. It's time to prove your convictions, or die trying!</text>
-													<playMusic>ddtodancewithdarkness</playMusic>
-													<achievement>ACH_CREW_DDTHEHEROINE</achievement>
-													<variable name="ach_crew_ddtheheroine" op="set" val="1"/>
-													<crewMember amount="1" class="ddunique_theheroine" all_skills="2">The Heroine</crewMember>
+													<text>You can't explain it, but you reach your hand out... and something unseen grabs ahold of it. Pulling back with all your strength, you watch as a tear in space forms around your hand, and grows, as a familiar figure reveals themself to be the one holding on... the armored woman you'd met earlier! You continue to pull, until she's free from the wormhole, and she crashes against the ground. Bringing herself to her feet, and brushing away some Soulplague-infected matter, she looks to you, her gauntlet over her heart, and speaks with resounding energy, "A HERO, INDEED, COMRADE! I knew my faith in you wasn't ill-placed..." she pauses to look outside, towards the horrific ship, and then back at you, "...and it seems I'm not too late. The heart's guardian awaits; are you ready, comrade?"</text>
 													<choice hidden="true">
-														<text>Continue...</text>
-														<event load="COMBAT_CHECK"/>
+														<text>Of course. I stand with you.</text>
+														<event>
+															<text>She nods, and brandishes her spear, "And I, with you! FORWARD, NOW - GLORY AWAITS! FOR HOPE, AND FOR THE MULTIVERSE!!!" She runs off, deeper into the ship, and you prepare yourself... this is it. It's time to prove your convictions, or die trying!</text>
+															<playMusic>ddtodancewithdarkness</playMusic>
+															<achievement>ACH_CREW_DDTHEHEROINE</achievement>
+															<variable name="ach_crew_ddtheheroine" op="set" val="1"/>
+															<crewMember amount="1" class="ddunique_theheroine" all_skills="2">The Heroine</crewMember>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="COMBAT_CHECK"/>
+															</choice>
+														</event>
 													</choice>
 												</event>
 											</choice>
@@ -4610,41 +4616,49 @@
 					</choice>
 				</event>
 			</choice>
-		</event>
-	</choice>
-	<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
-		<text>Finally... is she here?</text>
-		<event>
-			<text>As if to answer your tired question, a supernova breaks out in the space outside... and a familiar darkness fills the cavernous void, as a heroine appears. She has to have been aware of your malfeasance from the start, and lured you here... not exactly a hero's tactics. You feel her anger as she speaks to you through sheer will alone, "Don't think for a second that I don't know what you are - what you've done. I may be a prisoner here, but you're something far more lowly: a prisoner to your own desires."</text>
-			<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
-			<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
-			<ship load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER" hostile="true"/>
-			<deathEvent thisFight="true">DDDEATH_THEHEROINE</deathEvent>
-			<choice hidden="true">
-				<text>And, you're what? Here to lecture me?</text>
+			<choice hidden="true" req="darkone_alignment" lvl="1" blue="false" max_group="0">
+				<text>Finally... is she here?</text>
 				<event>
-					<text>She growls, "I am here to stop you, fiend! Even the Coremass fears you... it would work with me, allow me the freedom to come here and fight you, all for the sake of its own well-being. I am willing to be a pawn to its schemes if it means you and your reign of terror die right here, right now."</text>
-					<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
-						<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
-					</triggeredEvent>
+					<text>As if to answer your tired question, a supernova breaks out in the space outside... and a familiar darkness fills the cavernous void, as a heroine appears. She has to have been aware of your malfeasance from the start, and lured you here... not exactly a hero's tactics. You feel her anger as she speaks to you through sheer will alone, "Don't think for a second that I don't know what you are - what you've done. I may be a prisoner here, but you're something far more lowly: a prisoner to your own desires."</text>
+					<changeBackground>BACKGROUND_ENLIGHTENEDVOID</changeBackground>
+					<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
+					<ship load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER" hostile="true"/>
+					<deathEvent thisFight="true">DDDEATH_THEHEROINE</deathEvent>
 					<choice hidden="true">
-						<text>So be it, then, but... I think you'll find that your efforts are for naught.</text>
+						<text>And, you're what? Here to lecture me?</text>
 						<event>
-							<text>"Then die a fool's death, as you engorge yourself on your own ego... for I will hold NOTHING back! BE CRUSHED UNDER HOPE'S BLADE, VILLAIN - AND KNOW THE PAIN YOU'D SO QUICKLY INFLICT UNTO OTHERS!" There's a cry, as her ship flies towards your own... this is it. It's time to end this farce.</text>
-							<playMusic>ddtodancewithdarkness</playMusic>
-							<backgroundObject name="INFINITE_HYPERDEATH_THE_SCARRED">
-								<layer z="0">background</layer>
-								<spawnArea x="0" y="0" w="0" h="0"/>
-								<anim>infinite_hyperdeath_the_scarred</anim>
-							</backgroundObject>
+							<text>She growls, "I am here to stop you, fiend! Even the Coremass fears you... it would work with me, allow me the freedom to come here and fight you, all for the sake of its own well-being. I am willing to be a pawn to its schemes if it means you and your reign of terror die right here, right now."</text>
+							<triggeredEvent event="DDCOREMASS_EVILWAAAMASS_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
+								<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
+							</triggeredEvent>
 							<choice hidden="true">
-								<text>Continue...</text>
-								<event load="COMBAT_CHECK"/>
+								<text>So be it, then, but... I think you'll find that your efforts are for naught.</text>
+								<event>
+									<text>"Then die a fool's death, as you engorge yourself on your own ego... for I will hold NOTHING back! BE CRUSHED UNDER HOPE'S BLADE, VILLAIN - AND KNOW THE PAIN YOU'D SO QUICKLY INFLICT UNTO OTHERS!" There's a cry, as her ship flies towards your own... this is it. It's time to end this farce.</text>
+									<playMusic>ddtodancewithdarkness</playMusic>
+									<backgroundObject name="INFINITE_HYPERDEATH_THE_SCARRED">
+										<layer z="0">background</layer>
+										<spawnArea x="0" y="0" w="0" h="0"/>
+										<anim>infinite_hyperdeath_the_scarred</anim>
+									</backgroundObject>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="COMBAT_CHECK"/>
+									</choice>
+								</event>
 							</choice>
 						</event>
 					</choice>
 				</event>
 			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_soulplague_coremass_heartdefeated" lvl="1" blue="false">
+		<text>Alas, there's nothing left.</text>
+		<event>
+			<text>Indeed, it would seem there isn't. You've arrived at the exit of this harrowing journey once more... this time, will you take it?</text>
+			<changeBackground>BACK_EVENT_STARS_SPARSE</changeBackground>
+			<clearBackgroundObject name="DDCOREMASSCENTERAURA_BACKGROUND"/>
 		</event>
 	</choice>
 </event>

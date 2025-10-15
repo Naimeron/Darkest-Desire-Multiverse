@@ -1710,10 +1710,11 @@
 	<revisitEvent>DARKONE_ALONE</revisitEvent>
 	<text>Now that you're at the exit, the darkness seems... still. All feels calm.</text>
 	<img back="BACKGROUND_ENLIGHTENEDVOID" planet="PLANET_INVISIBLE"/>
-	<choice hidden="true">
+	<choice hidden="true" req="dd_darkgodsdomainexitvisited" lvl="0" max_lvl="0" blue="false">
 		<text>Continue...</text>
 		<event>
 			<text>Though, this tranquility doesn't last long... you feel as the space around you warps, and time itself seems to slow again. Then, to your unease, the Dark God tears its way back into your mind, "TO COME THIS FAR IS MOST IMPRESSIVE. YOU STAND AT THE PRECIPICE; ESCAPE IS IN REACH. YET, BEFORE OUR TIME TOGETHER IS UP, I WILL GRANT YOU ONE LAST DESIRE. MAKE IT KNOWN."</text>
+			<variable name="dd_darkgodsdomainexitvisited" op="set" val="1"/>
 			<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
 			<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
 				<layer z="0">background</layer>
@@ -2204,6 +2205,12 @@
 					</choice>
 				</event>
 			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="dd_darkgodsdomainexitvisited" lvl="1" blue="false">
+		<text>Continue...</text>
+		<event>
+			<text>This time, though... it remains as much. The Dark God seems to be done with you, for now.</text>
 		</event>
 	</choice>
 </event>

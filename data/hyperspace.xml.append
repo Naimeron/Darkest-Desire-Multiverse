@@ -950,10 +950,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DARKONE_SHADOW_TENDRILS">
-		<shipIcons>
-			<shipIcon>icon_ddoverwhelming_darkness</shipIcon>
-			<shipIcon>icon_threat</shipIcon>
-		</shipIcons>
 		<rooms>
 			<room id="0">
 				<roomAnim renderLayer="0">
@@ -1113,10 +1109,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="DARKONE_SHADOW_TENDRILS_TRIALDUMMY">
-		<shipIcons>
-			<shipIcon>icon_ddoverwhelming_darkness</shipIcon>
-			<shipIcon>icon_threat</shipIcon>
-		</shipIcons>
 		<rooms>
 			<room id="0">
 				<roomAnim renderLayer="0">
@@ -6422,6 +6414,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<variable name="dd_cosmicboon_ultimascension" op="set" val="0"/>
 	<variable name="dd_cosmicboon_entropy" op="set" val="0"/>
 	<variable name="dd_spookydivineremnantoooougotspooked" op="set" val="0"/>
+	<variable name="dd_darkgodsdomainexitvisited" op="set" val="0"/>
 	<variable name="dd_prophecyoftheendwitnessed" op="set" val="0"/>
 	<variable name="dd_motesofdivinity" op="set" val="0"/>
 	<variable name="dd_greattreedefeated" op="set" val="0"/>
@@ -7946,6 +7939,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engidefault_overclock</boostAnim>
 			</statBoost>
@@ -8062,6 +8056,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engispeed_overclock</boostAnim>
 			</statBoost>
@@ -8178,6 +8173,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
@@ -8199,6 +8195,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engiattack_overclock</boostAnim>
 			</statBoost>
@@ -8315,6 +8312,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="repairSpeed">
@@ -8336,6 +8334,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engidefense_overclock</boostAnim>
 			</statBoost>
@@ -8454,6 +8453,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="fireDamageMultiplier">
@@ -8474,6 +8474,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="healAmount">
@@ -8495,6 +8496,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engihazard_overclock</boostAnim>
 			</statBoost>
@@ -8777,6 +8779,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="damageMultiplier">
@@ -8797,6 +8800,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
@@ -8818,6 +8822,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_thehunger_overclock</boostAnim>
 			</statBoost>
@@ -8911,6 +8916,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<priority>0</priority>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 		</passiveStatBoosts>
@@ -8959,6 +8965,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="moveSpeedMultiplier">
@@ -8979,6 +8986,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="damageMultiplier">
@@ -8999,6 +9007,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
@@ -9019,6 +9028,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="damageTakenMultiplier">
@@ -9039,6 +9049,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="repairSpeed">
@@ -9059,6 +9070,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="suffocationModifier">
@@ -9079,6 +9091,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="fireDamageMultiplier">
@@ -9099,6 +9112,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="healAmount">
@@ -9120,6 +9134,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<affectsSelf>false</affectsSelf>
 				<whiteList>
 					<disparity_liberator/>
+					<dddisparity_liberator_crystalline/>
 				</whiteList>
 				<boostAnim>disparity_engirainbow_overclock</boostAnim>
 			</statBoost>
@@ -39806,6 +39821,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 						<boostAnim>disparity_engidefault_overclock</boostAnim>
 					</statBoost>
@@ -39868,6 +39884,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 						<boostAnim>disparity_engispeed_overclock</boostAnim>
 					</statBoost>
@@ -39929,6 +39946,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 					</statBoost>
 					<statBoost name="sabotageSpeedMultiplier">
@@ -39950,6 +39968,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 						<boostAnim>disparity_engiattack_overclock</boostAnim>
 					</statBoost>
@@ -40011,6 +40030,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 					</statBoost>
 					<statBoost name="repairSpeed">
@@ -40032,6 +40052,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 						<boostAnim>disparity_engidefense_overclock</boostAnim>
 					</statBoost>
@@ -40093,6 +40114,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 					</statBoost>
 					<statBoost name="fireDamageMultiplier">
@@ -40113,6 +40135,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 					</statBoost>
 					<statBoost name="healAmount">
@@ -40134,6 +40157,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 						<affectsSelf>false</affectsSelf>
 						<whiteList>
 							<disparity_liberator/>
+							<dddisparity_liberator_crystalline/>
 						</whiteList>
 						<boostAnim>disparity_engihazard_overclock</boostAnim>
 					</statBoost>
@@ -47581,8 +47605,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
 		<powerRechargeMultiplier>0.5</powerRechargeMultiplier>
-		<moveSpeedMultiplier>5</moveSpeedMultiplier>
+		<damageTakenMultiplier>0.1</damageTakenMultiplier>
+		<moveSpeedMultiplier>8</moveSpeedMultiplier>
 		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<noSlot>true</noSlot>
+		<noClone>true</noClone>
 		<controllable>false</controllable>
 		<canPunch>false</canPunch>
 		<canSabotage>false</canSabotage>
@@ -47597,7 +47624,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<deathSound>orchidDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>3</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>kernel_launch1</powerSound>
@@ -48865,6 +48892,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<resistsMindControl>true</resistsMindControl>
 		<canPunch>false</canPunch>
 		<animBase>rock</animBase>
+		<animSheet>ddilldrythk_statue_soulshell</animSheet>
 		<deathSounds>
 			<deathSound>siren_death</deathSound>
 		</deathSounds>
@@ -50593,6 +50621,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50629,6 +50658,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50665,6 +50695,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50701,6 +50732,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50737,6 +50769,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50773,6 +50806,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50809,6 +50843,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50845,6 +50880,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50881,6 +50917,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50916,6 +50953,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50950,6 +50988,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -50984,6 +51023,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51450,6 +51490,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51486,6 +51527,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51522,6 +51564,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51558,6 +51601,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51594,6 +51638,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51630,6 +51675,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51666,6 +51712,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51702,6 +51749,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51738,6 +51786,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51773,6 +51822,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51807,6 +51857,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>
@@ -51841,6 +51892,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<affectsSelf>false</affectsSelf>
 					<whiteList>
 						<disparity_liberator/>
+						<dddisparity_liberator_crystalline/>
 					</whiteList>
 				</statBoost>
 				<shipTarget>ALL</shipTarget>

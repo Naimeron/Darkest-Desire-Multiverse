@@ -851,6 +851,7 @@
 </event>
 
 <ship name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT" auto_blueprint="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER">
+	<triggeredEvent event="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_MANTISBACKUP" time="3" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>The strange, Soulplague-infected mass is broken apart ceremoniously - its remnants splintering, and sinking away, deeper, and deeper, into the nebula...</text>
 		<autoReward level="HIGH">standard_no_item</autoReward>
@@ -876,6 +877,17 @@
 		</choice>
 	</deadCrew>
 </ship>
+
+<event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_MANTISBACKUP">
+	<text>As things begin to heat up, the surface of the hulking Soulplague-infected ship before you bubbles, and churns, as some of the mass from within it seems to literally claw its way outwards. These rogue globules eject themselves, at a horrifying velocity, and a few of them even manage to latch onto your ship as you attempt to outmaneuver the ravenous vessel.
+	
+	Once atop your hull, they somehow find a way to seep through, and get inside - reforming within your ship as Mantis Husks! You see as the Bishop falters before their visage slightly, before readying her battle stance once more. "You cretins would make a MOCKERY of their memories? Of the cause they died in the name of? I will see to it that you suffer the same pain they did, monsters - a THOUSANDFOLD!"</text>
+	<boarders min="3" max="5" class="ddsoulplague_husk_mantis_enemy"/>
+	<choice hidden="true">
+		<text>Let's do this, then!</text>
+		<event/>
+	</choice>
+</event>
 
 <event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_FIGHT_WIN_LIVINGMANTIS">
 	<text>Before you can really get a moment to catch your breath, though, you find a now-familiar pressure back against the front of your throat. "We may have survived, mercenary - but you are to explain your utter INSOLENCE at once. In your rash, unthinking foolishness, you put not only lives in jeopardy, but a mission declared to be of the utmost importance by none other than Queen Leikonpliiinakra herself. Have you any clue how serious your transgressions here have been?"</text>

@@ -3451,7 +3451,7 @@
 		<text>(Otherworldly Tome) Investigate the Otherworldly Tome's rituals.</text>
 		<event load="STORAGE_CHECK_DARKGOD_CURSED_BOOK"/>
 	</mod-append:choice>
-	<mod-append:choice req="DARKGOD_CURSED_BOOK">
+	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
 		<text>(Otherworldly Tome) Brand one of your human crew members as a future human sacrifice.</text>
 		<event load="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION"/>
 	</mod-append:choice>
@@ -3480,7 +3480,7 @@
 		<event load="STORAGE_CHECK_DDMINISTER_RESURRECTION"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="ddsoulplague_husk_human" blue="false">
-		<text>(Human Husk) Mutate your Human Husk into another type of Husk.</text>
+		<text>Mutate your Human Husk into another type of Husk.</text>
 		<event load="STORAGE_CHECK_DDHUMANHUSK_TRANSFORM"/>
 	</mod-append:choice>
 	<mod-append:choice req="BLUELIST_CREW_DDTRIBUTESHAPER" hidden="true" blue="false">
@@ -5676,11 +5676,11 @@
 
 <event name="STORAGE_CHECK_DDILLDRYTHK_RAINBOWMUTAGEN_USAGE">
 	<text>You may apply a vial of Rainbow Ill'drythk Mutagen to one of your Ill'drythk Statues, forcing a controlled mutation. Do you desire to do so?</text>
-	<choice hidden="true" req="ddilldrythk_statue" blue="false">
+	<choice hidden="true" req="ddilldrythk_statue">
 		<text>(Ill'drythk Statue) Mutate an Ill'drythk Statue.</text>
 		<event>
 			<text>Which mutation do you desire?</text>
-			<choice hidden="true">
+			<choice>
 				<text>A Frostwood mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an icy blue hue, and horns of some sort begin to sprout from its head. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5692,7 +5692,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>A Voidroot mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin darkens, and its face begins to contort as eerie eyes sprout from within its orifices. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5704,7 +5704,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>An Ironbound mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a grayish-white hue, and spikes begin to protrude from its shoulders. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5716,7 +5716,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>A Toxblood mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a purple hue, and a green liquid begins to ooze from its face. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5728,7 +5728,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>A Leafhost mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a brown hue, and plants begin to sprout across its body. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5740,7 +5740,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>A Cinderbark mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an orangeish-red hue, and flames begin to spew from its neck. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5752,7 +5752,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true">
+			<choice>
 				<text>A Soulshell mutation.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a dark, purple hue, and its arms elongate into more tentacle-like, multicolored appendages. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5782,7 +5782,7 @@
 		<text>(Ill'drythk Statue) Mutate an Ill'drythk Statue.</text>
 		<event>
 			<text>Which vial of Mutagen will you apply?</text>
-			<choice hidden="true" req="dd_illdrythkmutagen_frostwood" lvl="1">
+			<choice req="dd_illdrythkmutagen_frostwood" lvl="1">
 				<text>(Frostwood Mutagen) Apply a vial of Frostwood Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an icy blue hue, and horns of some sort begin to sprout from its head. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5794,7 +5794,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_voidroot" lvl="1">
+			<choice req="dd_illdrythkmutagen_voidroot" lvl="1">
 				<text>(Voidroot Mutagen) Apply a vial of Voidroot Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin darkens, and its face begins to contort as eerie eyes sprout from within its orifices. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5806,7 +5806,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_ironbound" lvl="1">
+			<choice req="dd_illdrythkmutagen_ironbound" lvl="1">
 				<text>(Ironbound Mutagen) Apply a vial of Ironbound Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a grayish-white hue, and spikes begin to protrude from its shoulders. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5818,7 +5818,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_toxblood" lvl="1">
+			<choice req="dd_illdrythkmutagen_toxblood" lvl="1">
 				<text>(Toxblood Mutagen) Apply a vial of Toxblood Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a purple hue, and a green liquid begins to ooze from its face. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5830,7 +5830,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_leafhost" lvl="1">
+			<choice req="dd_illdrythkmutagen_leafhost" lvl="1">
 				<text>(Leafhost Mutagen) Apply a vial of Leafhost Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a brown hue, and plants begin to sprout across its body. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5842,7 +5842,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_cinderbark" lvl="1">
+			<choice req="dd_illdrythkmutagen_cinderbark" lvl="1">
 				<text>(Cinderbark Mutagen) Apply a vial of Cinderbark Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on an orangeish-red hue, and flames begin to spew from its neck. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5854,7 +5854,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice hidden="true" req="dd_illdrythkmutagen_cinderbark" lvl="1">
+			<choice req="dd_illdrythkmutagen_cinderbark" lvl="1">
 				<text>(Soulshell Mutagen) Apply a vial of Soulshell Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a dark, purple hue, and its arms elongate into more tentacle-like, multicolored appendages. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
