@@ -514,6 +514,12 @@
 	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
 </eventList>
 
+<eventList name="DDDARK_OBELISK_LIST_DARKENEDSOULS">
+	<event load="DDDARK_OBELISK_LIST_FIRE"/>
+	<event load="DDDARK_OBELISK_LIST_BREACH"/>
+	<event load="DDDARK_OBELISK_LIST_ENTITY"/>
+</eventList>
+
 <eventList name="DDDARK_OBELISK_LIST_ENEMY">
 	<event load="DDDARK_OBELISK_LIST_FIRE_ENEMY"/>
 	<event load="DDDARK_OBELISK_LIST_BREACH_ENEMY"/>

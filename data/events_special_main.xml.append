@@ -4,7 +4,7 @@
 		<mod-append:event name="BOON_SELECT_DDSOULPLAGUE_CREW" req="prof_z_boon_ddsoulplague"/>
 		<mod-append:event name="BOON_SELECT_DDDEEPONE_ELITE" req="prof_z_boon_dddeepone_elite"/>
 		<mod-append:event name="BOON_SELECT_DDSERAPHIM_CREW" req="prof_z_boon_ddseraphim"/>
-		<mod-append:event name="BOON_SELECT_DDCORRUPTOR" req="prof_e_boon_ddcorruptor "/>
+		<mod-append:event name="BOON_SELECT_DDCORRUPTOR" req="prof_e_boon_ddcorruptor"/>
         <mod-append:event name="BOON_SELECT_DEEPONE_EQUIPMENT" req="prof_r_boon_deepone_gear"/>
 		<mod-append:event name="BOON_SELECT_DISPARITY_EQUIPMENT" req="prof_r_boon_disparity_gear"/>
 		<mod-append:event name="BOON_SELECT_DDSOULPLAGUE_EQUIPMENT" req="prof_r_boon_ddsoulplague_gear"/>

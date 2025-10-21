@@ -8,9 +8,9 @@
 </offsets>
 <weaponMounts>
 	<mount x="400" y="48" rotate="true" mirror="true" gib="-1" slide="up" />
-	<mount x="400" y="398" rotate="true" mirror="false" gib="-1" slide="up" />
+	<mount x="400" y="398" rotate="true" mirror="false" gib="-1" slide="down" />
 	<mount x="498" y="77" rotate="true" mirror="true" gib="-1" slide="up" />
-	<mount x="499" y="369" rotate="true" mirror="false" gib="-1" slide="up" />
+	<mount x="499" y="369" rotate="true" mirror="false" gib="-1" slide="down" />
 </weaponMounts>
 <explosion />
 

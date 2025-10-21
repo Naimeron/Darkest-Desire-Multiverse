@@ -7357,12 +7357,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="darkgodtendrils">
-		<maxHealth>45</maxHealth>
+		<maxHealth>30</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
-		<damageMultiplier>1.3</damageMultiplier>
 		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
 		<sabotageSpeedMultiplier>0.5</sabotageSpeedMultiplier>
 		<controllable>false</controllable>
@@ -7384,7 +7383,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -7393,7 +7392,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -14342,9 +14341,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<powerSounds>
 				<powerSound>focus_strong</powerSound>
 			</powerSounds>
-			<req>
-				<inCombat/>
-			</req>
 			<event load="DDULTIMAARMOR_UNLEASH_POWEROFULTIMA"/>
 			<buttonText>ULTIMA</buttonText>
 			<tooltip>[COOLDOWN:40s  DURATION: 13s]
@@ -15082,7 +15078,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -15091,7 +15087,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -15237,14 +15233,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="dddevouring_shadow">
-		<maxHealth>90</maxHealth>
+		<maxHealth>60</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
-		<damageMultiplier>1.5</damageMultiplier>
+		<damageMultiplier>1.25</damageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
-		<sabotageSpeedMultiplier>1.5</sabotageSpeedMultiplier>
+		<sabotageSpeedMultiplier>1.25</sabotageSpeedMultiplier>
 		<controllable>false</controllable>
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
@@ -15264,7 +15260,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -15273,7 +15269,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -38542,7 +38538,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -38551,7 +38547,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.10</amount>
+				<amount>1.20</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -39086,6 +39082,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<damageTakenMultiplier>0.5</damageTakenMultiplier>
 		<resistsMindControl>true</resistsMindControl>
 		<animBase>human</animBase>
+		<animSheet>ddunique_theheroine</animSheet>
 		<deathSounds>
 			<deathSound>ddtheheroinedeath</deathSound>
 		</deathSounds>
@@ -41840,7 +41837,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41849,7 +41846,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41858,7 +41855,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>2.07</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41886,7 +41883,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41895,7 +41892,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41904,7 +41901,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>2.07</amount>
+				<amount>1.44</amount>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -41949,7 +41946,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</req>
 			<event load="DDTHEOVERSEER_UNLEASH_POWEROFANTUMBRA"/>
 			<buttonText>ANTUMBRA</buttonText>
-			<tooltip>[COOLDOWN:30s  DURATION: 20s]
+			<tooltip>[COOLDOWN:30s  DURATION: 22s]
 				Overflowing with Antumbral Power, the Overseer transcends past its limits and regenerates rapidly while becoming nigh invulnerable, immobile, untargetable and incapable of taking action. Simultaneously, it allows all ally Lightborne on the same ship to count as Hungering Shadows for the sake of buffing and being buffed by other Hungering Shadows, inflicts the current room with Radiant Desecration, summons several drones of both light and darkness and spreads its passive x4 Hungering Shadow buff to all Hungering Shadows on the same ship.</tooltip>
 			<cooldownColor r="226" g="226" b="226"/>
 			<effectAnim>explosion_darkgod</effectAnim>
@@ -42080,7 +42077,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="maxHealth">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -42092,7 +42089,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>1.46</amount>
+				<amount>1.44</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -42104,7 +42101,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>2.07</amount>
+				<amount>1.44</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<affectsSelf>false</affectsSelf>
@@ -42117,7 +42114,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="statBoost">
 				<statBoost name="maxHealth">
 					<boostType>FLAT</boostType>
-					<amount>1.10</amount>
+					<amount>1.20</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
@@ -42138,7 +42135,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="statBoost">
 				<statBoost name="damageMultiplier">
 					<boostType>FLAT</boostType>
-					<amount>1.10</amount>
+					<amount>1.20</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
@@ -42180,7 +42177,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="statBoost">
 				<statBoost name="maxHealth">
 					<boostType>FLAT</boostType>
-					<amount>1.10</amount>
+					<amount>1.20</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
@@ -42198,7 +42195,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<statBoost name="statBoost">
 				<statBoost name="damageMultiplier">
 					<boostType>FLAT</boostType>
-					<amount>1.10</amount>
+					<amount>1.20</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
@@ -42247,13 +42244,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>20</cooldown>
+			<cooldown>22</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>focus_weak</powerSound>
 			</powerSounds>
 			<buttonText>RELENT</buttonText>
-			<tooltip>[COOLDOWN:20s]
+			<tooltip>[COOLDOWN:22s]
 				Once it has exhausted its Antumbral Power, the Overseer returns to its normal form.</tooltip>
 			<cooldownColor r="122" g="122" b="122"/>
 			<activateWhenReady>true</activateWhenReady>
@@ -47151,7 +47148,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<powerSounds>
 				<powerSound>vanceShoot</powerSound>
 			</powerSounds>
-			<event load="DDDARK_OBELISK_LIST"/>
+			<event load="DDDARK_OBELISK_LIST_DARKENEDSOULS"/>
 			<buttonText>DARK</buttonText>
 			<tooltip>Releases its stored, unstable energy, causing an explosion that places a brief, nightmarish aura in the current room, stuns enemies for 3 seconds and manifests a bolt of random chaos on the enemy ship. Becomes a Spent Soul, rendering it powerless until an FTL jump.
 			This nightmarish aura makes all crew, regardless of allegiance, 3x vulnerable to combat damage and heals them at a rate of 5HP/s. Lasts 3 seconds.</tooltip>
@@ -47274,7 +47271,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_mature">
 		<essential>2</essential>
-		<maxHealth>125</maxHealth>
+		<crewSlots>2</crewSlots>
+		<maxHealth>150</maxHealth>
 		<repairSpeed>1.5</repairSpeed>
 		<fireRepairMultiplier>0.5</fireRepairMultiplier>
 		<damageMultiplier>1.5</damageMultiplier>
@@ -47284,7 +47282,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<powerRechargeMultiplier>0.5</powerRechargeMultiplier>
 		<passiveHealAmount>1.5</passiveHealAmount>
 		<passiveHealDelay>14</passiveHealDelay>
-		<bonusPower>2</bonusPower>
+		<bonusPower>4</bonusPower>
 		<noClone>true</noClone>
 		<snapToSlot>true</snapToSlot>
 		<canMove>false</canMove>
@@ -47356,8 +47354,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</spawnCrew>
 		</deathEffect>
 		<powerEffect>
-			<cooldown>30</cooldown>
-			<jumpCooldown>reset</jumpCooldown>
+			<cooldown>20</cooldown>
+			<jumpCooldown>full</jumpCooldown>
 			<req>
 				<inCombat/>
 			</req>
@@ -47371,7 +47369,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ionShields3</powerSound>
 			</powerSounds>
 			<buttonText>BLIGHT</buttonText>
-			<tooltip>[COOLDOWN:30s]
+			<tooltip>[COOLDOWN:20s]
 				Summons a Tempest Whirlwind and releases a single bolt of energy that strikes at the enemy ship and manifests as Tempest Lightning, ioning rooms and potentially summoning Minor Tempest Spawn.</tooltip>
 			<cooldownColor r="156" g="213" b="228"/>
 			<effectAnim>ddion_explosion</effectAnim>
@@ -47442,7 +47440,6 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveHealAmount>1.5</passiveHealAmount>
 		<passiveHealDelay>14</passiveHealDelay>
 		<trueHealAmount>-30</trueHealAmount>
-		<bonusPower>1</bonusPower>
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
 		<snapToSlot>true</snapToSlot>
@@ -47481,8 +47478,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</whiteList>
 			</statBoost>
 			<statBoost name="maxHealth">
-				<boostType>MULT</boostType>
-				<amount>1.15</amount>
+				<boostType>FLAT</boostType>
+				<amount>10</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47493,8 +47490,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</whiteList>
 			</statBoost>
 			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>1.15</amount>
+				<boostType>FLAT</boostType>
+				<amount>0.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47505,8 +47502,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</whiteList>
 			</statBoost>
 			<statBoost name="damageMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.15</amount>
+				<boostType>FLAT</boostType>
+				<amount>0.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47517,8 +47514,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</whiteList>
 			</statBoost>
 			<statBoost name="powerRechargeMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.15</amount>
+				<boostType>FLAT</boostType>
+				<amount>0.1</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47569,6 +47566,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_seed">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>35</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47640,6 +47638,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_planted1">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>50</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47689,6 +47688,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_planted2">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>75</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47739,6 +47739,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_planted3">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>100</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47789,6 +47790,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_planted4">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>125</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47839,6 +47841,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_planted5">
 		<essential>2</essential>
+		<crewSlots>2</crewSlots>
 		<maxHealth>125</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
@@ -47846,7 +47849,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<powerRechargeMultiplier>0.5</powerRechargeMultiplier>
 		<passiveHealAmount>1.5</passiveHealAmount>
 		<passiveHealDelay>14</passiveHealDelay>
-		<bonusPower>1</bonusPower>
+		<bonusPower>2</bonusPower>
 		<noClone>true</noClone>
 		<canPunch>false</canPunch>
 		<canSabotage>false</canSabotage>

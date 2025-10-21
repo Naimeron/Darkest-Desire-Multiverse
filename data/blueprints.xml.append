@@ -22366,8 +22366,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 45, damage increased to 1.3x, sabotage and movement speed reduced to 0.5x. Immune to hazards, but it can't be controlled and desires only destruction.</power>
-		<power>Buffs every other Hungering Shadow in the room, granting them increased max HP (1.1x), damage (1.1x), and sabotage speed (1.2x).</power>
+		<power>Max HP reduced to 30, sabotage and movement speed reduced to 0.5x. Immune to hazards, but it can't be controlled and desires only destruction.</power>
+		<power>Buffs every other Hungering Shadow in the room, granting them 1.2x max HP, combat damage and sabotage speed.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="unique_thescarred">
@@ -23610,8 +23610,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 90, damage and sabotage speed increased to 1.5x, and movement speed reduced to 0.6x. Immune to hazards, but it can't be controlled and desires only destruction.</power>
-		<power>Buffs every other Hungering Shadow in the room, granting them increased max HP (1.1x), damage (1.1x), and sabotage speed (1.2x). Dies when its ability is charged.</power>
+		<power>Max HP reduced to 60, combat damage and sabotage speed increased to 1.25x, and movement speed reduced to 0.6x. Immune to hazards, but it can't be controlled and desires only destruction.</power>
+		<power>Buffs every other Hungering Shadow in the room, granting them 1.2x max HP, combat damage and sabotage speed. Dies when its ability is charged.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddsoulplague_husk_human">
@@ -24429,7 +24429,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Lackluster offensively, with 0.5x combat and sabotage damage, but it's quite formidable with its max HP raised to 200, 0.8x combat damage resistance, 0.25x stun resistance and hazard/mind control immunity.</power>
-		<power>Counts as a Hungering Shadow for the purpose of buffing and being buffed by other Hungering Shadows. Additionally, for the purpose of buffing other Hungering Shadows, it counts as being roughly four of them.</power>
+		<power>Counts as a Hungering Shadow for the purpose of buffing and being buffed by other Hungering Shadows. Additionally, for the purpose of buffing other Hungering Shadows, it counts as being roughly two of them.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddunique_theoverseer">
@@ -24442,7 +24442,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Combat/sabotage damage increased to 1.5x. Counts as a Hungering Shadow for the purpose of buffing and being buffed by other Hungering Shadows. Additionally, for the purpose of buffing other Hungering Shadows, she counts as being roughly four of them.</power>
+		<power>Combat/sabotage damage increased to 1.5x. Counts as a Hungering Shadow for the purpose of buffing and being buffed by other Hungering Shadows. Additionally, for the purpose of buffing other Hungering Shadows, she counts as being roughly two of them.</power>
 		<power>Recharges her ability slowly, but also charges it faster for every ally Hungering Shadow/Lightborne currently alive. Capable of a devastating transformation once her ability is charged, fully healing, blurring the line between Hungering Shadows and Lightborne, spreading the range of her Hungering Shadow buff, inflicting the current room with Radiant Desecration and summoning several drones of both light and darkness.</power>
 	</powerList>
 </crewBlueprint>
@@ -24454,8 +24454,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Nigh invulnerable and regenerating rapidly. Incapable of doing anything herself. Ally Lightborne on the either ship count as Hungering Shadows for the purposes of buffing and being buffed by other Hungering Shadows, and all entities that count as Hungering Shadows on either ship receive the Overseer's passive x4 Hungering Shadow buff.</power>
-		<power>Incapable of holding this form for long, she will return to her normal form after 20 seconds.</power>
+		<power>Nigh invulnerable and regenerating rapidly. Incapable of doing anything herself. Ally Lightborne on the either ship count as Hungering Shadows for the purposes of buffing and being buffed by other Hungering Shadows, and all entities that count as Hungering Shadows on either ship receive the Overseer's passive x2 Hungering Shadow buff.</power>
+		<power>Incapable of holding this form for long, she will return to her normal form after 22 seconds.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddlightborne_slayling">
@@ -24803,7 +24803,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has increased health (125 HP), repair speed (1.5x) and combat damage (1.5x), provides 2 power to the current room and inflicts nearby enemies with Storm Omen. Generates oxygen, and is resistant to suffocation (0.75x), but is weak to fire (1.75x). Immune to mind control and incapable of movement.</power>
+		<power>Takes up 2 crew slots. Has increased health (150 HP), repair speed (1.5x) and combat damage (1.5x), provides 4 power to the current room and inflicts nearby enemies with Storm Omen. Generates oxygen, and is resistant to suffocation (0.75x), but is weak to fire (1.75x). Immune to mind control and incapable of movement.</power>
 		<power>Learns skills incredibly quickly and will passively heal after a delay (1.5HP/s after 14s). If killed, it will be reborn as a Seedling and given a chance to grow again.</power>
 		<power>After an FTL jump, it spawns an Outgrowth, which empowers all ally Blight Guardians as long as it's alive.</power>
 		<power>Periodic Ability: Conjures a bolt of Tempest Lightning aboard the enemy ship, and summons a Tempest Whirlwind.</power>
@@ -24817,8 +24817,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Shares similar capabilities and weaknesses to the main body, but has worse health (35 HP), repair speed (0.5x), combat damage (0.5x) and power/oxygen generation.</power>
-		<power>Each Outgrowth grants stacking benefits to all ally Blight Guardians, including healing (0.5HP/s), increased health, repair speed, combat damage and ability regen rate (all 1.15x).</power>
+		<power>Shares similar capabilities and weaknesses to the main body, but has worse health (35 HP), repair speed (0.5x), combat damage (0.5x) and oxygen generation, and additionally doesn't generate power.</power>
+		<power>Each Outgrowth grants stacking benefits to all ally Blight Guardians, including healing (0.5HP/s), increased max health (+10 HP), repair speed, combat damage and ability regen rate (all +0.1).</power>
 		<power>Learns skills incredibly quickly and will passively heal after a delay (1.5HP/s after 14s). If the main body dies, and there're no other Blight Guardians to take its place, every Outgrowth will perish as well.</power>
 		<power>Periodic Ability: Stuns enemies for 1 second as they get near it.</power>
 	</powerList>
@@ -24831,7 +24831,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has lowered health (35 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Has lowered health (35 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Can't do much until it grows.</power>
 		<power>Active Ability: Roots itself in place, burrowing into the ground and preparing to grow into a fully mature Blight Guardian. This process takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>
@@ -24855,7 +24855,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has lowered health (50 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Has lowered health (50 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Can't do much until it grows.</power>
 		<power>In the process of growing. This takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>
@@ -24867,7 +24867,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has lowered health (75 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides a miniscule amount of oxygen, but otherwise can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Has lowered health (75 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides a miniscule amount of oxygen, but otherwise can't do much until it grows.</power>
 		<power>In the process of growing. This takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>
@@ -24879,7 +24879,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides a small amount of oxygen, but otherwise can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides a small amount of oxygen, but otherwise can't do much until it grows.</power>
 		<power>In the process of growing. This takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>
@@ -24891,7 +24891,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has increased health (125 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides oxygen, but otherwise can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Has increased health (125 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides oxygen, but otherwise can't do much until it grows.</power>
 		<power>In the process of growing. This takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>
@@ -24903,7 +24903,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has increased health (125 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides oxygen and power, but otherwise can't do much until it grows.</power>
+		<power>Takes up 2 crew slots. Has increased health (125 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Provides oxygen and power, but otherwise can't do much until it grows.</power>
 		<power>In the process of growing. This takes several FTL jumps, and will be undone if the Blight Guardian dies at any point.</power>
 	</powerList>
 </crewBlueprint>

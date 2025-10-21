@@ -258,7 +258,7 @@
 			<choice req="ddhuman_sacrifice" blue="false">
 				<text>(Human Sacrifice) Sacrifice one of your prepared human lives.</text>
 				<event>
-					<text>Your human sacrifice doesn't so much as stir as you sink a dagger in their chest. Their blood spills out, some of it directly onto your hands, and you remark that it feels oddly cold... but it doesn't matter. The sacrifice has been made.</text>
+					<text>Your human sacrifice doesn't so much as stir as you sink a dagger into their chest. Their blood spills out, some of it directly onto your hands, and you remark that it feels oddly cold... but it doesn't matter. The sacrifice has been made.</text>
 					<playSound>kaz_swipe</playSound>
 					<removeCrew class="ddhuman_sacrifice">
 						<clone>false</clone>
@@ -397,7 +397,7 @@
 			<choice hidden="true">
 				<text>Perform the Ritual of Restless Spirits.</text>
 				<event>
-					<text>As is asked of you by the Otherworldly Tome, you procure a piece of small, sharp metal. You then perform a brief incantation, and in an instant, the metal leaps out of your hands - plunging itself into your skull, as if it had a mind of its own. It's not pain that you feel, though, as it burrows itself deeper, and deeper, and blood begins to spill forth from the resulting wound... but a sense of total understanding. You are okay, as long as you merely reaize your desire...</text>
+					<text>As is asked of you by the Otherworldly Tome, you procure a piece of small, sharp metal. You then perform a brief incantation, and in an instant, the metal leaps out of your hands - plunging itself into your skull, as if it had a mind of its own. It's not pain that you feel, though, as it burrows itself deeper, and deeper, and blood begins to spill forth from the resulting wound... but a sense of total understanding. You are okay, as long as you merely realize your desire...</text>
 					<choice hidden="true">
 						<text>I desire... souls.</text>
 						<event load="ATLAS_EQUIPMENT_DARKGOD_CURSED_BOOK_PERFORMINGRITUAL_RESTLESSSPIRITSPERFORMED"/>
@@ -1026,7 +1026,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="deeponecultist">
+	<choice hidden="true" req="BLUELIST_CREW_DDENLIGHTENED">
 		<text>(Enlightened Crew) Perform an Enlightened ritual.</text>
 		<event>
 			<text>You flip through the Otherworldly Tome's pages, eventually landing on the text scribed in a glistening yellow. In it, the procedures for proving oneself to the Dark God and reaping its gifts are described, in addition to a more vague ritual - courtesy of one of the Tome's strange, loose pages.</text>
