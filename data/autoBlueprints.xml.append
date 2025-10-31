@@ -1312,18 +1312,8 @@
 
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE_RHYME">
 	<mod-append:name>disparity_engidefault</mod-append:name>
-	<mod-append:name>disparity_engispeed</mod-append:name>
-	<mod-append:name>disparity_engiattack</mod-append:name>
-	<mod-append:name>disparity_engidefense</mod-append:name>
-	<mod-append:name>disparity_engihazard</mod-append:name>
 	<mod-append:name>dddeepone_chosen</mod-append:name>
 	<mod-append:name>ddsoulplague_huskweaver</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_shatter</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_plague</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_dark</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_cloud</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_judge</mod-append:name>
-	<mod-append:name>dddeepone_tributeshaper_cage</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_UNIQUE">

@@ -2425,6 +2425,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_HUNTER_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2460,6 +2461,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_JUGGERNAUT_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2507,6 +2509,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_STALKER_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2545,6 +2548,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_SCAVENGER_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2577,6 +2581,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_PROWLER_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -2612,6 +2617,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:customShip>
 	<mod-append:customShip name="DDSOULPLAGUE_INCUBATOR_HUSKWEAVER">
 		<shipIcons>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>icon_ddsoulplague_gas</shipIcon>
 		</shipIcons>
 		<rooms>
@@ -38056,6 +38062,23 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<blackList load="LIST_CREW_DDNOFEAR"/>
 				<boostAnim>ddilldrythk_anxious_debuff</boostAnim>
 			</statBoost>
+			<statBoost name="oxygenChangeSpeed">
+				<boostType>MULT</boostType>
+				<amount>0.125</amount>
+				<crewTarget>SELF</crewTarget>
+				<shipTarget>ALL</shipTarget>
+				<powerScalingShipTarget>CURRENT_ALL</powerScalingShipTarget>
+				<systemPowerScaling>
+					<noSys>1</noSys>
+					<hackedSys>0</hackedSys>
+					<noPwr>0</noPwr>
+					<onePwr>0</onePwr>
+				</systemPowerScaling>
+				<systemPowerDependency>
+					<oxygen/>
+				</systemPowerDependency>
+				<priority>-999</priority>
+			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
 			<cooldown>19</cooldown>
@@ -39291,6 +39314,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<canTeleport>false</canTeleport>
 		<canMan>false</canMan>
 		<animBase>human</animBase>
+		<animSheet>ddmanifestationofintegrity</animSheet>
 		<lowHealthThreshold>-1</lowHealthThreshold>
 		<deathSounds>
 			<deathSound>ddtheheroinedeath</deathSound>
@@ -57164,7 +57188,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<secretName>???</secretName>
 				<secretDescription>Restore the radiant warmth of a certain yellow sigil.</secretDescription>
 				<name>Maddening Cachinnation</name>
-				<description>Prove your worth to a Tributeshaper within Enlightened Deep Space and restore the purple sigil.</description>
+				<description>Prove your worth to a Tributeshaper within Enlightened Deep Space and restore the yellow sigil.</description>
 				<icon>ach_event_ddyellowsigilobtained</icon>
 				<lockImage>ach_locked</lockImage>
 			</achievement>

@@ -4321,7 +4321,7 @@
 </ship>
 
 <event name="DISPARITY_KEYQUEST_BATTLEFIELD_HARMONY_FIGHT_WIN">
-	<text>As you're salvaging, you find what you're looking for... the Harmony Link coordinate fragment, secure within a case! Meanwhile, as the Harmony loses it commander, all Engi are directed to retreat... you've won!</text>
+	<text>As you're salvaging, you find what you're looking for... the Harmony Link coordinate fragment, secure within a case! Meanwhile, as the Harmony loses its commander, all of the Engi under its control are directed to retreat... you've won!</text>
 	<variable name="dd_disparity_harmonylinkcoordinatefragment" op="add" val="1"/>
 	<choice hidden="true" req="dd_disparity_assistance" lvl="-99" max_lvl="0" blue="false">
 		<text>Hail the Disparity commander.</text>

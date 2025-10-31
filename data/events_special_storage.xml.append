@@ -1750,6 +1750,7 @@
 			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
 				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<removeCrew class="ddhuman_sacrifice">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been stripped from their body.</text>
@@ -1767,6 +1768,7 @@
 			<triggeredEvent event="COMBAT_CHECK_DDSOULPLAGUE_MASS_SUMMON_ASSAULT" seeded="true" thisFight="true" loops="999999999" minTime="14.0" maxTime="20.0">
 				<warningMessage id="warning_ddsoulplague_mass_hazard_text" x="825" y="30" time="5.0" centerText="true" flash="true" sound="environWarning" useWarningLine="false"/>
 			</triggeredEvent>
+			<variable name="dd_dddream_coins" op="add" val="1"/>
 			<removeCrew class="LIST_CREW_HUMAN">
 				<clone>false</clone>
 				<text>You cannot clone someone whose soul has been stripped from their body.</text>

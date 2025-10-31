@@ -1764,7 +1764,7 @@
 					<choice hidden="true" req="gnome">
 						<text>(Gnome) The truth... behind, uh... this thing.</text>
 						<event>
-							<text>"THIS 'THING', AS YOU PUT IT... IS FROM THE OUTER EDGE." There's a pause, as the Dark God seems to ponder something, "I HAVE MOVED MUCH BETWEEN THE SEAMS, AND SEEN MUCH MORE - BUT LITTLE AS TRULY CHAOTIC AS THIS. I IMAGINE... SHE'D BE BEHIND THIS. BE CAREFUl, VESSEL. EVEN I WOULD RECOMMEND THAT YOU TAKE CAUTION AROUND HER... AND IF NOT HER - THEN THE CENTER-DWELLERS. THEY WOULD NOT BE AS CALM AS I, SEEING THIS IN YOUR HANDS."</text>
+							<text>"THIS 'THING', AS YOU PUT IT... IS FROM THE OUTER EDGE." There's a pause, as the Dark God seems to ponder something, "I HAVE MOVED MUCH BETWEEN THE SEAMS, AND SEEN MUCH MORE - BUT LITTLE AS TRULY CHAOTIC AS THIS. I IMAGINE... SHE'D BE BEHIND THIS. BE CAREFUL, VESSEL. EVEN I WOULD RECOMMEND THAT YOU TAKE CAUTION AROUND HER... AND IF NOT HER - THEN THE CENTER-DWELLERS. THEY WOULD NOT BE AS CALM AS I, SEEING THIS IN YOUR HANDS."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>

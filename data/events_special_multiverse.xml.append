@@ -141,7 +141,7 @@
 	<mod-append:metaVariable name="prof_z_boon_ddsoulplague" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_z_boon_dddeepone_elite" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_z_boon_ddseraphim" op="set" val="0"/>
-	<mod-append:metaVariable name="prof_e_boon_ddcorruptor " op="set" val="0"/>
+	<mod-append:metaVariable name="prof_e_boon_ddcorruptor" op="set" val="0"/>
     <mod-append:metaVariable name="prof_r_boon_deepone_gear" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_r_boon_disparity_gear" op="set" val="0"/>
 	<mod-append:metaVariable name="prof_r_boon_ddsoulplague_gear" op="set" val="0"/>
@@ -1089,7 +1089,7 @@
 <event name="NEBULA_SYLVAN_DDSOULPLAGUE_STORY_QUEST_CONTINUE_TWO">
 	<text>Past the door, you're immediately frozen in place, horrified, by the grisly sight laid out before you: dozens of Mantis, each cold and lifeless, have found their bodies melded into the iridescent walls of the room - all grasped within outstretched tendrils of Soulplague-infected matter. This... isn't just a mass grave, but an entire feeding ground for the mattervirus.
 	
-	You notice that the Bishop herself doesn't seem phased, though. She's simply eyeing something, in the middle of the room... some of sort of shard of glass, or crystal, by the looks of it. Whatever it is, it's beautiful - painting the rest of the room around in it an ethereal glow.</text>
+	You notice that the Bishop herself doesn't seem phased, though. She's simply eyeing something, in the middle of the room... some of sort of shard of glass, or crystal, by the looks of it. Whatever it is, it's beautiful - painting the rest of the room around it in an ethereal glow.</text>
 	<choice hidden="true">
 		<text>Approach the strange crystal.</text>
 		<event>

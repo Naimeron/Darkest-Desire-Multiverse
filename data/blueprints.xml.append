@@ -22429,7 +22429,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Cannot fight or sabotage, but is practically invulnerable to incoming damage. Has an immense amount of HP, but naturally decays as their hunger eats away at them. Disparity beacons increase the rate of this decay.</power>
-		<power>Active Ability: When their HP falls below 200, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage.</power>
+		<power>Periodic Ability: When their HP falls below 200, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="unique_thehunger_enemy">
@@ -22441,7 +22441,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Cannot fight or sabotage, but is practically invulnerable to incoming damage. Has an immense amount of HP, but naturally decays as their hunger eats away at them. Disparity beacons increase the rate of this decay.</power>
-		<power>Active Ability: When their HP falls below 50, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage. It's of the upmost importance that you avoid giving the Hunger charge, and stay away while they're below 50 HP!</power>
+		<power>Periodic Ability: When their HP falls below 50, assuming their ability has been charged via stalking enemies, they will spawn a special beacon that sends them and all allied Engi on a rampage. It's of the upmost importance that you avoid giving the Hunger charge, and stay away while they're below 50 HP!</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddseraph_engi">
@@ -22453,7 +22453,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Has default Engi repair speed (2x), but moves 1.5x faster, deals 1.5x damage, takes 0.8x combat damage, suffocates at half speed, resists mind control and heals from fires.</power>
-		<power>Active Ability: Harnesses its light to strike at the enemy ship, dealing system damage, causing a fire and inflicting the room with a stack of Divine Judgment.</power>
+		<power>Periodic Ability: Harnesses its light to strike at the enemy ship, dealing system damage, causing a fire and inflicting the room with a stack of Divine Judgment.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddseraph_engi_enemy">
@@ -22465,7 +22465,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Has default Engi repair speed (2x), but moves 1.5x faster, deals 1.5x damage, takes 0.8x combat damage, suffocates at half speed, resists mind control and heals from fires.</power>
-		<power>Active Ability: Harnesses its light to strike at the enemy ship, dealing system damage, causing a fire and inflicting the room with a stack of Divine Judgment.</power>
+		<power>Periodic Ability: Harnesses its light to strike at the enemy ship, dealing system damage, causing a fire and inflicting the room with a stack of Divine Judgment.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="disparity_engidefault">
