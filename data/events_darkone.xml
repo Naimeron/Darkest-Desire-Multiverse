@@ -139,7 +139,8 @@
 	<beaconType id="map_icon_start" global="false">
 		<color r="46" g="252" b="51" a="1"/>
 	</beaconType>
-	<text>Finally, your ship comes to a stop... where the hell are you? Your ship's consoles all flash red, on and off; alarms are blaring.</text>
+	<text>Finally, your ship comes to a stop... where the hell are you? Your ship's consoles all flash red, on and off - every one of their alarms blaring desperately.</text>
+	<metaVariable name="juke_ddadistantdream" op="set" val="1"/>
 	<changeBackground>BACKGROUND_ENLIGHTENEDDARKGOD</changeBackground>
 	<backgroundObject name="DDDARKGODDOMAINAURA_BACKGROUND">
 		<layer z="0">background</layer>
@@ -150,7 +151,7 @@
 	<choice hidden="true" req="darkone_alignment" lvl="0" blue="false" max_group="0">
 		<text>Gather your bearings.</text>
 		<event>
-			<text>Panicking won't do you any good, so you take a moment to calm down and figure out what's happening. Your Atlas reads that you've been pulled many times deeper into the void... this isn't Enlightened territory, anymore. There is hope, though; beacons dot the sector, and an exit lies among them.</text>
+			<text>Panicking won't do you any good, so you take a moment to steel your nerves and figure out what's happening. Your Atlas reads that you've been pulled many times deeper into the void... this isn't Enlightened territory, anymore. There is hope, though - beacons somehow still dot this distant space, and an exit seems to lie among them.</text>
 			<choice hidden="true">
 				<text>That's it, then! Make a break for that exit!</text>
 				<event>
@@ -1798,7 +1799,7 @@
 					<choice hidden="true" req="unique_thescarred">
 						<text>(The Scarred) The truth... behind the Scarred.</text>
 						<event>
-							<text>"THE TRAITOR... WAS A MISCALCULATION. I THOUGHT IT WORTHY OF BECOMING MY BLADE - IT PROVED ITSELF WORTHY OF NAUGHT BUT SHATTERING IT. NOW, BOTH IT AND MY BLADE LIE IN PIECES - WAITING FOR THE DAY THAT THEY'RE RESTORED, AND ABLE ENACT THEIR WILL ONCE MORE... OR FOR THE DAY THAT THEY WITHER AWAY INTO DUST, AND BECOME LITTLE BUT A FORGOTTEN MEMORY." There's a pause, as the Dark God seems to ponder something, "I... WOULD SUGGEST KEEPING AN EYE ON IT, IF YOU INTEND TO KEEP IT. YOU'VE SEEN WHERE TRUSTING IT HAS LEFT ME."</text>
+							<text>"THE TRAITOR... WAS A MISCALCULATION. I THOUGHT IT WORTHY OF BECOMING MY BLADE - IT PROVED ITSELF WORTHY OF NAUGHT BUT SHATTERING IT. NOW, BOTH IT AND MY BLADE LIE IN PIECES - WAITING FOR THE DAY THAT THEY'RE RESTORED, AND ABLE TO ENACT THEIR WILL ONCE MORE... OR FOR THE DAY THAT THEY WITHER AWAY INTO DUST, AND BECOME LITTLE BUT A FORGOTTEN MEMORY." There's a pause, as the Dark God seems to ponder something, "I... WOULD SUGGEST KEEPING AN EYE ON IT, IF YOU INTEND TO KEEP IT. YOU'VE SEEN WHERE TRUSTING IT HAS LEFT ME."</text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>

@@ -4676,7 +4676,7 @@
 	<triggeredEvent event="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH_SERAPHIMSUPPORT" time="20" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>As you land one final, decisive blow against the Disparity Behemoth's mighty crystalline armor, it cracks... and then, it shatters! You've done it, you've won!</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHEBEHEMOTH_WIN"/>
@@ -4684,7 +4684,7 @@
 	</destroyed>
 	<deadCrew>
 		<text>As the final member of the Disparity Behemoth's crew falls, a screeching cry rings out, and the ship's mighty crystalline hull cracks... and then, it shatters! You've done it, you've won!</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<recallBoarders/>
 		<enemyDamage amount="999"/>
 		<choice hidden="true">
@@ -4861,7 +4861,7 @@
 	<triggeredEvent event="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM_BEHEMOTHSUPPORT" time="20" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>As you land one final, decisive blow against the Seraphim Judicator's flaming hull, it breaks apart! You've done it, you've won!</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSTHESERAPHIM_WIN"/>
@@ -4869,7 +4869,7 @@
 	</destroyed>
 	<deadCrew>
 		<text>As the final member of the Seraphim Judicator's crew falls, a heavenly screech rings out, and the ship breaks apart! You've done it, you've won!</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<recallBoarders/>
 		<enemyDamage amount="999"/>
 		<choice hidden="true">
@@ -5052,7 +5052,7 @@
 	<triggeredEvent event="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_SETTHESEASABLAZE" enemyHull="8" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>Even after all of that, they STILL fall. Hah, haha! Oh, can anything stop you...?</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISPARITY_KEYQUEST_LINK_FINALSHOWDOWN_VSBEHEMOTHNEO_WIN"/>

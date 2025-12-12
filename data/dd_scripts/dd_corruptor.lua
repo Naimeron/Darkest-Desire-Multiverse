@@ -15,7 +15,7 @@ local function vter(cvec)
 end
 
 local systemIdName = "dd_corruptor"
-local corruptor_durations = {10, 17, 22, 25}
+local corruptor_durations = {8, 19, 26, 29}
 corruptor_durations[0] = 0
 
 local roomAnimString = "effects/ddsoulplague_corruptor_room_effect"
@@ -29,7 +29,7 @@ end
 --Handles tooltips and mousever descriptions per level
 local function get_level_description_corruptor(systemId, level, tooltip)
     if systemId == Hyperspace.ShipSystem.NameToSystemId(systemIdName) then
-        return string.format("%is infection, %is per spawn", corruptor_durations[level], 10 - level)
+        return string.format("%is infection, %is per spawn", corruptor_durations[level], 8 - level)
     end
 end
 
@@ -118,7 +118,7 @@ script.on_init(function()
     corruptor_targetShip = nil
 end)
 local cursorImage = Hyperspace.Resources:CreateImagePrimitiveString("mouse/pointer_"..systemIdName..".png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local corruptorSpawnTimerMax = 10
+local corruptorSpawnTimerMax = 8
 local corruptorSpawnTimer = 0
 local corruptorDuration = 0
 local corruptor_targetRoomTemp = nil
@@ -337,7 +337,7 @@ function(systemBox, ignoreStatus)
 end, corruptor_render)
 
 local corruptor_targetRoomEnemy = nil
-local corruptorSpawnTimerMaxEnemy = 10
+local corruptorSpawnTimerMaxEnemy = 8
 local corruptorSpawnTimerEnemy = 0
 local corruptorDurationEnemy = 0
 
@@ -393,7 +393,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
         if corruptor_targetRoomTemp and corruptor_ready(corruptorSystem) then
             corruptorSystem:LockSystem(-1)
             local effectivePower = corruptorSystem:GetEffectivePower()
-            corruptorSpawnTimerMax = 10 - effectivePower
+            corruptorSpawnTimerMax = 8 - effectivePower
             corruptorSpawnTimer = corruptorSpawnTimerMax
             corruptor_targetRoom = corruptor_targetRoomTemp
             corruptor_targetShip = corruptor_targetShipTemp
@@ -416,19 +416,19 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
                 corruptorDuration = 0
                 corruptor_targetRoom = nil
                 corruptor_targetShip = nil
-                corruptorSystem:LockSystem(4)
+                corruptorSystem:LockSystem(5)
             end
         elseif corruptor_targetRoom then 
             corruptor_targetRoom = nil
             corruptor_targetShip = nil
-            corruptorSystem:LockSystem(corruptorSystem.iLockCount + 4)
+            corruptorSystem:LockSystem(corruptorSystem.iLockCount + 5)
         end
 
         if corruptorSystem.iLockCount == -1 and corruptor_targetShip == 1 and Hyperspace.ships.enemy.bDestroyed then
             corruptorDuration = 0
             corruptor_targetRoom = nil
             corruptor_targetShip = nil
-            corruptorSystem:LockSystem(4)
+            corruptorSystem:LockSystem(5)
         end
     else
         local corruptorSystem = nil
@@ -442,7 +442,7 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
             if corruptor_ready_enemy(corruptorSystem) and not corruptor_targetRoomEnemy then
                 corruptorSystem:LockSystem(-1)
                 local effectivePower = corruptorSystem:GetEffectivePower()
-                corruptorSpawnTimerMaxEnemy = 10 - effectivePower
+                corruptorSpawnTimerMaxEnemy = 8 - effectivePower
                 corruptorSpawnTimerEnemy = corruptorSpawnTimerMax
                 corruptor_targetRoomEnemy = get_room_at_location(Hyperspace.ships.player, Hyperspace.ships.player:GetRandomRoomCenter(), false)
                 corruptorDurationEnemy = corruptor_durations[effectivePower]
@@ -460,11 +460,11 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
                 if corruptorDurationEnemy <= 0 then
                     corruptorDurationEnemy = 0
                     corruptor_targetRoomEnemy = nil
-                    corruptorSystem:LockSystem(4)
+                    corruptorSystem:LockSystem(5)
                 end
             elseif corruptor_targetRoomEnemy then
                 corruptor_targetRoomEnemy = nil
-                corruptorSystem:LockSystem(corruptorSystem.iLockCount + 4)
+                corruptorSystem:LockSystem(corruptorSystem.iLockCount + 5)
             end
         end        
     end

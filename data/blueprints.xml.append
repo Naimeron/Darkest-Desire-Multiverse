@@ -685,8 +685,8 @@
 <weaponBlueprint name="TWILIGHT_INEXORABLE_PLAYER">
 	<type>BEAM</type>
 	<tip>tip_ddtear_weapon</tip>
-	<title>Twilight Inexorable†</title>
-	<short>T. Inexorable†</short>
+	<title>Twilight Inexorable††</title>
+	<short>T. Inexorable††</short>
 	<desc>A weapon of mass destruction that seems to harness the power of the Dark God itself. Fires a Pinpoint beam that pierces most shields, deals rapid erosion damage and generates volatile tears in space that ravage the target room.</desc>
 	<tooltip>Generates volatile tears in space that ravage the target room. Pierces shields.</tooltip>
 	<damage>0</damage>
@@ -1355,7 +1355,7 @@
 	<drone_targetable>1</drone_targetable>
 	<desc>An in-development prototype of the Corruptor system, found deep within the confines of the Geniocracy's abandoned Epsilon Lab. It rapidly stores up nodules of Soulplague-infected matter, which it can fire as a simultaneous barrage of Soulplague Tides.</desc>
 	<tooltip>If only she'd realized the weight behind her words, soon to be broken... never to be mended.</tooltip>
-	<radius>60</radius>
+	<radius>65</radius>
 	<damage>0</damage>
 	<sysDamage>1</sysDamage>
 	<shots>1</shots>
@@ -1367,7 +1367,7 @@
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<cooldown>3</cooldown>
+	<cooldown>4</cooldown>
 	<power>2</power>
 	<cost>115</cost>
 	<bp>10</bp>
@@ -1688,7 +1688,7 @@
 	<tip>tip_ddplagueridden_weapon</tip>
 	<desc>This weapon appears to vaguely resemble the Flak Gun MK 1, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts rooms hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Shoots 2 projectiles, somewhat inaccurately. Each projectile that lands deals damage and inflicts rooms hit with Plagueridden for 12 seconds.</tooltip>
-	<radius>50</radius>
+	<radius>40</radius>
 	<damage>1</damage>
 	<noPersDamage>true</noPersDamage>
 	<statBoosts>
@@ -1962,7 +1962,7 @@
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>9.5</cooldown>
 	<power>1</power>
 	<cost>65</cost>
 	<bp>10</bp>
@@ -2270,7 +2270,7 @@
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>9.5</cooldown>
+	<cooldown>8.5</cooldown>
 	<color>
 		<r>169</r>
 		<g>97</g>
@@ -2562,7 +2562,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>0</stunChance>
-	<cooldown>8.5</cooldown>
+	<cooldown>8</cooldown>
 	<power>2</power>
 	<cost>90</cost>
 	<bp>3</bp>
@@ -2874,7 +2874,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>8</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>17.5</cooldown>
+	<cooldown>16</cooldown>
 	<power>2</power>
 	<cost>80</cost>
 	<bp>6</bp>
@@ -3179,7 +3179,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
 	<stunChance>3</stunChance>
-	<cooldown>18.5</cooldown>
+	<cooldown>18</cooldown>
 	<power>3</power>
 	<cost>95</cost>
 	<bp>10</bp>
@@ -3214,7 +3214,7 @@
 	<tip>tip_ddplagueridden_weapon</tip>
 	<desc>This weapon appears to vaguely resemble the Flak Gun MK 1, but it's been thoroughly corrupted by the Soulplague mattervirus. Inflicts rooms hit with Plagueridden, infecting and hindering enemies.</desc>
 	<tooltip>Shoots 2 projectiles, somewhat inaccurately. Each projectile that lands deals damage and inflicts rooms hit with Plagueridden for 12 seconds.</tooltip>
-	<radius>50</radius>
+	<radius>40</radius>
 	<damage>1</damage>
 	<noPersDamage>true</noPersDamage>
 	<statBoosts>
@@ -3488,7 +3488,7 @@
 	<spin>720</spin>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>11</cooldown>
+	<cooldown>9.5</cooldown>
 	<power>1</power>
 	<cost>65</cost>
 	<bp>10</bp>
@@ -3796,7 +3796,7 @@
 	<sp>3</sp>
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
-	<cooldown>9.5</cooldown>
+	<cooldown>8.5</cooldown>
 	<color>
 		<r>169</r>
 		<g>97</g>
@@ -4088,7 +4088,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>0</stunChance>
-	<cooldown>8.5</cooldown>
+	<cooldown>8</cooldown>
 	<power>2</power>
 	<cost>90</cost>
 	<bp>3</bp>
@@ -4400,7 +4400,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>8</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>17.5</cooldown>
+	<cooldown>16</cooldown>
 	<power>2</power>
 	<cost>80</cost>
 	<bp>6</bp>
@@ -4705,7 +4705,7 @@
 	<fireChance>0</fireChance>
 	<breachChance>3</breachChance>
 	<stunChance>3</stunChance>
-	<cooldown>18.5</cooldown>
+	<cooldown>18</cooldown>
 	<power>3</power>
 	<cost>95</cost>
 	<bp>10</bp>
@@ -9364,7 +9364,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9372,7 +9372,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9380,7 +9380,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9388,7 +9388,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9472,7 +9472,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9480,7 +9480,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9488,7 +9488,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9496,7 +9496,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9580,7 +9580,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9588,7 +9588,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9596,7 +9596,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9604,7 +9604,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9688,7 +9688,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9696,7 +9696,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9704,7 +9704,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9712,7 +9712,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9796,7 +9796,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9804,7 +9804,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9812,7 +9812,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9820,7 +9820,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9904,7 +9904,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9912,7 +9912,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9920,7 +9920,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -9928,7 +9928,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10012,7 +10012,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10020,7 +10020,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10028,7 +10028,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10036,7 +10036,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10120,7 +10120,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10128,7 +10128,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10136,7 +10136,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10144,7 +10144,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10228,7 +10228,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10236,7 +10236,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10244,7 +10244,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10252,7 +10252,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10336,7 +10336,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10344,7 +10344,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10352,7 +10352,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10360,7 +10360,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10444,7 +10444,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10452,7 +10452,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10460,7 +10460,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10468,7 +10468,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10552,7 +10552,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10560,7 +10560,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10568,7 +10568,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10576,7 +10576,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10660,7 +10660,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10668,7 +10668,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10676,7 +10676,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10684,7 +10684,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10768,7 +10768,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10776,7 +10776,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10784,7 +10784,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10792,7 +10792,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10876,7 +10876,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10884,7 +10884,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10892,7 +10892,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -10900,7 +10900,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11600,7 +11600,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11608,7 +11608,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11616,7 +11616,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11624,7 +11624,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11708,7 +11708,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11716,7 +11716,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11724,7 +11724,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11732,7 +11732,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11816,7 +11816,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11824,7 +11824,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11832,7 +11832,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11840,7 +11840,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11924,7 +11924,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11932,7 +11932,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11940,7 +11940,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -11948,7 +11948,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12032,7 +12032,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12040,7 +12040,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12048,7 +12048,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12056,7 +12056,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12140,7 +12140,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12148,7 +12148,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12156,7 +12156,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12164,7 +12164,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12248,7 +12248,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12256,7 +12256,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12264,7 +12264,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12272,7 +12272,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12356,7 +12356,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12364,7 +12364,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12372,7 +12372,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12380,7 +12380,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12464,7 +12464,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12472,7 +12472,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12480,7 +12480,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12488,7 +12488,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12572,7 +12572,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12580,7 +12580,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12588,7 +12588,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12596,7 +12596,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12680,7 +12680,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12688,7 +12688,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12696,7 +12696,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12704,7 +12704,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12788,7 +12788,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12796,7 +12796,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12804,7 +12804,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12812,7 +12812,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12896,7 +12896,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12904,7 +12904,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12912,7 +12912,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -12920,7 +12920,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13004,7 +13004,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13012,7 +13012,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13020,7 +13020,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13028,7 +13028,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13112,7 +13112,7 @@
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>2.0</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13120,7 +13120,7 @@
 			<statBoost name="moveSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13128,7 +13128,7 @@
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -13136,7 +13136,7 @@
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
 				<amount>0.5</amount>
-				<duration>4</duration>
+				<duration>6</duration>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
@@ -16942,8 +16942,8 @@
 	<type>BEAM</type>
 	<title>Dark Metamorphosis Artillery</title>
 	<short>Artillery</short>
-	<desc>[Base cooldown: 14] Fires a piercing beam that damages systems, summons a Hungering Shadow and creates a temporary shroud of darkness in the room hit.</desc>
-	<tooltip>Artillery: Fires a piercing beam that has a 100% chance of summoning a Hungering Shadow for 21 seconds and additionally creates a temporary shroud of darkness in the room hit for 12 seconds. Has a 60% chance to cause breaches and deals 2 system damage.</tooltip>
+	<desc>[Base cooldown: 14] Fires a piercing Pinpoint beam that damages systems, summons a Hungering Shadow and creates a temporary shroud of darkness in the room hit.</desc>
+	<tooltip>Artillery: Fires a piercing Pinpoint beam that has a 100% chance of summoning a Hungering Shadow for 21 seconds and additionally creates a temporary shroud of darkness in the room hit for 12 seconds. Has a 60% chance to cause breaches and deals 2 system damage.</tooltip>
 	<damage>0</damage>
 	<sysDamage>2</sysDamage>
 	<sp>10</sp>
@@ -22270,8 +22270,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP raised to 140 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
-		<power>Threshold Ability: When their health falls to 95 they go berserk, losing movement speed and the ability to man or repair but gaining greatly increased combat prowess and HP regen.</power>
+		<power>Max HP raised to 120 and suffocation damage reduced by 60%. Takes 40% more fire damage and has its speed slowed by 40%.</power>
+		<power>Threshold Ability: When their HP falls below 20, they enrage, pushing their body to its limits. Doing so lowers most of their stats by 20% semi-permanently (until either dying or jumping), but it also grants them a brief burst of greatly increased combat prowess and HP regen.</power>
 	</powerList>
 	<colorList>
 		<layer>
@@ -22305,7 +22305,7 @@
 <crewBlueprint name="deeponecultist">
 	<desc>Particularly mysterious Deep Ones that call themselves the Enlightened. They've been granted great power, at a price.
 	
-	Inherited Deep One stats: 140 health, 40% slower movement</desc>
+	Inherited Deep One stats: 120 health, 40% slower movement</desc>
 	<title>Deep One Cultist</title>
 	<short>Enlightened</short>
 	<cost>85</cost>
@@ -22327,7 +22327,7 @@
 <crewBlueprint name="deeponecultist_enemy">
 	<desc>Particularly mysterious Deep Ones that call themselves the Enlightened. They've been granted great power, at a price.
 	
-	Inherited Deep One stats: 140 health, 40% slower movement</desc>
+	Inherited Deep One stats: 120 health, 40% slower movement</desc>
 	<title>Deep One Cultist</title>
 	<short>Enlightened</short>
 	<cost>85</cost>
@@ -22373,7 +22373,7 @@
 <crewBlueprint name="unique_thescarred">
 	<desc>This Deep One has been forsaken by both their kind and their Dark God, and yet... it seems that, somehow, they've taken the power to resist both for themself.
 	
-	Inherited Deep One stats: 140 health, 40% slower movement, 60% suffocation resistance and 1.4x fire weakness</desc>
+	Inherited Deep One stats: 120 health, 40% slower movement, 60% suffocation resistance and 1.4x fire weakness</desc>
 	<title>Forsaken</title>
 	<short>Forsaken</short>
 	<cost>115</cost>
@@ -23591,7 +23591,7 @@
 <crewBlueprint name="dddeepone_chosen">
 	<desc>Elite Deep One Crew. Chosen to enact the Dark God's will, they're above even the Enlightened, and as such are rarely seen outside of the Dark God's nightmarish realm.
 	
-	Inherited Deep One stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed</desc>
+	Inherited Deep One stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed</desc>
 	<title>Deep One Chosen</title>
 	<short>Chosen</short>
 	<cost>105</cost>
@@ -24026,7 +24026,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 25 and movement speed reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
+		<power>Max HP reduced to 20 and movement speed/combat damage reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
 		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Heals ally Soulplague-aligned crew in the same room for 1HP/s.</power>
 	</powerList>
 </crewBlueprint>
@@ -24038,7 +24038,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Max HP reduced to 25 and movement speed reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
+		<power>Max HP reduced to 20 and movement speed/combat damage reduced to 0.7x. Immune to suffocation and mind control, but 2x weak to fire.</power>
 		<power>Enemies in the same room are infected with Soulplague, and it inflicts a room with Plagueridden upon death. Heals ally Soulplague-aligned crew in the same room for 1HP/s.</power>
 	</powerList>
 </crewBlueprint>
@@ -24183,7 +24183,7 @@
 <crewBlueprint name="ddunique_theheroine">
 	<desc>A valorous Deep One clad head-to-toe in armor and armed with a mighty spear. She fights to protect her kin with a supernatural fervor, rarely caring for her own well-being.
 	
-	Inherited Deep One stats: 140 health, 40% slower movement, 60% suffocation resistance</desc>
+	Inherited Deep One stats: 120 health, 40% slower movement, 60% suffocation resistance</desc>
 	<title>Protector</title>
 	<short>Protector</short>
 	<cost>115</cost>
@@ -24197,7 +24197,7 @@
 <crewBlueprint name="ddunique_theheroine_enemy">
 	<desc>A valorous Deep One clad head-to-toe in armor and armed with a mighty spear. She fights to protect her kin with a supernatural fervor, rarely caring for her own well-being.
 	
-	Inherited Deep One stats: 140 health, 40% slower movement, 60% suffocation resistance</desc>
+	Inherited Deep One stats: 120 health, 40% slower movement, 60% suffocation resistance</desc>
 	<title>Protector</title>
 	<short>Protector</short>
 	<cost>115</cost>
@@ -24340,7 +24340,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Max HP raised to 120 and repair speed increased by 80%. Takes 50% more damage from hazards and has its speed slowed by 20%.</power>
-		<power>Active Ability: Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies and allowing you to control ally Stormborn Spawn.</power>
+		<power>Active Ability: Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies and allowing you to control ally Stormborn Spawn. Takes damage overtime while praying.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddtempest_spawn_warden_praying">
@@ -24352,7 +24352,7 @@
 	<rarity>0</rarity>
 	<powerList>
 		<power>Max HP raised to 120 and repair speed increased by 80%. Takes 50% more damage from hazards and has its speed slowed by 20%.</power>
-		<power>Active Ability: Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies and allowing you to control ally Stormborn Spawn.</power>
+		<power>Active Ability: Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies and allowing you to control ally Stormborn Spawn. Takes damage overtime while praying.</power>
 	</powerList>
 </crewBlueprint>
 <crewBlueprint name="ddhuman_sacrifice">
@@ -24617,7 +24617,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_shatter">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Shattered Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24632,7 +24632,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_plague">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Plagued Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24647,7 +24647,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_dark">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Darkened Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24662,7 +24662,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_cloud">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Clouded Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24677,7 +24677,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_judge">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Judged Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24692,7 +24692,7 @@
 <crewBlueprint name="dddeepone_tributeshaper_cage">
 	<desc>Elite Deep One Crew. Elder members of the Enlightened, adept in soul manipulation, that swear themselves to the protection of their kin above all else - refusing to lose themselves entirely to otherworldly devotion.
 	
-	Inherited Deep One/Enlightened stats: 140 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
+	Inherited Deep One/Enlightened stats: 120 HP, 60% suffocation resistance, 40% fire weakness, 40% lower movement speed, passive 2HP/s healing after 11s, Space Tear on death, can't be cloned</desc>
 	<title>Caged Tributeshaper</title>
 	<short>Tributeshaper</short>
 	<cost>105</cost>
@@ -24817,8 +24817,8 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Shares similar capabilities and weaknesses to the main body, but has worse health (35 HP), repair speed (0.5x), combat damage (0.5x) and oxygen generation, and additionally doesn't generate power.</power>
-		<power>Each Outgrowth grants stacking benefits to all ally Blight Guardians, including healing (0.5HP/s), increased max health (+10 HP), repair speed, combat damage and ability regen rate (all +0.1).</power>
+		<power>Shares similar capabilities and weaknesses to the main body, but has worse health (15 HP), repair speed (0.5x), combat damage (0.5x) and oxygen generation, and additionally doesn't generate power.</power>
+		<power>Each Outgrowth grants stacking benefits to all ally Blight Guardians, including healing (0.25HP/s), increased max health (+5 HP), repair speed, combat damage and ability regen rate (all +0.05).</power>
 		<power>Learns skills incredibly quickly and will passively heal after a delay (1.5HP/s after 14s). If the main body dies, and there're no other Blight Guardians to take its place, every Outgrowth will perish as well.</power>
 		<power>Periodic Ability: Stuns enemies for 1 second as they get near it.</power>
 	</powerList>
@@ -24843,7 +24843,7 @@
 	<bp>2</bp>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Has lowered health (35 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Moves incredibly quickly, of its own volition.</power>
+		<power>Has lowered health (15 HP), is resistant to suffocation (0.75x), weak to fire (1.75x) and immune to mind control. Moves incredibly quickly, of its own volition.</power>
 		<power>Automatic Ability: Quickly plants itself into the ground, becoming an Outgrowth of a Blight Guardian.</power>
 	</powerList>
 </crewBlueprint>
@@ -24933,6 +24933,28 @@
 	<powerList>
 		<power>Soulshell Mutagen: Counts as a Soulplague-aligned ally and infects nearby enemies with Soulplague; ability's fog briefly inflicts the room with Plagueridden.</power>
 		<power>Active Ability: Fills a room with fog, temporarily allowing all ally Ill'drythk Statues in the room to act.</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddforsaken_priestess">
+	<desc>placeholder</desc>
+	<title>placeholder</title>
+	<short>placeholder</short>
+	<cost>105</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>placeholder</power>
+	</powerList>
+</crewBlueprint>
+<crewBlueprint name="ddforsaken_priestess_raidboss">
+	<desc>placeholder</desc>
+	<title>placeholder</title>
+	<short>placeholder</short>
+	<cost>105</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<powerList>
+		<power>placeholder</power>
 	</powerList>
 </crewBlueprint>
 
@@ -25183,13 +25205,27 @@
 	<desc>Infects the target room with a special strain of the Soulplague mattervirus, periodically spawning Soulplague Tides to flood the room and spread infection over time.</desc>
 	<startPower>1</startPower>
 	<maxPower>4</maxPower>
-	<rarity>1</rarity>
+	<rarity>0</rarity>
 	<upgradeCost>
-		<level>65</level> <!-- level 2 -->
+		<level>55</level> <!-- level 2 -->
 		<level>9999</level> <!-- level 3 -->
 		<level>9999</level> <!-- level 4 -->
 	</upgradeCost>
-	<cost>125</cost>
+	<cost>60</cost>
+</systemBlueprint>
+<systemBlueprint name="dd_whisperingichor"> <!-- coded by Lily -->
+	<type>mind</type>
+	<title>Whispering Ichor</title>
+	<desc>Utilizes Blood as a resource, allowing you to perform a number of actions related to manipulating enemies' and allies' Fear and Hope meters - assuming you can pay the price.</desc>
+	<startPower>1</startPower>
+	<maxPower>4</maxPower>
+	<rarity>0</rarity>
+	<upgradeCost>
+		<level>60</level> <!-- level 2 -->
+		<level>120</level> <!-- level 3 -->
+		<level>180</level> <!-- level 4 -->
+	</upgradeCost>
+	<cost>110</cost>
 </systemBlueprint>
 
 <shipBlueprint name="PLAYER_DEEP_ONE" layout="deeponeship" img="deeponeship">
@@ -25945,9 +25981,9 @@
 			</slot>
 		</weapons>
 	</systemList>
-	<weaponSlots>3</weaponSlots>
+	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="0" count="3">
+	<weaponList missiles="0" count="4">
 		<weapon name="DDPHASE_SOULPLAGUE" />
 		<weapon name="DDSHOTGUN_SOULPLAGUE" />
 	</weaponList>
@@ -28410,8 +28446,59 @@
 </augBlueprint>
 <augBlueprint name="DD_INTERNAL_AUGMENT3">
 	<title>Density Amplifier</title>
-	<desc>The Soulplague Tides spawned by your Corruptor System have +10 max HP and take 0.25x damage from fire.</desc>
+	<desc>The Soulplague Tides spawned by your Corruptor System have +15 max HP and take 0.25x damage from fire.</desc>
 	<cost>35</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1">
+	<title>Heightened Tribute</title>
+	<desc>Enemies targeted with Mark for Tribute passively take damage overtime.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2">
+	<title>Heightened Sacrifice</title>
+	<desc>Allies targeted with Mark for Sacrifice now passively generate 5 Blood per second while alive.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3">
+	<title>Mantle of Terror</title>
+	<desc>Enemies targeted with Instill Terror now additionally passively fill the Fear meters of other nearby enemies.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4">
+	<title>Mantle of Dreams</title>
+	<desc>Allies targeted with Inspire Dreams now additionally passively fill the Hope meters of other nearby allies.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5">
+	<title>Aura of Bloodletting</title>
+	<desc>Enemies in the Whispering Ichor room generate 1.5x Blood.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6">
+	<title>Aura of Emotion</title>
+	<desc>ALL crew in the Whispering Ichor room are 1.5x sensitive to Fear/Hope manipulation.</desc>
+	<cost>10</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7">
+	<title>Everlasting Heroism</title>
+	<desc>The Forsaken Priestess will now periodically manifest in one of five ways when you are actively engaged in ship combat. Dealing with her properly rewards you Blood, and Hope generation for allies, whereas failing to deal with her properly results in you losing Blood, and Fear generation for allies.
+	
+	In order to deal with her manifestations, you are granted a set of three buttons - more information on how to properly utilize these buttons will be in the storage menu.</desc>
+	<cost>10</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>

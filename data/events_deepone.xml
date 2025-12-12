@@ -2042,7 +2042,7 @@
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>With their otherworldly crew defeated, you're free to steal the cage back from within their ship... inndeed, whatever's inside is still making those same, wet noises.</text>
+		<text>With their otherworldly crew defeated, you're free to steal the cage back from within their ship... indeed, whatever's inside is still making those same, wet noises.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3248,7 +3248,7 @@
 	<choice hidden="true" req="LIST_DDSOULPLAGUE_ALIGNED">
 		<text>(Soulplague Crew) Your Soulplague-aligned crew member makes a strange gurgling noise.</text>
 		<event>
-			<text>It's hard to think about the madness you've just had the displeasure of living through with your crew member making noises like that... can't they see you're trying to solve a mystery here?</text>
+			<text>It's hard to think about the madness you've just had the displeasure of living through with your crew member making noises like that... can't they see that you're trying to solve a mystery here?</text>
 		</event>
 	</choice>
 	<choice>
@@ -3776,7 +3776,7 @@
 	</destroyed>
 	<deadCrew>
 		<text>With the crew dead you quickly salvage what you can.</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DISTRESS_DDDEEPONE_SOULPLAGUEINCURSION_FIGHT_WIN_DEADCREW"/>

@@ -381,7 +381,7 @@
 </ship>
 
 <event name="START_DDSOULPLAGUE_FIGHT_WIN">
-	<text>As things die down, the realization begins to sink in... that ship was piloted by Soulplague Husks. Most of what the Multiverse knows about the Soulplague mattervirus, and by extension its Husks, comes from infections born from the now-widespread use of the Corruptor system, but it's not unheard of to find the zombified remains of a ship's crew after they've been executed by it. Still, though... to find it all the way out here feels like an omen of things to come. Stay on your guard.</text>
+	<text>As things die down, the realization begins to sink in... that ship was piloted by Soulplague Husks. Most of what the Multiverse knows about the Soulplague mattervirus - and by extension its Husks - comes from infections borne from the rarely-seen Corruptor system, but it's not entirely unheard of to find the zombified remains of a ship's crew after they've been executed by it. Still, though... to find it all the way out here feels like an omen of things to come. Stay on your guard.</text>
 	<choice hidden="true">
 		<text>Let's head off, then.</text>
 		<event>

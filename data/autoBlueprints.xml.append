@@ -1,7 +1,3 @@
-<mod:findName type="blueprintList" name="SHOP_ITEM_SYSTEMS_BONUS">
-    <mod-append:name>dd_corruptor</mod-append:name>
-</mod:findName>
-
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE">
 	<mod-append:name>unique_thescarred</mod-append:name>
 	<mod-append:name>unique_thehunger</mod-append:name>
@@ -1247,7 +1243,7 @@
 
 <blueprintList name="SHOP_DEEPONE_ITEM_WEAPONS">
 	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_2</name>
 	<name>LASER_BURST_3</name>
 	<name>LASER_HEAVY_1</name>
 	<name>BEAM_1</name>
@@ -1269,7 +1265,7 @@
 	<name>ION_TRI</name>
 	<name>ION_FIRE</name>
 	<name>ION_BIO</name>
-	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_PIERCE</name>
 	<name>LASER_FROST_1</name>
 	<name>BEAM_STUN</name>
 	<name>ENERGY_1</name>

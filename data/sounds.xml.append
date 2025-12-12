@@ -37,6 +37,11 @@
 		<name>ddtrialbyire</name>
 		<explore>dd_MUS_TrialbyIre.ogg</explore>
 	</track>
+	<track> <!--composed by Altzeus!! thank you Alt!!-->
+		<name>ddadistantdream</name>
+		<explore>dd_MUS_ADistantDream_EXPLORE.ogg</explore>
+		<combat>dd_MUS_ADistantDream_BATTLE.ogg</combat>
+	</track>
 </music>
 
 <happierHolidays volume="10">aliens/bp_sfx_happyholidays.ogg</happierHolidays>

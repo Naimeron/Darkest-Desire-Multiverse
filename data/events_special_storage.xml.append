@@ -3214,6 +3214,62 @@
 		<text>Density Amplifier [Not Installed]</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7" lvl="1" blue="false">
+		<text>Everlasting Heroism [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7" lvl="0" max_lvl="0" blue="false">
+		<text>Everlasting Heroism [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1" lvl="1" blue="false">
+		<text>Heightened Tribute [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1" lvl="0" max_lvl="0" blue="false">
+		<text>Heightened Tribute [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2" lvl="1" blue="false">
+		<text>Heightened Sacrifice [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2" lvl="0" max_lvl="0" blue="false">
+		<text>Heightened Sacrifice [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3" lvl="1" blue="false">
+		<text>Mantle of Terror [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3" lvl="0" max_lvl="0" blue="false">
+		<text>Mantle of Terror [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4" lvl="1" blue="false">
+		<text>Mantle of Dreams [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4" lvl="0" max_lvl="0" blue="false">
+		<text>Mantle of Dreams [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5" lvl="1" blue="false">
+		<text>Aura of Bloodletting [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5" lvl="0" max_lvl="0" blue="false">
+		<text>Aura of Bloodletting [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6" lvl="1" blue="false">
+		<text>Aura of Emotion [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6" lvl="0" max_lvl="0" blue="false">
+		<text>Aura of Emotion [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_LAB">
@@ -3248,6 +3304,10 @@
 		<text>Corruptor.</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR"/>
 	</mod-append:choice>
+	<mod-append:choice hidden="true" req="dd_whisperingichor" blue="false">
+		<text>Whispering Ichor.</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR"/>
+	</mod-append:choice>
 </mod:findName>
 
 <event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR">
@@ -3257,11 +3317,11 @@
         <event load="OPTION_INVALID"/>
     </choice>
 	<choice req="dd_corruptor" lvl="2" max_group="0" blue="false" hidden="true">
-        <text>Level 3 Corruptor [Cost: 85~, 4{]</text>
+        <text>Level 3 Corruptor [Cost: 70~, 4{]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3"/>
     </choice>
     <choice req="dd_corruptor" lvl="3" max_group="0" blue="false" hidden="true">
-        <text>Level 4 Corruptor [Cost: 120~, 6{, 3}]</text>
+        <text>Level 4 Corruptor [Cost: 105~, 6{, 3}]</text>
         <event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4"/>
     </choice>
 	<choice req="dd_corruptor" lvl="4" max_group="0" blue="false" hidden="true">
@@ -3281,7 +3341,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT2" lvl="0" max_group="2" blue="false" hidden="true">
-		<text>Psychic Emanator. [Cost: 65~, 1|]</text>
+		<text>Psychic Emanator. [Cost: 55~, 8|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_PSYCHICEMANATOR"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="1" max_group="3" blue="false" hidden="true">
@@ -3289,7 +3349,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="3" blue="false" hidden="true">
-		<text>Density Amplifier. [Cost: 40~, 2{, 2}]</text>
+		<text>Density Amplifier. [Cost: 30~, 2{, 2}]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_DENSITYAMPLIFIER"/>
 	</choice>
 	<choice>
@@ -3331,12 +3391,12 @@
 	<text>You are about to install the Psychic Emanator upgrade.
 	[Effects: Corruptor system stuns all non-Soulplague-aligned crew in the room for 2 seconds each time it spawns a Soulplague Tide.]</text>
 	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 65~, 1|]</text>
+		<text>Perform the upgrade. [Cost: 55~, 8|]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
-				<item type="drones" min="-1" max="-1"/>
-				<item type="scrap" min="-65" max="-65"/>
+				<item type="drones" min="-8" max="-8"/>
+				<item type="scrap" min="-55" max="-55"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3358,15 +3418,15 @@
 
 <event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_DENSITYAMPLIFIER">
 	<text>You are about to install the Density Amplifier upgrade.
-	[Effects: Soulplague Tides spawned by the Corruptor system have +10 max HP and take 0.25x damage from fire, is not compatible with Corruptor lvl 3]</text>
+	[Effects: Soulplague Tides spawned by the Corruptor system have +15 max HP and take 0.25x damage from fire, is not compatible with Corruptor lvl 3]</text>
 	<choice req="dd_corruptor" lvl="1" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 40~, 2{, 2}]</text>
+		<text>Perform the upgrade. [Cost: 30~, 2{, 2}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
 				<item type="fuel" min="-2" max="-2"/>
-				<item type="scrap" min="-40" max="-40"/>
+				<item type="scrap" min="-30" max="-30"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3392,15 +3452,15 @@
 
 <event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL3">
 	<text>You are about to upgrade the Corruptor to level 3.
-	[Effects: 16s infection, 5s per spawn]</text>
+	[Effects: 26s infection, 5s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 85~, 4{]</text>
+		<text>Perform the upgrade. [Cost: 70~, 4{]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
 			<item_modify>
 				<item type="fuel" min="-4" max="-4"/>
-				<item type="scrap" min="-85" max="-85"/>
+				<item type="scrap" min="-70" max="-70"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -3420,9 +3480,9 @@
 
 <event name="STORAGE_CHECK_SYSTEM_DDCORRUPTOR_LEVEL4">
 	<text>You are about to upgrade the Corruptor to level 4.
-	[Effects: 17s infection, 4s per spawn]</text>
+	[Effects: 29s infection, 4s per spawn]</text>
 	<choice req="DD_INTERNAL_AUGMENT3" lvl="0" max_group="0" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 120~, 6{, 3}]</text>
+		<text>Perform the upgrade. [Cost: 105~, 6{, 3}]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<upgrade amount="1" system="dd_corruptor"/>
@@ -3430,7 +3490,7 @@
 			<item_modify>
 				<item type="missiles" min="-3" max="-3"/>
 				<item type="fuel" min="-6" max="-6"/>
-				<item type="scrap" min="-120" max="-120"/>
+				<item type="scrap" min="-105" max="-105"/>
 			</item_modify>
 			<choice>
 				<text>Continue...</text>
@@ -3448,6 +3508,292 @@
 	</choice>
 </event>
 
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR">
+	<text>What upgrade do you want to install?</text>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Everlasting Heroism. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7" lvl="0" max_group="0" blue="false" hidden="true">
+		<text>Everlasting Heroism. [Cost: 1~]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_EVERLASTINGHEROISM"/>
+	</choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2" lvl="1" max_group="1" blue="false" hidden="true">
+        <text>Heightened Tribute. [UNAVAILABLE: mutually exclusive with Heightened Sacrifice]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1" lvl="1" max_group="1" blue="false" hidden="true">
+        <text>Heightened Tribute. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_1" lvl="0" max_group="1" blue="false" hidden="true">
+        <text>Heightened Tribute. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_HEIGHTENEDTRIBUTE"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1" lvl="1" max_group="2" blue="false" hidden="true">
+        <text>Heightened Sacrifice. [UNAVAILABLE: mutually exclusive with Heightened Tribute]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2" lvl="1" max_group="2" blue="false" hidden="true">
+        <text>Heightened Sacrifice. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_1" lvl="0" max_group="2" blue="false" hidden="true">
+        <text>Heightened Sacrifice. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_HEIGHTENEDSACRIFICE"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4" lvl="1" max_group="3" blue="false" hidden="true">
+        <text>Mantle of Terror. [UNAVAILABLE: mutually exclusive with Mantle of Dreams]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3" lvl="1" max_group="3" blue="false" hidden="true">
+        <text>Mantle of Terror. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_2" lvl="0" max_group="3" blue="false" hidden="true">
+        <text>Mantle of Terror. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_MANTLEOFTERROR"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3" lvl="1" max_group="4" blue="false" hidden="true">
+        <text>Mantle of Dreams. [UNAVAILABLE: mutually exclusive with Mantle of Terror]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4" lvl="1" max_group="4" blue="false" hidden="true">
+        <text>Mantle of Dreams. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_2" lvl="0" max_group="4" blue="false" hidden="true">
+        <text>Mantle of Dreams. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_MANTLEOFDREAMS"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6" lvl="1" max_group="5" blue="false" hidden="true">
+        <text>Aura of Bloodletting. [UNAVAILABLE: mutually exclusive with Aura of Emotion]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5" lvl="1" max_group="5" blue="false" hidden="true">
+        <text>Aura of Bloodletting. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_3" lvl="0" max_group="5" blue="false" hidden="true">
+        <text>Aura of Bloodletting. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_AURAOFBLOODLETTING"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5" lvl="1" max_group="6" blue="false" hidden="true">
+        <text>Aura of Emotion. [UNAVAILABLE: mutually exclusive with Aura of Bloodletting]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6" lvl="1" max_group="6" blue="false" hidden="true">
+        <text>Aura of Emotion. [ALREADY INSTALLED]</text>
+        <event load="OPTION_INVALID"/>
+    </choice>
+	<choice req="DD_WHISPERINGICHOR_INTERNALSET_3" lvl="0" max_group="6" blue="false" hidden="true">
+        <text>Aura of Emotion. [Cost: 1~]</text>
+       <event load="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_AURAOFEMOTION"/>
+    </choice>
+	<choice>
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_EVERLASTINGHEROISM">
+	<text>You are about to install the Everlasting Heroism upgrade.
+	[Effects: The Forsaken Priestess will now periodically manifest in one of five ways when you are actively engaged in ship combat. Dealing with her properly rewards you Blood, and Hope generation for allies, whereas failing to deal with her properly results in you losing Blood, and Fear generation for allies.
+	
+	In order to deal with her manifestations, you are granted a set of three buttons - more information on how to properly utilize these buttons will be in the storage menu.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_EVERLASTINGHEROISM"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_EVERLASTINGHEROISM">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_HEIGHTENEDTRIBUTE">
+	<text>You are about to install the Heightened Tribute upgrade.
+	[Effects: Enemies targeted with Mark for Tribute passively take damage over time. Mutually exclusive with Heightened Sacrifice.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_HEIGHTENEDTRIBUTE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_HEIGHTENEDTRIBUTE">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_HEIGHTENEDSACRIFICE">
+	<text>You are about to install the Heightened Sacrifice upgrade.
+	[Effects: Allies targeted with Mark for Sacrifice now passively generate 5 Blood per second while alive. Mutually exclusive with Heightened Tribute.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_HEIGHTENEDSACRIFICE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_HEIGHTENEDSACRIFICE">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_MANTLEOFTERROR">
+	<text>You are about to install the Mantle of Terror upgrade.
+	[Effects: Enemies targeted with Instill Terror now additionally passively fill the Fear meters of other nearby enemies. Mutually exclusive with Mantle of Dreams.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_MANTLEOFTERROR"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_MANTLEOFTERROR">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_MANTLEOFDREAMS">
+	<text>You are about to install the Mantle of Dreams upgrade.
+	[Effects: Allies targeted with Inspire Dreams now additionally passively fill the Hope meters of other nearby allies. Mutually exclusive with Mantle of Terror.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_MANTLEOFDREAMS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_MANTLEOFDREAMS">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_AURAOFBLOODLETTING">
+	<text>You are about to install the Aura of Bloodletting upgrade.
+	[Effects: Enemies in the Whispering Ichor room generate 1.5x Blood. Mutually exclusive with Aura of Emotion.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_AURAOFBLOODLETTING"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_AURAOFBLOODLETTING">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DDWHISPERINGICHOR_AURAOFEMOTION">
+	<text>You are about to install the Aura of Emotion upgrade.
+	[Effects: ALL crew in the Whispering Ichor room are 1.5x sensitive to Fear/Hope manipulation. Mutually exclusive with Aura of Bloodletting.]</text>
+	<choice req="dd_whisperingichor" lvl="1" max_group="0" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 1~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_DDWHISPERINGICHOR_AURAOFEMOTION"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+
+<event name="INSTALL_DDWHISPERINGICHOR_AURAOFEMOTION">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
 <mod:findName type="event" name="STORAGE_CHECK_BUTTON">
 	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
 		<text>(Otherworldly Tome) Investigate the Otherworldly Tome's rituals.</text>
@@ -3456,6 +3802,10 @@
 	<mod-append:choice hidden="true" req="DARKGOD_CURSED_BOOK" blue="false">
 		<text>(Otherworldly Tome) Brand one of your human crew members as a future human sacrifice.</text>
 		<event load="STORAGE_CHECK_AUG_DDHUMANSACRIFICEPREPARATION"/>
+	</mod-append:choice>
+	<mod-append:choice req="DD_INTERNAL_AUGMENT_WHISPERINGICHOR_7" hidden="true" blue="false">
+		<text>(Everlasting Heroism) Investigate the specifics of the internal augment.</text>
+		<event load="STORAGE_CHECK_DDEVERLASTINGHEROISMEXPLANATION"/>
 	</mod-append:choice>
 	<mod-append:choice hidden="true" req="BLUELIST_DDETHEREAL_FRAGMENTS" lvl="1" blue="false">
 		<text>(Ethereal Fragment) Manifest a promised dream.</text>
@@ -5856,7 +6206,7 @@
 					</choice>
 				</event>
 			</choice>
-			<choice req="dd_illdrythkmutagen_cinderbark" lvl="1">
+			<choice req="dd_illdrythkmutagen_soulshell" lvl="1">
 				<text>(Soulshell Mutagen) Apply a vial of Soulshell Mutagen.</text>
 				<event>
 					<text>You pour the Mutagen onto your Ill'drythk Statue, and watch as it mutates... its skin takes on a dark, purple hue, and its arms elongate into more tentacle-like, multicolored appendages. Eventually, the mutation stops, and you hear a slight humming ring from within them.</text>
@@ -5881,7 +6231,7 @@
 </event>
 
 <event name="STORAGE_CHECK_DDCORRUPTOR_SUBSUMATIONS">
-	<text>The true nature of the Soulplague mattervirus, and by extension the Corruptor system, are a mystery to most, but its utility in self-defense and combat scenarios has seen its usage commercialized and widespread across the Multiverse. Truthfully, nobody knows who invented the Corruptor, or how its usage spread in the first place, but it's now a common sight at stores anywhere and everywhere.
+	<text>The true nature of the Soulplague mattervirus, and by extension the Corruptor system, are a mystery to most - as is the source of the system's proliferation. Truthfully, nobody knows who invented the Corruptor, or how certain ships seem to manage to obtain it in the first place, but it's most often found installed aboard ships left ravaged by the mattervirus.
 	
 	It's understood that feeding Soulplague-corrupted entities (otherwise known as Soulplague Husks) to the Corruptor empowers the capabilities of the Soulplague Tides it spawns. You may do so here, assuming you have any Husks to offer.</text>
 	<choice hidden="true" req="ddsoulplague_husk_human">
@@ -7033,6 +7383,14 @@
 	</choice>
 	<choice req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_DDEVERLASTINGHEROISMEXPLANATION">
+	<text>placeholder</text>
+	<choice req="pilot" lvl="1" max_group="1" blue="false">
+		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
 </event>

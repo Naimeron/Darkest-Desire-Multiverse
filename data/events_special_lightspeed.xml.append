@@ -1105,7 +1105,7 @@
 			<choice hidden="true" req="DD_ILLDRYTHKPALEHEARTRITUALCHECK" blue="false">
 				<text>Perform the Ritual of Mutinous Mutation.</text>
 				<event>
-					<text>Your Ill'drythk crew members stand around the Otherworldly Tome, ready to function as conduits for the ritual. From their strange, goo-filled bodies, a song rings out, and the brown text within the Otherworldly Tome twists and shifts...</text>
+					<text>One of your Ill'drythk crew members stands beside the Otherworldly Tome, ready to function as a conduit for the ritual. From its strange, goo-filled body, a song rings out, and the brown text within the Otherworldly Tome twists and shifts...</text>
 					<variable name="dd_paleheartritualcompleted" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Read the text.</text>

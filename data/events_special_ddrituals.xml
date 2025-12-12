@@ -20385,8 +20385,8 @@
 			<damage amount="0" system="random" effect="breach"/>
 			<damage amount="0" system="random" effect="breach"/>
 			<damage amount="0" system="random" effect="breach"/>
-			<boarders min="19" max="23" class="ddtempest_blight_guardian_outgrowth"/>
-			<triggeredEvent name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_THEYRECOMINGOUTOFTHEWALLLLLS" event="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_ITGETSEVENWORSE" minTime="12" maxTime="12" thisFight="false" clearOnJump="true" loops="999999">
+			<boarders min="20" max="24" class="ddtempest_blight_guardian_outgrowth"/>
+			<triggeredEvent name="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_THEYRECOMINGOUTOFTHEWALLLLLS" event="DDRITUALS_QUESTS_PLANTSHOWDOWN_OHGODOHFUCK_ITGETSEVENWORSE" minTime="11" maxTime="11" thisFight="false" clearOnJump="true" loops="999999">
 				<triggeredEventBox load="DEFAULT_SMALL">
 					<tooltip>Something's rumbling from within the walls of your ship...</tooltip>
 				</triggeredEventBox>
@@ -20400,7 +20400,7 @@
 	<text>The screeching cacophony of noise around you manages to somehow louden, as the situation worsens further still... you have to hurry!</text>
 	<damage amount="1" system="random" effect="breach"/>
 	<damage amount="0" system="random" effect="breach"/>
-	<boarders min="2" max="3" class="ddtempest_blight_guardian_outgrowth"/>
+	<boarders min="4" max="6" class="ddtempest_blight_guardian_outgrowth"/>
 	<choice>
 		<text>Hurry.</text>
 		<event/>

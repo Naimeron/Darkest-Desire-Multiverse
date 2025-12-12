@@ -222,7 +222,7 @@
 	<text>Though the Coremass rages on, you're able to collect what you can from the wreckage of the Soulplague-infected ship and carry on.</text>
 	<text>It's difficult to find anything of value in a ship so contaminated, and it's even more difficult to avoid the Coremass' wrath as you do so, but you manage anyways before preparing to venture deeper into the belly of the beast.</text>
 	<text>Frankly, it's much easier to dodge these tentacles around you when you aren't being bombarded by psionic whispers and screams... utilizing this, you're able to deftly scrap what little worth the Soulplague-infected ship has.</text>
-	<text>As the Children of the Stars and their Husks die, they send out psychic screams, but you're still able to grab what you can from their empted ship before the Coremass makes you its next meal.</text>
+	<text>As the Children of the Stars and their Husks die, they send out psychic screams, but you're still able to grab what you can from their emptied ship before the Coremass makes you its next meal.</text>
 	<text>This place is maddening, and trying to empty out these ships certainly isn't helping. Doing what you can, though, you get a decent haul and make it out relatively unscathed.</text>
 	<text>There's something mesmerizing about Soulplague-infected matter's iridescence... you find yourself looking at it more often than you'd like as you take what you can from the Children of the Stars' now-empty ship, and prepare to escape from the Coremass' ire.</text>
 </textList>
@@ -4463,7 +4463,7 @@
 	<triggeredEvent event="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_DEATHTOEVIL" enemyHull="8" thisFight="true" clearOnJump="true"/>
 	<destroyed>
 		<text>It seems that not even she can stop you! Do you think that HE could, if you REALLY tried?</text>
-		<autoReward level="HIGH">standard</autoReward>
+		<autoReward level="HIGH">standard_no_item</autoReward>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event load="DDCOREMASS_EXIT_FIGHT_VILLAINSLAYER_WIN"/>

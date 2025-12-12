@@ -19410,3 +19410,539 @@
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
 </anim>
+
+<!-- Fear/Hope and Whispering Ichor system animations below!! -->
+
+<animSheet name="ddwhispering_ichor_priestessgame_down" w="35" h="35" fw="35" fh="35">effects/ddwhispering_ichor_priestessgame_down.png</animSheet>
+<anim name="ddwhispering_ichor_priestessgame_down">
+	<sheet>ddwhispering_ichor_priestessgame_down</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_priestessgame_left" w="35" h="35" fw="35" fh="35">effects/ddwhispering_ichor_priestessgame_left.png</animSheet>
+<anim name="ddwhispering_ichor_priestessgame_left">
+	<sheet>ddwhispering_ichor_priestessgame_left</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_priestessgame_right" w="35" h="35" fw="35" fh="35">effects/ddwhispering_ichor_priestessgame_right.png</animSheet>
+<anim name="ddwhispering_ichor_priestessgame_right">
+	<sheet>ddwhispering_ichor_priestessgame_right</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_priestessgame_up" w="35" h="35" fw="35" fh="35">effects/ddwhispering_ichor_priestessgame_up.png</animSheet>
+<anim name="ddwhispering_ichor_priestessgame_up">
+	<sheet>ddwhispering_ichor_priestessgame_up</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddblood_crystalexplosion" w="512" h="64" fw="64" fh="64">effects/ddblood_crystalexplosion.png</animSheet>
+<anim name="ddblood_crystalexplosion">
+	<sheet>ddblood_crystalexplosion</sheet>
+	<desc length="8" x="0" y="0" />
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddblood_lockdown_effect_1" w="108" h="19" fw="18" fh="19">effects/ddblood_lockdown_effect_1.png</animSheet>
+<anim name="ddblood_lockdown_effect_1">
+	<sheet>ddblood_lockdown_effect_1</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>20.0</time>
+</anim>
+
+<animSheet name="ddblood_lockdown_effect_2" w="90" h="19" fw="18" fh="19">effects/ddblood_lockdown_effect_2.png</animSheet>
+<anim name="ddblood_lockdown_effect_2">
+	<sheet>ddblood_lockdown_effect_2</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>20.0</time>
+</anim>
+
+<animSheet name="ddbloodsword_slashing_effect" w="525" h="35" fw="35" fh="35">effects/ddbloodsword_slashing_effect.png</animSheet>
+<anim name="ddbloodsword_slashing_effect">
+	<sheet>ddbloodsword_slashing_effect</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.25</time>
+</anim>
+
+<animSheet name="ddbloodvines_activated_debuff" w="35" h="35" fw="35" fh="35">people/ddbloodvines_activated_debuff.png</animSheet>
+<anim name="ddbloodvines_activated_debuff">
+	<sheet>ddbloodvines_activated_debuff</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddbloodvines_starting_debuff" w="175" h="35" fw="35" fh="35">people/ddbloodvines_starting_debuff.png</animSheet>
+<anim name="ddbloodvines_starting_debuff">
+	<sheet>ddbloodvines_starting_debuff</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddfear_active_debuff" w="352" h="32" fw="32" fh="32">people/ddfear_active_debuff.png</animSheet>
+<anim name="ddfear_active_debuff">
+	<sheet>ddfear_active_debuff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhope_active_buff" w="352" h="32" fw="32" fh="32">people/ddhope_active_buff.png</animSheet>
+<anim name="ddhope_active_buff">
+	<sheet>ddhope_active_buff</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_inspiredreams_buff" w="384" h="32" fw="32" fh="32">people/ddwhispering_ichor_inspiredreams_buff.png</animSheet>
+<anim name="ddwhispering_ichor_inspiredreams_buff">
+	<sheet>ddwhispering_ichor_inspiredreams_buff</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>1.15</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_duelofblood_buff" w="384" h="32" fw="32" fh="32">people/ddwhispering_ichor_duelofblood_buff.png</animSheet>
+<anim name="ddwhispering_ichor_duelofblood_buff">
+	<sheet>ddwhispering_ichor_duelofblood_buff</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>1.15</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_instillterror_debuff" w="384" h="32" fw="32" fh="32">people/ddwhispering_ichor_instillterror_debuff.png</animSheet>
+<anim name="ddwhispering_ichor_instillterror_debuff">
+	<sheet>ddwhispering_ichor_instillterror_debuff</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>1.15</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_markoftributeandsacrifice_debuff" w="384" h="32" fw="32" fh="32">people/ddwhispering_ichor_markoftributeandsacrifice_debuff.png</animSheet>
+<anim name="ddwhispering_ichor_markoftributeandsacrifice_debuff">
+	<sheet>ddwhispering_ichor_markoftributeandsacrifice_debuff</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>1.15</time>
+</anim>
+
+<animSheet name="ddfear_meter_activated_empty" w="35" h="35" fw="35" fh="35">people/ddfear_meter_activated_empty.png</animSheet>
+<anim name="ddfear_meter_activated_empty">
+	<sheet>ddfear_meter_activated_empty</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfear_meter_activated_full" w="35" h="35" fw="35" fh="35">people/ddfear_meter_activated_full.png</animSheet>
+<anim name="ddfear_meter_activated_full">
+	<sheet>ddfear_meter_activated_full</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfear_meter_unactivated_empty" w="35" h="35" fw="35" fh="35">people/ddfear_meter_unactivated_empty.png</animSheet>
+<anim name="ddfear_meter_unactivated_empty">
+	<sheet>ddfear_meter_unactivated_empty</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddfear_meter_unactivated_full" w="35" h="35" fw="35" fh="35">people/ddfear_meter_unactivated_full.png</animSheet>
+<anim name="ddfear_meter_unactivated_full">
+	<sheet>ddfear_meter_unactivated_full</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhope_meter_activated_empty" w="35" h="35" fw="35" fh="35">people/ddhope_meter_activated_empty.png</animSheet>
+<anim name="ddhope_meter_activated_empty">
+	<sheet>ddhope_meter_activated_empty</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhope_meter_activated_full" w="35" h="35" fw="35" fh="35">people/ddhope_meter_activated_full.png</animSheet>
+<anim name="ddhope_meter_activated_full">
+	<sheet>ddhope_meter_activated_full</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhope_meter_unactivated_empty" w="35" h="35" fw="35" fh="35">people/ddhope_meter_unactivated_empty.png</animSheet>
+<anim name="ddhope_meter_unactivated_empty">
+	<sheet>ddhope_meter_unactivated_empty</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddhope_meter_unactivated_full" w="35" h="35" fw="35" fh="35">people/ddhope_meter_unactivated_full.png</animSheet>
+<anim name="ddhope_meter_unactivated_full">
+	<sheet>ddhope_meter_unactivated_full</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_witchlight_tileeffect" w="140" h="35" fw="35" fh="35">effects/ddwhispering_ichor_witchlight_tileeffect.png</animSheet>
+<anim name="ddwhispering_ichor_witchlight_tileeffect">
+	<sheet>ddwhispering_ichor_witchlight_tileeffect</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_witchlight_effect" w="175" h="35" fw="35" fh="35">effects/ddwhispering_ichor_witchlight_effect.png</animSheet>
+<anim name="ddwhispering_ichor_witchlight_effect">
+	<sheet>ddwhispering_ichor_witchlight_effect</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.25</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_desiredestructionandsalvation_effect" w="140" h="35" fw="35" fh="35">effects/ddwhispering_ichor_desiredestructionandsalvation_effect.png</animSheet>
+<anim name="ddwhispering_ichor_desiredestructionandsalvation_effect">
+	<sheet>ddwhispering_ichor_desiredestructionandsalvation_effect</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_desiredestructionandsalvation_tileeffect" w="35" h="35" fw="35" fh="35">effects/ddwhispering_ichor_desiredestructionandsalvation_tileeffect.png</animSheet>
+<anim name="ddwhispering_ichor_desiredestructionandsalvation_tileeffect">
+	<sheet>ddwhispering_ichor_desiredestructionandsalvation_tileeffect</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_duelofblood_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_duelofblood_activation.png</animSheet>
+<anim name="ddwhispering_ichor_duelofblood_activation">
+	<sheet>ddwhispering_ichor_duelofblood_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_egopulse_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_egopulse_activation.png</animSheet>
+<anim name="ddwhispering_ichor_egopulse_activation">
+	<sheet>ddwhispering_ichor_egopulse_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_inspiredreams_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_inspiredreams_activation.png</animSheet>
+<anim name="ddwhispering_ichor_inspiredreams_activation">
+	<sheet>ddwhispering_ichor_inspiredreams_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_instillterror_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_instillterror_activation.png</animSheet>
+<anim name="ddwhispering_ichor_instillterror_activation">
+	<sheet>ddwhispering_ichor_instillterror_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_markofsacrifice_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_markofsacrifice_activation.png</animSheet>
+<anim name="ddwhispering_ichor_markofsacrifice_activation">
+	<sheet>ddwhispering_ichor_markofsacrifice_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_markoftribute_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_markoftribute_activation.png</animSheet>
+<anim name="ddwhispering_ichor_markoftribute_activation">
+	<sheet>ddwhispering_ichor_markoftribute_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_witchlight_activation" w="2100" h="105" fw="35" fh="105">effects/ddwhispering_ichor_witchlight_activation.png</animSheet>
+<anim name="ddwhispering_ichor_witchlight_activation">
+	<sheet>ddwhispering_ichor_witchlight_activation</sheet>
+	<desc length="60" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_desiredestruction_activation" w="5250" h="175" fw="175" fh="175">effects/ddwhispering_ichor_desiredestruction_activation.png</animSheet>
+<anim name="ddwhispering_ichor_desiredestruction_activation">
+	<sheet>ddwhispering_ichor_desiredestruction_activation</sheet>
+	<desc length="30" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_desiresalvation_activation" w="5250" h="175" fw="175" fh="175">effects/ddwhispering_ichor_desiresalvation_activation.png</animSheet>
+<anim name="ddwhispering_ichor_desiresalvation_activation">
+	<sheet>ddwhispering_ichor_desiresalvation_activation</sheet>
+	<desc length="30" x="0" y="0"/>
+	<time>5.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_forsakenpriestess_activation" w="350" h="35" fw="35" fh="35">effects/ddwhispering_ichor_forsakenpriestess_activation.png</animSheet>
+<anim name="ddwhispering_ichor_forsakenpriestess_activation">
+	<sheet>ddwhispering_ichor_forsakenpriestess_activation</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>2.5</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_forsakenpriestess_activation_superslow" w="350" h="35" fw="35" fh="35">effects/ddwhispering_ichor_forsakenpriestess_activation.png</animSheet>
+<anim name="ddwhispering_ichor_forsakenpriestess_activation_superslow">
+	<sheet>ddwhispering_ichor_forsakenpriestess_activation_superslow</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>10.0</time>
+</anim>
+
+<animSheet name="ddwhispering_ichor_forsakenpriestess_disappearance" w="350" h="35" fw="35" fh="35">effects/ddwhispering_ichor_forsakenpriestess_disappearance.png</animSheet>
+<anim name="ddwhispering_ichor_forsakenpriestess_disappearance">
+	<sheet>ddwhispering_ichor_forsakenpriestess_disappearance</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.75</time>
+</anim>
+
+<animSheet name="ddforsaken_priestess" w="315" h="455" fw="35" fh="35">people/ddforsaken_priestess_base.png</animSheet>
+<anim name="ddforsaken_priestess_clone">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_death_right">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_death_left">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_walk_down">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_walk_right">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_walk_up">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_walk_left">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_shoot_down">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_shoot_right">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_shoot_up">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_shoot_left">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_fire_down">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_fire_right">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_fire_up">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_fire_left">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_repair">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_punch_up">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_punch_down">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_teleport">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddforsaken_priestess_type_right">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_type_left">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_type_up">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_type_down">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddforsaken_priestess_portrait">
+	<sheet>ddforsaken_priestess</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
+<animSheet name="ddforsaken_priestess_raidboss" w="315" h="455" fw="35" fh="35">people/ddforsaken_priestess_raidboss_base.png</animSheet>
+<anim name="ddforsaken_priestess_raidboss_clone">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="2" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_death_right">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_death_left">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="3" y="0" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_walk_down">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="0" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_walk_right">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="4" y="12" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_walk_up">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="0" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_walk_left">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="4" y="11" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_shoot_down">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_shoot_right">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_shoot_up">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_shoot_left">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_fire_down">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_fire_right">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_fire_up">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_fire_left">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_repair">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_punch_up">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_punch_down">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="6" x="0" y="10" />
+	<time>1.0</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_teleport">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="9" x="0" y="3" />
+	<time>0.5</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_type_right">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="0" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_type_left">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="4" y="5" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_type_up">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="0" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_type_down">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="4" x="4" y="4" />
+	<time>0.75</time>
+</anim>
+<anim name="crewLaser">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="1" x="1" y="0" />
+	<time>0.5</time>
+</anim>
+<anim name="ddforsaken_priestess_raidboss_portrait">
+	<sheet>ddforsaken_priestess_raidboss</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>

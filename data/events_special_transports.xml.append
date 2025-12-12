@@ -127,6 +127,7 @@
 	</beaconType>
 	<text>This beacon hosts a... Crystal transport? You're not sure that you recognize their decal, or if you understand why they're here, but... it's safe to bet the ship is most likely carrying some special tech. If you can kill its crew, their cargo will be yours.</text>
 	<ship load="SHIP_DDSOULPLAGUE_TEMPEST_TRANSPORT_LOOT" hostile="false"/>
+	<environment type="nebula"/>
 	<choice>
 		<text>Demand the surrender of their goods.</text>
 		<event>

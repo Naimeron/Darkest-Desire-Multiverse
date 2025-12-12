@@ -6703,6 +6703,30 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<name>loc_ddshatteredpromise_quest</name>
 		</req>
 	</req>
+	<req name="DD_WHISPERINGICHOR_INTERNALSET_1" type="any">
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_1</name>
+		</req>
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_2</name>
+		</req>
+	</req>
+	<req name="DD_WHISPERINGICHOR_INTERNALSET_2" type="any">
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_3</name>
+		</req>
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_4</name>
+		</req>
+	</req>
+	<req name="DD_WHISPERINGICHOR_INTERNALSET_3" type="any">
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_5</name>
+		</req>
+		<req lvl="1">
+			<name>DD_INTERNAL_AUGMENT_WHISPERINGICHOR_6</name>
+		</req>
+	</req>
 </events>
 
 <mod:findLike type="events" limit="1">
@@ -7005,7 +7029,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 
 <mod:findLike type="crew" limit="1">
 	<mod-append:race name="deepone">
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
 		<suffocationModifier>0.4</suffocationModifier>
@@ -7014,34 +7038,89 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>30</cooldown>
+			<cooldown>4</cooldown>
 			<req>
-				<maxHealth>95</maxHealth>
+				<enemyInRoom/>
+				<maxHealth>20</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>dddeepone_growl</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 95 HP]
-				Go berserk, slowing down and losing the power to man and repair but gaining the following benefits:
-				-1.8x damage
-				-0.5x damage resistance
-				-2hp/s regen</tooltip>
+			<tooltip>[COOLDOWN: 4s  DURATION: 4s  CASTS UNDER 20 HP]
+				Clings onto life and briefly overexerts itself, semi-permanently losing stats until either death or your next jump but gaining the following temporary benefits:
+				-2.5x damage
+				-1.5x movement speed
+				-0.5x combat damage resistance
+				-5hp/s regen</tooltip>
 			<cooldownColor r="229" g="70" b="70" />
 			<activateWhenReady>true</activateWhenReady>
+			<statBoosts>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="maxHealth">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="healSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+			</statBoosts>
 			<temporaryEffect>
-				<duration>30</duration>
+				<duration>4</duration>
 				<cooldownColor r="124" g="70" b="70" />
-				<finishSounds>
-					<finishSound>mindControlEnd</finishSound>
-				</finishSounds>
-				<canMan>false</canMan>
-				<canRepair>false</canRepair>
-				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
-				<damageMultiplier>1.8</damageMultiplier>
+				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+				<damageMultiplier>2.5</damageMultiplier>
 				<damageTakenMultiplier>0.5</damageTakenMultiplier>
-				<healAmount>2</healAmount>
+				<healAmount>5</healAmount>
 				<animSheet>deepone_power</animSheet>
 			</temporaryEffect>
 		</powerEffect>	
@@ -7049,7 +7128,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="deeponecultist">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<allDamageTakenMultiplier>1.5</allDamageTakenMultiplier>
 		<canFight>false</canFight>
 		<noClone>true</noClone>
@@ -7212,7 +7291,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="deeponecultist_enemy">
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<allDamageTakenMultiplier>1.5</allDamageTakenMultiplier>
 		<canFight>false</canFight>
 		<canTeleport>false</canTeleport>
@@ -7418,7 +7497,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="unique_thescarred">
 		<essential>1</essential>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
 		<suffocationModifier>0.4</suffocationModifier>
@@ -7573,7 +7652,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="blobdeepone">
-		<maxHealth>105</maxHealth>
+		<maxHealth>90</maxHealth>
 		<crewSlots>0.5</crewSlots>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -7583,37 +7662,92 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<deathSound>mantisDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>30</cooldown>
+			<cooldown>4</cooldown>
 			<req>
-				<maxHealth>70</maxHealth>
+				<enemyInRoom/>
+				<maxHealth>20</maxHealth>
 			</req>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>dddeepone_growl</powerSound>
 			</powerSounds>
 			<buttonText>ENRAGE</buttonText>
-			<tooltip>[COOLDOWN: 30s  DURATION: 30s  CASTS UNDER 70 HP]
-				Go berserk, slowing down and losing the power to man and repair but gaining the following benefits:
-				-1.8x damage
-				-0.5x damage resistance
-				-2hp/s regen</tooltip>
+			<tooltip>[COOLDOWN: 4s  DURATION: 4s  CASTS UNDER 20 HP]
+				Clings onto life and briefly overexerts itself, semi-permanently losing stats until either death or your next jump but gaining the following temporary benefits:
+				-2.5x damage
+				-1.5x movement speed
+				-0.5x combat damage resistance
+				-5hp/s regen</tooltip>
 			<cooldownColor r="229" g="70" b="70" />
 			<activateWhenReady>true</activateWhenReady>
+			<statBoosts>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="maxHealth">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="healSpeed">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.8</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<permanent>true</permanent>
+					<jumpClear>true</jumpClear>
+				</statBoost>
+			</statBoosts>
 			<temporaryEffect>
-				<duration>30</duration>
+				<duration>4</duration>
 				<cooldownColor r="124" g="70" b="70" />
-				<finishSounds>
-					<finishSound>mindControlEnd</finishSound>
-				</finishSounds>
-				<canMan>false</canMan>
-				<canRepair>false</canRepair>
-				<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
-				<damageMultiplier>1.8</damageMultiplier>
+				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+				<damageMultiplier>2.5</damageMultiplier>
 				<damageTakenMultiplier>0.5</damageTakenMultiplier>
-				<healAmount>2</healAmount>
+				<healAmount>5</healAmount>
 				<animSheet>deepone_power</animSheet>
 			</temporaryEffect>
-		</powerEffect>	
+		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="happyholidays">
 		<maxHealth>100</maxHealth>
@@ -9208,14 +9342,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -9513,14 +9647,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_A"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -9665,14 +9799,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_B"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -9832,14 +9966,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_C"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -9985,14 +10119,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AD"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -10152,14 +10286,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AE"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -10304,14 +10438,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AF"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -10456,14 +10590,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AG"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -10609,14 +10743,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BD"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -10791,14 +10925,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BE"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -10958,14 +11092,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BF"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -11125,14 +11259,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BG"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -11293,14 +11427,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CD"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -11460,14 +11594,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CE"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -11612,14 +11746,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CF"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -11764,14 +11898,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CG"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -11917,14 +12051,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_ADJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -12084,14 +12218,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AEJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -12236,14 +12370,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AFJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -12388,14 +12522,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_AGJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -12541,14 +12675,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BDJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -12723,14 +12857,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BEJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -12890,14 +13024,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BFJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -13057,14 +13191,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_BGJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -13225,14 +13359,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CDJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<spawnCrew>
@@ -13392,14 +13526,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CEJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -13544,14 +13678,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CFJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -13696,14 +13830,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>5</cooldown>
+			<cooldown>8</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>thehungerroar</powerSound> 
 			</powerSounds>
 			<event load="ENLIGHTENED_HORROR_SUMMON_RIFT_CGJ"/>
 			<buttonText>RIFT</buttonText>
-			<tooltip>[COOLDOWN:5s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:8s  DURATION: VARIABLE]
 				Tears a hole through space-time to create a rift into the Dark God's realm on the enemy ship. The rift will periodically unleash chaotic bolts of energy that manifest as nightmarish shadows, but if the rift falls, the shadows will quickly fall with it.</tooltip>
 			<cooldownColor r="211" g="38" b="34"/>
 			<powerCharges>1</powerCharges>
@@ -14750,14 +14884,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>25</cooldown>
+			<cooldown>30</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<event load="DDTEMPEST_SUMMON_BOLT_TRIPLE"/>
 			<powerSounds>
 				<powerSound>ddstormbornspawngrowl</powerSound>
 			</powerSounds>
 			<buttonText>STORM</buttonText>
-			<tooltip>[COOLDOWN:25s]
+			<tooltip>[COOLDOWN:30s]
 				Releases a storm of energy that strikes at the enemy ship and manifests as Tempest Lightning, ioning rooms and potentially summoning Minor Tempest Spawn.</tooltip>
 			<cooldownColor r="179" g="229" b="252"/>
 			<effectAnim>ddion_explosion</effectAnim>
@@ -14811,14 +14945,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>25</cooldown>
+			<cooldown>30</cooldown>
 			<jumpCooldown>reset</jumpCooldown>
 			<event load="DDTEMPEST_SUMMON_BOLT_TRIPLE_ENEMY"/>
 			<powerSounds>
 				<powerSound>ddstormbornspawngrowl</powerSound>
 			</powerSounds>
 			<buttonText>STORM</buttonText>
-			<tooltip>[COOLDOWN:25s]
+			<tooltip>[COOLDOWN:30s]
 				Releases a storm of energy that strikes at the enemy ship and manifests as Tempest Lightning, ioning rooms and potentially summoning Minor Tempest Spawn.</tooltip>
 			<cooldownColor r="179" g="229" b="252"/>
 			<effectAnim>ddion_explosion</effectAnim>
@@ -15070,7 +15204,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathSounds>
 	</mod-append:race>
 	<mod-append:race name="dddeepone_chosen">
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
 		<suffocationModifier>0.4</suffocationModifier>
@@ -15133,7 +15267,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</req>
 			<buttonText>SHROUD</buttonText>
 			<tooltip>[COOLDOWN:25s]
-				Summons a Hungering Shadow for 21 seconds and creates a semi-permanent shroud of darkness in the current room, which will dissipate only when jumping. Enemy crew in the room are inflicted with the Drowning in the Deep debuff, and ally Hungering Shadows are given the power to transform into Devouring Shadows.</tooltip>
+				Summons a Hungering Shadow for 21 seconds and marks the current room with dark, grasping tendrils, which will dissipate only when jumping. Enemy crew in the room are inflicted with the Drowning in the Deep debuff, and ally Hungering Shadows are given the power to transform into Devouring Shadows.</tooltip>
 			<effectAnim>explosion_darkgod</effectAnim>
 			<cooldownColor r="108" g="108" b="108"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -34123,10 +34257,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddsoulplague_corruptor_tide">
-		<maxHealth>25</maxHealth>
+		<maxHealth>20</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
+		<damageMultiplier>0.7</damageMultiplier>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
 		<controllable>false</controllable>
@@ -34622,10 +34757,11 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddsoulplague_corruptor_tide_enemy">
-		<maxHealth>25</maxHealth>
+		<maxHealth>20</maxHealth>
 		<noWarning>true</noWarning>
 		<resistsMindControl>true</resistsMindControl>
 		<canSuffocate>false</canSuffocate>
+		<damageMultiplier>0.7</damageMultiplier>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<fireDamageMultiplier>2</fireDamageMultiplier>
 		<controllable>false</controllable>
@@ -35816,7 +35952,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							<cooldown>3</cooldown>
 							<jumpCooldown>reset</jumpCooldown>
 							<req>
-								<minHealth>35</minHealth>
+								<minHealth>46</minHealth>
 								<inCombat/>
 							</req>
 							<powerSounds>
@@ -35824,12 +35960,12 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							</powerSounds>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM"/>
 							<buttonText>SOULPUMP</buttonText>
-							<tooltip>[CD:3s  -30HP]
+							<tooltip>[CD:3s  -45HP]
 								The Foolish channels its power through this Child of the Stars to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>
-							<selfHealth>-30</selfHealth>
+							<selfHealth>-45</selfHealth>
 							<friendlyFire>true</friendlyFire>
 						</powerEffect>
 						<affectsSelf>false</affectsSelf>
@@ -36547,7 +36683,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							<cooldown>3</cooldown>
 							<jumpCooldown>reset</jumpCooldown>
 							<req>
-								<minHealth>35</minHealth>
+								<minHealth>46</minHealth>
 								<inCombat/>
 							</req>
 							<powerSounds>
@@ -36555,12 +36691,12 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 							</powerSounds>
 							<event load="DDSOULPLAGUE_SUMMON_BEAM_RANDOM_ENEMY"/>
 							<buttonText>SOULPUMP</buttonText>
-							<tooltip>[CD:3s  -30HP]
+							<tooltip>[CD:3s  -45HP]
 								The Foolish channels its power through this Child of the Stars to call down beams on the enemy ship that summon Soulplague Husks.</tooltip>
 							<cooldownColor r="164" g="102" b="175"/>
 							<activateWhenReady>true</activateWhenReady>
 							<effectAnim>explosion_shell_death</effectAnim>
-							<selfHealth>-30</selfHealth>
+							<selfHealth>-45</selfHealth>
 							<friendlyFire>true</friendlyFire>
 						</powerEffect>
 						<affectsSelf>false</affectsSelf>
@@ -36796,8 +36932,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -36812,7 +36948,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>FOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present.</tooltip>
 			<cooldownColor r="223" g="223" b="223"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -37100,8 +37236,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -37116,7 +37252,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>CINDERFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally causes a fire and strips enemies of their fire resistance while making them take extreme fire damage.</tooltip>
 			<cooldownColor r="215" g="100" b="54"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -37429,8 +37565,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -37445,7 +37581,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>FROSTFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally locks down the room and reduces enemy movement speed immensely.</tooltip>
 			<cooldownColor r="94" g="199" b="250"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -37745,8 +37881,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -37761,7 +37897,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>IRONFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally causes a breach and allows Ill'drythk Statues to drain oxygen at extreme speeds.</tooltip>
 			<cooldownColor r="187" g="185" b="170"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -38081,8 +38217,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -38097,7 +38233,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>LEAFFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally heals allies and doubles Ill'drythk Statues' healing speed.</tooltip>
 			<cooldownColor r="66" g="182" b="79"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -38433,8 +38569,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -38449,7 +38585,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>TOXFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally heavily debilitates enemies in the room, halving their max health.</tooltip>
 			<cooldownColor r="87" g="39" b="100"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -38775,8 +38911,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -38791,7 +38927,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>DARKFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally inflicts enemies with the Drowning in the Deep debuff and summons two Hungering Shadows.</tooltip>
 			<cooldownColor r="213" g="213" b="213"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -39063,7 +39199,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddunique_theheroine">
 		<essential>1</essential>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<fireDamageMultiplier>0.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<suffocationModifier>0.4</suffocationModifier>
@@ -39097,7 +39233,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddunique_theheroine_enemy">
 		<essential>1</essential>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<fireDamageMultiplier>0.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<suffocationModifier>0.4</suffocationModifier>
@@ -39342,7 +39478,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddmanifestationofjustice">
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<canSuffocate>false</canSuffocate>
@@ -40208,9 +40344,12 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ddwardenpray3</powerSound>
 				<powerSound>ddwardenpray4</powerSound>
 			</powerSounds>
+			<req>
+				<minHealth>20</minHealth>
+			</req>
 			<buttonText>PRAY</buttonText>
 			<tooltip>[COOLDOWN:10s  DURATION: VARIABLE]
-				Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies.</tooltip>
+				Enters a trance-like prayer state, becoming immobile and incapable of taking action but increasing the ability regen rate of all Tempest-aligned allies and allowing ally Stormborn Spawn to be controlled. As it prays, it takes damage overtime and cannot be healed by most means - inevitably waking up when its health reaches a certain threshold.</tooltip>
 			<cooldownColor r="63" g="126" b="200"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
 			<transformRace>ddtempest_spawn_warden_praying</transformRace>
@@ -40222,6 +40361,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<suffocationModifier>1.5</suffocationModifier>
 		<repairSpeed>1.8</repairSpeed>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<healSpeed>0</healSpeed>
+		<trueHealAmount>-5</trueHealAmount>
 		<canFight>false</canFight>
 		<canMove>false</canMove>
 		<canPunch>false</canPunch>
@@ -40238,7 +40379,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>FLAT</boostType>
-				<amount>0.75</amount>
+				<amount>0.625</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -40272,16 +40413,19 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>4</cooldown>
+			<cooldown>2</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>mindControlEnd</powerSound>
 			</powerSounds>
+			<req>
+				<maxHealth>35</maxHealth>
+			</req>
 			<buttonText>AWAKEN</buttonText>
-			<tooltip>[COOLDOWN:6s  DURATION: VARIABLE]
+			<tooltip>[COOLDOWN:2s  DURATION: VARIABLE]
 				Wakes up from its trance-like state, ending its prayer but becoming mobile once more.</tooltip>
 			<cooldownColor r="63" g="126" b="200"/>
-			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
+			<activateWhenReady>true</activateWhenReady>
 			<transformRace>ddtempest_spawn_warden</transformRace>
 		</powerEffect>
 	</mod-append:race>
@@ -42282,7 +42426,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_cinderling">
-		<maxHealth>15</maxHealth>
+		<maxHealth>10</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42311,7 +42455,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_slayling">
-		<maxHealth>40</maxHealth>
+		<maxHealth>30</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.5</damageMultiplier>
@@ -42333,7 +42477,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathSounds>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_breakling">
-		<maxHealth>15</maxHealth>
+		<maxHealth>10</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42357,7 +42501,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathSounds>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_prismling">
-		<maxHealth>15</maxHealth>
+		<maxHealth>10</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42482,7 +42626,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_spiritling">
-		<maxHealth>15</maxHealth>
+		<maxHealth>10</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42543,7 +42687,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_clusterular">
-		<maxHealth>50</maxHealth>
+		<maxHealth>40</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42617,7 +42761,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</deathSounds>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_angelular">
-		<maxHealth>60</maxHealth>
+		<maxHealth>50</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42651,7 +42795,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</passiveStatBoosts>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_tormentular">
-		<maxHealth>80</maxHealth>
+		<maxHealth>65</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.3</damageMultiplier>
@@ -42693,7 +42837,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_warlockular">
-		<maxHealth>20</maxHealth>
+		<maxHealth>15</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42734,7 +42878,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_timelux">
-		<maxHealth>125</maxHealth>
+		<maxHealth>110</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 		<damageMultiplier>0.3</damageMultiplier>
@@ -42840,7 +42984,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_devourlux">
-		<maxHealth>150</maxHealth>
+		<maxHealth>125</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
 		<damageMultiplier>0.2</damageMultiplier>
@@ -42948,7 +43092,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		</powerEffect>
 	</mod-append:race>
 	<mod-append:race name="ddlightborne_commandlux">
-		<maxHealth>175</maxHealth>
+		<maxHealth>150</maxHealth>
 		<noWarning>true</noWarning>
 		<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
 		<damageMultiplier>0.3</damageMultiplier>
@@ -43208,7 +43352,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_shatter">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -43722,7 +43866,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_plague">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -44236,7 +44380,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_dark">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -44750,7 +44894,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_cloud">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -45264,7 +45408,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_judge">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -45778,7 +45922,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	<mod-append:race name="dddeepone_tributeshaper_cage">
 		<lowHealthThreshold>2500.0</lowHealthThreshold>
 		<lowHealthThresholdPercentage>0.4</lowHealthThresholdPercentage>
-		<maxHealth>140</maxHealth>
+		<maxHealth>120</maxHealth>
 		<noClone>true</noClone>
 		<fireDamageMultiplier>1.4</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
@@ -47378,7 +47522,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</spawnCrew>
 		</deathEffect>
 		<powerEffect>
-			<cooldown>20</cooldown>
+			<cooldown>25</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<req>
 				<inCombat/>
@@ -47393,7 +47537,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<powerSound>ionShields3</powerSound>
 			</powerSounds>
 			<buttonText>BLIGHT</buttonText>
-			<tooltip>[COOLDOWN:20s]
+			<tooltip>[COOLDOWN:25s]
 				Summons a Tempest Whirlwind and releases a single bolt of energy that strikes at the enemy ship and manifests as Tempest Lightning, ioning rooms and potentially summoning Minor Tempest Spawn.</tooltip>
 			<cooldownColor r="156" g="213" b="228"/>
 			<effectAnim>ddion_explosion</effectAnim>
@@ -47453,7 +47597,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_outgrowth">
 		<essential>3</essential>
-		<maxHealth>35</maxHealth>
+		<maxHealth>15</maxHealth>
 		<repairSpeed>0.5</repairSpeed>
 		<fireRepairMultiplier>0.5</fireRepairMultiplier>
 		<damageMultiplier>0.5</damageMultiplier>
@@ -47492,7 +47636,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<passiveStatBoosts>
 			<statBoost name="healAmount">
 				<boostType>FLAT</boostType>
-				<amount>0.5</amount>
+				<amount>0.25</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
@@ -47503,7 +47647,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="maxHealth">
 				<boostType>FLAT</boostType>
-				<amount>10</amount>
+				<amount>5</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47515,7 +47659,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="repairSpeed">
 				<boostType>FLAT</boostType>
-				<amount>0.1</amount>
+				<amount>0.05</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47527,7 +47671,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="damageMultiplier">
 				<boostType>FLAT</boostType>
-				<amount>0.1</amount>
+				<amount>0.05</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47539,7 +47683,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>FLAT</boostType>
-				<amount>0.1</amount>
+				<amount>0.05</amount>
 				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -47551,7 +47695,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>8</cooldown>
+			<cooldown>12</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>ionHit1</powerSound>
@@ -47567,7 +47711,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<friendlyFire>false</friendlyFire>
 			<stun>1</stun>
 			<buttonText>GUARD</buttonText>
-			<tooltip>[COOLDOWN:8s]
+			<tooltip>[COOLDOWN:12s]
 				Automatically micro-stuns all enemies in the room for 1 second.
 			</tooltip>
 			<cooldownColor r="156" g="213" b="228"/>
@@ -47623,7 +47767,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 	</mod-append:race>
 	<mod-append:race name="ddtempest_blight_guardian_seed_outgrowthing">
 		<essential>3</essential>
-		<maxHealth>35</maxHealth>
+		<maxHealth>15</maxHealth>
 		<fireDamageMultiplier>1.75</fireDamageMultiplier>
 		<suffocationModifier>0.75</suffocationModifier>
 		<powerRechargeMultiplier>0.5</powerRechargeMultiplier>
@@ -47646,7 +47790,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<deathSound>orchidDeath</deathSound>
 		</deathSounds>
 		<powerEffect>
-			<cooldown>3</cooldown>
+			<cooldown>6</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
 				<powerSound>kernel_launch1</powerSound>
@@ -48563,8 +48707,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -48579,7 +48723,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>SOULFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally inflicts the room with an equally brief variant of Plagueridden.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -49318,8 +49462,8 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			</statBoost>
 		</passiveStatBoosts>
 		<powerEffect>
-			<cooldown>19</cooldown>
-			<jumpCooldown>full</jumpCooldown>
+			<cooldown>21</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
 			<powerSounds>
 				<powerSound>ddilldrythkfog1</powerSound>
 				<powerSound>ddilldrythkfog2</powerSound>
@@ -49334,7 +49478,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<enemyInRoom/>
 			</req>
 			<buttonText>SOULFOG</buttonText>
-			<tooltip>[COOLDOWN:19s DURATION:3s]
+			<tooltip>[COOLDOWN:21s DURATION:3s]
 				Briefly clouds the room with a mysterious fog, allowing ally Ill'drythk Statues to act freely regardless of whether or not enemies are present. Additionally inflicts the room with an equally brief variant of Plagueridden.</tooltip>
 			<cooldownColor r="164" g="102" b="175"/>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
@@ -49659,6 +49803,14 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				</statBoost>
 			</roomStatBoosts>
 		</powerEffect>
+	</mod-append:race>
+	<mod-append:race name="ddforsaken_priestess">
+		<maxHealth>120</maxHealth>
+		<animBase>rock</animBase>
+	</mod-append:race>
+	<mod-append:race name="ddforsaken_priestess_raidboss">
+		<maxHealth>120</maxHealth>
+		<animBase>rock</animBase>
 	</mod-append:race>
 </mod:findLike>
 
@@ -50227,12 +50379,12 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<item>
 				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
 			</item>
-			<chance>100</chance>
+			<chance>65</chance>
 		</category>
 		<category type="SYSTEMS">
 			<customTitle>AUXILIARY SYSTEMS</customTitle>
 			<item>
-				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+				<blueprint>dd_corruptor</blueprint>
 			</item>
 			<item>
 				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
@@ -50240,7 +50392,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 			<item>
 				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
 			</item>
-			<chance>65</chance>
+			<chance>100</chance>
 		</category>
 	</customStore>
 	<customStore id="STORE_DDANTUMBRA_LIGHTBORNE">
@@ -54707,7 +54859,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 		<statBoosts>
 			<statBoost name="maxHealth">
 				<boostType>FLAT</boostType>
-				<amount>10</amount>
+				<amount>15</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<priority>-666</priority>
@@ -55275,13 +55427,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55378,13 +55530,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55481,13 +55633,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55584,13 +55736,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55687,13 +55839,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55790,13 +55942,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55893,13 +56045,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -55996,13 +56148,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -56099,13 +56251,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -56202,13 +56354,13 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<boostType>FLAT</boostType>
 					<amount>-6.0</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<boostAnim>ddstorm_omen_debuff</boostAnim>
 				</statBoost>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
+				<crewTarget>ORIGINAL_ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
 				<maxStacks>1</maxStacks>
 			</statBoost>
@@ -56694,6 +56846,22 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 					<ddlightborne_warlockular/>
 					<ddlightborne_breakling/>
 					<ddlightborne_tormentular/>
+					<ddhuman_sacrifice/>
+					<ddunstable_soul_spent/>
+					<ddunstable_soul_cage/>
+					<ddunstable_soul_cloud/>
+					<ddunstable_soul_judge/>
+					<ddunstable_soul_shatter/>
+					<ddunstable_soul_plague/>
+					<ddunstable_soul_dark/>
+					<ddtempest_blight_guardian_planted5/>
+					<ddtempest_blight_guardian_planted4/>
+					<ddtempest_blight_guardian_planted3/>
+					<ddtempest_blight_guardian_planted2/>
+					<ddtempest_blight_guardian_planted1/>
+					<ddtempest_blight_guardian_seed_outgrowthing/>
+					<ddtempest_blight_guardian_mature/>
+					<ddtempest_blight_guardian_outgrowth/>
 				</mod-append:blackList>
 			</mod:findLike>
 		</mod:findLike>
@@ -56736,7 +56904,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<name>Boon of the Heavens</name>
 				<secretName>Boon of ???</secretName>
 				<secretDescription>Receive the Boon of ??? from Thest.</secretDescription>
-				<description>Show a Seraph to the Thest.
+				<description>Show a Seraph to Thest.
 				While in effect; ally crew increase nearby enemy fire damage taken by 20% each.</description>
 				<header>Boon Received</header>
 				<icon>ach_boon_ddseraphim_crew</icon>
@@ -56819,6 +56987,16 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
 				<secretDescription>Defeat the ??? Renegade and get its loot.</secretDescription>
 				<header>Renegade Defeated</header>
 				<sound>achievement</sound>
+			</achievement>
+			<achievement name="MUSIC_DDTRACKADISTANTDREAM">
+				<name>A Distant Dream</name>
+				<secretName>???</secretName>
+				<description id="jukebox_unlocked"/>
+				<secretDescription id="jukebox_locked"/>
+				<header id="jukebox_header"/>
+				<icon>music_unlocked</icon>
+				<variable name="juke_ddadistantdream" amount="1"/>
+				<multiDifficulty>false</multiDifficulty>
 			</achievement>
 			<achievement name="MUSIC_DDTRACKDEMIURGICOBLIVION">
 				<name>Demiurgic Oblivion</name>

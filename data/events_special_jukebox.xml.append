@@ -1,4 +1,11 @@
 <mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
+	<mod-append:choice hidden="true" req="juke_ddadistantdream">
+		<text>DD: A Distant Dream</text>
+		<event>
+			<playMusic>ddadistantdream</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
 	<mod-append:choice hidden="true" req="juke_dddemiurgicoblivion">
 		<text>DD: Demiurgic Oblivion</text>
 		<event>

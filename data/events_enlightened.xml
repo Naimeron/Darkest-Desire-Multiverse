@@ -1486,7 +1486,23 @@
 											<choice hidden="true" req="cloaking" lvl="3">
 												<text>(Adv. Cloaking) Your stalker power PALES in comparison to mine.</text>
 												<event>
-													<text>They jump back in shock, "A whole FIFTEEN seconds, MINIMUM?! Wow, you really are a pro!" they pause, writing something down, "Ok! I'll make sure to work on my cloaking when I get outta here. Speaking of, um, getting out of here... this place kinda gives me the creeps. I think I'll catch you in the next sector. Not that you'll see me, though, I'm totally becoming a pro stalker!"</text>
+													<text>They jump back in shock, "A whole FIFTEEN seconds, MINIMUM?! Wow, you really are a pro!" They pause, briefly, writing something down before continuing, "Ok! I'll make sure to work on acquiring some stronger cloaking tech when I get outta here. Speaking of, um, getting out of here... this place kinda gives me the creeps. I think I'll catch you in the next sector. Not that you'll see me, though - I'm totally becoming a stalker pro, too!"</text>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event>
+															<text>"Before I leave, though, this ship's got all kinds of goods! Not like I need 'em, and how could I pass up a chance to help the Federation? I'm, like, a part of your story now! Lemme rummage around and see what I can find..." After a few moments of doing just that, they send over a bunch of random stuff... including a weapon! "Okay, stalker pro! Good luck, and I'll be seeing you!" With that, they leave the system, and the voice calls to you, "A... charismatic lass, to say the least." You almost think you hear the faintest hint of a smile behind its words...</text>
+															<variable name="the_scarred_judgment" op="add" val="1"/>
+															<instantEscape/>
+															<weapon name="GIFTLIST_FREE"/>
+															<autoReward level="HIGH">stuff</autoReward>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true" req="UPG_CLOAK_FIRE" lvl="1">
+												<text>(Shadow Weaponry) Your stalker power PALES in comparison to mine.</text>
+												<event>
+													<text>They jump back in shock, "You get to not only cloak, but FIRE, TOO?! Wow, you really are a pro!" They pause, briefly, writing something down before continuing, "Ok! I'll make sure to work on acquiring some stronger cloaking tech when I get outta here. Speaking of, um, getting out of here... this place kinda gives me the creeps. I think I'll catch you in the next sector. Not that you'll see me, though - I'm totally becoming a stalker pro, too!"</text>
 													<choice hidden="true">
 														<text>Continue...</text>
 														<event>
@@ -4090,7 +4106,7 @@
 			<text>No answer rings out, and you're left alone with the silence.</text>
 		</event>
 	</choice>
-	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-16" blue="false">
+	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-13" blue="false">
 		<text>Did... did we do it? Have we won?</text>
 		<event>
 			<text>The silence is deafening. Foreboding, even, as moments later one last strike is made against your hull! The damage seems minimal, but... it concerns you that the shadows are capable of acts of cowardice.</text>
@@ -5175,7 +5191,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-16" blue="false">
+	<choice hidden="true" req="the_scarred_judgment" lvl="-99" max_lvl="-13" blue="false">
 		<text>It's about time.</text>
 		<event>
 			<text>You're ready to get out of this godforsaken void. Still, though, the silence has other plans. You watch as the darkness outside is pushed back... out of it, a ship emerges; the same one you saw when you first entered this sector. What does this tool want?</text>
