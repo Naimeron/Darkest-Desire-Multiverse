@@ -57462,6 +57462,7 @@ This enemy will jam your Defense Drones, making them incapable of firing. Unlike
     <mod-append:script>data/dd_scripts/dd_corruptor.lua</mod-append:script>
 	<mod-append:script>data/dd_scripts/dd_soulplaguehazard.lua</mod-append:script>
 	<mod-append:script>data/dd_scripts/dd_transformabilities.lua</mod-append:script>
+	<mod-append:script>data/dd_scripts/dd_dark_map.lua</mod-append:script>
 </mod:findLike>
 
 <mod:findLike type="events" limit="1">
