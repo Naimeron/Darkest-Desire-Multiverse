@@ -1,11 +1,11 @@
 --The code was originally taken from the Arsenal+ mod.
 
-local varr = {
+local dd_varr = {
 black_mask = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/black_mask.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
-red_wait = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/red_wait.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-red_cancel = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/red_cancel.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
-red_next_sector = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/red_next_sector.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+red_wait = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/dd_red_wait.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+red_cancel = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/dd_red_cancel.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
+red_next_sector = Hyperspace.Resources:CreateImagePrimitiveString('systemUI/dd_red_next_sector.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false),
 
 color_opac_red = Graphics.GL_Color(1.0, 0.2, 0.2, 0.22),
 }
@@ -37,27 +37,27 @@ script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() end, funct
 			if cur_sector and cur_sector.description.type == StarMapZone[i].sector_name then
 				Graphics.CSurface.GL_PushMatrix()
 				Graphics.CSurface.GL_Translate(map.currentLoc.loc.x + 368 - 1000, map.currentLoc.loc.y + 107 - 1000)
-				Graphics.CSurface.GL_RenderPrimitive(varr.black_mask)
+				Graphics.CSurface.GL_RenderPrimitive(dd_varr.black_mask)
 				Graphics.CSurface.GL_PopMatrix()
 				if Hyperspace.Mouse.tooltip ~= '' then
 					Hyperspace.Mouse.tooltip = '' -- It simply blocks the appearance of tooltips on the map. All of them.
 				end
-				Graphics.CSurface.GL_DrawRectOutline(339, 82, 754, 536, varr.color_opac_red, 2)
+				Graphics.CSurface.GL_DrawRectOutline(339, 82, 754, 536, dd_varr.color_opac_red, 2)
 				if playerShip.fuel_count == 0 then
 					Graphics.CSurface.GL_PushMatrix()
 					Graphics.CSurface.GL_Translate(812, 565)
-					Graphics.CSurface.GL_RenderPrimitive(varr.red_wait)
+					Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_wait)
 					Graphics.CSurface.GL_PopMatrix()
 				end
 				if map.currentLoc.event.eventName:find('DARKONE_FINISH') ~= nil or map.currentLoc.event.eventName:find('DDCOREMASS_EXIT') ~= nil or map.currentLoc.event.eventName:find('DDANTUMBRA_EXIT') ~= nil then 
 					Graphics.CSurface.GL_PushMatrix()
 					Graphics.CSurface.GL_Translate(850, 91)
-					Graphics.CSurface.GL_RenderPrimitive(varr.red_next_sector)
+					Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_next_sector)
 					Graphics.CSurface.GL_PopMatrix()
 				end
 				Graphics.CSurface.GL_PushMatrix()
 				Graphics.CSurface.GL_Translate(933, 620)
-				Graphics.CSurface.GL_RenderPrimitive(varr.red_cancel)
+				Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_cancel)
 				Graphics.CSurface.GL_PopMatrix()
 			end
 		end
