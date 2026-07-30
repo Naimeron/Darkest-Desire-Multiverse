@@ -45,18 +45,18 @@ script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() end, funct
 				Graphics.CSurface.GL_DrawRectOutline(339, 82, 754, 536, dd_varr.color_opac_red, 2)
 				if playerShip.fuel_count == 0 then
 					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(812, 565)
+					Graphics.CSurface.GL_Translate(684, 565)
 					Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_wait)
 					Graphics.CSurface.GL_PopMatrix()
 				end
 				if map.currentLoc.event.eventName:find('DARKONE_FINISH') ~= nil or map.currentLoc.event.eventName:find('DDCOREMASS_EXIT') ~= nil or map.currentLoc.event.eventName:find('DDANTUMBRA_EXIT') ~= nil then 
 					Graphics.CSurface.GL_PushMatrix()
-					Graphics.CSurface.GL_Translate(850, 91)
+					Graphics.CSurface.GL_Translate(726, 91)
 					Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_next_sector)
 					Graphics.CSurface.GL_PopMatrix()
 				end
 				Graphics.CSurface.GL_PushMatrix()
-				Graphics.CSurface.GL_Translate(933, 620)
+				Graphics.CSurface.GL_Translate(917, 620)
 				Graphics.CSurface.GL_RenderPrimitive(dd_varr.red_cancel)
 				Graphics.CSurface.GL_PopMatrix()
 			end
